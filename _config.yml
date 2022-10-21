@@ -1,20 +1,23 @@
 # site settings
-title: Joshua Pulsipher
-subtitle: A very cool guy
+title: Pulsipher
+subtitle: Info
 email: pulsipher@cmu.edu
-description: I like cool things
+description: A really cool guy
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: pulsipher.github.io # the base hostname & protocol for your site
-author: Joshua Pulsipher
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+url: https://pulsipher.github.io # the base hostname & protocol for your site
+author: pulsipher
+street_address: Fun Street
+city: Pittsburgh
+state: PA
+zip_code: 15217
+country: USA
+formspreeEndpoint: https://formspree.io/f/mdojodbe
+branch: master
+repo: pulsipher/pulsipher.github.io
+# google_analytics: 
 
 # homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
+tiles-source: posts # accepts "posts" or "pages"
 tiles-count: 6
 
 # social settings (key must match name of font awesome icon)
@@ -23,13 +26,9 @@ tiles-count: 6
 # You need to restart jekyll for changes to have an effect
 socials:
   GitHub: https://github.com/pulsipher
-  GitLab:
-  Google-Plus:
-  Instagram:
   LinkedIn: https://www.linkedin.com/in/joshua-pulsipher
   Twitter: https://twitter.com/pulsipher42
-  Facebook:
-  Slack:
+  # Facebook: https://www.facebook.com/appsparkler
 
 # build settings
 markdown: kramdown
