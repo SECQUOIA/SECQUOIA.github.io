@@ -1,63 +1,36 @@
----
-layout: default
----
-  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
-    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">{%
-      unless site.navlinks == 'none'
-%}{%    if page.categories contains 'works'
-%}{%      assign idxperma = '/works/' | prepend: site.baseurl
-%}{%      assign idxtitle = 'Works Index'
-%}{%      assign idxbutton = 'Index'
-%}{%      include fn_groupsort_reverse.html unsorted=site.categories.works groupby='priority' sortby='date'
-%}{%    endif
-%}{%    if page.categories.first == 'topics' and page.categories.last != 'topics'
-%}{%      assign idxperma = page.categories | join: '/' | prepend: '/' | prepend: site.baseurl | append: '/'
-%}{%      assign idxtitle = 'Start page'
-%}{%      assign idxbutton = 'Start'
-%}{%      assign sorted_list = site.empty_array
-%}{%      for topic in site.categories.topics
-%}{%        if topic.categories.last == page.categories.last
-%}{%          assign sorted_list = sorted_list | push: topic
-%}{%        endif
-%}{%      endfor
-%}{%      assign sorted_list = sorted_list | sort: 'date'
-%}{%    endif
-%}{%  endunless
-%}{%  if sorted_list
-%}{%    if site.navlinks == 'top' or site.navlinks == 'both'
-%}{%      include fn_sortednav.html posclass='btntop'
-%}{%    endif
-%}{%  endif
-%}{%  unless page.options contains 'minihead' %}
-      <span id="post-date">{{ page.date  | date: "%-d %B %Y" }}</span><hr
-        style="margin-top:3px;" />{%
-      endunless
-%}{%  if page.categories contains 'works' and page.tags %}
-      <h4>Skills</h4>
-  {%    assign work = page
-%}{%    include techlist.html %}
-  {%  endif
-%}
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
-      {{ content }}{%
+{% include head.html %}
 
+<body>
 
-      if sorted_list
-%}{%    if site.navlinks == 'bottom' or site.navlinks == 'both'
-%}{%      unless perma
-%}{%        assign perma = '/topics/' | prepend: site.baseurl
-%}{%      endunless
-%}{%      include fn_sortednav.html posclass='btnbottom'
-%}{%    endif
-%}{%  endif
-%}{%  unless page.author == 'none'
-%}{%    include author-block.html %}
-  {%  endunless
-%}{%  if jekyll.environment == "production"
-%}{%    unless page.options contains nocomment or page.categories contains 'works'
-%}{%      include disqus.html %}
-  {%    endunless
-%}{%  endif
-%}
-    </div>
-  </section>
+    {% include header.html %} 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>{{ page.title }}</h1>
+		</header>
+		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
+		{{ content }}
+	</div>
+</section>
+
+</div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
