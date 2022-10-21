@@ -1,11 +1,11 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
+title: Joshua Pulsipher
+subtitle: A very cool guy
+email: pulsipher@cmu.edu
+description: I like cool things
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: pulsipher.github.io # the base hostname & protocol for your site
+author: Joshua Pulsipher
 street_address: 1234 Somewhere Road
 city: Nashville
 state: TN
@@ -22,12 +22,12 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
+  GitHub: https://github.com/pulsipher
   GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  Google-Plus:
   Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
+  LinkedIn: https://www.linkedin.com/in/joshua-pulsipher
+  Twitter: https://twitter.com/pulsipher42
   Facebook:
   Slack:
 
