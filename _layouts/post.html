@@ -1,52 +1,63 @@
 ---
-layout: page
+layout: default
 ---
+  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
+    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">{%
+      unless site.navlinks == 'none'
+%}{%    if page.categories contains 'works'
+%}{%      assign idxperma = '/works/' | prepend: site.baseurl
+%}{%      assign idxtitle = 'Works Index'
+%}{%      assign idxbutton = 'Index'
+%}{%      include fn_groupsort_reverse.html unsorted=site.categories.works groupby='priority' sortby='date'
+%}{%    endif
+%}{%    if page.categories.first == 'topics' and page.categories.last != 'topics'
+%}{%      assign idxperma = page.categories | join: '/' | prepend: '/' | prepend: site.baseurl | append: '/'
+%}{%      assign idxtitle = 'Start page'
+%}{%      assign idxbutton = 'Start'
+%}{%      assign sorted_list = site.empty_array
+%}{%      for topic in site.categories.topics
+%}{%        if topic.categories.last == page.categories.last
+%}{%          assign sorted_list = sorted_list | push: topic
+%}{%        endif
+%}{%      endfor
+%}{%      assign sorted_list = sorted_list | sort: 'date'
+%}{%    endif
+%}{%  endunless
+%}{%  if sorted_list
+%}{%    if site.navlinks == 'top' or site.navlinks == 'both'
+%}{%      include fn_sortednav.html posclass='btntop'
+%}{%    endif
+%}{%  endif
+%}{%  unless page.options contains 'minihead' %}
+      <span id="post-date">{{ page.date  | date: "%-d %B %Y" }}</span><hr
+        style="margin-top:3px;" />{%
+      endunless
+%}{%  if page.categories contains 'works' and page.tags %}
+      <h4>Skills</h4>
+  {%    assign work = page
+%}{%    include techlist.html %}
+  {%  endif
+%}
 
-<section>
-	<div class="blog-post text-container">
-		<p class="editor-link"><a href="cloudcannon:collections/{{ page.path }}" class="btn"><strong>&#9998;</strong> Edit Post</a></p>
-		{% include post-title.html post=page %}
-
-		<div class="post-content">
-			{{ content }}
-
-			<div class="author">
-				{% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
-				{% assign author = site.staff_members | where: "url", author_id | first %}
-				<div class="square-image" style="background-image: url('{% include relative-src.html src=author.image_path %}')"></div>
-				<p class="blurb">{{ author.blurb }}</p>
-			</div>
-
-			<div class="blog-navigation">
-				{% if page.previous.url %}
-					<a class="prev" href="{% include relative-src.html src=page.previous.url %}">&laquo; {{ page.previous.title }}</a>
-				{% endif %}
-				{% if page.next.url %}
-					<a class="next" href="{% include relative-src.html src=page.next.url %}">{{ page.next.title }} &raquo;</a>
-				{% endif %}
-			</div>
+      {{ content }}{%
 
 
-			{% if site.disqus_shortname and page.comments %}
-				<div id="disqus_thread"></div>
-				<script>
-						var disqus_shortname = '{{ site.disqus_shortname }}';
-						var disqus_config = function () {
-								this.page.url = "{{ page.url | prepend: site.url }}";
-								this.page.identifier = "{{ page.id }}";
-						};
-
-						(function() {  // DON'T EDIT BELOW THIS LINE
-								var d = document, s = d.createElement('script');
-
-								s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-								s.setAttribute('data-timestamp', +new Date());
-								(d.head || d.body).appendChild(s);
-						})();
-				</script>
-				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-			{% endif %}
-		</div>
-	</div>
-</section>
+      if sorted_list
+%}{%    if site.navlinks == 'bottom' or site.navlinks == 'both'
+%}{%      unless perma
+%}{%        assign perma = '/topics/' | prepend: site.baseurl
+%}{%      endunless
+%}{%      include fn_sortednav.html posclass='btnbottom'
+%}{%    endif
+%}{%  endif
+%}{%  unless page.author == 'none'
+%}{%    include author-block.html %}
+  {%  endunless
+%}{%  if jekyll.environment == "production"
+%}{%    unless page.options contains nocomment or page.categories contains 'works'
+%}{%      include disqus.html %}
+  {%    endunless
+%}{%  endif
+%}
+    </div>
+  </section>
