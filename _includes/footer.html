@@ -21,20 +21,20 @@
 				</ul>
 			</form> -->
 			<form
-				action="https://formspree.io/f/xaykpvzo"
+				action="{{ site.formspreeEndpoint }}"
 				method="POST"
 				>
-				<label>
-					Your email:
-					<input type="email" name="email">
-				</label>
-				<label>
-					Your name:
-					<input type="text" name="name">
-				</label>
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" required />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" required />
+				</div>
 				<label>
 					Your message:
-					<textarea name="message"></textarea>
+					<textarea name="message" id="message" rows="6"></textarea>
 				</label>
 				<!-- your other form fields go here -->
 				<button type="submit">Send</button>
