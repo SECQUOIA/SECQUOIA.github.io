@@ -3,7 +3,7 @@
 {% elsif 'pages' == site.tiles-source %}
     {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %}
-<section id="one" class="tiles">
+<section id="two" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
   <article>
     <span class="image">
