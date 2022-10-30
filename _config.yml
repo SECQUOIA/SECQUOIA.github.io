@@ -11,7 +11,7 @@ city: Pittsburgh
 state: PA
 zip_code: 15217
 country: USA
-# formspreeEndpoint: https://formspree.io/f/mdojodbe
+formspreeEndpoint: https://formspree.io/f/xaykpvzo
 branch: master
 repo: pulsipher/pulsipher.github.io
 # google_analytics: 
