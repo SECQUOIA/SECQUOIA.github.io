@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hi, my name is Joshua'
+landing-title: 'Dr. Joshua Pulsipher'
 description: null
 image: null
 author: null
