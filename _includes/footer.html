@@ -20,10 +20,7 @@
 					<li><input type="reset" value="Clear" /></li>
 				</ul>
 			</form> -->
-			<form
-				action="{{ site.formspreeEndpoint }}"
-				method="POST"
-				>
+			<form action="{{ site.formspreeEndpoint }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name" required />
@@ -32,13 +29,17 @@
 					<label for="email">Email</label>
 					<input type="email" name="email" id="email" required />
 				</div>
-				<label>
-					Your message:
-					<textarea name="message" id="message" rows="6"></textarea>
-				</label>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6" required></textarea>
+				</div>
 				<!-- your other form fields go here -->
-				<button type="submit">Send</button>
-				<button type="reset">Clear</button>
+				<!-- <button type="submit">Send</button>
+				<button type="reset">Clear</button> -->
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
 			</form>
 		</section>
 		<section class="split">
