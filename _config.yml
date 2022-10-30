@@ -11,14 +11,14 @@ city: Pittsburgh
 state: PA
 zip_code: 15217
 country: USA
-formspreeEndpoint: https://formspree.io/f/mdojodbe
+# formspreeEndpoint: https://formspree.io/f/mdojodbe
 branch: master
 repo: pulsipher/pulsipher.github.io
 # google_analytics: 
 
 # homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 6
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 4
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
