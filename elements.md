@@ -4,6 +4,7 @@ title: Elements
 image: assets/images/pic01.jpg
 description: 'Example formatting'
 nav-menu: true
+show_tile: false
 ---
 
 <!-- Main -->
