@@ -6,10 +6,12 @@ description: A really cool guy
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://pulsipher.github.io # the base hostname & protocol for your site
 author: pulsipher
-street_address: Fun Street
+university: Carnegie Mellon University
+room: 4200 Doherty Hall
+street_address: 5000 Forbes Avenue
 city: Pittsburgh
 state: PA
-zip_code: 15217
+zip_code: 15213
 country: USA
 formspreeEndpoint: https://formspree.io/f/xaykpvzo
 branch: master

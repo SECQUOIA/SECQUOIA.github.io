@@ -2,24 +2,6 @@
 <section id="contact">
 	<div class="inner">
 		<section>
-			<!-- <form action="{{ site.formspreeEndpoint }}" method="POST">
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" required />
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" required />
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6" required></textarea>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form> -->
 			<form action="{{ site.formspreeEndpoint }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
@@ -33,9 +15,6 @@
 					<label for="message">Message</label>
 					<textarea name="message" id="message" rows="6" required></textarea>
 				</div>
-				<!-- your other form fields go here -->
-				<!-- <button type="submit">Send</button>
-				<button type="reset">Clear</button> -->
 				<ul class="actions">
 					<li><input type="submit" value="Send Message" class="special" /></li>
 					<li><input type="reset" value="Clear" /></li>
@@ -59,9 +38,15 @@
 			</section> -->
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
+					<span class="icon alt fa-location-dot"></span>
+					<h3>Location</h3>
 					<span>
+					{% if site.university %}
+						{{ site.university }}<br />
+					{% endif %}
+					{% if site.room %}
+						{{ site.room }}<br />
+					{% endif %}
 					{% if site.street_address %}
 					    {{ site.street_address }}<br />
 					{% endif %}
