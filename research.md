@@ -6,9 +6,6 @@ description: 'Description'
 nav-menu: true
 ---
 
-<!-- Main -->
-<div id="main">
-
 <!-- One -->
 <section id="one">
 	<div class="inner">
@@ -38,5 +35,3 @@ nav-menu: true
 		</div>
 	</section>
 </section>
-
-</div>

@@ -7,9 +7,6 @@ nav-menu: true
 show_tile: false
 ---
 
-<!-- Main -->
-<div id="main" class="alt">
-
 <!-- One -->
 <section id="one">
 	<div class="inner">
@@ -409,5 +406,3 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 </div>
 </section>
-
-</div>
