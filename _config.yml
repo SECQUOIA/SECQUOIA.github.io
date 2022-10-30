@@ -3,7 +3,7 @@ title: Pulsipher
 subtitle: Info
 email: pulsipher@cmu.edu
 description: A Post-Doctoral Chemical Engineer
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: https://pulsipher.github.io # the base hostname & protocol for your site
 author: pulsipher
 university: Carnegie Mellon University
