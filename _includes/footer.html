@@ -2,7 +2,7 @@
 <section id="contact">
 	<div class="inner">
 		<section>
-			<form action="{{ site.formspreeEndpoint }}" method="POST">
+			<!-- <form action="{{ site.formspreeEndpoint }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name" required />
@@ -19,6 +19,21 @@
 					<li><input type="submit" value="Send Message" class="special" /></li>
 					<li><input type="reset" value="Clear" /></li>
 				</ul>
+			</form> -->
+			<form
+				action="https://formspree.io/f/xaykpvzo"
+				method="POST"
+				>
+				<label>
+					Your email:
+					<input type="email" name="email">
+				</label>
+				<label>
+					Your message:
+					<textarea name="message"></textarea>
+				</label>
+				<!-- your other form fields go here -->
+				<button type="submit">Send</button>
 			</form>
 		</section>
 		<section class="split">
