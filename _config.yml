@@ -2,7 +2,7 @@
 title: Pulsipher
 subtitle: Info
 email: pulsipher@cmu.edu
-description: A really cool guy
+description: A Post-Doctoral Chemical Engineer
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://pulsipher.github.io # the base hostname & protocol for your site
 author: pulsipher
@@ -20,7 +20,7 @@ repo: pulsipher/pulsipher.github.io
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 4
+tiles-count: 6
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
