@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Diversity, Equity, and Inclusion
-image: assets/images/pic01.jpg
-description: 'Description'
+title: DEI
+image: assets/images/diversity.jpg
+description: 'Diversity, Equity, and Inclusion'
 nav-menu: true
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Research
 image: assets/images/pic01.jpg
-description: 'Description'
+description: 'Current Projects and Future Directions'
 nav-menu: true
 ---
 
