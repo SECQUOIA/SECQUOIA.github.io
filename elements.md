@@ -5,6 +5,7 @@ image: assets/images/pic01.jpg
 description: 'Example formatting'
 nav-menu: false
 show_tile: false
+banner_color: style1
 ---
 
 <!-- One -->
