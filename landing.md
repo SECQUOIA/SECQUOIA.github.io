@@ -5,6 +5,7 @@ description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. temp
 image: assets/images/pic07.jpg
 nav-menu: false
 show_tile: false
+banner_color: style2
 ---
 
 <!-- One -->
