@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: Software
-image: assets/images/code.jpg
+image: assets/images/software.jpg
 description: 'Promoting Accessibility and Accelerating Discovery'
 nav-menu: true
 ---
