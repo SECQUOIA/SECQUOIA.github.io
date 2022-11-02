@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-image: assets/images/pic01.jpg
-description: 'Description'
+image: assets/images/classroom.jpg
+description: 'Courses and Philosophy'
 nav-menu: true
 ---

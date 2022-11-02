@@ -1,8 +1,8 @@
 ---
 layout: mdpage
 title: Software
-image: assets/images/pic01.jpg
-description: 'Description'
+image: assets/images/code.jpg
+description: 'Promoting Accessibility and Accelerating Discovery'
 nav-menu: true
 ---
 # Make A Header
