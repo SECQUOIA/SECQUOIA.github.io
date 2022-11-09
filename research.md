@@ -2,7 +2,7 @@
 layout: page
 title: Research
 image: assets/images/research_idea.jpg
-description: 'Current Projects and Future Directions'
+description: 'Past, Present, and Planned Projects'
 nav-menu: true
 banner_color: style5
 ---
