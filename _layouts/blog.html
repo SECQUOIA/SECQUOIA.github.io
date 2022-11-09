@@ -29,24 +29,29 @@
     <!-- Main -->
     <div id="main" class="alt">
 
-        {{ content }} 
+      <section id="one">
+        <div class="inner">
+            {{ content }}
+        </div>
+      </section>
 
-        {% assign post_tiles = site.posts %}
+      {% assign post_tiles = site.posts %}
 
-        <section id="two" class="tiles">
-            {% for tile in post_tiles %}
-            <article>
-              <span class="image">
-                {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" />{% endif %}
-                {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" />{% endif %}
-              </span>
-              <header class="major">
-                <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
-                <p>{{ tile.description }}</p>
-              </header>
-            </article>
-            {% endfor %}
-        </section>
+      <section id="two" class="tiles">
+          {% for tile in post_tiles %}
+          <article>
+            <span class="image">
+              {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" />{% endif %}
+              {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" />{% endif %}
+            </span>
+            <header class="major">
+              <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+              <p>{{ tile.description }}</p>
+              {% if post.date %}<p>{{ post.date }}</p>{% endif %}
+            </header>
+          </article>
+          {% endfor %}
+      </section>
     </div>
 
     {% include footer.html %}
