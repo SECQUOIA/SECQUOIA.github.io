@@ -7,10 +7,29 @@
   <body>
 
     {% include header.html %} 
-    
+
+    <section id="banner" class="{{ page.banner_color }}">
+		<div class="inner">
+			<span class="image">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+			</span>
+			<header class="major">
+
+				<h1>{{ page.title }}</h1>
+
+			</header>
+			<div class="content">
+
+				{{ page.description }}
+
+			</div>
+		</div>
+	</section>
     
     <!-- Main -->
     <div id="main" class="alt">
+
+        {{ content }} 
 
         {% assign post_tiles = site.posts %}
 
