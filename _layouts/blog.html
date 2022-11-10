@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %} 
+
+    <section id="banner" class="{{ page.banner_color }}">
+		<div class="inner">
+			<span class="image">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+			</span>
+			<header class="major">
+
+				<h1>{{ page.title }}</h1>
+
+			</header>
+			<div class="content">
+
+				{{ page.description }}
+
+			</div>
+		</div>
+	</section>
+    
+    <!-- Main -->
+    <div id="main" class="alt">
+
+      <section id="one">
+        <div class="inner">
+            {{ content }}
+        </div>
+      </section>
+
+      {% assign post_tiles = site.posts %}
+
+      <section id="two" class="tiles">
+          {% for tile in post_tiles %}
+          <article>
+            <span class="image">
+              {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" />{% endif %}
+              {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" />{% endif %}
+            </span>
+            <header class="major">
+              <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+              <p>{{ tile.description }}</p>
+              {% if post.date %}<p>{{ post.date }}</p>{% endif %}
+            </header>
+          </article>
+          {% endfor %}
+      </section>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

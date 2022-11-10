@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Dr. Joshua Pulsipher'
+landing-title: 'Joshua Pulsipher'
 description: null
 image: null
 author: null
