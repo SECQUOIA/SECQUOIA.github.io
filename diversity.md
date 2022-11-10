@@ -1,8 +1,8 @@
 ---
 layout: page
-title: DEI
+title: DEI and Outreach
 image: assets/images/diversity.jpg
-description: 'Diversity, Equity, and Inclusion'
+description: 'Fostering Inclusion and Giving Back'
 nav-menu: true
 banner_color: style3
 ---
