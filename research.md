@@ -13,7 +13,7 @@ banner_color: style5
 		<header class="major">
 			<h2>My Vision</h2>
 		</header>
-		<p>My research in <b>process systems engineering develops computational methods in data-science and decision-making under uncertainty to tackle environmental, societal, and sustainability challenges in engineering and science</b> . These challenges exhibit interactions over a <b>hierarchy of space-time scales</b> that experience uncertainty stemming from environmental factors, fitted parameters, and/or molecular length-scales; characterizing uncertainty allows me to capture real-world behavior and quantify the <b>risk/reward</b> of candidate decisions. Furthermore, I operate at the intersection of chemical engineering, mathematics/statistics, and computer science in open-source <b>software-accelerated research</b> that expedites scientific discoveries and makes them broadly accessible. My future research group will continue this vision forward by designing <b>sustainable REE-CM supply chains</b>, creating <b>data-driven wildfire mitigation</b> strategies, advancing <b>computer vision aided control</b>, and pursuing advancements in <b>random field optimization</b> and <b>neural operator surrogates</b>.</p>
+		<p>I tackle challenges in <b>sustainability</b>, <b>energy</b>, and the <b>environment</b> by developing methods in <b>data science</b> & <b>decision-making under uncertainty</b> with discoveries accelerated and made accessible by <b> engineered software framework</b>. </p>
 	</div>
 </section>
 
