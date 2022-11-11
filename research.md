@@ -47,7 +47,7 @@ banner_color: style5
 				<header class="major">
 					<h3>Computer Vision for Process Control</h3>
 				</header>
-				<p></p>
+				<p>. Computer vision lead process control is increasingly used in industy, but it </b> has gaps that Josh will fill in </b> to generate large synthetic datasets, test sensor configuration designs, access a wide scenario envelope, and accelerate future research.</p>
 				<ul class="actions">
 					<li><a href="research/compvis.html" class="button">Learn more</a></li>
 				</ul>
@@ -63,7 +63,7 @@ banner_color: style5
 				<header class="major">
 					<h3>Resilient Energy Infrastructure</h3>
 				</header>
-				<p>PUT SOMETHING HERE</p>
+				<p>Rare, high-impact events (e.g., extreme weather, international conflicts) can inflict severe disruption/damage to energy infrastructure. Mathematical strategies are needed to model the effect of rare events on energy infrastructur. My research has focused on quantifying the resilance and flexability of a network.</p>
 				<ul class="actions">
 					<li><a href="research/energy.html" class="button">Learn more</a></li>
 				</ul>
@@ -79,7 +79,7 @@ banner_color: style5
 				<header class="major">
 					<h3>Sustainable Rare-Earth Element Supply Chains</h3>
 				</header>
-				<p>PUT SOMETHING HERE</p>
+				<p>PUT SOMETHING HERE </p>
 				<ul class="actions">
 					<li><a href="research/ree.html" class="button">Learn more</a></li>
 				</ul>
@@ -95,7 +95,7 @@ banner_color: style5
 				<header class="major">
 					<h3>Optimal Rare-Earth Element Recovery Wastewater Networks</h3>
 				</header>
-				<p>PUT SOMETHING HERE</p>
+				<p>Waste water is a potential source of rare earth elements, but because of the complexity in planning an ecconomically viable network, this water is currently being dispossed of at great cost. Our research aims to develop a framework that <b> does something special </b></p>
 				<ul class="actions">
 					<li><a href="research/wastewater.html" class="button">Learn more</a></li>
 				</ul>
@@ -111,7 +111,7 @@ banner_color: style5
 				<header class="major">
 					<h3>Disease Control and Analysis</h3>
 				</header>
-				<p>PUT SOMETHING HERE</p>
+				<p>Recent disease outbreaks (e.g., Covid-19) have highlighted the need for enhanced analysis and modeling of disease spread to better inform public policy on effective mitigation measures. With the development of my risk assesment metric, we re able to plan optimal issolation strategies to mitigate the spread of a contagen.</p>
 				<ul class="actions">
 					<li><a href="research/disease.html" class="button">Learn more</a></li>
 				</ul>
