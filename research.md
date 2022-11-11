@@ -14,8 +14,12 @@ banner_color: style5
 			<h2>My Vision</h2>
 		</header>
 		<p>I tackle challenges in <b>sustainability</b>, <b>energy</b>, and the <b>environment</b> by developing methods in <b>data science</b> & <b>decision-making under uncertainty</b> with discoveries accelerated and made accessible by <b> engineered software framework</b>. </p>
+		<span class="image fit"><img src="{% link assets/images/Reseach_image.png %}" alt="" /></span>
 	</div>
 </section>
+
+
+
 
 <!-- Two -->
 <section id="two" class="spotlights">
