@@ -17,7 +17,7 @@ img {
 
 		img {
 			display: block;
-			text-align: center;
+			// text-align: center;
 		}
 
 		&.left,
@@ -30,15 +30,13 @@ img {
 		}
 
 		&.left {
-			// float: left;
-			text-align: left;
+			float: left;
 			margin: 0 1.5em 1.25em 0;
 			top: 0.25em;
 		}
 
 		&.right {
-			// float: right;
-			text-align: right; 
+			float: right;
 			margin: 0 0 1.25em 1.5em;
 			top: 0.25em;
 		}
