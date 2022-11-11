@@ -17,6 +17,7 @@ img {
 
 		img {
 			display: block;
+			text-align: center;
 		}
 
 		&.left,
@@ -25,7 +26,6 @@ img {
 
 			img {
 				width: 100%;
-				text-align: center;
 			}
 		}
 
