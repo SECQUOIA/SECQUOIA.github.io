@@ -15,7 +15,7 @@ banner_color: style5
 		</header>
 		<p>My research in <b>process systems engineering</b> develops computational methods in <b>data-science</b> and <b>decision-making under uncertainty</b> to tackle <b>environmental, societal, and sustainability challenges</b> in engineering and science. Furthermore, I operate at the intersection of chemical engineering, mathematics/statistics, and computer science to drive an open-source <b>software-accelerated research</b> paradigm that expedites scientific discoveries and making them broadly accessible. </p>
 		<span class="image fit"><img src="{% link assets/images/research_overview.png %}" alt="" /></span>
-		<p>Past, ongoing, and proposed projects are provided below.
+		<p>Past, ongoing, and proposed projects are provided below.</p>
 	</div>
 </section>
 
