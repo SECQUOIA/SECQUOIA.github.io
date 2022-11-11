@@ -24,7 +24,7 @@ banner_color: style5
 <section id="projects" class="spotlights">
 	<section>
 		<a href="research/wildfire.html" class="image">
-			<img src="{% link assets/images/control_burn.jpg %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/control_burn.jpg %}" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
