@@ -41,7 +41,7 @@ banner_color: style5
 	</section>
 	<section>
 		<a href="research/compvis.html" class="image">
-			<img src="{% link assets/images/compvis_control.png %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/compvis_sensor.png %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
