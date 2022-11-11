@@ -75,7 +75,7 @@ banner_color: style5
 	</section>
 	<section>
 		<a href="research/ree.html" class="image">
-			<img src="{% link assets/images/ree.jpg %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/ree.png %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -177,7 +177,7 @@ banner_color: style5
 	</section>
 	<section>
 		<a href="research/drone.html" class="image">
-			<img src="{% link assets/images/drone.jpg %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/drone.png %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
