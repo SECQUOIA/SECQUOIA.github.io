@@ -36,7 +36,7 @@ banner_color: style1
 		</div>
 	</section>
 	<section>
-    		<a href="" class="image">
+    		<a href="teaching/course.html" class="image">
 			<img src="{% link assets/images/lecture_hall.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
@@ -46,7 +46,7 @@ banner_color: style1
 				</header>
 				<p>Information on courses I have taught or am teaching </p>
 				<ul class="actions">
-					<li><a href="" class="button">Learn more</a></li>
+					<li><a href="teaching/course.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
