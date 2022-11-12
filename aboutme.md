@@ -48,7 +48,6 @@ banner_color: style1
             <li>Introduction to Julia, JuMP.jl, and InfiniteOpt.jl</li>
 		</ul>
         <h2>Awards</h2>
-        <p>Please visit my <a href="teaching.html">my teaching page</a> for more information on my teaching experience and philosophy. For completeness, the courses I have taught are listed below:
         <ul>
             <li><b>Plenary Speaker</b>, Computing & Systems Technology Division Plenary Session of the AICHE Annual Meeting (2022)</li>
 			<li><b>Undergraduate Research Fellowship</b>, National Science Foundation (2016)</li>
@@ -58,5 +57,6 @@ banner_color: style1
             <li><b>Eagle Scout</b>, Boy Scouts of America (2012)</li>
             <li><b>President’s List</b>, Yakima Valley Community College (2011 – 2012)</li>
 		</ul>
+
 	</div>
 </section>
