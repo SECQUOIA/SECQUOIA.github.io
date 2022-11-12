@@ -10,4 +10,11 @@ author: null
 show_tile: true
 ---
 
-<h1>All posts</h1>
+<section id="intro">
+	<div class="inner">
+		<header class="major">
+			<h2>All posts</h2>
+		</header>
+		<p>Get the scope of the latest!</p>
+	</div>
+</section>
