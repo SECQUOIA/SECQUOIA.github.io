@@ -13,7 +13,7 @@ banner_color: style1
 		<header class="major">
 			<h2>Overview</h2>
 		</header>
-		<p>  Fueled by my passion for mentoring and teaching, I have consistently sought out instruction opportunities throughout my professional career. These oppurtunities have helped me developed my teaching philosophy. </p>
+		<p> Teaching is arguably the avenue through which professors have the most influence and impact on society; it is the primary medium to train and mentor the next generation of engineers to tackle the grand engineering challenges of the 21<sup>st</sup> century such as climate change, sustainable energy production, sufficient food supply, and better engineered medicines. Fueled by my passion for mentoring and teaching, I have consistently sought out instruction opportunities throughout my professional career.</p>
 	</div>
 </section>
 
@@ -44,7 +44,7 @@ banner_color: style1
 				<header class="major">
 					<h3>Courses</h3>
 				</header>
-				<p>Information on courses I have taught or am teaching </p>
+				<p>Information on courses I have taught and am teaching</p>
 				<ul class="actions">
 					<li><a href="teaching/courses.html" class="button">Learn more</a></li>
 				</ul>
