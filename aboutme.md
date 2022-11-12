@@ -65,8 +65,6 @@ banner_color: style1
             <li>"Event Constrained Optimization", <i>The American Institute of Chemical Engineering (AICHE) Annual Meeting. Computing & Systems Technology Division Plenary</i>, Phoenix, AZ, USA (2022)</li>
             <li>"Modeling Infinite-Dimensional Optimization Problems with InfiniteOpt.jl", <i>UW-Madison Chemical and Biological Engineering Computational Seminar Series</i>, Madison, WI, USA (2022)</li>
 		</ul>
-	</div>
-</section>
 
 <html>
 <head>
@@ -84,8 +82,11 @@ banner_color: style1
       adobeDCView.previewFile({
         content:  {location: {url: "assets/pdfs/cv.pdf"}},
         metaData: {fileName: "cv.pdf", hasReadOnlyAccess: true}
-        }, {embedMode: "FULL_WINDOW", defaultViewMode: "FIT_PAGE", showAnnotationTools: true, showDownloadPDF: true });
+        }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showDownloadPDF: true });
    });
   </script>
 </body>
 </html>
+
+	</div>
+</section>
