@@ -20,7 +20,7 @@ banner_color: style1
 <!-- Two -->
 <section id="projects" class="spotlights">
 	<section>
-		<a href="" class="image">
+		<a href="teaching/philosophy.html" class="image">
 			<img src="{% link assets/images/philosophy.jpg %}" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
@@ -30,7 +30,7 @@ banner_color: style1
 				</header>
 				<p> My teaching philosophy focuses on promoting a <b>growth mindset</b> in an <b>active learning</b> environment that is <b>inclusive</b> for all.</p>
 				<ul class="actions">
-					<li><a href="" class="button">Learn more</a></li>
+					<li><a href="teaching/philosophy.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
