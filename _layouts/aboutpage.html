@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
+
+	{% include header.html %}
+
+	<section id="banner" class="{{ page.banner_color }}">
+		<div class="inner">
+			<span class="image">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+			</span>
+			<header class="major">
+
+				<h1>{{ page.title }}</h1>
+
+			</header>
+			<div class="content">
+
+				{{ page.description }}
+
+			</div>
+		</div>
+	</section>
+
+    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    <div id="adobe-dc-view"></div>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function()
+        {
+        var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
+        adobeDCView.previewFile({
+            content:  {location: {url: "assets/pdfs/cv.pdf"}},
+            metaData: {fileName: "cv.pdf", hasReadOnlyAccess: true}
+            }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showDownloadPDF: true });
+        });
+    </script>
+
+	<div id="main" class="alt">
+
+    {{ content }} 
+
+	</div>
+	
+	{% include footer.html %}
+
+</body>
+
+</html>

@@ -1,31 +1,11 @@
 ---
-layout: page
+layout: aboutpage
 title: About Me
 image: assets/images/conference.jpg
 description: An Introduction
 nav-menu: true
 banner_color: style1
 ---
-
-<head>
-  <title>My CV</title>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-</head>
-<body>
-  <div id="adobe-dc-view"></div>
-  <script type="text/javascript">
-   document.addEventListener("adobe_dc_view_sdk.ready", function()
-   {
-      var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
-      adobeDCView.previewFile({
-        content:  {location: {url: "assets/pdfs/cv.pdf"}},
-        metaData: {fileName: "cv.pdf", hasReadOnlyAccess: true}
-        }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showDownloadPDF: true });
-   });
-  </script>
-</body>
 
 <section id="profile">
 	<div class="inner">
