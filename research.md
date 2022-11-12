@@ -195,8 +195,15 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<p></p>
 	<ul class="actions">
     	<li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
 	</ul>
+</section>
+
+<section>
+	<div class="inner">
+		<ul class="actions">
+    		<li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
+		</ul>
+	</div>
 </section>
