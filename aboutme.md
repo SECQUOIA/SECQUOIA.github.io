@@ -81,12 +81,10 @@ banner_color: style1
    document.addEventListener("adobe_dc_view_sdk.ready", function()
    {
       var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
-      adobeDCView.previewFile(
-     {
-         content:  {location: {url: "assets/pdfs/cv.pdf"}},
-         metaData: {fileName: "cv.pdf",
-                    hasReadOnlyAccess: true}
-     });
+      adobeDCView.previewFile({
+        content:  {location: {url: "assets/pdfs/cv.pdf"}},
+        metaData: {fileName: "cv.pdf", hasReadOnlyAccess: true}
+        }, {embedMode: "FULL_WINDOW", defaultViewMode: "FIT_PAGE", showAnnotationTools: true, showDownloadPDF: true });
    });
   </script>
 </body>
