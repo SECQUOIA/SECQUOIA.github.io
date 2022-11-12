@@ -15,6 +15,7 @@ banner_color: style1
 		</header>
 		<p>  Fueled by my passion for mentoring and teaching, I have consistently sought out instruction opportunities throughout my professional career. These oppurtunities have helped me developed my teaching philosophy. </p>
 	</div>
+</section>
 
 <!-- Two -->
 <section id="projects" class="spotlights">
@@ -48,3 +49,6 @@ banner_color: style1
 					<li><a href="" class="button">Learn more</a></li>
 				</ul>
 			</div>
+		</div>
+	</section>
+</section>
