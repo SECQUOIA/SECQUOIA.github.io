@@ -22,7 +22,7 @@ banner_color: style5
 
 <!-- Two -->
 <section id="projects" class="spotlights">
-	<section>
+	<section id="wildfire">
 		<a href="research/wildfire.html" class="image">
 			<img src="{% link assets/images/control_burn.jpg %}" alt="" data-position="bottom center" />
 		</a>
@@ -39,7 +39,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="compvis">
 		<a href="research/compvis.html" class="image">
 			<img src="{% link assets/images/compvis_sensor.png %}" alt="" data-position="center center" />
 		</a>
@@ -56,7 +56,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="energy">
 		<a href="research/energy.html" class="image">
 			<img src="{% link assets/images/power_lines.jpg %}" alt="" data-position="center center" />
 		</a>
@@ -73,7 +73,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="ree">
 		<a href="research/ree.html" class="image">
 			<img src="{% link assets/images/ree.png %}" alt="" data-position="center center" />
 		</a>
@@ -90,7 +90,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="wastewater">
 		<a href="research/wastewater.html" class="image">
 			<img src="{% link assets/images/acid_mine.jpg %}" alt="" data-position="center center" />
 		</a>
@@ -107,7 +107,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="disease">
 		<a href="research/disease.html" class="image">
 			<img src="{% link assets/images/virus.png %}" alt="" data-position="center center" />
 		</a>
@@ -124,7 +124,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="infiniteopt">
 		<a href="research/infiniteopt.html" class="image">
 			<img src="{% link assets/images/infiniteopt_discoveries.png %}" alt="" data-position="center center" />
 		</a>
@@ -141,7 +141,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="neuralops">
 		<a href="research/neuralops.html" class="image">
 			<img src="{% link assets/images/fluid_flow.jpg %}" alt="" data-position="center center" />
 		</a>
@@ -158,7 +158,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="rfo">
 		<a href="research/rfo.html" class="image">
 			<img src="{% link assets/images/random_field.png %}" alt="" data-position="center center" />
 		</a>
@@ -175,7 +175,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="drone">
 		<a href="research/drone.html" class="image">
 			<img src="{% link assets/images/drone.png %}" alt="" data-position="center center" />
 		</a>
