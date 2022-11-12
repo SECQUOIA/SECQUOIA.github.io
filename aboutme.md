@@ -14,7 +14,7 @@ banner_color: style1
 		</header> -->
 		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span>I am post-doctoral researcher in chemical engineering at Carnegie Mellon University specializing in data-science and decision-making under uncertainty to tackle high-impact engineering challenges in effort to do my small part in making the world a better place to live. I have conducted academic research and teaching over the past 10 years across a variety of instituions. I currently work with Professors <a href="http://allthingsoptimal.com/">Carl Laird</a> and <a href="http://egon.cheme.cmu.edu/">Ignacio Grossmann</a> in developing methods in process systems engineering to tackle applications in energy systems, rare-earth element recovery, and more. To date, my accomplishments include 13 completed scholarly publications, 1 pending patent, 5 software products, contributing to proposals totaling $698K in funding, 33+ presentations/seminars, teaching 6 courses, and my network of 27+ collaborators in academia, national laboratories, and industry.</p>
         <ul class="actions">
-			<li><a href="#cv_pdf" class="button icon fa-download">Open my CV</a></li>
+			<li><a href="cv.html" class="button icon fa-file">Open my CV</a></li>
 		</ul>
         <h2>Education</h2>
         <ul>
@@ -69,21 +69,4 @@ banner_color: style1
             <li>"Modeling Infinite-Dimensional Optimization Problems with InfiniteOpt.jl", <i>UW-Madison Chemical and Biological Engineering Computational Seminar Series</i>, Madison, WI, USA (2022)</li>
 		</ul>
 	</div>
-</section>
-
-<section id="cv_pdf">
-    <header class="major">
-        <h2>Full Curriculum Vitae</h2>
-    </header>
-    <div id="adobe-dc-view" style="width: 100%;"></div>
-    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-            var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
-            adobeDCView.previewFile({
-                content:{location: {url: "assets/pdfs/cv.pdf"}},
-                metaData:{fileName: "cv.pdf"}
-            }, {embedMode: "IN_LINE"});
-        });
-    </script>
 </section>
