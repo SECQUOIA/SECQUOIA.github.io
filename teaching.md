@@ -43,7 +43,7 @@ banner_color: style1
 				<header class="major">
 					<h3>Courses</h3>
 				</header>
-				<p>A listing of what courses I have taught or am teaching </p>
+				<p>Information on courses I have taught or am teaching </p>
 				<ul class="actions">
 					<li><a href="" class="button">Learn more</a></li>
 				</ul>
