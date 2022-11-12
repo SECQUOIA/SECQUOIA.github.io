@@ -61,7 +61,7 @@ banner_color: style1
             <li><b>President’s List</b>, Yakima Valley Community College (2011 – 2012)</li>
 		</ul>
         <h2>Publications</h2>
-        <p>Please visit <a href="publications.html">publication page</a></p>.
+        <p>Please visit <a href="publications.html">publication page</a>.</p>
         <h2>Select Presentations/Seminars</h2>
         <ul>
             <li>"An Introduction to Process Systems Engineering with Applications in Energy and Disease Control", <i>University International Seminar at Universidad Nacional Micaela Bastidas de Apurímac</i>, Apurímac, Peru (2022)</li>
