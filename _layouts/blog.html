@@ -47,7 +47,7 @@
             <header class="major">
               <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
               <p>{{ tile.description }}</p>
-              {% if tile.date %}<p>{{ tile.date }}</p>{% endif %}
+              {% if tile.date %}<p>{{ page.date | date: '%B %-d, %Y' }}</p>{% endif %}
             </header>
           </article>
           {% endfor %}
