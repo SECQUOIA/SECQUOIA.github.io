@@ -20,3 +20,7 @@ My group will develop computational methods to <b>design, validate, and operate 
 <img src="../assets/images/safe-occ.png" style="max-width:800px;width:100%">
 
 A key vulnerability computer vision sensors introduce is <b>erroneous measurement</b> when subjected to uncertain visual disturbances, which can incur severe safety/profitability consequences. In close collaboration with ExxonMobil, I used my data-science expertise to develop a <b>tailored novelty detection framework</b> to rapidly assess the sensor prediction quality in real-time. Exploiting unique aspects of the CNN architecture, my approach incurs a significantly <b>lower overhead and higher accuracy</b> than off-the-shelf methods; moreover, it is part of a <b>pending U.S. patent</b>. Recently, to generalize this work I proposed the Sensor Activated Feature Extraction One-Class Classification (SAFE-OCC) novelty detection framework for general computer vision sensors.
+
+<ul class="actions">
+    <li><a href="/research.html#compvis" class="button icon fa-arrow-left">Go back to Research Summaries</a></li>
+</ul>
