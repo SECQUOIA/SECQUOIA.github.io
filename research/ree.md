@@ -13,6 +13,6 @@ Establishing a <b>sustainable and economically viable domestic REE-CM supply cha
 
 # Modeling and Decision-making Framework
 
-<img src="../assets/images/ree_supplychain.png" style="max-width:800px;width:100%">
+<img src="../assets/images/ree_supplychain.png" style="max-width:600px;width:100%">
 
 My group proposes to answer these key questions by developing a rigorous modeling and decision-making framework to design REE-CM infrastructure and supply chains. This will enable us to <b>model candidate infrastructure</b> configurations, optimally choose components (i.e., sources, technologies, transportation, end-uses), and facilitate <b>techno-economic analysis</b> under uncertainty. We can also investigate economic opportunities for cooperation across this multi-enterprise network. We will leverage state-of-art approaches such as <b>neural operator surrogates</b> and decision-making with <b>random field uncertainty</b>.
