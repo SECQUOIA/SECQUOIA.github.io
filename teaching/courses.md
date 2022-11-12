@@ -18,7 +18,7 @@ In this short course, I provide a hands-on introduction to:
 - modeling infinite-dimensional optimization problems in [InfiniteOpt.jl](https://infiniteopt.github.io/InfiniteOpt.jl/stable/).
 
 <ul class="actions">
-	<li><a href="files/shortcourse_syllabus.html" class="button icon fa-file">Syllabus</a></li>
+	<li><a href="/files/shortcourse_syllabus.html" class="button icon fa-file">Syllabus</a></li>
 </ul>
 
 The course materials are freely available [here](https://github.com/infiniteopt/InfiniteOptTutorials/tree/main/short_course) on GitHub. By the end of this course, students should be familiar with:
