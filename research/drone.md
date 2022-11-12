@@ -17,3 +17,7 @@ Infrastructure in the U.S. and abroad requires <b>frequent monitoring and inspec
 <img src="../assets/images/uav_inspection.png" style="max-width:800px;width:100%">
 
 We developed a methodology and software framework that enables UAVs to <b>autonomously collect optimal image data</b> in order to construct high-fidelity <b>3D structure-from-motion models</b> which enable rapid inspection and <b>automated change detection</b>. In this framework, we developed a rigorous optimization approach to minimize image collection time while achieving a target inspection coverage. This is all implemented in Volare (an Android app) which can interface with UAVs manufactured by DJI. To date, this has been deployed to inspect infrastructure across the globe in places such as Italy, Japan, the U.S., and Chile. Check out the 3D augmented reality models [here](http://prismweb.groups.et.byu.net/gallery2/).
+
+<ul class="actions">
+    <li><a href="/research.html#drone" class="button icon fa-arrow-left">Go back to Research Summaries</a></li>
+</ul>

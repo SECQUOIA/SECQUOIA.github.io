@@ -17,3 +17,7 @@ Nueral operators networks generalize popular neural networks to learn an operato
 
 # Proposed Approaches
 We propose to use neural operators as InfiniteOpt surrogates. To enable this, we will also engineer <b>constraint representations of neural operators</b> that embed in InfiniteOpt formulations. Taking inspiration from physics-informed neural network based control, we will also create a <b>physics-informed decision-making framework that uses neural operators</b>. Moreover, we plan to implement our scientific discoveries in \texttt{InfiniteOpt.jl</b> to promote accessibility and accelerate research in a wide breadth of disciplines.
+
+<ul class="actions">
+    <li><a href="/research.html#neuralops" class="button icon fa-arrow-left">Go back to Research Summaries</a></li>
+</ul>

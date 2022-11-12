@@ -26,3 +26,7 @@ Inclusive learning environments allow all students (especially underrepresented 
 
 # The Interplay Between Research and Teaching
 Learning from some professors I've observed over focus on research to the detriment of their teaching engagement, I endeavor to use the same standard of excellence in both my teaching and research pursuits. Furthermore, I plan to <b>leverage my research to innovate course curriculum</b>; for instance, I can incorporate excerpts from my research to instruct how <b>uncertainty/statistics</b> (a common weak-point for students) play an important role in the subject matter (e.g., chemical process design). This allows me to discuss areas I am passionate about and encourage undergraduate research. I can also tie my research directly into relevant graduate-level courses.
+
+<ul class="actions">
+    <li><a href="/teaching.html#philosophy" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
+</ul>

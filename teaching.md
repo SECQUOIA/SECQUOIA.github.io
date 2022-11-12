@@ -19,7 +19,7 @@ banner_color: style1
 
 <!-- Two -->
 <section id="projects" class="spotlights">
-	<section>
+	<section id="philosophy">
 		<a href="teaching/philosophy.html" class="image">
 			<img src="{% link assets/images/philosophy.jpg %}" alt="" data-position="bottom center" />
 		</a>
@@ -35,7 +35,7 @@ banner_color: style1
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="course">
     		<a href="teaching/course.html" class="image">
 			<img src="{% link assets/images/lecture_hall.jpg %}" alt="" data-position="center center" />
 		</a>
