@@ -9,7 +9,7 @@ banner_color: style5
 ---
 
 # Background
-Many systems in engineering and science are modeled using variables that live on <b>continuous domains</b> (e.g., space-time), making them infinite-dimensional (i.e., variables are functions). Specific engineering applications include REE-CM supply chains, wildfire simulations, process systems, climate modeling, reaction surfaces, microbial communities, complex fluid flows, and molecular dynamics. My [unifying abstraction](/research/infiniteopt.md) (InfiniteOpt) enables simultaneous innovation across these areas. A common challenge pertains to complex systems which cannot be modeled from 1<sup>st</sup> principles and/or incur <b>high computational cost</b>.
+Many systems in engineering and science are modeled using variables that live on <b>continuous domains</b> (e.g., space-time), making them infinite-dimensional (i.e., variables are functions). Specific engineering applications include REE-CM supply chains, wildfire simulations, process systems, climate modeling, reaction surfaces, microbial communities, complex fluid flows, and molecular dynamics. My [unifying abstraction](/research/infiniteopt.html) (InfiniteOpt) enables simultaneous innovation across these areas. A common challenge pertains to complex systems which cannot be modeled from 1<sup>st</sup> principles and/or incur <b>high computational cost</b>.
 
 <img src="../assets/images/neuralop.png" style="max-width:700px;width:100%">
 
