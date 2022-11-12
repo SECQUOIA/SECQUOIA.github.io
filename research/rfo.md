@@ -18,3 +18,6 @@ Many systems in engineering and science are modeled using variables that live on
 
 Using my unifying abstraction, I proposed a new optimization framework called <b>random field optimization</b> that incorporates random field uncertainty into mathematical decision-making problems. This enables us to better capture <b>real-world behavior</b> and tackle emergent applications. Building upon this foundation, we will develop tractable <b>high-fidelity solution</b> approaches by potentially adapting PDE-constrained optimization decomposition techniques. 
 
+<ul class="actions">
+    <li><a href="/research.html#rfo" class="button icon fa-arrow-left">Go back to Research Summaries</a></li>
+</ul>

@@ -13,3 +13,7 @@ At UW-Madison I co-instruct this course focusing on the computer programming cou
 
 # Short Courses on Julia and InfiniteOpt.jl
 I developed this course in the Julia language which I taught at UW-Madison, Carnegie Mellon University (CMU), and at an international workshop in South Korea. I am currently organizing plans to offer these courses in Spanish and English as part of an initiative to establish new connections with underrepresented regions of Latin America (e.g., Peru).
+
+<ul class="actions">
+    <li><a href="/teaching.html#course" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
+</ul>
