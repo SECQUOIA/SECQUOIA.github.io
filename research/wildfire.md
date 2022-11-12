@@ -13,5 +13,4 @@ Climate change is driving an <b>increase in wildfire extent and severity</b>. Re
 
 # Proposed Solution
 <img src="../assets/images/wildfire_mitigation.png" style="max-width:700px;width:100%">
-
 My group will engineer <b>scalable surrogate wildfire models</b> that guide data collection (monitoring) and readily embed into decision-making tools. Inspired by the success of neural operator models in emulating chaotic Navier-Stokes flow systems, we plan to develop <b>physics-informed neural operator models</b> to create high-fidelity models that rapidly predict wildfire behavior. With these we can conduct <b>scalable uncertainty propagation</b> to guide data collection (monitoring). Moreover, the computational efficiency of these surrogates facilitates the integration of high-fidelity models (e.g., fire and weather simulators) into decision-making tools, promoting <b>better informed fire-management strategies</b>. For instance, these can consider the impact of smoke from controlled burns on surrounding population areas. This work will be done in close collaboration with experts in wildfire research.
