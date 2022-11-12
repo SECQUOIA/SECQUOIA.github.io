@@ -67,3 +67,27 @@ banner_color: style1
 		</ul>
 	</div>
 </section>
+
+<html>
+<head>
+  <title>Your title</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+</head>
+<body>
+  <div id="adobe-dc-view"></div>
+  <script type="text/javascript">
+   document.addEventListener("adobe_dc_view_sdk.ready", function()
+   {
+      var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
+      adobeDCView.previewFile(
+     {
+         content:  {location: {url: "assets/pdfs/cv.pdf"}},
+         metaData: {fileName: "cv.pdf",
+                    hasReadOnlyAccess: true}
+     });
+   });
+  </script>
+</body>
+</html>
