@@ -61,7 +61,7 @@ banner_color: style6
 					<h3>DisjunctiveProgramming.jl</h3>
 				</header>
 				<p><i>A JuMP Extension for Generlized Disjunctive Programming</i></p>
-				<p>DisjunctiveProgramming.jl provides a Julia package for tackling GDP problems. This work is led by Hector Perez and I have taken an active role in helping Hector transform this package into a world-class modelign language for GDP.</p>
+				<p>DisjunctiveProgramming.jl provides a Julia package for tackling GDP problems. This work is led by Hector Perez and I have taken an active role in helping Hector transform this package into a world-class modeling language for GDP.</p>
 				<ul class="actions">
 					<li><a href="https://github.com/hdavid16/DisjunctiveProgramming.jl" class="button">Check it out</a></li>
 				</ul>
