@@ -36,7 +36,7 @@ banner_color: style1
 	</section>
 	<section>
     		<a href="" class="image">
-			<img src="{% link assets/images/lecture_hall.png %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/lecture_hall.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
