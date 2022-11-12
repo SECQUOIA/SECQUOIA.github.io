@@ -14,7 +14,7 @@ banner_color: style4
 			<h2>Overview</h2>
 		</header>
 		<p>Here are all my scholarly publications. To date these include:</p>
-        <ul class="actions">
+        <ul>
 		    <li>8 completed journal articles</li>
             <li>5 completed peer-reviewed conference papers</li>
             <li>1 book chapter</li>
@@ -58,7 +58,7 @@ banner_color: style4
 	</section>
 	<section id="articles">
 		<a href="publications/others.html" class="image">
-			<img src="{% link assets/images/article.png %}" alt="" data-position="bottom center" />
+			<img src="{% link assets/images/book.png %}" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
