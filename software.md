@@ -104,3 +104,11 @@ banner_color: style6
 	</section>
 </section>
 
+<section>
+	<div class="inner">
+		<ul class="actions">
+    		<li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
+		</ul>
+	</div>
+</section>
+
