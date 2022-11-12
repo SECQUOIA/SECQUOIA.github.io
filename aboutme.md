@@ -40,12 +40,23 @@ banner_color: style1
             <li><a href="research/energy.html">Energy systems</a></li>
 		</ul>
         <h2>Teaching</h2>
-        <p>Please visit my <a href="teaching.html">my teaching page</a> for more information on my teaching experience and philosophy. For completeness, the courses I have taught are listed below:
+        <p>Please visit my <a href="teaching.html">my teaching page</a> for more information on my teaching experience and philosophy. For completeness, the courses I have taught are listed below:</p>
         <ul>
             <li>Process control</li>
 			<li>Chemical process modeling</li>
 			<li>Organic chemistry</li>
             <li>Introduction to Julia, JuMP.jl, and InfiniteOpt.jl</li>
+		</ul>
+        <h2>Awards</h2>
+        <p>Please visit my <a href="teaching.html">my teaching page</a> for more information on my teaching experience and philosophy. For completeness, the courses I have taught are listed below:
+        <ul>
+            <li><b>Plenary Speaker</b>, Computing & Systems Technology Division Plenary Session of the AICHE Annual Meeting (2022)</li>
+			<li><b>Undergraduate Research Fellowship</b>, National Science Foundation (2016)</li>
+            <li><b>Full Academic Scholarship</b>, Brigham Young University (2013 – 2017)</li>
+            <li><b>Academic Scholarship</b>, Brigham Young University Chemical Engineering Department (2012)</li>
+            <li><b>Masonic Academic Achievement Scholarship</b>, Yakima Masonic Lodge (2012))</li>
+            <li><b>Eagle Scout</b>, Boy Scouts of America (2012)</li>
+            <li><b>President’s List</b>, Yakima Valley Community College (2011 – 2012)</li>
 		</ul>
 	</div>
 </section>
