@@ -12,7 +12,7 @@ banner_color: style1
         <!-- <header class="major">
 			<h2>Joshua Pulsipher</h2>
 		</header> -->
-		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span>I am post-doctoral researcher in chemical engineering at Carnegie Mellon University specializing in data-science and decision-making under uncertainty to tackle high-impact engineering challenges in effort to do my small part in making the world a better place to live. I have conducted academic research and teaching over the past 10 years across a variety of instituions. I currently work with Professors <a href="http://allthingsoptimal.com/">Carl Laird</a> and <a href="http://egon.cheme.cmu.edu/">Ignacio Grossmann</a> in developing methods in process systems engineering to tackle applications in energy systems, rare-earth element recovery, and more. To date, my accomplishments include 13 completed scholarly publications, 1 pending patent, 5 software products, contributing to proposals totaling \$698K in funding, 33+ presentations/seminars, teaching 6 courses, and my network of 27+ collaborators in academia, national laboratories, and industry.</p>
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span>I am post-doctoral researcher in chemical engineering at Carnegie Mellon University specializing in data-science and decision-making under uncertainty to tackle high-impact engineering challenges in effort to do my small part in making the world a better place to live. I have conducted academic research and teaching over the past 10 years across a variety of instituions. I currently work with Professors <a href="http://allthingsoptimal.com/">Carl Laird</a> and <a href="http://egon.cheme.cmu.edu/">Ignacio Grossmann</a> in developing methods in process systems engineering to tackle applications in energy systems, rare-earth element recovery, and more. To date, my accomplishments include 13 completed scholarly publications, 1 pending patent, 5 software products, contributing to proposals totaling $698K in funding, 33+ presentations/seminars, teaching 6 courses, and my network of 27+ collaborators in academia, national laboratories, and industry.</p>
         <h2>Education</h2>
         <ul>
             <li><b>Postdoc in Chemical Engineering</b>, <i>Carnegie Mellon University, Pittsburgh, PA, USA</i> (2022-Present)<br/>Advisors: Professors Carl Laird and Ignacio Grossmann</li>
@@ -27,7 +27,7 @@ banner_color: style1
             <li><b>Intern</b>, <i>Optimization and Control, Pacific Northwest National Laboratory, Richland, WA, USA</i> (2019)</li>
             <li><b>Undergraduate Research Assistant</b>, <i>Chemical Engineering, Brigham Young University, Provo, UT, USA</i> (2013-2017)</li>
 		</ul>
-        <h2>Research Interests<h>
+        <h2>Research Interests</h2>
         <p>Please see <a href="research.html">my research page</a> for a detailed overview of my research vision and activities. Common focus areas are listed below:</p>
         <ul>
             <li>Decision-making under uncertainty (stochastic optimization, <a href="research/rfo.html">random field optimization</a>, etc.)</li>
@@ -39,6 +39,13 @@ banner_color: style1
             <li><a href="research/wildfire.html">Wildfire mitigation</a></li>
             <li><a href="research/energy.html">Energy systems</a></li>
 		</ul>
-        
+        <h2>Teaching</h2>
+        <p>Please visit my <a href="teaching.html">my teaching page</a> for more information on my teaching experience and philosophy. For completeness, the courses I have taught are listed below:
+        <ul>
+            <li>Process control</li>
+			<li>Chemical process modeling</li>
+			<li>Organic chemistry</li>
+            <li>Introduction to Julia, JuMP.jl, and InfiniteOpt.jl</li>
+		</ul>
 	</div>
 </section>
