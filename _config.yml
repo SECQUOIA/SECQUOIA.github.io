@@ -16,7 +16,7 @@ country: USA
 formspreeEndpoint: https://formspree.io/f/xaykpvzo
 branch: master
 repo: pulsipher/pulsipher.github.io
-# google_analytics: 
+google_analytics: G-MCGJLE9DXE
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
