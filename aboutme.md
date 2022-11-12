@@ -68,17 +68,22 @@ banner_color: style1
             <li>"Event Constrained Optimization", <i>The American Institute of Chemical Engineering (AICHE) Annual Meeting. Computing & Systems Technology Division Plenary</i>, Phoenix, AZ, USA (2022)</li>
             <li>"Modeling Infinite-Dimensional Optimization Problems with InfiniteOpt.jl", <i>UW-Madison Chemical and Biological Engineering Computational Seminar Series</i>, Madison, WI, USA (2022)</li>
 		</ul>
-        <h2 id="cv_pdf">Full Curriculum Vitae</h2>
-        <div id="adobe-dc-view" style="width: 100%;"></div>
-        <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-        <script type="text/javascript">
-            document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-                var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
-                adobeDCView.previewFile({
-                    content:{location: {url: "assets/pdfs/cv.pdf"}},
-                    metaData:{fileName: "cv.pdf"}
-                }, {embedMode: "IN_LINE"});
-            });
-        </script>
 	</div>
+</section>
+
+<section id="cv_pdf">
+    <header class="major">
+        <h2>Full Curriculum Vitae</h2>
+    </header>
+    <div id="adobe-dc-view" style="width: 100%;"></div>
+    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+            var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
+            adobeDCView.previewFile({
+                content:{location: {url: "assets/pdfs/cv.pdf"}},
+                metaData:{fileName: "cv.pdf"}
+            }, {embedMode: "IN_LINE"});
+        });
+    </script>
 </section>
