@@ -7,6 +7,26 @@ nav-menu: true
 banner_color: style1
 ---
 
+<head>
+  <title>My CV</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+</head>
+<body>
+  <div id="adobe-dc-view"></div>
+  <script type="text/javascript">
+   document.addEventListener("adobe_dc_view_sdk.ready", function()
+   {
+      var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
+      adobeDCView.previewFile({
+        content:  {location: {url: "assets/pdfs/cv.pdf"}},
+        metaData: {fileName: "cv.pdf", hasReadOnlyAccess: true}
+        }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showDownloadPDF: true });
+   });
+  </script>
+</body>
+
 <section id="profile">
 	<div class="inner">
         <!-- <header class="major">
@@ -65,28 +85,5 @@ banner_color: style1
             <li>"Event Constrained Optimization", <i>The American Institute of Chemical Engineering (AICHE) Annual Meeting. Computing & Systems Technology Division Plenary</i>, Phoenix, AZ, USA (2022)</li>
             <li>"Modeling Infinite-Dimensional Optimization Problems with InfiniteOpt.jl", <i>UW-Madison Chemical and Biological Engineering Computational Seminar Series</i>, Madison, WI, USA (2022)</li>
 		</ul>
-
-<html>
-<head>
-  <title>Your title</title>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-</head>
-<body>
-  <div id="adobe-dc-view"></div>
-  <script type="text/javascript">
-   document.addEventListener("adobe_dc_view_sdk.ready", function()
-   {
-      var adobeDCView = new AdobeDC.View({clientId: "a40573442f804376b6158bb8d98858ee", divId: "adobe-dc-view"});
-      adobeDCView.previewFile({
-        content:  {location: {url: "assets/pdfs/cv.pdf"}},
-        metaData: {fileName: "cv.pdf", hasReadOnlyAccess: true}
-        }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_PAGE", showAnnotationTools: false, showDownloadPDF: true });
-   });
-  </script>
-</body>
-</html>
-
 	</div>
 </section>
