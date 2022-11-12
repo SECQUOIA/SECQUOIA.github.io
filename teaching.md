@@ -18,7 +18,7 @@ banner_color: style1
 </section>
 
 <!-- Two -->
-<section id="projects" class="spotlights">
+<section id="topics" class="spotlights">
 	<section id="philosophy">
 		<a href="teaching/philosophy.html" class="image">
 			<img src="{% link assets/images/philosophy.jpg %}" alt="" data-position="bottom center" />
@@ -35,8 +35,8 @@ banner_color: style1
 			</div>
 		</div>
 	</section>
-	<section id="course">
-    		<a href="teaching/course.html" class="image">
+	<section id="courses">
+    		<a href="teaching/courses.html" class="image">
 			<img src="{% link assets/images/lecture_hall.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
@@ -46,7 +46,7 @@ banner_color: style1
 				</header>
 				<p>Information on courses I have taught or am teaching </p>
 				<ul class="actions">
-					<li><a href="teaching/course.html" class="button">Learn more</a></li>
+					<li><a href="teaching/courses.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
