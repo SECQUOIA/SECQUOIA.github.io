@@ -53,7 +53,7 @@ banner_color: style6
 	</section>
 	<section>
 		<a href="https://github.com/hdavid16/DisjunctiveProgramming.jl" class="image">
-			<img src="{% link assets/images/disjunct.jpg %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/disjunct.png %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
