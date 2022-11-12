@@ -195,9 +195,6 @@ banner_color: style5
 			</div>
 		</div>
 	</section>
-	<ul class="actions">
-    	<li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
-	</ul>
 </section>
 
 <section>
