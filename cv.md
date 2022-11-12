@@ -13,6 +13,6 @@ show_tile: false
         adobeDCView.previewFile({
             content:{location: {url: "assets/pdfs/cv.pdf"}},
             metaData:{fileName: "cv.pdf"}
-        }, {embedMode: "FULL_WINDOW"});
+        }, {embedMode: "FULL_WINDOW", defaultViewMode: "FIT_WIDTH"});
     });
 </script>
