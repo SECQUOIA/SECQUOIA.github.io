@@ -12,7 +12,7 @@ banner_color: style6
 		<header class="major">
 			<h2>Overview</h2>
 		</header>
-		<p>I leverage my software development skill-set to create <b>open-source software modeling frameworks</b> that accelerate computational discovery which has been a point driving factor in my research pursuits. These implement my research frameworks, make my discoveries accessible, and make my findings reproducible. Below I list the software developed so far.</p>
+		<p>I leverage my software development skill-set to create <b>open-source software modeling frameworks</b> that accelerate computational discovery which has been a key driving factor in my research pursuits. These implement my research frameworks, make my discoveries accessible, and make my findings reproducible. Below I list the software developed so far.</p>
 	</div>
 </section>
 
