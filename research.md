@@ -9,7 +9,7 @@ banner_color: style5
 
 <!-- One -->
 <section id="overview">
-	<div class="inner">
+	<!-- <div class="inner">
 		<header class="major">
 			<h2>My Vision</h2>
 		</header>
@@ -19,13 +19,13 @@ banner_color: style5
 		<ul class="actions">
 		<li><a href="files/research.html" class="button icon fa-file">Research Statement</a></li>
 	</ul>
-	</div>
+	</div> -->
 </section>
 
 
 <!-- Two -->
 <section id="projects" class="spotlights">
-	<section id="wildfire">
+	<!-- <section id="wildfire">
 		<a href="research/wildfire.html" class="image">
 			<img src="{% link assets/images/control_burn.jpg %}" alt="" data-position="bottom center" />
 		</a>
@@ -194,7 +194,7 @@ banner_color: style5
 				</ul>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </section>
 
 <section>

@@ -1,3 +1,3 @@
-# pulsipher.github.io
+# bernalde.github.io
 
-The personal webpage of Joshua Pulsipher.
+The personal webpage of David Bernal.
