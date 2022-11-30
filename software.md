@@ -2,11 +2,11 @@
 layout: page
 title: Software
 image: assets/images/software1.jpg
-description: 'Promoting Accessibility and Accelerating Discovery'
+description: 'Providing tools to understand and solve challenging optimization problems'
 nav-menu: true
 banner_color: style6
 ---
-
+<!-- 
 <section id="overview">
 	<div class="inner">
 		<header class="major">
@@ -110,5 +110,5 @@ banner_color: style6
     		<li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
 		</ul>
 	</div>
-</section>
+</section> -->
 

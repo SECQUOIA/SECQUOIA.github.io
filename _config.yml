@@ -1,22 +1,22 @@
 # site settings
-title: Pulsipher
+title: Bernalde
 subtitle: Info
-email: pulsipher@cmu.edu
-description: Post-Doctoral Chemical Engineer
+email: dbernaln@purdue.edu
+description: Incoming Assistant Professor - Chemical Engineer Department
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://pulsipher.github.io # the base hostname & protocol for your site
-author: pulsipher
-university: Carnegie Mellon University
-room: 4200 Doherty Hall
-street_address: 5000 Forbes Avenue
-city: Pittsburgh
-state: PA
-zip_code: 15213
+url: https://bernalde.github.io # the base hostname & protocol for your site
+author: bernalde
+university: Purdue University
+room: Forney Hall of Chemical Engineering, 1060
+street_address: 480 Stadium Mall Drive
+city: West Lafayette
+state: IN
+zip_code: 47907-2100
 country: USA
 formspreeEndpoint: https://formspree.io/f/xaykpvzo
 branch: master
-repo: pulsipher/pulsipher.github.io
-google_analytics: G-MCGJLE9DXE
+repo: bernalde/bernalde.github.io
+google_analytics: G-7SN6EM0RMM
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -27,9 +27,9 @@ tiles-count: 8
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/pulsipher
-  LinkedIn: https://www.linkedin.com/in/joshua-pulsipher
-  Twitter: https://twitter.com/pulsipher42
+  GitHub: https://github.com/bernalde
+  LinkedIn: https://www.linkedin.com/in/bernalde
+  Twitter: https://twitter.com/bernalde
   # Facebook: https://www.facebook.com/appsparkler
 
 # build settings
