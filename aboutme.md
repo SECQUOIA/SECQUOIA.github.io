@@ -9,17 +9,17 @@ banner_color: style1
 
 <section id="profile">
 	<div class="inner">
-        <!-- <header class="major">
-			<h2>David Bernal</h2>
+        <header class="major">
+			<h2>David E. Bernal Neira</h2>
 		</header> -->
-		<!-- <p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span>I am post-doctoral researcher in chemical engineering at Carnegie Mellon University specializing in data-science and decision-making under uncertainty to tackle high-impact engineering challenges in effort to do my small part in making the world a better place to live. I have conducted academic research and teaching over the past 10 years across a variety of instituions. I currently work with Professors <a href="http://allthingsoptimal.com/">Carl Laird</a> and <a href="http://egon.cheme.cmu.edu/">Ignacio Grossmann</a> in developing methods in process systems engineering to tackle applications in energy systems, rare-earth element recovery, and more. To date, my accomplishments include 13 completed scholarly publications, 1 pending patent, 5 software products, contributing to proposals totaling $698K in funding, 33+ presentations/seminars, teaching 6 courses, and my network of 27+ collaborators in academia, national laboratories, and industry.</p> -->
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> I am an incoming Professor in the Davidson School of Chemical Engineering at Purdue University. I specialize in the application of mathematical and computer science tools to address problems relevant to science and engineering, for example physics and chemical, process, and energy systems engineering. In particular, I work in the fields of nonlinear discrete optimization, where besides applications I have been working in theory, algorithms, and software. I have been involved in research and teaching related to this topics for over a decade, with a recent incursion in the field of Quantum Computing. I'm currently a research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). By today, I've co-authored more than 20 papers in indexed journals, several software packages for optimization and quantum computing, more than 50 presentations and seminars in the U.S. and internationally, co-teaching more than 5 different classes included one designed by myself (on the intersection of optimization and quantum computing <href="https://bernalde.github.io/QuIPML22/">link</a>), and have had the pleasure of collaborating with over 100 different researchers in academia, national laboratories, government agencies, and industry.</p>
         <p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span>Site under construction.</p>
         <ul class="actions">
 			<li><a href="files/cv.html" class="button icon fa-file">Full CV</a></li>
 		</ul>
         <h2>Education</h2>
         <ul>
-            <li><b>Incoming Assistant Professor in in Chemical Engineering</b>, <i>Purdue University, West Lafayette, IN, USA</i> (2023-Onwards)<br/>Advisors: Professors Carl Laird and Ignacio Grossmann</li>
+            <li><b>Incoming Assistant Professor in in Chemical Engineering</b>, <i>Purdue University, West Lafayette, IN, USA</i> (2023-Onwards)<br/></li>
             <li><b>Associate Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i> (2021-2023)<br/>Supervisor: Dr. Davide Venturelli</li>
             <li><b>Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i> (2021-2023)<br/>Supervisor: Dr. Eleanor Rieffel</li>
 			<li><b>Ph.D. in Chemical Engineering</b>, <i>Carnegie Mellon University, Pittsburgh, PA, USA</i> (2017-2021)<br/>Advisor: Professor Ignacio E. Grossmann</li>
