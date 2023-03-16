@@ -28,7 +28,7 @@ banner_color: style4
 <section id="publications" class="spotlights">
 	<section id="articles">
 		<a href="publications/articles.html" class="image">
-			<img src="{% link assets/images/article.png %}" alt="" data-position="bottom center" />
+			<img src="" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -43,7 +43,7 @@ banner_color: style4
 	</section>
     <section id="conferences">
 		<a href="publications/conferences.html" class="image">
-			<img src="{% link assets/images/conference_paper.png %}" alt="" data-position="bottom center" />
+			<img src="" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -58,7 +58,7 @@ banner_color: style4
 	</section>
 	<section id="articles">
 		<a href="publications/others.html" class="image">
-			<img src="{% link assets/images/book.png %}" alt="" data-position="bottom center" />
+			<img src="" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
