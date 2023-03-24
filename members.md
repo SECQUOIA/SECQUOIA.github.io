@@ -29,8 +29,9 @@ nav-menu: true
 				<header class="major">
 					<h3>Zedong Peng</h3>
 				</header>
-				<p>Joined in 2023 Summer.</p>
-                <p>Research topic: Superstructure Optimization, Mixed-Integer Nonlinear Programming.</p>
+				<li>Will join in 2023 Summer.</li>
+				<li>Ph.D., Control Science and Engineering, Zhejiang University, 2021.</li>
+                <p><b>Research topic</b>: Superstructure Optimization, Mixed-Integer Nonlinear Programming.</p>
   	<!-- <h4>Icons</h4> -->
 	<ul class="icons">
 		<li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
