@@ -44,7 +44,7 @@ banner_color: style5
 	</section>
 	<section id="compvis">
 		<a href="research/compvis.html" class="image">
-			<img src="{% link assets/images/compvis_sensor.png %}" alt="" data-position="center center" />
+			<img src="" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -95,7 +95,7 @@ banner_color: style5
 	</section>
 	<section id="wastewater">
 		<a href="research/wastewater.html" class="image">
-			<img src="{% link assets/images/acid_mine.jpg %}" alt="" data-position="center center" />
+			<img src="{}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -129,7 +129,7 @@ banner_color: style5
 	</section>
 	<section id="infiniteopt">
 		<a href="research/infiniteopt.html" class="image">
-			<img src="{% link assets/images/infiniteopt_discoveries.png %}" alt="" data-position="center center" />
+			<img src="{}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -195,6 +195,7 @@ banner_color: style5
 			</div>
 		</div>
 	</section> -->
+
 </section>
 
 <section>
