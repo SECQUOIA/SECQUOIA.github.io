@@ -19,7 +19,7 @@ banner_color: style6
 <section id="software" class="spotlights">
 	<section>
 		<a href="https://infiniteopt.github.io/InfiniteOpt.jl/stable/" class="image">
-			<img src="{% link assets/images/infiniteopt.png %}" alt="" data-position="bottom center" />
+			<img src="" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -70,7 +70,7 @@ banner_color: style6
 	</section>
 	<section>
 		<a href="research/drone.html" class="image">
-			<img src="{% link assets/images/volare.png %}" alt="" data-position="center center" />
+			<img src="" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -87,7 +87,7 @@ banner_color: style6
 	</section>
     <section>
 		<a href="research/compvis.html" class="image">
-			<img src="{% link assets/images/compvislab.png %}" alt="" data-position="center center" />
+			<img src="{}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
