@@ -8,26 +8,6 @@ show_tile: false
 banner_color: style1
 ---
 
-# Chemical Process Modeling (CBE 255)
-At UW-Madison I co-instructed this course focusing on the computer programming course material. The course provides an integrative overview of how programming tools like MATLAB and python can be used to solve a wide variety of problems in chemical engineering. By the end of this course, students should be sufficiently familiar with programming to solve challenging numerical problems (e.g., batch reaction kinetics).
-
-# Short Courses on Julia and InfiniteOpt.jl
-In this short course, I provide a hands-on introduction to:
-- programming in [Julia](https://julialang.org/),
-- solving optimization problems via [JuMP.jl](https://jump.dev/), and
-- modeling infinite-dimensional optimization problems in [InfiniteOpt.jl](https://infiniteopt.github.io/InfiniteOpt.jl/stable/).
-
-<ul class="actions">
-	<li><a href="/files/shortcourse_syllabus.html" class="button icon fa-file">Syllabus</a></li>
-</ul>
-
-The course materials are freely available [here](https://github.com/infiniteopt/InfiniteOptTutorials/tree/main/short_course) on GitHub. By the end of this course, students should be familiar with:
-- scripting in Julia,
-- solving optimization problems in JuMP.jl and InfiniteOpt.jl,
-- and should have the resources they need to learn further.
-
-To date, I have taught this course at the University of Wisconsin-Madison, Carnegie Mellon University, and in Busan, South Korea.
-
-<ul class="actions">
-    <li><a href="/teaching.html#courses" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
-</ul>
+# Quantum Integer Programming and Machine Learning (47-779 / 47-785, 18-819F)
+At Carnegie Mellon University I designed and co-taught this course that focuses on introducing concept in discrete optimization, machine learning, and quantum computing for practitioners. From a perspective that does not require any background in quantum physics, and with a strong focus on practical problems, we introduce concepts of integer programming, artificial intelligence, and quantum methods to address these problems. The course wraps up with a practical project where students implement solutin algorithms in actual quantum computers and benchmark them against state-of-the-art classical methods.
+Course website can be found [here](https://bernalde.github.io/QuIPML22/).
