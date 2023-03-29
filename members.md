@@ -35,8 +35,8 @@ nav-menu: true
   	<!-- <h4>Icons</h4> -->
 	<ul class="icons">
 		<li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-		<li><a href="peng_zedong@126.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+		<li><a href="mailto:peng_zedong@126.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 	</ul>
 				<!-- <ul class="actions">
 					<li><a href="generic.html" class="button">Learn more</a></li>
