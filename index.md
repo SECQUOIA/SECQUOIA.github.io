@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'David Bernal'
+landing-title: 'David E. Bernal Neira'
 description: null
 image: null
 author: null
