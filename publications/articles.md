@@ -31,7 +31,6 @@ banner_color: style4
     <li> D. E. Bernal, C. Carrillo-Diaz, J. M. Gómez, and L. A. Ricardez-Sandoval, “Simultaneous design and control of catalytic distillation columns using comprehensive rigorous dynamic models”, Industrial & Engineering Chemistry Research, vol. 57, no. 7, pp. 2587–2608, 2018. doi: 10.1021/acs.iecr.7b04205.</li>
     <li> L. Su, L. Tang, D. E. Bernal, and I. E. Grossmann, “Improved quadratic cuts for convex mixed-integer nonlinear programs”, Computers & Chemical Engineering, vol. 109, pp. 77–95, 2018, issn: 0098-1354. doi: 10.1016/j.compchemeng.2017.10.011.</li>
     <li> L. Leisman, M. P. Haynes, S. Janowiecki, G. Hallenbeck, G. Józsa, R. Giovanelli, E. A. Adams, D. E. Bernal, J. M. Cannon, W. F. Janesh, et al., “(Almost) Dark Galaxies in the ALFALFA Survey: Isolated H i-bearing Ultra-diffuse Galaxies”, The Astrophysical Journal, vol. 842, no. 2, p. 133, 2017. doi: 10.3847/1538-4357/aa7575.</li>
-    <!-- <li>Martin, R. A., Blackburn, L., <b>Pulsipher, J. L.</b>, Franke, K., and Hedengren, J. D. (May 2017). “Potential benefits of combining anomaly detection with view planning for UAV infrastructure modeling”. In: <i>Remote Sensing 9.5, p. 434</i>. <a href="https://doi.org/10.3390/rs9050434"><b>paper</b></a></li> -->
 </ol>
 
 <ul class="actions">
