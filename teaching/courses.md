@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: Courses
-image: assets/images/classroom.jpg
+image: assets/images/classroom.jpeg
 description: 'Past and Present'
 nav-menu: false
 show_tile: false
