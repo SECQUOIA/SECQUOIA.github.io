@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: DEI and Outreach
-image: assets/images/diversity.jpg
+image: assets/images/diversity.jpeg
 description: 'Fostering Inclusion and Giving Back'
 nav-menu: true
 banner_color: style3
