@@ -2,7 +2,7 @@
 title: Members
 layout: page
 description: 'Post-doc, Ph.D, master and undergraduate students.'
-image: assets/images/classroom.jpg
+image: assets/images/team.jpeg
 nav-menu: true
 ---
 

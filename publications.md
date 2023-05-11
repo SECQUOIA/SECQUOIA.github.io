@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-image: assets/images/publication.jpg
+image: assets/images/books.jpeg
 description: 'Articles, Chapters, Patents, and More'
 nav-menu: true
 banner_color: style4
@@ -19,11 +19,12 @@ banner_color: style4
             <li>5 completed peer-reviewed conference papers</li>
 		</ul>
         <p>The full pubication lists are provided below.</p>
+		{% include publications style="apa" link=true %}
 	</div>
 </section>
 
 <!-- Two -->
-<section id="publications" class="spotlights">
+<!-- <section id="publications" class="spotlights">
 	<section id="articles">
 		<a href="publications/articles.html" class="image">
 			<img src="" alt="" data-position="bottom center" />
@@ -69,7 +70,7 @@ banner_color: style4
 			</div>
 		</div>
 	</section>
-</section>
+</section> -->
 
 <section>
 	<div class="inner">
