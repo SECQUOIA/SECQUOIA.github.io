@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Teaching
-image: assets/images/classroom.jpg
+image: assets/images/writing.jpeg
 description: 'Courses and Philosophy'
 nav-menu: true
 banner_color: style1
@@ -24,7 +24,7 @@ banner_color: style1
 <section id="topics" class="spotlights">
 	<section id="philosophy">
 		<a href="teaching/philosophy.html" class="image">
-			<img src="{% link assets/images/philosophy.jpg %}" alt="" data-position="bottom center" />
+			<img src="{% link assets/images/notebook.jpeg %}" alt="" data-position="bottom center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -40,7 +40,7 @@ banner_color: style1
 	</section>
 	<section id="courses">
     		<a href="teaching/courses.html" class="image">
-			<img src="{% link assets/images/lecture_hall.jpg %}" alt="" data-position="center center" />
+			<img src="{% link assets/images/books2.jpeg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
