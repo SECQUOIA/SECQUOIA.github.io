@@ -79,16 +79,26 @@ nav-menu: true
 </section>
 
 <!-- Three -->
-<!-- <section id="three">
+<section id="three" class="spotlights">
 	<div class="inner">
 		<header class="major">
-			<h2>Massa libero</h2>
-		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
+			<h2>Ph.D</h2>
+		<section>
+			<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Albert Lee</h3>
+				</header>
+				<li>Joined in 2022 Fall.</li>
+				<li>BEng, Chemical Engineering, Korea University, 2021.</li>
+				<p><b>Research topic</b>: Superstructure Optimization, Generalized Disjunctive Programming.</p>
+  	<!-- <h4>Icons</h4> -->
+		<ul class="icons">
+			<li><a href="https://github.com/AlbertLee125" class="icon fa-github"><span class="label">Github</span></a></li>
+			 <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+		<li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 		</ul>
 	</div>
-</section> -->
+</section> 
 
 </div>
