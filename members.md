@@ -85,7 +85,7 @@ nav-menu: true
 			<h2>Ph.D</h2>
 		<section>
 			<a href="generic.html" class="image">
-                        <img src="https://github.com/AlbertLee125/bernalde.github.io/assets/118876546/359490eb-7cdf-49bc-9d26-083fbbd69a1c" alt="IMG_0078" data-position="center center" />
+                        <img src="assets/images/members/AlbertLee.jpg" alt="" data-position="center center" />
                         </a>
 			<div class="content">
 			<div class="inner">
