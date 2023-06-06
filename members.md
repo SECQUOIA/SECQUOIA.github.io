@@ -84,6 +84,7 @@ nav-menu: true
 		<header class="major">
 			<h2>Ph.D</h2>
 		<section>
+			![IMG_0078](https://github.com/AlbertLee125/bernalde.github.io/assets/118876546/c97ef121-a821-4bcf-9275-607abb4295a5)
 			<div class="content">
 			<div class="inner">
 				<header class="major">
