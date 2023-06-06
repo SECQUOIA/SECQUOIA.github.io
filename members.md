@@ -83,8 +83,7 @@ nav-menu: true
 	<div class="inner">
 		<header class="major">
 			<h2>Ph.D</h2>
-		<section>
-			
+		<section>	
 			<div class="content">
 			<div class="inner">
 				<header class="major">
