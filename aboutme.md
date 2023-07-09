@@ -38,7 +38,7 @@ banner_color: style1
         <h2>Research Interests</h2>
         <p>Please see <a href="research.html">my research page</a> for a detailed overview of my research vision and activities. Common focus areas are listed below:</p>
         <ul>
-            <li>Nonlinear discrete optimization via advanced hardware with application in Chemical Eggineering (<a href="research/example.html">example</a>, etc.)</li>
+            <li>Nonlinear discrete optimization via advanced hardware with application in Chemical Engineering (<a href="research/example.html">example</a>, etc.)</li>
             <!-- <li>Decision-making under uncertainty (stochastic optimization, <a href="research/rfo.html">random field optimization</a>, etc.)</li>
 			<li>Data-science (<a href="research/neuralops.html">neural operators</a>, convolutional neural networks, etc.)</li>
 			<li>Infinite-dimensional optimization (i.e., <a href="research/infiniteopt.html">InfiniteOpt</a>)</li>
