@@ -29,7 +29,7 @@ nav-menu: true
 				<header class="major">
 					<h3>Zedong Peng</h3>
 				</header>
-				<li>Will join in 2023 Summer.</li>
+				<li>Joined in 2023 Summer.</li>
 				<li>Ph.D., Control Science and Engineering, Zhejiang University, 2021.</li>
                 <p><b>Research topic</b>: Superstructure Optimization, Mixed-Integer Nonlinear Programming.</p>
   	<!-- <h4>Icons</h4> -->
