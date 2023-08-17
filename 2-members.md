@@ -4,6 +4,7 @@ layout: page
 description: 'Post-doc, Ph.D, master and undergraduate students.'
 image: assets/images/team.jpeg
 nav-menu: true
+banner_color: style2
 ---
 
 <!-- Main -->

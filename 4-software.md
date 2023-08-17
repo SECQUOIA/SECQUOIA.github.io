@@ -4,7 +4,7 @@ title: Software
 image: assets/images/software.jpeg
 description: 'Providing tools to understand and solve challenging optimization problems'
 nav-menu: true
-banner_color: style6
+banner_color: style4
 ---
 <!-- One -->
 <section id="one">
