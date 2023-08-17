@@ -4,7 +4,7 @@ title: DEI and Outreach
 image: assets/images/diversity.jpeg
 description: 'Fostering Inclusion and Giving Back'
 nav-menu: true
-banner_color: style3
+banner_color: style8
 ---
 
 # Diversity Statement

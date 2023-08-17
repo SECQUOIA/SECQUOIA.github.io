@@ -4,7 +4,7 @@ title: Teaching
 image: assets/images/writing.jpeg
 description: 'Courses and Philosophy'
 nav-menu: true
-banner_color: style1
+banner_color: style6
 ---
 
 <!-- One -->

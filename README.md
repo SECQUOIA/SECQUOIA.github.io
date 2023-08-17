@@ -1,3 +1,3 @@
-# bernalde.github.io
+# SECQUOIA.github.io
 
-The personal webpage of David Bernal.
+The webpage of [SECQUOIA](https://SECQUOIA.github.io/) (Systems Engineering Classical and Quantum Optimization for Industrial Applications) research group at Purdue University.

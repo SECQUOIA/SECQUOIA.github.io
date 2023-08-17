@@ -4,7 +4,7 @@ title: Publications
 image: assets/images/books.jpeg
 description: 'Articles, Chapters, Patents, and More'
 nav-menu: true
-banner_color: style4
+banner_color: style3
 ---
 
 <!-- One -->
