@@ -12,13 +12,15 @@ banner_color: style1
         <header class="major">
 			<h2>David E. Bernal Neira</h2>
 		</header>
-		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in the application of mathematical and computer science tools to address problems relevant to science and engineering, for example physics and chemical, process, and energy systems engineering. In particular, he works in the fields of nonlinear discrete optimization, where besides applications he has been working in theory, algorithms, and software. He has been involved in research and teaching related to this topics for over a decade, with a recent incursion in the field of Quantum Computing. He is currently a research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). By today, he has co-authored more than 20 papers in indexed journals, several software packages for optimization and quantum computing, more than 50 presentations and seminars in the U.S. and internationally, co-teaching more than 5 different classes included one designed by myself (on <a href="https://SECQUOIA.github.io/QuIPML22/">the intersection of optimization and quantum computing</a>), and have had the pleasure of collaborating with over 100 different researchers in academia, national laboratories, government agencies, and industry.</p>
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in the application of mathematical and computer science tools to address problems relevant to science and engineering, for example physics and chemical, process, and energy systems engineering. In particular, he works in the fields of nonlinear discrete optimization, where besides applications he has been working in theory, algorithms, and software. He has been involved in research and teaching related to this topics for over a decade, with a recent incursion in the field of Quantum Computing. He is currently a research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). By today, he has co-authored more than 20 papers in indexed journals, several software packages for optimization and quantum computing, more than 50 presentations and seminars in the U.S. and internationally, co-teaching more than 5 different classes included one he co-designed (on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a>), and have had the pleasure of collaborating with over 100 different researchers in academia, national laboratories, government agencies, and industry.</p>
         <ul class="actions">
 			<li><a href="files/cv.html" class="button icon fa-file">Full CV</a></li>
 		</ul>
         <h2>Education</h2>
         <ul>
             <li><b>Assistant Professor in Chemical Engineering</b>, <i>Purdue University, West Lafayette, IN, USA</i> (2023-Onwards)<br/></li>
+            <li><b>Visiting Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i> (2023-Onwards)<br/>Supervisor: Dr. Davide Venturelli</li>
+            <li><b>Visiting Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i> (2023-Onwards)<br/>Supervisor: Dr. Eleanor Rieffel</li>
             <li><b>Associate Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i> (2021-2023)<br/>Supervisor: Dr. Davide Venturelli</li>
             <li><b>Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i> (2021-2023)<br/>Supervisor: Dr. Eleanor Rieffel</li>
 			<li><b>Ph.D. in Chemical Engineering</b>, <i>Carnegie Mellon University, Pittsburgh, PA, USA</i> (2017-2021)<br/>Advisor: Professor Ignacio E. Grossmann</li>
@@ -36,7 +38,7 @@ banner_color: style1
             <li><b>Undergraduate Research Assistant</b>, <i>Chemical Engineering, Brigham Young University, Provo, UT, USA</i> (2013-2017)</li> -->
 		</ul>
         <h2>Research Interests</h2>
-        <p>Please see <a href="research.html">my research page</a> for a detailed overview of my research vision and activities. Common focus areas are listed below:</p>
+        <p>Please see <a href="research.html">the research page</a> for a detailed overview of the research vision and activities of SECQUOIA. Common focus areas are listed below:</p>
         <ul>
             <li>Nonlinear discrete optimization via advanced hardware with application in Chemical Engineering (<a href="research/example.html">example</a>, etc.)</li>
             <!-- <li>Decision-making under uncertainty (stochastic optimization, <a href="research/rfo.html">random field optimization</a>, etc.)</li>
@@ -49,7 +51,7 @@ banner_color: style1
             <li><a href="research/energy.html">Energy systems</a></li> -->
 		</ul>
         <h2>Teaching</h2>
-        <p>Please visit my <a href="teaching.html">my teaching page</a> for more information on my teaching experience and philosophy. For completeness, the courses he has taught are listed below:</p>
+        <p>Please visit the <a href="teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
         <ul>
             <li>Quantum Integer Programming and Machine Learning</li>
 			<!-- <li>Chemical process modeling</li>
