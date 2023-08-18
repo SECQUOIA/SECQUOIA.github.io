@@ -2,12 +2,12 @@
 title: SECQUOIA
 subtitle: Info
 email: dbernaln@purdue.edu
-description: Systems Engineering Classical and Quantum Optimization for Industrial Applications Research Group at Purdue University
+description: Systems Engineering via Classical and Quantum Optimization for Industrial Applications Research Group at Purdue University
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://SECQUOIA.github.io # the base hostname & protocol for your site
 author: SECQUOIA
 university: Purdue University
-room: Forney Hall of Chemical Engineering, 1060
+room: Forney Hall of Chemical Engineering, G027C
 street_address: 480 Stadium Mall Drive
 city: West Lafayette
 state: IN
@@ -30,7 +30,7 @@ socials:
   GitHub: https://github.com/bernalde
   LinkedIn: https://www.linkedin.com/in/bernalde
   Twitter: https://twitter.com/bernalde
-  # Facebook: https://www.facebook.com/appsparkler
+  # Facebook: https://www.facebook.com/
 
 # build settings
 markdown: kramdown

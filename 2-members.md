@@ -14,7 +14,7 @@ banner_color: style2
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Post-doc</h2>
+			<h2>Post-doctoral fellow</h2>
 		</header>
 	</div>
 </section>
@@ -37,7 +37,7 @@ banner_color: style2
 	<ul class="icons">
 		<li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
         <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-		<li><a href="mailto:peng_zedong@126.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+		<li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 	</ul>
 				<!-- <ul class="actions">
 					<li><a href="generic.html" class="button">Learn more</a></li>
@@ -83,7 +83,7 @@ banner_color: style2
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Ph.D</h2>
+			<h2>Doctoral Student</h2>
 		</header>
 	</div>
 </section>
@@ -106,6 +106,38 @@ banner_color: style2
 					<li><a href="https://github.com/AlbertLee125" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 				<li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> 
+</section>
+
+<!-- Five -->
+<section id="five">
+	<div class="inner">
+		<header class="major">
+			<h2>Principal Investigator</h2>
+		</header>
+	</div>
+</section>
+
+<!-- Six -->
+<section id="six" class="spotlights">
+	<section>
+		<a href="generic.html" class="image">
+			<img src="assets/images/members/DavidBernal.jpg" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>David E. Bernal Neira</h3>
+				</header>
+				<li>Joined in 2023 Fall.</li>
+				<li><a href="professor.html">Main information</a>.</li>
+				<ul class="icons">
+					<li><a href="https://github.com/bernalde" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/bernalde/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 			</div>
 		</div>

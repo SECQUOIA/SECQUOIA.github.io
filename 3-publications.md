@@ -13,12 +13,12 @@ banner_color: style3
 		<header class="major">
 			<h2>Overview</h2>
 		</header>
-		<p>Here are all my scholarly publications. To date these include:</p>
+		<p>Here are all of our scholarly publications. To date these include:</p>
         <ul>
 		    <li>22 completed journal articles</li>
             <li>5 completed peer-reviewed conference papers</li>
 		</ul>
-        <p>The full pubication lists are provided below.</p>
+        <p>The full publication lists are provided below.</p>
 		{% include publications style="apa" link=true %}
 	</div>
 </section>
