@@ -2,7 +2,7 @@
 layout: page
 title: Principal Investigator
 image: assets/images/conference.jpg
-description: Prof. Bernal
+description: Prof. Bernal Neira
 nav-menu: true
 banner_color: style1
 ---
@@ -38,9 +38,9 @@ banner_color: style1
             <li><b>Undergraduate Research Assistant</b>, <i>Chemical Engineering, Brigham Young University, Provo, UT, USA</i> (2013-2017)</li> -->
 		</ul>
         <h2>Research Interests</h2>
-        <p>Please see <a href="research.html">the research page</a> for a detailed overview of the research vision and activities of SECQUOIA. Common focus areas are listed below:</p>
+        <p>Please see <a href="5-research.html">the research page</a> for a detailed overview of the research vision and activities of SECQUOIA. Common focus areas are listed below:</p>
         <ul>
-            <li>Nonlinear discrete optimization via advanced hardware with application in Chemical Engineering (<a href="research/example.html">example</a>, etc.)</li>
+            <li>Nonlinear discrete optimization via advanced hardware with application in Chemical Engineering (<a href="5-research/example.html">example</a>, etc.)</li>
             <!-- <li>Decision-making under uncertainty (stochastic optimization, <a href="research/rfo.html">random field optimization</a>, etc.)</li>
 			<li>Data-science (<a href="research/neuralops.html">neural operators</a>, convolutional neural networks, etc.)</li>
 			<li>Infinite-dimensional optimization (i.e., <a href="research/infiniteopt.html">InfiniteOpt</a>)</li>
@@ -51,7 +51,7 @@ banner_color: style1
             <li><a href="research/energy.html">Energy systems</a></li> -->
 		</ul>
         <h2>Teaching</h2>
-        <p>Please visit the <a href="teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
+        <p>Please visit the <a href="6-teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
         <ul>
             <li>Quantum Integer Programming and Machine Learning</li>
 			<!-- <li>Chemical process modeling</li>
@@ -70,7 +70,7 @@ banner_color: style1
             <li><b>President’s List</b>, Yakima Valley Community College (2011 – 2012)</li> -->
 		</ul>
         <h2>Publications</h2>
-        <p>Please visit <a href="publications.html"> the publication page</a>.</p>
+        <p>Please visit <a href="3-publications.html"> the publication page</a>.</p>
         <h2>Selected Presentations/Seminars</h2>
         <ul>
             <!-- TODO -->
