@@ -1,7 +1,7 @@
 ---
 title: Members
 layout: page
-description: 'Post-doc, Ph.D, master and undergraduate students.'
+description: 'SECQUOIA Group Members.'
 image: assets/images/team.jpeg
 nav-menu: true
 banner_color: style2
