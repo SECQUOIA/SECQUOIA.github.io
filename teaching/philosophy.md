@@ -9,5 +9,5 @@ banner_color: style1
 ---
 
 <ul class="actions">
-    <li><a href="/teaching.html#philosophy" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
+    <li><a href="/6-teaching.html#philosophy" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
 </ul>
