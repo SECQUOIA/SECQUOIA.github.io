@@ -146,6 +146,40 @@ banner_color: style2
 	</section> 
 </section>
 
+<!-- Nine -->
+<section id="nine">
+	<div class="inner">
+		<header class="major">
+			<h2>Visiting Scholar</h2>
+		</header>
+	</div>
+</section>
+
+<!-- Ten -->
+<section id="ten" class="spotlights">
+	<section>
+		<a href="generic.html" class="image">
+			<img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Andres F. Cabeza</h3>
+				</header>
+				<li>Joined in 2023 Fall.</li>
+				<li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
+				<li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2022.</li>
+				<p><b>Research topic</b>: Process Systems Engineering, Process Intensification</p>
+				<ul class="icons">
+					<li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> 
+</section>
+
 <!-- Five -->
 <section id="five">
 	<div class="inner">
