@@ -201,7 +201,7 @@ banner_color: style2
 					<h3>David E. Bernal Neira</h3>
 				</header>
 				<li>Joined in 2023 Fall.</li>
-				<li><a href="1-professor.html">Main information</a>.</li>
+				<li><a href="1-bernalde.html">Main information</a>.</li>
 				<ul class="icons">
 					<li><a href="https://github.com/bernalde" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="https://www.linkedin.com/in/bernalde/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
