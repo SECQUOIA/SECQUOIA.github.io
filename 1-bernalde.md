@@ -12,30 +12,23 @@ banner_color: style1
         <header class="major">
 			<h2>David E. Bernal Neira</h2>
 		</header>
-		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in the application of mathematical and computer science tools to address problems relevant to science and engineering, for example physics and chemical, process, and energy systems engineering. In particular, he works in the fields of nonlinear discrete optimization, where besides applications he has been working in theory, algorithms, and software. He has been involved in research and teaching related to this topics for over a decade, with a recent incursion in the field of Quantum Computing. He is currently a research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). By today, he has co-authored more than 20 papers in indexed journals, several software packages for optimization and quantum computing, more than 50 presentations and seminars in the U.S. and internationally, co-teaching more than 5 different classes included one he co-designed (on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a>), and have had the pleasure of collaborating with over 100 different researchers in academia, national laboratories, government agencies, and industry.</p>
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He is currently a visiting research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given more than 50 presentations and seminars in the United States of America and internationally, co-taught more than five different classes including one he co-designed (on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a>), and have had the pleasure of collaborating with over a hundred different researchers in academia, national laboratories, government agencies, and industry.</p>
         <ul class="actions">
 			<li><a href="files/cv.html" class="button icon fa-file">Full CV</a></li>
 		</ul>
+        <h2>Affiliations</h2>
+        <ul>
+            <li><b>Principal Investigator of <a href="index.html">SECQUOIA</a></b>, <i>Purdue University, West Lafayette, IN, USA</i><br/></li>
+            <li><b>Assistant Professor in Chemical Engineering</b>, <i>Purdue University, West Lafayette, IN, USA</i><br/></li>
+            <li><b>Visiting Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i><br/>Supervisor: Dr. Davide Venturelli</li>
+            <li><b>Visiting Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i><br/>Supervisor: Dr. Eleanor Rieffel</li>
+		</ul>
         <h2>Education</h2>
         <ul>
-            <li><b>Assistant Professor in Chemical Engineering</b>, <i>Purdue University, West Lafayette, IN, USA</i> (2023-Onwards)<br/></li>
-            <li><b>Visiting Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i> (2023-Onwards)<br/>Supervisor: Dr. Davide Venturelli</li>
-            <li><b>Visiting Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i> (2023-Onwards)<br/>Supervisor: Dr. Eleanor Rieffel</li>
-            <li><b>Associate Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i> (2021-2023)<br/>Supervisor: Dr. Davide Venturelli</li>
-            <li><b>Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i> (2021-2023)<br/>Supervisor: Dr. Eleanor Rieffel</li>
 			<li><b>Ph.D. in Chemical Engineering</b>, <i>Carnegie Mellon University, Pittsburgh, PA, USA</i> (2017-2021)<br/>Advisor: Professor Ignacio E. Grossmann</li>
 			<li><b>B.Sc. in Physics</b>, <i>Universidad de los Andes, Bogota, Colombia</i> (2011-2018)<br/> Advisor: Professor Jaime Forero</li>
 			<li><b>M.Sc. in Chemical Engineering</b>, <i>Universidad de los Andes, Bogota, Colombia</i> (2014-2016)<br/> Advisor: Professor Jorge Mario Gomez</li>
 			<li><b>B.Sc. in Chemical Engineering</b>, <i>Universidad de los Andes, Bogota, Colombia</i> (2010-2014)<br/> Advisor: Professor Jorge Mario Gomez</li>
-		</ul>
-        <h2>Research Experience</h2>
-        <ul>
-            <li><b>In Construction</b>, <i>Chemical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA</i> (2017-2022)</li>
-            <!-- <li><b>Post-Doctoral Associate</b>, <i>Chemical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA</i> (2022-Present)</li>
-			<li><b>Graduate Research Assistant</b>, <i>Chemical and Biological Engineering, University of Wisconsin-Madison, Madison, WI, USA</i> (2017-2022)</li>
-			<li><b>Intern</b>, <i>Differentiating Technologies, ExxonMobil Research and Engineering, Spring, TX, USA</i> (2020)</li>
-            <li><b>Intern</b>, <i>Optimization and Control, Pacific Northwest National Laboratory, Richland, WA, USA</i> (2019)</li>
-            <li><b>Undergraduate Research Assistant</b>, <i>Chemical Engineering, Brigham Young University, Provo, UT, USA</i> (2013-2017)</li> -->
 		</ul>
         <h2>Research Interests</h2>
         <p>Please see <a href="5-research.html">the research page</a> for a detailed overview of the research vision and activities of SECQUOIA. Common focus areas are listed below:</p>
