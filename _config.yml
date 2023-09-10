@@ -27,9 +27,9 @@ tiles-count: 8
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/bernalde
+  GitHub: https://github.com/SECQOUIA
   LinkedIn: https://www.linkedin.com/in/bernalde
-  Twitter: https://twitter.com/bernalde
+  # Twitter: https://twitter.com/bernalde
   # Facebook: https://www.facebook.com/
 
 # build settings
