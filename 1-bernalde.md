@@ -12,7 +12,9 @@ banner_color: style1
         <header class="major">
 			<h2>David E. Bernal Neira</h2>
 		</header>
-		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He is currently a visiting research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given more than 50 presentations and seminars in the United States of America and internationally, co-taught more than five different classes including one he co-designed (on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a>), and have had the pleasure of collaborating with over a hundred different researchers in academia, national laboratories, government agencies, and industry.</p>
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He is currently a visiting research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given more than 50 presentations and seminars in the United States of America and internationally, co-taught more than five different classes including one he co-designed (on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a>), and have had the pleasure of collaborating with over a hundred different researchers in academia, national laboratories, government agencies, and industry.
+<a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Link to his profile</a> at Purdue University.
+</p>
         <ul class="actions">
 			<li><a href="files/cv.html" class="button icon fa-file">Full CV</a></li>
 		</ul>
@@ -44,7 +46,7 @@ banner_color: style1
             <li><a href="research/energy.html">Energy systems</a></li> -->
 		</ul>
         <h2>Teaching</h2>
-        <p>Please visit the <a href="6-teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
+        <p>Please visit the <a href="7-teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
         <ul>
             <li>Quantum Integer Programming and Machine Learning</li>
 			<!-- <li>Chemical process modeling</li>
@@ -63,13 +65,11 @@ banner_color: style1
             <li><b>President’s List</b>, Yakima Valley Community College (2011 – 2012)</li> -->
 		</ul>
         <h2>Publications</h2>
-        <p>Please visit <a href="3-publications.html"> the publication page</a>.</p>
+        <p>Please visit <a href="4-publications.html"> the publication page</a>.</p>
         <h2>Selected Presentations/Seminars</h2>
         <ul>
             <!-- TODO -->
-            <!-- <li>"An Introduction to Process Systems Engineering with Applications in Energy and Disease Control", <i>University International Seminar at Universidad Nacional Micaela Bastidas de Apurímac</i>, Apurímac, Peru (2022)</li>
-            <li>"Event Constrained Optimization", <i>The American Institute of Chemical Engineering (AICHE) Annual Meeting. Computing & Systems Technology Division Plenary</i>, Phoenix, AZ, USA (2022)</li>
-            <li>"Modeling Infinite-Dimensional Optimization Problems with InfiniteOpt.jl", <i>UW-Madison Chemical and Biological Engineering Computational Seminar Series</i>, Madison, WI, USA (2022)</li> -->
+            <!-- <li>"TITLE", <i>What, institution</i>, Where (When)</li>-->
 		</ul>
 	</div>
 </section>
