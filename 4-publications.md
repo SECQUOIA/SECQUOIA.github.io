@@ -13,12 +13,8 @@ banner_color: style3
 		<header class="major">
 			<h2>Overview</h2>
 		</header>
-		<p>Here are all of our scholarly publications. To date these include:</p>
-        <ul>
-		    <li>22 completed journal articles</li>
-            <li>5 completed peer-reviewed conference papers</li>
-		</ul>
-        <p>The full publication lists are provided below.</p>
+		<p>Here is a list of our scholarly publications.</p>
+        <p>Notice that the most updated list is provided by <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ&hl=en">Google Scholar</a>.</p>
 		{% include publications style="apa" link=true %}
 	</div>
 </section>

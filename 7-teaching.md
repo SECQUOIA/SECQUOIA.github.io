@@ -13,7 +13,7 @@ banner_color: style6
 		<header class="major">
 			<h2>Overview</h2>
 		</header>
-		<p> Teaching is arguably the avenue through which professors have the most influence and impact on society; it is the primary medium to train and mentor the next generation of engineers to tackle the grand engineering challenges of the 21<sup>st</sup> century such as climate change, sustainable energy production, sufficient food supply, and better engineered medicines. Fueled by my passion for mentoring and teaching, I have consistently sought out instruction opportunities throughout my professional career.</p>
+		<p> Teaching is arguably the avenue through which professors have the most influence and impact on society; it is the primary medium to train and mentor the next generation of engineers to tackle the grand engineering challenges of the 21<sup>st</sup> century, such as climate change, sustainable energy production, sufficient food supply, and better-engineered medicines. Fueled by my passion for mentoring and teaching, I have consistently sought instruction opportunities throughout my professional career.</p>
 	<ul class="actions">
 		<li><a href="files/teaching.html" class="button icon fa-file">Teaching Statement</a></li>
 	</ul>
