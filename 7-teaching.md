@@ -31,7 +31,7 @@ banner_color: style6
 				<header class="major">
 					<h3>Teaching Philosophy</h3>
 				</header>
-				<p> My teaching philosophy focuses on promoting a <b>growth mindset</b> in an <b>active learning</b> environment that is <b>inclusive</b> for all.</p>
+				<p> The teaching philosophy from SECQUOIA focuses on promoting a <b>growth mindset</b> in an <b>active learning</b> environment that is <b>inclusive</b> for all.</p>
 				<ul class="actions">
 					<li><a href="teaching/philosophy.html" class="button">Learn more</a></li>
 				</ul>
@@ -47,7 +47,7 @@ banner_color: style6
 				<header class="major">
 					<h3>Courses</h3>
 				</header>
-				<p>Information on courses I have taught and am teaching</p>
+				<p>Information on courses we have taught or are teaching</p>
 				<ul class="actions">
 					<li><a href="teaching/courses.html" class="button">Learn more</a></li>
 				</ul>
