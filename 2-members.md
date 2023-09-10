@@ -39,6 +39,8 @@ banner_color: style2
         <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 		<li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 	</ul>
+</section>
+
 
 <!-- Three -->
 <section id="three">
