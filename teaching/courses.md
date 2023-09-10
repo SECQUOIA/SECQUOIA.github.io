@@ -13,5 +13,5 @@ At Carnegie Mellon University I designed and co-taught this course that focuses 
 Course website can be found [here](https://SECQUOIA.github.io/QuIPML22/).
 
 <ul class="actions">
-    <li><a href="/6-teaching.html#courses" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
+    <li><a href="/7-teaching.html#courses" class="button icon fa-arrow-left">Go back to Teaching Page</a></li>
 </ul>
