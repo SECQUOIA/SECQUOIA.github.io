@@ -30,7 +30,7 @@ banner_color: style2
 				<header class="major">
 					<h3>Zedong Peng</h3>
 				</header>
-				<li>Joined in 2023 Summer.</li>
+				<li>Joined in Summer 2023.</li>
 				<li>Ph.D., Control Science and Engineering, Zhejiang University, 2021.</li>
                 <p><b>Research topic</b>: Superstructure Optimization, Mixed-Integer Nonlinear Programming.</p>
   	<!-- <h4>Icons</h4> -->
@@ -39,45 +39,6 @@ banner_color: style2
         <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 		<li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 	</ul>
-				<!-- <ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul> -->
-			</div>
-		</div>
-	</section>
-	<!-- <section>
-		<a href="generic.html" class="image">
-			<img src="" alt="" data-position="top center" />
-		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Rhoncus magna</h3>
-				</header>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section>
-		<a href="generic.html" class="image">
-			<img src="" alt="" data-position="25% 25%" />
-		</a>
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Sed nunc ligula</h3>
-				</header>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section> -->
-</section>
 
 <!-- Three -->
 <section id="three">
@@ -99,7 +60,7 @@ banner_color: style2
 				<header class="major">
 					<h3>Albert Lee</h3>
 				</header>
-				<li>Joined in 2022 Fall.</li>
+				<li>Joined in Fall 2022.</li>
 				<li>BEng, Chemical Engineering, Korea University, 2021.</li>
 				<p><b>Research topic</b>: Superstructure Optimization, Generalized Disjunctive Programming.</p>
 				<ul class="icons">
@@ -116,7 +77,7 @@ banner_color: style2
 <section id="seven">
 	<div class="inner">
 		<header class="major">
-			<h2>Visiting Scholar</h2>
+			<h2>Visiting Scholars</h2>
 		</header>
 	</div>
 </section>
@@ -147,16 +108,7 @@ banner_color: style2
 </section>
 
 <!-- Nine -->
-<section id="nine">
-	<div class="inner">
-		<header class="major">
-			<h2>Visiting Scholar</h2>
-		</header>
-	</div>
-</section>
-
-<!-- Ten -->
-<section id="ten" class="spotlights">
+<section id="nine" class="spotlights">
 	<section>
 		<a href="generic.html" class="image">
 			<img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
@@ -180,8 +132,8 @@ banner_color: style2
 	</section> 
 </section>
 
-<!-- Five -->
-<section id="five">
+<!-- 98 -->
+<section id="ninety-eight">
 	<div class="inner">
 		<header class="major">
 			<h2>Principal Investigator</h2>
@@ -189,8 +141,8 @@ banner_color: style2
 	</div>
 </section>
 
-<!-- Six -->
-<section id="six" class="spotlights">
+<!-- 99 -->
+<section id="ninety-nine" class="spotlights">
 	<section>
 		<a href="generic.html" class="image">
 			<img src="assets/images/members/DavidBernal.jpg" alt="" data-position="center center" />
@@ -200,7 +152,7 @@ banner_color: style2
 				<header class="major">
 					<h3>David E. Bernal Neira</h3>
 				</header>
-				<li>Joined in 2023 Fall.</li>
+				<li>Started unofficially in Fall 2021, joined in Fall 2023.</li>
 				<li><a href="1-bernalde.html">Main information</a>.</li>
 				<ul class="icons">
 					<li><a href="https://github.com/bernalde" class="icon fa-github"><span class="label">Github</span></a></li>
