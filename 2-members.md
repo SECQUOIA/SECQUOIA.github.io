@@ -77,6 +77,30 @@ banner_color: style2
 	</section> 
 </section>
 
+<section id="four" class="spotlights">
+	<section>
+		<a href="generic.html" class="image">
+			<img src="assets/images/members/YirangPark.jpg" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Yirang Park</h3>
+				</header>
+				<li>Joined in Fall 2023.</li>
+				<li>BSc, Chemical Engineering, University of California, Berkeley, 2015.</li>
+				<li>Professional MSc, Chemical Engineering, Purdue University, 2019.</li>
+				<p><b>Research topic</b>: Pharmaceutical Process Synthesis and Optimization.</p>
+				<ul class="icons">
+					<li><a href="https://github.com/parkyr" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/yirangp/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="mailto:park407@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> 
+</section>
+
 <!-- Five -->
 <section id="five">
 	<div class="inner">
