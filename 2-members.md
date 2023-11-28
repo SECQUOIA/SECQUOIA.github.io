@@ -77,6 +77,31 @@ banner_color: style2
 	</section> 
 </section>
 
+<section id="four" class="spotlights">
+	<section>
+		<a href="generic.html" class="image">
+			<img src="assets/images/members/Anurag_Ramesh.jpeg" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Anurag Ramesh</h3>
+				</header>
+				<li>Joined in Fall 2023</li>
+				<li>BE, Chemical Engineering, Birla Insitute of Technology and Science Pilani, 2023.</li>
+				<p><b>Research topic</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry
+![image](https://github.com/anurag-r20/SECQUOIA.github.io/assets/68232146/813709d7-4cb4-404e-b111-238f493128b8)
+.</p>
+				<ul class="icons">
+					<li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="www.linkedin.com/in/anurag-r" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</section> 
+</section>
+
 <!-- Five -->
 <section id="five">
 	<div class="inner">
