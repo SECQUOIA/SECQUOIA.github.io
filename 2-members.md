@@ -89,9 +89,7 @@ banner_color: style2
 				</header>
 				<li>Joined in Fall 2023</li>
 				<li>BE, Chemical Engineering, Birla Insitute of Technology and Science Pilani, 2023.</li>
-				<p><b>Research topic</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry
-![image](https://github.com/anurag-r20/SECQUOIA.github.io/assets/68232146/813709d7-4cb4-404e-b111-238f493128b8)
-.</p>
+				<p><b>Research topic</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry.</p>
 				<ul class="icons">
 					<li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="www.linkedin.com/in/anurag-r" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
