@@ -56,7 +56,7 @@ banner_color: style2
 					<h3>Amandeep Singh Bhatia</h3>
 				</header>
 				<li>Joined in Jan 2024.</li>
-				<li>Ph.D., Computer Science and Engineering, Thaparg University, 2020.</li>
+				<li>Ph.D., Computer Science and Engineering, Thapar University, 2020.</li>
                 <p><b>Research topic</b>: Quantum/classical machine learning, Quantum federated learning, Quantum algorithms, Optimization, Quantum Tensor Networks.</p>
   	<!-- <h4>Icons</h4> -->
 	<ul class="icons">
