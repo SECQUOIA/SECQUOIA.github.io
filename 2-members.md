@@ -44,6 +44,31 @@ banner_color: style2
 	</section>
 </section>
 
+<!-- eighteight -->
+<section id="eigheight" class="spotlights">
+	<section>
+		<a href="generic.html" class="image">
+			<img src="assets/images/members/AmandeepBhatia.jpg" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Amandeep Singh Bhatia</h3>
+				</header>
+				<li>Joined in Jan 2024.</li>
+				<li>Ph.D., Computer Science and Engineering, Thaparg University, 2020.</li>
+                <p><b>Research topic</b>: Quantum/classical machine learning, Quantum federated learning, Quantum algorithms, Optimization, Quantum Tensor Networks.</p>
+  	<!-- <h4>Icons</h4> -->
+	<ul class="icons">
+		<li><a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+		<li><a href="mailto:bhatia87@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+	</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
 <!-- Three -->
 <section id="three">
 	<div class="inner">
