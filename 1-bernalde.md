@@ -12,7 +12,7 @@ banner_color: style1
         <header class="major">
 			<h2>David E. Bernal Neira</h2>
 		</header>
-		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He is currently a visiting research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given more than 50 presentations and seminars in the United States of America and internationally, co-taught more than five different classes including one he co-designed (on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a>), and have had the pleasure of collaborating with over a hundred different researchers in academia, national laboratories, government agencies, and industry.
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor at the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He is currently a visiting research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given several presentations and seminars in the United States of America and internationally, taught different classes including one on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a> (which he co-designed), and have had the pleasure of collaborating with many different researchers in academia, national laboratories, government agencies, and industry.
 <a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478">Link to his profile</a> at Purdue University.
 </p>
         <ul class="actions">
@@ -33,44 +33,42 @@ banner_color: style1
 			<li><b>B.Sc. in Chemical Engineering</b>, <i>Universidad de los Andes, Bogota, Colombia</i> (2010-2014)<br/> Advisor: Professor Jorge Mario Gomez</li>
 		</ul>
         <h2>Research Interests</h2>
-        <p>Please see <a href="5-research.html">the research page</a> for a detailed overview of the research vision and activities of SECQUOIA. Common focus areas are listed below:</p>
+        <!-- <p>Please see <a href="5-research.html">the research page</a> for a detailed overview of the research vision and activities of SECQUOIA.</p> -->
+        <p> In general, a good summary of our work is that we work in Nonlinear discrete optimization via advanced hardware with application in Chemical Engineering. Common focus areas are listed below:</p>
         <ul>
-            <li>Nonlinear discrete optimization via advanced hardware with application in Chemical Engineering (<a href="5-research/example.html">example</a>, etc.)</li>
-            <!-- <li>Decision-making under uncertainty (stochastic optimization, <a href="research/rfo.html">random field optimization</a>, etc.)</li>
-			<li>Data-science (<a href="research/neuralops.html">neural operators</a>, convolutional neural networks, etc.)</li>
-			<li>Infinite-dimensional optimization (i.e., <a href="research/infiniteopt.html">InfiniteOpt</a>)</li>
-            <li>Advanced control</li>
-            <li><a href="research/compvis.html">Computer vision for process control</a></li>
-            <li><a href="research/ree.html">Rare-earth element recovery</a></li>
-            <li><a href="research/wildfire.html">Wildfire mitigation</a></li>
-            <li><a href="research/energy.html">Energy systems</a></li> -->
+            <li>Mixed-integer nonlinear programming algorithms, software, and theory</li>
+            <li>Quantum computing applications for optimization and chemistry</li>
+            <li>Study of non-conventional hardware for computing and optimization</li>
+            <li>Distributed (quantum) computing and federated learning</li>
+            <li>Process design, synthesis, operations, and control via optimization methods</li>
+            <li>Applications of process systems engineering techniques for the pharmaceutical, oil and gas, chemicals, and other industries</li>
+            <li>Optimization-driven process engineering for a sustainable future</li>
+            <!-- <li>(<a href="5-research/example.html">example</a>, etc.) -->
 		</ul>
         <h2>Teaching</h2>
         <p>Please visit the <a href="7-teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
         <ul>
-            <li>Quantum Integer Programming and Machine Learning</li>
-			<!-- <li>Chemical process modeling</li>
-			<li>Organic chemistry</li>
-            <li>Introduction to Julia, JuMP.jl, and InfiniteOpt.jl</li> -->
+            <li>Process Dynamics and Control - Purdue CHE456 Fall 2023</li>
+            <li>Quantum Integer Programming and Machine Learning - CMU 47-779 / 47-785, 18-819F <a href="https://bernalde.github.io/QuIPML/">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/">Fall 2022</a>, Fall 2023</li>
+            <li>Quantum Integer Programming - CMU 47-779 <a href="https://bernalde.github.io/QuIP/">Fall 2020</a></li>
 		</ul>
         <h2>Awards</h2>
         <ul>
-            <li><b>In construction</b></li>
-            <!-- <li><b>Plenary Speaker</b>, Computing & Systems Technology Division Plenary Session of the AICHE Annual Meeting (2022)</li>
-			<li><b>Undergraduate Research Fellowship</b>, National Science Foundation (2016)</li>
-            <li><b>Full Academic Scholarship</b>, Brigham Young University (2013 – 2017)</li>
-            <li><b>Academic Scholarship</b>, Brigham Young University Chemical Engineering Department (2012)</li>
-            <li><b>Masonic Academic Achievement Scholarship</b>, Yakima Masonic Lodge (2012))</li>
-            <li><b>Eagle Scout</b>, Boy Scouts of America (2012)</li>
-            <li><b>President’s List</b>, Yakima Valley Community College (2011 – 2012)</li> -->
+            <li><b>Best talk award</b>, Quantum Computing Applications in Chemical and Biochemical Engineering Workshop (2022)</li>
+			<li><b>Finalist</b>, AIChE CAST Directors’ Student Presentation Awards (2020)</li>
+            <li><b>Mark Dennis Karl Outstanding Teaching Assistant Award</b>, Chemical Engineering Department - Carnegie Mellon University (2019)</li>
+            <li><b>Cum Laude in Chemical Engineering</b>, Universidad de los Andes (2014)</li>
+            <li><b>Alberto Magno Scholarship</b>, Universidad de los Andes (2010-2014)</li>
+            <li><b>Valedictorian</b>, Gimnasio Británico (2009)</li>
+            <li><b>First place in the Colombian Physics Olympiad, Superior level</b>, Universidad Antonio Nariño (2007)</li>
 		</ul>
         <h2>Publications</h2>
         <p>Please visit <a href="4-publications.html"> the publication page</a>.</p>
-        <h2>Selected Presentations/Seminars</h2>
+        <!-- <h2>Selected Presentations/Seminars</h2>
         <ul>
-            <!-- TODO -->
-            <!-- <li>"TITLE", <i>What, institution</i>, Where (When)</li>-->
-		</ul>
+            TODO
+            <li>"TITLE", <i>What, institution</i>, Where (When)</li>
+		</ul> -->
 	</div>
 </section>
 
