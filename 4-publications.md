@@ -9,14 +9,14 @@ banner_color: style3
 
 <!-- One -->
 <section id="overview">
-	<div class="inner">
-		<header class="major">
-			<h2>Overview</h2>
-		</header>
-		<p>Here is a list of our scholarly publications.</p>
+ <div class="inner">
+  <header class="major">
+   <h2>Overview</h2>
+  </header>
+  <p>Here is a list of our scholarly publications.</p>
         <p>Notice that the most updated list is provided by <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ&hl=en">Google Scholar</a>.</p>
-		{% include publications style="apa" link=true %}
-	</div>
+  {% include publications style="apa" link=true %}
+ </div>
 </section>
 
 <!-- Two -->
@@ -69,9 +69,9 @@ banner_color: style3
 </section> -->
 
 <section>
-	<div class="inner">
-		<ul class="actions">
-    		<li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
-		</ul>
-	</div>
+ <div class="inner">
+  <ul class="actions">
+      <li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
+  </ul>
+ </div>
 </section>
