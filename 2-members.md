@@ -69,6 +69,30 @@ banner_color: style2
  </section>
 </section>
 
+<section id="two" class="spotlights">
+    <section>
+     <a href="generic.html" class="image">
+      <img src="assets/images/members/CarolinaTristan.jpg" alt="" data-position="center center" />
+     </a>
+     <div class="content">
+      <div class="inner">
+       <header class="major">
+        <h3>Carolina Tristan</h3>
+       </header>
+       <li>Joined in Jan 2024.</li>
+       <li>Ph.D., Chemical Engineering, University of Cantabria, 2023.</li>
+                   <p><b>Research topic</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
+      <!-- <h4>Icons</h4> -->
+    <ul class="icons">
+     <li><a href="https://github.com/tristantc" class="icon fa-github"><span class="label">Github</span></a></li>
+           <!-- <li><a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li> -->
+     <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+     </div>
+    </div>
+   </section>
+</section>
+
 <!-- Three -->
 <section id="three">
  <div class="inner">
