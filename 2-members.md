@@ -85,7 +85,7 @@ banner_color: style2
       <!-- <h4>Icons</h4> -->
     <ul class="icons">
      <li><a href="https://github.com/tristantc" class="icon fa-github"><span class="label">Github</span></a></li>
-           <!-- <li><a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li> -->
+           <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
      </div>
