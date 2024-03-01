@@ -234,7 +234,31 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- Eight -->
+<section id="eight" class="spotlights">
+ <section>
+  <a href="generic.html" class="image">
+   <img src="assets/images/members/JuanRodriguez.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Juan S. Rodríguez F.</h3>
+    </header>
+    <li>Joined in Spring 2024.</li>
+    <li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2017.</li>
+    <li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2020.</li>
+    <p><b>Research topic</b>: Supply chain optimization. Metaheuristic optimization algorithms</p>
+    <ul class="icons">
+     <li><a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="mailto:rodr1200@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
