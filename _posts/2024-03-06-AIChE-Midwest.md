@@ -15,7 +15,7 @@ Pedro Maciel Xavier presented his poster on the QUBO.jl Julia environment. Addit
 
 We thank all who joined us, participated in our sessions, and contributed to the discussions. Your engagement is what makes events like AIChE2023 genuinely memorable. Let's keep pushing the boundaries of chemical engineering together!
 
-#AIChEHighlights #AIChE2023 #PSE #Pyomo #Julia
+#AIChE_Midwest #AIChE2024 #PSE #Pyomo #GDP
 
 <div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/AIChE-2023.jpeg %}" alt=""/> </div>
 
