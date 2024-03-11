@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 2024 AIChE Midwest Regional Conference
-description: 'Reflecting on a Successful AIChE2024!'
-image: assets/images/posts/AIChE-2023.jpeg
+description: 'Reflecting on a Successful 16th AIChE Midwest Regional Conference!'
+image: assets/images/posts/AIChEMidwest-2024.jpg
 ---
 
 We are thrilled to share highlights from our dynamic participation at AIChE2023 in Orlando this 2023. Our team's presence was felt across multiple sessions, showcasing our commitment to innovation and collaboration in chemical engineering.
@@ -15,9 +15,9 @@ Pedro Maciel Xavier presented his poster on the QUBO.jl Julia environment. Addit
 
 We thank all who joined us, participated in our sessions, and contributed to the discussions. Your engagement is what makes events like AIChE2023 genuinely memorable. Let's keep pushing the boundaries of chemical engineering together!
 
-#AIChE_Midwest #AIChE2024 #PSE #Pyomo #GDP
+#AIChE_Midwest #AIChE2024 #PSE #GDP
 
-<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/AIChE-2023.jpeg %}" alt=""/> </div>
+<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/AIChEMidwest-2024.jpg %}" alt=""/> </div>
 
 <ul class="actions">
     <li><a href="/3-news.html" class="button icon fa-arrow-left">Back</a></li>
