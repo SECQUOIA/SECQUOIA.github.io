@@ -7,7 +7,7 @@ image: assets/images/posts/AIChEMidwest-2024.jpg
 
 We are thrilled to share highlights from our dynamic participation at AIChE Midwest Regional Conference in Chicago this 2024. Our team's presence was felt across multiple sessions, showcasing our contribution to innovation and collaboration in chemical engineering.
 
-Carolina Tristan
+Carolina Tristán discussed her approach to implementing disjunctive programming to optimize the design for producing renewable electricity from salinity gradients through reverse electrodialysis; a groundbreaking approach to achieving sustainability in the water-energy nexus.
 
 Albert Lee's first debut on the AIChE was a success. His presentation on the Logic-based Discrete-Steepest Descent Algorithm (LD-SDA) for solving Generalized Disjunctive Programming (GDP) was well received.
 
