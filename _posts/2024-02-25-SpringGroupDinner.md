@@ -9,7 +9,7 @@ The first SEQUOIA dinner of the year has taken place! The SEQUOIA members have r
 
 With this meeting we start a new stage of our workgroup research labor. Best of wishes to all our members!
 
-<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/GroupDinner.jpeg %}" alt=""/> </div>
+<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/2024_summer_group_dinner.jpg %}" alt=""/> </div>
 
 <br></br>
 
