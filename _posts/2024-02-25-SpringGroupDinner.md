@@ -11,7 +11,7 @@ With this meeting we start a new stage of our workgroup research labor. Best of 
 
 <div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/2024_summer_group_dinner.jpg %}" alt=""/> </div>
 
-<br></br>
+<br>
 
 <ul class="actions">
     <li><a href="/3-news.html" class="button icon fa-arrow-left">Back</a></li>
