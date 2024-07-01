@@ -43,6 +43,7 @@ banner_color: style2
   <li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
         <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
   <li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+  <li><a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>ad
  </ul>
    </div>
   </div>
