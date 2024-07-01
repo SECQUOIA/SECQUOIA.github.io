@@ -267,6 +267,7 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="mailto:rodr1200@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
