@@ -93,6 +93,31 @@ banner_color: style2
    </section>
 </section>
 
+
+<section id="two" class="spotlights">
+    <section>
+     <a href="generic.html" class="image">
+      <img src="assets/images/members/HamtaBardool.jpg" alt="" data-position="center center" />
+     </a>
+     <div class="content">
+      <div class="inner">
+       <header class="major">
+        <h3>Hamta Bardool</h3>
+       </header>
+       <li>Joined in Summer 2024.</li>
+       <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
+                   <p><b>Research topic</b>: Optimization,Process System Engineering, and Catalyst.</p>
+      <!-- <h4>Icons</h4> -->
+    <ul class="icons">
+     <li><a href="https://github.com/Hamtabardool" class="icon fa-github"><span class="label">Github</span></a></li>
+           <li><a href="www.linkedin.com/in/hamta-bardool-6ba418116/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+     </div>
+    </div>
+   </section>
+</section>
+
 <!-- Three -->
 <section id="three">
  <div class="inner">
