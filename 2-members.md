@@ -96,6 +96,7 @@ banner_color: style2
      <li><a href="https://github.com/AlbertLee125" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0000-0002-4474-3266" class="icon fa-orcid"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
