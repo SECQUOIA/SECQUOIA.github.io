@@ -174,7 +174,6 @@ banner_color: style2
      <li><a href="https://www.linkedin.com/in/yirangp/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
-
     </ul>
    </div>
   </div>
