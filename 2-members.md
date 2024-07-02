@@ -300,7 +300,8 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://github.com/bernalde" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/bernalde/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
