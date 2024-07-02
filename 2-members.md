@@ -15,19 +15,19 @@ banner_color: style2
 <!-- Main -->
 <div id="main">
 
-<!-- One -->
+<!-- 1 -->
 <section id="one">
  <div class="inner">
   <header class="major">
-   <h2>Post-doctoral fellow</h2>
+   <h2>Post-doctoral fellows</h2>
   </header>
  </div>
 </section>
 
-<!-- Two -->
-<section id="two" class="spotlights">
+<!-- 1.1 -->
+<section id="oneone" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/ZedongPeng.png" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -50,34 +50,10 @@ banner_color: style2
  </section>
 </section>
 
-<!-- eighteight -->
-<section id="eigheight" class="spotlights">
- <section>
-  <a href="generic.html" class="image">
-   <img src="assets/images/members/AmandeepBhatia.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Amandeep Singh Bhatia</h3>
-    </header>
-    <li>Joined in Jan 2024.</li>
-    <li>Ph.D., Computer Science and Engineering, Thapar University, 2020.</li>
-                <p><b>Research topic</b>: Quantum/classical machine learning, Quantum federated learning, Quantum algorithms, Optimization, Quantum Tensor Networks.</p>
-   <!-- <h4>Icons</h4> -->
- <ul class="icons">
-  <li><a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a></li>
-        <li><a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-  <li><a href="mailto:bhatia87@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
- </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<section id="two" class="spotlights">
+<!-- 1.2 -->
+<section id="onetwo" class="spotlights">
     <section>
-     <a href="generic.html" class="image">
+     <a class="image">
       <img src="assets/images/members/CarolinaTristan.jpg" alt="" data-position="center center" />
      </a>
      <div class="content">
@@ -99,19 +75,45 @@ banner_color: style2
    </section>
 </section>
 
+
+<section id="two" class="spotlights">
+    <section>
+     <a href="generic.html" class="image">
+      <img src="assets/images/members/HamtaBardool.jpg" alt="" data-position="center center" />
+     </a>
+     <div class="content">
+      <div class="inner">
+       <header class="major">
+        <h3>Hamta Bardool</h3>
+       </header>
+       <li>Joined in Summer 2024.</li>
+       <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
+                   <p><b>Research topic</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
+      <!-- <h4>Icons</h4> -->
+    <ul class="icons">
+     <li><a href="https://github.com/Hamtabardool" class="icon fa-github"><span class="label">Github</span></a></li>
+           <li><a href="www.linkedin.com/in/hamta-bardool-6ba418116/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+     </div>
+    </div>
+   </section>
+</section>
+
 <!-- Three -->
 <section id="three">
  <div class="inner">
   <header class="major">
-   <h2>Doctoral Student</h2>
+   <h2>Doctoral students</h2>
   </header>
  </div>
 </section>
 
-<!-- Four -->
-<section id="four" class="spotlights">
+<!-- 2.1 -->
+<section id="twoone" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/AlbertJoonLee.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -133,9 +135,10 @@ banner_color: style2
  </section>
 </section>
 
-<section id="four" class="spotlights">
+<!-- 2.2 -->
+<section id="twotwo" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/Anurag_Ramesh.jpeg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -156,9 +159,10 @@ banner_color: style2
  </section>
 </section>
 
-<section id="four" class="spotlights">
+<!-- 2.3 -->
+<section id="twothree" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/Yirang-Park.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -181,19 +185,19 @@ banner_color: style2
  </section>
 </section>
 
-<!-- Five -->
-<section id="five">
+<!-- 3 -->
+<section id="three">
  <div class="inner">
   <header class="major">
-   <h2>Visiting Scholars</h2>
+   <h2>Visiting scholars</h2>
   </header>
  </div>
 </section>
 
-<!-- Six -->
-<section id="six" class="spotlights">
+<!-- 3.1 -->
+<!-- <section id="threeone" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/PedroMacielXavier.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -213,21 +217,12 @@ banner_color: style2
    </div>
   </div>
  </section>
-</section>
-
-<!-- Nine -->
-<!-- <section id="nine">
-	<div class="inner">
-		<header class="major">
-			<h2>Visiting Scholar</h2>
-		</header>
-	</div>
 </section> -->
 
-<!-- Seven -->
-<section id="seven" class="spotlights">
+<!-- 3.2 -->
+<section id="threetwo" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -250,10 +245,10 @@ banner_color: style2
  </section>
 </section>
 
-<!-- Eight -->
-<section id="eight" class="spotlights">
+<!-- 3.3 -->
+<section id="threethree" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a class="image">
    <img src="assets/images/members/JuanRodriguez.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -287,7 +282,7 @@ banner_color: style2
 <!-- 99 -->
 <section id="ninety-nine" class="spotlights">
  <section>
-  <a href="generic.html" class="image">
+  <a href="1-bernalde.html" class="image">
    <img src="assets/images/members/DavidBernal.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
@@ -303,6 +298,47 @@ banner_color: style2
      <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+
+
+<!-- 100 -->
+<section id="one-hundred">
+ <div class="inner">
+  <header class="major">
+   <h2>Alumns</h2>
+  </header>
+ </div>
+</section>
+
+<!-- 101 -->
+<section id="one-hundred-one" class="spotlights">
+ <section>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Postdoctoral fellows</h3>
+    </header>
+      <ul class="icons">
+      <li>2024. Amandeep Singh Bhatia. 
+      <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
+   </div>
+   <div class="inner">
+    <header class="major">
+     <h3>Visiting scholars</h3>
+    </header>
+      <ul class="icons">
+      <li>2023. Pedro Maciel Xavier. Microsoft Research. 
+      <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
    </div>
   </div>
  </section>
