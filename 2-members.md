@@ -7,6 +7,11 @@ nav-menu: true
 banner_color: style2
 ---
 
+<!-- Embedding Font Awesome for ORCID icon -->
+<style>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+</style>
+
 <!-- Main -->
 <div id="main">
 
@@ -38,6 +43,7 @@ banner_color: style2
   <li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
         <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
   <li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+  <li><a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
  </ul>
    </div>
   </div>
@@ -96,6 +102,7 @@ banner_color: style2
      <li><a href="https://github.com/AlbertLee125" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0000-0002-4474-3266" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -145,6 +152,7 @@ banner_color: style2
      <li><a href="https://github.com/parkyr" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/yirangp/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -204,6 +212,7 @@ banner_color: style2
      <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -228,6 +237,7 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="mailto:rodr1200@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
