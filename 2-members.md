@@ -82,7 +82,7 @@ banner_color: style2
        </header>
        <li>Joined in Summer 2024.</li>
        <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
-                   <p><b>Research topic</b>: Optimization,Process System Engineering, and Catalyst.</p>
+                   <p><b>Research topic</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
       <!-- <h4>Icons</h4> -->
     <ul class="icons">
      <li><a href="https://github.com/Hamtabardool" class="icon fa-github"><span class="label">Github</span></a></li>
