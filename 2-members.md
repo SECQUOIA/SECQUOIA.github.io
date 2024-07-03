@@ -313,28 +313,16 @@ banner_color: style2
   <header class="major">
    <h2>Alumns</h2>
   </header>
- </div>
-</section>
-
-<!-- 101 -->
-<section id="one-hundred-one" class="spotlights">
- <section>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Postdoctoral fellows</h3>
-    </header>
+       <h3>Postdoctoral fellows</h3>
+    <!-- </header> -->
       <ul class="icons">
       <li>2024. Amandeep Singh Bhatia. 
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       </li>
       </ul>
-   </div>
-   <div class="inner">
-    <header class="major">
-     <h3>Visiting scholars</h3>
-    </header>
+      <h3>Visiting scholars</h3>
+    <!-- </header> -->
       <ul class="icons">
       <li>2023. Pedro Maciel Xavier. Microsoft Research. 
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
@@ -342,9 +330,8 @@ banner_color: style2
       <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
-   </div>
-  </div>
- </section>
+ </div>
 </section>
+
 
 </div>
