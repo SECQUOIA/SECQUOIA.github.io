@@ -7,6 +7,11 @@ nav-menu: true
 banner_color: style2
 ---
 
+<!-- Embedding Font Awesome for ORCID icon -->
+<style>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+</style>
+
 <!-- Main -->
 <div id="main">
 
@@ -38,6 +43,7 @@ banner_color: style2
   <li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
         <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
   <li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+  <li><a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
  </ul>
    </div>
   </div>
@@ -63,6 +69,7 @@ banner_color: style2
      <li><a href="https://github.com/tristantc" class="icon fa-github"><span class="label">Github</span></a></li>
            <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
      </div>
     </div>
@@ -122,6 +129,7 @@ banner_color: style2
      <li><a href="https://github.com/AlbertLee125" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0000-0002-4474-3266" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -146,6 +154,7 @@ banner_color: style2
      <li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/anuragr20" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0009-0001-8360-8614" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -171,6 +180,7 @@ banner_color: style2
      <li><a href="https://github.com/parkyr" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/yirangp/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -230,6 +240,7 @@ banner_color: style2
      <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -254,6 +265,7 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="mailto:rodr1200@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -285,8 +297,8 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://github.com/bernalde" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/bernalde/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://orcid.org/0000-0002-8308-5016" class="fa-brands fa-orcid"><span class="label">orcid</span></a></li>
      <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -301,37 +313,25 @@ banner_color: style2
   <header class="major">
    <h2>Alumns</h2>
   </header>
- </div>
-</section>
-
-<!-- 101 -->
-<section id="one-hundred-one" class="spotlights">
- <section>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Postdoctoral fellows</h3>
-    </header>
+       <h3>Postdoctoral fellows</h3>
+    <!-- </header> -->
       <ul class="icons">
       <li>2024. Amandeep Singh Bhatia. 
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       </li>
       </ul>
-   </div>
-   <div class="inner">
-    <header class="major">
-     <h3>Visiting scholars</h3>
-    </header>
+      <h3>Visiting scholars</h3>
+    <!-- </header> -->
       <ul class="icons">
       <li>2023. Pedro Maciel Xavier. Microsoft Research. 
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
-   </div>
-  </div>
- </section>
+ </div>
 </section>
+
 
 </div>
