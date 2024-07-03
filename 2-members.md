@@ -69,6 +69,7 @@ banner_color: style2
      <li><a href="https://github.com/tristantc" class="icon fa-github"><span class="label">Github</span></a></li>
            <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
      </div>
     </div>
@@ -153,6 +154,7 @@ banner_color: style2
      <li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/anuragr20" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="https://orcid.org/0009-0001-8360-8614" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
@@ -337,6 +339,7 @@ banner_color: style2
       <li>2023. Pedro Maciel Xavier. Microsoft Research. 
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
    </div>
