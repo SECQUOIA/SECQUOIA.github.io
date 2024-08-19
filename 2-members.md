@@ -93,7 +93,7 @@ banner_color: style2
       <!-- <h4>Icons</h4> -->
     <ul class="icons">
      <li><a href="https://github.com/Hamtabardool" class="icon fa-github"><span class="label">Github</span></a></li>
-           <li><a href="www.linkedin.com/in/hamta-bardool-6ba418116/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+           <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" `class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
