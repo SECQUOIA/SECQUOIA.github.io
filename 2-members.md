@@ -221,6 +221,32 @@ banner_color: style2
  </section>
 </section> -->
 
+<!-- 3.1 -->
+<section id="threeone" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/IagoLealDeFreitas.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Iago Leal de Freitas</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BSc, Applied Mathematics, Federal University of Rio de Janeiro, 2017.</li>
+    <li>MSc, Mathematics, Federal University of Rio de Janeiro, 2019.</li>
+    <p><b>Research topic</b>: Quantum Optimization, Tensor Networks.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/iagoleal" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/iagolealf/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:ilealdef@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 3.2 -->
 <section id="threetwo" class="spotlights">
  <section>
