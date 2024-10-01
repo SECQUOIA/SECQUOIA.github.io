@@ -298,6 +298,29 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 3.4 -->
+<section id="threefour" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/AndreLimaAlambert.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Andre Lima Alambert</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>Undergraduate, Electrical Engineering, University of Sao Paulo.</li>
+    <p><b>Research topic</b>: Optimal Power Flow.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/alimaala2002" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
@@ -357,6 +380,7 @@ banner_color: style2
       </li>
       </ul>
  </div>
+
 </section>
 
 
