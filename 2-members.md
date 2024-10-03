@@ -25,30 +25,6 @@ banner_color: style2
 </section>
 
 <!-- 1.1 -->
-<section id="oneone" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/ZedongPeng.png" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Zedong Peng</h3>
-    </header>
-    <li>Joined in Summer 2023.</li>
-    <li>Ph.D., Control Science and Engineering, Zhejiang University, 2021.</li>
-                <p><b>Research topic</b>: Superstructure Optimization, Mixed-Integer Nonlinear Programming.</p>
-   <!-- <h4>Icons</h4> -->
- <ul class="icons">
-  <li><a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a></li>
-        <li><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-  <li><a href="mailto:peng372@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-  <li><a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
- </ul>
-   </div>
-  </div>
- </section>
-</section>
 
 <!-- 1.2 -->
 <section id="onetwo" class="spotlights">
@@ -248,7 +224,7 @@ banner_color: style2
 </section>
 
 <!-- 3.2 -->
-<section id="threetwo" class="spotlights">
+<!-- <section id="threetwo" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
@@ -271,32 +247,9 @@ banner_color: style2
    </div>
   </div>
  </section>
-</section>
+</section> -->
 
 <!-- 3.3 -->
-<section id="threethree" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/JuanRodriguez.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Juan S. Rodríguez F.</h3>
-    </header>
-    <li>Joined in Spring 2024.</li>
-    <li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2017.</li>
-    <li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2020.</li>
-    <p><b>Research topic</b>: Supply chain optimization. Metaheuristic optimization algorithms</p>
-    <ul class="icons">
-     <li><a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="mailto:rodr1200@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
 
 <!-- 3.4 -->
 <section id="threefour" class="spotlights">
@@ -360,10 +313,17 @@ banner_color: style2
 <section id="one-hundred">
  <div class="inner">
   <header class="major">
-   <h2>Alumns</h2>
+   <h2>Alumni</h2>
   </header>
        <h3>Postdoctoral fellows</h3>
     <!-- </header> -->
+      <ul class="icons">
+      <li>2024. Zedong Peng. MIT.
+      <a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      </li>
+      </ul>
       <ul class="icons">
       <li>2024. Amandeep Singh Bhatia. 
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
@@ -372,6 +332,19 @@ banner_color: style2
       </ul>
       <h3>Visiting scholars</h3>
     <!-- </header> -->
+      <ul class="icons">
+      <li>2024. Andres F. Cabeza. Purdue University.
+      <a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      </li>
+      </ul>
+      <ul class="icons">
+      <li>2024. Juan S. Rodríguez F.
+      <a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      </li>
+      </ul>
       <ul class="icons">
       <li>2023. Pedro Maciel Xavier. Microsoft Research. 
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
