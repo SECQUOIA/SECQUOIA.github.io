@@ -12,7 +12,7 @@ banner_color: style1
         <header class="major">
 			<h2>David E. Bernal Neira</h2>
 		</header>
-		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor at the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He is currently a visiting research scientist at the NASA <a href="https://www.nasa.gov/content/nasa-quantum-artificial-intelligence-laboratory-quail">Quantum Artificial Intelligence Laboratory</a> and the <a href="https://riacs.usra.edu/">Research Institute of Advanced Computer Science</a> from the Universities Space Research Association (USRA). He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given several presentations and seminars in the United States of America and internationally, taught different classes including one on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a> (which he co-designed), and have had the pleasure of collaborating with many different researchers in academia, national laboratories, government agencies, and industry.
+		<p><span class="image left"><img src="{% link assets/images/profile.png %}" alt="" /></span> David E. Bernal Neira is an Assistant Professor at the Davidson School of Chemical Engineering at Purdue University. He specializes in applying mathematical and computer science tools to address problems relevant to science and engineering, for example, physics and chemical, process, and energy systems engineering. In particular, he works in nonlinear discrete optimization, where, besides applications, he has been working in theory, algorithms, and software. He has been involved in research and teaching related to these topics for over a decade, complemented with research in Quantum Computing. He has co-authored several papers in indexed journals, a few software packages for optimization and quantum computing, given several presentations and seminars in the United States of America and internationally, taught different classes including one on <a href="https://bernalde.github.io/QuIPML22/">the intersection of optimization, quantum computing, and machine learning</a> (which he co-designed), and have had the pleasure of collaborating with many different researchers in academia, national laboratories, government agencies, and industry.
 <a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478">Link to his profile</a> at Purdue University.
 </p>
         <ul class="actions">
@@ -22,8 +22,12 @@ banner_color: style1
         <ul>
             <li><b>Principal Investigator of <a href="index.html">SECQUOIA</a></b>, <i>Purdue University, West Lafayette, IN, USA</i><br/></li>
             <li><b>Assistant Professor in Chemical Engineering</b>, <i>Purdue University, West Lafayette, IN, USA</i><br/></li>
-            <li><b>Visiting Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i><br/>Supervisor: Dr. Davide Venturelli</li>
-            <li><b>Visiting Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i><br/>Supervisor: Dr. Eleanor Rieffel</li>
+            <li><b>Adjunct Professor in Quantum Computing for the Tepper Business School</b>, <i>Carnegie Mellon University, Pittsburgh, PA, USA</i><br/></li>
+		</ul>
+        <h2>Former positions</h2>
+        <ul>
+            <li><b>Associate Scientist in Quantum Computing</b>, <i>USRA Research Institute of Advanced Computer Science, Mountain View, CA, USA</i><br/>Supervisor: Dr. Davide Venturelli</li>
+            <li><b>Scientist in Quantum Computing</b>, <i>NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA</i><br/>Supervisor: Dr. Eleanor Rieffel</li>
 		</ul>
         <h2>Education</h2>
         <ul>
@@ -48,8 +52,8 @@ banner_color: style1
         <h2>Teaching</h2>
         <p>Please visit the <a href="7-teaching.html"> teaching page</a> for more information on teaching experience and philosophy of SECQUOIA. For completeness, the courses taught by David are listed below:</p>
         <ul>
-            <li>Process Dynamics and Control - Purdue CHE456 Fall 2023</li>
-            <li>Quantum Integer Programming and Machine Learning - CMU 47-779 / 47-785, 18-819F <a href="https://bernalde.github.io/QuIPML/">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/">Fall 2022</a>, Fall 2023</li>
+            <li>Process Dynamics and Control - Purdue CHE456 Fall 2023, Fall 2024</li>
+            <li>Quantum Integer Programming and Machine Learning - CMU 47-779 / 47-785, 18-819F <a href="https://bernalde.github.io/QuIPML/">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/">Fall 2022</a>, Fall 2023, Fall 2024</li>
             <li>Quantum Integer Programming - CMU 47-779 <a href="https://bernalde.github.io/QuIP/">Fall 2020</a></li>
 		</ul>
         <h2>Awards</h2>
