@@ -7,6 +7,8 @@ nav-menu: true
 banner_color: style1
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <section id="profile">
  <div class="inner">
         <header class="major">
