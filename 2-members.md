@@ -274,6 +274,38 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 4 -->
+<section id="four">
+ <div class="inner">
+  <header class="major">
+   <h2>Undergraduate scholars</h2>
+  </header>
+ </div>
+</section>
+
+<!-- 4.1 -->
+<section id="fourone" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Lukas Peng</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>Undergraduate, Chemical Engineering, Purdue University.</li>
+    <p><b>Research topic</b>: Classification of Semiconductor Wafer Defects</p>
+    <ul class="icons">
+     <li><a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
