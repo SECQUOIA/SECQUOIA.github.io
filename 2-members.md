@@ -275,8 +275,6 @@ banner_color: style2
  </section>
 </section>
 
-
-
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
@@ -287,10 +285,10 @@ banner_color: style2
 </section>
 
 <!-- 3.3 -->
-<section id="threethree" class="spotlights">
+<section id="three-three" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
+   <img src="assets/images/members/KeeganDuffin.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -310,8 +308,6 @@ banner_color: style2
   </div>
  </section>
 </section>
-
-
 
 <!-- 98 -->
 <section id="ninety-eight">
