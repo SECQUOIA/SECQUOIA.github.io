@@ -40,7 +40,10 @@
         "bernalde",
         "Amandeep",
         "Bhatia",
-        "Rodríguez"
+        "Rodríguez",
+        "cheme",
+        "dantzig",
+        "autofetch"
     ],
     "ignorePaths": [
         "CV_DavidBernal.pdf" // Add the file you want to ignore here
