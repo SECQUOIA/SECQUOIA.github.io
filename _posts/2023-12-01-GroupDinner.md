@@ -4,6 +4,7 @@ title: Group Dinner
 description: 'The first group dinner of SECQUOIA!'
 image: assets/images/posts/GroupDinner.jpeg
 ---
+<!-- markdownlint-disable MD033 -->
 
 Celebrating a remarkable week at SECQUOIA! We were privileged to host two guests this week: Norman Tubman from NASA and Farshud Sorourifar from The Ohio State University. Their inspiring seminars enlightened our week!
 
