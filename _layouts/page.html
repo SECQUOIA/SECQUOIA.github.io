@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-{% include head.html %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
 
 <body>
     <script type="text/javascript">document.body.classList.add("is-loading");</script>
@@ -33,12 +32,13 @@
 
 	<div id="main" class="alt">
 
-    {{ content }} 
+    <div class="content-wrapper">
+        {{ content }}
+    </div>
 
 	</div>
 	
 	{% include footer.html %}
 
 </body>
-
 </html>
