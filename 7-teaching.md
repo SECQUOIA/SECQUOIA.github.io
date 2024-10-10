@@ -7,6 +7,8 @@ nav-menu: true
 banner_color: style6
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <!-- One -->
 <section id="overview">
  <div class="inner">
@@ -56,4 +58,10 @@ banner_color: style6
  </section>
 </section>
 
-[Go back to launch page](/#launch){: .button .icon .fa-arrow-left}
+<section>
+ <div class="inner">
+  <ul class="actions">
+      <li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
+  </ul>
+ </div>
+</section>
