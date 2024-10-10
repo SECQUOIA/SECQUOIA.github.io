@@ -4,7 +4,6 @@ title: Welcome new PhD students, Yirang and Anurag!
 description: 'We want to welcome our new PhD students in SECQUOIA!'
 image: assets/images/posts/yirang_anurag_welcome.jpg
 ---
-<!-- markdownlint-disable MD033 -->
 
 We want to welcome our new PhD students in SECQUOIA!
 
@@ -14,8 +13,6 @@ We want to welcome our new PhD students in SECQUOIA!
 
 We are excited to have them in our group!
 
-<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/yirang_anurag_welcome.jpg %}" alt=""/> </div>
+![Yirang and Anurag]({% link assets/images/posts/yirang_anurag_welcome.jpg %}){: style="display: block; margin-left: auto; margin-right: auto; height: 50%; width: 80%;" }
 
-<ul class="actions">
-    <li><a href="/3-news.html" class="button icon fa-arrow-left">Back</a></li>
-</ul>
+[Back](/3-news.html){: .button .icon .fa-arrow-left }
