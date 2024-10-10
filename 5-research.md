@@ -9,9 +9,18 @@ banner_color: style5
 
 <!-- markdownlint-disable MD033 -->
 
-## Overview
+<!-- One -->
+<section id="overview">
+</section>
 
 <!-- Two -->
-## Projects
+<section id="projects" class="spotlights">
+</section>
 
-[Go back to launch page](/#launch){: .button .icon .fa-arrow-left}
+<section>
+ <div class="inner">
+  <ul class="actions">
+      <li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
+  </ul>
+ </div>
+</section>
