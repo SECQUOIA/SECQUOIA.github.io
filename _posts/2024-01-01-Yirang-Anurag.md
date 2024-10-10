@@ -4,6 +4,7 @@ title: Welcome new PhD students, Yirang and Anurag!
 description: 'We want to welcome our new PhD students in SECQUOIA!'
 image: assets/images/posts/yirang_anurag_welcome.jpg
 ---
+<!-- markdownlint-disable MD033 -->
 
 We want to welcome our new PhD students in SECQUOIA!
 
