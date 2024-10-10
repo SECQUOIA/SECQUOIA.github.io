@@ -275,6 +275,44 @@ banner_color: style2
  </section>
 </section>
 
+
+
+<!-- 98 -->
+<section id="ninety-eight">
+ <div class="inner">
+  <header class="major">
+   <h2>Undergraduates</h2>
+  </header>
+ </div>
+</section>
+
+<!-- 3.3 -->
+<section id="threethree" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Keegan Duffin</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.
+    <p><b>Research topic</b>: Pharmaceutical Process optimization.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="duffink@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://www.linkedin.com/in/keeganduffin/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://orcid.org/0009-0006-7751-7616" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
