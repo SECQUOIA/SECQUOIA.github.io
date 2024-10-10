@@ -7,6 +7,8 @@ nav-menu: true
 banner_color: style2
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <!-- Embedding Font Awesome for ORCID icon -->
 <style>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
@@ -27,7 +29,7 @@ banner_color: style2
 <!-- 1.1 -->
 
 <!-- 1.2 -->
-<section id="onetwo" class="spotlights">
+<section id="one-two" class="spotlights">
     <section>
      <a class="image">
       <img src="assets/images/members/CarolinaTristan.jpg" alt="" data-position="center center" />
@@ -51,7 +53,6 @@ banner_color: style2
     </div>
    </section>
 </section>
-
 
 <section id="two" class="spotlights">
     <section>
@@ -88,7 +89,7 @@ banner_color: style2
 </section>
 
 <!-- 2.1 -->
-<section id="twoone" class="spotlights">
+<section id="two-one" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AlbertJoonLee.jpg" alt="" data-position="center center" />
@@ -113,7 +114,7 @@ banner_color: style2
 </section>
 
 <!-- 2.2 -->
-<section id="twotwo" class="spotlights">
+<section id="two-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/Anurag_Ramesh.jpeg" alt="" data-position="center center" />
@@ -124,7 +125,7 @@ banner_color: style2
      <h3>Anurag Ramesh</h3>
     </header>
     <li>Joined in Fall 2023</li>
-    <li>BE, Chemical Engineering, Birla Insitute of Technology and Science Pilani, 2023.</li>
+    <li>BE, Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
     <p><b>Research topic</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry.</p>
     <ul class="icons">
      <li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
@@ -138,7 +139,7 @@ banner_color: style2
 </section>
 
 <!-- 2.3 -->
-<section id="twothree" class="spotlights">
+<section id="two-three" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/Yirang-Park.jpg" alt="" data-position="center center" />
@@ -173,7 +174,7 @@ banner_color: style2
 </section>
 
 <!-- 3.1 -->
-<!-- <section id="threeone" class="spotlights">
+<!-- <section id="three-one" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/PedroMacielXavier.jpg" alt="" data-position="center center" />
@@ -198,7 +199,7 @@ banner_color: style2
 </section> -->
 
 <!-- 3.1 -->
-<section id="threeone" class="spotlights">
+<section id="three-one" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/IagoLealDeFreitas.jpg" alt="" data-position="center center" />
@@ -224,7 +225,7 @@ banner_color: style2
 </section>
 
 <!-- 3.2 -->
-<!-- <section id="threetwo" class="spotlights">
+<!-- <section id="three-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
@@ -252,7 +253,7 @@ banner_color: style2
 <!-- 3.3 -->
 
 <!-- 3.4 -->
-<section id="threefour" class="spotlights">
+<section id="three-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AndreLimaAlambert.jpeg" alt="" data-position="center center" />
@@ -307,8 +308,6 @@ banner_color: style2
  </section>
 </section>
 
-
-
 <!-- 100 -->
 <section id="one-hundred">
  <div class="inner">
@@ -325,7 +324,7 @@ banner_color: style2
       </li>
       </ul>
       <ul class="icons">
-      <li>2024. Amandeep Singh Bhatia. 
+      <li>2024. Amandeep Singh Bhatia.
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       </li>
@@ -346,7 +345,7 @@ banner_color: style2
       </li>
       </ul>
       <ul class="icons">
-      <li>2023. Pedro Maciel Xavier. Microsoft Research. 
+      <li>2023. Pedro Maciel Xavier. Microsoft Research.
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
@@ -355,6 +354,5 @@ banner_color: style2
  </div>
 
 </section>
-
 
 </div>
