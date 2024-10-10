@@ -8,6 +8,8 @@ show_tile: false
 banner_color: style4
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <ol reversed>
     <li> D. E. Bernal, “Coherent simulation with thousands of qubits”, Nature Physics, 2022. doi:
     10.1038/s41567-022-01772-z.</li>
