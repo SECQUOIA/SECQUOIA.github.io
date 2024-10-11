@@ -311,6 +311,28 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 3.5 -->
+<section id="three-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/Dhruv Mendpara.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Dhruv Mendpara</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>Undergraduate, Chemical Engineering, Purdue University</li>
+    <p><b>Research topic</b>: Optimization of tools.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
 
 <!-- 98 -->
