@@ -298,7 +298,7 @@ banner_color: style2
      <h3>Keegan Duffin</h3>
     </header>
     <li>Joined in Fall 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
     <p><b>Research topic</b>: Pharmaceutical Process optimization.</p>
     <ul class="icons">
      <li><a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a></li>
