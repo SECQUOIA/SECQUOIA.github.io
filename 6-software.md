@@ -6,6 +6,8 @@ description: 'Our software contributions'
 nav-menu: true
 banner_color: style4
 ---
+
+<!-- markdownlint-disable MD033 -->
 <!-- One -->
 <section id="one">
  <div class="inner">

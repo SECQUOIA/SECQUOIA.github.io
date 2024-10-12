@@ -7,6 +7,8 @@ nav-menu: true
 banner_color: style2
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <!-- Embedding Font Awesome for ORCID icon -->
 <style>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
@@ -27,7 +29,7 @@ banner_color: style2
 <!-- 1.1 -->
 
 <!-- 1.2 -->
-<section id="onetwo" class="spotlights">
+<section id="one-two" class="spotlights">
     <section>
      <a class="image">
       <img src="assets/images/members/CarolinaTristan.jpg" alt="" data-position="center center" />
@@ -51,7 +53,6 @@ banner_color: style2
     </div>
    </section>
 </section>
-
 
 <section id="two" class="spotlights">
     <section>
@@ -88,7 +89,7 @@ banner_color: style2
 </section>
 
 <!-- 2.1 -->
-<section id="twoone" class="spotlights">
+<section id="two-one" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AlbertJoonLee.jpg" alt="" data-position="center center" />
@@ -113,7 +114,7 @@ banner_color: style2
 </section>
 
 <!-- 2.2 -->
-<section id="twotwo" class="spotlights">
+<section id="two-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/Anurag_Ramesh.jpeg" alt="" data-position="center center" />
@@ -124,7 +125,7 @@ banner_color: style2
      <h3>Anurag Ramesh</h3>
     </header>
     <li>Joined in Fall 2023</li>
-    <li>BE, Chemical Engineering, Birla Insitute of Technology and Science Pilani, 2023.</li>
+    <li>BE, Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
     <p><b>Research topic</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry.</p>
     <ul class="icons">
      <li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
@@ -138,7 +139,7 @@ banner_color: style2
 </section>
 
 <!-- 2.3 -->
-<section id="twothree" class="spotlights">
+<section id="two-three" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/Yirang-Park.jpg" alt="" data-position="center center" />
@@ -173,7 +174,7 @@ banner_color: style2
 </section>
 
 <!-- 3.1 -->
-<!-- <section id="threeone" class="spotlights">
+<!-- <section id="three-one" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/PedroMacielXavier.jpg" alt="" data-position="center center" />
@@ -198,7 +199,7 @@ banner_color: style2
 </section> -->
 
 <!-- 3.1 -->
-<section id="threeone" class="spotlights">
+<section id="three-one" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/IagoLealDeFreitas.jpg" alt="" data-position="center center" />
@@ -224,7 +225,7 @@ banner_color: style2
 </section>
 
 <!-- 3.2 -->
-<!-- <section id="threetwo" class="spotlights">
+<!-- <section id="three-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
@@ -252,7 +253,7 @@ banner_color: style2
 <!-- 3.3 -->
 
 <!-- 3.4 -->
-<section id="threefour" class="spotlights">
+<section id="three-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AndreLimaAlambert.jpeg" alt="" data-position="center center" />
@@ -274,17 +275,67 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 4 -->
-<section id="four">
+  
+<!-- 98 -->
+<section id="ninety-eight">
  <div class="inner">
   <header class="major">
-   <h2>Undergraduate scholars</h2>
+   <h2>Undergraduates</h2>
   </header>
  </div>
 </section>
 
-<!-- 4.1 -->
-<section id="fourone" class="spotlights">
+
+<!-- 3.3 -->
+<section id="threethree" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Keegan Duffin</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Pharmaceutical Process optimization.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="duffink@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://www.linkedin.com/in/keeganduffin/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://orcid.org/0009-0006-7751-7616" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- 3.5 -->
+<section id="three-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/Dhruv Mendpara.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Dhruv Mendpara</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Parameter setting for optimization solvers.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+  
+<section id="three-six" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
@@ -295,17 +346,18 @@ banner_color: style2
      <h3>Lukas Peng</h3>
     </header>
     <li>Joined in Fall 2024.</li>
-    <li>Undergraduate, Chemical Engineering, Purdue University.</li>
-    <p><b>Research topic</b>: Classification of Semiconductor Wafer Defects</p>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic:</b> Classification of Semiconductor Wafer Defects.</p>
     <ul class="icons">
      <li><a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="lypeng@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     </ul>
    </div>
   </div>
  </section>
 </section>
-
+  
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
@@ -339,8 +391,6 @@ banner_color: style2
  </section>
 </section>
 
-
-
 <!-- 100 -->
 <section id="one-hundred">
  <div class="inner">
@@ -357,7 +407,7 @@ banner_color: style2
       </li>
       </ul>
       <ul class="icons">
-      <li>2024. Amandeep Singh Bhatia. 
+      <li>2024. Amandeep Singh Bhatia.
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       </li>
@@ -378,7 +428,7 @@ banner_color: style2
       </li>
       </ul>
       <ul class="icons">
-      <li>2023. Pedro Maciel Xavier. Microsoft Research. 
+      <li>2023. Pedro Maciel Xavier. Microsoft Research.
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
@@ -387,6 +437,5 @@ banner_color: style2
  </div>
 
 </section>
-
 
 </div>
