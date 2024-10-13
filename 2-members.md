@@ -275,8 +275,7 @@ banner_color: style2
  </section>
 </section>
 
-
-
+  
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
@@ -285,6 +284,7 @@ banner_color: style2
   </header>
  </div>
 </section>
+
 
 <!-- 3.3 -->
 <section id="threethree" class="spotlights">
@@ -334,7 +334,30 @@ banner_color: style2
  </section>
 </section>
 
-
+  
+<section id="three-six" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Lukas Peng</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic:</b> Classification of Semiconductor Wafer Defects.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="lypeng@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+  
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
