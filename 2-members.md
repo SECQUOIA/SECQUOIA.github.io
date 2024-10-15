@@ -357,6 +357,29 @@ banner_color: style2
   </div>
  </section>
 </section>
+
+<!-- 3.7 -->
+<section id="three-seven" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/BenMurray.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Ben Murray</h3>
+    </header>
+    <li>Joined in Spring 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Optimization of relability design.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/murraybj" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/murraybj/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
   
 <!-- 98 -->
 <section id="ninety-eight">
