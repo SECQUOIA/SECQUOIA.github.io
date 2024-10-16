@@ -7,6 +7,8 @@ nav-menu: true
 banner_color: style3
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <!-- One -->
 <section id="overview">
  <div class="inner">

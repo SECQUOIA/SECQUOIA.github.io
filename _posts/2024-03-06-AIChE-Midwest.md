@@ -13,10 +13,6 @@ Albert Lee's first debut on the AIChE was a success. His presentation on the Log
 
 We thank all who joined us, participated in our sessions, and contributed to the discussions. Your engagement is what makes events like AIChE Midwest Regional Conference genuinely memorable. Let's keep pushing the boundaries of chemical engineering together!
 
-#AIChE_Midwest #AIChE2024 #PSE #GDP
+![AIChE Midwest 2024]({% link assets/images/posts/AIChEMidwest-2024.jpg %}){: style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 50%;" }
 
-<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/AIChEMidwest-2024.jpg %}" alt=""/> </div>
-
-<ul class="actions">
-    <li><a href="/3-news.html" class="button icon fa-arrow-left">Back</a></li>
-</ul>
+[Back](/3-news.html){: .button .icon .fa-arrow-left }
