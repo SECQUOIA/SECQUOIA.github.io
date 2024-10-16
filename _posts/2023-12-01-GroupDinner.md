@@ -9,8 +9,6 @@ Celebrating a remarkable week at SECQUOIA! We were privileged to host two guests
 
 We came together for the Fall 2023 SECQUOIA group dinner to cap off an intense and productive week. It was a wonderful opportunity to unwind, share stories, and build connections beyond our research pursuits. Here's to fostering stronger bonds and many more fruitful collaborations ahead!
 
-<div style="text-align: center"> <img style='height: 50%; width: 80%' src="{% link assets/images/posts/GroupDinner.jpeg %}" alt=""/> </div>
+![Group Dinner]({% link assets/images/posts/GroupDinner.jpeg %}){: style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 50%;" }
 
-<ul class="actions">
-    <li><a href="/3-news.html" class="button icon fa-arrow-left">Back</a></li>
-</ul>
+[Back](/3-news.html){: .button .icon .fa-arrow-left }
