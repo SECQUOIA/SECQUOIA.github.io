@@ -298,6 +298,39 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 4 -->
+<section id="four">
+ <div class="inner">
+  <header class="major">
+   <h2>Undergraduate students</h2>
+  </header>
+ </div>
+</section>
+
+<!-- 4.1 -->
+<section id="fourone" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/DaleStager.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Dale Stager</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BSc, Chemical Engineering, Purdue University, expected 2026.</li>
+    <p><b>Research topic</b>: Quantum Optimization.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/dale-stager/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:stager@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
