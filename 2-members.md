@@ -289,7 +289,7 @@ banner_color: style2
 <section id="four-one" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/AbigailDelaney.jpeg" alt="" data-position="center center" />
+   <img src="assets/images/members/AbigailDelaney.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
