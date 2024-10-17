@@ -285,9 +285,33 @@ banner_color: style2
  </div>
 </section>
 
+<!-- 4.1 -->
+<section id="four-one" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/AbigailDelaney.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Abigail Delaney</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Benchmarking of Quantum Optimization.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/abdelane" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:abdelane@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0007-9649-4779" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
-<!-- 3.3 -->
-<section id="threethree" class="spotlights">
+<!-- 4.2 -->
+<section id="four-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
@@ -311,8 +335,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3.5 -->
-<section id="three-five" class="spotlights">
+<!-- 4.3 -->
+<section id="four-three" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/Dhruv Mendpara.jpeg" alt="" data-position="center center" />
@@ -334,8 +358,8 @@ banner_color: style2
  </section>
 </section>
 
-  
-<section id="three-six" class="spotlights">
+<!-- 4.4 -->
+<section id="four-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
@@ -358,8 +382,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3.7 -->
-<section id="three-seven" class="spotlights">
+<!-- 4.5 -->
+<section id="four-five" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/BenMurray.jpeg" alt="" data-position="center center" />
@@ -381,8 +405,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3.8 -->
-<section id="three-eight" class="spotlights">
+<!-- 4.6 -->
+<section id="four-six" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/DaleStager.jpg" alt="" data-position="center center" />
