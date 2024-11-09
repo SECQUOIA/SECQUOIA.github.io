@@ -175,14 +175,15 @@ banner_color: style2
     <header class="major">
      <h3>Pedro Maciel Xavier</h3>
     </header>
-    <li>Joined in Fall 2023.</li>
+    <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
     <li>BEng, Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
     <li>BSc, Mathematics, Federal University of Rio de Janeiro, 2022.</li>
     <p><b>Research topic</b>: Operations Reserach, Quantum Optimization</p>
     <ul class="icons">
      <li><a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    <li><a href="mailto:mail@pedro.ελ" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="mailto:mail@pedro.ελ" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
