@@ -164,17 +164,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3 -->
-<section id="three">
- <div class="inner">
-  <header class="major">
-   <h2>Visiting scholars</h2>
-  </header>
- </div>
-</section>
-
 <!-- 3.1 -->
-<!-- <section id="three-one" class="spotlights">
+<section id="two-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/PedroMacielXavier.jpg" alt="" data-position="center center" />
@@ -187,16 +178,25 @@ banner_color: style2
     <li>Joined in Fall 2023.</li>
     <li>BEng, Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
     <li>BSc, Mathematics, Federal University of Rio de Janeiro, 2022.</li>
-    <p><b>Research topic</b>: Quantum Optimization</p>
+    <p><b>Research topic</b>: Operations Reserach, Quantum Optimization</p>
     <ul class="icons">
      <li><a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    <li><a href="mailto:pedrox@cos.ufrj.br" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    <li><a href="mailto:mail@pedro.ελ" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
  </section>
-</section> -->
+</section>
+
+<!-- 3 -->
+<section id="three">
+ <div class="inner">
+  <header class="major">
+   <h2>Visiting scholars</h2>
+  </header>
+ </div>
+</section>
 
 <!-- 3.1 -->
 <section id="three-one" class="spotlights">
