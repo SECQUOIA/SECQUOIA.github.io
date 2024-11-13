@@ -190,6 +190,31 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 2.5 -->
+<section id="two-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/SergeyGusev.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Sergey Gusev</h3>
+    </header>
+    <li>Joined in Fall 2024</li>
+    <li>BEng, Chemical Engineering, Gubkin University, Moscow, 2016.</li>
+    <li>MSEng, Chemical Engineering, Monash University, Melbourne, 2019.</li>
+    <p><b>Research topic</b>: Hybrid Quantum Algorithms for Structured Optimization Problems in Process Systems Engineering.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/sergey-gusev94" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    <li><a href="mailto:sgusev@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 3 -->
 <section id="three">
  <div class="inner">
