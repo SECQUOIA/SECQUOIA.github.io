@@ -164,7 +164,7 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3.1 -->
+<!-- 2.4 -->
 <section id="two-four" class="spotlights">
  <section>
   <a class="image">
@@ -215,6 +215,33 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 2.6 -->
+
+<section id="two-six" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Andres F. Cabeza</h3>
+    </header>
+    <li>Joined in Fall 2024</li>
+    <li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
+    <li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
+    <p><b>Research topic</b>: Optimization-aided process synthesis and operations</p>
+    <ul class="icons">
+     <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 3 -->
 <section id="three">
  <div class="inner">
@@ -249,34 +276,6 @@ banner_color: style2
   </div>
  </section>
 </section>
-
-<!-- 3.2 -->
-<!-- <section id="three-two" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Andres F. Cabeza</h3>
-    </header>
-    <li>Joined in Fall 2023.</li>
-    <li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
-    <li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2022.</li>
-    <p><b>Research topic</b>: Process Systems Engineering, Process Intensification</p>
-    <ul class="icons">
-     <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section> -->
-
-<!-- 3.3 -->
 
 <!-- 3.4 -->
 <section id="three-four" class="spotlights">
