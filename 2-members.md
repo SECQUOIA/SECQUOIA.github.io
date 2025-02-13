@@ -164,17 +164,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3 -->
-<section id="three">
- <div class="inner">
-  <header class="major">
-   <h2>Visiting scholars</h2>
-  </header>
- </div>
-</section>
-
-<!-- 3.1 -->
-<!-- <section id="three-one" class="spotlights">
+<!-- 2.4 -->
+<section id="two-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/PedroMacielXavier.jpg" alt="" data-position="center center" />
@@ -184,19 +175,81 @@ banner_color: style2
     <header class="major">
      <h3>Pedro Maciel Xavier</h3>
     </header>
-    <li>Joined in Fall 2023.</li>
+    <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
     <li>BEng, Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
     <li>BSc, Mathematics, Federal University of Rio de Janeiro, 2022.</li>
-    <p><b>Research topic</b>: Quantum Optimization</p>
+    <p><b>Research topic</b>: Operations Reserach, Quantum Optimization</p>
     <ul class="icons">
      <li><a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    <li><a href="mailto:pedrox@cos.ufrj.br" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="mailto:mail@pedro.ελ" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
     </ul>
    </div>
   </div>
  </section>
-</section> -->
+</section>
+
+<!-- 2.5 -->
+<section id="two-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/SergeyGusev.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Sergey Gusev</h3>
+    </header>
+    <li>Joined in Fall 2024</li>
+    <li>BEng, Chemical Engineering, Gubkin University, Moscow, 2016.</li>
+    <li>MSEng, Chemical Engineering, Monash University, Melbourne, 2019.</li>
+    <p><b>Research topic</b>: Hybrid Quantum Algorithms for Structured Optimization Problems in Process Systems Engineering.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/sergey-gusev94" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    <li><a href="mailto:sgusev@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- 2.6 -->
+
+<section id="two-six" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Andres F. Cabeza</h3>
+    </header>
+    <li>Joined in Fall 2024</li>
+    <li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
+    <li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
+    <p><b>Research topic</b>: Optimization-aided process synthesis and operations</p>
+    <ul class="icons">
+     <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- 3 -->
+<section id="three">
+ <div class="inner">
+  <header class="major">
+   <h2>Visiting scholars</h2>
+  </header>
+ </div>
+</section>
 
 <!-- 3.1 -->
 <section id="three-one" class="spotlights">
@@ -224,34 +277,6 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3.2 -->
-<!-- <section id="three-two" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Andres F. Cabeza</h3>
-    </header>
-    <li>Joined in Fall 2023.</li>
-    <li>BEng, Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
-    <li>MSc, Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2022.</li>
-    <p><b>Research topic</b>: Process Systems Engineering, Process Intensification</p>
-    <ul class="icons">
-     <li><a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section> -->
-
-<!-- 3.3 -->
-
 <!-- 3.4 -->
 <section id="three-four" class="spotlights">
  <section>
@@ -275,6 +300,7 @@ banner_color: style2
  </section>
 </section>
 
+  
 
 
 <!-- 98 -->
@@ -311,8 +337,33 @@ banner_color: style2
 </section>
 
 
-<!-- 3.3 -->
-<section id="threethree" class="spotlights">
+<!-- 4.1 -->
+<section id="four-one" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/AbigailDelaney.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Abigail Delaney</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Benchmarking of Quantum Optimization.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/abdelane" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:abdelane@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0007-9649-4779" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- 4.2 -->
+<section id="four-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
@@ -323,7 +374,7 @@ banner_color: style2
      <h3>Keegan Duffin</h3>
     </header>
     <li>Joined in Fall 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
     <p><b>Research topic</b>: Pharmaceutical Process optimization.</p>
     <ul class="icons">
      <li><a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a></li>
@@ -336,7 +387,99 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 4.3 -->
+<section id="four-three" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/Dhruv Mendpara.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Dhruv Mendpara</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Parameter setting for optimization solvers.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
+<!-- 4.4 -->
+<section id="four-four" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Lukas Peng</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic:</b> Classification of Semiconductor Wafer Defects.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="lypeng@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- 4.5 -->
+<section id="four-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/BenMurray.jpeg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Ben Murray</h3>
+    </header>
+    <li>Joined in Spring 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <p><b>Research topic</b>: Optimization of relability design.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/murraybj" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/murraybj/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- 4.6 -->
+<section id="four-six" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/DaleStager.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Dale Stager</h3>
+    </header>
+    <li>Joined in Fall 2024.</li>
+    <li>BS Chemical Engineering, Purdue University, Expected 2026.</li>
+    <p><b>Research topic</b>: Quantum Optimization.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="https://www.linkedin.com/in/dale-stager/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="mailto:stager@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
 <!-- 98 -->
 <section id="ninety-eight">
@@ -411,7 +554,7 @@ banner_color: style2
       <li>2023. Pedro Maciel Xavier. Microsoft Research.
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
  </div>
