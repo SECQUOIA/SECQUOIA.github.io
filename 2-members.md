@@ -301,6 +301,8 @@ banner_color: style2
 </section>
 
   
+
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
@@ -309,6 +311,31 @@ banner_color: style2
   </header>
  </div>
 </section>
+
+<!-- 3.4 -->
+<section id="threefour" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/AJCollins.png" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Alexander (AJ) Collins</h3>
+    </header>
+    <li>Joined in Spring 2025.</li>
+    <li>BS Integrated Business and Engineering, Purdue University, Expected May 2027.
+    <p><b>Research topic</b>: Marketing and Business Analytics.</p>
+    <ul class="icons">
+     <li><a href="https://github.com/colli525" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="colli525@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+     <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 
 <!-- 4.1 -->
 <section id="four-one" class="spotlights">
