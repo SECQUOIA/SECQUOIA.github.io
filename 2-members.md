@@ -117,7 +117,7 @@ banner_color: style2
 <section id="two-two" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/Anurag_Ramesh.jpeg" alt="" data-position="center center" />
+   <img src="assets/images/members/AnuragRamesh.jpeg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -337,7 +337,7 @@ banner_color: style2
 <section id="four-one" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/AbigailDelaney.jpeg" alt="" data-position="center center" />
+   <img src="assets/images/members/AbigailDelaney.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -362,7 +362,7 @@ banner_color: style2
 <!-- <section id="four-two" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
+   <img src="assets/images/members/KeeganDuffin.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -387,7 +387,7 @@ banner_color: style2
 <!-- <section id="four-three" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/Dhruv Mendpara.jpeg" alt="" data-position="center center" />
+   <img src="assets/images/members/DhruvMendpara.jpeg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -561,7 +561,7 @@ banner_color: style2
       </ul>
       <ul class="icons">
       <li>2024. Dhruv Mendpara. Purdue University.
-      <a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a></li>
+      <a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a>
       <a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       </li>
       </ul>
