@@ -324,12 +324,12 @@ banner_color: style2
      <h3>Alexander (AJ) Collins</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>BS Integrated Business and Engineering, Purdue University, Expected May 2027.
+    <li>BS Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
     <p><b>Research topic</b>: Marketing and Business Analytics.</p>
     <ul class="icons">
      <li><a href="https://github.com/colli525" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="colli525@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="colli525@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      </ul>
    </div>
   </div>
@@ -363,7 +363,7 @@ banner_color: style2
 </section>
 
 <!-- 4.2 -->
-<section id="four-two" class="spotlights">
+<!-- <section id="four-two" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/KeeganDuffinAAMP.jpg" alt="" data-position="center center" />
@@ -385,10 +385,10 @@ banner_color: style2
    </div>
   </div>
  </section>
-</section>
+</section> -->
 
 <!-- 4.3 -->
-<section id="four-three" class="spotlights">
+<!-- <section id="four-three" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/Dhruv Mendpara.jpeg" alt="" data-position="center center" />
@@ -408,10 +408,10 @@ banner_color: style2
    </div>
   </div>
  </section>
-</section>
+</section> -->
 
 <!-- 4.4 -->
-<section id="four-four" class="spotlights">
+<!-- <section id="four-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
@@ -432,7 +432,7 @@ banner_color: style2
    </div>
   </div>
  </section>
-</section>
+</section> -->
 
 <!-- 4.5 -->
 <section id="four-five" class="spotlights">
@@ -458,7 +458,7 @@ banner_color: style2
 </section>
 
 <!-- 4.6 -->
-<section id="four-six" class="spotlights">
+<!-- <section id="four-six" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/DaleStager.jpg" alt="" data-position="center center" />
@@ -479,7 +479,7 @@ banner_color: style2
    </div>
   </div>
  </section>
-</section>
+</section> -->
 
 <!-- 98 -->
 <section id="ninety-eight">
@@ -545,20 +545,49 @@ banner_color: style2
       </li>
       </ul>
       <ul class="icons">
-      <li>2024. Juan S. Rodríguez F.
-      <a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a>  
+      <li>2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
+      <a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a>
       <a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons">
-      <li>2023. Pedro Maciel Xavier. Microsoft Research.
+      <li>2023. Pedro Maciel Xavier. Purdue University.
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
+      <h3>Undergraduates</h3>
+    <!-- </header> -->
+      <ul class="icons">
+      <li>2024. Sergio Barrios.
+      </li>
+      </ul>
+      <ul class="icons">
+      <li>2024. Dhruv Mendpara. Purdue University.
+      <a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a></li>
+      <a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
+      <ul class="icons">
+      <li>2024. Lukas Peng. Purdue University.
+      <a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
+      <ul class="icons">
+      <li>2024. Keegan Duffin. Purdue University.
+      <a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/keeganduffin/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
+      <ul class="icons">
+      <li>2024. Dale Stager. Purdue University.
+      <a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/dale-stager/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
  </div>
-
 </section>
 
 </div>
