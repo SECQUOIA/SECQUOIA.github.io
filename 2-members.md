@@ -178,7 +178,7 @@ banner_color: style2
     <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
     <li>BEng, Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
     <li>BSc, Mathematics, Federal University of Rio de Janeiro, 2022.</li>
-    <p><b>Research topic</b>: Operations Reserach, Quantum Optimization</p>
+    <p><b>Research topic</b>: Operations Research, Quantum Optimization</p>
     <ul class="icons">
      <li><a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
@@ -300,9 +300,6 @@ banner_color: style2
  </section>
 </section>
 
-  
-
-
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
@@ -313,7 +310,7 @@ banner_color: style2
 </section>
 
 <!-- 3.4 -->
-<section id="threefour" class="spotlights">
+<section id="three-four" class="spotlights">
  <section>
   <a class="image">
    <img src="assets/images/members/AJCollins.png" alt="" data-position="center center" />
@@ -335,7 +332,6 @@ banner_color: style2
   </div>
  </section>
 </section>
-
 
 <!-- 4.1 -->
 <section id="four-one" class="spotlights">
@@ -447,7 +443,7 @@ banner_color: style2
     </header>
     <li>Joined in Spring 2024.</li>
     <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
-    <p><b>Research topic</b>: Optimization of relability design.</p>
+    <p><b>Research topic</b>: Optimization of reliability design.</p>
     <ul class="icons">
      <li><a href="https://github.com/murraybj" class="icon fa-github"><span class="label">Github</span></a></li>
      <li><a href="https://www.linkedin.com/in/murraybj/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
