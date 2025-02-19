@@ -556,7 +556,9 @@ banner_color: style2
       <h3>Undergraduates</h3>
     <!-- </header> -->
       <ul class="icons">
-      <li>2024. Sergio Barrios.
+      <li>2024. Sergio Barrios. Imperial College London.
+      <a href="https://www.linkedin.com/in/sergio-barrios-rosado/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://github.com/barrios2001" class="icon fa-github"><span class="label">Github</span></a>
       </li>
       </ul>
       <ul class="icons">
