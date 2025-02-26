@@ -582,7 +582,13 @@ banner_color: style2
       <ul class="icons">
       <li>2024. Dale Stager. Purdue University.
       <a href="https://www.linkedin.com/in/dale-stager/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a> 
+      </li>
+      </ul>
+    <ul class="icons">
+      <li>2025. Akshay Mahajan. Purdue University.
+      <a href="www.linkedin.com/in/akshay-mahajan-b01122232" class="icon fa-linkedin"><span class="label">Linkedin</span> 
+      </a> <a href="https://github.com/akrmahajan" class="icon fa-github"><span class="label">Github</span></a> 
       </li>
       </ul>
  </div>
