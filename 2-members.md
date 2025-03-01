@@ -503,7 +503,7 @@ banner_color: style2
 <section id="four-seven" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/SaiKarthikv2.jpg" alt="" data-position="center center" />
+   <img src="/assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -522,7 +522,6 @@ banner_color: style2
   </div>
  </section>
 </section>
-
 
 <!-- 98 -->
 <section id="ninety-eight">
