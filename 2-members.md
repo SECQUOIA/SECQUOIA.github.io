@@ -499,6 +499,31 @@ banner_color: style2
   </div>
  </section>
 </section>
+
+<section id="four-seven" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="/assets/images/members/SaiKarthikv2.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Sai Karthik</h3>
+    </header>
+    <li>Joined in Spring 2025.</li>
+    <li>BS Biomedical Engineering, Purdue University, Expected December 2026.</li>
+    <p><b>Research topic</b>: Pharmaceutical Process Synthesis and Optimization.</p>
+    <ul class="icons">
+     <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://github.com/sa1K" class="icon fa-github"><span class="label">Github</span></a></li>
+     <li><a href="mailto:karthik9@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
