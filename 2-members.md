@@ -2,7 +2,7 @@
 title: Members
 layout: page
 description: 'SECQUOIA Group Members.'
-image: assets/images/posts/GroupDinner.jpeg
+image: assets/images/group2024.jpg
 nav-menu: true
 banner_color: style2
 ---
