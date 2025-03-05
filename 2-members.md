@@ -300,6 +300,29 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 3.5 -->
+<section id="three-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/MateoHuertasMarulanda.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Mateo Huertas Marulanda</h3>
+    </header>
+    <li>Joined in Spring 2025.</li>
+    <li>Undergraduate, Chemical Engineering, National University of Colombia.</li>
+    <p><b>Research topic</b>: Control and Optimization</p>
+    <ul class="icons">
+     <li><a href="https://www.linkedin.com/in/mhuertasm/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://github.com/mhuertasm" class="icon fa-github"><span class="label">Github</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
