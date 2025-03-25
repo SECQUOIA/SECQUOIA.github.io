@@ -32,7 +32,6 @@ David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemic
 
 - **Principal Investigator of [SECQUOIA](index.html)**, *Purdue University, West Lafayette, IN, USA*
 - **Assistant Professor in Chemical Engineering**, *Purdue University, West Lafayette, IN, USA*
-- **Adjunct Professor in Quantum Computing**, *Tepper School of Business, Carnegie Mellon University, Pittsburgh, PA, USA*
 
 ## Former Positions
 
@@ -40,6 +39,7 @@ David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemic
   Supervisor: Dr. Davide Venturelli
 - **Scientist in Quantum Computing**, *NASA Quantum Artificial Intelligence Laboratory, Mountain View, CA, USA*  
   Supervisor: Dr. Eleanor Rieffel
+- **Adjunct Professor in Quantum Computing**, *Tepper School of Business, Carnegie Mellon University, Pittsburgh, PA, USA*
 
 ## Education
 
@@ -75,6 +75,8 @@ See the [teaching page](7-teaching.html) for more on teaching experience and phi
 
 ## Awards
 
+- **Fellow**, Connections to Sustain Science in Latin America, National Academies of Sciences, Engineering, and Medicine (2025)
+- **Fellow**, Arab-American Frontiers of Engineering, National Academies of Sciences, Engineering, and Medicine (2023)
 - **Best Talk Award**, Quantum Computing Applications in Chemical and Biochemical Engineering Workshop (2022)
 - **Finalist**, AIChE CAST Directors’ Student Presentation Awards (2020)
 - **Mark Dennis Karl Outstanding Teaching Assistant Award**, Chemical Engineering Department, Carnegie Mellon University (2019)
