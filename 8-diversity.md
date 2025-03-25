@@ -10,15 +10,14 @@ banner_color: style8
 <!-- markdownlint-disable MD033 -->
 
 ## Diversity Statement
-<!-- Add statement. -->
-SECQUOIA is deeply engaged in fostering inclusion and celebrating diversity in each of our activities. Below is the diversity statement that David wrote when applying to Purdue, which is the guiding document for the team's endeavors in this regard.
+
+At SECQUOIA, we are committed to fostering an inclusive environment and celebrating diversity across all our research, teaching, and outreach activities. We believe that diverse teams drive better science and stronger innovation. 
+
+The statement linked below, originally written by David as part of his application to Purdue, continues to guide the group’s values and actions in advancing diversity, equity, and inclusion.
 
 <ul class="actions">
     <li><a href="files/diversity.html" class="button icon fa-file">Diversity Statement</a></li>
 </ul>
-
-<!-- # Title
-Text.  -->
 
 <ul class="actions">
     <li><a href="/#launch" class="button icon fa-arrow-left">Go back to launch page</a></li>
