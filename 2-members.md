@@ -304,7 +304,7 @@ banner_color: style2
 <section id="three-five" class="spotlights">
  <section>
   <a class="image">
-   <img src="assets/images/members/MateoHuertasMarulanda.jpeg" alt="" data-position="center center" />
+   <img src="assets/images/members/MateoHuertasMarulanda.png" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
