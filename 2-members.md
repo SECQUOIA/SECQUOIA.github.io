@@ -514,12 +514,12 @@ banner_color: style2
       <h2>Our Members' Locations</h2>
     </header>
     <div style="overflow: hidden; padding-top: 56.25%; position: relative;">
-      <iframe 
-        src="https://www.google.com/maps/d/u/0/embed?mid=1ZXM37lZ9Srrh5txcAA3a-oaURN0XbCw" 
-        width="100%" 
-        height="450" 
-        style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-        allowfullscreen="" 
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1ZXM37lZ9Srrh5txcAA3a-oaURN0XbCw"
+        width="100%"
+        height="450"
+        style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        allowfullscreen=""
         loading="lazy">
       </iframe>
     </div>
