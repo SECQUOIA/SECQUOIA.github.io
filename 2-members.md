@@ -251,55 +251,6 @@ banner_color: style2
  </div>
 </section>
 
-<!-- 3.1 -->
-<section id="three-one" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/IagoLealDeFreitas.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Iago Leal de Freitas</h3>
-    </header>
-    <li>Joined in Fall 2024.</li>
-    <li>B.Sc., Applied Mathematics, Federal University of Rio de Janeiro, 2017.</li>
-    <li>M.Sc., Mathematics, Federal University of Rio de Janeiro, 2019.</li>
-    <p><b>Research topics</b>: Quantum Optimization, Tensor Networks.</p>
-    <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/iagolealf/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/iagoleal" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="mailto:ilealdef@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- 3.4 -->
-<section id="three-four" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/AndreLimaAlambert.jpeg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Andre Lima Alambert</h3>
-    </header>
-    <li>Joined in Fall 2024.</li>
-    <li>Undergraduate, Electrical Engineering, University of Sao Paulo.</li>
-    <p><b>Research topics</b>: Optimal Power Flow.</p>
-    <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/alimaala2002" class="icon fa-github"><span class="label">Github</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
 <!-- 3.5 -->
 <section id="three-five" class="spotlights">
  <section>
@@ -381,78 +332,6 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 4.2 -->
-<!-- <section id="four-two" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/KeeganDuffin.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Keegan Duffin</h3>
-    </header>
-    <li>Joined in Fall 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
-    <p><b>Research topics</b>: Pharmaceutical Process optimization.</p>
-    <ul class="icons">
-     <li><a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="duffink@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://www.linkedin.com/in/keeganduffin/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://orcid.org/0009-0006-7751-7616" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section> -->
-
-<!-- 4.3 -->
-<!-- <section id="four-three" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/DhruvMendpara.jpeg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Dhruv Mendpara</h3>
-    </header>
-    <li>Joined in Fall 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
-    <p><b>Research topics</b>: Parameter setting for optimization solvers.</p>
-    <ul class="icons">
-     <li><a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section> -->
-
-<!-- 4.4 -->
-<!-- <section id="four-four" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/LukasPeng.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Lukas Peng</h3>
-    </header>
-    <li>Joined in Fall 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
-    <p><b>Research topics:</b> Classification of Semiconductor Wafer Defects.</p>
-    <ul class="icons">
-     <li><a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="lypeng@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section> -->
-
 <!-- 4.5 -->
 <section id="four-five" class="spotlights">
  <section>
@@ -476,29 +355,6 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 4.6 -->
-<!-- <section id="four-six" class="spotlights">
- <section>
-  <a class="image">
-   <img src="assets/images/members/DaleStager.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Dale Stager</h3>
-    </header>
-    <li>Joined in Fall 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected 2026.</li>
-    <p><b>Research topics</b>: Quantum Optimization.</p>
-    <ul class="icons">
-     <li><a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a></li>
-     <li><a href="https://www.linkedin.com/in/dale-stager/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="mailto:stager@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section> -->
 <!-- 4.7 -->
 <section id="four-seven" class="spotlights">
  <section>
@@ -603,6 +459,20 @@ banner_color: style2
       <h3 style="margin-top: 20px; margin-bottom: 5px;">Visiting scholars</h3>
     <!-- </header> -->
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Iago Leal de Freitas. Federal University of Rio de Janeiro.
+      <a href="https://github.com/alimaala2002" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/iagolealf/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      </li>
+      </ul>
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. André Lima Alambert. University of Sao Paulo.
+      <a href="https://github.com/iagoleal" class="icon fa-github"><span class="label">Github</span></a>  
+      <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      </li>
+      </ul>
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
       <a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
@@ -662,5 +532,3 @@ banner_color: style2
       </ul>
  </div>
 </section>
-
-</div>
