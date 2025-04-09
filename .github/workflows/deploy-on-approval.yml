@@ -1,0 +1,41 @@
+name: Deploy on PR Approval
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  deploy:
+    if: github.event.review.state == 'approved'
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Ruby for Jekyll
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # Adjust based on your Jekyll version
+          bundler-cache: true
+
+      # Install dependencies
+      - name: Install dependencies
+        run: bundle install
+
+      # Build the site
+      - name: Build site
+        run: bundle exec jekyll build
+
+      # Deploy the site (e.g., to GitHub Pages)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+
+      # Notify success
+      - name: Notify success
+        run: echo "Deployment successful. PR can now be merged."
