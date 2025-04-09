@@ -587,36 +587,36 @@ banner_color: style2
   </header>
        <h3>Postdoctoral fellows</h3>
     <!-- </header> -->
-      <ul class="icons">
-      <li>2024. Zedong Peng. MIT.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
       <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/ZedongPeng" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
-      <ul class="icons">
-      <li>2024. Amandeep Singh Bhatia.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Amandeep Singh Bhatia.
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
       </li>
       </ul>
       <h3>Visiting scholars</h3>
     <!-- </header> -->
-      <ul class="icons">
-      <li>2024. Andres F. Cabeza. Purdue University.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
       <a href="https://github.com/andres9403" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
-      <ul class="icons">
-      <li>2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
       <a href="https://github.com/jsrodriguezf" class="icon fa-github"><span class="label">Github</span></a>
       <a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
-      <ul class="icons">
-      <li>2023. Pedro Maciel Xavier. Purdue University.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2023. Pedro Maciel Xavier. Purdue University.
       <a href="https://github.com/pedromxavier" class="icon fa-github"><span class="label">Github</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
@@ -624,38 +624,38 @@ banner_color: style2
       </ul>
       <h3>Undergraduates</h3>
     <!-- </header> -->
-      <ul class="icons">
-      <li>2024. Sergio Barrios. Imperial College London.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Sergio Barrios. Imperial College London.
       <a href="https://www.linkedin.com/in/sergio-barrios-rosado/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/barrios2001" class="icon fa-github"><span class="label">Github</span></a>
       </li>
       </ul>
-      <ul class="icons">
-      <li>2024. Dhruv Mendpara. Purdue University.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Dhruv Mendpara. Purdue University.
       <a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/dhruvmendpara1" class="icon fa-github"><span class="label">Github</span></a>
       </li>
       </ul>
-      <ul class="icons">
-      <li>2024. Lukas Peng. Purdue University.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Lukas Peng. Purdue University.
       <a href="https://www.linkedin.com/in/lukas-peng/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/lukaspeng" class="icon fa-github"><span class="label">Github</span></a>  
       </li>
       </ul>
-      <ul class="icons">
-      <li>2024. Keegan Duffin. Purdue University.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Keegan Duffin. Purdue University.
       <a href="https://www.linkedin.com/in/keeganduffin/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/keeganlduffin" class="icon fa-github"><span class="label">Github</span></a>  
       </li>
       </ul>
-      <ul class="icons">
-      <li>2024. Dale Stager. Purdue University.
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Dale Stager. Purdue University.
       <a href="https://www.linkedin.com/in/dale-stager/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">Github</span></a>  
       </li>
       </ul>
-        <ul class="icons">
-      <li>2024. Akshay Mahajan. Purdue University.
+        <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2024. Akshay Mahajan. Purdue University.
       <a href="www.linkedin.com/in/akshay-mahajan-b01122232/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/akrmahajan" class="icon fa-github"><span class="label">Github</span></a>  
       </li>
