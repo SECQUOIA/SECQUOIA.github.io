@@ -426,7 +426,7 @@ banner_color: style2
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
-      <li style="margin-bottom: 5px;">2024. Amandeep Singh Bhatia.
+      <li style="margin-bottom: 5px;">2024. Amandeep Singh Bhatia. North Carolina State University.
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">GitHub</span></a>  
       </li>
