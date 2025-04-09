@@ -345,7 +345,7 @@ banner_color: style2
     <li>BS Chemical Engineering, Purdue University, Expected May 2026.</li>
     <p><b>Research topics</b>: Process Systems Machine Learning.</p>
     <ul class="icons">
-     <li><a href="www.linkedin.com/in/akshay-mahajan-b01122232/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="https://github.com/akrmahajan" class="icon fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:mahaja34@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
