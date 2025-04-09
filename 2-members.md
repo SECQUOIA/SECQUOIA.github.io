@@ -585,7 +585,7 @@ banner_color: style2
   <header class="major">
    <h2>Alumni</h2>
   </header>
-       <h3>Postdoctoral fellows</h3>
+       <h3 style="margin-top: 20px; margin-bottom: 5px;">Postdoctoral fellows</h3>
     <!-- </header> -->
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
@@ -600,7 +600,7 @@ banner_color: style2
       <a href="https://github.com/deepquantum88" class="icon fa-github"><span class="label">Github</span></a>  
       </li>
       </ul>
-      <h3>Visiting scholars</h3>
+      <h3 style="margin-top: 20px; margin-bottom: 5px;">Visiting scholars</h3>
     <!-- </header> -->
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
@@ -622,7 +622,7 @@ banner_color: style2
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
       </li>
       </ul>
-      <h3>Undergraduates</h3>
+      <h3 style="margin-top: 20px; margin-bottom: 5px;">Undergraduates</h3>
     <!-- </header> -->
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Sergio Barrios. Imperial College London.
