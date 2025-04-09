@@ -34,14 +34,14 @@
 		bg-alt:				#000000,
 		fg:					#CEB888,
 		fg-bold:			#CEB888,
-		fg-light:			rgba(157,150,141,0.2),
-		border:				rgba(255,255,255,0.1),
-		border-bg:			rgba(255,255,255,0.035),
-		highlight:			#C28E0E,
+		fg-light:			rgba(157,150,141,0.6), // Increased opacity
+		border:				rgba(255,255,255,0.3), // Increased opacity
+		border-bg:			rgba(255,255,255,0.1), // Increased opacity
+		highlight:			#A67A0C, // Darkened for better contrast
 		accent1:			#6fc3df,
-		accent2:			#8d82c4,
-		accent3:			#ec8d81,
-		accent4:			#9D968D,
+		accent2:			#6e6ab0, // Darkened purple
+		accent3:			#d16a5f, // Darkened coral
+		accent4:			#7c7468, // Darkened gray
 		accent5:			#8ea9e8,
 		accent6:			#228B22
 	);
