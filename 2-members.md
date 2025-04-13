@@ -499,10 +499,10 @@ banner_color: style2
       <a href="https://github.com/Landbanana" class="icon fa-github"><span class="label">GitHub</span></a>  
       </li>
       </ul>
-        <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
+      <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Abigail Delaney. Queen Mary University of London.
-      <a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/abdelane" class="icon fa-github"><span class="label">GitHub</span></a>  
+        <a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="icon fa-linkedin"><span class="label">Linkedin</span></a>
+        <a href="https://github.com/abdelane" class="icon fa-github"><span class="label">GitHub</span></a>  
       </li>
       </ul>
  </div>
