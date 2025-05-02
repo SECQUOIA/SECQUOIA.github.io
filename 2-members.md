@@ -388,7 +388,7 @@ banner_color: style2
     <header class="major">
      <h3>Alan Yi</h3>
     </header>
-    <li>Joined in Spring 2025.</li>
+    <li>Joined in Summer 2025.</li>
     <li>BS Computer Science, Purdue University, Expected May 2027.</li>
     <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
     <ul class="icons">
