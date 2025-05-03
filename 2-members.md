@@ -377,6 +377,30 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 4.9 -->
+<section id="four-nine" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="/assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Alan Yi</h3>
+    </header>
+    <li>Joined in Summer 2025.</li>
+    <li>BS Computer Science, Purdue University, Expected May 2027.</li>
+    <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
+    <ul class="icons">
+     <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://github.com/ailunyi" class="icon fa-github"><span class="label">GitHub</span></a></li>
+     <li><a href="mailto:yi161@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
