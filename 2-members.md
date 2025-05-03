@@ -285,7 +285,7 @@ banner_color: style2
     <header class="major">
      <h3>Daniel Anoruo</h3>
     </header>
-    <li>Joined in Spring 2025.</li>
+    <li>Joined in Summer 2025.</li>
     <li>BSc, Computer Science, Towson University, 2026.</li>
     <p><b>Research topic</b>: Federated Learning, Machine Learning, Quatum Computing</p>
     <ul class="icons">
