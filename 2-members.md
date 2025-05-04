@@ -274,6 +274,29 @@ banner_color: style2
  </section>
 </section>
 
+<!-- 3.5 -->
+<section id="three-five" class="spotlights">
+ <section>
+  <a class="image">
+   <img src="assets/images/members/DanielAnoruo.jpg" alt="" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Daniel Anoruo</h3>
+    </header>
+    <li>Joined in Summer 2025.</li>
+    <li>BSc, Computer Science, Towson University, 2026.</li>
+    <p><b>Research topic</b>: Federated Learning, Machine Learning, Quatum Computing</p>
+    <ul class="icons">
+     <li><a href="https://www.linkedin.com/in/danano/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://github.com/danoruo1" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- 98 -->
 <section id="ninety-eight">
  <div class="inner">
