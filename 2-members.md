@@ -469,7 +469,7 @@ banner_color: style2
       <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
       <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fa-brands fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://github.com/ZedongPeng" class="fa-brands fa-github"><span class="label">GitHub</span></a>  
-      <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      <a href="https://orcid.org/0000-0001-6001-1738" class="fa-brands fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
@@ -491,27 +491,27 @@ banner_color: style2
       <li style="margin-bottom: 5px;">2024. André Lima Alambert. University of Sao Paulo.
       <a href="https://github.com/iagoleal" class="fa-brands fa-github"><span class="label">GitHub</span></a>  
       <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fa-brands fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      <a href="https://orcid.org/0009-0001-6813-5863" class="fa-brands fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
       <a href="https://github.com/andres9403" class="fa-brands fa-github"><span class="label">GitHub</span></a>  
       <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fa-brands fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      <a href="https://orcid.org/0009-0008-5932-564X" class="fa-brands fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
       <a href="https://github.com/jsrodriguezf" class="fa-brands fa-github"><span class="label">GitHub</span></a>
-      <a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      <a href="https://orcid.org/0000-0001-7348-3857" class="fa-brands fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2023. Pedro Maciel Xavier. Purdue University.
       <a href="https://github.com/pedromxavier" class="fa-brands fa-github"><span class="label">GitHub</span></a>  
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fa-brands fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" style="text-decoration: none; border: none;"><span class="label"></span></a>
+      <a href="https://orcid.org/0000-0002-4678-4942" class="fa-brands fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <h3 style="margin-top: 20px; margin-bottom: 5px;">Undergraduates</h3>
