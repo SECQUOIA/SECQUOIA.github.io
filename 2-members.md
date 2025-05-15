@@ -22,6 +22,19 @@ banner_color: style2
     clip: rect(0,0,0,0);
     border: 0;
 }
+/* Remove all underlines from icon links */
+.icons a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.icons a.fab {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.icons a.icon {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
 </style>
 
 <!-- Main -->
