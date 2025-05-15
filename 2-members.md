@@ -79,7 +79,7 @@ banner_color: style2
 
 <section id="two" class="spotlights">
     <section>
-     <a href="generic.html" class="image">
+     <a class="image">
       <img src="assets/images/members/HamtaBardool.jpg" alt="" data-position="center center" />
      </a>
      <div class="content">
@@ -380,7 +380,7 @@ banner_color: style2
 <section id="four-seven" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/AkshayMahajan.png" alt="" data-position="center center" />
+   <img src="assets/images/members/AkshayMahajan.png" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -400,10 +400,10 @@ banner_color: style2
  </section>
 </section>
 
-<section id="four-seven" class="spotlights">
+<section id="four-eight" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
+   <img src="assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -427,7 +427,7 @@ banner_color: style2
 <section id="four-nine" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
+   <img src="assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
