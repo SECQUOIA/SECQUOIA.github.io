@@ -90,6 +90,10 @@ process_image() {
     # Create WebP version
     echo "  Creating WebP version"
     cwebp -q 80 "$output_file" -o "$webp_file"
+    if [ $? -ne 0 ]; then
+        echo "  Error: Failed to create WebP version for $rel_path" >&2
+        return 1
+    fi
     
     echo "  Done: $rel_path ($(du -h "$output_file" | cut -f1)) and ${basename}.webp ($(du -h "$webp_file" | cut -f1))"
     echo
