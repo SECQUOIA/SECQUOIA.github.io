@@ -69,6 +69,10 @@ process_image() {
     if [ "$width" -gt "$resize_width" ]; then
         echo "  Resizing to ${resize_width}px width"
         convert "$input_file" -resize "${resize_width}x" -quality 85% "$output_file"
+        if [ $? -ne 0 ]; then
+            echo "Error: Failed to resize image $input_file" >&2
+            exit 1
+        fi
     else
         echo "  Image is already ${width}px width, copying"
         cp "$input_file" "$output_file"
