@@ -35,6 +35,46 @@ banner_color: style2
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* Responsive image sizing for member profiles */
+.spotlights section .image {
+  width: 30%; /* Reduced from 35% to pull images inward */
+  max-width: 16em; /* Slightly reduced max width */
+  min-width: 12em; /* Minimum width */
+  position: relative;
+  overflow: hidden;
+  margin-left: 2em; /* Add left margin to pull images away from left edge */
+  border-radius: 5px; /* Optional: adds slight rounding to image corners */
+}
+
+.spotlights section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Adjust content width to balance with image */
+.spotlights section .content {
+  width: 60%; /* Adjusted to balance with the new image width */
+  padding-left: 2em; /* Add some padding to separate from the image */
+}
+
+/* Make sure images stay proportional on smaller screens */
+@media screen and (max-width: 980px) {
+  .spotlights section .image {
+    width: 90%; /* Reduced from 100% to create margins on mobile */
+    max-width: none;
+    min-height: 15em;
+    margin: 0 auto 2em auto; /* Center the image and add bottom margin */
+  }
+  
+  .spotlights section .content {
+    width: 90%; /* Reduced from 100% to create margins */
+    margin: 0 auto; /* Center the content */
+    padding-left: 0; /* Remove padding on mobile */
+  }
+}
 </style>
 
 <!-- Main -->
@@ -79,7 +119,7 @@ banner_color: style2
 
 <section id="two" class="spotlights">
     <section>
-     <a href="generic.html" class="image">
+     <a class="image" href="#">
       <img src="assets/images/members/HamtaBardool.jpg" alt="" data-position="center center" />
      </a>
      <div class="content">
@@ -380,7 +420,7 @@ banner_color: style2
 <section id="four-seven" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/AkshayMahajan.png" alt="" data-position="center center" />
+   <img src="assets/images/members/AkshayMahajan.png" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -400,10 +440,10 @@ banner_color: style2
  </section>
 </section>
 
-<section id="four-seven" class="spotlights">
+<section id="four-eight" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
+   <img src="assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -427,7 +467,7 @@ banner_color: style2
 <section id="four-nine" class="spotlights">
  <section>
   <a class="image">
-   <img src="/assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
+   <img src="assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
