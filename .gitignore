@@ -13,3 +13,16 @@ Dockerfile
 docker-compose.yml
 docker-compose.yaml
 .docker/
+
+# VS Code files
+.vscode/
+.history/
+*.code-workspace
+.settings/
+.project
+.classpath
+.factorypath
+*.launch
+*.sublime-workspace
+*.sublime-project
+.DS_Store
