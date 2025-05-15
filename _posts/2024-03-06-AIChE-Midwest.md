@@ -15,4 +15,4 @@ We thank all who joined us, participated in our sessions, and contributed to the
 
 ![AIChE Midwest 2024]({% link assets/images/posts/AIChEMidwest-2024.jpg %}){: style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 50%;" }
 
-[Back](/3-news.html){: .button .icon .fa-arrow-left }
+[Back to News](/3-news.html){: .button .icon .fa-arrow-left }
