@@ -35,6 +35,46 @@ banner_color: style2
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* Responsive image sizing for member profiles */
+.spotlights section .image {
+  width: 30%; /* Reduced from 35% to pull images inward */
+  max-width: 16em; /* Slightly reduced max width */
+  min-width: 12em; /* Minimum width */
+  position: relative;
+  overflow: hidden;
+  margin-left: 2em; /* Add left margin to pull images away from left edge */
+  border-radius: 5px; /* Optional: adds slight rounding to image corners */
+}
+
+.spotlights section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Adjust content width to balance with image */
+.spotlights section .content {
+  width: 60%; /* Adjusted to balance with the new image width */
+  padding-left: 2em; /* Add some padding to separate from the image */
+}
+
+/* Make sure images stay proportional on smaller screens */
+@media screen and (max-width: 980px) {
+  .spotlights section .image {
+    width: 90%; /* Reduced from 100% to create margins on mobile */
+    max-width: none;
+    min-height: 15em;
+    margin: 0 auto 2em auto; /* Center the image and add bottom margin */
+  }
+  
+  .spotlights section .content {
+    width: 90%; /* Reduced from 100% to create margins */
+    margin: 0 auto; /* Center the content */
+    padding-left: 0; /* Remove padding on mobile */
+  }
+}
 </style>
 
 <!-- Main -->
