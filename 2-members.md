@@ -119,7 +119,7 @@ banner_color: style2
 
 <section id="two" class="spotlights">
     <section>
-     <a class="image">
+     <a class="image" href="#">
       <img src="assets/images/members/HamtaBardool.jpg" alt="" data-position="center center" />
      </a>
      <div class="content">
