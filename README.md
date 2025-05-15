@@ -74,7 +74,7 @@ When making changes to the website:
 To enable live reloading, stop any running containers and run:
 
 ```bash
-docker run -p 4000:4000 -v "$(pwd)":/app secquoia-website bundle exec jekyll serve --livereload --host 0.0.0.0
+docker run -p 4000:4000 -v "$(pwd)":/app jekyll-site bundle exec jekyll serve --livereload --host 0.0.0.0
 ```
 
 ### Building for Production
@@ -82,7 +82,7 @@ docker run -p 4000:4000 -v "$(pwd)":/app secquoia-website bundle exec jekyll ser
 To build the site for production:
 
 ```bash
-docker run -v "$(pwd)":/app secquoia-website bundle exec jekyll build
+docker run -v "$(pwd)":/app jekyll-site bundle exec jekyll build
 ```
 
 The built site will be in the `_site` directory, which can be deployed to any static hosting service.
