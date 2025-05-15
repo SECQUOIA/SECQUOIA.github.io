@@ -626,7 +626,8 @@ banner_color: style2
         height="450"
         style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
         allowfullscreen=""
-        loading="lazy">
+        loading="lazy"
+        title="SECQUOIA Research Group Members' Global Locations Map">
       </iframe>
     </div>
   </div>
