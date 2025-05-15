@@ -12,6 +12,29 @@ banner_color: style2
 <!-- Embedding Font Awesome for ORCID icon -->
 <style>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+.label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+/* Remove all underlines from icon links */
+.icons a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.icons a.fab {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.icons a.icon {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
 </style>
 
 <!-- Main -->
@@ -468,35 +491,35 @@ banner_color: style2
        <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
       <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/ZedongPeng" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/ZedongPeng" class="fab fa-github"><span class="label">GitHub</span></a>
       <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Amandeep Singh Bhatia. North Carolina State University.
       <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/deepquantum88" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/deepquantum88" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <h3 style="margin-top: 20px; margin-bottom: 5px;">Visiting scholars</h3>
     <!-- </header> -->
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Iago Leal de Freitas. Federal University of Rio de Janeiro.
-      <a href="https://github.com/alimaala2002" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/alimaala2002" class="fab fa-github"><span class="label">GitHub</span></a>
       <a href="https://www.linkedin.com/in/iagolealf/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. André Lima Alambert. University of Sao Paulo.
-      <a href="https://github.com/iagoleal" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/iagoleal" class="fab fa-github"><span class="label">GitHub</span></a>
       <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
-      <a href="https://github.com/andres9403" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/andres9403" class="fab fa-github"><span class="label">GitHub</span></a>
       <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid"><span class="label"></span></a>
       </li>
@@ -509,7 +532,7 @@ banner_color: style2
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2023. Pedro Maciel Xavier. Purdue University.
-      <a href="https://github.com/pedromxavier" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/pedromxavier" class="fab fa-github"><span class="label">GitHub</span></a>
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid"><span class="label"></span></a>
       </li>
@@ -531,29 +554,27 @@ banner_color: style2
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Lukas Peng. Purdue University.
       <a href="https://www.linkedin.com/in/lukas-peng/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/lukaspeng" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/lukaspeng" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Keegan Duffin. Purdue University.
       <a href="https://www.linkedin.com/in/keeganduffin/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/keeganlduffin" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/keeganlduffin" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Dale Stager. Purdue University.
       <a href="https://www.linkedin.com/in/dale-stager/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/Landbanana" class="fab fa-github"><span class="label">GitHub</span></a>  
+      <a href="https://github.com/Landbanana" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Abigail Delaney. Imperial College London.
         <a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-        <a href="https://github.com/abdelane" class="fab fa-github"><span class="label">GitHub</span></a>  
+        <a href="https://github.com/abdelane" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
- </div>
-</section>
 
 <section id="map" class="spotlights">
   <div class="inner">
