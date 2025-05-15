@@ -79,3 +79,24 @@
 	@import 'layout/footer';
 	@import 'layout/wrapper';
 	@import 'layout/menu';
+
+/* Add this to your existing CSS */
+#banner {
+  /* Fallback for browsers that don't support WebP */
+  background-image: url('../images/banner-resized.jpg');
+}
+
+/* For browsers that support WebP */
+.webp #banner {
+  background-image: url('../images/banner.webp');
+}
+
+/* Load smaller images on mobile */
+@media only screen and (max-width: 768px) {
+  #banner {
+    background-image: url('../images/banner-mobile.jpg');
+  }
+  .webp #banner {
+    background-image: url('../images/banner-mobile.webp');
+  }
+}
