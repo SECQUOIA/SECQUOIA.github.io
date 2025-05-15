@@ -105,12 +105,11 @@ banner_color: style2
        <li>Joined in Jan 2024.</li>
        <li>Ph.D., Chemical Engineering, University of Cantabria, 2023.</li>
                    <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
-      <!-- <h4>Icons</h4> -->
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/tristantc" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristan LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristan GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope" aria-label="Email Carolina Tristan"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristan ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
      </div>
     </div>
@@ -130,12 +129,11 @@ banner_color: style2
        <li>Joined in Summer 2024.</li>
        <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
                    <p><b>Research topics</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
-      <!-- <h4>Icons</h4> -->
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/Hamtabardool" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin" aria-label="Hamta Bardool LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/Hamtabardool" class="fab fa-github" aria-label="Hamta Bardool GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope" aria-label="Email Hamta Bardool"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" aria-label="Hamta Bardool ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
      </div>
     </div>
@@ -166,10 +164,10 @@ banner_color: style2
     <li>B.Eng., Chemical Engineering, Korea University, 2021.</li>
     <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/AlbertLee125" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0000-0002-4474-3266" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="fab fa-linkedin" aria-label="Albert Lee LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/AlbertLee125" class="fab fa-github" aria-label="Albert Lee GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope" aria-label="Email Albert Lee"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-4474-3266" class="fab fa-orcid" aria-label="Albert Lee ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -191,10 +189,10 @@ banner_color: style2
     <li>BE, Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
     <p><b>Research topics</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/anuragr20" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/anurag-r20" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0001-8360-8614" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/anuragr20" class="fab fa-linkedin" aria-label="Anurag Ramesh LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/anurag-r20" class="fab fa-github" aria-label="Anurag Ramesh GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope" aria-label="Email Anurag Ramesh"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0001-8360-8614" class="fab fa-orcid" aria-label="Anurag Ramesh ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -217,10 +215,10 @@ banner_color: style2
     <li>Professional M.Sc., Chemical Engineering, Purdue University, 2019.</li>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/yirangp/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/parkyr" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/yirangp/" class="fab fa-linkedin" aria-label="Yirang Park LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/parkyr" class="fab fa-github" aria-label="Yirang Park GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope" aria-label="Email Yirang Park"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid" aria-label="Yirang Park ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -243,10 +241,10 @@ banner_color: style2
     <li>B.Sc., Mathematics, Federal University of Rio de Janeiro, 2022.</li>
     <p><b>Research topics</b>: Operations Research, Quantum Optimization</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/pedromxavier" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:pmacielx@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/pedromxavier" class="fab fa-github" aria-label="Pedro Maciel Xavier GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:pmacielx@purdue.edu" class="icon fa-envelope" aria-label="Email Pedro Maciel Xavier"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" aria-label="Pedro Maciel Xavier ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -269,9 +267,9 @@ banner_color: style2
     <li>MSEng, Chemical Engineering, Monash University, Melbourne, 2019.</li>
     <p><b>Research topics</b>: Hybrid Quantum Algorithms for Structured Optimization Problems in Process Systems Engineering.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/sergey-gusev94" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:sgusev@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+      <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin" aria-label="Sergey Gusev LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/sergey-gusev94" class="fab fa-github" aria-label="Sergey Gusev GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:sgusev@purdue.edu" class="icon fa-envelope" aria-label="Email Sergey Gusev"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
@@ -295,10 +293,10 @@ banner_color: style2
     <li>M.Sc., Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
     <p><b>Research topics</b>: Optimization-aided process synthesis and operations</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="https://github.com/andres9403" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin" aria-label="Andres F. Cabeza LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/andres9403" class="fab fa-github" aria-label="Andres F. Cabeza GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope" aria-label="Email Andres F. Cabeza"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" aria-label="Andres F. Cabeza ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -499,8 +497,8 @@ banner_color: style2
 <!-- 99 -->
 <section id="ninety-nine" class="spotlights">
  <section>
-  <a href="1-bernalde.html" class="image">
-   <img src="assets/images/members/DavidBernal.jpg" alt="" data-position="center center" />
+  <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
+   <img src="assets/images/members/DavidBernal.jpg" alt="David Bernal Neira" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -530,9 +528,9 @@ banner_color: style2
     <!-- </header> -->
        <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
-      <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
-      <a href="https://github.com/ZedongPeng" class="fab fa-github"><span class="label">GitHub</span></a>
-      <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid"><span class="label"></span></a>
+      <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin" aria-label="Zedong Peng LinkedIn Profile"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/ZedongPeng" class="fab fa-github" aria-label="Zedong Peng GitHub Profile"><span class="label">GitHub</span></a>
+      <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid" aria-label="Zedong Peng ORCID Profile"><span class="label">ORCID</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
