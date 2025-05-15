@@ -14,6 +14,27 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/julia.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/r.min.js"></script>
 	
+	<!-- WebP detection script -->
+	<script>
+	  // Check if the browser supports WebP
+	  function checkWebpSupport() {
+	    var img = new Image();
+	    img.onload = function() {
+	      var result = (img.width > 0) && (img.height > 0);
+	      if(result) {
+	        document.documentElement.classList.add('webp');
+	      }
+	    };
+	    img.onerror = function() {
+	      // WebP not supported
+	    };
+	    img.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
+	  }
+	  
+	  // Run the detection
+	  checkWebpSupport();
+	</script>
+	
 	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
 	
