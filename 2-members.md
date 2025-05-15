@@ -12,6 +12,16 @@ banner_color: style2
 <!-- Embedding Font Awesome for ORCID icon -->
 <style>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+.label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 </style>
 
 <!-- Main -->
