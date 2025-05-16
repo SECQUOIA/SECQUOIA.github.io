@@ -80,7 +80,7 @@
 	@import 'layout/wrapper';
 	@import 'layout/menu';
 
-/* Add this to your existing CSS */
+/* Banner WebP support - since you confirmed these images exist */
 #banner {
   /* Fallback for browsers that don't support WebP */
   background-image: url('../images/banner-resized.jpg');
@@ -99,4 +99,14 @@
   .webp #banner {
     background-image: url('../images/banner-mobile.webp');
   }
+}
+
+/* General image placeholder color */
+.image {
+  background-color: #f6f6f6;
+}
+
+/* General background placeholder color for articles */
+.tiles article {
+  background-color: #f6f6f6;
 }
