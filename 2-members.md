@@ -391,7 +391,7 @@ banner_color: style2
     <li>Joined in Summer 2025.</li>
     <li>BSc, Computer Science, Towson University, 2026.</li>
     </ul>
-    <p><b>Research topics</b>: Federated Learning, Machine Learning, Quatum Computing</p>
+    <p><b>Research topics</b>: Federated Learning, Machine Learning, Quantum Computing</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/danano/" class="fab fa-linkedin" aria-label="Daniel Anoruo LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/danoruo1" class="fab fa-github" aria-label="Daniel Anoruo GitHub Profile"><span class="label">GitHub</span></a></li>
