@@ -75,6 +75,29 @@ banner_color: style2
     padding-left: 0; /* Remove padding on mobile */
   }
 }
+
+/* Add this to your existing CSS */
+.inner ul:not(.icons) {
+  margin: 0 0 1em 0;
+  padding-left: 1.5em;
+}
+
+/* Fix spacing for research topics paragraphs */
+.inner p {
+  margin: 0.5em 0 1em 0; /* Reduced top margin to bring it closer to list */
+}
+
+/* Make lists more compact */
+.inner ul:not(.icons) {
+  margin: 0 0 0.5em 0; /* Reduced bottom margin */
+  padding-left: 1.5em;
+}
+
+/* Add proper spacing between sections */
+.inner header + ul, 
+.inner header + p {
+  margin-top: 0.75em; /* Consistent spacing after headers */
+}
 </style>
 
 <!-- Main -->
@@ -102,18 +125,20 @@ banner_color: style2
        <header class="major">
         <h3>Carolina Tristan</h3>
        </header>
-       <li>Joined in Jan 2024.</li>
-       <li>Ph.D., Chemical Engineering, University of Cantabria, 2023.</li>
-                   <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristan LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristan GitHub Profile"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope" aria-label="Email Carolina Tristan"><span class="label">Email</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristan ORCID Profile"><span class="label">ORCID</span></a></li>
-    </ul>
+       <ul>
+        <li>Joined in Jan 2024.</li>
+        <li>Ph.D., Chemical Engineering, University of Cantabria, 2023.</li>
+       </ul>
+       <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
+       <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristan LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristan GitHub Profile"><span class="label">GitHub</span></a></li>
+        <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope" aria-label="Email Carolina Tristan"><span class="label">Email</span></a></li>
+        <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristan ORCID Profile"><span class="label">ORCID</span></a></li>
+       </ul>
+      </div>
      </div>
-    </div>
-   </section>
+    </section>
 </section>
 
 <section id="two" class="spotlights">
@@ -126,17 +151,19 @@ banner_color: style2
        <header class="major">
         <h3>Hamta Bardool</h3>
        </header>
-       <li>Joined in Summer 2024.</li>
-       <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
-                   <p><b>Research topics</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin" aria-label="Hamta Bardool LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/Hamtabardool" class="fab fa-github" aria-label="Hamta Bardool GitHub Profile"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope" aria-label="Email Hamta Bardool"><span class="label">Email</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" aria-label="Hamta Bardool ORCID Profile"><span class="label">ORCID</span></a></li>
-    </ul>
+       <ul>
+        <li>Joined in Summer 2024.</li>
+        <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
+       </ul>
+       <p><b>Research topics</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
+       <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin" aria-label="Hamta Bardool LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/Hamtabardool" class="fab fa-github" aria-label="Hamta Bardool GitHub Profile"><span class="label">GitHub</span></a></li>
+        <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope" aria-label="Email Hamta Bardool"><span class="label">Email</span></a></li>
+        <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" aria-label="Hamta Bardool ORCID Profile"><span class="label">ORCID</span></a></li>
+       </ul>
+      </div>
      </div>
-    </div>
    </section>
 </section>
 
@@ -160,8 +187,10 @@ banner_color: style2
     <header class="major">
      <h3>Albert Lee</h3>
     </header>
-    <li>Joined in Fall 2022.</li>
-    <li>B.Eng., Chemical Engineering, Korea University, 2021.</li>
+    <ul>
+      <li>Joined in Fall 2022.</li>
+      <li>B.Eng., Chemical Engineering, Korea University, 2021.</li>
+    </ul>
     <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="fab fa-linkedin" aria-label="Albert Lee LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -185,8 +214,10 @@ banner_color: style2
     <header class="major">
      <h3>Anurag Ramesh</h3>
     </header>
-    <li>Joined in Fall 2023</li>
-    <li>BE, Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
+    <ul>
+      <li>Joined in Fall 2023</li>
+      <li>BE, Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
+    </ul>
     <p><b>Research topics</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/anuragr20" class="fab fa-linkedin" aria-label="Anurag Ramesh LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -210,9 +241,11 @@ banner_color: style2
     <header class="major">
      <h3>Yirang Park</h3>
     </header>
+    <ul>
     <li>Joined in Fall 2023</li>
     <li>B.Sc., Chemical Engineering, University of California, Berkeley, 2015.</li>
     <li>Professional M.Sc., Chemical Engineering, Purdue University, 2019.</li>
+    </ul>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/yirangp/" class="fab fa-linkedin" aria-label="Yirang Park LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -236,9 +269,11 @@ banner_color: style2
     <header class="major">
      <h3>Pedro Maciel Xavier</h3>
     </header>
+    <ul>
     <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
     <li>B.Eng., Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
     <li>B.Sc., Mathematics, Federal University of Rio de Janeiro, 2022.</li>
+    </ul>
     <p><b>Research topics</b>: Operations Research, Quantum Optimization</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -262,9 +297,11 @@ banner_color: style2
     <header class="major">
      <h3>Sergey Gusev</h3>
     </header>
+    <ul>
     <li>Joined in Fall 2024</li>
     <li>B.Eng., Chemical Engineering, Gubkin University, Moscow, 2016.</li>
     <li>MSEng, Chemical Engineering, Monash University, Melbourne, 2019.</li>
+    </ul>
     <p><b>Research topics</b>: Hybrid Quantum Algorithms for Structured Optimization Problems in Process Systems Engineering.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin" aria-label="Sergey Gusev LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -288,9 +325,11 @@ banner_color: style2
     <header class="major">
      <h3>Andres F. Cabeza</h3>
     </header>
+    <ul>
     <li>Joined in Fall 2024</li>
     <li>B.Eng., Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
     <li>M.Sc., Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
+    </ul>
     <p><b>Research topics</b>: Optimization-aided process synthesis and operations</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin" aria-label="Andres F. Cabeza LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -323,9 +362,11 @@ banner_color: style2
     <header class="major">
      <h3>Mateo Huertas Marulanda</h3>
     </header>
+    <ul>
     <li>Joined in Spring 2025.</li>
     <li>BSc, Chemical Engineering, National University of Colombia, 2025.</li>
-    <p><b>Research topic</b>: Process Control, Machine Learning and Optimization.</p>
+    </ul>
+    <p><b>Research topics</b>: Process Control, Machine Learning and Optimization.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/mhuertasm/" class="fab fa-linkedin" aria-label="Mateo Huertas Marulanda LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/mhuertasm" class="fab fa-github" aria-label="Mateo Huertas Marulanda GitHub Profile"><span class="label">GitHub</span></a></li>
@@ -346,9 +387,11 @@ banner_color: style2
     <header class="major">
      <h3>Daniel Anoruo</h3>
     </header>
+    <ul>
     <li>Joined in Summer 2025.</li>
     <li>BSc, Computer Science, Towson University, 2026.</li>
-    <p><b>Research topic</b>: Federated Learning, Machine Learning, Quatum Computing</p>
+    </ul>
+    <p><b>Research topics</b>: Federated Learning, Machine Learning, Quatum Computing</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/danano/" class="fab fa-linkedin" aria-label="Daniel Anoruo LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/danoruo1" class="fab fa-github" aria-label="Daniel Anoruo GitHub Profile"><span class="label">GitHub</span></a></li>
@@ -378,8 +421,10 @@ banner_color: style2
     <header class="major">
      <h3>Alexander (AJ) Collins</h3>
     </header>
+    <ul>
     <li>Joined in Spring 2025.</li>
     <li>BS Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
+    </ul>
     <p><b>Research topics</b>: Marketing and Business Analytics.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin" aria-label="Alexander Collins LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -402,8 +447,10 @@ banner_color: style2
     <header class="major">
      <h3>Ben Murray</h3>
     </header>
+    <ul>
     <li>Joined in Spring 2024.</li>
     <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    </ul>
     <p><b>Research topics</b>: Optimization of reliability design.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/murraybj/" class="fab fa-linkedin" aria-label="Ben Murray LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -425,8 +472,10 @@ banner_color: style2
     <header class="major">
      <h3>Akshay Mahajan</h3>
     </header>
+    <ul>
     <li>Joined in Spring 2025.</li>
     <li>BS Chemical Engineering, Purdue University, Expected May 2026.</li>
+    </ul>
     <p><b>Research topics</b>: Process Systems Machine Learning.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin" aria-label="Akshay Mahajan LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -448,8 +497,10 @@ banner_color: style2
     <header class="major">
      <h3>Sai Karthik</h3>
     </header>
+    <ul>
     <li>Joined in Spring 2025.</li>
     <li>BS Biomedical Engineering, Purdue University, Expected December 2026.</li>
+    </ul>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin" aria-label="Sai Karthik LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
@@ -472,8 +523,10 @@ banner_color: style2
     <header class="major">
      <h3>Alan Yi</h3>
     </header>
+    <ul>
     <li>Joined in Summer 2025.</li>
     <li>BS Computer Science, Purdue University, Expected May 2027.</li>
+    </ul>
     <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin" aria-label="Alan Yi LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
