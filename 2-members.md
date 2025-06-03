@@ -458,26 +458,26 @@ banner_color: style2
 
 <!-- 99 -->
 <section id="ninety-nine" class="spotlights">
- <section>
-  <a href="1-bernalde.html" class="image">
-   <img src="assets/images/members/DavidBernal.jpg" alt="" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>David E. Bernal Neira</h3>
-    </header>
-    <li>Started officially in Fall 2023.</li>
-    <li><a href="1-bernalde.html">Main information</a>.</li>
-    <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
-     <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-     <li><a href="https://github.com/bernalde" class="fab fa-github"><span class="label">GitHub</span></a></li>
-     <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
+  <section>
+    <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
+      <img src="assets/images/members/DavidBernal.jpg" alt="David Bernal Neira" data-position="center center" />
+    </a>
+    <div class="content">
+      <div class="inner">
+        <header class="major">
+          <h3>David E. Bernal Neira</h3>
+        </header>
+        <li>Started officially in Fall 2023.</li>
+        <li><a href="1-bernalde.html">Main information</a>.</li>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+          <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+          <li><a href="https://github.com/bernalde" class="fab fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </section>
 
 <!-- 100 -->
