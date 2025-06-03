@@ -11,4 +11,4 @@ We came together for the Fall 2023 SECQUOIA group dinner to cap off an intense a
 
 ![Group Dinner]({% link assets/images/posts/GroupDinner.jpeg %}){: style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 50%;" }
 
-[Back](/3-news.html){: .button .icon .fa-arrow-left }
+[Back to News](/3-news.html){: .button .icon .fa-arrow-left }

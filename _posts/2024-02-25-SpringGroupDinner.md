@@ -11,4 +11,4 @@ With this meeting we start a new stage of our workgroup research labor. Best of 
 
 ![Spring 2024 Group Dinner]({% link assets/images/posts/2024_summer_group_dinner.jpg %}){: style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 50%;" }
 
-[Back](/3-news.html){: .button .icon .fa-arrow-left }
+[Back to News](/3-news.html){: .button .icon .fa-arrow-left }

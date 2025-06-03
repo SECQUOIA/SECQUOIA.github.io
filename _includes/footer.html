@@ -86,8 +86,7 @@
 			<ul class="copyright">
 				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
 				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration based on work by: <a href="https://github.com/andrewbanchich" target="_blank">Andrew Banchich</a> and Repository forked from the webpage of: <a href="https://pulsipher.info/" target="_blank">Joshua Pulsipher</a> </li>
-
+				<li>Jekyll integration by <a href="https://github.com/andrewbanchich" target="_blank">Andrew Banchich</a> | Template adapted from <a href="https://pulsipher.info/" target="_blank">Joshua Pulsipher</a></li>
 			</ul>
 		</div>
 	</footer>
@@ -103,5 +102,11 @@
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 	<!-- Highlight.js -->
-	<script>hljs.highlightAll();</script>
+	<script>
+	  document.addEventListener('DOMContentLoaded', (event) => {
+	    document.querySelectorAll('pre code').forEach((el) => {
+	      hljs.highlightElement(el);
+	    });
+	  });
+	</script>
 
