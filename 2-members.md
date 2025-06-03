@@ -32,70 +32,48 @@ banner_color: style2
   border-bottom: none !important;
 }
 
-/* Responsive image cards */
+/* Fixed layout for member cards */
 .spotlights > section {
   margin-bottom: 2em;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.spotlights > section:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-}
-
-/* Make images fully responsive */
+/* Fix image container to eliminate white space */
 .spotlights section .image {
   width: 30%;
-  min-width: 12em;
   position: relative;
   overflow: hidden;
   margin: 0;
+  background-color: #5e5e5e; /* Darker background that matches your theme better */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Make images fill the container properly */
 .spotlights section .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: cover; /* This ensures the image covers the entire container */
+  display: block;
 }
 
-/* Adjust content width to balance with image */
+/* Make image links fill the container */
+.spotlights section .image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure content area aligns properly */
 .spotlights section .content {
   width: 70%;
   padding: 2em;
-}
-
-/* Make sure section is responsive */
-@media screen and (max-width: 980px) {
-  .spotlights section {
-    display: block;
-  }
-  
-  .spotlights section .image {
-    width: 100%;
-    min-height: 15em;
-  }
-  
-  .spotlights section .content {
-    width: 100%;
-    padding: 1em;
-  }
-}
-
-/* Standardize member information */
-.inner ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 1em;
-}
-
-.inner ul li {
-  margin-bottom: 0.5em;
 }
 
 /* Section headers */
@@ -106,44 +84,30 @@ banner_color: style2
   padding-bottom: 1em;
 }
 
-/* Table of contents */
-.toc {
-  background: rgba(0,0,0,0.03);
-  padding: 1em;
-  border-radius: 4px;
-  margin-bottom: 2em;
-}
-
-.toc ul {
-  list-style-type: none;
-  padding-left: 1em;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.toc li {
-  margin-right: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-/* Ensure image links (anchors) cover the full image area */
-.spotlights section .image a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* Make sure images scale properly when zoomed */
-@media (min-resolution: 1dppx) {
-  body {
-    text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+/* Fix mobile layout */
+@media screen and (max-width: 980px) {
+  .spotlights section {
+    display: block;
   }
   
+  .spotlights section .image {
+    width: 100%;
+    height: 300px; /* Fixed height for consistent mobile display */
+  }
+  
+  .spotlights section .content {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+/* Override object-fit on zoom */
+@media (min-resolution: 1dppx) {
   .spotlights section .image img {
-    max-width: 100%;
-    height: auto;
+    object-fit: contain !important;
+    max-height: none !important;
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 </style>
@@ -154,7 +118,7 @@ banner_color: style2
 <div class="toc">
   <h4>Jump to Section</h4>
   <ul>
-    <li><a href="#one">Post-doctoral Fellows</a></li>
+    <li><a href="#postdocs">Post-doctoral Fellows</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
     <li><a href="#visitors">Visiting Scholars</a></li>
     <li><a href="#undergrads">Undergraduates</a></li>
@@ -163,8 +127,8 @@ banner_color: style2
   </ul>
 </div>
 
-<!-- 1 -->
-<section id="one">
+<!-- Post-doctoral fellows -->
+<section id="post-docs">
  <div class="inner">
   <header class="major">
    <h2>Post-doctoral fellows</h2>
@@ -172,7 +136,6 @@ banner_color: style2
  </div>
 </section>
 
-<!-- Post-doctoral fellows -->
 
 <!-- Carolina Tristan -->
 <section id="carolina-tristan" class="spotlights">
@@ -250,7 +213,7 @@ banner_color: style2
     </header>
     <ul>
       <li>Joined in Fall 2022.</li>
-      <li>B.Eng., Chemical Engineering, Korea University, 2021.</li>
+      <li>B.Eng. Chemical Engineering, Korea University, 2021.</li>
     </ul>
     <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming.</p>
     <ul class="icons">
@@ -304,8 +267,8 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Fall 2023</li>
-    <li>B.Sc., Chemical Engineering, University of California, Berkeley, 2015.</li>
-    <li>Professional M.Sc., Chemical Engineering, Purdue University, 2019.</li>
+    <li>B.Sc. Chemical Engineering, University of California, Berkeley, 2015.</li>
+    <li>Professional M.Sc. Chemical Engineering, Purdue University, 2019.</li>
     </ul>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
@@ -332,8 +295,8 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
-    <li>B.Eng., Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
-    <li>B.Sc., Mathematics, Federal University of Rio de Janeiro, 2022.</li>
+    <li>B.Eng. Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
+    <li>B.Sc. Mathematics, Federal University of Rio de Janeiro, 2022.</li>
     </ul>
     <p><b>Research topics</b>: Operations Research, Quantum Optimization</p>
     <ul class="icons">
@@ -360,7 +323,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Fall 2024</li>
-    <li>B.Eng., Chemical Engineering, Gubkin University, Moscow, 2016.</li>
+    <li>B.Eng. Chemical Engineering, Gubkin University, Moscow, 2016.</li>
     <li>MSEng, Chemical Engineering, Monash University, Melbourne, 2019.</li>
     </ul>
     <p><b>Research topics</b>: Hybrid Quantum Algorithms for Structured Optimization Problems in Process Systems Engineering.</p>
@@ -387,8 +350,8 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Fall 2024</li>
-    <li>B.Eng., Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
-    <li>M.Sc., Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
+    <li>B.Eng. Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
+    <li>M.Sc. Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
     </ul>
     <p><b>Research topics</b>: Optimization-aided process synthesis and operations</p>
     <ul class="icons">
@@ -424,7 +387,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>BSc, Chemical Engineering, National University of Colombia, 2025.</li>
+    <li>B.Sc. Chemical Engineering, National University of Colombia, 2025.</li>
     </ul>
     <p><b>Research topics</b>: Process Control, Machine Learning and Optimization.</p>
     <ul class="icons">
@@ -449,7 +412,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Summer 2025.</li>
-    <li>BSc, Computer Science, Towson University, expected 2026.</li>
+    <li>B.Sc. Computer Science, Towson University, expected 2026.</li>
     </ul>
     <p><b>Research topics</b>: Federated Learning, Machine Learning, Quantum Computing</p>
     <ul class="icons">
@@ -483,7 +446,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>BS Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
     </ul>
     <p><b>Research topics</b>: Marketing and Business Analytics.</p>
     <ul class="icons">
@@ -509,7 +472,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2025.</li>
     </ul>
     <p><b>Research topics</b>: Optimization of reliability design.</p>
     <ul class="icons">
@@ -534,7 +497,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2026.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2026.</li>
     </ul>
     <p><b>Research topics</b>: Process Systems Machine Learning.</p>
     <ul class="icons">
@@ -560,7 +523,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>BS Biomedical Engineering, Purdue University, Expected December 2026.</li>
+    <li>B.Sc. Biomedical Engineering, Purdue University, Expected December 2026.</li>
     </ul>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
@@ -586,7 +549,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Summer 2025.</li>
-    <li>BS Computer Science, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Computer Science, Purdue University, Expected May 2027.</li>
     </ul>
     <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
     <ul class="icons">
@@ -747,3 +710,92 @@ banner_color: style2
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Override specific properties that might be causing issues
+  const spotlightImages = document.querySelectorAll('.spotlights section .image');
+  
+  spotlightImages.forEach(function(imageContainer) {
+    // Remove fixed positioning
+    imageContainer.style.position = 'relative';
+    imageContainer.style.float = 'none';
+    imageContainer.style.marginLeft = '0';
+    imageContainer.style.marginRight = '0';
+    
+    const img = imageContainer.querySelector('img');
+    if (img) {
+      img.style.width = '100%';
+      img.style.height = '100%';
+      img.style.objectFit = 'cover';
+      img.style.objectPosition = 'center';
+      img.style.position = 'relative';
+      img.style.left = '0';
+      img.style.transform = 'none';
+      
+      // Ensure parent link fills container
+      const link = img.parentElement;
+      if (link && link.tagName === 'A') {
+        link.style.display = 'block';
+        link.style.width = '100%';
+        link.style.height = '100%';
+      }
+    }
+  });
+  
+  // Fix layout containers
+  const spotlightSections = document.querySelectorAll('.spotlights > section');
+  spotlightSections.forEach(function(section) {
+    section.style.display = 'flex';
+    section.style.flexDirection = 'row';
+    section.style.flexWrap = 'wrap';
+    section.style.alignItems = 'stretch';
+    
+    // Make inner section fill container
+    const innerSection = section.querySelector('section');
+    if (innerSection) {
+      innerSection.style.width = '100%';
+      innerSection.style.display = 'flex';
+      innerSection.style.flexDirection = 'row';
+      innerSection.style.flexWrap = 'wrap';
+    }
+  });
+  
+  // Apply additional mobile styles
+  const checkMobile = function() {
+    if (window.innerWidth <= 980) {
+      spotlightImages.forEach(function(imageContainer) {
+        imageContainer.style.width = '100%';
+        imageContainer.style.height = '300px';
+      });
+    } else {
+      spotlightImages.forEach(function(imageContainer) {
+        imageContainer.style.width = '30%';
+        imageContainer.style.height = 'auto';
+      });
+    }
+  };
+  
+  // Check initially and on resize
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
+});
+
+// Allow zooming by modifying the script
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('resize', function() {
+    const spotlightImages = document.querySelectorAll('.spotlights section .image img');
+    spotlightImages.forEach(function(img) {
+      // Respond to zoom by ensuring height is auto when zooming
+      if (window.innerWidth > 980) {
+        img.style.height = 'auto';
+        img.style.maxHeight = 'none';
+        img.style.objectFit = 'contain';
+      }
+    });
+  });
+  
+  // Trigger once on load
+  window.dispatchEvent(new Event('resize'));
+});
+</script>
