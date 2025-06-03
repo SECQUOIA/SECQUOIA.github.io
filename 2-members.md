@@ -11,7 +11,10 @@ banner_color: style2
 
 <!-- Embedding Font Awesome for ORCID icon -->
 <style>
+/* Base styling for all responsive images */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Accessibility classes */
 .label {
     position: absolute;
     width: 1px;
@@ -22,42 +25,76 @@ banner_color: style2
     clip: rect(0,0,0,0);
     border: 0;
 }
+
 /* Remove all underlines from icon links */
-.icons a {
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
-.icons a.fab {
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
-.icons a.icon {
+.icons a, .icons a.fab, .icons a.icon {
   text-decoration: none !important;
   border-bottom: none !important;
 }
 
-<<<<<<< HEAD
-/* Member cards */
+/* Responsive image cards */
 .spotlights > section {
   margin-bottom: 2em;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .spotlights > section:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
-/* Member info lists */
-.member-info {
+/* Make images fully responsive */
+.spotlights section .image {
+  width: 30%;
+  min-width: 12em;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.spotlights section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Adjust content width to balance with image */
+.spotlights section .content {
+  width: 70%;
+  padding: 2em;
+}
+
+/* Make sure section is responsive */
+@media screen and (max-width: 980px) {
+  .spotlights section {
+    display: block;
+  }
+  
+  .spotlights section .image {
+    width: 100%;
+    min-height: 15em;
+  }
+  
+  .spotlights section .content {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+/* Standardize member information */
+.inner ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1em;
 }
 
-.member-info li {
+.inner ul li {
   margin-bottom: 0.5em;
 }
 
@@ -90,83 +127,24 @@ banner_color: style2
   margin-bottom: 0.5em;
 }
 
-/* Alumni section */
-.alumni-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.alumni-list li {
-  margin-bottom: 0.75em;
-  padding-bottom: 0.75em;
-  border-bottom: 1px dashed rgba(0,0,0,0.1);
-}
-
-.alumni-group {
-  margin-bottom: 2em;
-=======
-/* Responsive image sizing for member profiles */
-.spotlights section .image {
-  width: 30%; /* Reduced from 35% to pull images inward */
-  max-width: 16em; /* Slightly reduced max width */
-  min-width: 12em; /* Minimum width */
-  position: relative;
-  overflow: hidden;
-  margin-left: 2em; /* Add left margin to pull images away from left edge */
-  border-radius: 5px; /* Optional: adds slight rounding to image corners */
-}
-
-.spotlights section .image img {
+/* Ensure image links (anchors) cover the full image area */
+.spotlights section .image a {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
-/* Adjust content width to balance with image */
-.spotlights section .content {
-  width: 60%; /* Adjusted to balance with the new image width */
-  padding-left: 2em; /* Add some padding to separate from the image */
-}
-
-/* Make sure images stay proportional on smaller screens */
-@media screen and (max-width: 980px) {
-  .spotlights section .image {
-    width: 90%; /* Reduced from 100% to create margins on mobile */
-    max-width: none;
-    min-height: 15em;
-    margin: 0 auto 2em auto; /* Center the image and add bottom margin */
+/* Make sure images scale properly when zoomed */
+@media (min-resolution: 1dppx) {
+  body {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
   
-  .spotlights section .content {
-    width: 90%; /* Reduced from 100% to create margins */
-    margin: 0 auto; /* Center the content */
-    padding-left: 0; /* Remove padding on mobile */
+  .spotlights section .image img {
+    max-width: 100%;
+    height: auto;
   }
-}
-
-/* Add this to your existing CSS */
-.inner ul:not(.icons) {
-  margin: 0 0 1em 0;
-  padding-left: 1.5em;
-}
-
-/* Fix spacing for research topics paragraphs */
-.inner p {
-  margin: 0.5em 0 1em 0; /* Reduced top margin to bring it closer to list */
-}
-
-/* Make lists more compact */
-.inner ul:not(.icons) {
-  margin: 0 0 0.5em 0; /* Reduced bottom margin */
-  padding-left: 1.5em;
-}
-
-/* Add proper spacing between sections */
-.inner header + ul, 
-.inner header + p {
-  margin-top: 0.75em; /* Consistent spacing after headers */
->>>>>>> origin/main
 }
 </style>
 
@@ -546,8 +524,8 @@ banner_color: style2
 <!-- Akshay Mahajan -->
 <section id="akshay-mahajan" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/AkshayMahajan.png" alt="" data-position="center center" />
+  <a href="#akshay-mahajan" class="image" aria-label="Akshay Mahajan's section">
+   <img src="assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -569,10 +547,11 @@ banner_color: style2
  </section>
 </section>
 
-<section id="four-eight" class="spotlights">
+<!-- Sai Karthik -->
+<section id="sai-karthik" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
+  <a href="#sai-karthik" class="image" aria-label="Sai Karthik's section">
+   <img src="assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -597,8 +576,8 @@ banner_color: style2
 <!-- Alan Yi -->
 <section id="alan-yi" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
+  <a href="#alan-yi" class="image" aria-label="Alan Yi's section">
+   <img src="assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
