@@ -434,7 +434,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Integrated Business and Engineering, Purdue University, expected May 2027.</li>
     </ul>
     <p><b>Research topics</b>: Marketing and Business Analytics.</p>
     <ul class="icons">
@@ -460,7 +460,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2024.</li>
-    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, expected May 2025.</li>
     </ul>
     <p><b>Research topics</b>: Optimization of reliability design.</p>
     <ul class="icons">
@@ -485,7 +485,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2026.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, expected May 2026.</li>
     </ul>
     <p><b>Research topics</b>: Process Systems Machine Learning.</p>
     <ul class="icons">
@@ -511,7 +511,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Biomedical Engineering, Purdue University, Expected December 2026.</li>
+    <li>B.Sc. Biomedical Engineering, Purdue University, expected December 2026.</li>
     </ul>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
@@ -537,7 +537,7 @@ banner_color: style2
     </header>
     <ul>
     <li>Joined in Summer 2025.</li>
-    <li>B.Sc. Computer Science, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Computer Science, Purdue University, expected May 2027.</li>
     </ul>
     <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
     <ul class="icons">
