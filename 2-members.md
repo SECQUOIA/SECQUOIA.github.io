@@ -2,7 +2,7 @@
 title: Members
 layout: page
 description: 'SECQUOIA Group Members.'
-image: assets/images/group2024.jpg
+image: /assets/images/group2024.jpg
 nav-menu: true
 banner_color: style2
 ---
@@ -40,6 +40,18 @@ banner_color: style2
 <!-- Main -->
 <div id="main">
 
+<div class="toc">
+  <h4>Jump to Section</h4>
+  <ul>
+    <li><a href="#one">Post-doctoral Fellows</a></li>
+    <li><a href="#phds">Doctoral Students</a></li>
+    <li><a href="#visitors">Visiting Scholars</a></li>
+    <li><a href="#undergrads">Undergraduates</a></li>
+    <li><a href="#pi">Principal Investigator</a></li>
+    <li><a href="#alumni">Alumni</a></li>
+  </ul>
+</div>
+
 <!-- 1 -->
 <section id="one">
  <div class="inner">
@@ -55,7 +67,7 @@ banner_color: style2
 <section id="carolina-tristan" class="spotlights">
     <section>
      <a href="#carolina-tristan" class="image" aria-label="Carolina Tristan's section">
-      <img src="assets/images/members/CarolinaTristan.jpg" alt="Carolina Tristan" data-position="center center" />
+      <img src="/assets/images/members/CarolinaTristan.jpg" alt="Carolina Tristan" data-position="center center" />
      </a>
      <div class="content">
       <div class="inner">
@@ -80,7 +92,7 @@ banner_color: style2
 <section id="hamta-bardool" class="spotlights">
     <section>
      <a href="#hamta-bardool" class="image" aria-label="Hamta Bardool's section">
-      <img src="assets/images/members/HamtaBardool.jpg" alt="Hamta Bardool" data-position="center center" />
+      <img src="/assets/images/members/HamtaBardool.jpg" alt="Hamta Bardool" data-position="center center" />
      </a>
      <div class="content">
       <div class="inner">
@@ -114,7 +126,7 @@ banner_color: style2
 <section id="albert-lee" class="spotlights">
  <section>
   <a href="#albert-lee" class="image" aria-label="Albert Lee's section">
-   <img src="assets/images/members/AlbertJoonLee.jpg" alt="Albert Lee" data-position="center center" />
+   <img src="/assets/images/members/AlbertJoonLee.jpg" alt="Albert Lee" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -139,7 +151,7 @@ banner_color: style2
 <section id="anurag-ramesh" class="spotlights">
  <section>
   <a href="#anurag-ramesh" class="image" aria-label="Anurag Ramesh's section">
-   <img src="assets/images/members/AnuragRamesh.jpeg" alt="Anurag Ramesh" data-position="center center" />
+   <img src="/assets/images/members/AnuragRamesh.jpeg" alt="Anurag Ramesh" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -164,7 +176,7 @@ banner_color: style2
 <section id="yirang-park" class="spotlights">
  <section>
   <a href="#yirang-park" class="image" aria-label="Yirang Park's section">
-   <img src="assets/images/members/Yirang-Park.jpg" alt="Yirang Park" data-position="center center" />
+   <img src="/assets/images/members/Yirang-Park.jpg" alt="Yirang Park" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -190,7 +202,7 @@ banner_color: style2
 <section id="pedro-maciel-xavier" class="spotlights">
  <section>
   <a href="#pedro-maciel-xavier" class="image" aria-label="Pedro Maciel Xavier's section">
-   <img src="assets/images/members/PedroMacielXavier.jpg" alt="Pedro Maciel Xavier" data-position="center center" />
+   <img src="/assets/images/members/PedroMacielXavier.jpg" alt="Pedro Maciel Xavier" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -216,7 +228,7 @@ banner_color: style2
 <section id="sergey-gusev" class="spotlights">
  <section>
   <a href="#sergey-gusev" class="image" aria-label="Sergey Gusev's section">
-   <img src="assets/images/members/SergeyGusev.jpg" alt="Sergey Gusev" data-position="center center" />
+   <img src="/assets/images/members/SergeyGusev.jpg" alt="Sergey Gusev" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -241,7 +253,7 @@ banner_color: style2
 <section id="andres-cabeza" class="spotlights">
  <section>
   <a href="#andres-cabeza" class="image" aria-label="Andres F. Cabeza's section">
-   <img src="assets/images/members/AndresCabeza.jpg" alt="Andres F. Cabeza" data-position="center center" />
+   <img src="/assets/images/members/AndresCabeza.jpg" alt="Andres F. Cabeza" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -276,7 +288,7 @@ banner_color: style2
 <section id="mateo-huertas-marulanda" class="spotlights">
  <section>
   <a href="#mateo-huertas-marulanda" class="image" aria-label="Mateo Huertas Marulanda's section">
-   <img src="assets/images/members/MateoHuertasMarulanda.png" alt="Mateo Huertas Marulanda" data-position="center center" />
+   <img src="/assets/images/members/MateoHuertasMarulanda.png" alt="Mateo Huertas Marulanda" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -299,7 +311,7 @@ banner_color: style2
 <section id="daniel-anoruo" class="spotlights">
  <section>
   <a href="#daniel-anoruo" class="image" aria-label="Daniel Anoruo's section">
-   <img src="assets/images/members/DanielAnoruo.jpg" alt="Daniel Anoruo" data-position="center center" />
+   <img src="/assets/images/members/DanielAnoruo.jpg" alt="Daniel Anoruo" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -331,7 +343,7 @@ banner_color: style2
 <section id="aj-collins" class="spotlights">
  <section>
   <a href="#aj-collins" class="image" aria-label="Alexander (AJ) Collins's section">
-   <img src="assets/images/members/AJCollins.png" alt="Alexander (AJ) Collins" data-position="center center" />
+   <img src="/assets/images/members/AJCollins.png" alt="Alexander (AJ) Collins" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -355,7 +367,7 @@ banner_color: style2
 <section id="ben-murray" class="spotlights">
  <section>
   <a href="#ben-murray" class="image" aria-label="Ben Murray's section">
-   <img src="assets/images/members/BenMurray.jpeg" alt="Ben Murray" data-position="center center" />
+   <img src="/assets/images/members/BenMurray.jpeg" alt="Ben Murray" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -378,7 +390,7 @@ banner_color: style2
 <section id="akshay-mahajan" class="spotlights">
  <section>
   <a href="#akshay-mahajan" class="image" aria-label="Akshay Mahajan's section">
-   <img src="/assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
+   <img src="//assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -402,7 +414,7 @@ banner_color: style2
 <section id="sai-karthik" class="spotlights">
  <section>
   <a href="#sai-karthik" class="image" aria-label="Sai Karthik's section">
-   <img src="/assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
+   <img src="//assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -426,7 +438,7 @@ banner_color: style2
 <section id="alan-yi" class="spotlights">
  <section>
   <a href="#alan-yi" class="image" aria-label="Alan Yi's section">
-   <img src="/assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
+   <img src="//assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -459,7 +471,7 @@ banner_color: style2
 <section id="david-bernal" class="spotlights">
   <section>
     <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
-      <img src="assets/images/members/DavidBernal.jpg" alt="David Bernal Neira" data-position="center center" />
+      <img src="/assets/images/members/DavidBernal.jpg" alt="David Bernal Neira" data-position="center center" />
     </a>
     <div class="content">
       <div class="inner">
@@ -587,7 +599,9 @@ banner_color: style2
         height="450"
         style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
         allowfullscreen=""
-        loading="lazy">
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map of SECQUOIA Group Members' Locations">
       </iframe>
     </div>
   </div>
