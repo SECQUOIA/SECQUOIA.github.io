@@ -63,10 +63,10 @@ banner_color: style2
         <h3>Carolina Tristan</h3>
        </header>
        <li>Joined in Jan 2024.</li>
-       <li>Ph.D., Chemical Engineering, University of Cantabria, 2023.</li>
+       <li>Ph.D. Chemical Engineering, University of Cantabria, 2023.</li>
                    <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
       <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/tristantc" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -88,10 +88,10 @@ banner_color: style2
         <h3>Hamta Bardool</h3>
        </header>
        <li>Joined in Summer 2024.</li>
-       <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
+       <li>Ph.D. Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
                    <p><b>Research topics</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
       <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/Hamtabardool" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -122,10 +122,10 @@ banner_color: style2
      <h3>Albert Lee</h3>
     </header>
     <li>Joined in Fall 2022.</li>
-    <li>B.Eng., Chemical Engineering, Korea University, 2021.</li>
+    <li>B.Eng. Chemical Engineering, Korea University, 2021.</li>
     <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/AlbertLee125" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:lee4382@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0000-0002-4474-3266" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -147,10 +147,10 @@ banner_color: style2
      <h3>Anurag Ramesh</h3>
     </header>
     <li>Joined in Fall 2023</li>
-    <li>BE, Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
+    <li>B.Eng. Chemical Engineering, Birla Institute of Technology and Science Pilani, 2023.</li>
     <p><b>Research topics</b>: Benchmarking Classical and Quantum Algorithms for Optimization and Computational Chemistry.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/anuragr20" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/anuragr20" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/anurag-r20" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0009-0001-8360-8614" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -172,11 +172,11 @@ banner_color: style2
      <h3>Yirang Park</h3>
     </header>
     <li>Joined in Fall 2023</li>
-    <li>B.Sc., Chemical Engineering, University of California, Berkeley, 2015.</li>
-    <li>Professional M.Sc., Chemical Engineering, Purdue University, 2019.</li>
+    <li>B.Sc. Chemical Engineering, University of California, Berkeley, 2015.</li>
+    <li>Professional M.Sc. Chemical Engineering, Purdue University, 2019.</li>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/yirangp/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/yirangp/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/parkyr" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -198,11 +198,11 @@ banner_color: style2
      <h3>Pedro Maciel Xavier</h3>
     </header>
     <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
-    <li>B.Eng., Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
-    <li>B.Sc., Mathematics, Federal University of Rio de Janeiro, 2022.</li>
+    <li>B.Eng. Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
+    <li>B.Sc. Mathematics, Federal University of Rio de Janeiro, 2022.</li>
     <p><b>Research topics</b>: Operations Research, Quantum Optimization</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/pedromxavier" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:pmacielx@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -224,11 +224,11 @@ banner_color: style2
      <h3>Sergey Gusev</h3>
     </header>
     <li>Joined in Fall 2024</li>
-    <li>B.Eng., Chemical Engineering, Gubkin University, Moscow, 2016.</li>
-    <li>MSEng, Chemical Engineering, Monash University, Melbourne, 2019.</li>
+    <li>B.Eng. Chemical Engineering, Gubkin University, Moscow, 2016.</li>
+    <li>Ms.Eng. Chemical Engineering, Monash University, Melbourne, 2019.</li>
     <p><b>Research topics</b>: Hybrid Quantum Algorithms for Structured Optimization Problems in Process Systems Engineering.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/sergey-gusev94" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:sgusev@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
@@ -249,11 +249,11 @@ banner_color: style2
      <h3>Andres F. Cabeza</h3>
     </header>
     <li>Joined in Fall 2024</li>
-    <li>B.Eng., Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
-    <li>M.Sc., Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
+    <li>B.Eng. Chemical Engineering, Universidad Nacional de Colombia, Manizales, 2017.</li>
+    <li>M.Sc. Chemical Engineering, Universidad Nacional de Colombia, Bogotá, 2023.</li>
     <p><b>Research topics</b>: Optimization-aided process synthesis and operations</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/andres9403" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:acabezap@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -284,10 +284,10 @@ banner_color: style2
      <h3>Mateo Huertas Marulanda</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>BSc, Chemical Engineering, National University of Colombia, 2025.</li>
+    <li>B.Sc. Chemical Engineering, National University of Colombia, 2025.</li>
     <p><b>Research topic</b>: Process Control, Machine Learning and Optimization.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/mhuertasm/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/mhuertasm/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/mhuertasm" class="fab fa-github"><span class="label">GitHub</span></a></li>
     </ul>
    </div>
@@ -307,10 +307,10 @@ banner_color: style2
      <h3>Daniel Anoruo</h3>
     </header>
     <li>Joined in Summer 2025.</li>
-    <li>BSc, Computer Science, Towson University, 2026.</li>
+    <li>B.Sc. Computer Science, Towson University, 2026.</li>
     <p><b>Research topic</b>: Federated Learning, Machine Learning, Quatum Computing</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/danano/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/danano/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/danoruo1" class="fab fa-github"><span class="label">GitHub</span></a></li>
     </ul>
    </div>
@@ -339,10 +339,10 @@ banner_color: style2
      <h3>Alexander (AJ) Collins</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>BS Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
     <p><b>Research topics</b>: Marketing and Business Analytics.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/colli525" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:colli525@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
      </ul>
@@ -363,10 +363,10 @@ banner_color: style2
      <h3>Ben Murray</h3>
     </header>
     <li>Joined in Spring 2024.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2025.</li>
     <p><b>Research topics</b>: Optimization of reliability design.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/murraybj/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/murraybj/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/murraybj" class="fab fa-github"><span class="label">GitHub</span></a></li>
     </ul>
    </div>
@@ -386,10 +386,10 @@ banner_color: style2
      <h3>Akshay Mahajan</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>BS Chemical Engineering, Purdue University, Expected May 2026.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2026.</li>
     <p><b>Research topics</b>: Process Systems Machine Learning.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/akrmahajan" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:mahaja34@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
@@ -410,10 +410,10 @@ banner_color: style2
      <h3>Sai Karthik</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>BS Biomedical Engineering, Purdue University, Expected December 2026.</li>
+    <li>B.Sc. Biomedical Engineering, Purdue University, Expected December 2026.</li>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/sa1K" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:karthik9@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
@@ -434,10 +434,10 @@ banner_color: style2
      <h3>Alan Yi</h3>
     </header>
     <li>Joined in Summer 2025.</li>
-    <li>BS Computer Science, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Computer Science, Purdue University, Expected May 2027.</li>
     <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+     <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/ailunyi" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:yi161@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
     </ul>
@@ -469,7 +469,7 @@ banner_color: style2
         <li>Started officially in Fall 2023.</li>
         <li><a href="1-bernalde.html">Main information</a>.</li>
         <ul class="icons">
-          <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
+          <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
           <li><a href="mailto:dbernaln@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
           <li><a href="https://github.com/bernalde" class="fab fa-github"><span class="label">GitHub</span></a></li>
           <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid"><span class="label">ORCID</span></a></li>
@@ -489,14 +489,14 @@ banner_color: style2
     <!-- </header> -->
        <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
-      <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/ZedongPeng" class="fab fa-github"><span class="label">GitHub</span></a>
       <a href="https://orcid.org/0000-0001-6001-1738" class="fab fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Amandeep Singh Bhatia. North Carolina State University.
-      <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/amandeep-singh-bhatia-phd-07b83822/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/deepquantum88" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
@@ -505,21 +505,21 @@ banner_color: style2
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Iago Leal de Freitas. Federal University of Rio de Janeiro.
       <a href="https://github.com/alimaala2002" class="fab fa-github"><span class="label">GitHub</span></a>
-      <a href="https://www.linkedin.com/in/iagolealf/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/iagolealf/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. André Lima Alambert. University of Sao Paulo.
       <a href="https://github.com/iagoleal" class="fab fa-github"><span class="label">GitHub</span></a>
-      <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
       <a href="https://github.com/andres9403" class="fab fa-github"><span class="label">GitHub</span></a>
-      <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
@@ -532,7 +532,7 @@ banner_color: style2
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2023. Pedro Maciel Xavier. Purdue University.
       <a href="https://github.com/pedromxavier" class="fab fa-github"><span class="label">GitHub</span></a>
-      <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid"><span class="label"></span></a>
       </li>
       </ul>
@@ -540,37 +540,37 @@ banner_color: style2
     <!-- </header> -->
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Sergio Barrios. Imperial College London.
-      <a href="https://www.linkedin.com/in/sergio-barrios-rosado/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/sergio-barrios-rosado/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/barrios2001" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Dhruv Mendpara. Purdue University.
-      <a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/dhruv-mendpara-594875237/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/dhruvmendpara1" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Lukas Peng. Purdue University.
-      <a href="https://www.linkedin.com/in/lukas-peng/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/lukas-peng/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/lukaspeng" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Keegan Duffin. Purdue University.
-      <a href="https://www.linkedin.com/in/keeganduffin/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/keeganduffin/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/keeganlduffin" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Dale Stager. Purdue University.
-      <a href="https://www.linkedin.com/in/dale-stager/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+      <a href="https://www.linkedin.com/in/dale-stager/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/Landbanana" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
       <ul class="icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Abigail Delaney. Imperial College London.
-        <a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="fab fa-linkedin"><span class="label">Linkedin</span></a>
+        <a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a>
         <a href="https://github.com/abdelane" class="fab fa-github"><span class="label">GitHub</span></a>
       </li>
       </ul>
