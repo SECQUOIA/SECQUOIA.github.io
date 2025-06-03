@@ -11,10 +11,7 @@ banner_color: style2
 
 <!-- Embedding Font Awesome for ORCID icon -->
 <style>
-/* Base styling for all responsive images */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-
-/* Accessibility classes */
 .label {
     position: absolute;
     width: 1px;
@@ -25,90 +22,81 @@ banner_color: style2
     clip: rect(0,0,0,0);
     border: 0;
 }
-
 /* Remove all underlines from icon links */
-.icons a, .icons a.fab, .icons a.icon {
+.icons a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.icons a.fab {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+.icons a.icon {
   text-decoration: none !important;
   border-bottom: none !important;
 }
 
-/* Fixed layout for member cards */
-.spotlights > section {
-  margin-bottom: 2em;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-/* Fix image container to eliminate white space */
+/* Responsive image sizing for member profiles */
 .spotlights section .image {
-  width: 30%;
+  width: 30%; /* Reduced from 35% to pull images inward */
+  max-width: 16em; /* Slightly reduced max width */
+  min-width: 12em; /* Minimum width */
   position: relative;
   overflow: hidden;
-  margin: 0;
-  background-color: #5e5e5e; /* Darker background that matches your theme better */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 2em; /* Add left margin to pull images away from left edge */
+  border-radius: 5px; /* Optional: adds slight rounding to image corners */
 }
 
-/* Make images fill the container properly */
 .spotlights section .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This ensures the image covers the entire container */
-  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* Make image links fill the container */
-.spotlights section .image a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* Ensure content area aligns properly */
+/* Adjust content width to balance with image */
 .spotlights section .content {
-  width: 70%;
-  padding: 2em;
+  width: 60%; /* Adjusted to balance with the new image width */
+  padding-left: 2em; /* Add some padding to separate from the image */
 }
 
-/* Section headers */
-#main > section > .inner > header.major {
-  text-align: center;
-  margin-bottom: 2em;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 1em;
-}
-
-/* Fix mobile layout */
+/* Make sure images stay proportional on smaller screens */
 @media screen and (max-width: 980px) {
-  .spotlights section {
-    display: block;
-  }
-  
   .spotlights section .image {
-    width: 100%;
-    height: 300px; /* Fixed height for consistent mobile display */
+    width: 90%; /* Reduced from 100% to create margins on mobile */
+    max-width: none;
+    min-height: 15em;
+    margin: 0 auto 2em auto; /* Center the image and add bottom margin */
   }
   
   .spotlights section .content {
-    width: 100%;
-    padding: 1em;
+    width: 90%; /* Reduced from 100% to create margins */
+    margin: 0 auto; /* Center the content */
+    padding-left: 0; /* Remove padding on mobile */
   }
 }
 
-/* Override object-fit on zoom */
-@media (min-resolution: 1dppx) {
-  .spotlights section .image img {
-    object-fit: contain !important;
-    max-height: none !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
+/* Add this to your existing CSS */
+.inner ul:not(.icons) {
+  margin: 0 0 1em 0;
+  padding-left: 1.5em;
+}
+
+/* Fix spacing for research topics paragraphs */
+.inner p {
+  margin: 0.5em 0 1em 0; /* Reduced top margin to bring it closer to list */
+}
+
+/* Make lists more compact */
+.inner ul:not(.icons) {
+  margin: 0 0 0.5em 0; /* Reduced bottom margin */
+  padding-left: 1.5em;
+}
+
+/* Add proper spacing between sections */
+.inner header + ul, 
+.inner header + p {
+  margin-top: 0.75em; /* Consistent spacing after headers */
 }
 </style>
 
@@ -710,92 +698,3 @@ banner_color: style2
     </div>
   </div>
 </section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Override specific properties that might be causing issues
-  const spotlightImages = document.querySelectorAll('.spotlights section .image');
-  
-  spotlightImages.forEach(function(imageContainer) {
-    // Remove fixed positioning
-    imageContainer.style.position = 'relative';
-    imageContainer.style.float = 'none';
-    imageContainer.style.marginLeft = '0';
-    imageContainer.style.marginRight = '0';
-    
-    const img = imageContainer.querySelector('img');
-    if (img) {
-      img.style.width = '100%';
-      img.style.height = '100%';
-      img.style.objectFit = 'cover';
-      img.style.objectPosition = 'center';
-      img.style.position = 'relative';
-      img.style.left = '0';
-      img.style.transform = 'none';
-      
-      // Ensure parent link fills container
-      const link = img.parentElement;
-      if (link && link.tagName === 'A') {
-        link.style.display = 'block';
-        link.style.width = '100%';
-        link.style.height = '100%';
-      }
-    }
-  });
-  
-  // Fix layout containers
-  const spotlightSections = document.querySelectorAll('.spotlights > section');
-  spotlightSections.forEach(function(section) {
-    section.style.display = 'flex';
-    section.style.flexDirection = 'row';
-    section.style.flexWrap = 'wrap';
-    section.style.alignItems = 'stretch';
-    
-    // Make inner section fill container
-    const innerSection = section.querySelector('section');
-    if (innerSection) {
-      innerSection.style.width = '100%';
-      innerSection.style.display = 'flex';
-      innerSection.style.flexDirection = 'row';
-      innerSection.style.flexWrap = 'wrap';
-    }
-  });
-  
-  // Apply additional mobile styles
-  const checkMobile = function() {
-    if (window.innerWidth <= 980) {
-      spotlightImages.forEach(function(imageContainer) {
-        imageContainer.style.width = '100%';
-        imageContainer.style.height = '300px';
-      });
-    } else {
-      spotlightImages.forEach(function(imageContainer) {
-        imageContainer.style.width = '30%';
-        imageContainer.style.height = 'auto';
-      });
-    }
-  };
-  
-  // Check initially and on resize
-  checkMobile();
-  window.addEventListener('resize', checkMobile);
-});
-
-// Allow zooming by modifying the script
-document.addEventListener('DOMContentLoaded', function() {
-  window.addEventListener('resize', function() {
-    const spotlightImages = document.querySelectorAll('.spotlights section .image img');
-    spotlightImages.forEach(function(img) {
-      // Respond to zoom by ensuring height is auto when zooming
-      if (window.innerWidth > 980) {
-        img.style.height = 'auto';
-        img.style.maxHeight = 'none';
-        img.style.objectFit = 'contain';
-      }
-    });
-  });
-  
-  // Trigger once on load
-  window.dispatchEvent(new Event('resize'));
-});
-</script>
