@@ -390,7 +390,7 @@ banner_color: style2
 <section id="akshay-mahajan" class="spotlights">
  <section>
   <a href="#akshay-mahajan" class="image" aria-label="Akshay Mahajan's section">
-   <img src="//assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
+   <img src="/assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -414,7 +414,7 @@ banner_color: style2
 <section id="sai-karthik" class="spotlights">
  <section>
   <a href="#sai-karthik" class="image" aria-label="Sai Karthik's section">
-   <img src="//assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
+   <img src="/assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -438,7 +438,7 @@ banner_color: style2
 <section id="alan-yi" class="spotlights">
  <section>
   <a href="#alan-yi" class="image" aria-label="Alan Yi's section">
-   <img src="//assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
+   <img src="/assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
