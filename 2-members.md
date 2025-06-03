@@ -307,7 +307,7 @@ banner_color: style2
      <h3>Daniel Anoruo</h3>
     </header>
     <li>Joined in Summer 2025.</li>
-    <li>B.Sc. Computer Science, Towson University, 2026.</li>
+    <li>B.Sc. Computer Science, Towson University, expected 2026.</li>
     <p><b>Research topic</b>: Federated Learning, Machine Learning, Quatum Computing</p>
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/danano/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -339,7 +339,7 @@ banner_color: style2
      <h3>Alexander (AJ) Collins</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Integrated Business and Engineering, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Integrated Business and Engineering, Purdue University, expected May 2027.</li>
     <p><b>Research topics</b>: Marketing and Business Analytics.</p>
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -363,7 +363,7 @@ banner_color: style2
      <h3>Ben Murray</h3>
     </header>
     <li>Joined in Spring 2024.</li>
-    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2025.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, expected May 2025.</li>
     <p><b>Research topics</b>: Optimization of reliability design.</p>
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/murraybj/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -386,7 +386,7 @@ banner_color: style2
      <h3>Akshay Mahajan</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Chemical Engineering, Purdue University, Expected May 2026.</li>
+    <li>B.Sc. Chemical Engineering, Purdue University, expected May 2026.</li>
     <p><b>Research topics</b>: Process Systems Machine Learning.</p>
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -410,7 +410,7 @@ banner_color: style2
      <h3>Sai Karthik</h3>
     </header>
     <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Biomedical Engineering, Purdue University, Expected December 2026.</li>
+    <li>B.Sc. Biomedical Engineering, Purdue University, expected December 2026.</li>
     <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -434,7 +434,7 @@ banner_color: style2
      <h3>Alan Yi</h3>
     </header>
     <li>Joined in Summer 2025.</li>
-    <li>B.Sc. Computer Science, Purdue University, Expected May 2027.</li>
+    <li>B.Sc. Computer Science, Purdue University, expected May 2027.</li>
     <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin"><span class="label">LinkedIn</span></a></li>
