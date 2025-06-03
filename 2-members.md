@@ -35,6 +35,75 @@ banner_color: style2
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+/* Member cards */
+.spotlights > section {
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  overflow: hidden;
+}
+
+.spotlights > section:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Member info lists */
+.member-info {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+.member-info li {
+  margin-bottom: 0.5em;
+}
+
+/* Section headers */
+#main > section > .inner > header.major {
+  text-align: center;
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 1em;
+}
+
+/* Table of contents */
+.toc {
+  background: rgba(0,0,0,0.03);
+  padding: 1em;
+  border-radius: 4px;
+  margin-bottom: 2em;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 1em;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toc li {
+  margin-right: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Alumni section */
+.alumni-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.alumni-list li {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.75em;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.alumni-group {
+  margin-bottom: 2em;
+}
 </style>
 
 <!-- Main -->
