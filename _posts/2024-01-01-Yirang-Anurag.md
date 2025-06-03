@@ -15,4 +15,4 @@ We are excited to have them in our group!
 
 ![Yirang and Anurag]({% link assets/images/posts/yirang_anurag_welcome.jpg %}){: style="display: block; margin-left: auto; margin-right: auto; height: 50%; width: 80%;" }
 
-[Back](/3-news.html){: .button .icon .fa-arrow-left }
+[Back to News](/3-news.html){: .button .icon .fa-arrow-left }
