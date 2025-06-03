@@ -49,13 +49,13 @@ banner_color: style2
  </div>
 </section>
 
-<!-- 1.1 -->
+<!-- Post-doctoral fellows -->
 
-<!-- 1.2 -->
-<section id="one-two" class="spotlights">
+<!-- Carolina Tristan -->
+<section id="carolina-tristan" class="spotlights">
     <section>
-     <a class="image">
-      <img src="assets/images/members/CarolinaTristan.jpg" alt="" data-position="center center" />
+     <a href="#carolina-tristan" class="image" aria-label="Carolina Tristan's section">
+      <img src="assets/images/members/CarolinaTristan.jpg" alt="Carolina Tristan" data-position="center center" />
      </a>
      <div class="content">
       <div class="inner">
@@ -65,8 +65,7 @@ banner_color: style2
        <li>Joined in Jan 2024.</li>
        <li>Ph.D., Chemical Engineering, University of Cantabria, 2023.</li>
                    <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
-      <!-- <h4>Icons</h4> -->
-    <ul class="icons">
+      <ul class="icons">
      <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="https://github.com/tristantc" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -77,10 +76,11 @@ banner_color: style2
    </section>
 </section>
 
-<section id="two" class="spotlights">
+<!-- Hamta Bardool -->
+<section id="hamta-bardool" class="spotlights">
     <section>
-     <a href="generic.html" class="image">
-      <img src="assets/images/members/HamtaBardool.jpg" alt="" data-position="center center" />
+     <a href="#hamta-bardool" class="image" aria-label="Hamta Bardool's section">
+      <img src="assets/images/members/HamtaBardool.jpg" alt="Hamta Bardool" data-position="center center" />
      </a>
      <div class="content">
       <div class="inner">
@@ -90,8 +90,7 @@ banner_color: style2
        <li>Joined in Summer 2024.</li>
        <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
                    <p><b>Research topics</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
-      <!-- <h4>Icons</h4> -->
-    <ul class="icons">
+      <ul class="icons">
      <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin"><span class="label">Linkedin</span></a></li>
      <li><a href="https://github.com/Hamtabardool" class="fab fa-github"><span class="label">GitHub</span></a></li>
      <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -102,7 +101,7 @@ banner_color: style2
    </section>
 </section>
 
-<!-- Three -->
+<!-- PhD students -->
 <section id="three">
  <div class="inner">
   <header class="major">
