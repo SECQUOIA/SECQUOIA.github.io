@@ -102,7 +102,7 @@ banner_color: style2
 </section>
 
 <!-- PhD students -->
-<section id="three">
+<section id="phds">
  <div class="inner">
   <header class="major">
    <h2>Doctoral students</h2>
@@ -110,11 +110,11 @@ banner_color: style2
  </div>
 </section>
 
-<!-- 2.1 -->
-<section id="two-one" class="spotlights">
+<!-- Albert Lee -->
+<section id="albert-lee" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/AlbertJoonLee.jpg" alt="" data-position="center center" />
+  <a href="#albert-lee" class="image" aria-label="Albert Lee's section">
+   <img src="assets/images/members/AlbertJoonLee.jpg" alt="Albert Lee" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -135,11 +135,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 2.2 -->
-<section id="two-two" class="spotlights">
+<!-- Anurag Ramesh -->
+<section id="anurag-ramesh" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/AnuragRamesh.jpeg" alt="" data-position="center center" />
+  <a href="#anurag-ramesh" class="image" aria-label="Anurag Ramesh's section">
+   <img src="assets/images/members/AnuragRamesh.jpeg" alt="Anurag Ramesh" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -160,11 +160,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 2.3 -->
-<section id="two-three" class="spotlights">
+<!-- Yirang Park -->
+<section id="yirang-park" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/Yirang-Park.jpg" alt="" data-position="center center" />
+  <a href="#yirang-park" class="image" aria-label="Yirang Park's section">
+   <img src="assets/images/members/Yirang-Park.jpg" alt="Yirang Park" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -186,11 +186,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 2.4 -->
-<section id="two-four" class="spotlights">
+<!-- Pedro Maciel Xavier -->
+<section id="pedro-maciel-xavier" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/PedroMacielXavier.jpg" alt="" data-position="center center" />
+  <a href="#pedro-maciel-xavier" class="image" aria-label="Pedro Maciel Xavier's section">
+   <img src="assets/images/members/PedroMacielXavier.jpg" alt="Pedro Maciel Xavier" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -212,11 +212,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 2.5 -->
-<section id="two-five" class="spotlights">
+<!-- Sergey Gusev -->
+<section id="sergey-gusev" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/SergeyGusev.jpg" alt="" data-position="center center" />
+  <a href="#sergey-gusev" class="image" aria-label="Sergey Gusev's section">
+   <img src="assets/images/members/SergeyGusev.jpg" alt="Sergey Gusev" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -237,12 +237,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 2.6 -->
-
-<section id="two-six" class="spotlights">
+<!-- Andres F. Cabeza -->
+<section id="andres-cabeza" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/AndresCabeza.jpg" alt="" data-position="center center" />
+  <a href="#andres-cabeza" class="image" aria-label="Andres F. Cabeza's section">
+   <img src="assets/images/members/AndresCabeza.jpg" alt="Andres F. Cabeza" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -264,8 +263,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3 -->
-<section id="three">
+<!-- Visiting scholars -->
+<section id="visitors">
  <div class="inner">
   <header class="major">
    <h2>Visiting scholars</h2>
@@ -273,11 +272,11 @@ banner_color: style2
  </div>
 </section>
 
-<!-- 3.5 -->
-<section id="three-five" class="spotlights">
+<!-- Mateo Huertas Marulanda -->
+<section id="mateo-huertas-marulanda" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/MateoHuertasMarulanda.png" alt="" data-position="center center" />
+  <a href="#mateo-huertas-marulanda" class="image" aria-label="Mateo Huertas Marulanda's section">
+   <img src="assets/images/members/MateoHuertasMarulanda.png" alt="Mateo Huertas Marulanda" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -296,11 +295,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 3.5 -->
-<section id="three-five" class="spotlights">
+<!-- Daniel Anoruo -->
+<section id="daniel-anoruo" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/DanielAnoruo.jpg" alt="" data-position="center center" />
+  <a href="#daniel-anoruo" class="image" aria-label="Daniel Anoruo's section">
+   <img src="assets/images/members/DanielAnoruo.jpg" alt="Daniel Anoruo" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -319,8 +318,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 98 -->
-<section id="ninety-eight">
+<!-- Undergraduate students -->
+<section id="undergrads">
  <div class="inner">
   <header class="major">
    <h2>Undergraduates</h2>
@@ -328,11 +327,11 @@ banner_color: style2
  </div>
 </section>
 
-<!-- 3.4 -->
-<section id="three-four" class="spotlights">
+<!-- Alexander (AJ) Collins -->
+<section id="aj-collins" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/AJCollins.png" alt="" data-position="center center" />
+  <a href="#aj-collins" class="image" aria-label="Alexander (AJ) Collins's section">
+   <img src="assets/images/members/AJCollins.png" alt="Alexander (AJ) Collins" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -352,11 +351,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 4.5 -->
-<section id="four-five" class="spotlights">
+<!-- Ben Murray -->
+<section id="ben-murray" class="spotlights">
  <section>
-  <a class="image">
-   <img src="assets/images/members/BenMurray.jpeg" alt="" data-position="center center" />
+  <a href="#ben-murray" class="image" aria-label="Ben Murray's section">
+   <img src="assets/images/members/BenMurray.jpeg" alt="Ben Murray" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -375,11 +374,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 4.7 -->
-<section id="four-seven" class="spotlights">
+<!-- Akshay Mahajan -->
+<section id="akshay-mahajan" class="spotlights">
  <section>
-  <a class="image">
-   <img src="/assets/images/members/AkshayMahajan.png" alt="" data-position="center center" />
+  <a href="#akshay-mahajan" class="image" aria-label="Akshay Mahajan's section">
+   <img src="/assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -399,10 +398,11 @@ banner_color: style2
  </section>
 </section>
 
-<section id="four-seven" class="spotlights">
+<!-- Sai Karthik -->
+<section id="sai-karthik" class="spotlights">
  <section>
-  <a class="image">
-   <img src="/assets/images/members/SaiKarthik.jpg" alt="" data-position="center center" />
+  <a href="#sai-karthik" class="image" aria-label="Sai Karthik's section">
+   <img src="/assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -422,11 +422,11 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 4.9 -->
-<section id="four-nine" class="spotlights">
+<!-- Alan Yi -->
+<section id="alan-yi" class="spotlights">
  <section>
-  <a class="image">
-   <img src="/assets/images/members/AlanYi.jpg" alt="" data-position="center center" />
+  <a href="#alan-yi" class="image" aria-label="Alan Yi's section">
+   <img src="/assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -446,8 +446,8 @@ banner_color: style2
  </section>
 </section>
 
-<!-- 98 -->
-<section id="ninety-eight">
+<!-- Principal Investigator -->
+<section id="pi">
  <div class="inner">
   <header class="major">
    <h2>Principal Investigator</h2>
@@ -455,8 +455,8 @@ banner_color: style2
  </div>
 </section>
 
-<!-- 99 -->
-<section id="ninety-nine" class="spotlights">
+<!-- David Bernal Neira -->
+<section id="david-bernal" class="spotlights">
   <section>
     <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
       <img src="assets/images/members/DavidBernal.jpg" alt="David Bernal Neira" data-position="center center" />
@@ -479,8 +479,8 @@ banner_color: style2
   </section>
 </section>
 
-<!-- 100 -->
-<section id="one-hundred">
+<!-- Alumni -->
+<section id="alumni">
  <div class="inner">
   <header class="major">
    <h2>Alumni</h2>
