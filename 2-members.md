@@ -1,7 +1,7 @@
 ---
 title: Members
 layout: page
-description: 'SECQUOIA Group Members.'
+description: "SECQUOIA Group Members."
 image: assets/images/group2024.jpg
 nav-menu: true
 banner_color: style2
@@ -123,7 +123,6 @@ banner_color: style2
   </header>
  </div>
 </section>
-
 
 <!-- Carolina Tristan -->
 <section id="carolina-tristan" class="spotlights">
@@ -544,6 +543,33 @@ banner_color: style2
       <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin" aria-label="Alan Yi LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/ailunyi" class="fab fa-github" aria-label="Alan Yi GitHub Profile"><span class="label">GitHub</span></a></li>
       <li><a href="mailto:yi161@purdue.edu" class="icon fa-envelope" aria-label="Email Alan Yi"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+<!-- Azain Khalid -->
+<section id="azain-khalid" class="spotlights">
+ <section>
+  <a href="#azain-khalid" class="image" aria-label="Azain Khalid's section">
+   <img src="assets/images/members/AzainKhalid.jpg" alt="Azain Khalid" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Azain Khalid</h3>
+    </header>
+    <ul>
+    <li>Joined in Summer 2025.</li>
+    <li>B.Sc. Computer Science, Purdue University, expected May 2028.</li>
+    </ul>
+    <p><b>Research topics</b>: Quantum Integer Programming and Machine Learning</p>
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/in/azainkhalid/" class="fab fa-linkedin" aria-label="Azain Khalid LinkedIn Profile"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/AzAINN" class="fab fa-github" aria-label="Azain Khalid GitHub Profile"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:khalid18@purdue.edu" class="icon fa-envelope" aria-label="Email Azain Khalid"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0005-4801-6452" class="fab fa-orcid" aria-label="Azain Khalid ORCID Profile"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
