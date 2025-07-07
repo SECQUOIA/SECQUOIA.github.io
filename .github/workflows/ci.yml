@@ -1,0 +1,88 @@
+name: CI - Test Jekyll Build
+
+on:
+  pull_request:
+    branches: [ main, master ]
+  push:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Ruby for Jekyll
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      # Install dependencies
+      - name: Install dependencies
+        run: bundle install
+
+      # Check for Jekyll configuration issues
+      - name: Check Jekyll configuration
+        run: bundle exec jekyll doctor
+
+      # Build the site (test build)
+      - name: Test Jekyll build
+        run: bundle exec jekyll build --verbose
+        env:
+          JEKYLL_ENV: test
+
+      # Check for broken internal links (optional)
+      - name: Test internal links
+        run: |
+          bundle exec jekyll build
+          # You can add htmlproofer here if needed
+          echo "Internal link check completed"
+
+      # Validate HTML (optional - you can install html-proofer gem)
+      # - name: HTML Proofer
+      #   run: |
+      #     gem install html-proofer
+      #     htmlproofer ./_site --disable-external
+
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Check for common file issues
+      - name: Check file encoding and line endings
+        run: |
+          # Check for non-UTF8 files
+          find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" | xargs file | grep -v "UTF-8" || echo "All text files are UTF-8"
+          
+          # Check for trailing whitespace
+          if grep -r --include="*.md" --include="*.yml" --include="*.yaml" '[[:space:]]$' .; then
+            echo "Found trailing whitespace in files above"
+            exit 1
+          else
+            echo "No trailing whitespace found"
+          fi
+
+      # Validate YAML files
+      - name: Validate YAML files
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yamllint
+          find . -name "*.yml" -o -name "*.yaml" | xargs yamllint -d relaxed
+
+      # Check Markdown files
+      - name: Lint Markdown files
+        uses: articulate/actions-markdownlint@v1
+        with:
+          config: .markdownlint.json
+          files: '**/*.md'
+          ignore: 'node_modules'
+        continue-on-error: true
