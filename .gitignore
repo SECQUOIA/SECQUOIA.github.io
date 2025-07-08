@@ -1,28 +1,42 @@
+# Jekyll build artifacts
 _site/
 .sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-Gemfile.lock
+
+# Bundler
+vendor/
+.bundle/
+
+# Ruby
 *.gem
-.jekyll-cache
-*.code-workspace
-Gemfile*
+.rvm
+rbenv/
 
-# Docker related files
-Dockerfile
-.dockerignore
-docker-compose.yml
-docker-compose.yaml
-.docker/
-
-# VS Code files
-.vscode/
-.history/
-*.code-workspace
-.settings/
-.project
-.classpath
-.factorypath
-*.launch
-*.sublime-workspace
-*.sublime-project
+# macOS
 .DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node modules (if using any Node.js tools)
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
