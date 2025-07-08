@@ -47,7 +47,7 @@ h2 {
 <div class="main-content">
   <div class="content-container">
     <p>
-    <img src="{% link assets/images/profile.png %}" alt="Profile Image" class="image-left">
+    <img src="{% link assets/images/profile.png %}" alt="Profile image of David E. Bernal Neira" class="image-left">
     David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. His research centers on mathematical optimization, artificial intelligence, and computational methods for solving scientific and engineering problems, with applications in process systems, energy, and chemical engineering. His core expertise is in nonlinear discrete optimization, encompassing theory, algorithms, and software. He also leads research in quantum computing, with emphasis on quantum algorithms for optimization, computational chemistry, and machine learning. He has co-authored peer-reviewed publications, developed open-source tools, and delivered invited talks across academia, government, and industry. He has taught several courses, including one he co-designed on optimization, quantum computing, and machine learning. He collaborates broadly with researchers in academia, national laboratories, government agencies, and industry. At Purdue, he leads the [SECQUOIA](https://SECQUOIA.github.io/) lab (Systems Engineering via Classical and QUantum Optimization for Industrial Applications).
     </p>
 
