@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: Journal Articles
-image: assets/images/article.png
+image: assets/images/article.webp
 description: 'Ongoing and Completed Papers'
 nav-menu: false
 show_tile: false
