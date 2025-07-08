@@ -36,18 +36,11 @@ jobs:
         env:
           JEKYLL_ENV: test
 
-      # Check for broken internal links (optional)
+      # Check for broken internal links using html-proofer
       - name: Test internal links
         run: |
-          bundle exec jekyll build
-          # You can add htmlproofer here if needed
-          echo "Internal link check completed"
-
-      # Validate HTML (optional - you can install html-proofer gem)
-      # - name: HTML Proofer
-      #   run: |
-      #     gem install html-proofer
-      #     htmlproofer ./_site --disable-external
+          # Site was already built in previous step, use html-proofer to check links
+          bundle exec htmlproofer ./_site --disable-external --check-html --check-internal-hash --allow-hash-href
 
   lint:
     runs-on: ubuntu-latest
