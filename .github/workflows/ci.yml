@@ -78,4 +78,3 @@ jobs:
           config: .markdownlint.json
           files: '**/*.md'
           ignore: 'node_modules'
-        continue-on-error: true
