@@ -1,0 +1,16 @@
+This should be a <http://www.example.com/> link.
+This should be a <mailto:[email removed]> link.
+As should <[email removed]> this.
+As should <[email removed]> this.
+As should <[email removed]> this.
+Another ampersand <http://www.example.com/?doit&x=y> link.
+More entities  <http://www.example.com/?doit&amp;x=&quot;y&z=y>.
+
+Email international <ü[email removed]>, <ü.äß@hülse.de>
+Email invalid: <[[email removed]](mailtos:[email removed])>
+
+Autolink with underscore: <http://www.example.com/with_under_score>
+
+<http://www.example.com/>
+
+*[CSS]: Cascading

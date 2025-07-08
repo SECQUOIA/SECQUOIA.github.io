@@ -1,0 +1,19 @@
+current directory: /home/bernalde/repos/SECQUOIA.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/bernalde/.rvm/rubies/ruby-3.2.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/bernalde/repos/SECQUOIA.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250707-8389-ak2vn4 sitelibdir\=./.gem.20250707-8389-ak2vn4 clean
+
+current directory: /home/bernalde/repos/SECQUOIA.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250707-8389-ak2vn4 sitelibdir\=./.gem.20250707-8389-ak2vn4
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/bernalde/repos/SECQUOIA.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250707-8389-ak2vn4 sitelibdir\=./.gem.20250707-8389-ak2vn4 install
+/usr/bin/install -m 0755 fastfilereaderext.so ./.gem.20250707-8389-ak2vn4
+
+current directory: /home/bernalde/repos/SECQUOIA.github.io/vendor/bundle/ruby/3.2.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250707-8389-ak2vn4 sitelibdir\=./.gem.20250707-8389-ak2vn4 clean
