@@ -19,8 +19,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
-          bundler-cache: true
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      # Clear any existing bundle config
+      - name: Clear bundle config
+        run: |
+          rm -rf .bundle
+          bundle config --local path vendor/bundle
 
       # Install dependencies
       - name: Install dependencies
