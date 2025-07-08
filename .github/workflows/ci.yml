@@ -1,0 +1,85 @@
+name: CI - Test Jekyll Build
+
+on:
+  pull_request:
+    branches: [ main, master ]
+  push:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Ruby for Jekyll
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      # Clear any existing bundle config
+      - name: Clear bundle config
+        run: |
+          rm -rf .bundle
+          bundle config --local path vendor/bundle
+
+      # Install dependencies
+      - name: Install dependencies
+        run: bundle install
+
+      # Check for Jekyll configuration issues
+      - name: Check Jekyll configuration
+        run: bundle exec jekyll doctor
+
+      # Build the site (test build)
+      - name: Test Jekyll build
+        run: bundle exec jekyll build --verbose
+        env:
+          JEKYLL_ENV: test
+
+      # Check for broken internal links using html-proofer
+      - name: Test internal links
+        run: |
+          # Site was already built in previous step, use html-proofer to check links
+          bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Check for common file issues
+      - name: Check file encoding and line endings
+        run: |
+          # Check for non-UTF8 files
+          find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" | grep -v vendor | xargs file | grep -v "UTF-8" || echo "All text files are UTF-8"
+
+          # Check for trailing whitespace (warning only, doesn't fail)
+          if grep -r --include="*.md" --include="*.yml" --include="*.yaml" --exclude-dir=vendor '[[:space:]]$' .; then
+            echo "⚠️ Warning: Found trailing whitespace in files above (not blocking merge)"
+          else
+            echo "✅ No trailing whitespace found"
+          fi
+
+      # Validate YAML files
+      - name: Validate YAML files
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y yamllint
+          find . -name "*.yml" -o -name "*.yaml" | grep -v vendor | xargs yamllint -d relaxed
+
+      # Check Markdown files
+      - name: Lint Markdown files
+        uses: articulate/actions-markdownlint@v1
+        with:
+          config: .markdownlint.json
+          files: '**/*.md'
+          ignore: 'node_modules,vendor'
