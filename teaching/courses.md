@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: Courses
-image: assets/images/classroom.jpeg
+image: assets/images/classroom.webp
 description: 'Current and Previous'
 nav-menu: false
 show_tile: false
