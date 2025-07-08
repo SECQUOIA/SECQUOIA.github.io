@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       # Checkout the repository
       - name: Checkout code
@@ -44,7 +44,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
-    
+
     steps:
       # Checkout the repository
       - name: Checkout code
@@ -54,10 +54,10 @@ jobs:
       - name: Check file encoding and line endings
         run: |
           # Check for non-UTF8 files
-          find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" | xargs file | grep -v "UTF-8" || echo "All text files are UTF-8"
-          
-          # Check for trailing whitespace
-          if grep -r --include="*.md" --include="*.yml" --include="*.yaml" '[[:space:]]$' .; then
+          find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" | grep -v vendor | xargs file | grep -v "UTF-8" || echo "All text files are UTF-8"
+
+          # Check for trailing whitespace (excluding vendor directory)
+          if grep -r --include="*.md" --include="*.yml" --include="*.yaml" --exclude-dir=vendor '[[:space:]]$' .; then
             echo "Found trailing whitespace in files above"
             exit 1
           else
