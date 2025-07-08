@@ -68,7 +68,7 @@ banner_color: style2
     min-height: 15em;
     margin: 0 auto 2em auto; /* Center the image and add bottom margin */
   }
-  
+
   .spotlights section .content {
     width: 90%; /* Reduced from 100% to create margins */
     margin: 0 auto; /* Center the content */
@@ -94,7 +94,7 @@ banner_color: style2
 }
 
 /* Add proper spacing between sections */
-.inner header + ul, 
+.inner header + ul,
 .inner header + p {
   margin-top: 0.75em; /* Consistent spacing after headers */
 }

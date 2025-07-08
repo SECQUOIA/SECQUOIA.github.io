@@ -1,4 +1,4 @@
-All contributions, including merge requests, feature requests, ideas, design tweaks, etc. are welcome. 
+All contributions, including merge requests, feature requests, ideas, design tweaks, etc. are welcome.
 I welcome all input, from sharing your own implementations of code to general thoughts and ideas. Just open a new issue!
 
 ## Feature Requests

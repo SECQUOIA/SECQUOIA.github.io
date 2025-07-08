@@ -11,7 +11,7 @@ banner_color: style8
 
 ## Diversity Statement
 
-At SECQUOIA, we are committed to fostering an inclusive environment and celebrating diversity across all our research, teaching, and outreach activities. We believe that diverse teams drive better science and stronger innovation. 
+At SECQUOIA, we are committed to fostering an inclusive environment and celebrating diversity across all our research, teaching, and outreach activities. We believe that diverse teams drive better science and stronger innovation.
 
 The statement linked below, originally written by David as part of his application to Purdue, continues to guide the group’s values and actions in advancing diversity, equity, and inclusion.
 

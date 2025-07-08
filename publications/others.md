@@ -32,5 +32,5 @@ banner_color: style4
 </ol> -->
 
 <ul class="actions">
-    <li><a href="/publications.html#others" class="button icon fa-arrow-left">Go back to Publication Page</a></li>
+    <li><a href="/4-publications.html" class="button icon fa-arrow-left">Go back to Publication Page</a></li>
 </ul>
