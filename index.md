@@ -30,6 +30,6 @@ show_tile: false
 </section>
 
 <p>
-  This site is a mirror of our official Purdue webpage:  
+  This site is a mirror of our official Purdue webpage:
   <a href="https://engineering.purdue.edu/SECQUOIA" aria-label="Visit the official Purdue SECQUOIA webpage">engineering.purdue.edu/SECQUOIA</a>.
 </p>

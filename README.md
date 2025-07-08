@@ -39,7 +39,7 @@ Follow these instructions to set up and run the website locally using Docker.
 
    ```ruby
    source "https://rubygems.org"
-   
+
    gem "jekyll", "~> 4.0.0"
    gem "mercenary", "~> 0.3.6"
    gem "webrick"
