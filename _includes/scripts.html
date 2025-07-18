@@ -1,0 +1,41 @@
+<!-- Deferred JavaScript loading for better performance -->
+<script>
+// Load Highlight.js only when needed
+window.addEventListener('load', function() {
+  // Check if there are any code blocks that need highlighting
+  if (document.querySelectorAll('pre code, code[class*="language-"]').length > 0) {
+    // Load highlight.js
+    var hljs = document.createElement('script');
+    hljs.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js';
+    hljs.onload = function() {
+      // Load language-specific modules if needed
+      var julia = document.createElement('script');
+      julia.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/julia.min.js';
+      document.head.appendChild(julia);
+      
+      var r = document.createElement('script');
+      r.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/r.min.js';
+      r.onload = function() {
+        // Initialize highlighting after all dependencies are loaded
+        hljs.highlightAll();
+      };
+      document.head.appendChild(r);
+    };
+    document.head.appendChild(hljs);
+  }
+  
+  // Register service worker for PWA capabilities
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function(registration) {
+        console.log('Service Worker registered successfully:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Service Worker registration failed:', error);
+      });
+  }
+});
+</script>
+
+<!-- WebP image loader script -->
+<script src="{{ "assets/js/image-loader.js" | relative_url }}" defer></script>

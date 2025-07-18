@@ -101,12 +101,7 @@
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
-	<!-- Highlight.js -->
-	<script>
-	  document.addEventListener('DOMContentLoaded', (event) => {
-	    document.querySelectorAll('pre code').forEach((el) => {
-	      hljs.highlightElement(el);
-	    });
-	  });
-	</script>
+
+	<!-- Optimized deferred scripts -->
+	{% include scripts.html %}
 
