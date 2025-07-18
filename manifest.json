@@ -1,0 +1,16 @@
+{
+  "name": "SECQUOIA Research Group",
+  "short_name": "SECQUOIA",
+  "description": "Systems Engineering via Classical and Quantum Optimization for Industrial Applications",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#9bf1ff",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
