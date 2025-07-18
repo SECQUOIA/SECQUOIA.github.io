@@ -1,0 +1,30 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in site.pages %}
+    {% unless page.sitemap.exclude == "yes" %}
+      <url>
+        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+        {% if page.date %}
+          <lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>
+        {% else %}
+          <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+        {% endif %}
+        <changefreq>monthly</changefreq>
+        <priority>{% if page.url == "/" %}1.0{% else %}0.8{% endif %}</priority>
+      </url>
+    {% endunless %}
+  {% endfor %}
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  {% endfor %}
+</urlset>
