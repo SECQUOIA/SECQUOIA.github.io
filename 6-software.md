@@ -30,7 +30,7 @@ banner_color: style4
    <li>Feasibility Pump (FP)</li>
   </ul>
   <ul class="actions">
-   <li><a href="https://pyomo.readthedocs.io/en/stable/contributed_packages/mindtpy.html" class="button next">Get Started</a></li>
+   <li><a href="https://pyomo.readthedocs.io/en/stable/contributed_packages/mindtpy.html" class="button next" target="_blank">Get Started</a></li>
   </ul>
  </div>
 </section>
@@ -42,7 +42,7 @@ banner_color: style4
    <h2>QUBO.jl</h2>
   </header>
   <p>
-   <a href="https://github.com/JuliaQUBO/QUBO.jl">QUBO.jl</a> is a Julia library for modeling and solving quadratic unconstrained binary optimization (QUBO) problems. It offers a flexible, extensible framework for QUBO formulation and is compatible with a wide range of classical and quantum solvers.
+   <a href="https://github.com/JuliaQUBO/QUBO.jl" target="_blank">QUBO.jl</a> is a Julia library for modeling and solving quadratic unconstrained binary optimization (QUBO) problems. It offers a flexible, extensible framework for QUBO formulation and is compatible with a wide range of classical and quantum solvers.
   </p>
   <p>
    QUBO.jl supports features including:
@@ -54,7 +54,7 @@ banner_color: style4
    <li>Integration with the <code>MathOptInterface</code> for solver interoperability</li>
   </ul>
   <ul class="actions">
-   <li><a href="https://github.com/JuliaQUBO/QUBO.jl" class="button next">View Repository</a></li>
+   <li><a href="https://github.com/JuliaQUBO/QUBO.jl" class="button next" target="_blank">View Repository</a></li>
   </ul>
  </div>
 </section>
