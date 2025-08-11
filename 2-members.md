@@ -415,7 +415,7 @@ banner_color: style2
 <section id="joao-victor" class="spotlights">
  <section>
   <a href="#joao-victor" class="image" aria-label="João Victor's section">
-   <img src="assets/images/members/DanielAnoruo.jpg" alt="João Victor Paim" data-position="center center" />
+   <img src="assets/images/members/JoaoVictor.jpg" alt="João Victor Paim" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
