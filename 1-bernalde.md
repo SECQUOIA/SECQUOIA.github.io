@@ -51,7 +51,7 @@ h2 {
     David E. Bernal Neira is an Assistant Professor in the Davidson School of Chemical Engineering at Purdue University. His research centers on mathematical optimization, artificial intelligence, and computational methods for solving scientific and engineering problems, with applications in process systems, energy, and chemical engineering. His core expertise is in nonlinear discrete optimization, encompassing theory, algorithms, and software. He also leads research in quantum computing, with emphasis on quantum algorithms for optimization, computational chemistry, and machine learning. He has co-authored peer-reviewed publications, developed open-source tools, and delivered invited talks across academia, government, and industry. He has taught several courses, including one he co-designed on optimization, quantum computing, and machine learning. He collaborates broadly with researchers in academia, national laboratories, government agencies, and industry. At Purdue, he leads the [SECQUOIA](https://SECQUOIA.github.io/) lab (Systems Engineering via Classical and QUantum Optimization for Industrial Applications).
     </p>
 
-    <p><a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478">Link to his profile</a> at Purdue University.</p>
+    <p><a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478" target="_blank">Link to his profile</a> at Purdue University.</p>
 
     <ul>
       <li><a href="files/cv.html">Full CV</a></li>
@@ -109,8 +109,8 @@ h2 {
   <ul>
     <li>Process Dynamics and Control — Purdue CHE456 (Fall 2023, Fall 2024)</li>
     <li>Quantum Integer Programming and Machine Learning — CMU 47-779 / 47-785, 18-819F<br>
-      <a href="https://bernalde.github.io/QuIPML/">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/">Fall 2022</a>, Fall 2023, Fall 2024</li>
-    <li>Quantum Integer Programming — CMU 47-779 <a href="https://bernalde.github.io/QuIP/">Fall 2020</a></li>
+      <a href="https://bernalde.github.io/QuIPML/" target="_blank">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/" target="_blank">Fall 2022</a>, Fall 2023, Fall 2024</li>
+    <li>Quantum Integer Programming — CMU 47-779 <a href="https://bernalde.github.io/QuIP/" target="_blank">Fall 2020</a></li>
   </ul>
 
   <h2>Awards</h2>

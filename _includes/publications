@@ -147,7 +147,7 @@
     
     {% if include_link==true %}
       {% assign url = citation.Title | cgi_escape | prepend: "https://scholar.google.com/scholar?q=" %}
-      {% capture title_link %}<a href="{{ url }}">{{citation.Title}}</a>{% endcapture %}
+      {% capture title_link %}<a href="{{ url }}" target="_blank">{{citation.Title}}</a>{% endcapture %}
     {% else %}
       {% assign title_link = citation.Title %}
     {% endif %}
