@@ -16,7 +16,7 @@ banner_color: style3
    <h2>Overview</h2>
   </header>
   <p>Here is a list of our scholarly publications.</p>
-        <p>Notice that the most updated list is provided by <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ&hl=en">Google Scholar</a>.</p>
+        <p>Notice that the most updated list is provided by <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
   {% include publications style="apa" link=true %}
  </div>
 </section>
