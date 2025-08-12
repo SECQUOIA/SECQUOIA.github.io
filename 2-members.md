@@ -428,7 +428,7 @@ banner_color: style2
     </ul>
     <p><b>Research topics</b>: Machine Learning, Quantum Computing, Optimization</p>
     <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/jo%C3%A3ovictor-engenharia/" class="fab fa-github" aria-label="João Victor's GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li><a href="https://github.com/jvpcms" class="fab fa-github" aria-label="João Victor's GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="https://www.linkedin.com/in/jo%C3%A3ovictor-engenharia/" class="fab fa-linkedin" aria-label="João Victor's LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="mailto:jpaimdec@purdue.edu" class="icon fa-envelope" aria-label="Email João Victor" target="_blank"><span class="label">Email</span></a></li>
     </ul>
