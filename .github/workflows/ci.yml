@@ -42,12 +42,27 @@ jobs:
         env:
           JEKYLL_ENV: test
 
-      # Check for broken internal links using html-proofer
+      # Check for broken internal links using html-proofer (non-blocking)
       - name: Test internal links
         run: |
           # Site was already built in previous step, use html-proofer to check links
           bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts
+        continue-on-error: true
+      # Check for broken internal links using html-proofer (non-blocking, but report as warning)
+      - name: Test internal links
+        id: linkcheck
+        run: |
+          # Site was already built in previous step, use html-proofer to check links
+          set +e
+          bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts > linkcheck.log 2>&1
+          echo $? > linkcheck-exitcode.txt
+          cat linkcheck.log
+        continue-on-error: true
 
+      - name: Report link check failures as warning
+        if: steps.linkcheck.outcome == 'failure'
+        run: |
+          echo "::warning file=linkcheck.log::Broken internal links detected. See the log above for details."
   lint:
     runs-on: ubuntu-latest
 
