@@ -382,7 +382,6 @@ banner_color: style2
       <li><a href="https://www.linkedin.com/in/kimwoosik/" class="fab fa-linkedin" aria-label="Woosik Kim LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/peterkim01" class="fab fa-github" aria-label="Woosik Kim GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="mailto:kim3124@purdue.edu" class="icon fa-envelope" aria-label="Email Woosik Kim" target="_blank"><span class="label">Email</span></a></li>
-      
     </ul>
    </div>
   </div>
