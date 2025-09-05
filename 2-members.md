@@ -108,6 +108,7 @@ banner_color: style2
   <ul>
     <li><a href="#postdocs">Post-doctoral Fellows</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
+    <li><a href="#masters">Master's Students</a></li>
     <li><a href="#visitors">Visiting Scholars</a></li>
     <li><a href="#undergrads">Undergraduates</a></li>
     <li><a href="#pi">Principal Investigator</a></li>
