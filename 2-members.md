@@ -108,6 +108,7 @@ banner_color: style2
   <ul>
     <li><a href="#postdocs">Post-doctoral Fellows</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
+    <li><a href="#masters">Master's Students</a></li>
     <li><a href="#visitors">Visiting Scholars</a></li>
     <li><a href="#undergrads">Undergraduates</a></li>
     <li><a href="#pi">Principal Investigator</a></li>
@@ -351,6 +352,43 @@ banner_color: style2
   </div>
  </section>
 </section>
+
+
+<!-- Master's students -->
+<section id="masters">
+ <div class="inner">
+  <header class="major">
+   <h2>Master's students</h2>
+  </header>
+ </div>
+</section> 
+
+<!-- Woosik Kim -->
+<section id="woosik-kim" class="spotlights">
+ <section>
+  <a href="#woosik-kim" class="image" aria-label="Woosik Kim's section">
+   <img src="assets/images/members/WoosikKim.jpg" alt="Woosik Kim" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Woosik Kim</h3>
+    </header>
+    <ul>
+      <li>Joined in Fall 2025.</li>
+      <li>B.Sc. Computer Engineering, Purdue University, 2024.</li>
+    </ul>
+    <p><b>Research topics</b>: Quantum Optimization.</p>
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/in/kimwoosik/" class="fab fa-linkedin" aria-label="Woosik Kim LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/peterkim01" class="fab fa-github" aria-label="Woosik Kim GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:kim3124@purdue.edu" class="icon fa-envelope" aria-label="Email Woosik Kim" target="_blank"><span class="label">Email</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 
 <!-- Visiting scholars -->
 <section id="visitors">
