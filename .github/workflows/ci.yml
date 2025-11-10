@@ -42,27 +42,45 @@ jobs:
         env:
           JEKYLL_ENV: test
 
-      # Check for broken internal links using html-proofer (non-blocking)
-      - name: Test internal links
-        run: |
-          # Site was already built in previous step, use html-proofer to check links
-          bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts
-        continue-on-error: true
-      # Check for broken internal links using html-proofer (non-blocking, but report as warning)
+      # Check for broken internal links using html-proofer
       - name: Test internal links
         id: linkcheck
         run: |
           # Site was already built in previous step, use html-proofer to check links
           set +e
           bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts > linkcheck.log 2>&1
-          echo $? > linkcheck-exitcode.txt
+          EXITCODE=$?
           cat linkcheck.log
+          exit $EXITCODE
         continue-on-error: true
 
       - name: Report link check failures as warning
         if: steps.linkcheck.outcome == 'failure'
         run: |
           echo "::warning file=linkcheck.log::Broken internal links detected. See the log above for details."
+
+      # Check external links (social media profiles, emails, etc.)
+      - name: Test external links
+        id: external_linkcheck
+        run: |
+          # Check external links with rate limiting to avoid being blocked
+          # Allow some failures as external sites may be temporarily down
+          set +e
+          bundle exec htmlproofer ./_site \
+            --checks Links \
+            --ignore-urls "/localhost/,/127.0.0.1/" \
+            --typhoeus '{"timeout": 30, "connecttimeout": 10}' \
+            --http-status-ignore "0,429,999" \
+            > external_linkcheck.log 2>&1
+          EXITCODE=$?
+          cat external_linkcheck.log
+          echo "exitcode=$EXITCODE" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Report external link check failures as warning
+        if: steps.external_linkcheck.outputs.exitcode != '0'
+        run: |
+          echo "::warning::Some external links may be broken or unreachable. See the log above for details. This may be due to rate limiting or temporary outages."
   lint:
     runs-on: ubuntu-latest
 

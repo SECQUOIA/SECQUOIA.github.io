@@ -125,60 +125,6 @@ banner_color: style2
  </div>
 </section>
 
-<!-- Carolina Tristan -->
-<section id="carolina-tristan" class="spotlights">
-    <section>
-     <a href="#carolina-tristan" class="image" aria-label="Carolina Tristan's section">
-      <img src="assets/images/members/CarolinaTristan.jpg" alt="Carolina Tristan" data-position="center center" />
-     </a>
-     <div class="content">
-      <div class="inner">
-       <header class="major">
-        <h3>Carolina Tristan</h3>
-       </header>
-       <ul>
-        <li>Joined in Jan 2024.</li>
-        <li>Ph.D. Chemical Engineering, University of Cantabria, 2023.</li>
-       </ul>
-       <p><b>Research topics</b>: Superstructure Optimization, Generalized Disjunctive Programming, Process System Engineering.</p>
-       <ul class="icons">
-        <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristan LinkedIn Profile" target="_blank" target="_blank"><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristan GitHub Profile" target="_blank" target="_blank"><span class="label">GitHub</span></a></li>
-        <li><a href="mailto:ctristan@purdue.edu" class="icon fa-envelope" aria-label="Email Carolina Tristan" target="_blank" target="_blank"><span class="label">Email</span></a></li>
-        <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristan ORCID Profile" target="_blank" target="_blank"><span class="label">ORCID</span></a></li>
-       </ul>
-      </div>
-     </div>
-    </section>
-</section>
-
-<!-- Hamta Bardool -->
-<section id="hamta-bardool" class="spotlights">
-    <section>
-     <a href="#hamta-bardool" class="image" aria-label="Hamta Bardool's section">
-      <img src="assets/images/members/HamtaBardool.jpg" alt="Hamta Bardool" data-position="center center" />
-     </a>
-     <div class="content">
-      <div class="inner">
-       <header class="major">
-        <h3>Hamta Bardool</h3>
-       </header>
-       <ul>
-        <li>Joined in Summer 2024.</li>
-        <li>Ph.D., Chemical Engineering, Purdue University/Shiraz University, 2023.</li>
-       </ul>
-       <p><b>Research topics</b>: Reactor and catalysis modeling, simulation, and optimization.</p>
-       <ul class="icons">
-        <li><a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin" aria-label="Hamta Bardool LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://github.com/Hamtabardool" class="fab fa-github" aria-label="Hamta Bardool GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-        <li><a href="mailto:hbardool@purdue.edu" class="icon fa-envelope" aria-label="Email Hamta Bardool" target="_blank"><span class="label">Email</span></a></li>
-        <li><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" aria-label="Hamta Bardool ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
-       </ul>
-      </div>
-     </div>
-   </section>
-</section>
-
 <!-- PhD students -->
 <section id="phds">
  <div class="inner">
@@ -264,34 +210,6 @@ banner_color: style2
       <li><a href="https://github.com/parkyr" class="fab fa-github" aria-label="Yirang Park GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="mailto:park407@purdue.edu" class="icon fa-envelope" aria-label="Email Yirang Park" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid" aria-label="Yirang Park ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- Pedro Maciel Xavier -->
-<section id="pedro-maciel-xavier" class="spotlights">
- <section>
-  <a href="#pedro-maciel-xavier" class="image" aria-label="Pedro Maciel Xavier's section">
-   <img src="assets/images/members/PedroMacielXavier.jpg" alt="Pedro Maciel Xavier" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Pedro Maciel Xavier</h3>
-    </header>
-    <ul>
-    <li>Joined in Fall 2024. Visiting Scholar during Fall 2023.</li>
-    <li>B.Eng. Computer &amp; Information Engineering, Federal University of Rio de Janeiro, 2022.</li>
-    <li>B.Sc. Mathematics, Federal University of Rio de Janeiro, 2022.</li>
-    </ul>
-    <p><b>Research topics</b>: Operations Research, Quantum Optimization</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/pedromxavier" class="fab fa-github" aria-label="Pedro Maciel Xavier GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:pmacielx@purdue.edu" class="icon fa-envelope" aria-label="Email Pedro Maciel Xavier" target="_blank"><span class="label">Email</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" aria-label="Pedro Maciel Xavier ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -683,6 +601,20 @@ banner_color: style2
   </header>
        <h3 style="margin-top: 20px; margin-bottom: 5px;">Postdoctoral fellows</h3>
        <ul class="alumni-list icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2025. Carolina Tristan. KeyLogic at the National Energy Technology Laboratory (NETL).
+      <a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristan LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristan GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      <a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristan ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
+      </li>
+      </ul>
+       <ul class="alumni-list icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2025. Hamta Bardool.
+      <a href="https://www.linkedin.com/in/hamta-bardool-6ba418116/" class="fab fa-linkedin" aria-label="Hamta Bardool LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/Hamtabardool" class="fab fa-github" aria-label="Hamta Bardool GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      <a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" aria-label="Hamta Bardool ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
+      </li>
+      </ul>
+       <ul class="alumni-list icons" style="margin: 0; padding: 0; list-style: none;">
       <li style="margin-bottom: 5px;">2024. Zedong Peng. MIT.
       <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin" aria-label="Zedong Peng LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/ZedongPeng" class="fab fa-github" aria-label="Zedong Peng GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
@@ -723,7 +655,7 @@ banner_color: style2
       </li>
       </ul>
       <ul class="alumni-list icons" style="margin: 0; padding: 0; list-style: none;">
-      <li style="margin-bottom: 5px;">2023. Pedro Maciel Xavier. Purdue University.
+      <li style="margin-bottom: 5px;">2025. Pedro Maciel Xavier. Purdue University, Electrical Engineering Department (PhD).
       <a href="https://github.com/pedromxavier" class="fab fa-github" aria-label="Pedro Maciel Xavier GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" aria-label="Pedro Maciel Xavier ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
