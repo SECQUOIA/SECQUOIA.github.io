@@ -20,7 +20,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: false
+          bundler-cache: true  # Enable caching to speed up builds
 
       # Clear any existing bundle config
       - name: Clear bundle config
@@ -57,7 +57,9 @@ jobs:
       - name: Report link check failures as warning
         if: steps.linkcheck.outcome == 'failure'
         run: |
-          echo "::warning file=linkcheck.log::Broken internal links detected. See the log above for details."
+          echo "::warning file=linkcheck.log::Broken internal links detected. See the 'Test internal links' step for details."
+          echo "## ⚠️ Internal Link Check Failed" >> $GITHUB_STEP_SUMMARY
+          echo "Some internal links are broken. Check the logs or download the artifact for details." >> $GITHUB_STEP_SUMMARY
 
       # Check external links (social media profiles, emails, etc.)
       - name: Test external links
@@ -80,7 +82,22 @@ jobs:
       - name: Report external link check failures as warning
         if: steps.external_linkcheck.outputs.exitcode != '0'
         run: |
-          echo "::warning::Some external links may be broken or unreachable. See the log above for details. This may be due to rate limiting or temporary outages."
+          echo "::warning::Some external links may be broken or unreachable. See the 'Test external links' step for details. This may be due to rate limiting or temporary outages."
+          echo "## ⚠️ External Link Check Failed" >> $GITHUB_STEP_SUMMARY
+          echo "Some external links may be broken or unreachable. This may be due to rate limiting or temporary outages." >> $GITHUB_STEP_SUMMARY
+
+      # Upload link check logs as artifacts for later review
+      - name: Upload link check logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-logs
+          path: |
+            linkcheck.log
+            external_linkcheck.log
+          retention-days: 30
+          if-no-files-found: ignore
+
   lint:
     runs-on: ubuntu-latest
 
