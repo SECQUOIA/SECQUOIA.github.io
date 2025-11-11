@@ -9,7 +9,7 @@ on:
 jobs:
   link-check:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -46,11 +46,11 @@ jobs:
             > linkcheck-full.log 2>&1
           EXITCODE=$?
           cat linkcheck-full.log
-          
+
           # Create a summary
           echo "## Link Check Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          
+
           if [ $EXITCODE -eq 0 ]; then
             echo "✅ All links are working!" >> $GITHUB_STEP_SUMMARY
           else
@@ -58,7 +58,7 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "Please review the full log for details." >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           exit $EXITCODE
         continue-on-error: true
 
@@ -70,23 +70,23 @@ jobs:
             const issueTitle = '🔗 Broken Links Detected';
             const issueBody = `
             ## Automated Link Check Report
-            
+
             The weekly automated link checker has detected some broken or unreachable links.
-            
+
             **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-            
+
             Please review the workflow logs to identify which links need to be updated or removed.
-            
+
             Common causes:
             - External websites changed URLs
             - Social media profiles were deleted or renamed
             - Email addresses are no longer valid
             - Temporary network issues or rate limiting
-            
+
             ---
             *This issue was automatically created by the link-checker workflow.*
             `;
-            
+
             // Check if an issue already exists
             const issues = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
@@ -94,7 +94,7 @@ jobs:
               state: 'open',
               labels: 'link-checker'
             });
-            
+
             if (issues.data.length === 0) {
               await github.rest.issues.create({
                 owner: context.repo.owner,
