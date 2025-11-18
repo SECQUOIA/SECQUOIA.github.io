@@ -402,57 +402,6 @@ banner_color: style2
  </div>
 </section>
 
-<!-- Alexander (AJ) Collins -->
-<section id="aj-collins" class="spotlights">
- <section>
-  <a href="#aj-collins" class="image" aria-label="Alexander (AJ) Collins's section">
-   <img src="assets/images/members/AJCollins.png" alt="Alexander (AJ) Collins" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Alexander (AJ) Collins</h3>
-    </header>
-    <ul>
-    <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Integrated Business and Engineering, Purdue University, expected May 2027.</li>
-    </ul>
-    <p><b>Research topics</b>: Marketing and Business Analytics.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin" aria-label="Alexander Collins LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/colli525" class="fab fa-github" aria-label="Alexander Collins GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:colli525@purdue.edu" class="icon fa-envelope" aria-label="Email Alexander Collins" target="_blank"><span class="label">Email</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- Ben Murray -->
-<section id="ben-murray" class="spotlights">
- <section>
-  <a href="#ben-murray" class="image" aria-label="Ben Murray's section">
-   <img src="assets/images/members/BenMurray.jpeg" alt="Ben Murray" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Ben Murray</h3>
-    </header>
-    <ul>
-    <li>Joined in Spring 2024.</li>
-    <li>B.Sc. Chemical Engineering, Purdue University, expected May 2025.</li>
-    </ul>
-    <p><b>Research topics</b>: Optimization of reliability design.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/murraybj/" class="fab fa-linkedin" aria-label="Ben Murray LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/murraybj" class="fab fa-github" aria-label="Ben Murray GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
 <!-- Akshay Mahajan -->
 <section id="akshay-mahajan" class="spotlights">
  <section>
@@ -623,32 +572,40 @@ banner_color: style2
       </ul>
       <h3 style="margin-top: 20px; margin-bottom: 5px;">Visiting scholars</h3>
       <ul class="alumni-list icons" style="margin: 0; padding: 0; list-style: none;">
-      <li style="margin-bottom: 5px;">2024. Iago Leal de Freitas. Federal University of Rio de Janeiro.
-      <a href="https://www.linkedin.com/in/iagolealf/" class="fab fa-linkedin" aria-label="Iago Leal de Freitas LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
-      <a href="https://github.com/alimaala2002" class="fab fa-github" aria-label="Iago Leal de Freitas GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
-      </li>
-      <li style="margin-bottom: 5px;">2024. André Lima Alambert. University of Sao Paulo.
-      <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fab fa-linkedin" aria-label="André Lima Alambert LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
-      <a href="https://github.com/iagoleal" class="fab fa-github" aria-label="André Lima Alambert GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
-      <a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" aria-label="André Lima Alambert ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
-      </li>
-      <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University.
-      <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin" aria-label="Andres F. Cabeza LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
-      <a href="https://github.com/andres9403" class="fab fa-github" aria-label="Andres F. Cabeza GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
-      <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" aria-label="Andres F. Cabeza ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
-      </li>
-      <li style="margin-bottom: 5px;">2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
-      <a href="https://github.com/jsrodriguezf" class="fab fa-github" aria-label="Juan S. Rodríguez F. GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
-      <a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" aria-label="Juan S. Rodríguez F. ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
-      </li>
       <li style="margin-bottom: 5px;">2025. Pedro Maciel Xavier. Purdue University, Electrical Engineering Department (PhD).
       <a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/pedromxavier" class="fab fa-github" aria-label="Pedro Maciel Xavier GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
       <a href="https://orcid.org/0000-0002-4678-4942" class="fab fa-orcid" aria-label="Pedro Maciel Xavier ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
       </li>
+      <li style="margin-bottom: 5px;">2024. Andres F. Cabeza. Purdue University (PhD).
+      <a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin" aria-label="Andres F. Cabeza LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/andres9403" class="fab fa-github" aria-label="Andres F. Cabeza GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      <a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" aria-label="Andres F. Cabeza ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
+      </li>
+      <li style="margin-bottom: 5px;">2024. Iago Leal de Freitas. Federal University of Rio de Janeiro.
+      <a href="https://www.linkedin.com/in/iagolealf/" class="fab fa-linkedin" aria-label="Iago Leal de Freitas LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/alimaala2002" class="fab fa-github" aria-label="Iago Leal de Freitas GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      </li>
+      <li style="margin-bottom: 5px;">2024. André Lima Alambert. University of São Paulo.
+      <a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fab fa-linkedin" aria-label="André Lima Alambert LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/iagoleal" class="fab fa-github" aria-label="André Lima Alambert GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      <a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" aria-label="André Lima Alambert ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
+      </li>
+      <li style="margin-bottom: 5px;">2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
+      <a href="https://github.com/jsrodriguezf" class="fab fa-github" aria-label="Juan S. Rodríguez F. GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      <a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" aria-label="Juan S. Rodríguez F. ORCID Profile" target="_blank"><span class="label">ORCID</span></a>
+      </li>
       </ul>
       <h3 style="margin-top: 20px; margin-bottom: 5px;">Undergraduates</h3>
       <ul class="alumni-list icons" style="margin: 0; padding: 0; list-style: none;">
+      <li style="margin-bottom: 5px;">2025. Alexander (AJ) Collins. Purdue University.
+      <a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin" aria-label="Alexander Collins LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/colli525" class="fab fa-github" aria-label="Alexander Collins GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      </li>
+      <li style="margin-bottom: 5px;">2025. Ben Murray. Applied Materials.
+      <a href="https://www.linkedin.com/in/murraybj/" class="fab fa-linkedin" aria-label="Ben Murray LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
+      <a href="https://github.com/murraybj" class="fab fa-github" aria-label="Ben Murray GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
+      </li>
       <li style="margin-bottom: 5px;">2024. Sergio Barrios. Imperial College London.
       <a href="https://www.linkedin.com/in/sergio-barrios-rosado/" class="fab fa-linkedin" aria-label="Sergio Barrios LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a>
       <a href="https://github.com/barrios2001" class="fab fa-github" aria-label="Sergio Barrios GitHub Profile" target="_blank"><span class="label">GitHub</span></a>
