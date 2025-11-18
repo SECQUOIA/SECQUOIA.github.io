@@ -514,7 +514,7 @@ banner_color: style2
       <li style="display: inline;"><a href="https://orcid.org/0000-0002-6834-4913" class="fab fa-orcid" aria-label="Hamta Bardool ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
       </ul>
       </li>
-      <li style="margin-bottom: 10px;">2024. Zedong Peng. MIT.
+      <li style="margin-bottom: 10px;">2024. Zedong Peng. Massachusetts Institute of Technology (MIT).
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/" class="fab fa-linkedin" aria-label="Zedong Peng LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li style="display: inline;"><a href="https://github.com/ZedongPeng" class="fab fa-github" aria-label="Zedong Peng GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
@@ -568,7 +568,7 @@ banner_color: style2
       <li style="display: inline;"><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" aria-label="Juan S. Rodríguez F. ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
       </ul>
       </li>
-      <li style="margin-bottom: 10px;">2023. Pedro Maciel Xavier. Purdue University, Electrical Engineering Department (PhD).
+      <li style="margin-bottom: 10px;">2023. Pedro Maciel Xavier. Purdue University, PhD Electrical and Computer Engineering.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li style="display: inline;"><a href="https://github.com/pedromxavier" class="fab fa-github" aria-label="Pedro Maciel Xavier GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
