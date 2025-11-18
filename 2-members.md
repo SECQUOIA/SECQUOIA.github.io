@@ -544,7 +544,7 @@ banner_color: style2
       <li style="display: inline;"><a href="https://github.com/danoruo1" class="fab fa-github" aria-label="Daniel Anoruo GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       </ul>
       </li>
-      <li style="margin-bottom: 10px;">2024. Andres F. Cabeza. Purdue University, PhD Chemical Engineering.
+      <li style="margin-bottom: 10px;">2024. Andres F. Cabeza. Purdue University, PhD Student Chemical Engineering.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin" aria-label="Andres F. Cabeza LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li style="display: inline;"><a href="https://github.com/andres9403" class="fab fa-github" aria-label="Andres F. Cabeza GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
@@ -554,14 +554,14 @@ banner_color: style2
       <li style="margin-bottom: 10px;">2024. Iago Leal de Freitas. Federal University of Rio de Janeiro.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/iagolealf/" class="fab fa-linkedin" aria-label="Iago Leal de Freitas LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li style="display: inline;"><a href="https://github.com/alimaala2002" class="fab fa-github" aria-label="Iago Leal de Freitas GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li style="display: inline;"><a href="https://github.com/iagoleal" class="fab fa-github" aria-label="Iago Leal de Freitas GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li style="display: inline;"><a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" aria-label="Iago Leal de Freitas ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
       </ul>
       </li>
       <li style="margin-bottom: 10px;">2024. André Lima Alambert. University of São Paulo.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/andr%C3%A9-lima-alambert-301078292/" class="fab fa-linkedin" aria-label="André Lima Alambert LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li style="display: inline;"><a href="https://github.com/iagoleal" class="fab fa-github" aria-label="André Lima Alambert GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li style="display: inline;"><a href="https://orcid.org/0009-0001-6813-5863" class="fab fa-orcid" aria-label="André Lima Alambert ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+      <li style="display: inline;"><a href="https://github.com/alimaala2002" class="fab fa-github" aria-label="André Lima Alambert GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       </ul>
       </li>
       <li style="margin-bottom: 10px;">2024. Juan S. Rodríguez F. AgroParisTech Université Paris-Saclay.
@@ -570,7 +570,7 @@ banner_color: style2
       <li style="display: inline;"><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" aria-label="Juan S. Rodríguez F. ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
       </ul>
       </li>
-      <li style="margin-bottom: 10px;">2023. Pedro Maciel Xavier. Purdue University, PhD Electrical and Computer Engineering.
+      <li style="margin-bottom: 10px;">2023. Pedro Maciel Xavier. Purdue University, PhD Student Electrical and Computer Engineering.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li style="display: inline;"><a href="https://github.com/pedromxavier" class="fab fa-github" aria-label="Pedro Maciel Xavier GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
@@ -592,7 +592,7 @@ banner_color: style2
       <li style="display: inline;"><a href="https://github.com/murraybj" class="fab fa-github" aria-label="Ben Murray GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       </ul>
       </li>
-      <li style="margin-bottom: 10px;">2024. Sergio Barrios. Imperial College London, MSc in Management.
+      <li style="margin-bottom: 10px;">2024. Sergio Barrios. Imperial College London, MSc Student in Management.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/sergio-barrios-rosado/" class="fab fa-linkedin" aria-label="Sergio Barrios LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li style="display: inline;"><a href="https://github.com/barrios2001" class="fab fa-github" aria-label="Sergio Barrios GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
@@ -622,7 +622,7 @@ banner_color: style2
       <li style="display: inline;"><a href="https://github.com/Landbanana" class="fab fa-github" aria-label="Dale Stager GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       </ul>
       </li>
-      <li style="margin-bottom: 10px;">2024. Abigail Delaney. Imperial College London, MSc in AI and Machine Learning.
+      <li style="margin-bottom: 10px;">2024. Abigail Delaney. Imperial College London, MSc Student in AI and Machine Learning.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="fab fa-linkedin" aria-label="Abigail Delaney LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li style="display: inline;"><a href="https://github.com/abdelane" class="fab fa-github" aria-label="Abigail Delaney GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
