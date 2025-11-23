@@ -458,7 +458,52 @@ banner_color: style2
   </div>
  </section>
 </section>
-
+<!-- Soumen Pradhan -->
+<section id="soumen-pradhan" class="spotlights">
+  <section>
+    <a href="#soumen-pradhan" class="image" aria-label="Soumen Pradhan's section">
+      <img src="assets/images/members/soumen.jpg" alt="Soumen Pradhan" data-position="center center" />
+    </a>
+    <div class="content">
+      <div class="inner">
+        <header class="major">
+          <h3>Soumen Pradhan</h3>
+        </header>
+        <ul>
+          <li>Joined in Fall 2024.</li>
+          <li>B.Sc. Electrical Engineering, Purdue University, expected May 2028.</li>
+        </ul>
+        <p><b>Research topics:</b> Energy Optimization.</p>
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/soumen-pradhan-0a3ab6242/"
+               class="fab fa-linkedin"
+               aria-label="Soumen Pradhan LinkedIn Profile"
+               target="_blank">
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/pradshaan"
+               class="fab fa-github"
+               aria-label="Soumen Pradhan GitHub Profile"
+               target="_blank">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:pradha22@purdue.edu"
+               class="icon fa-envelope"
+               aria-label="Email Soumen Pradhan"
+               target="_blank">
+              <span class="label">Email</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
 <!-- Principal Investigator -->
 <section id="pi">
  <div class="inner">
