@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: Other Scholarly Articles
-image: assets/images/book.png
+image: assets/images/book.webp
 description: 'News Articles, Dissertations, and More'
 nav-menu: false
 show_tile: false

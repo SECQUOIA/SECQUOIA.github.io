@@ -98,6 +98,24 @@ jobs:
           retention-days: 30
           if-no-files-found: ignore
 
+      # Enforce usage-based WebP policy after build
+      - name: Check referenced images are WebP
+        run: |
+          bash scripts/check_referenced_images.sh
+        continue-on-error: false
+
+      - name: Image usage summary
+        if: success()
+        run: |
+          echo "## 🖼 Image Usage Audit Passed" >> $GITHUB_STEP_SUMMARY
+          echo "All referenced site images are WebP." >> $GITHUB_STEP_SUMMARY
+        
+      - name: Image usage summary (failure)
+        if: failure()
+        run: |
+          echo "## ❌ Image Usage Audit Failed" >> $GITHUB_STEP_SUMMARY
+          echo "One or more referenced images are not WebP. Convert and update references." >> $GITHUB_STEP_SUMMARY
+
   lint:
     runs-on: ubuntu-latest
 
@@ -133,3 +151,4 @@ jobs:
           config: .markdownlint.json
           files: '**/*.md'
           ignore: 'node_modules,vendor'
+
