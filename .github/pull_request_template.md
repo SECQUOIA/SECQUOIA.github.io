@@ -7,7 +7,21 @@ Provide a concise summary of the changes. Focus on: purpose, scope, and any user
 
 ## Preview Artifact
 This PR triggers the `Preview Build` workflow.
-- Download the `preview-site` artifact from the workflow run to inspect the generated site locally.
+
+- Download the `preview-site` artifact from the workflow run to inspect the generated site.
+- **To view locally**: Extract the artifact and serve it with a local web server:
+
+  ```bash
+  # Extract the zip file, then run one of:
+  python3 -m http.server 8000
+  # or
+  npx serve
+  # or
+  php -S localhost:8000
+  ```
+
+  Then browse to `http://localhost:8000`
+- **Note**: Opening HTML files directly (`file://`) won't work correctly due to absolute paths.
 - Internal and external link check logs are in the `preview-link-check-logs` artifact.
 - Link checks are non-blocking; fix issues where practical before merge.
 
