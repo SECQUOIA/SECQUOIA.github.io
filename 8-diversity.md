@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: DEI and Outreach
-image: assets/images/diversity.jpeg
+image: assets/images/diversity.webp
 description: 'Fostering Inclusion and Celebrating Diversity'
 nav-menu: true
 banner_color: style8

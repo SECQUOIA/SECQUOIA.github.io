@@ -103,3 +103,36 @@ The built site will be in the `_site` directory, which can be deployed to any st
 ### Important Note
 
 The Dockerfile, Gemfile, and other development configuration files are gitignored to keep the repository clean. You'll need to recreate them when setting up a new development environment.
+
+## Image Policy (WebP Usage)
+
+We store original images (PNG/JPG/etc.) in the repository for provenance, but **only WebP images should be referenced in the built site**.
+
+Enforcement model:
+1. CI scans generated `_site` HTML for `<img>` tags referencing non-WebP files under `assets/images/`.
+2. If any referenced image ends with `.png`, `.jpg`, `.jpeg`, or `.gif`, the build fails.
+3. You may still commit original source images alongside their converted `.webp` counterpart.
+
+Conversion examples:
+
+```bash
+# Using cwebp (preferred)
+cwebp input.jpg -q 80 -o input.webp
+
+# Using ImageMagick
+magick input.png -quality 80 input.webp
+```
+
+Update references (Markdown or HTML) to point to the `.webp` file after conversion.
+
+Local pre-check after building:
+
+```bash
+bundle exec jekyll build
+bash scripts/check_referenced_images.sh
+```
+
+Tips:
+- Target WebP quality (~70–85) balancing size vs clarity.
+- Keep typical member photos < 300KB; large hero/banner images ideally < 1MB.
+- Original files can remain for future recompression or alternative formats if needed.

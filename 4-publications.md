@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-image: assets/images/books.jpeg
+image: assets/images/books.webp
 description: 'Articles, Chapters, Patents, and More'
 nav-menu: true
 banner_color: style3

@@ -2,7 +2,7 @@
 title: Members
 layout: page
 description: "SECQUOIA Group Members."
-image: assets/images/group2024.jpg
+image: assets/images/group2025.webp
 nav-menu: true
 banner_color: style2
 ---
@@ -140,7 +140,7 @@ banner_color: style2
 <section id="albert-lee" class="spotlights">
  <section>
   <a href="#albert-lee" class="image" aria-label="Albert Lee's section">
-   <img src="assets/images/members/AlbertJoonLee.jpg" alt="Albert Lee" data-position="center center" />
+   <img src="assets/images/members/AlbertJoonLee.webp" alt="Albert Lee" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -167,7 +167,7 @@ banner_color: style2
 <section id="anurag-ramesh" class="spotlights">
  <section>
   <a href="#anurag-ramesh" class="image" aria-label="Anurag Ramesh's section">
-   <img src="assets/images/members/AnuragRamesh.jpeg" alt="Anurag Ramesh" data-position="center center" />
+   <img src="assets/images/members/AnuragRamesh.webp" alt="Anurag Ramesh" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -194,7 +194,7 @@ banner_color: style2
 <section id="yirang-park" class="spotlights">
  <section>
   <a href="#yirang-park" class="image" aria-label="Yirang Park's section">
-   <img src="assets/images/members/Yirang-Park.jpg" alt="Yirang Park" data-position="center center" />
+   <img src="assets/images/members/Yirang-Park.webp" alt="Yirang Park" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -222,7 +222,7 @@ banner_color: style2
 <section id="sergey-gusev" class="spotlights">
  <section>
   <a href="#sergey-gusev" class="image" aria-label="Sergey Gusev's section">
-   <img src="assets/images/members/SergeyGusev.jpg" alt="Sergey Gusev" data-position="center center" />
+   <img src="assets/images/members/SergeyGusev.webp" alt="Sergey Gusev" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -249,7 +249,7 @@ banner_color: style2
 <section id="andres-cabeza" class="spotlights">
  <section>
   <a href="#andres-cabeza" class="image" aria-label="Andres F. Cabeza's section">
-   <img src="assets/images/members/AndresCabeza.jpg" alt="Andres F. Cabeza" data-position="center center" />
+   <img src="assets/images/members/AndresCabeza.webp" alt="Andres F. Cabeza" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -287,7 +287,7 @@ banner_color: style2
 <section id="woosik-kim" class="spotlights">
  <section>
   <a href="#woosik-kim" class="image" aria-label="Woosik Kim's section">
-   <img src="assets/images/members/WoosikKim.jpg" alt="Woosik Kim" data-position="center center" />
+   <img src="assets/images/members/WoosikKim.webp" alt="Woosik Kim" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -323,7 +323,7 @@ banner_color: style2
 <section id="joao-victor" class="spotlights">
  <section>
   <a href="#joao-victor" class="image" aria-label="João Victor's section">
-   <img src="assets/images/members/JoaoVictor.jpg" alt="João Victor Paim" data-position="center center" />
+   <img src="assets/images/members/JoaoVictor.webp" alt="João Victor Paim" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -358,7 +358,7 @@ banner_color: style2
 <section id="akshay-mahajan" class="spotlights">
  <section>
   <a href="#akshay-mahajan" class="image" aria-label="Akshay Mahajan's section">
-   <img src="assets/images/members/AkshayMahajan.png" alt="Akshay Mahajan" data-position="center center" />
+   <img src="assets/images/members/AkshayMahajan.webp" alt="Akshay Mahajan" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -384,7 +384,7 @@ banner_color: style2
 <section id="sai-karthik" class="spotlights">
  <section>
   <a href="#sai-karthik" class="image" aria-label="Sai Karthik's section">
-   <img src="assets/images/members/SaiKarthik.jpg" alt="Sai Karthik" data-position="center center" />
+   <img src="assets/images/members/SaiKarthik.webp" alt="Sai Karthik" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -410,7 +410,7 @@ banner_color: style2
 <section id="alan-yi" class="spotlights">
  <section>
   <a href="#alan-yi" class="image" aria-label="Alan Yi's section">
-   <img src="assets/images/members/AlanYi.jpg" alt="Alan Yi" data-position="center center" />
+   <img src="assets/images/members/AlanYi.webp" alt="Alan Yi" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -436,7 +436,7 @@ banner_color: style2
 <section id="azain-khalid" class="spotlights">
  <section>
   <a href="#azain-khalid" class="image" aria-label="Azain Khalid's section">
-   <img src="assets/images/members/AzainKhalid.jpg" alt="Azain Khalid" data-position="center center" />
+   <img src="assets/images/members/AzainKhalid.webp" alt="Azain Khalid" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -462,7 +462,7 @@ banner_color: style2
 <section id="soumen-pradhan" class="spotlights">
   <section>
     <a href="#soumen-pradhan" class="image" aria-label="Soumen Pradhan's section">
-      <img src="assets/images/members/soumen.jpg" alt="Soumen Pradhan" data-position="center center" />
+      <img src="assets/images/members/soumen.webp" alt="Soumen Pradhan" data-position="center center" />
     </a>
     <div class="content">
       <div class="inner">
@@ -517,7 +517,7 @@ banner_color: style2
 <section id="david-bernal" class="spotlights">
   <section>
     <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
-      <img src="assets/images/members/DavidBernal.jpg" alt="David Bernal Neira" data-position="center center" />
+      <img src="assets/images/members/DavidBernal.webp" alt="David Bernal Neira" data-position="center center" />
     </a>
   <div class="content">
    <div class="inner">
