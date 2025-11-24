@@ -109,7 +109,7 @@ jobs:
         run: |
           echo "## 🖼 Image Usage Audit Passed" >> $GITHUB_STEP_SUMMARY
           echo "All referenced site images are WebP." >> $GITHUB_STEP_SUMMARY
-        
+
       - name: Image usage summary (failure)
         if: failure()
         run: |
@@ -151,4 +151,3 @@ jobs:
           config: .markdownlint.json
           files: '**/*.md'
           ignore: 'node_modules,vendor'
-
