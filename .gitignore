@@ -4,6 +4,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# Image optimization artifacts
+assets/images/optimized/
+
 # Bundler
 vendor/
 .bundle/

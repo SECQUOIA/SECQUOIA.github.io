@@ -1,7 +1,7 @@
 ---
 layout: mdpage
 title: Teaching Philosophy
-image: assets/images/notebook.jpeg
+image: assets/images/notebook.webp
 description: 'Fostering a Dynamic and Welcoming Learning Environment for All'
 nav-menu: false
 show_tile: false

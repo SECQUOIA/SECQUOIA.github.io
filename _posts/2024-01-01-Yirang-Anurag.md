@@ -2,7 +2,7 @@
 layout: post
 title: Welcome new PhD students, Yirang and Anurag!
 description: 'We want to welcome our new PhD students in SECQUOIA!'
-image: assets/images/posts/yirang_anurag_welcome.jpg
+image: assets/images/posts/yirang_anurag_welcome.webp
 ---
 
 We want to welcome our new PhD students in SECQUOIA!
@@ -13,6 +13,6 @@ We want to welcome our new PhD students in SECQUOIA!
 
 We are excited to have them in our group!
 
-![Yirang and Anurag]({% link assets/images/posts/yirang_anurag_welcome.jpg %}){: style="display: block; margin-left: auto; margin-right: auto; height: 50%; width: 80%;" }
+![Yirang and Anurag]({% link assets/images/posts/yirang_anurag_welcome.webp %}){: style="display: block; margin-left: auto; margin-right: auto; height: 50%; width: 80%;" }
 
 [Back to News](/3-news.html){: .button .icon .fa-arrow-left }

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-image: assets/images/ideas.jpeg
+image: assets/images/ideas.webp
 description: 'Past, Present, and Planned Projects'
 nav-menu: true
 banner_color: style5

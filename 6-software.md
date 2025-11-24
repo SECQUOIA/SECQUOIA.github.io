@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software
-image: assets/images/software.jpeg
+image: assets/images/software.webp
 description: 'Our software contributions'
 nav-menu: true
 banner_color: style4
