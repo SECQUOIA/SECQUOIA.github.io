@@ -13,26 +13,27 @@ This PR triggers the `Preview Build` workflow.
 
 ## Image & Asset Guidelines
 Only WebP images should be referenced in the site; originals (PNG/JPG/etc.) may be stored for provenance.
+
 1. Always reference the `.webp` version in Markdown/HTML.
 2. Originals can live alongside WebP conversions but must NOT be used directly in content.
 3. Prefer descriptive, kebab-case filenames (e.g., `joao-victor-paim.webp`).
 4. If adding a new image, convert to WebP first. Example conversion commands:
 
-```bash
-# Using cwebp
-cwebp input.jpg -q 80 -o output.webp
+   ```bash
+   # Using cwebp
+   cwebp input.jpg -q 80 -o output.webp
 
-# Using ImageMagick
-magick input.png -quality 80 output.webp
-```
+   # Using ImageMagick
+   magick input.png -quality 80 output.webp
+   ```
 
-1. Run the existing resize helper if appropriate:
+5. Run the existing resize helper if appropriate:
 
-```bash
-./resize_images.sh
-```
+   ```bash
+   ./resize_images.sh
+   ```
 
-(Ensure the script suits the new image before relying on it.)
+   (Ensure the script suits the new image before relying on it.)
 
 ## Checks Before Requesting Review
 - [ ] Jekyll preview build succeeds locally (`bundle exec jekyll build`).
