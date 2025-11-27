@@ -239,6 +239,7 @@ banner_color: style2
       <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin" aria-label="Sergey Gusev LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/sergey-gusev94" class="fab fa-github" aria-label="Sergey Gusev GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="mailto:sgusev@purdue.edu" class="icon fa-envelope" aria-label="Email Sergey Gusev" target="_blank"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0004-1639-4048" class="fab fa-orcid" aria-label="Sergey Gusev ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
