@@ -93,7 +93,8 @@ banner_color: style2
 				<ul class="icons">
 					<li><a href="https://github.com/anurag-r20" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="https://www.linkedin.com/in/anuragr20" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-				<li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="mailto:rames102@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://anurag-r20.github.io/" class="icon fa-home"><span class="label">Website</span></a></li>
 				</ul>
 			</div>
 		</div>
