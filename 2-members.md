@@ -106,7 +106,7 @@ banner_color: style2
 <div class="toc">
   <h4>Jump to Section</h4>
   <ul>
-    <!-- <li><a href="#postdocs">Post-doctoral Fellows</a></li> -->
+    <li><a href="#postdocs">Post-doctoral Fellows</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
     <li><a href="#masters">Master's Students</a></li>
     <li><a href="#visitors">Visiting Scholars</a></li>
