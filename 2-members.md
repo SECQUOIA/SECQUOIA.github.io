@@ -117,7 +117,6 @@ banner_color: style2
 </div>
 
 <!-- Post-doctoral fellows -->
-<!-- Commented out temporarily - no active postdocs
 <section id="postdocs">
  <div class="inner">
   <header class="major">
@@ -125,7 +124,32 @@ banner_color: style2
   </header>
  </div>
 </section> 
--->
+
+<section id="hanjing-xu" class="spotlights">
+ <section>
+  <a href="#hanjing-xu" class="image" aria-label="Hanjing Xu's section">
+   <img src="assets/images/members/HanjingXu.webp" alt="Hanjing Xu" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Hanjing Xu</h3>
+    </header>
+    <ul>
+      <li>Joined in Fall 2025.</li>
+      <li>Ph.D. Computer Science, Purdue University, 2025.</li>
+    </ul>
+    <p><b>Research topics</b>: Combinatorial Optimization, Graph Theory and Quantum Machine Learning.</p>
+    <ul class="icons">
+      <li><a href="https://linkedin.com/in/hanjing-xu-097615b6/" class="fab fa-linkedin" aria-label="Hanjing Xu LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/jxsoortha" class="fab fa-github" aria-label="Hanjing Xu GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:xu675@purdue.edu" class="icon fa-envelope" aria-label="Email Hanjing Xu" target="_blank"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-8118-0570" class="fab fa-orcid" aria-label="Hanjing Xu ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
 <!-- PhD students -->
 <section id="phds">
