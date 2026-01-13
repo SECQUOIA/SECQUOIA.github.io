@@ -70,10 +70,10 @@ fi
 
 # Check file encoding
 echo "   Checking file encoding..."
-if find . -name "*.md" -not -path "./vendor/*" -exec file {} \; 2>/dev/null | grep -v "UTF-8" | grep -v "empty" | head -1 | grep -q .; then
+if find . -name "*.md" -not -path "./vendor/*" -exec file {} \; 2>/dev/null | grep -v "UTF-8" | grep -v "ASCII" | grep -v "empty" | head -1 | grep -q .; then
     echo "   ❌ Found non-UTF8 files"
 else
-    echo "   ✅ All files are UTF-8"
+    echo "   ✅ All files are UTF-8 compatible"
 fi
 
 # Check 6: GitHub Actions workflow syntax
