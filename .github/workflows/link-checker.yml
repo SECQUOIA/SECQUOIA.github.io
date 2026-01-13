@@ -41,8 +41,7 @@ jobs:
             --checks Links \
             --ignore-urls "/localhost/,/127.0.0.1/" \
             --typhoeus '{"timeout": 30, "connecttimeout": 10}' \
-            --http-status-ignore "0,429,999" \
-            --ignore-status-codes "403,503" \
+            --ignore-status-codes "0,403,429,503,999" \
             > linkcheck-full.log 2>&1
           EXITCODE=$?
           cat linkcheck-full.log
