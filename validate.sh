@@ -17,9 +17,11 @@ fi
 echo ""
 echo "🏗️  Testing Jekyll build..."
 if command -v bundle >/dev/null 2>&1; then
-    if bundle exec jekyll build 2>&1 | tee /tmp/jekyll-build.log | grep -i "error\|fatal"; then
-        echo "❌ Jekyll build has errors"
-    else
+    # Run Jekyll build and capture exit code
+    bundle exec jekyll build > /tmp/jekyll-build.log 2>&1
+    BUILD_EXIT=$?
+    
+    if [ $BUILD_EXIT -eq 0 ]; then
         echo "✅ Jekyll build successful"
         
         # Check 3: Validate _site structure (deployment dry-run)
@@ -43,6 +45,9 @@ if command -v bundle >/dev/null 2>&1; then
         else
             echo "⚠️  html-proofer not installed. Add to Gemfile: gem 'html-proofer'"
         fi
+    else
+        echo "❌ Jekyll build failed (exit code: $BUILD_EXIT)"
+        cat /tmp/jekyll-build.log
     fi
 else
     echo "⚠️  Bundler not installed. Install Ruby and run: gem install bundler"
