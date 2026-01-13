@@ -104,6 +104,3 @@ jobs:
           else
             echo "\n✅ External link check passed." >> $GITHUB_STEP_SUMMARY
           fi
-
-    # Even if artifact upload fails, mark job failure; branch protection will block until fixed.
-    timeout-minutes: 20
