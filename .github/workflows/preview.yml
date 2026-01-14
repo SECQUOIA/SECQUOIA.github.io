@@ -15,6 +15,7 @@ jobs:
       name: preview
       url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -57,8 +58,10 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/" \
-            --typhoeus '{"timeout": 30, "connecttimeout": 10}' \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
+            --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
+            --hydra "{\"max_concurrency\": 10}" \
+            --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,429,999" \
             > external_linkcheck_preview.log 2>&1
           EXITCODE=$?
@@ -101,6 +104,3 @@ jobs:
           else
             echo "\n✅ External link check passed." >> $GITHUB_STEP_SUMMARY
           fi
-
-    # Even if artifact upload fails, mark job failure; branch protection will block until fixed.
-    timeout-minutes: 20

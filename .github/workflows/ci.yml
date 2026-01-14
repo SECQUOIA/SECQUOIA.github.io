@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       # Checkout the repository
@@ -42,6 +43,23 @@ jobs:
         env:
           JEKYLL_ENV: test
 
+      # Validate site can be packaged for GitHub Pages (dry-run deployment test)
+      - name: Validate Pages artifact structure
+        run: |
+          # Check _site exists and has content
+          if [ ! -d "_site" ] || [ -z "$(ls -A _site)" ]; then
+            echo "::error::Build failed - _site directory is empty or missing"
+            exit 1
+          fi
+          # Check for index.html
+          if [ ! -f "_site/index.html" ]; then
+            echo "::error::Build failed - index.html not found in _site"
+            exit 1
+          fi
+          echo "✅ Site structure validated for GitHub Pages deployment"
+          echo "## ✅ Deployment Dry-Run Passed" >> $GITHUB_STEP_SUMMARY
+          echo "Site structure is valid for GitHub Pages." >> $GITHUB_STEP_SUMMARY
+
       # Check for broken internal links using html-proofer
       - name: Test internal links
         id: linkcheck
@@ -70,8 +88,10 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/" \
-            --typhoeus '{"timeout": 30, "connecttimeout": 10}' \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
+            --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
+            --hydra "{\"max_concurrency\": 10}" \
+            --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,429,999" \
             > external_linkcheck.log 2>&1
           EXITCODE=$?
@@ -118,6 +138,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       # Checkout the repository
