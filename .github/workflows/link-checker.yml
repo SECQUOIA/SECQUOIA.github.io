@@ -9,6 +9,7 @@ on:
 jobs:
   link-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout code
@@ -39,8 +40,10 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/" \
-            --typhoeus '{"timeout": 30, "connecttimeout": 10}' \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
+            --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
+            --hydra "{\"max_concurrency\": 10}" \
+            --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,403,429,503,999" \
             > linkcheck-full.log 2>&1
           EXITCODE=$?
