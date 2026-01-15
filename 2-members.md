@@ -302,7 +302,7 @@ banner_color: style2
 <section id="mohamed-mazhar-laljee" class="spotlights">
  <section>
   <a href="#mohamed-mazhar-laljee" class="image" aria-label="Mohamed Mazhar Laljee's section">
-   <img src="assets/images/members/AlbertJoonLee.webp" alt="Mohamed Mazhar Laljee" data-position="center center" />
+   <img src="assets/images/members/MohamedMazharLaljee.webp" alt="Mohamed Mazhar Laljee" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
