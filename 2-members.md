@@ -319,7 +319,7 @@ banner_color: style2
       <li><a href="https://www.linkedin.com/in/hribljan-anja/" class="fab fa-linkedin" aria-label="Anja Hribljan LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/ahribljan" class="fab fa-github" aria-label="Anja Hribljan GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="mailto:ahriblja@purdue.edu" class="icon fa-envelope" aria-label="Email Anja Hribljan" target="_blank"><span class="label">Email</span></a></li>
-      <li><a href="https://orcid.org/0009-0001-2852-1487" class="fab fa-orcid" aria-label="Anja Hribljan+ ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+      <li><a href="https://orcid.org/0009-0001-2852-1487" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
