@@ -298,6 +298,35 @@ banner_color: style2
  </section>
 </section>
 
+<!-- Anja Hribljan -->
+<section id="anja-hribljan" class="spotlights">
+ <section>
+  <a href="#anja-hribljan" class="image" aria-label="Anja Hribljan's section">
+   <img src="assets/images/members/AnjaHribljan.webp" alt="Anja Hribljan" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Anja Hribljan</h3>
+    </header>
+    <ul>
+     <li>Joined in Fall 2025</li>
+     <li>B.S. Chemistry, Dillard University, 2025.</li>
+     <li>B.S. Physics, Dillard University, 2025.</li>
+    </ul>
+    <p><b>Research topics</b>: Quantum Physics Informed Neural Networks</p>
+    <ul class="icons">
+     <li><a href="https://www.linkedin.com/in/hribljan-anja/" class="fab fa-linkedin" aria-label="Anja Hribljan LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
+     <li><a href="https://github.com/ahribljan" class="fab fa-github" aria-label="Anja Hribljan GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+     <li><a href="mailto:ahriblja@purdue.edu" class="icon fa-envelope" aria-label="Email Anja Hribljan" target="_blank"><span class="label">Email</span></a></li>
+     <li><a href="https://orcid.org/0009-0001-2852-1487" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
+
 <!-- Mohamed Mazhar Laljee -->
 <section id="mohamed-mazhar-laljee" class="spotlights">
  <section>
