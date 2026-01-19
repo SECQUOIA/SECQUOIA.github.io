@@ -339,15 +339,15 @@ banner_color: style2
      <h3>Mohamed Mazhar Laljee</h3>
     </header>
     <ul>
-     <li>Joined in Fall 2025.</li>
-     <li>B.Tech. Chemical Engineering, Indian Institute of Technology (IIT) Ropar, 2023.</li>
+      <li>Joined in Fall 2025.</li>
+      <li>B.Tech. Chemical Engineering, Indian Institute of Technology (IIT) Ropar, 2023.</li>
     </ul>
     <p><b>Research topics</b>: Data-Driven Enhanced Oil Recovery.</p>
     <ul class="icons">
-     <li><a href="https://www.linkedin.com/in/mohamed-mazhar-laljee/" class="fab fa-linkedin" aria-label="Mohamed Mazhar Laljee LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-     <li><a href="https://github.com/Mazhar331" class="fab fa-github" aria-label="Mohamed Mazhar Laljee GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:mlaljee@purdue.edu" class="icon fa-envelope" aria-label="Email Mohamed Mazhar Laljee" target="_blank"><span class="label">Email</span></a></li>
-     <li><a href="https://orcid.org/0009-0000-1665-7777" class="fab fa-orcid" aria-label="Mohamed Mazhar Laljee ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/mohamed-mazhar-laljee/" class="fab fa-linkedin" aria-label="Mohamed Mazhar Laljee LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/Mazhar331" class="fab fa-github" aria-label="Mohamed Mazhar Laljee GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:mlaljee@purdue.edu" class="icon fa-envelope" aria-label="Email Mohamed Mazhar Laljee" target="_blank"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0000-1665-7777" class="fab fa-orcid" aria-label="Mohamed Mazhar Laljee ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
