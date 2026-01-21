@@ -30,7 +30,7 @@ banner_color: style4
    <li>Feasibility Pump (FP)</li>
   </ul>
   <ul class="actions">
-   <li><a href="https://pyomo.readthedocs.io/en/stable/contributed_packages/mindtpy.html" class="button next" target="_blank">Get Started</a></li>
+   <li><a href="https://pyomo.readthedocs.io/en/stable/explanation/solvers/mindtpy.html" class="button next" target="_blank">Get Started</a></li>
   </ul>
  </div>
 </section>
