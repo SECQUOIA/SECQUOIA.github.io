@@ -426,6 +426,34 @@ banner_color: style2
  </section>
 </section>
 
+<!-- Chaolong Wang -->
+
+<section id="chaolong-wang" class="spotlights">
+ <section>
+  <a href="#chaolong" class="image" aria-label="Chaolong's section">
+   <img src="assets/images/members/ChaolongWang.webp" alt="Chaolong Wang" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Chaolong Wang</h3>
+    </header>
+    <ul>
+    <li>Joined in Spring 2026.</li>
+    <li>B.Eng. Chemical Engineering, Tsinghua University, expected 2026.</li>
+    </ul>
+    <p><b>Research topics</b>: Process Superstructures</p>
+    <ul class="icons">
+      <li><a href="https://github.com/Toflamus" class="fab fa-github" aria-label="Chaolong Wang's GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
+      <li><a href="https://www.linkedin.com/in/chaolong-wang-526a412a1/" class="fab fa-linkedin" aria-label="Chaolong Wang's LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
+      <li><a href="mailto:wang7617@purdue.edu" class="icon fa-envelope" aria-label="Email Chaolong" target="_blank"><span class="label">Email</span></a></li>
+      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- Undergraduate students -->
 <section id="undergrads">
  <div class="inner">
