@@ -430,7 +430,7 @@ banner_color: style2
 
 <section id="chaolong-wang" class="spotlights">
  <section>
-  <a href="#chaolong" class="image" aria-label="Chaolong's section">
+  <a href="#chaolong-wang" class="image" aria-label="Chaolong's section">
    <img src="assets/images/members/ChaolongWang.webp" alt="Chaolong Wang" data-position="center center" />
   </a>
   <div class="content">
