@@ -627,9 +627,6 @@ banner_color: style2
         <ul>
           <li>Joined in Fall 2024.</li>
           <li>B.S. Computer Science, Purdue University, expected May 2028.</li>
-        </ul>
-        <ul>
-          <li>Joined in Fall 2024.</li>
           <li>B.S. Applied Mathematics, Purdue University, expected May 2028.</li>
         </ul>
         <p><b>Research topics:</b> Mixed-Integer Nonlinear Optimization.</p>
