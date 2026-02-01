@@ -40,10 +40,17 @@ self.addEventListener('fetch', function(event) {
         
         // Only cache successful responses (200-299 status codes)
         if (response.ok) {
-          caches.open(CACHE_NAME)
-            .then(function(cache) {
-              cache.put(event.request, responseToCache);
-            });
+          // Use waitUntil to ensure cache operation completes
+          event.waitUntil(
+            caches.open(CACHE_NAME)
+              .then(function(cache) {
+                return cache.put(event.request, responseToCache);
+              })
+              .catch(function(error) {
+                // Log caching errors for debugging
+                console.warn('Failed to cache:', event.request.url, error);
+              })
+          );
         }
         
         return response;
