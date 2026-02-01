@@ -38,8 +38,8 @@ self.addEventListener('fetch', function(event) {
         // Clone the response
         const responseToCache = response.clone();
         
-        // Only cache successful responses
-        if (response.status === 200) {
+        // Only cache successful responses (200-299 status codes)
+        if (response.ok) {
           caches.open(CACHE_NAME)
             .then(function(cache) {
               cache.put(event.request, responseToCache);
