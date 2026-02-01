@@ -1,12 +1,16 @@
 ---
 ---
-const CACHE_NAME = 'secquoia-v1';
+const CACHE_NAME = 'secquoia-v2';
 const urlsToCache = [
   '/',
   '/assets/css/main.css',
+  '/assets/css/font-awesome.min.css',
   '/assets/js/main.js',
   '/assets/js/jquery.min.js',
   '/assets/js/util.js',
+  '/assets/js/skel.min.js',
+  '/assets/js/jquery.scrolly.min.js',
+  '/assets/js/jquery.scrollex.min.js',
   '/assets/images/banner.webp',
   '/assets/images/group2024.webp',
   '/assets/fonts/fontawesome-webfont.woff2'
@@ -19,18 +23,35 @@ self.addEventListener('install', function(event) {
       .then(function(cache) {
         return cache.addAll(urlsToCache);
       })
+      .then(function() {
+        // Activate immediately
+        return self.skipWaiting();
+      })
   );
 });
 
-// Fetch event - serve cached content when offline
+// Fetch event - network first, fall back to cache
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then(function(response) {
-        // Return cached version or fetch from network
-        return response || fetch(event.request);
-      }
-    )
+        // Clone the response
+        const responseToCache = response.clone();
+        
+        // Only cache successful responses
+        if (response.status === 200) {
+          caches.open(CACHE_NAME)
+            .then(function(cache) {
+              cache.put(event.request, responseToCache);
+            });
+        }
+        
+        return response;
+      })
+      .catch(function() {
+        // If network fails, try cache
+        return caches.match(event.request);
+      })
   );
 });
 
@@ -45,6 +66,9 @@ self.addEventListener('activate', function(event) {
           }
         })
       );
+    }).then(function() {
+      // Take control immediately
+      return self.clients.claim();
     })
   );
 });
