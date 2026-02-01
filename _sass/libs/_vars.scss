@@ -30,18 +30,18 @@
 
 // Palette.
 	$palette: (
-		bg:					#000000,
-		bg-alt:				#000000,
-		fg:					#CEB888,
-		fg-bold:			#CEB888,
-		fg-light:			rgba(157,150,141,0.6), // Increased opacity
-		border:				rgba(255,255,255,0.3), // Increased opacity
-		border-bg:			rgba(255,255,255,0.1), // Increased opacity
-		highlight:			#A67A0C, // Darkened for better contrast
+		bg:					#2a2a2a,
+		bg-alt:				#3a3a3a,
+		fg:					#ffffff,
+		fg-bold:			#ffffff,
+		fg-light:			rgba(255,255,255,0.65),
+		border:				rgba(255,255,255,0.35),
+		border-bg:			rgba(255,255,255,0.15),
+		highlight:			#d4af37,
 		accent1:			#6fc3df,
-		accent2:			#6e6ab0, // Darkened purple
-		accent3:			#d16a5f, // Darkened coral
-		accent4:			#7c7468, // Darkened gray
-		accent5:			#8ea9e8,
-		accent6:			#228B22
+		accent2:			#8b7ec8,
+		accent3:			#e88b80,
+		accent4:			#999999,
+		accent5:			#a8c0ff,
+		accent6:			#3cb371
 	);
