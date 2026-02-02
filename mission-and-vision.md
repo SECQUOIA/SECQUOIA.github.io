@@ -4,12 +4,14 @@ permalink: /mission/
 layout: page
 ---
 
-# Mission
 
-Our mission is to advance research in optimization, decision-making, and related computational methods; educate and mentor students; and collaborate with industry and academia to translate research into real-world impact.
+# Mission (what SECQUOIA exists to do)
 
-# Vision
+SECQUOIA builds optimization and decision-making tools—from classical to quantum—that turn complex engineering data into reliable, real-world impact.
 
-We aim to be a globally recognized research group known for innovative, reproducible, and impactful work, fostering an inclusive community that accelerates scientific discovery and real-world solutions.
+- Advance systems engineering decision-making by creating and disseminating rigorous optimization and learning methods implemented as usable software, spanning classical, hybrid, and quantum computing, for high-impact industrial and scientific applications (especially chemical/process/energy systems). 
+- In parallel, train a diverse and inclusive cohort of engineers/scientists through mentorship, teaching, and open, reproducible research practices.
 
-If you'd like different wording, provide the exact mission and vision text and I will update this page.
+# Vision (the future SECQUOIA wants to make true)
+
+Make advanced optimization, potentially quantum-enhanced, practical, trustworthy, and broadly accessible as a default “engineering substrate” for designing and operating complex systems, by unifying theory, scalable algorithms, and open tools across emerging hardware.
