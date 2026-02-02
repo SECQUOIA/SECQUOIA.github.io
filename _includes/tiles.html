@@ -7,8 +7,8 @@
   {% for tile in tiles limit:site.tiles-count %}
   <article>
     <span class="image">
-      {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" />{% endif %}
-      {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" />{% endif %}
+      {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" loading="lazy" decoding="async" />{% endif %}
+      {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" loading="lazy" decoding="async" />{% endif %}
     </span>
     <header class="major">
       <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
