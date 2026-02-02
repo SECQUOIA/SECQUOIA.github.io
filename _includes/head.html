@@ -64,9 +64,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	{% if site.formspreeEndpoint %}
+	<link rel="preconnect" href="https://formspree.io" crossorigin>
+	{% endif %}
 	
 	<!-- Preload critical fonts -->
 	<link rel="preload" href="{{ "assets/fonts/fontawesome-webfont.woff2?v=4.6.3" | relative_url }}" as="font" type="font/woff2" crossorigin>
+	
+	<!-- Preload critical CSS -->
+	<link rel="preload" href="{{ "assets/css/main.css" | relative_url }}" as="style">
 	
 	<!-- Optimized Google Fonts loading -->
 	<link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">

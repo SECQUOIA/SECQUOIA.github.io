@@ -11,7 +11,7 @@
     <section id="banner" class="{{ page.banner_color }}">
 		<div class="inner">
 			<span class="image">
-				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+				<img src="{{ site.baseurl }}/{{ page.image }}" alt="" loading="eager" fetchpriority="high" decoding="async">
 			</span>
 			<header class="major">
 
@@ -41,8 +41,8 @@
           {% for tile in post_tiles %}
           <article>
             <span class="image">
-              {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" />{% endif %}
-              {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" />{% endif %}
+              {% if tile.image %}<img src="{{ tile.image }}" alt="{{ tile.title }}" loading="lazy" decoding="async" />{% endif %}
+              {% if tile.imageUrl %}<img src="{{ tile.imageUrl }}" alt="{{ tile.title }}" loading="lazy" decoding="async" />{% endif %}
             </span>
             <header class="major">
               <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
