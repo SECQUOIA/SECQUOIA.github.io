@@ -613,6 +613,54 @@ banner_color: style2
     </div>
   </section>
 </section>
+
+<section id="tarik-guler" class="spotlights">
+  <section>
+    <a href="#tarik-guler" class="image" aria-label="Tarik Gulers's section">
+      <img src="assets/images/members/tarik-guler.webp" alt="Tarik Guler" data-position="center center" />
+    </a>
+    <div class="content">
+      <div class="inner">
+        <header class="major">
+          <h3>Tarik Guler</h3>
+        </header>
+        <ul>
+          <li>Joined in Fall 2024.</li>
+          <li>B.S. Computer Science, Purdue University, expected May 2028.</li>
+          <li>B.S. Applied Mathematics, Purdue University, expected May 2028.</li>
+        </ul>
+        <p><b>Research topics:</b> Mixed-Integer Nonlinear Optimization.</p>
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/tarik-guler-19374b2a6/"
+               class="fab fa-linkedin"
+               aria-label="Tarik Guler LinkedIn Profile"
+               target="_blank">
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/tarikLG"
+               class="fab fa-github"
+               aria-label="Tarik Guler GitHub Profile"
+               target="_blank">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:gulert@purdue.edu"
+               class="icon fa-envelope"
+               aria-label="Email Tarik Guler"
+               target="_blank">
+              <span class="label">Email</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
 <!-- Principal Investigator -->
 <section id="pi">
  <div class="inner">
