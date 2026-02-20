@@ -143,7 +143,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://linkedin.com/in/hanjing-xu-097615b6/" class="fab fa-linkedin" aria-label="Hanjing Xu LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/jxsoortha" class="fab fa-github" aria-label="Hanjing Xu GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Hanjing Xu" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0000-0002-8118-0570" class="fab fa-orcid" aria-label="Hanjing Xu ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -179,7 +178,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/albert-lee-45570a24b/" class="fab fa-linkedin" aria-label="Albert Lee LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/AlbertLee125" class="fab fa-github" aria-label="Albert Lee GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Albert Lee" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0000-0002-4474-3266" class="fab fa-orcid" aria-label="Albert Lee ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -206,7 +204,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/anuragr20" class="fab fa-linkedin" aria-label="Anurag Ramesh LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/anurag-r20" class="fab fa-github" aria-label="Anurag Ramesh GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Anurag Ramesh" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0001-8360-8614" class="fab fa-orcid" aria-label="Anurag Ramesh ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -234,7 +231,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/yirangp/" class="fab fa-linkedin" aria-label="Yirang Park LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/parkyr" class="fab fa-github" aria-label="Yirang Park GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Yirang Park" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0008-6629-3308" class="fab fa-orcid" aria-label="Yirang Park ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -262,7 +258,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/sergey-gusev-0b7770150/" class="fab fa-linkedin" aria-label="Sergey Gusev LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/sergey-gusev94" class="fab fa-github" aria-label="Sergey Gusev GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Sergey Gusev" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0004-1639-4048" class="fab fa-orcid" aria-label="Sergey Gusev ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -290,7 +285,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/andres-f-cabeza-2075a3149/" class="fab fa-linkedin" aria-label="Andres F. Cabeza LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/andres9403" class="fab fa-github" aria-label="Andres F. Cabeza GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Andres F. Cabeza" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0008-5932-564X" class="fab fa-orcid" aria-label="Andres F. Cabeza ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -318,7 +312,6 @@ banner_color: style2
     <ul class="icons">
      <li><a href="https://www.linkedin.com/in/hribljan-anja/" class="fab fa-linkedin" aria-label="Anja Hribljan LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
      <li><a href="https://github.com/ahribljan" class="fab fa-github" aria-label="Anja Hribljan GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-     <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Anja Hribljan" target="_blank"><span class="label">Email</span></a></li>
      <li><a href="https://orcid.org/0009-0001-2852-1487" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -346,7 +339,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/mohamed-mazhar-laljee/" class="fab fa-linkedin" aria-label="Mohamed Mazhar Laljee LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/Mazhar331" class="fab fa-github" aria-label="Mohamed Mazhar Laljee GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Mohamed Mazhar Laljee" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0000-1665-7777" class="fab fa-orcid" aria-label="Mohamed Mazhar Laljee ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -383,7 +375,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/kimwoosik/" class="fab fa-linkedin" aria-label="Woosik Kim LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/peterkim01" class="fab fa-github" aria-label="Woosik Kim GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Woosik Kim" target="_blank"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
@@ -419,7 +410,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://github.com/jvpcms" class="fab fa-github" aria-label="João Victor's GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="https://www.linkedin.com/in/jo%C3%A3ovictor-engenharia/" class="fab fa-linkedin" aria-label="João Victor's LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email João Victor" target="_blank"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
@@ -446,7 +436,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://github.com/Toflamus" class="fab fa-github" aria-label="Chaolong Wang's GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="https://www.linkedin.com/in/chaolong-wang-526a412a1/" class="fab fa-linkedin" aria-label="Chaolong Wang's LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Chaolong" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -482,7 +471,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin" aria-label="Akshay Mahajan LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/akrmahajan" class="fab fa-github" aria-label="Akshay Mahajan GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Akshay Mahajan" target="_blank"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
@@ -508,7 +496,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin" aria-label="Sai Karthik LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/sa1K" class="fab fa-github" aria-label="Sai Karthik GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Sai Karthik" target="_blank"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
@@ -534,7 +521,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin" aria-label="Alan Yi LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/ailunyi" class="fab fa-github" aria-label="Alan Yi GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Alan Yi" target="_blank"><span class="label">Email</span></a></li>
     </ul>
    </div>
   </div>
@@ -560,7 +546,6 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/azainkhalid/" class="fab fa-linkedin" aria-label="Azain Khalid LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/AzAINN" class="fab fa-github" aria-label="Azain Khalid GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email Azain Khalid" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://orcid.org/0009-0005-4801-6452" class="fab fa-orcid" aria-label="Azain Khalid ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
@@ -598,14 +583,6 @@ banner_color: style2
                aria-label="Soumen Pradhan GitHub Profile"
                target="_blank">
               <span class="label">GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:[email removed]"
-               class="icon fa-envelope"
-               aria-label="Email Soumen Pradhan"
-               target="_blank">
-              <span class="label">Email</span>
             </a>
           </li>
         </ul>
@@ -647,14 +624,6 @@ banner_color: style2
               <span class="label">GitHub</span>
             </a>
           </li>
-          <li>
-            <a href="mailto:[email removed]"
-               class="icon fa-envelope"
-               aria-label="Email Tarik Guler"
-               target="_blank">
-              <span class="label">Email</span>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
@@ -687,7 +656,6 @@ banner_color: style2
     </ul>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin" aria-label="David E. Bernal Neira LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="mailto:[email removed]" class="icon fa-envelope" aria-label="Email David E. Bernal Neira" target="_blank"><span class="label">Email</span></a></li>
       <li><a href="https://github.com/bernalde" class="fab fa-github" aria-label="David E. Bernal Neira GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid" aria-label="David E. Bernal Neira ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
