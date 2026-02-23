@@ -26,7 +26,12 @@
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
 					<h3>Email</h3>
-					<a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a>
+					{% assign contact_email = site.email | to_s | strip %}
+					{% if contact_email != "" and contact_email contains "@" %}
+						<a href="mailto:{{ contact_email }}" target="_blank" rel="noopener noreferrer">{{ contact_email }}</a>
+					{% else %}
+						<span>Use the contact form above.</span>
+					{% endif %}
 				</div>
 			</section>
 			<!-- <section>
@@ -104,4 +109,3 @@
 
 	<!-- Optimized deferred scripts -->
 	{% include scripts.html %}
-
