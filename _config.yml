@@ -1,7 +1,6 @@
 # site settings
 title: SECQUOIA
 subtitle: Info
-email: [email removed]
 description: Systems Engineering via Classical and Quantum Optimization for Industrial Applications Research Group at Purdue University
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://SECQUOIA.github.io # the base hostname & protocol for your site
