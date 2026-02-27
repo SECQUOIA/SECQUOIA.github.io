@@ -149,7 +149,31 @@ banner_color: style2
   </div>
  </section>
 </section>
-
+<section id="bruna-araujo" class="spotlights">
+<section>
+<a href="#bruna-araujo" class="image" aria-label="Bruna Gabrielly de Moraes Araújo section">
+<img src="assets/images/members/bruna-gabrielly-araujo.webp" alt="Bruna Gabrielly de Moraes Araújo" data-position="center center" />
+</a>
+<div class="content">
+<div class="inner">
+<header class="major">
+<h3>Bruna Gabrielly de Moraes Araújo</h3>
+</header>
+<ul>
+<li>Joined in Winter 2026.</li>
+<li>Temporary Research Fellow, Politecnico di Milano, 2024–2026.</li>
+<li>Postdoc, Universidade Federal de Pernambuco, 2023–2024.</li>
+<li>Postdoctoral Fellow, University of New Mexico, 2022–2023.</li>
+<li>Ph.D., Physics, Universitat Autònoma de Barcelona, 2022.</li>
+<li>M.S., Theoretical Physics, Universidade Federal de Pernambuco, 2015.</li>
+<li>B.S., Chemical Engineering, Universidade Católica de Pernambuco, 2015.</li>
+<li>B.S., Theoretical Physics, Universidade Federal de Pernambuco and University of Porto, 2013.</li>
+</ul>
+<p><b>Research topics:</b> Quantum Information and Quantum Computing, Quantum Chemistry, Optimization.</p>
+</div>
+</div>
+</section>
+</section>
 <!-- PhD students -->
 <section id="phds">
  <div class="inner">
