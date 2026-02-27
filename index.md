@@ -15,6 +15,13 @@ show_tile: false
   </p>
 </section>
 
+<section id="mission-teaser" aria-labelledby="mission-teaser-heading">
+  <h2 id="mission-teaser-heading">Mission &amp; Vision</h2>
+  <p>
+    SECQUOIA builds optimization and decision-making tools—from classical to quantum—that turn complex engineering data into reliable, real-world impact. <a href="/mission/">Read our full mission and vision</a>.
+  </p>
+</section>
+
 <section id="research" aria-labelledby="research-heading">
   <h2 id="research-heading">Our Research Focus</h2>
   <p>
