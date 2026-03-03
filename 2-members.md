@@ -816,10 +816,10 @@ banner_color: style2
       <li style="margin-bottom: 10px;">2024. Abigail Delaney. Imperial College London, MSc Student in AI and Machine Learning.
       <ul class="icons" style="display: inline; margin-left: 10px; list-style: none;">
       <li style="display: inline;"><a href="https://www.linkedin.com/in/abby-delaney-693b4321a/" class="fab fa-linkedin" aria-label="Abigail Delaney LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-	      <li style="display: inline;"><a href="https://github.com/abdelane" class="fab fa-github" aria-label="Abigail Delaney GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
-	      </ul>
-	      </li>
-	      </ul>
+      <li style="display: inline;"><a href="https://github.com/abdelane" class="fab fa-github" aria-label="Abigail Delaney GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      </ul>
+      </li>
+      </ul>
  </div>
 </section>
 
