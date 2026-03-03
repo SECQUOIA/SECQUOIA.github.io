@@ -75,7 +75,7 @@ bundle exec jekyll serve --livereload
 Run the repository validation script before opening a PR:
 
 ```bash
-bash validate.sh
+./validate.sh
 ```
 
 ### Troubleshooting
