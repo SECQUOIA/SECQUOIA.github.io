@@ -460,7 +460,7 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://github.com/Toflamus" class="fab fa-github" aria-label="Chaolong Wang's GitHub Profile" target="_blank"><span class="label">GitHub</span></a></li>
       <li><a href="https://www.linkedin.com/in/chaolong-wang-526a412a1/" class="fab fa-linkedin" aria-label="Chaolong Wang's LinkedIn Profile" target="_blank"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
+      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Chaolong Wang ORCID Profile" target="_blank"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
