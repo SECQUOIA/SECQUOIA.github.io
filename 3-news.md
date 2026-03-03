@@ -16,4 +16,27 @@ show_tile: true
 <noscript>
   <p>LinkedIn embeds require JavaScript. Browse the latest news cards below.</p>
 </noscript>
-<p>If the LinkedIn feed does not load, browse the latest news cards below.</p>
+<p id="linkedin-fallback" hidden>If the LinkedIn feed does not load, browse the latest news cards below.</p>
+<script>
+  (function () {
+    var fallback = document.getElementById('linkedin-fallback');
+    if (!fallback) return;
+
+    function showIfEmbedEmpty() {
+      var container = document.querySelector('.sk-ww-linkedin-page-post');
+      if (!container) return;
+      var isEmpty = !container.hasChildNodes() || container.innerHTML.trim() === '';
+      if (isEmpty) {
+        fallback.hidden = false;
+      }
+    }
+
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      setTimeout(showIfEmbedEmpty, 4000);
+    } else {
+      window.addEventListener('DOMContentLoaded', function () {
+        setTimeout(showIfEmbedEmpty, 4000);
+      });
+    }
+  })();
+</script>
