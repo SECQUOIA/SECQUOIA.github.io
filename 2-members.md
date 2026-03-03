@@ -9,9 +9,8 @@ banner_color: style2
 
 <!-- markdownlint-disable MD033 -->
 
-<!-- Embedding Font Awesome for ORCID icon -->
+<!-- Member-page style overrides -->
 <style>
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 .label {
     position: absolute;
     width: 1px;
