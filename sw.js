@@ -32,6 +32,20 @@ self.addEventListener('install', function(event) {
 
 // Fetch event - network first, fall back to cache
 self.addEventListener('fetch', function(event) {
+  if (event.request.method !== 'GET') {
+    return;
+  }
+
+  const requestUrl = new URL(event.request.url);
+  const isHttpRequest = requestUrl.protocol === 'http:' || requestUrl.protocol === 'https:';
+  if (!isHttpRequest) {
+    return;
+  }
+
+  const isSameOrigin = requestUrl.origin === self.location.origin;
+  const cacheableDestinations = ['style', 'script', 'image', 'font'];
+  const shouldCache = isSameOrigin && cacheableDestinations.includes(event.request.destination);
+
   event.respondWith(
     fetch(event.request)
       .then(function(response) {
@@ -39,7 +53,7 @@ self.addEventListener('fetch', function(event) {
         const responseToCache = response.clone();
         
         // Only cache successful responses (200-299 status codes)
-        if (response.ok) {
+        if (response.ok && shouldCache) {
           // Use waitUntil to ensure cache operation completes
           event.waitUntil(
             caches.open(CACHE_NAME)
