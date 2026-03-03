@@ -13,3 +13,7 @@ show_tile: true
 <!-- markdownlint-disable MD033 -->
 
 <div class='sk-ww-linkedin-page-post' data-embed-id='25538864'></div><script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' defer></script>
+<noscript>
+  <p>LinkedIn embeds require JavaScript. Browse the latest news cards below.</p>
+</noscript>
+<p>If the LinkedIn feed does not load, browse the latest news cards below.</p>
