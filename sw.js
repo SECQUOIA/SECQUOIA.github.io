@@ -1,6 +1,7 @@
 ---
 ---
 const CACHE_NAME = 'secquoia-v2';
+const CACHEABLE_DESTINATIONS = new Set(['style', 'script', 'image', 'font', 'document']);
 const urlsToCache = [
   '/',
   '/assets/css/main.css',
@@ -43,8 +44,10 @@ self.addEventListener('fetch', function(event) {
   }
 
   const isSameOrigin = requestUrl.origin === self.location.origin;
-  const cacheableDestinations = ['style', 'script', 'image', 'font'];
-  const shouldCache = isSameOrigin && cacheableDestinations.includes(event.request.destination);
+  const shouldCache = isSameOrigin && CACHEABLE_DESTINATIONS.has(event.request.destination);
+  if (!shouldCache) {
+    return;
+  }
 
   event.respondWith(
     fetch(event.request)
@@ -71,7 +74,9 @@ self.addEventListener('fetch', function(event) {
       })
       .catch(function() {
         // If network fails, try cache
-        return caches.match(event.request);
+        return caches.match(event.request).then(function(cachedResponse) {
+          return cachedResponse || Response.error();
+        });
       })
   );
 });
