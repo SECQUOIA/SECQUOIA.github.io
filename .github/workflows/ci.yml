@@ -169,6 +169,5 @@ jobs:
       - name: Lint Markdown files
         uses: articulate/actions-markdownlint@v1
         with:
-          config: .markdownlint.json
           files: '**/*.md'
           ignore: 'node_modules,vendor'
