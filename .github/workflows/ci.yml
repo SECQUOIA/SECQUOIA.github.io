@@ -169,5 +169,6 @@ jobs:
       - name: Lint Markdown files
         uses: articulate/actions-markdownlint@v1
         with:
+          # The action auto-discovers .markdownlint.{yaml,yml,json} in repo root.
           files: '**/*.md'
           ignore: 'node_modules,vendor'
