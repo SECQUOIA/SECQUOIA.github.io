@@ -1,4 +1,8 @@
+---
+layout: null
+---
+
 User-agent: *
 Allow: /
 
-Sitemap: https://SECQUOIA.github.io/sitemap.xml
+Sitemap: {{ "/sitemap.xml" | absolute_url }}
