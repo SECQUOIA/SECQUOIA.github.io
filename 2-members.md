@@ -456,31 +456,6 @@ banner_color: style2
  </div>
 </section>
 
-<!-- João Victor Paim -->
-<section id="joao-victor" class="spotlights">
- <section>
-  <a href="#joao-victor" class="image" aria-label="João Victor's section">
-   <img src="assets/images/members/JoaoVictor.webp" alt="João Victor Paim" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>João Victor Paim</h3>
-    </header>
-    <ul>
-    <li>Joined in Fall 2025.</li>
-    <li>B.Eng. Computer Engineering, Military Institute Of Engineering, expected 2026.</li>
-    </ul>
-    <p><b>Research topics</b>: Machine Learning, Quantum Computing, Optimization</p>
-    <ul class="icons">
-      <li><a href="https://github.com/jvpcms" class="fab fa-github" aria-label="João Victor's GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-      <li><a href="https://www.linkedin.com/in/jo%C3%A3ovictor-engenharia/" class="fab fa-linkedin" aria-label="João Victor's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
 <!-- Chaolong Wang -->
 
 <section id="chaolong-wang" class="spotlights">
@@ -501,7 +476,7 @@ banner_color: style2
     <ul class="icons">
       <li><a href="https://github.com/Toflamus" class="fab fa-github" aria-label="Chaolong Wang's GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
       <li><a href="https://www.linkedin.com/in/chaolong-wang-526a412a1/" class="fab fa-linkedin" aria-label="Chaolong Wang's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Anja Hribljan ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
+      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Chaolong Wang ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
     </ul>
    </div>
   </div>
@@ -617,45 +592,6 @@ banner_color: style2
   </div>
  </section>
 </section>
-<!-- Soumen Pradhan -->
-<section id="soumen-pradhan" class="spotlights">
-  <section>
-    <a href="#soumen-pradhan" class="image" aria-label="Soumen Pradhan's section">
-      <img src="assets/images/members/soumen.webp" alt="Soumen Pradhan" data-position="center center" />
-    </a>
-    <div class="content">
-      <div class="inner">
-        <header class="major">
-          <h3>Soumen Pradhan</h3>
-        </header>
-        <ul>
-          <li>Joined in Fall 2024.</li>
-          <li>B.Sc. Electrical Engineering, Purdue University, expected May 2028.</li>
-        </ul>
-        <p><b>Research topics:</b> Energy Optimization.</p>
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/soumen-pradhan-0a3ab6242/"
-               class="fab fa-linkedin"
-               aria-label="Soumen Pradhan LinkedIn Profile"
-               target="_blank" rel="noopener noreferrer">
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/pradshaan"
-               class="fab fa-github"
-               aria-label="Soumen Pradhan GitHub Profile"
-               target="_blank" rel="noopener noreferrer">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</section>
-
 <section id="tarik-guler" class="spotlights">
   <section>
     <a href="#tarik-guler" class="image" aria-label="Tarik Gulers's section">
@@ -767,6 +703,12 @@ banner_color: style2
       </ul>
       <h3 class="alumni-subheading">Visiting scholars</h3>
       <ul class="alumni-list">
+      <li class="alumni-item">2026. João Victor Paim. Military Institute of Engineering.
+      <ul class="icons alumni-icons">
+      <li><a href="https://github.com/jvpcms" class="fab fa-github" aria-label="João Victor Paim GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://www.linkedin.com/in/jo%C3%A3ovictor-engenharia/" class="fab fa-linkedin" aria-label="João Victor Paim LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      </li>
       <li class="alumni-item">2025. Mateo Huertas Marulanda. National University of Colombia.
       <ul class="icons alumni-icons">
       <li><a href="https://www.linkedin.com/in/mhuertasm/" class="fab fa-linkedin" aria-label="Mateo Huertas Marulanda LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
@@ -815,6 +757,12 @@ banner_color: style2
       </ul>
       <h3 class="alumni-subheading">Undergraduates</h3>
       <ul class="alumni-list">
+      <li class="alumni-item">2026. Soumen Pradhan. Purdue University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/soumen-pradhan-0a3ab6242/" class="fab fa-linkedin" aria-label="Soumen Pradhan LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/pradshaan" class="fab fa-github" aria-label="Soumen Pradhan GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      </ul>
+      </li>
       <li class="alumni-item">2025. Alexander (AJ) Collins. Purdue University.
       <ul class="icons alumni-icons">
       <li><a href="https://www.linkedin.com/in/alexandercollins3/" class="fab fa-linkedin" aria-label="Alexander Collins LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
