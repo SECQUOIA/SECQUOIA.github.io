@@ -301,7 +301,9 @@ echo "All processing complete. Output directory: ${OUTPUT_DIR}"
 
 if [[ "$APPLY_RESULTS" -eq 1 ]]; then
   apply_outputs
-  echo "\nApplied optimized outputs to ${IMAGE_DIR}."
+  echo
+  echo "Applied optimized outputs to ${IMAGE_DIR}."
 else
-  echo "\nTo apply results back to source tree, rerun with --apply"
+  echo
+  echo "To apply results back to source tree, rerun with --apply"
 fi
