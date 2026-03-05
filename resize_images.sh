@@ -211,6 +211,7 @@ process_image() {
 
   local tmp_file
   tmp_file="$(mktemp "/tmp/resize-images.XXXXXX.${ext_lc}")"
+  trap 'rm -f "$tmp_file"' RETURN
 
   if [[ "$current_width" -gt "$resize_width" ]]; then
     echo "  Resizing to ${resize_width}px width"
