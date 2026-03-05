@@ -34,7 +34,7 @@ Options:
   --no-mobile           Skip generating *-mobile images for banner-like files
   --webp-quality <n>    WebP quality (default: ${WEBP_QUALITY})
   --apply               Copy generated WebP files from ${OUTPUT_DIR} back into ${IMAGE_DIR}
-  --apply-originals     With --apply, also copy optimized JPG/JPEG/PNG outputs back
+  --apply-originals     Also copy optimized JPG/JPEG/PNG outputs back (implies --apply)
   -h, --help            Show this help message
 
 Examples:
@@ -223,18 +223,22 @@ process_image() {
 
   optimize_original_if_possible "$tmp_file" "$ext_lc"
 
-  cp "$tmp_file" "$output_file"
+  if [[ "$ext_lc" != "webp" ]]; then
+    cp "$tmp_file" "$output_file"
+  fi
 
   echo "  Creating WebP version"
   create_webp "$tmp_file" "$webp_file"
 
   local original_bytes webp_bytes
-  original_bytes="$(stat -c%s "$output_file")"
+  if [[ "$ext_lc" == "webp" ]]; then
+    original_bytes="$(stat -c%s "$input_file")"
+  else
+    original_bytes="$(stat -c%s "$output_file")"
+  fi
   webp_bytes="$(stat -c%s "$webp_file")"
   echo "  Done: ${basename}.${ext_lc}=${original_bytes} bytes, ${basename}.webp=${webp_bytes} bytes"
   echo
-
-  rm -f "$tmp_file"
 
   if [[ "$ENABLE_MOBILE" -eq 1 ]] && is_banner_like "$filename"; then
     create_mobile_version "$input_file" "$dir_path" "$basename" "$ext_lc"
