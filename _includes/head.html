@@ -68,19 +68,18 @@
 	<link rel="preconnect" href="https://formspree.io" crossorigin>
 	{% endif %}
 	
-	<!-- Preload critical fonts -->
-	<link rel="preload" href="{{ "assets/fonts/fontawesome-webfont.woff2?v=4.6.3" | relative_url }}" as="font" type="font/woff2" crossorigin>
-	
-	<!-- Preload critical CSS -->
-	<link rel="preload" href="{{ "assets/css/main.css" | relative_url }}" as="style">
+		<!-- Preload critical CSS -->
+		<link rel="preload" href="{{ "assets/css/main.css" | relative_url }}" as="style">
 	
 	<!-- Optimized Google Fonts loading -->
 	<link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap"></noscript>
 	
-	<!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
-	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
-	<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+		<!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ "assets/css/font-awesome.min.css" | relative_url }}" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+		<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
+		<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 	
 	<!-- PWA Manifest -->
 	<link rel="manifest" href="/manifest.json">
