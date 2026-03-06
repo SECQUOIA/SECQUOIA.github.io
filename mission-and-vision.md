@@ -1,17 +1,20 @@
 ---
 title: Mission & Vision
 permalink: /mission/
-layout: page
+layout: mdpage
+description: Building practical, reliable optimization tools for real systems.
+image: assets/images/ideas.webp
+banner_color: style3
 ---
 
+SECQUOIA develops optimization and decision-making methods, from classical to quantum, that transform complex engineering data into reliable real-world impact.
 
-# Mission
+## Mission
 
-SECQUOIA builds optimization and decision-making tools—from classical to quantum—that turn complex engineering data into reliable, real-world impact.
+- Advance systems-engineering decision-making by creating and disseminating rigorous optimization and learning methods as usable software.
+- Span classical, hybrid, and quantum computing for high-impact industrial and scientific applications, especially chemical, process, and energy systems.
+- Train a diverse and inclusive cohort of engineers and scientists through mentorship, teaching, and open, reproducible research practices.
 
-- Advance systems engineering decision-making by creating and disseminating rigorous optimization and learning methods implemented as usable software, spanning classical, hybrid, and quantum computing, for high-impact industrial and scientific applications (especially chemical/process/energy systems). 
-- In parallel, train a diverse and inclusive cohort of engineers/scientists through mentorship, teaching, and open, reproducible research practices.
+## Vision
 
-# Vision
-
-Make advanced optimization, including quantum-enhanced methods where useful, practical, trustworthy, and broadly accessible for designing and operating complex systems by unifying theory, scalable algorithms, and open tools across emerging hardware.
+Make advanced optimization practical, trustworthy, and broadly accessible, including quantum-enhanced methods where useful, by unifying theory, scalable algorithms, and open tools across emerging hardware.
