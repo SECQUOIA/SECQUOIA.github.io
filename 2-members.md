@@ -141,9 +141,6 @@ banner_color: style2
 }
 </style>
 
-<!-- Main -->
-<div id="main">
-
 <div class="toc">
   <h4>Jump to Section</h4>
   <ul>
@@ -812,6 +809,8 @@ banner_color: style2
       </ul>
       </li>
       </ul>
+ </div>
+</section>
 
 <section id="map" class="spotlights">
   <div class="inner">
