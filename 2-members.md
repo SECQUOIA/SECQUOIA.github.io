@@ -599,7 +599,7 @@ banner_color: style2
           <h3>Tarik Guler</h3>
         </header>
         <ul>
-          <li>Joined in Fall 2024.</li>
+          <li>Joined in Spring 2026.</li>
           <li>B.S. Computer Science, Purdue University, expected May 2028.</li>
           <li>B.S. Applied Mathematics, Purdue University, expected May 2028.</li>
         </ul>
