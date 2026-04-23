@@ -136,3 +136,21 @@ Tips:
 - Target WebP quality (~70–85) balancing size vs clarity.
 - Keep typical member photos < 300KB; large hero/banner images ideally < 1MB.
 - Original files can remain for future recompression or alternative formats if needed.
+
+## News Page Maintenance
+
+The news page at `3-news.md` intentionally uses the local Jekyll post archive
+instead of a third-party LinkedIn embed. This keeps the page stable in GitHub
+Pages builds and avoids broken or stale social widgets.
+
+To publish a news update:
+
+1. Add a new Markdown file under `_posts/` named
+   `YYYY-MM-DD-short-title.md`.
+2. Include the usual front matter (`layout`, `title`, `description`, `date`,
+   and `image`).
+3. Store the referenced image in `assets/images/` as a `.webp` file.
+4. Run `./validate.sh` before opening a pull request.
+
+If you also want the update on LinkedIn, publish the website post first and
+then share the matching announcement on the SECQUOIA LinkedIn page.
