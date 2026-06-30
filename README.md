@@ -20,45 +20,19 @@ Follow these instructions to set up and run the website locally using Docker.
    cd SECQUOIA.github.io
    ```
 
-2. **Create a Dockerfile**
-
-   Create a file named `Dockerfile` with the following content:
-
-   ```dockerfile
-   FROM ruby:3.2
-   WORKDIR /app
-   COPY . .
-   RUN gem install bundler && bundle install
-   EXPOSE 4000
-   CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
-   ```
-
-3. **Create a Gemfile**
-
-   Create a file named `Gemfile` with the following content:
-
-   ```ruby
-   source "https://rubygems.org"
-
-   gem "jekyll", "~> 4.0.0"
-   gem "mercenary", "~> 0.3.6"
-   gem "webrick"
-   gem "forty_jekyll_theme", path: "."
-   ```
-
-4. **Build the Docker image**
+2. **Build the Docker image**
 
    ```bash
    docker build -t secquoia-website .
    ```
 
-5. **Run the website locally**
+3. **Run the website locally**
 
    ```bash
-   docker run -p 4000:4000 -v "$(pwd)":/app secquoia-website
+   docker run --rm -it -p 4000:4000 -v "$(pwd)":/app secquoia-website
    ```
 
-6. **View the website**
+4. **View the website**
 
    Open your web browser and go to [http://localhost:4000](http://localhost:4000)
 
@@ -74,7 +48,7 @@ When making changes to the website:
 To enable live reloading, stop any running containers and run:
 
 ```bash
-docker run -p 4000:4000 -v "$(pwd)":/app jekyll-site bundle exec jekyll serve --livereload --host 0.0.0.0
+docker run --rm -it -p 4000:4000 -v "$(pwd)":/app secquoia-website bundle exec jekyll serve --livereload --host 0.0.0.0
 ```
 
 ### Building for Production
@@ -82,10 +56,27 @@ docker run -p 4000:4000 -v "$(pwd)":/app jekyll-site bundle exec jekyll serve --
 To build the site for production:
 
 ```bash
-docker run -v "$(pwd)":/app jekyll-site bundle exec jekyll build
+docker run --rm -v "$(pwd)":/app secquoia-website bundle exec jekyll build
 ```
 
 The built site will be in the `_site` directory, which can be deployed to any static hosting service.
+
+### Native Ruby (Optional)
+
+If you prefer not to use Docker:
+
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+```
+
+### Validation
+
+Run the repository validation script before opening a PR:
+
+```bash
+./validate.sh
+```
 
 ### Troubleshooting
 
@@ -99,10 +90,6 @@ The built site will be in the `_site` directory, which can be deployed to any st
   ```bash
   docker build --no-cache -t secquoia-website .
   ```
-
-### Important Note
-
-The Dockerfile, Gemfile, and other development configuration files are gitignored to keep the repository clean. You'll need to recreate them when setting up a new development environment.
 
 ## Image Policy (WebP Usage)
 
@@ -136,3 +123,21 @@ Tips:
 - Target WebP quality (~70–85) balancing size vs clarity.
 - Keep typical member photos < 300KB; large hero/banner images ideally < 1MB.
 - Original files can remain for future recompression or alternative formats if needed.
+
+## News Page Maintenance
+
+The news page at `3-news.md` intentionally uses the local Jekyll post archive
+instead of a third-party LinkedIn embed. This keeps the page stable in GitHub
+Pages builds and avoids broken or stale social widgets.
+
+To publish a news update:
+
+1. Add a new Markdown file under `_posts/` named
+   `YYYY-MM-DD-short-title.md`.
+2. Include the usual front matter (`layout`, `title`, `description`, `date`,
+   and `image`).
+3. Store the referenced image in `assets/images/` as a `.webp` file.
+4. Run `./validate.sh` before opening a pull request.
+
+If you also want the update on LinkedIn, publish the website post first and
+then share the matching announcement on the SECQUOIA LinkedIn page.
