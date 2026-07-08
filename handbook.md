@@ -83,6 +83,28 @@ Keep a running shared document that you update before each meeting. It does not 
 
 ## Research: how we approach it
 
+### Selecting meaningful research problems
+
+Before committing time to a direction, it helps to pressure-test it with questions like these (adapted from Eric Gilbert):
+
+**On impact:**
+- What difference will this work make if it succeeds?
+- Why is this one of the most important open problems in its area?
+- Whose engineering systems, decisions, or tools will work better because of this?
+- Will it inspire a new class of algorithms, methods, or software?
+
+**On whether anyone will care:**
+- Will other researchers cite it and build on it?
+- Will engineers or scientists actually use the methods or tools that come out of it?
+- Will it matter 10 or 20 years from now, when hardware and software have changed significantly?
+
+**On novelty and positioning:**
+- If you don't do this, who else might, and how soon?
+- What makes you and SECQUOIA uniquely positioned to do it well?
+- How does it advance beyond what existing solvers, algorithms, or frameworks already do?
+
+Not all ideas will hold up under these questions, and that is fine. Working through them together is part of the research process — it helps narrow the space toward ideas that are both feasible and worth doing. David recommends Hamming's lecture on [You and Your Research](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) as a useful companion on this.
+
 ### Testing ideas
 
 Start from the hardest case. If your method cannot handle the corner case, you want to know that before you have built everything around it.
@@ -98,6 +120,20 @@ If you think David is wrong about something, say so with arguments. Respectful d
 ### Writing and publishing
 
 Start writing when you have preliminary results worth communicating. The right time to bring a result to David is when you find it interesting, not when it is polished. Students wait too long because they want things to be ready; bring it early. Before drafting, have a conversation with David about what the paper is, who it is for, and what form it should take (journal article, conference paper, extended abstract). That conversation shapes everything about how to write it. Once that is clear, agree with David on how the drafting will work: some papers David outlines the narrative; others you draft independently first. The process depends on the student and the paper. What matters is agreeing on the approach before you start.
+
+**Internal deadlines:** For paper submissions, the paper must be in submittable state two weeks before the external deadline. For presentations, slides must be in presentable state one week before. If a paper is not ready two weeks out, we do not submit it to that deadline — we plan for the next one. This policy exists to protect quality and to give everyone enough time to give and receive useful feedback.
+
+### Quality and pace
+
+By the end of your PhD, you should aim to have 3–4 core papers you are genuinely proud of. These will form the backbone of your job talk if you pursue academic or research positions. A useful rough strategy:
+
+- Aim for one high-risk, high-reward paper per year. Some will not get accepted immediately, or will not work out at all. That is the nature of ambitious work.
+- Alongside that, consider a lower-risk, more straightforward paper every couple of years — one that is still good, but where the outcome is more predictable.
+- Optionally, support a collaborator's project where you contribute meaningfully but are not the lead. This should take less than half a day per week.
+
+This typically means being involved in two to three projects at any given time. Working on more than that in parallel is usually counterproductive. If you are submitting at least one first-authored paper per year after your first year, that is a reasonable sign of progress. If a full year passes without a submission, that is worth reflecting on together.
+
+Quality and speed are in tension, but the answer is not to sacrifice one for the other — it is to plan earlier and scope more carefully.
 
 ### Code and software
 
@@ -132,6 +168,28 @@ Presenting before you graduate is expected. It is part of what "contribution to 
 
 ---
 
+## Research dissemination and visibility
+
+Doing good work is necessary. Making sure the right people know about it is part of the job too.
+
+David will actively look for opportunities for you to give talks — at conferences, workshops, seminars, and research groups at other institutions. When those opportunities arise, you will be pushed to the front. If press coverage ever comes from your work, the goal is for your name to be the one cited, not David's.
+
+**LinkedIn:** Maintain a professional profile and share your publications and presentations when they come out. The optimization, quantum computing, and process systems communities are active there, and visibility compounds over time. A paper that sits in a repository and is never shared is harder to build on.
+
+The basic loop is: do great work, notice opportunities to share it, take those opportunities, and go back to doing great work.
+
+## Fellowships
+
+Applying for fellowships during your PhD is worth the effort. They provide funding flexibility, reduce pressure on the lab to support your work through grants, and add meaningful recognition to your CV. The application process also forces you to articulate your research vision — which is useful regardless of outcome.
+
+Fellowships relevant to SECQUOIA students include:
+
+- **[NSF Graduate Research Fellowship (GRFP)](https://www.nsfgrfp.org/):** the primary US graduate fellowship; open to early-stage PhD students
+- **[DOE Computational Science Graduate Fellowship (CSGF)](https://www.krellinst.org/csgf/):** highly relevant for SECQUOIA's focus on computational methods and scientific applications
+- **Industry fellowships** (IBM, Google, and similar): provide both funding and industry connections; worth watching for annual calls
+
+Talk to David early about fellowship opportunities — some have strict eligibility windows based on your year in the program.
+
 ## The valley of shit
 
 At some point in your PhD, usually somewhere in the middle, you will hit a period where the work is hard, the end feels impossibly far away, and you are not sure you are capable of finishing. This period has a name: [the valley of shit](https://thesiswhisperer.com/2012/05/08/the-valley-of-shit/), a term coined by Inger Mewburn at *The Thesis Whisperer*.
@@ -143,7 +201,9 @@ What helps:
 - **Remember the big picture.** Some parts of a PhD are genuinely unglamorous: debugging code you did not write, rerunning experiments, rewriting the same section five times. Within the larger arc of the work, those pieces add up to something that matters. Keep that picture in view.
 - **Talk to your colleagues.** They are probably in a similar place, or they have been. The lab exists as a community partly for this reason.
 - **Tell David.** There is no wrong time to have that conversation. David has been there; he will tell you that.
-- **Use Purdue's professional support.** [Purdue's Counseling and Psychological Services (CAPS)](https://www.purdue.edu/caps/) exists for exactly this. Talking to a counselor when things are hard is not a sign of failure; it is good judgment.
+- **Use Purdue's professional support.** [Purdue's Counseling and Psychological Services (CAPS)](https://www.purdue.edu/caps/) exists for exactly this. Talking to a counselor when things are hard is not a sign of failure; it is good judgment. If you or someone you know is in crisis, the [988 Suicide and Crisis Lifeline](https://988lifeline.org/) (call or text 988) and the Crisis Text Line (text HOME to 741741) are available any time.
+
+A note on what David can and cannot do: David will listen, help you think through what is going on, and work to create space in your schedule when that is within his power. He will direct you to people who are better equipped to help when needed. However, there are limits to confidentiality: if you share plans to seriously harm yourself or others, David is not able to keep that information private. He will tell you if a conversation has reached territory that requires involving others with the appropriate training or institutional authority.
 
 ---
 
@@ -156,6 +216,14 @@ In practice: review papers when asked, and do it well. Reviewing starts when you
 These are not extras. They are part of what it means to belong to this field.
 
 ---
+
+## Professionalism and conduct
+
+When you interact with others in the lab, the department, at conferences, or on internships, you are representing SECQUOIA. Bring your best.
+
+In professional settings — including informal gatherings with colleagues — the baseline is civility and respect. You are not required to like everyone, but you are required to treat them as colleagues.
+
+Harassment, discrimination, bullying, and retaliation have no place in this group, in the department, or in the broader research community. These behaviors harm everyone involved and are taken seriously at every level. SECQUOIA members are expected to adhere to [Purdue's student code of conduct](https://www.purdue.edu/odos/osrr/student-code-of-conduct/) and the norms of the professional communities we belong to.
 
 ## Purdue's formal milestones
 
