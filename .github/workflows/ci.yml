@@ -37,6 +37,9 @@ jobs:
       - name: Check Jekyll configuration
         run: bundle exec jekyll doctor
 
+      - name: Test link checker configuration
+        run: ruby test/link_checker_preconnect_test.rb
+
       # Build the site (test build)
       - name: Test Jekyll build
         run: bundle exec jekyll build --verbose
@@ -88,7 +91,7 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/" \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
             --hydra "{\"max_concurrency\": 10}" \
             --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
