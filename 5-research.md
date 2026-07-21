@@ -2,7 +2,7 @@
 layout: page
 title: Research
 image: assets/images/ideas.webp
-description: 'Past, Present, and Planned Projects'
+description: 'Research Themes and Representative Directions'
 nav-menu: true
 banner_color: style5
 ---
@@ -16,7 +16,12 @@ banner_color: style5
       <h2>Research Overview</h2>
     </header>
     <p>
-      Our research at SECQUOIA (Systems Engineering, Computation, and Quantum Optimization for AI) spans multiple areas at the intersection of optimization, artificial intelligence, and emerging computation paradigms. We develop theory, algorithms, and software for large-scale optimization, with applications in process systems engineering, data-driven decision-making, and quantum-enhanced computation. Our work is problem-driven and interdisciplinary, with active collaborations in chemical engineering, quantum information, and computer science.
+      SECQUOIA's research spans connected themes represented in David E. Bernal Neira's publication
+      record and in the group's current projects: mathematical optimization, process systems
+      engineering, quantum optimization and simulation, privacy-aware learning, and open scientific
+      software. Across these areas, we develop models, algorithms, and benchmark problems that
+      connect rigorous theory with deployable tools for chemical, energy, biomedical, and other
+      industrial applications.
     </p>
   </div>
 </section>
@@ -28,10 +33,14 @@ banner_color: style5
     <div class="content">
       <div class="inner">
         <header class="major">
-          <h3>Generalized Disjunctive Programming and Mixed-Integer Nonlinear Optimization</h3>
+          <h3>Mathematical Optimization, GDP, and MINLP</h3>
         </header>
         <p>
-          We develop exact and approximation algorithms for solving generalized disjunctive programming (GDP) models arising in process network synthesis, scheduling, and design under uncertainty. Current work explores tight reformulations, surrogate-based relaxations, and scalable solution strategies for nonlinear and dynamic systems with discrete decisions.
+          We develop theory, algorithms, and modeling tools for generalized disjunctive programming,
+          mixed-integer nonlinear programming, and other nonlinear discrete optimization models.
+          Representative directions include outer-approximation methods, convexification,
+          regularization, decomposition, and logic-based formulations for planning, scheduling,
+          design, and dynamic optimization problems.
         </p>
       </div>
     </div>
@@ -41,10 +50,14 @@ banner_color: style5
     <div class="content">
       <div class="inner">
         <header class="major">
-          <h3>Quantum Optimization and Quantum-Inspired Algorithms</h3>
+          <h3>Process Systems Engineering and Sustainable Operations</h3>
         </header>
         <p>
-          We study how quantum computing can accelerate optimization by designing and benchmarking hybrid quantum-classical algorithms. This includes variational quantum algorithms for discrete-continuous problems, quantum-enhanced surrogate modeling, and tensor network simulations to evaluate algorithmic performance under realistic noise models.
+          Our optimization methods are motivated by process systems engineering applications,
+          including process synthesis, design and control, refinery planning and scheduling,
+          manufacturing networks, process intensification, water systems, and supply chains. These
+          projects target sustainability and operational reliability by improving resource
+          efficiency and the operation of complex chemical and energy systems.
         </p>
       </div>
     </div>
@@ -54,10 +67,15 @@ banner_color: style5
     <div class="content">
       <div class="inner">
         <header class="major">
-          <h3>Federated Learning for Process and Biomedical Applications</h3>
+          <h3>Quantum Optimization, Simulation, and Benchmarking</h3>
         </header>
         <p>
-          Our group explores federated learning in settings where data privacy, heterogeneity, and limited communication are key constraints. Applications include predictive modeling in pharmaceutical manufacturing and multimodal learning from DNA and MRI data for disease classification. We also investigate secure federated learning using fully homomorphic encryption.
+          We study how emerging quantum and quantum-inspired methods can help solve hard
+          optimization and simulation problems. Research directions include hybrid
+          quantum-classical optimization, QUBO and Ising formulations, routing and network
+          problems, variational algorithms, Hamiltonian simulation benchmarks, and practical
+          assessments of quantum hardware and heuristic solvers on scientifically meaningful test
+          cases.
         </p>
       </div>
     </div>
@@ -67,10 +85,13 @@ banner_color: style5
     <div class="content">
       <div class="inner">
         <header class="major">
-          <h3>AI-Augmented Process Engineering</h3>
+          <h3>Federated Learning and AI for Engineering and Healthcare</h3>
         </header>
         <p>
-          We integrate machine learning into process simulation and control workflows by leveraging domain knowledge and physical models. Projects include developing digital twins, interpretable surrogate models, and adaptive model-predictive control for chemical and energy systems.
+          We investigate machine learning methods that respect privacy, distribution, and scientific
+          structure in the data. Representative efforts include federated learning for chemical
+          engineering and healthcare, tensor-network-based learning architectures, privacy-aware
+          distributed collaboration, and learning-enhanced optimization workflows.
         </p>
       </div>
     </div>
@@ -80,10 +101,14 @@ banner_color: style5
     <div class="content">
       <div class="inner">
         <header class="major">
-          <h3>Open-Source Software for Optimization and AI</h3>
+          <h3>Open-Source Software, Libraries, and Reproducibility</h3>
         </header>
         <p>
-          We contribute to the development of open-source tools to advance reproducibility and usability of optimization and learning methods. Ongoing efforts include software for mixed-integer optimization, simulation-based optimization, federated learning, and quantum algorithm simulation.
+          Reproducible software is a core part of our research. We contribute to open-source tools
+          and benchmark libraries for optimization and quantum computing, including modeling
+          ecosystems, solver toolkits, curated problem libraries, and reusable benchmark instances.
+          Representative efforts in the group's software and publication record include MindtPy,
+          Pyomo.GDP, QUBO.jl, GDPLib, and quantum benchmark libraries such as HamLib.
         </p>
       </div>
     </div>

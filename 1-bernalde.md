@@ -62,7 +62,7 @@ h2 {
 
   <ul>
     <li><strong>Principal Investigator of <a href="index.html">SECQUOIA</a></strong>, <em>Purdue University, West Lafayette, IN, USA</em></li>
-    <li><strong>Assistant Professor in Chemical Engineering</strong>, <em>Purdue University, West Lafayette, IN, USA</em></li>
+    <li><strong>Mitchel Papanicolas Family/Del Ray Glass Company Assistant Professor of Chemical Engineering</strong>, <em>Purdue University, West Lafayette, IN, USA</em></li>
   </ul>
 
   <h2>Former Positions</h2>
