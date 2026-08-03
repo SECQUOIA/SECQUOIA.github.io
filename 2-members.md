@@ -410,7 +410,7 @@ banner_color: style2
 <section id="masters">
  <div class="inner">
   <header class="major">
-   <h2>Externally co-advised master's student</h2>
+   <h2>Master's students</h2>
   </header>
  </div>
 </section> 
