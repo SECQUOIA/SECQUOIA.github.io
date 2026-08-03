@@ -648,8 +648,9 @@ banner_color: style2
      <h3>David E. Bernal Neira</h3>
     </header>
     <ul>
-      <li>Started officially in Fall 2023.</li>
-      <li><a href="1-bernalde.html">Main information</a>.</li>
+      <li>Mitchel Papanicolas Family/Del Ray Glass Company Assistant Professor of Chemical Engineering.</li>
+      <li>Principal Investigator of SECQUOIA and co-director of Purdue's Center for Operations and Optimization in Process Systems.</li>
+      <li><a href="1-bernalde.html">Profile, speaker biographies, and CV</a>.</li>
     </ul>
     <ul class="icons">
       <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin" aria-label="David E. Bernal Neira LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
