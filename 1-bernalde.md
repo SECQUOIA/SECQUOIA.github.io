@@ -102,7 +102,7 @@ banner_color: style1
 
   <h2>Research Interests</h2>
 
-  <p>His group works at the interface of optimization, systems engineering, and advanced computing. Key research areas include:</p>
+  <p>Our group works at the interface of optimization, systems engineering, and advanced computing. Key research areas include:</p>
 
   <ul>
     <li>Optimization in systems engineering, including energy and infrastructure systems, process intensification, and control</li>
