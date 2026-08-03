@@ -143,21 +143,19 @@ banner_color: style2
 <div class="toc">
   <h4>Jump to Section</h4>
   <ul>
-    <li><a href="#postdocs">Post-doctoral Fellows</a></li>
+    <li><a href="#postdocs">Postdoctoral Associates</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
-    <li><a href="#masters">Master's Students</a></li>
-    <li><a href="#visitors">Visiting Scholars</a></li>
-    <li><a href="#undergrads">Undergraduates</a></li>
+    <li><a href="#masters">Externally Co-advised Master's Student</a></li>
     <li><a href="#pi">Principal Investigator</a></li>
     <li><a href="#alumni">Alumni</a></li>
   </ul>
 </div>
 
-<!-- Post-doctoral fellows -->
+<!-- Postdoctoral associates -->
 <section id="postdocs">
  <div class="inner">
   <header class="major">
-   <h2>Post-doctoral fellows</h2>
+   <h2>Postdoctoral associates</h2>
   </header>
  </div>
 </section> 
@@ -443,190 +441,6 @@ banner_color: style2
 </section>
 
 
-<!-- Visiting scholars -->
-<section id="visitors">
- <div class="inner">
-  <header class="major">
-   <h2>Visiting scholars</h2>
-  </header>
- </div>
-</section>
-
-<!-- Chaolong Wang -->
-
-<section id="chaolong-wang" class="spotlights">
- <section>
-  <a href="#chaolong-wang" class="image" aria-label="Chaolong's section">
-   <img src="assets/images/members/ChaolongWang.webp" alt="Chaolong Wang" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Chaolong Wang</h3>
-    </header>
-    <ul>
-    <li>Joined in Spring 2026.</li>
-    <li>B.Eng. Chemical Engineering, Tsinghua University, expected 2026.</li>
-    </ul>
-    <p><b>Research topics</b>: Process Superstructures</p>
-    <ul class="icons">
-      <li><a href="https://github.com/Toflamus" class="fab fa-github" aria-label="Chaolong Wang's GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-      <li><a href="https://www.linkedin.com/in/chaolong-wang-526a412a1/" class="fab fa-linkedin" aria-label="Chaolong Wang's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Chaolong Wang ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- Undergraduate students -->
-<section id="undergrads">
- <div class="inner">
-  <header class="major">
-   <h2>Undergraduates</h2>
-  </header>
- </div>
-</section>
-
-<!-- Akshay Mahajan -->
-<section id="akshay-mahajan" class="spotlights">
- <section>
-  <a href="#akshay-mahajan" class="image" aria-label="Akshay Mahajan's section">
-   <img src="assets/images/members/AkshayMahajan.webp" alt="Akshay Mahajan" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Akshay Mahajan</h3>
-    </header>
-    <ul>
-    <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Chemical Engineering, Purdue University, expected May 2026.</li>
-    </ul>
-    <p><b>Research topics</b>: Process Systems Machine Learning.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin" aria-label="Akshay Mahajan LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/akrmahajan" class="fab fa-github" aria-label="Akshay Mahajan GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- Sai Karthik -->
-<section id="sai-karthik" class="spotlights">
- <section>
-  <a href="#sai-karthik" class="image" aria-label="Sai Karthik's section">
-   <img src="assets/images/members/SaiKarthik.webp" alt="Sai Karthik" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Sai Karthik</h3>
-    </header>
-    <ul>
-    <li>Joined in Spring 2025.</li>
-    <li>B.Sc. Biomedical Engineering, Purdue University, expected December 2026.</li>
-    </ul>
-    <p><b>Research topics</b>: Pharmaceutical Process Synthesis and Optimization.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin" aria-label="Sai Karthik LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/sa1K" class="fab fa-github" aria-label="Sai Karthik GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- Alan Yi -->
-<section id="alan-yi" class="spotlights">
- <section>
-  <a href="#alan-yi" class="image" aria-label="Alan Yi's section">
-   <img src="assets/images/members/AlanYi.webp" alt="Alan Yi" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Alan Yi</h3>
-    </header>
-    <ul>
-    <li>Joined in Summer 2025.</li>
-    <li>B.Sc. Computer Science, Purdue University, expected May 2027.</li>
-    </ul>
-    <p><b>Research topics</b>: Quantum Federated Learning for Biomedical Applications.</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin" aria-label="Alan Yi LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/ailunyi" class="fab fa-github" aria-label="Alan Yi GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-
-<!-- Azain Khalid -->
-<section id="azain-khalid" class="spotlights">
- <section>
-  <a href="#azain-khalid" class="image" aria-label="Azain Khalid's section">
-   <img src="assets/images/members/AzainKhalid.webp" alt="Azain Khalid" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Azain Khalid</h3>
-    </header>
-    <ul>
-    <li>Joined in Summer 2025.</li>
-    <li>B.Sc. Computer Science, Purdue University, expected May 2028.</li>
-    </ul>
-    <p><b>Research topics</b>: Quantum Integer Programming and Machine Learning</p>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/azainkhalid/" class="fab fa-linkedin" aria-label="Azain Khalid LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/AzAINN" class="fab fa-github" aria-label="Azain Khalid GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-      <li><a href="https://orcid.org/0009-0005-4801-6452" class="fab fa-orcid" aria-label="Azain Khalid ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
-<section id="tarik-guler" class="spotlights">
-  <section>
-    <a href="#tarik-guler" class="image" aria-label="Tarik Gulers's section">
-      <img src="assets/images/members/tarik-guler.webp" alt="Tarik Guler" data-position="center center" />
-    </a>
-    <div class="content">
-      <div class="inner">
-        <header class="major">
-          <h3>Tarik Guler</h3>
-        </header>
-        <ul>
-          <li>Joined in Spring 2026.</li>
-          <li>B.S. Computer Science, Purdue University, expected May 2028.</li>
-          <li>B.S. Applied Mathematics, Purdue University, expected May 2028.</li>
-        </ul>
-        <p><b>Research topics:</b> Mixed-Integer Nonlinear Optimization.</p>
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/tarik-guler-19374b2a6/"
-               class="fab fa-linkedin"
-               aria-label="Tarik Guler LinkedIn Profile"
-               target="_blank" rel="noopener noreferrer">
-              <span class="label">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/tarikLG"
-               class="fab fa-github"
-               aria-label="Tarik Guler GitHub Profile"
-               target="_blank" rel="noopener noreferrer">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</section>
-
 <!-- Principal Investigator -->
 <section id="pi">
  <div class="inner">
@@ -668,13 +482,13 @@ banner_color: style2
   <header class="major">
    <h2>Alumni</h2>
   </header>
-       <h3 class="alumni-subheading">Postdoctoral fellows</h3>
+       <h3 class="alumni-subheading">Postdoctoral associates</h3>
        <ul class="alumni-list">
-      <li class="alumni-item">2025. Carolina Tristan. KeyLogic at the National Energy Technology Laboratory (NETL).
+      <li class="alumni-item">2025. Carolina Tristán. KeyLogic at the National Energy Technology Laboratory (NETL).
       <ul class="icons alumni-icons">
-      <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristan LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristan GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristan ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
+      <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristán LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/tristantc" class="fab fa-github" aria-label="Carolina Tristán GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-6381-5958" class="fab fa-orcid" aria-label="Carolina Tristán ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
       </ul>
       </li>
       <li class="alumni-item">2025. Hamta Bardool.
@@ -700,6 +514,13 @@ banner_color: style2
       </ul>
       <h3 class="alumni-subheading">Visiting scholars</h3>
       <ul class="alumni-list">
+      <li class="alumni-item">2026. Chaolong Wang. Tsinghua University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://github.com/Toflamus" class="fab fa-github" aria-label="Chaolong Wang GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://www.linkedin.com/in/chaolong-wang-526a412a1/" class="fab fa-linkedin" aria-label="Chaolong Wang LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://orcid.org/0009-0006-8705-861X" class="fab fa-orcid" aria-label="Chaolong Wang ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
+      </ul>
+      </li>
       <li class="alumni-item">2026. João Victor Paim. Military Institute of Engineering.
       <ul class="icons alumni-icons">
       <li><a href="https://github.com/jvpcms" class="fab fa-github" aria-label="João Victor Paim GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
@@ -744,6 +565,7 @@ banner_color: style2
       <li><a href="https://orcid.org/0000-0001-7348-3857" class="fab fa-orcid" aria-label="Juan S. Rodríguez F. ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
       </ul>
       </li>
+      <li class="alumni-item">2024. Mohamed Taha Rouabah. NASEM Arab-American Frontiers Fellow.</li>
       <li class="alumni-item">2023. Pedro Maciel Xavier. Purdue University, PhD Student Electrical and Computer Engineering.
       <ul class="icons alumni-icons">
       <li><a href="https://www.linkedin.com/in/pedro-maciel-xavier/" class="fab fa-linkedin" aria-label="Pedro Maciel Xavier LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
@@ -754,10 +576,41 @@ banner_color: style2
       </ul>
       <h3 class="alumni-subheading">Undergraduates</h3>
       <ul class="alumni-list">
+      <li class="alumni-item">2026. Tarik Guler. Purdue University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/tarik-guler-19374b2a6/" class="fab fa-linkedin" aria-label="Tarik Guler LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/tarikLG" class="fab fa-github" aria-label="Tarik Guler GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      </ul>
+      </li>
+      <li class="alumni-item">2026. Alan Yi. Purdue University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/alan-s-yi/" class="fab fa-linkedin" aria-label="Alan Yi LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/ailunyi" class="fab fa-github" aria-label="Alan Yi GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      </ul>
+      </li>
+      <li class="alumni-item">2026. Sai Karthik. Purdue University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/saivisvesh-karthik/" class="fab fa-linkedin" aria-label="Sai Karthik LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/sa1K" class="fab fa-github" aria-label="Sai Karthik GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      </ul>
+      </li>
       <li class="alumni-item">2026. Soumen Pradhan. Purdue University.
       <ul class="icons alumni-icons">
       <li><a href="https://www.linkedin.com/in/soumen-pradhan-0a3ab6242/" class="fab fa-linkedin" aria-label="Soumen Pradhan LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/pradshaan" class="fab fa-github" aria-label="Soumen Pradhan GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      </ul>
+      </li>
+      <li class="alumni-item">2025. Azain Khalid. Purdue University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/azainkhalid/" class="fab fa-linkedin" aria-label="Azain Khalid LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/AzAINN" class="fab fa-github" aria-label="Azain Khalid GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://orcid.org/0009-0005-4801-6452" class="fab fa-orcid" aria-label="Azain Khalid ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
+      </ul>
+      </li>
+      <li class="alumni-item">2025. Akshay Mahajan. Purdue University.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/akshay-mahajan-b01122232/" class="fab fa-linkedin" aria-label="Akshay Mahajan LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/akrmahajan" class="fab fa-github" aria-label="Akshay Mahajan GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
       </ul>
       </li>
       <li class="alumni-item">2025. Alexander (AJ) Collins. Purdue University.
