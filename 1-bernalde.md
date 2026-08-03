@@ -2,7 +2,7 @@
 layout: page
 title: Principal Investigator
 image: assets/images/conference.webp
-description: David E. Bernal Neira, Purdue chemical engineering professor and SECQUOIA principal investigator
+description: Prof. David E. Bernal Neira
 nav-menu: true
 banner_color: style1
 ---
