@@ -25,7 +25,7 @@ It is written primarily for PhD students, but much of it applies to everyone in 
 
 A PhD is a training in original research. By the end, you should be able to identify a problem worth solving, develop a method to address it, and communicate what you found to a community that cares. The degree is a byproduct of that process.
 
-At SECQUOIA, that contribution typically sits at the intersection of theory, computation, and practice: developing new algorithms or mathematical insights, implementing them as reliable software, and demonstrating their value on real engineering problems. The specific fields are optimization, quantum computing, and process systems engineering. The work spans all three, and learning to connect those layers is part of what makes a SECQUOIA PhD distinctive.
+At SECQUOIA, that contribution typically sits at the intersection of theory, computation, and practice: developing new algorithms or mathematical insights, implementing them as reliable software, and demonstrating their value on real engineering problems. The specific fields are optimization, quantum computing, artificial intelligence, and process systems engineering. The work spans all three, and learning to connect those layers is part of what makes a SECQUOIA PhD distinctive.
 
 ---
 
@@ -174,7 +174,7 @@ Doing good work is necessary. Making sure the right people know about it is part
 
 David will actively look for opportunities for you to give talks — at conferences, workshops, seminars, and research groups at other institutions. When those opportunities arise, you will be pushed to the front. If press coverage ever comes from your work, the goal is for your name to be the one cited, not David's.
 
-**LinkedIn:** Maintain a professional profile and share your publications and presentations when they come out. The optimization, quantum computing, and process systems communities are active there, and visibility compounds over time. A paper that sits in a repository and is never shared is harder to build on.
+**LinkedIn:** Maintain a professional profile and share your publications and presentations when they come out. The optimization, quantum computing, artificial intelligence, and process systems communities are active there, and visibility compounds over time. A paper that sits in a repository and is never shared is harder to build on.
 
 The basic loop is: do great work, notice opportunities to share it, take those opportunities, and go back to doing great work.
 

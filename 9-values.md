@@ -47,7 +47,7 @@ We name who did what: in papers, in presentations, in conversation. We credit co
 
 ## Community at every level
 
-It takes a community to thrive. The lab is where we support each other daily. The department becomes our home. The broader optimization, quantum computing, and chemical engineering communities are the colleagues whose work we build on and whose careers we care about.
+It takes a community to thrive. The lab is where we support each other daily. The department becomes our home. The broader optimization, quantum computing, artificial intelligence, and chemical engineering communities are the colleagues whose work we build on and whose careers we care about.
 
 ## Pass knowledge forward
 
