@@ -9,7 +9,7 @@ banner_color: style4
 
 <!-- markdownlint-disable MD033 -->
 
-SECQUOIA is, at its core, a tools group: we build rigorous optimization and quantum computing methods and software, and we apply that core to important problems in engineering and science. Our [Mission & Vision](/mission/) describes where we are going; this page describes how we get there. How we do research matters as much as what we discover. These values describe how we actually try to work, what we hold each other to, and what we look for in the people who join us.
+SECQUOIA is, at its core, a tools group: we build rigorous methods and software in control, numerical methods, mathematical modeling, optimization, quantum computing, and artificial intelligence, and we apply that core to important problems in engineering and science. Our [Mission & Vision](/mission/) describes where we are going; this page describes how we get there. How we do research matters as much as what we discover. These values describe how we actually try to work, what we hold each other to, and what we look for in the people who join us.
 
 ### How we work
 
