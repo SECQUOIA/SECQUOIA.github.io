@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 38% Left on the Table
-description: 'Revisiting the HDA process: a decade-long road from a GAMS internship to the certified global optimum of one of process synthesis'' founding models'
+title: Revisiting the HDA Process Synthesis Problem
+description: 'A decade-long road from a GAMS internship to the certified global optimum of one of process synthesis'' founding models'
 image: assets/images/hda-superstructure.png
 date: 2026-08-16 08:00:00 -0400
 ---
@@ -79,13 +79,14 @@ constraints, and each of those has a familiar face:
   for absorption, `(1 - A^(N*eta)) / (1 - A)`: logarithms of flow ratios and
   an exponential in the tray count.
 
-![Outer approximation on convex and nonconvex functions](assets/images/hda-oa-convexity.png)
+![Two nonlinear correlations from the HDA model](assets/images/hda-nonlinear-correlations.png)
 
-*Why the convex toolbox stops here: on a convex function (left), every
-linearization underestimates the function, so outer-approximation cuts are
-valid everywhere. On a nonconvex function like the ones above (right), the
-same linearization slices through the graph and can cut off the global
-optimum entirely.*
+*Two of the model's own correlations, drawn over the model's own variable
+ranges. Each enters the model as an equality, so the feasible operating
+points are the curve itself: the average of two feasible points is
+infeasible (left), and a linearization at any one point misses the curve
+everywhere else (right). Feasible sets like these have no convex description,
+which is exactly where the convex toolbox stops.*
 
 There is a second, sneakier consequence of the superstructure idea. These
 correlations describe *operating* equipment,  but the optimizer must also
@@ -137,10 +138,10 @@ October 2020 were already remarkable, and in hindsight, prophetic:
 
 ![The optimal HDA flowsheet highlighted on the superstructure](assets/images/hda-optimal-flowsheet.png)
 
-*The winning route drawn on the superstructure: hydrogen feed taken straight
-(no membrane purification), adiabatic reactor, hydrogen recycle, methane
-recovered with the second membrane, and both liquid separations done in
-columns.*
+*The six decisions of the optimal flowsheet, numbered as in the 2020
+presentation: (1) hydrogen feed taken straight, no membrane purification;
+(2) adiabatic reactor; (3) methane recovered with the second membrane;
+(4) vapor stream recycled; (5) stabilizing column; (6) toluene column.*
 
 ![Logic-based outer approximation loop](assets/images/hda-loa-diagram.png)
 
