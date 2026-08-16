@@ -131,7 +131,7 @@ By the end of your PhD, you should aim to have 3–4 core papers you are genuine
 - Alongside that, consider a lower-risk, more straightforward paper every couple of years — one that is still good, but where the outcome is more predictable.
 - Optionally, support a collaborator's project where you contribute meaningfully but are not the lead. This should take less than half a day per week.
 
-This typically means being involved in two to three projects at any given time. Working on more than that in parallel is usually counterproductive. If you are submitting at least one first-authored paper per year after your first year, that is a reasonable sign of progress. If a full year passes without a submission, that is worth reflecting on together.
+This typically means being involved in two to three projects at any given time. Working on more than that in parallel is usually counterproductive. Formal expectations on the number of publications are set by the graduate program you are enrolled in; we plan projects so that everyone satisfies those requirements, and within them we work to the utmost quality our priorities allow. In practice, SECQUOIA students usually surpass what the program asks for.
 
 Quality and speed are in tension, but the answer is not to sacrifice one for the other — it is to plan earlier and scope more carefully.
 
@@ -233,7 +233,7 @@ David will help you navigate all of these. They are checkpoints, not the goal.
 
 ## Graduating from SECQUOIA
 
-This section is about David's standard, above and beyond Purdue's requirements.
+The formal graduation requirements, including any expectations on publications, are decided by your graduate program, and we plan so that you satisfy them. This section is about David's standard, above and beyond those requirements.
 
 A SECQUOIA PhD means you have:
 
