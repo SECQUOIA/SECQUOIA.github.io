@@ -8,6 +8,8 @@ date: 2026-08-16 08:00:00 -0400
 
 <!-- markdownlint-disable MD033 -->
 
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 *A decade with the hydrodealkylation process: from a visit to GAMS within a visit to CMU and a
 feasibility pump for convex MINLP, through a disjunctive reformulation built
 with Yunshan Liu, to the global optimum that the canonical model file never
@@ -178,11 +180,63 @@ with a bound computed from the unguarded equation: unsatisfiable by one part
 in 10^8. Large enough for global solvers to prove infeasibility; small enough
 for local solvers to smear over.
 
-The repair replaced the guarded logarithms with exact, pole-free forms, a
-bounded log-vapor-pressure auxiliary defined by a bilinear equation, the
-Arrhenius prefactor folded into its exponent, mole-fraction variables
-replacing regularized flow ratios, so the correlations stay evaluable at
-zero flow *without* perturbing the physics. "Pole-free" is shorthand rather
+The repair replaced every removable guard with an exact reformulation, so
+the correlations stay evaluable at zero flow *without* perturbing the
+physics. Concretely, with temperatures in kelvin:
+
+**Antoine vapor pressure.** The guarded logarithm
+
+<div class="math">
+\[ \ln\left( 7500.6168\, p^{vap} + \varepsilon \right) = A - \frac{B}{T + C} \]
+</div>
+
+became a bilinear equation defining a bounded, shifted logarithmic
+auxiliary, plus a bounded exponential recovering the vapor pressure:
+
+<div class="math">
+\[ \left( \ell + S \right)\left( T + C \right) = A \left( T + C \right) - B, \qquad 7500.6168\, p^{vap} = e^{S} e^{\ell} \]
+</div>
+
+where the constant shift *S* keeps the auxiliary nonpositive, so no
+exponential can overflow anywhere a relaxation looks.
+
+**Arrhenius rate constant.** The guarded division
+
+<div class="math">
+\[ k = 6.3 \times 10^{10} \exp\left( \frac{-26167}{T + \varepsilon} \right) \]
+</div>
+
+became a cancellation-free bilinear in the log of the rate constant, with
+the huge prefactor folded into the exponent:
+
+<div class="math">
+\[ \left( \kappa - \ln\left( 6.3 \times 10^{10} \right) \right) T = -26167, \qquad k = e^{\kappa} \]
+</div>
+
+**Benzene selectivity.** The guarded negative power
+
+<div class="math">
+\[ 1 - s = 0.0036 \left( 1 - X + \varepsilon \right)^{-1.544} \]
+</div>
+
+was multiplied through, so the exponent is positive and the equation is
+exact and evaluable at zero:
+
+<div class="math">
+\[ \left( 1 - s \right) \left( 1 - X \right)^{1.544} = 0.0036 \]
+</div>
+
+**Membrane flux.** The regularized flow ratios
+
+<div class="math">
+\[ \frac{f_{c} + \varepsilon}{f + \varepsilon} \]
+</div>
+
+became honest mole-fraction variables with an exact bilinear definition:
+
+<div class="math">
+\[ f_{c} = y f, \qquad 0 \le y \le 1 \]
+</div> "Pole-free" is shorthand rather
 than standard vocabulary: it means no denominator in these equations can
 reach zero anywhere the algorithms evaluate them, because the offending
 equations are multiplied through by their denominators before any solver
