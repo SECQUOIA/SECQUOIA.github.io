@@ -25,7 +25,7 @@ It is written primarily for PhD students, but much of it applies to everyone in 
 
 A PhD is a training in original research. By the end, you should be able to identify a problem worth solving, develop a method to address it, and communicate what you found to a community that cares. The degree is a byproduct of that process.
 
-At SECQUOIA, that contribution typically sits at the intersection of theory, computation, and practice: developing new algorithms or mathematical insights, implementing them as reliable software, and demonstrating their value on real engineering problems. The specific fields are optimization, quantum computing, artificial intelligence, and process systems engineering. The work spans all three, and learning to connect those layers is part of what makes a SECQUOIA PhD distinctive.
+At SECQUOIA, that contribution typically sits at the intersection of theory, computation, and practice: developing new algorithms or mathematical insights, implementing them as reliable software, and demonstrating their value on real engineering problems. The specific fields are optimization, quantum computing, artificial intelligence, and process systems engineering. The work spans all of them, and learning to connect those layers is part of what makes a SECQUOIA PhD distinctive.
 
 ---
 
