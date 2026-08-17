@@ -235,7 +235,7 @@ exact and evaluable at zero:
 became honest mole-fraction variables with an exact bilinear definition:
 
 <div class="math">
-\[ f_{c} = y f, \qquad 0 \le y \le 1 \]
+\[ f_{c} = y f, \qquad 0 \leq y \leq 1 \]
 </div> "Pole-free" is shorthand rather
 than standard vocabulary: it means no denominator in these equations can
 reach zero anywhere the algorithms evaluate them, because the offending
