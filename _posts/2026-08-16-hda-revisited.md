@@ -10,7 +10,7 @@ date: 2026-08-16 08:00:00 -0400
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-*A decade with the hydrodealkylation process: from a visit to GAMS within a visit to CMU and a feasibility pump for convex MINLP, through a disjunctive reformulation built with Yunshan Liu, to the global optimum that the canonical model file never mentioned.*
+*A decade with the hydrodealkylation process: from a visit to GAMS within a visit to CMU and a feasibility pump for convex MINLP, through a disjunctive reformulation, to the global optimum that the canonical model file never mentioned.*
 
 ```text
 --- the whole story, as a solver log ---
@@ -25,10 +25,10 @@ minlplib.org/hda, BARON dual bound:   5964.534  certified global
 
 ## An impromptu internship
 
-I started working on MINLP in 2015, in an impromptu "internship" at [GAMS](https://www.gams.com) within a visit to [Prof. Ignacio Grossmann's research group](https://egon.cheme.cmu.edu/) at [CMU](https://www.cmu.edu), the beginning of my PhD, a relationship with the company and its people that I remain grateful for, from that first project to the support that have powered my and my group's research ever since.
+I started working on MINLP in 2015, in an impromptu "internship" at [GAMS](https://www.gams.com) during a visit to [Prof. Ignacio Grossmann's research group](https://egon.cheme.cmu.edu/) at [CMU](https://www.cmu.edu), the beginning of my PhD, a relationship with the company and its people that I remain grateful for, from that first project to the support that has powered my and my group's research ever since.
 The internship turned into my first solver work: adding a feasibility pump to [DICOPT](https://www.gams.com/latest/docs/S_DICOPT.html) for convex MINLP, eventually published with Stefan Vigerske, Francisco Trespalacios, and Ignacio Grossmann in [*Optimization Methods and Software* (2020)](https://doi.org/10.1080/10556788.2019.1641498).
-My test problems came from [MINLPLib](https://minlplib.org), and that is where I first kept running into `hda`, the hydrodealkylation of toluene, one of the founding examples of process synthesis.
-It appears in Douglas's 1988 *Conceptual Design of Chemical Processes*, became an MINLP superstructure in Kocis and Grossmann's 1989 paper, and has shipped with every GAMS distribution since, [documented solution](https://www.gams.com/latest/gamslib_ml/libhtml/gamslib_hda.html): profit 4322.55, reported by DICOPT as integer-optimal.
+My test problems came from [MINLPLib](https://minlplib.org), where I first ran into `hda`, the hydrodealkylation of toluene, one of the founding examples of process synthesis.
+It appears in Douglas's 1988 *Conceptual Design of Chemical Processes*, became an MINLP superstructure in Kocis and Grossmann's 1989 paper, and has shipped with every GAMS distribution since [documented solution](https://www.gams.com/latest/gamslib_ml/libhtml/gamslib_hda.html): profit 4322.55, reported by DICOPT as integer-optimal.
 
 I heard early on that something was off about `hda.gms`.
 But everything I was building lived in the convex world: outer approximation, feasibility pumps, methods whose optimality arguments lean on convexity.
@@ -42,7 +42,7 @@ The model went on a mental shelf labeled *someday*.
 
 ## Where the nonconvexity lives
 
-If you are a chemical engineer, you have written every equation in this model.
+If you are a chemical engineer, you have seen every equation in this model.
 That is exactly why it is hard.
 MINLPLib classifies the instance as indefinite, with 71 quadratic, 13 signomial, and 45 general nonlinear constraints, and each of those has a familiar face:
 
@@ -60,23 +60,23 @@ MINLPLib classifies the instance as indefinite, with 71 quadratic, 13 signomial,
 Each enters the model as an equality, so the feasible operating points are the curve itself: the average of two feasible points is infeasible (left), and a linearization at any one point misses the curve everywhere else (right).
 Feasible sets like these have no convex description, which is exactly where the convex toolbox stops.*
 
-There is a second, sneakier consequence of the superstructure idea.
+A second, sneakier consequence of the superstructure idea follows.
 These correlations describe *operating* equipment,  but the optimizer must also evaluate them on flowsheets where the equipment is switched *off* and every flow through it is zero.
 `ln(0)`, divisions by zero flow, `0^(-1.544)`: the physics never goes there, but relaxations and reformulations do.
-This is why formulations of such models sprout small epsilon constants inside logarithms and denominators: guards that keep the functions evaluable at the zero-flow points the algorithms visit.
+This is why formulations of such models often include small epsilon constants inside logarithms and denominators: guards that keep the functions evaluable at the zero-flow points the algorithms visit.
 Hold that thought; one of those guards is the villain of this story.
 
 ## A model everyone has met
 
 HDA is not an obscure test case; it is closer to a rite of passage.
 Beyond Douglas's book and the [Kocis and Grossmann (1989)](https://doi.org/10.1016/0098-1354(89)85008-2) MINLP, it served among the computational experience for DICOPT's development, became a flagship example in [Türkay and Grossmann's (1996)](https://doi.org/10.1016/0098-1354(95)00219-7) logic-based MINLP algorithms for process networks, the direct ancestor of the methods in this story, and runs through the textbook literature descended from Douglas's treatment, such as Biegler, Grossmann, and Westerberg's *Systematic Methods of Chemical Process Design*.
-In the modern era it lives on as `hda` in [MINLPLib](https://minlplib.org/hda.html), appears in our own [Pyomo.GDP paper](https://doi.org/10.1007/s11081-021-09601-7) ecosystem, and anchors the [gdplib](https://github.com/SECQUOIA/gdplib) benchmark library.
+In the modern era, it lives on as `hda` in [MINLPLib](https://minlplib.org/hda.html), appears in our own [Pyomo.GDP paper](https://doi.org/10.1007/s11081-021-09601-7) ecosystem, and anchors the [gdplib](https://github.com/SECQUOIA/gdplib) benchmark library.
 Generations of algorithms have been graded against this flowsheet.
 That is precisely what makes its documented solution worth getting right.
 
 ## 2020: the disjunctive port
 
-At [Carnegie Mellon](https://www.cmu.edu), [Yunshan Liu](https://github.com/Yunshan-Liu), then an MS student I was advising, implemented HDA as a Generalized Disjunctive Program in [Pyomo.GDP](https://www.pyomo.org), turning the six discrete decisions into proper disjunctions instead of big-M constraints tangled through the algebra.
+At [Carnegie Mellon](https://www.cmu.edu), [Yunshan Liu](https://www.linkedin.com/in/yunshan-liu/), then an MS student I was advising, implemented HDA as a Generalized Disjunctive Program in [Pyomo.GDP](https://www.pyomo.org), turning the six discrete decisions into proper disjunctions instead of big-M constraints tangled through the algebra.
 The results we obtained together in October 2020 were already remarkable, and in hindsight, prophetic:
 
 - [ANTIGONE](https://www.gams.com/latest/docs/S_ANTIGONE.html) on the monolithic MINLP: **4048.39**, below even DICOPT's documented 4322.55.
@@ -168,7 +168,7 @@ Along the way we also collected three different "optimal" certificates at three 
 
 ## Enumerate everything, again
 
-With the model feasible, we re-ran our 2020 playbook with 2026 tooling: all 64 flowsheets, each fixed-configuration NLP solved with [POUNCE](https://github.com/jkitchin/pounce), pure-Rust port of [Ipopt](https://github.com/coin-or/Ipopt), driven from Pyomo over the AMPL NL interface.
+With the model feasible, we re-ran our 2020 playbook with 2026 tooling: all 64 flowsheets, each fixed-configuration NLP solved with [POUNCE](https://github.com/jkitchin/pounce), a pure-Rust NLP solver initially designed as a port of [Ipopt](https://github.com/coin-or/Ipopt) and now ahead of it in independent benchmarks, driven from Pyomo over the AMPL NL interface.
 Running the sweep through an independent solver stack complements the [CONOPT](https://www.gams.com/latest/docs/S_CONOPT.html) and BARON validations from 2020, and every code agrees on the answer.
 Minutes of computation.
 
@@ -198,26 +198,27 @@ In its minimization convention, that is exactly the solution above, *globally ce
 
 One scoping note, because the two models are siblings rather than twins.
 The certificate belongs to the original MINLP, with the GAMS file's cost data.
-The gdplib port follows the *paper's* cost data, which differs in a few coefficients the port's own comments inventory (the absorber's fixed cost, compressor costs, the electricity price), so its 5965.85 is a verified feasible solution and an exhaustive-over-flowsheets best, but not itself globally certified.
+The gdplib port follows the *paper's* cost data, which differs in a few coefficients from the port's own comments inventory (the absorber's fixed cost, compressor costs, the electricity price), so its 5965.85 is a verified feasible solution and an exhaustive-over-flowsheets best, but not itself globally certified.
 What transfers between the two is the thing a designer cares about: *the same flowsheet wins in both*, and on that flowsheet, which uses no absorber and sidesteps the largest cost difference, the two objectives agree to 0.02%.
 
 None of this is a flaw in GAMS or in DICOPT.
-In 1989, an outer-approximation code promised a good integer-feasible solution, and that is what it delivered; 4322.55 is a faithful record of what computation could do then.
+In 1989, an outer-approximation code promised a good integer-feasible solution, and that is what it delivered; 4322.55 faithfully records what computation could do then.
 The certificate that settles the question today comes from the same community, through MINLPLib, and nearly every experiment in this story ran through GAMS-interfaced solvers.
 We are sharing the certified value with the GAMS team so the library documentation can reflect it, a small return on a toolchain that this investigation, and my career, have leaned on for a decade.
 
 ## What I take away
 
-- **Convex-MINLP certificates don't travel.** An outer-approximation "proof" on a nonconvex model is a local claim wearing a global costume.
-  That was the reason I couldn't touch this model in 2015, and the reason its documented answer stood unquestioned for three decades.
+- **Convex-MINLP certificates don't generalize to nonconvex problems.** An outer-approximation "proof" on a nonconvex model is a local claim wearing a global costume.
+  That was why I couldn't touch this model in 2015, and why its documented answer stood unquestioned for three decades.
 - **Results decay unless they live in artifacts.** Our 2020 enumeration proved the global optimum and then evaporated, because it lived in slides rather than in the model's README, its tests, and its documented solution.
   This time, everything went into the repository with the certificates attached.
 - **Benchmarks need feasibility witnesses.** A solver log is testimony; a point you can re-evaluate against the constraints is evidence.
   Every "optimal" HDA result in our benchmark was fiction until we started checking residuals ourselves.
 - **Numerical guards are model changes.** Every epsilon in a superstructure model deserves the same scrutiny as a constraint.
   Several of ours were removable by exact reformulation, and one of them, colliding with a bound derived from the unguarded equation, was the bug.
-- **Enumeration is cheap now.** Sixty-four NLPs was eight BARON minutes in 2020 and a coffee break with an open-source Rust interior-point code in 2026.
-  For models of this size, exhaustive configuration sweeps should be routine hygiene, exactly as our 2020 slides suggested.
+- **Enumeration is cheap only while the problem is small.** Sixty-four NLPs were eight BARON minutes in 2020 and a coffee break with an open-source Rust interior-point code in 2026, but only because HDA has just six discrete decisions.
+  The count of flowsheets doubles with every disjunction you add: a model with thirty choices has over a billion of them, and this same benchmark library holds models in exactly that range.
+  For superstructures small enough to sweep, exhaustive enumeration should be routine testing-phase hygiene, exactly as our 2020 slides suggested; at scale, it is precisely the combinatorial wall that branch-and-bound and logic-based methods exist to climb.
 
 The full trail, every experiment, false lead, and fix, is public in [gdplib PR #130](https://github.com/SECQUOIA/gdplib/pull/130).
 
@@ -226,8 +227,8 @@ The full trail, every experiment, false lead, and fix, is public in [gdplib PR #
 It would be a mistake to end on the number.
 HDA is a beautiful problem, but it is not the ultimate one: the models we can now write for chemical processes are far more sophisticated than a 1988 superstructure, and getting them right, feasible, well-scaled, honestly documented, is where the real work is.
 The solvers keep getting better; the certified bound on this problem was unthinkable when the model was written.
-And the models can get better too, because model and solver are not independent: how you write a correlation decides what a solver can prove about it, and understanding that relationship is what lets us push the boundary.
-The nonlinearity in these models is necessary, it *is* the physics, but it is tricky, and we have work underway on simplifying and taming it within Generalized Disjunctive Programming.
+And the models can get better too, because the model and solver are not independent: how you write a correlation determines what a solver can prove about it, and understanding that relationship lets us push the boundary.
+The nonlinearity in these models is necessary; it *is* the physics, but it is tricky, and we have work underway to simplify and tame it within Generalized Disjunctive Programming.
 HDA took thirty-seven years to give up its answer.
 The next models should not have to wait that long.
 
