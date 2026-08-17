@@ -9,6 +9,7 @@ date: 2026-08-16 08:00:00 -0400
 <!-- markdownlint-disable MD033 -->
 
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<style>.math { overflow-x: auto; }</style>
 
 *A decade with the hydrodealkylation process: from a visit to GAMS within a visit to CMU and a feasibility pump for convex MINLP, through a disjunctive reformulation, to the global optimum that the canonical model file never mentioned.*
 
