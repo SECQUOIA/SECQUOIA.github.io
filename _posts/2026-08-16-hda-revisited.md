@@ -34,7 +34,7 @@ It appears in Douglas's 1988 *Conceptual Design of Chemical Processes*, became a
 I heard early on that something was off about `hda.gms`.
 But everything I was building lived in the convex world: outer approximation, feasibility pumps, methods whose optimality arguments lean on convexity.
 And `hda` is aggressively nonconvex.
-My machinery had nothing honest to say about it.
+My machinery had nothing to say about it.
 The model went on a mental shelf labeled *someday*.
 
 ![HDA process superstructure](assets/images/hda-superstructure.png)
@@ -92,7 +92,7 @@ The results we obtained together in October 2020 were already remarkable, and in
 
 ![Logic-based outer approximation loop](assets/images/hda-loa-diagram.png)
 
-*The logic-based outer approximation loop: an MILP master proposes a flowsheet, a reduced NLP evaluates only the equipment that flowsheet actually uses, sidestepping the zero-flow singularities entirely, and OA cuts close the loop (diagram from the 2020 presentation, after our [Pyomo.GDP paper](https://doi.org/10.1007/s11081-021-09601-7)).*
+*The logic-based outer approximation loop: an MILP master proposes a flowsheet, a reduced NLP evaluates only the equipment that flowsheet uses, sidestepping the zero-flow singularities entirely, and OA cuts close the loop (diagram from the 2020 presentation, after our [Pyomo.GDP paper](https://doi.org/10.1007/s11081-021-09601-7)).*
 
 The concluding slide of that deck said it plainly: "Different solution methods yield different solutions… Enumeration should be done in testing phase."
 We knew, in 2020, that the documented answer was not the best one.
@@ -103,7 +103,7 @@ It decayed.
 
 This year, a benchmark-health campaign across gdplib found the HDA port in a strange state: global solvers (BARON, [Gurobi](https://www.gurobi.com)) declared it *infeasible* in seconds, while local solvers returned "optimal" solutions whose constraints, re-evaluated directly, were violated by up to 1.8e-2.
 Every recorded HDA benchmark result was an artifact.
-The model had drifted into genuine infeasibility, and no one had noticed, because no one had asked a solution to certify itself.
+The model had drifted into infeasibility, and no one had noticed, because no one had asked a solution to certify itself.
 
 The diagnosis used a trick the port's fidelity made possible: it kept the original's stream numbering.
 Solve the pristine `gamslib` model, transplant its solution into the port variable by variable, rank our constraints by violation.
@@ -158,7 +158,7 @@ was multiplied through, so the exponent is positive and the equation is exact an
 \[ \frac{f_{c} + \varepsilon}{f + \varepsilon} \]
 </div>
 
-became honest mole-fraction variables with an exact bilinear definition:
+became mole-fraction variables with an exact bilinear definition:
 
 <div class="math">
 \[ f_{c} = y f, \qquad 0 \leq y \leq 1 \]
@@ -189,7 +189,7 @@ The documented `gamslib` flowsheet sits mid-pack.*
 The winner is the flowsheet we found in 2020, to within the small differences between the formulations.
 And an old mystery dissolved on the spot: our README had carried a best-known value of 5801.27 for years with unreconstructible provenance.
 The runner-up flowsheet, the same design with hydrogen purification, lands at 5801.63.
-The number was real all along; it was the optimum of the second-best flowsheet.
+The number had a provenance all along; it was the optimum of the second-best flowsheet.
 
 ## Checking against the sources
 
@@ -228,7 +228,7 @@ The full trail, every experiment, false lead, and fix, is public in [gdplib PR #
 ## Where this goes next
 
 It would be a mistake to end on the number.
-HDA is a beautiful problem, but it is not the ultimate one: the models we can now write for chemical processes are far more sophisticated than a 1988 superstructure, and getting them right, feasible, well-scaled, honestly documented, is where the real work is.
+HDA is a beautiful problem, but it is not the ultimate one: the models we can now write for chemical processes are far more sophisticated than a 1988 superstructure, and getting them right, feasible, well-scaled, and accurately documented, is where the work lies.
 The solvers keep getting better; the certified bound on this problem was unthinkable when the model was written.
 And the models can get better too, because the model and solver are not independent: how you write a correlation determines what a solver can prove about it, and understanding that relationship lets us push the boundary.
 The nonlinearity in these models is necessary; it *is* the physics, but it is tricky, and we have work underway to simplify and tame it within Generalized Disjunctive Programming.
