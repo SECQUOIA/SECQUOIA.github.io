@@ -34,7 +34,8 @@ It appears in Douglas's 1988 *Conceptual Design of Chemical Processes*, became a
 I heard early on that something was off about `hda.gms`.
 But everything I was building lived in the convex world: outer approximation, feasibility pumps, methods whose optimality arguments lean on convexity.
 And `hda` is aggressively nonconvex.
-My machinery had nothing to say about it.
+Pointed at `hda`, my tools would still hand back a feasible flowsheet; what they could not hand back was a guarantee that it was the best one.
+That is the status of the 4322.55 recorded in the model file, and it is why I left `hda` alone.
 The model went on a mental shelf labeled *someday*.
 
 ![HDA process superstructure](assets/images/hda-superstructure.png)
@@ -212,7 +213,7 @@ We are sharing the certified value with the GAMS team so the library documentati
 ## What I take away
 
 - **Convex-MINLP certificates don't generalize to nonconvex problems.** An outer-approximation "proof" on a nonconvex model is a local claim wearing a global costume.
-  That was why I couldn't touch this model in 2015, and why its documented answer stood unquestioned for three decades.
+  That was why my convex tools could produce a solution for this model in 2015 but never settle it, and why its documented answer stood unquestioned for three decades.
 - **Results decay unless they live in artifacts.** Our 2020 enumeration proved the global optimum and then evaporated, because it lived in slides rather than in the model's README, its tests, and its documented solution.
   This time, everything went into the repository with the certificates attached.
 - **Benchmarks need feasibility witnesses.** A solver log is testimony; a point you can re-evaluate against the constraints is evidence, and tools like GAMS/Examiner exist precisely to institutionalize that check.
