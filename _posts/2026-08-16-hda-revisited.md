@@ -196,6 +196,8 @@ The number was real all along; it was the optimum of the second-best flowsheet.
 Fixing the winning flowsheet's binaries in the untouched `gamslib` file, thirteen `y.fx` statements, gives profit **5964.534**, feasible, zero infeasibilities.
 And here is the part that makes this a story about scientific memory rather than a single bug: [MINLPLib's page for `hda`](https://minlplib.org/hda.html) (the same library I mined for the feasibility-pump paper a decade ago) reports a primal bound of -5964.534084 against a BARON dual bound of -5964.534089.
 In its minimization convention, that is exactly the solution above, *globally certified*, sitting in public view.
+We also handed the point to [GAMS/Examiner](https://www.gams.com/latest/docs/S_EXAMINER.html), GAMS's own independent solution auditor: primal and dual constraints and variable bounds check out at a 1e-6 tolerance, and complementary slackness at 1e-7, so the point passes not just feasibility but the full local-optimality conditions.
+In a fitting coda, the largest constraint-matrix entry Examiner flags sits on the Antoine equation for diphenyl on stream 19, the very equation where this story's infeasibility began.
 
 One scoping note, because the two models are siblings rather than twins.
 The certificate belongs to the original MINLP, with the GAMS file's cost data.
@@ -213,7 +215,7 @@ We are sharing the certified value with the GAMS team so the library documentati
   That was why I couldn't touch this model in 2015, and why its documented answer stood unquestioned for three decades.
 - **Results decay unless they live in artifacts.** Our 2020 enumeration proved the global optimum and then evaporated, because it lived in slides rather than in the model's README, its tests, and its documented solution.
   This time, everything went into the repository with the certificates attached.
-- **Benchmarks need feasibility witnesses.** A solver log is testimony; a point you can re-evaluate against the constraints is evidence.
+- **Benchmarks need feasibility witnesses.** A solver log is testimony; a point you can re-evaluate against the constraints is evidence, and tools like GAMS/Examiner exist precisely to institutionalize that check.
   Every "optimal" HDA result in our benchmark was fiction until we started checking residuals ourselves.
 - **Numerical guards are model changes.** Every epsilon in a superstructure model deserves the same scrutiny as a constraint.
   Several of ours were removable by exact reformulation, and one of them, colliding with a bound derived from the unguarded equation, was the bug.
