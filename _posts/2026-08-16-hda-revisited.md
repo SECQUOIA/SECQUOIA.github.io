@@ -235,6 +235,8 @@ The nonlinearity in these models is necessary; it *is* the physics, but it is tr
 HDA took thirty-seven years to give up its answer.
 The next models should not have to wait that long.
 
+*Thanks to Stefan Vigerske and Steven Dirkse of GAMS for their comments on a draft of this post.*
+
 **Timeline, for the curious:**
 
 - **1988**: Douglas publishes the HDA conceptual design problem.
