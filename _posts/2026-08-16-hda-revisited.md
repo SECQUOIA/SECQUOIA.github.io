@@ -221,7 +221,7 @@ We are sharing the certified value with the GAMS team so the library documentati
 - **Numerical guards are model changes.** Every epsilon in a superstructure model deserves the same scrutiny as a constraint.
   Several of ours were removable by exact reformulation, and one of them, colliding with a bound derived from the unguarded equation, was the bug.
 - **Enumeration is cheap only while the problem is small.** Sixty-four NLPs were eight BARON minutes in 2020 and a coffee break with an open-source Rust interior-point code in 2026, but only because HDA has just six discrete decisions.
-  The count of flowsheets doubles with every disjunction you add: a model with thirty choices has over a billion of them, and this same benchmark library holds models in exactly that range.
+  The count of flowsheets doubles with every disjunction you add: a model with thirty choices has over a billion of them, and this same GDP benchmark library holds models in exactly that range.
   For superstructures small enough to sweep, exhaustive enumeration should be routine testing-phase hygiene, exactly as our 2020 slides suggested; at scale, it is precisely the combinatorial wall that branch-and-bound and logic-based methods exist to climb.
 
 The full trail, every experiment, false lead, and fix, is public in [gdplib PR #130](https://github.com/SECQUOIA/gdplib/pull/130).
