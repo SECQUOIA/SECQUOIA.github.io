@@ -3,7 +3,7 @@ layout: post
 title: Revisiting the HDA Process Synthesis Problem
 description: 'A decade-long road from a GAMS internship to the certified global optimum of one of process synthesis'' founding models'
 image: assets/images/posts/hda-superstructure.png
-date: 2026-08-16 08:00:00 -0400
+date: 2026-08-19 08:00:00 -0400
 ---
 
 <!-- markdownlint-disable MD033 -->
