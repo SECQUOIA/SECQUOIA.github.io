@@ -208,7 +208,7 @@ What transfers between the two is the thing a designer cares about: *the same fl
 None of this is a flaw in GAMS or in DICOPT.
 In 1989, an outer-approximation code promised a good integer-feasible solution, and that is what it delivered; 4322.55 faithfully records what computation could do then.
 The certificate that settles the question today comes from the same community, through MINLPLib, and nearly every experiment in this story ran through GAMS-interfaced solvers.
-We are sharing the certified value with the GAMS team so the library documentation can reflect it, a small return on a toolchain that this investigation, and my career, have leaned on for a decade.
+We shared the certified value with the GAMS team, and Michael Bussieck has already folded it into the library's `hda` model file, a small return on a toolchain that this investigation, and my career, have leaned on for a decade.
 
 ## What I take away
 
@@ -236,7 +236,7 @@ The nonlinearity in these models is necessary; it *is* the physics, but it is tr
 HDA took thirty-seven years to give up its answer.
 The next models should not have to wait that long.
 
-*Thanks to Stefan Vigerske and Steven Dirkse of GAMS for their comments on a draft of this post.*
+*Thanks to Stefan Vigerske and Steven Dirkse of GAMS for their comments on a draft of this post, and to Michael Bussieck for updating the GAMS Model Library entry with the certified solution.*
 
 **Timeline, for the curious:**
 
