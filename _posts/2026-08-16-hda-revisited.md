@@ -2,7 +2,7 @@
 layout: post
 title: Revisiting the HDA Process Synthesis Problem
 description: 'A decade-long road from a GAMS internship to the certified global optimum of one of process synthesis'' founding models'
-image: assets/images/hda-superstructure.png
+image: assets/images/posts/hda-superstructure.png
 date: 2026-08-16 08:00:00 -0400
 ---
 
@@ -29,7 +29,7 @@ minlplib.org/hda, BARON dual bound:   5964.534  certified global
 I started working on MINLP in 2015, in an impromptu "internship" at [GAMS](https://www.gams.com) during a visit to [Prof. Ignacio Grossmann's research group](https://egon.cheme.cmu.edu/) at [CMU](https://www.cmu.edu), the beginning of my PhD, a relationship with the company and its people that I remain grateful for, from that first project to the support that has powered my and my group's research ever since.
 The internship turned into my first solver work: adding a feasibility pump to [DICOPT](https://www.gams.com/latest/docs/S_DICOPT.html) for convex MINLP, eventually published with Stefan Vigerske, Francisco Trespalacios, and Ignacio Grossmann in [*Optimization Methods and Software* (2020)](https://doi.org/10.1080/10556788.2019.1641498).
 My test problems came from [MINLPLib](https://minlplib.org), where I first ran into `hda`, the hydrodealkylation of toluene, one of the founding examples of process synthesis.
-It appears in Douglas's 1988 *Conceptual Design of Chemical Processes*, became an MINLP superstructure in Kocis and Grossmann's 1989 paper, and has shipped with every GAMS distribution since [documented solution](https://www.gams.com/latest/gamslib_ml/libhtml/gamslib_hda.html): profit 4322.55, reported by DICOPT as integer-optimal.
+It appears in Douglas's 1988 *Conceptual Design of Chemical Processes*, became an MINLP superstructure in Kocis and Grossmann's 1989 paper, and has shipped with every GAMS distribution since, carrying its [documented solution](https://www.gams.com/latest/gamslib_ml/libhtml/gamslib_hda.html): profit 4322.55, reported by DICOPT as integer-optimal.
 
 I heard early on that something was off about `hda.gms`.
 But everything I was building lived in the convex world: outer approximation, feasibility pumps, methods whose optimality arguments lean on convexity.
@@ -38,7 +38,7 @@ Pointed at `hda`, my tools would still hand back a feasible flowsheet; what they
 That is the status of the 4322.55 recorded in the model file, and it is why I left `hda` alone.
 The model went on a mental shelf labeled *someday*.
 
-![HDA process superstructure](assets/images/hda-superstructure.png)
+![HDA process superstructure]({% link assets/images/posts/hda-superstructure.png %})
 
 *The HDA superstructure (figure from Yunshan Liu's 2020 presentation): 72 streams and six discrete decisions (hydrogen feed purification, reactor type, hydrogen recovery, methane recovery, and two liquid-separation choices), embedded in one flowsheet with every alternative piped in parallel.*
 
@@ -56,14 +56,14 @@ MINLPLib classifies the instance as indefinite, with 71 quadratic, 13 signomial,
 - **Reactor selectivity**, `1 - s = 0.0036 * (1 - X)^(-1.544)`: a signomial with a negative fractional power.
 - **Shortcut distillation** (Fenske, Underwood) and the **Kremser equation** for absorption, `(1 - A^(N*eta)) / (1 - A)`: logarithms of flow ratios and an exponential in the tray count.
 
-![Two nonlinear correlations from the HDA model](assets/images/hda-nonlinear-correlations.png)
+![Two nonlinear correlations from the HDA model]({% link assets/images/posts/hda-nonlinear-correlations.png %})
 
 *Two of the model's own correlations, drawn over the model's own variable ranges.
 Each enters the model as an equality, so the feasible operating points are the curve itself: the average of two feasible points is infeasible (left), and a linearization at any one point misses the curve everywhere else (right).
 Feasible sets like these have no convex description, which is exactly where the convex toolbox stops.*
 
 A second, sneakier consequence of the superstructure idea follows.
-These correlations describe *operating* equipment,  but the optimizer must also evaluate them on flowsheets where the equipment is switched *off* and every flow through it is zero.
+These correlations describe *operating* equipment, but the optimizer must also evaluate them on flowsheets where the equipment is switched *off* and every flow through it is zero.
 `ln(0)`, divisions by zero flow, `0^(-1.544)`: the physics never goes there, but relaxations and reformulations do.
 This is why formulations of such models often include small epsilon constants inside logarithms and denominators: guards that keep the functions evaluable at the zero-flow points the algorithms visit.
 Hold that thought; one of those guards is the villain of this story.
@@ -87,11 +87,11 @@ The results we obtained together in October 2020 were already remarkable, and in
 - Logic-based outer approximation on the GDP: **5966.51**, with a flowsheet nobody had recorded before: no hydrogen purification, adiabatic reactor, hydrogen recycle, methane recovered by membrane, and both separations done in columns.
 - And the decisive step: enumerating all 2^6 flowsheets and solving each NLP with [BARON](https://www.gams.com/latest/docs/S_BARON.html) after eight minutes of computation *certified that solution as globally optimal*.
 
-![The optimal HDA flowsheet highlighted on the superstructure](assets/images/hda-optimal-flowsheet.png)
+![The optimal HDA flowsheet highlighted on the superstructure]({% link assets/images/posts/hda-optimal-flowsheet.png %})
 
 *The six decisions of the optimal flowsheet, numbered as in the 2020 presentation: (1) hydrogen feed taken straight, no membrane purification; (2) adiabatic reactor; (3) methane recovered with the second membrane; (4) vapor stream recycled; (5) stabilizing column; (6) toluene column.*
 
-![Logic-based outer approximation loop](assets/images/hda-loa-diagram.png)
+![Logic-based outer approximation loop]({% link assets/images/posts/hda-loa-diagram.png %})
 
 *The logic-based outer approximation loop: an MILP master proposes a flowsheet, a reduced NLP evaluates only the equipment that flowsheet uses, sidestepping the zero-flow singularities entirely, and OA cuts close the loop (diagram from the 2020 presentation, after our [Pyomo.GDP paper](https://doi.org/10.1007/s11081-021-09601-7)).*
 
@@ -112,7 +112,7 @@ Everything held except one equation: an Antoine correlation whose defensive epsi
 The zero-flow guard, colliding with a bound computed from the unguarded equation: unsatisfiable by one part in 10^8.
 Large enough for global solvers to prove infeasibility; small enough for local solvers to smear over.
 
-The repair replaced every removable guard with an exact reformulation, so the correlations stay evaluable at zero flow *without* perturbing the physics.
+The repair replaced every removable guard with an exact, pole-free reformulation, so the correlations stay evaluable at zero flow *without* perturbing the physics.
 Concretely, with temperatures in kelvin:
 
 **Antoine vapor pressure.** The guarded logarithm
@@ -163,14 +163,15 @@ became mole-fraction variables with an exact bilinear definition:
 
 <div class="math">
 \[ f_{c} = y f, \qquad 0 \leq y \leq 1 \]
-</div> "Pole-free" is shorthand rather
-than standard vocabulary: it means no denominator in these equations can reach zero anywhere the algorithms evaluate them, because the offending equations are multiplied through by their denominators before any solver sees them.
+</div>
+
+"Pole-free" is shorthand rather than standard vocabulary: it means no denominator in these equations can reach zero anywhere the algorithms evaluate them, because the offending equations are multiplied through by their denominators before any solver sees them.
 The few epsilons that remain guard true singularities (Fenske ratios as key-component flows vanish, the Kremser expression at zero trays) and are documented as such.
 Along the way we also collected three different "optimal" certificates at three different values from global solves of the intermediate models, each refuted by a feasible point we could verify to 1e-10; certificates, it turns out, deserve witnesses of their own.
 
 ## Enumerate everything, again
 
-With the model feasible, we re-ran our 2020 playbook with 2026 tooling: all 64 flowsheets, each fixed-configuration NLP solved with [POUNCE](https://github.com/jkitchin/pounce), a pure-Rust NLP solver initially designed as a port of [Ipopt](https://github.com/coin-or/Ipopt) and now ahead of it in independent benchmarks, driven from Pyomo over the AMPL NL interface.
+With the model feasible, we re-ran our 2020 playbook with 2026 tooling: all 64 flowsheets, each fixed-configuration NLP solved with [POUNCE](https://github.com/jkitchin/pounce), a pure-Rust NLP solver initially designed as a port of [Ipopt](https://github.com/coin-or/Ipopt) and competitive with it in independent benchmarks, driven from Pyomo over the AMPL NL interface.
 Running the sweep through an independent solver stack complements the [CONOPT](https://www.gams.com/latest/docs/S_CONOPT.html) and BARON validations from 2020, and every code agrees on the answer.
 Minutes of computation.
 
@@ -180,9 +181,11 @@ Minutes of computation.
 | Same, with H2 purification | 5801.63 |
 | Same as best, isothermal reactor | 5762.01 |
 | … ten flowsheets later … | |
-| The flowsheet DICOPT chose in `gamslib` | 4322.4 |
+| The flowsheet DICOPT chose in `gamslib` | 4322.37 |
 
-![Sorted profits of all feasible HDA flowsheets](assets/images/hda-enumeration.png)
+*Profits in this table are the repaired port's values under the paper's cost data, which is why the `gamslib` flowsheet re-evaluates to 4322.37 here rather than the 4322.55 recorded in the GAMS file; the scoping note below returns to this difference.*
+
+![Sorted profits of all feasible HDA flowsheets]({% link assets/images/posts/hda-enumeration.png %})
 
 *All 30 feasible flowsheets from the complete 64-configuration enumeration, sorted by locally optimal profit.
 The documented `gamslib` flowsheet sits mid-pack.*
