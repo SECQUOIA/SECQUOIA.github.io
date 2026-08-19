@@ -43,6 +43,9 @@ jobs:
       - name: Test WebP equivalents guard
         run: ruby test/webp_equivalents_test.rb
 
+      - name: Test referenced-image WebP guard
+        run: ruby test/referenced_images_test.rb
+
       # Build the site (test build)
       - name: Test Jekyll build
         run: bundle exec jekyll build --verbose

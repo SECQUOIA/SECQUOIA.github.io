@@ -2,9 +2,10 @@
 # Scan built _site HTML for <img> src references to non-WebP images under assets/images.
 # Allows storing original PNG/JPG/GIF assets in repo as long as they are not referenced directly.
 # Fails if any referenced image ends with .png/.jpg/.jpeg/.gif.
+# Usage: scripts/check_referenced_images.sh [SITE_DIR]   (default: _site)
 set -euo pipefail
 
-SITE_DIR="_site"
+SITE_DIR="${1:-_site}"
 if [[ ! -d "$SITE_DIR" ]]; then
   echo "Built site directory '$SITE_DIR' not found. Run jekyll build first." >&2
   exit 1

@@ -3,7 +3,8 @@
 # assets/js/image-loader.js swaps any referenced <img> to a <picture> whose
 # <source type="image/webp"> points at the sibling .webp; if that file is
 # missing the browser commits to the broken source and the image disappears.
-# This guard fails CI when a new .png/.jpg/.jpeg is added without a .webp twin.
+# This guard fails CI when a new .png/.jpg/.jpeg/.gif is added without a .webp
+# twin, matching the non-WebP raster formats in scripts/check_referenced_images.sh.
 # Usage: scripts/check_webp_equivalents.sh [IMAGE_DIR]   (default: assets/images)
 set -euo pipefail
 
@@ -21,7 +22,7 @@ while IFS= read -r img; do
   if [[ ! -f "$webp" ]]; then
     echo "$img (expected $webp)" >> "$missing_file"
   fi
-done < <(find "$IMAGE_DIR" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \) | sort)
+done < <(find "$IMAGE_DIR" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' \) | sort)
 
 if [[ -s "$missing_file" ]]; then
   echo "❌ Raster images without a .webp equivalent:" >&2

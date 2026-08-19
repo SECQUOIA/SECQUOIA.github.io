@@ -28,6 +28,18 @@ Dir.mktmpdir do |dir|
   unless guard_passes?(script, images)
     abort "Expected the guard to PASS once sample.webp exists, but it failed."
   end
+
+  # 3. A .gif is also a non-WebP raster format: no twin must fail the guard.
+  File.binwrite(File.join(images, "animation.gif"), "GIF89a")
+  if guard_passes?(script, images)
+    abort "Expected the guard to FAIL when animation.gif has no sibling .webp, but it passed."
+  end
+
+  # 4. Adding the .gif's .webp twin must make the guard pass again.
+  File.binwrite(File.join(images, "animation.webp"), "RIFF\x00\x00\x00\x00WEBP")
+  unless guard_passes?(script, images)
+    abort "Expected the guard to PASS once animation.webp exists, but it failed."
+  end
 end
 
 puts "webp-equivalents guard fails on a missing twin and passes when the .webp is present"
