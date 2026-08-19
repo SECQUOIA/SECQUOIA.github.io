@@ -18,14 +18,14 @@ show_tile: false
 <section id="mission-teaser" aria-labelledby="mission-teaser-heading">
   <h2 id="mission-teaser-heading">Mission &amp; Vision</h2>
   <p>
-    SECQUOIA builds optimization and decision-making tools—from classical to quantum—that turn complex engineering data into reliable, real-world impact. <a href="/mission/">Read our full mission and vision</a>.
+    SECQUOIA builds optimization and decision-making tools—from classical to quantum and AI-driven—that turn complex engineering data into reliable, real-world impact. <a href="/mission/">Read our full mission and vision</a>.
   </p>
 </section>
 
 <section id="research" aria-labelledby="research-heading">
   <h2 id="research-heading">Our Research Focus</h2>
   <p>
-    We study optimization problems arising in science and engineering, with a focus on algorithm design, analysis, and implementation. Our work spans classical, hybrid, and emerging computational paradigms, including <strong>quantum computing</strong>, <strong>GPUs</strong>, and traditional <strong>high-performance computing</strong>.
+    We study optimization problems arising in science and engineering, with a focus on algorithm design, analysis, and implementation. Our work spans classical, hybrid, and emerging computational paradigms, including <strong>quantum computing</strong>, <strong>artificial intelligence</strong>, <strong>GPUs</strong>, and traditional <strong>high-performance computing</strong>.
   </p>
 </section>
 
