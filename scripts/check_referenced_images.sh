@@ -22,7 +22,7 @@ trap "rm -f '$bad_refs_file'" EXIT
 while IFS= read -r file; do
   # Extract src attributes from img tags
   # Using grep + sed; robust enough for static generated HTML
-  grep -oE '<img[^>]*src="[^"]+"' "$file" 2>/dev/null || true | sed -E 's/.*src="([^"]+)"/\1/' | while read -r src; do
+  { grep -oE '<img[^>]*src="[^"]+"' "$file" 2>/dev/null || true; } | sed -E 's/.*src="([^"]+)"/\1/' | while read -r src; do
     case "$src" in
       *assets/images/*)
         # Use shopt nocasematch for case-insensitive extension matching
