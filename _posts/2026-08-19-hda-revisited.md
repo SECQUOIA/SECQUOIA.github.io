@@ -2,7 +2,7 @@
 layout: post
 title: Revisiting the HDA Process Synthesis Problem
 description: 'A decade-long road from a GAMS internship to the certified global optimum of one of process synthesis'' founding models'
-image: assets/images/posts/hda-superstructure.png
+image: assets/images/posts/hda-superstructure.webp
 date: 2026-08-19 08:00:00 -0400
 ---
 
@@ -38,7 +38,7 @@ Pointed at `hda`, my tools would still hand back a feasible flowsheet; what they
 That is the status of the 4322.55 recorded in the model file, and it is why I left `hda` alone.
 The model went on a mental shelf labeled *someday*.
 
-![HDA process superstructure]({% link assets/images/posts/hda-superstructure.png %})
+![HDA process superstructure]({% link assets/images/posts/hda-superstructure.webp %})
 
 *The HDA superstructure (figure from Yunshan Liu's 2020 presentation): 72 streams and six discrete decisions (hydrogen feed purification, reactor type, hydrogen recovery, methane recovery, and two liquid-separation choices), embedded in one flowsheet with every alternative piped in parallel.*
 
@@ -56,7 +56,7 @@ MINLPLib classifies the instance as indefinite, with 71 quadratic, 13 signomial,
 - **Reactor selectivity**, `1 - s = 0.0036 * (1 - X)^(-1.544)`: a signomial with a negative fractional power.
 - **Shortcut distillation** (Fenske, Underwood) and the **Kremser equation** for absorption, `(1 - A^(N*eta)) / (1 - A)`: logarithms of flow ratios and an exponential in the tray count.
 
-![Two nonlinear correlations from the HDA model]({% link assets/images/posts/hda-nonlinear-correlations.png %})
+![Two nonlinear correlations from the HDA model]({% link assets/images/posts/hda-nonlinear-correlations.webp %})
 
 *Two of the model's own correlations, drawn over the model's own variable ranges.
 Each enters the model as an equality, so the feasible operating points are the curve itself: the average of two feasible points is infeasible (left), and a linearization at any one point misses the curve everywhere else (right).
@@ -87,11 +87,11 @@ The results we obtained together in October 2020 were already remarkable, and in
 - Logic-based outer approximation on the GDP: **5966.51**, with a flowsheet nobody had recorded before: no hydrogen purification, adiabatic reactor, hydrogen recycle, methane recovered by membrane, and both separations done in columns.
 - And the decisive step: enumerating all 2^6 flowsheets and solving each NLP with [BARON](https://www.gams.com/latest/docs/S_BARON.html) after eight minutes of computation *certified that solution as globally optimal*.
 
-![The optimal HDA flowsheet highlighted on the superstructure]({% link assets/images/posts/hda-optimal-flowsheet.png %})
+![The optimal HDA flowsheet highlighted on the superstructure]({% link assets/images/posts/hda-optimal-flowsheet.webp %})
 
 *The six decisions of the optimal flowsheet, numbered as in the 2020 presentation: (1) hydrogen feed taken straight, no membrane purification; (2) adiabatic reactor; (3) methane recovered with the second membrane; (4) vapor stream recycled; (5) stabilizing column; (6) toluene column.*
 
-![Logic-based outer approximation loop]({% link assets/images/posts/hda-loa-diagram.png %})
+![Logic-based outer approximation loop]({% link assets/images/posts/hda-loa-diagram.webp %})
 
 *The logic-based outer approximation loop: an MILP master proposes a flowsheet, a reduced NLP evaluates only the equipment that flowsheet uses, sidestepping the zero-flow singularities entirely, and OA cuts close the loop (diagram from the 2020 presentation, after our [Pyomo.GDP paper](https://doi.org/10.1007/s11081-021-09601-7)).*
 
@@ -185,7 +185,7 @@ Minutes of computation.
 
 *Profits in this table are the repaired port's values under the paper's cost data, which is why the `gamslib` flowsheet re-evaluates to 4322.37 here rather than the 4322.55 recorded in the GAMS file; the scoping note below returns to this difference.*
 
-![Sorted profits of all feasible HDA flowsheets]({% link assets/images/posts/hda-enumeration.png %})
+![Sorted profits of all feasible HDA flowsheets]({% link assets/images/posts/hda-enumeration.webp %})
 
 *All 30 feasible flowsheets from the complete 64-configuration enumeration, sorted by locally optimal profit.
 The documented `gamslib` flowsheet sits mid-pack.*

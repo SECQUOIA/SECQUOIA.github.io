@@ -40,6 +40,12 @@ jobs:
       - name: Test link checker configuration
         run: ruby test/link_checker_preconnect_test.rb
 
+      - name: Test WebP equivalents guard
+        run: ruby test/webp_equivalents_test.rb
+
+      - name: Test referenced-image WebP guard
+        run: ruby test/referenced_images_test.rb
+
       # Build the site (test build)
       - name: Test Jekyll build
         run: bundle exec jekyll build --verbose
@@ -125,6 +131,11 @@ jobs:
       - name: Check referenced images are WebP
         run: |
           bash scripts/check_referenced_images.sh
+        continue-on-error: false
+
+      # Enforce that every raster image ships a .webp equivalent
+      - name: Check images have WebP equivalents
+        run: bash scripts/check_webp_equivalents.sh
         continue-on-error: false
 
       - name: Image usage summary
