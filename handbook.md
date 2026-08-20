@@ -58,11 +58,11 @@ Then, before you write a single line of code or prove a single theorem: test you
 A typical week includes:
 
 - **Group meeting:** exists for accountability, cross-pollination of ideas, and building a shared understanding of what the group is working on
-- **Weekly 1-on-1 with David:** your dedicated time to discuss your project, blockers, and direction
-- **TAing:** teaching a concept well requires understanding it deeply, and that depth carries back into your research
+- **Regular 1-on-1 with David:** dedicated time to discuss your project, blockers, and direction; the cadence is agreed individually and adjusted as your needs and project change
+- **Teaching:** teaching a concept well requires understanding it deeply, and that depth carries back into your research
 - **Advising an undergraduate:** mentoring is part of your role in the community
 - **PSE seminar:** staying connected to the broader field
-- **Classes** (especially in your first two years)
+- **Classes:** especially in your first two years
 - **Research:** the rest is yours to drive
 
 When you and David are both available and on campus, meetings are in person. Two days per week in the office is the minimum; being present in the lab matters for the group and for your own development.
@@ -121,11 +121,11 @@ If you think David is wrong about something, say so with arguments. Respectful d
 
 Start writing when you have preliminary results worth communicating. The right time to bring a result to David is when you find it interesting, not when it is polished. Students wait too long because they want things to be ready; bring it early. Before drafting, have a conversation with David about what the paper is, who it is for, and what form it should take (journal article, conference paper, extended abstract). That conversation shapes everything about how to write it. Once that is clear, agree with David on how the drafting will work: David outlines the narrative for some papers, while you draft others independently first. The process depends on the student and the paper. What matters is agreeing on the approach before you start.
 
-**Internal deadlines:** For paper submissions, the paper must be in submittable state two weeks before the external deadline. For presentations, slides must be in presentable state one week before. If a paper is not ready two weeks out, we do not submit it to that deadline — we plan for the next one. This policy exists to protect quality and to give everyone enough time to give and receive useful feedback.
+**Internal deadlines:** For paper submissions, the paper must be in submittable state two weeks before the external deadline. For presentations, slides must be in presentable state one week before. If a paper is not ready two weeks out, we do not submit it to that deadline — we plan for the next one. This policy exists to protect quality and to give everyone enough time to provide and receive useful feedback.
 
 ### Quality and pace
 
-By the end of your PhD, you should aim to have 3–4 core papers you are genuinely proud of. These will form the backbone of your job talk if you pursue academic or research positions. A useful rough strategy:
+By the end of your PhD, you should have a body of core papers you are genuinely proud of. These will form the backbone of your job talk if you pursue academic or research positions. A useful rough strategy:
 
 - Aim for one high-risk, high-reward paper per year. Some will not get accepted immediately, or will not work out at all. That is the nature of ambitious work.
 - Alongside that, consider a lower-risk, more straightforward paper every couple of years — one that is still good, but where the outcome is more predictable.
@@ -190,9 +190,9 @@ Fellowships relevant to SECQUOIA students include:
 
 Talk to David early about fellowship opportunities — some have strict eligibility windows based on your year in the program.
 
-## The valley of shit
+## The mid-PhD slump
 
-At some point in your PhD, usually somewhere in the middle, you will hit a period where the work is hard, the end feels impossibly far away, and you are not sure you are capable of finishing. This period has a name: [the valley of shit](https://thesiswhisperer.com/2012/05/08/the-valley-of-shit/), a term coined by Inger Mewburn at *The Thesis Whisperer*.
+At some point in your PhD, usually somewhere in the middle, you will hit a period where the work is hard, the end feels impossibly far away, and you are not sure you are capable of finishing. Inger Mewburn at *The Thesis Whisperer* calls this period [“the valley of shit”](https://thesiswhisperer.com/2012/05/08/the-valley-of-shit/).
 
 It is real. It happens to nearly everyone. It does not mean you should quit.
 
