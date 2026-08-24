@@ -146,6 +146,7 @@ banner_color: style2
     <li><a href="#postdocs">Postdoctoral Associates</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
     <li><a href="#masters">Externally Co-advised Master's Student</a></li>
+    <li><a href="#Undergraduates">Undergraduates</a></li>
     <li><a href="#pi">Principal Investigator</a></li>
     <li><a href="#alumni">Alumni</a></li>
   </ul>
@@ -440,6 +441,38 @@ banner_color: style2
  </section>
 </section>
 
+<!-- Undergraduate students -->
+<section id="undergraduate">
+ <div class="inner">
+  <header class="major">
+   <h2>Undergraduates</h2>
+  </header>
+ </div>
+</section>
+
+<section id="rohan-patel" class="spotlights">
+ <section>
+  <a href="#rohan-patel" class="image" aria-label="Rohan Patel's section">
+    <img src="/assets/images/members/RohanPatel.webp" alt="Rohan Patel" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+      <h3>Rohan Patel</h3>
+    </header>
+    <ul>
+      <li>Joined in Summer 2026.</li>
+      <li>B.S. Mechanical Engineering, Purdue University, Expected 2027.</li>
+    </ul>
+    <p><b>Research topics</b>: Scientific Machine Learning, Operator Learning.</p>
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/in/rohan-patel-eng/" class="fab fa-linkedin" aria-label="Rohan Patel Ramesh LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/RohanBPatel" class="fab fa-github" aria-label="Rohan Patel GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
 <!-- Principal Investigator -->
 <section id="pi">
