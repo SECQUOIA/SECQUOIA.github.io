@@ -416,6 +416,32 @@ banner_color: style2
  </div>
 </section> 
 
+<!-- Da-Yuan Lin -->
+
+<section id="da-yuan-lin" class="spotlights">
+ <section>
+  <a href="#da-yuan-lin" class="image" aria-label="Da-Yuan Lin's section">
+   <img src="assets/images/members/DaYuanLin.webp" alt="Da-Yuan Lin" data-position="center center" />
+  </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>Da-Yuan Lin</h3>
+    </header>
+    <ul>
+      <li>Joined in Fall 2026.</li>
+      <li>B.Sc. Chemical and Materials Engineering, Chang Gung University, 2024.</li>
+    </ul>
+    <p><b>Research topics</b>: Process Fault Detection via Quantum Computing.</p>
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/in/da-yuan-lin" class="fab fa-linkedin" aria-label="Da-Yuan Lin LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/Daniel5648486" class="fab fa-github" aria-label="Da-Yuan Lin GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
+
 <!-- Woosik Kim -->
 <section id="woosik-kim" class="spotlights">
  <section>
