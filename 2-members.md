@@ -474,6 +474,32 @@ banner_color: style2
  </section>
 </section>
 
+<!-- Rogerio Ritto Pais -->
+<section id="rogerio-ritto-pais" class="spotlights">
+  <section>
+    <a href="#rogerio-ritto-pais" class="image" aria-label="Rogerio Ritto Pais's section">
+      <img src="/assets/images/members/RogerioRittoPais.webp" alt="Rogerio Ritto Pais" data-position="center center" />
+    </a>
+    <div class="content">
+      <div class="inner">
+        <header class="major">
+          <h3>Rogerio Ritto Pais</h3>
+        </header>
+        <ul>
+          <li>Joined in Fall 2026.</li>
+          <li>Visiting undergraduate researcher, Fall 2026.</li>
+          <li>B.S. Computer Engineering, Instituto Militar de Engenharia (IME), Expected 2027.</li>
+        </ul>
+        <p><b>Research topics</b>: Large Language Models, AI for Education.</p>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/rogerio-ritto/" class="fab fa-linkedin" aria-label="Rogerio Ritto Pais LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/rogerioritto" class="fab fa-github" aria-label="Rogerio Ritto Pais GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
 <!-- Principal Investigator -->
 <section id="pi">
  <div class="inner">
