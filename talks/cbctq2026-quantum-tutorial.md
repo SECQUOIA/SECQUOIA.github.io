@@ -1,9 +1,9 @@
 ---
 layout: page
 title: 'Quantum Computing for Operations Research'
-permalink: /ifors2026-tutorial/
+permalink: /cbctq2026-tutorial/
 image: assets/images/conference.webp
-description: 'IFORS 2026 Tutorial by David Bernal Neira: current state and perspectives on quantum computing for operations research'
+description: 'Tutorial by David Bernal Neira at CBCTQ 2026: current state and perspectives on quantum computing for operations research'
 nav-menu: false
 show_tile: false
 banner_color: style1
@@ -18,20 +18,24 @@ banner_color: style1
    <h2>Quantum computing for operations research: current state and perspectives</h2>
   </header>
   <p>
-   A tutorial by <strong>David Bernal Neira</strong>, presented at
-   <a href="https://ifors2026.at/" target="_blank" rel="noopener noreferrer">IFORS 2026</a>,
-   the 24th Conference of the International Federation of Operational Research Societies,
-   12&ndash;17 July 2026, Vienna, Austria.
+   A tutorial by <strong>David Bernal Neira</strong>, presented at the
+   <a href="https://www.even3.com.br/cbctq2026-689055?lang=en" target="_blank" rel="noopener noreferrer">Congresso Brasileiro de Ci&ecirc;ncias e Tecnologias Qu&acirc;nticas (CBCTQ 2026)</a>,
+   in Niter&oacute;i, Rio de Janeiro, Brazil.
   </p>
   <ul>
-   <li><strong>Session:</strong> Tutorial session (Stream: Tutorials)</li>
-   <li><strong>Chair:</strong> Andres Medaglia</li>
-   <li><strong>Date &amp; time:</strong> Tuesday, 10:30&ndash;12:00</li>
-   <li><strong>Room:</strong> HG &ndash; Audimax</li>
+   <li><strong>Date:</strong> 21 September 2026</li>
+   <li><strong>Location:</strong> Niter&oacute;i, Rio de Janeiro, Brazil</li>
   </ul>
   <ul class="actions">
-   <li><a href="{{ site.baseurl }}/assets/pdf/Tutorial-Quantum-IFORS-Bernal-Neira.pdf" class="button next" target="_blank" rel="noopener noreferrer">View / Download Slides (PDF)</a></li>
+   <li><a href="{{ site.baseurl }}/assets/pdf/Tutorial-Quantum-CBCTQ-Bernal-Neira.pdf" class="button next" target="_blank" rel="noopener noreferrer">View / Download Slides (PDF)</a></li>
   </ul>
+  <p>
+   An earlier version of this tutorial was presented at
+   <a href="https://ifors2026.at/" target="_blank" rel="noopener noreferrer">IFORS 2026</a>,
+   the 24th Conference of the International Federation of Operational Research Societies,
+   12&ndash;17 July 2026, Vienna, Austria
+   (<a href="{{ site.baseurl }}/assets/pdf/Tutorial-Quantum-IFORS-Bernal-Neira.pdf" target="_blank" rel="noopener noreferrer">IFORS 2026 slides</a>).
+  </p>
  </div>
 </section>
 

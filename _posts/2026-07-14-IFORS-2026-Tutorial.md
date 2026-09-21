@@ -10,6 +10,8 @@ David Bernal Neira presented a tutorial on quantum computing for operations rese
 
 The tutorial covered the state of quantum computing for operations research, including QUBO formulations, quantum annealing, the quantum approximate optimization algorithm (QAOA), and variational quantum eigensolvers (VQE), with hands-on examples run on quantum simulators, annealers, and gate-based hardware.
 
-Session details, the abstract, and the slides are available on the [tutorial page](/ifors2026-tutorial/).
+Session details: Tutorial session (Stream: Tutorials), chaired by Andres Medaglia, Tuesday 10:30&ndash;12:00, HG &ndash; Audimax.
+
+The [IFORS 2026 slides](/assets/pdf/Tutorial-Quantum-IFORS-Bernal-Neira.pdf) are available, and the abstract and most recent version of the tutorial are on the [tutorial page](/cbctq2026-tutorial/).
 
 [Back to News](/3-news.html){: .button .icon .fa-arrow-left }
