@@ -1,0 +1,134 @@
+name: Billing Guard
+
+# Early warning for billable GitHub usage on the SECQUOIA org.
+#
+# Context: in Aug 2026 GitHub Advanced Security "Secret Protection" was enabled
+# on this free-plan org and quietly accrued $19/committer/month. The unpaid
+# balance locked the org, which blocked every Actions job with
+# "your account is locked due to a billing issue". Nobody noticed for ~4 weeks.
+#
+# This job is a DETECTOR, not a preventer. The only hard guarantee is a $0
+# spending limit, set in the billing UI:
+#   https://github.com/organizations/SECQUOIA/settings/billing
+#
+# Setup: create a fine-grained or classic PAT with read access to org billing
+# (classic: admin:org) and store it as the repo/org secret BILLING_READ_TOKEN.
+# Without that secret the job exits quietly, so it never fails CI.
+
+on:
+  schedule:
+    - cron: '30 7 * * *'   # daily, 07:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-billing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ORG: SECQUOIA
+      # Alert when the month's net billable total exceeds this many USD.
+      THRESHOLD_USD: '0'
+
+    steps:
+      - name: Check for a billing-read token
+        id: token
+        env:
+          BILLING_READ_TOKEN: ${{ secrets.BILLING_READ_TOKEN }}
+        run: |
+          if [ -z "${BILLING_READ_TOKEN}" ]; then
+            echo "::notice::BILLING_READ_TOKEN is not set - skipping billing check."
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Query org billing usage
+        id: usage
+        if: steps.token.outputs.available == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.BILLING_READ_TOKEN }}
+        run: |
+          set -euo pipefail
+          YEAR=$(date -u +%Y)
+          MONTH=$(date -u +%-m)
+
+          if ! gh api "/organizations/${ORG}/settings/billing/usage?year=${YEAR}&month=${MONTH}" \
+                 > usage.json 2> usage.err; then
+            echo "::warning::Could not read billing usage for ${ORG}. $(cat usage.err)"
+            echo "status=unavailable" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          TOTAL=$(jq '[.usageItems[].netAmount] | add // 0 | .*100 | round / 100' usage.json)
+          echo "Net billable total for ${YEAR}-${MONTH}: \$${TOTAL}"
+
+          jq -r '
+            [.usageItems[] | select(.netAmount > 0)]
+            | group_by(.product + "|" + .sku)[]
+            | "| \(.[0].product) | \(.[0].sku) | $\((map(.netAmount) | add) * 100 | round / 100) |"
+          ' usage.json > breakdown.md || true
+
+          {
+            echo "total=${TOTAL}"
+            echo "year=${YEAR}"
+            echo "month=${MONTH}"
+            if awk "BEGIN{exit !(${TOTAL} > ${THRESHOLD_USD})}"; then
+              echo "status=billable"
+            else
+              echo "status=clean"
+            fi
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open or update alert issue
+        if: steps.usage.outputs.status == 'billable'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TOTAL: ${{ steps.usage.outputs.total }}
+          YEAR: ${{ steps.usage.outputs.year }}
+          MONTH: ${{ steps.usage.outputs.month }}
+        run: |
+          set -euo pipefail
+          MARKER="<!-- billing-guard -->"
+          TITLE="Billable GitHub usage detected on ${ORG}"
+
+          {
+            echo "$MARKER"
+            echo
+            echo "**\$${TOTAL}** of net billable usage has accrued on \`${ORG}\` in ${YEAR}-${MONTH}."
+            echo
+            echo "This org runs on the **free** plan and public repositories get free Actions"
+            echo "minutes, so the expected net total is **\$0.00**. Anything above that is a paid"
+            echo "product someone enabled."
+            echo
+            echo "| Product | SKU | Net |"
+            echo "|---|---|---|"
+            cat breakdown.md
+            echo
+            echo "**If this is unintended**, disable the product and set the spending limit to \$0:"
+            echo "- Security products: https://github.com/organizations/${ORG}/settings/security_products"
+            echo "- Billing: https://github.com/organizations/${ORG}/settings/billing"
+            echo
+            echo "Left unpaid, this locks the org and every Actions job fails with"
+            echo "\"your account is locked due to a billing issue\"."
+            echo
+            echo "_Updated $(date -u '+%Y-%m-%d %H:%M UTC') by the Billing Guard workflow._"
+          } > body.md
+
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" \
+                       --json number,body \
+                       --jq "[.[] | select(.body | contains(\"$MARKER\"))][0].number // empty")
+
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file body.md
+            echo "Updated existing issue #${EXISTING}"
+          else
+            gh issue create --title "$TITLE" --body-file body.md
+          fi
+
+      - name: Report clean
+        if: steps.usage.outputs.status == 'clean'
+        run: echo "::notice::No billable usage on ${ORG} (net \$${{ steps.usage.outputs.total }})."
