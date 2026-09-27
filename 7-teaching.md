@@ -65,6 +65,31 @@ banner_color: style6
  </section>
 </section>
 
+<!-- Three -->
+<section id="talks">
+ <div class="inner">
+  <header class="major">
+   <h2>Talks and Tutorials</h2>
+  </header>
+  <p>
+   Slides and material from tutorials and invited talks given by the group. Each entry links to a
+   page with the abstract, the slides, and any hands-on material.
+  </p>
+  <ul>
+   {% assign talks = site.data.talks | sort: "date" | reverse %}
+   {% for talk in talks %}
+   <li>
+    <strong>{{ talk.kind }}:</strong>
+    {% if talk.page %}<a href="{{ site.baseurl }}{{ talk.page }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}.
+    {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %},
+    {{ talk.location }}, {{ talk.date | date: "%-d %B %Y" }}.
+    {% if talk.slides %}<a href="{{ site.baseurl }}{{ talk.slides }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>{% endif %}
+   </li>
+   {% endfor %}
+  </ul>
+ </div>
+</section>
+
 <section>
  <div class="inner">
   <ul class="actions">

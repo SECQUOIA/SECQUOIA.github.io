@@ -16,6 +16,15 @@ vendor/
 .rvm
 rbenv/
 
+# Working files that do not belong in the site. PDFs go in assets/pdf/,
+# slide sources and drafts stay out of the repository altogether.
+/*.pdf
+*.pptx
+*.ppt
+*.docx
+*.key
+*-draft.md
+
 # macOS
 .DS_Store
 

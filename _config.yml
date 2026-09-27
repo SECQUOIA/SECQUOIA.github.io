@@ -34,6 +34,10 @@ socials:
 # build settings
 markdown: kramdown
 
+plugins:
+- jekyll-timeago
+- jekyll-redirect-from
+
 sass:
   style: compressed
 
@@ -42,3 +46,16 @@ exclude:
 - LICENSE.md
 - CONTRIBUTING.md
 - README.md
+- Dockerfile
+- validate.sh
+- resize_images.sh
+- scripts/
+- test/
+# Working files that sometimes land in the repo root (slide sources, drafts)
+# must never be copied into the published site. PDFs belong in assets/pdf/.
+- "*.pptx"
+- "*.ppt"
+- "*.docx"
+- "*.key"
+- "*.zip"
+- "*-draft.md"

@@ -46,6 +46,14 @@ jobs:
       - name: Test referenced-image WebP guard
         run: ruby test/referenced_images_test.rb
 
+      - name: Test repository hygiene guard
+        run: ruby test/repo_hygiene_test.rb
+
+      # Block stray root files (slide sources, drafts, misplaced PDFs) and
+      # tracked files above 20 MB before they reach the published site.
+      - name: Check repository hygiene
+        run: bash scripts/check_repo_hygiene.sh . 20
+
       # Build the site (test build)
       - name: Test Jekyll build
         run: bundle exec jekyll build --verbose
