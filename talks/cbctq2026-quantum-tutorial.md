@@ -30,6 +30,9 @@ banner_color: style1
    <li><a href="{{ site.baseurl }}/assets/pdf/Tutorial-Quantum-CBCTQ-Bernal-Neira.pdf" class="button next" target="_blank" rel="noopener noreferrer">View / Download Slides (PDF)</a></li>
   </ul>
   <p>
+   <em>Slides revised on 27 September 2026 with layout fixes to the version shown at the tutorial.</em>
+  </p>
+  <p>
    An earlier version of this tutorial was presented at
    <a href="https://ifors2026.at/" target="_blank" rel="noopener noreferrer">IFORS 2026</a>,
    the 24th Conference of the International Federation of Operational Research Societies,
@@ -77,6 +80,39 @@ banner_color: style1
 </section>
 
 <!-- Three -->
+<section id="hands-on">
+ <div class="inner">
+  <header class="major">
+   <h2>Hands-on notebooks</h2>
+  </header>
+  <p>
+   The hands-on part of the tutorial uses open-source Jupyter notebooks from the
+   <a href="https://github.com/SECQUOIA/QUBONotebooks" target="_blank" rel="noopener noreferrer">SECQUOIA/QUBONotebooks</a>
+   repository. They run in Google Colab, so no local installation is needed. The QUBO
+   modeling notebook is available in two flavors:
+  </p>
+  <ul>
+   <li>
+    <a href="https://colab.research.google.com/github/SECQUOIA/QUBONotebooks/blob/main/notebooks_jl/2-QUBO.ipynb" target="_blank" rel="noopener noreferrer">Julia notebook</a>
+    using <a href="https://jump.dev/" target="_blank" rel="noopener noreferrer">JuMP</a> and
+    <a href="https://github.com/JuliaQUBO/QUBO.jl" target="_blank" rel="noopener noreferrer">QUBO.jl</a>.
+   </li>
+   <li>
+    <a href="https://colab.research.google.com/github/SECQUOIA/QUBONotebooks/blob/main/notebooks_py/2-QUBO_python.ipynb" target="_blank" rel="noopener noreferrer">Python notebook</a>
+    using <a href="https://www.pyomo.org/" target="_blank" rel="noopener noreferrer">Pyomo</a>.
+   </li>
+  </ul>
+  <p>
+   The repository also includes notebooks on mathematical programming basics, quantum annealing on
+   D-Wave hardware, solver benchmarking, QAOA, and application case studies.
+  </p>
+  <ul class="actions">
+   <li><a href="https://github.com/SECQUOIA/QUBONotebooks" class="button" target="_blank" rel="noopener noreferrer">Browse the notebooks</a></li>
+  </ul>
+ </div>
+</section>
+
+<!-- Four -->
 <section id="explore">
  <div class="inner">
   <header class="major">
