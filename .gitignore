@@ -23,7 +23,7 @@ rbenv/
 *.ppt
 *.docx
 *.key
-*-draft.md
+/*-draft.md
 
 # macOS
 .DS_Store

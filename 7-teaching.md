@@ -79,10 +79,10 @@ banner_color: style6
    {% assign talks = site.data.talks | sort: "date" | reverse %}
    {% for talk in talks %}
    <li>
-    <strong>{{ talk.kind }}:</strong>
+    {% if talk.kind %}<strong>{{ talk.kind }}:</strong>{% endif %}
     {% if talk.page %}<a href="{{ site.baseurl }}{{ talk.page }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}.
     {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %},
-    {{ talk.location }}, {{ talk.date | date: "%-d %B %Y" }}.
+    {% if talk.location %}{{ talk.location }}, {% endif %}{{ talk.date | date: "%-d %B %Y" }}.
     {% if talk.slides %}<a href="{{ site.baseurl }}{{ talk.slides }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>{% endif %}
    </li>
    {% endfor %}

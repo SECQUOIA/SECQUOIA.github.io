@@ -30,7 +30,7 @@ fi
 large=$(git -C "$REPO_DIR" ls-files -z | while IFS= read -r -d '' f; do
   path="$REPO_DIR/$f"
   [[ -f "$path" ]] || continue
-  size=$(stat -c %s "$path")
+  size=$(wc -c < "$path")
   if (( size > MAX_BYTES )); then
     printf '%s (%d MB)\n' "$f" $(( size / 1024 / 1024 ))
   fi

@@ -1,5 +1,6 @@
 # Talks and tutorials listed on the Teaching page (newest first).
-# Each entry needs title, event, date and at least one of page or slides.
+# Each entry needs title, event, date and at least one of page or slides;
+# kind and location are optional and are omitted from the listing when absent.
 # page:   internal landing page (abstract, slides, related material)
 # slides: PDF under assets/pdf/ (compress with scripts/compress_pdf.sh first)
 - title: 'Quantum computing for operations research: current state and perspectives'

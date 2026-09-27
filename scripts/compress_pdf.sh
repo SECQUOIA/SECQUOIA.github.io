@@ -25,6 +25,6 @@ gs -q -dNOPAUSE -dBATCH -dSAFER \
   -dPDFSETTINGS="$PROFILE" -dDetectDuplicateImages=true \
   -sOutputFile="$OUTPUT" "$INPUT"
 
-before=$(stat -c %s "$INPUT")
-after=$(stat -c %s "$OUTPUT")
+before=$(wc -c < "$INPUT")
+after=$(wc -c < "$OUTPUT")
 printf '%s: %d MB -> %d MB (%s)\n' "$OUTPUT" $(( before / 1024 / 1024 )) $(( after / 1024 / 1024 )) "$PROFILE"

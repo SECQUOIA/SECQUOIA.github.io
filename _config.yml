@@ -51,11 +51,14 @@ exclude:
 - resize_images.sh
 - scripts/
 - test/
-# Working files that sometimes land in the repo root (slide sources, drafts)
-# must never be copied into the published site. PDFs belong in assets/pdf/.
+# Slide sources and other working files must never be copied into the
+# published site. Jekyll exclude globs also match nested paths, so keep this
+# list to file types that never belong anywhere in the site; drafts are kept
+# out through .gitignore (root-anchored) and scripts/check_repo_hygiene.sh
+# instead, because "*-draft.md" here would also drop a post whose slug ends
+# in -draft. PDFs belong in assets/pdf/.
 - "*.pptx"
 - "*.ppt"
 - "*.docx"
 - "*.key"
 - "*.zip"
-- "*-draft.md"
