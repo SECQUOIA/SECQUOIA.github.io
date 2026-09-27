@@ -146,7 +146,7 @@ banner_color: style2
     <li><a href="#postdocs">Postdoctoral Associates</a></li>
     <li><a href="#phds">Doctoral Students</a></li>
     <li><a href="#masters">Externally Co-advised Master's Student</a></li>
-    <li><a href="#Undergraduates">Undergraduates</a></li>
+    <li><a href="#undergraduate">Undergraduates</a></li>
     <li><a href="#pi">Principal Investigator</a></li>
     <li><a href="#alumni">Alumni</a></li>
   </ul>
