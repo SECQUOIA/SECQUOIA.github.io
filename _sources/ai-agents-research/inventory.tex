@@ -1,0 +1,379 @@
+% Research inventory table (Appendix C of main.tex).
+% Requires booktabs, longtable, array, amssymb, enumitem, and \corpusfile.
+\begin{small}
+\begin{longtable}{@{}l>{\raggedright\arraybackslash}p{0.60\linewidth}%
+  >{\raggedright\arraybackslash}p{0.15\linewidth}%
+  >{\raggedright\arraybackslash}p{0.13\linewidth}@{}}
+\caption{Potential papers and proposed experimental programs in the corpus.
+  Status values are defined below the table.}
+\label{tab:inventory}\\
+\toprule
+ID & Working title and claimed contribution & Write-up & Lean \\
+\midrule
+\endfirsthead
+\toprule
+ID & Working title and claimed contribution & Write-up & Lean \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\emph{Continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{4}{@{}l}{\textbf{Mixed-integer nonlinear programming}}\\*[2pt]
+M1 & \textbf{Sharp gaps for positive multilinear relaxations.}
+  Disproves the Luedtke--Namazifar--Linderoth conjecture; exact hull gap;
+  worst ratio grows as $\ln d/\ln\ln d$ in degree and $\ln n/\ln\ln n$ in
+  dimension.
+  Builds on~\citep{luedtke2012multilinear}.
+  & \corpusfile{minlp-notes/paper-multilinear-gap/main.pdf}{Full paper} & Done \\
+M2 & \textbf{Verified bounds for positive cubic relaxation gaps.}
+  Brackets the worst cubic termwise-to-hull gap ratio:
+  $1610000/743033 \le R(3) \le 31/12$.
+  & \corpusfile{minlp-notes/paper-cubic-gap/main.pdf}{Full paper} & Done \\
+M3 & \textbf{Checkable lower bounds for convex mixed-integer nonlinear
+  optimization through rational outer approximations.}
+  Rational certificates give independently checkable lower bounds; 203 of 289
+  MINLPLib models pass separate replay; exact audits find invalid proofs
+  accepted by an external proof checker.
+  Builds on~\citep{halbig2024certificates}.
+  & \corpusfile{minlp-notes/paper-certified-minlp/main.pdf}{Full paper} & Done \\
+M4 & \textbf{Convex relaxation gaps and spatial certificates in nonlinear
+  optimization.}
+  Signed bilinear gaps of the order of the square root of the edge density;
+  exponentially many certified regions for spatial branch-and-bound under
+  specified node oracles. Answers a question of Altschuler and Boix-Adser\`a
+  negatively, assuming P${}\neq{}$NP; a counterexample to a published theorem on P-split
+  formulations. Also restates the positive multilinear and cubic gap results
+  of M1 and M2.
+  & \corpusfile{minlp-notes/paper-relaxation-limits/main.pdf}{Full paper} & Partial \\
+M5 & \textbf{Integer dimension in convex mixed-integer approximation of
+  nonlinear graphs.}
+  For a fixed quadratic system on a box, the minimum number of integer or
+  binary variables for $\varepsilon$-accurate convex lifts is
+  $\frac{1}{2}\,\mathrm{ncrank}\cdot\log_2(1/\varepsilon)+O(1)$, where ncrank
+  is the noncommutative rank of the Hessian space; polynomial-time rational
+  constructions.
+  Builds on~\citep{lubin2022representability,beach2022compact}.
+  & \corpusfile{minlp-notes/paper-integer-dimension/build/main.pdf}{Full paper} & Partial \\
+M6 & \textbf{Rounding switching controls under a hard switch budget: sharp
+  minimax bounds and exact algorithms.}
+  Exact minimax rounding error for up to three switches; disproves a
+  conjecture of Sager and Zeile and corrects a published lower bound; exact
+  finite-grid values and algorithms.
+  & \corpusfile{minlp-notes/paper-switching-control/main.pdf}{Full paper} & Partial \\
+M7 & \textbf{Sparse convex hulls for network flows coupled to a simplex.}
+  An exact formulation uses one extra coordinate per independent cycle of each
+  unobserved block--label subgraph;
+  exponential coefficient growth on series--parallel graphs.
+  & \corpusfile{minlp-notes/paper-network-simplex/main.pdf}{Full paper} & Partial \\
+M8 & \textbf{Topology, uncertainty, and precision in passive potential-flow
+  optimization.}
+  Polynomial additive optimization of potential differences at fixed block
+  cycle rank, for balanced nomination boxes and independent coefficient
+  intervals; exact pressure comparison on single-source, single-sink cacti is
+  equivalent to Square-Root Sum.
+  & \corpusfile{minlp-notes/paper-potential-flow/complexity/main.pdf}{Full paper} & Partial \\
+M9 & \textbf{The complexity of pooling: algebraic barriers and structural
+  algorithms.}
+  The pooling threshold decision is $\exists\mathbb{R}$-complete; strongly
+  NP-complete with all layer degrees two, and NP-complete with two pools and
+  two products, answering
+  questions of Boland et al.\ and Haugland; resolves a rank-one cost
+  conjecture; matching tractability boundaries.
+  Builds on~\citep{haugland2016pooling,boland2017pooling,dey2020rankone}.
+  & \corpusfile{minlp-notes/papers/pooling/main.pdf}{Full paper} & Not applicable \\
+M10 & \textbf{Exact feasibility of resistive and AC power networks.}
+  Resistive power-flow feasibility is $\exists\mathbb{R}$-complete even on
+  planar, degree-three, unit-conductance networks; the hardness transfers to
+  AC networks with resistive lines.
+  Related work:~\citep{bienstock2019acpf,lehmann2016acfeasibility}.
+  & \corpusfile{minlp-notes/paper-power-flow/build/main.pdf}{Full paper} & Not applicable \\
+M11 & \textbf{Structured bilevel optimization with many follower variables:
+  global responses, accuracy, and structural boundaries.}
+  A fixed-dimensional description of all global follower responses gives exact
+  polynomial algorithms; rational leaders with error $2^{-B}$ for strictly
+  convex costs; hardness with dense near-identity Hessians.
+  & \corpusfile{minlp-notes/paper-structured-bilevel/paper.pdf}{Full paper} & Possible \\
+M12 & \textbf{Globally certified measurement selection with correlated
+  errors.}
+  Polynomial approximation sets in relative PSD order, a weighted-trace
+  approximation scheme, and rational log-determinant certificates for
+  correlated measurement selection.
+  & \corpusfile{minlp-notes/paper-correlated-measurements/build/main.pdf}{Full paper} & Partial \\
+M13 & \textbf{Radial and point separation for perspective outer approximation
+  of convex generalized disjunctive programs.}
+  Matched comparison of two separation policies: radial search gives modest,
+  implementation-specific gains; no new cut family.
+  & \corpusfile{minlp-notes/paper-lbesh/main.pdf}{Full paper} & Not applicable \\
+M14 & \textbf{Quadratic aggregation: certificates, finite descriptions, and
+  approximation.}
+  Resolves three Blekherman--Dey--Sun conjectures: under hidden hyperplane
+  convexity, a hull is proper exactly when a nonconstant convex aggregation
+  exists; a three-inequality hull needs uncountably many aggregations; four
+  aggregations suffice for three strict quadratics with a positive definite
+  combination, extending a Blekherman--Dunbar bound, and are sharp.
+  Builds on~\citep{blekherman2024aggregations}.
+  & \corpusfile{minlp-notes/paper-quadratic-aggregation/paper.pdf}{Full paper} & Partial \\
+M15 & \textbf{Exact convex hulls for a reciprocal factor shared by many
+  variables.}
+  Explicit hull of $(X,1/X,Y_i,XY_i)$ for many leaves, with exact rational
+  separation and decomposition; extends to an integer factor with a
+  binary-encoded range, with separation polynomial in the encoding length.
+  & Notes only & Done \\
+M16 & \textbf{Ill-posed heat-exchanger network instances in MINLPLib.}
+  The \texttt{heatexch\_gen} models share an unbounded guarded
+  log-mean-temperature term; for \texttt{heatexch\_gen1}, a numerically
+  feasible point improves the listed value by about 30\%, and numerical
+  estimates indicate that the infimum is not attained.
+  & Notes only & Not applicable \\
+M17 & \textbf{Convex envelopes of two-variable monomials with real exponents
+  on a wedge.}
+  Extends the hull of a bounded monomial on a wedge from positive exponents to
+  negative and mixed-sign ones, including ratio terms; answers Belotti's open
+  case of two negative exponents.
+  Builds on~\citep{belotti2025monomials}.
+  & Notes only & Possible \\
+M18 & \textbf{Exact indicator quadratic optimization at low treewidth.}
+  NP-hard at bandwidth two with Hessians arbitrarily close to the identity;
+  with randomly perturbed indicator penalties, exact algorithms in polynomial
+  expected bit time at fixed treewidth.
+  & Notes only & Not applicable \\
+M19 & \textbf{Convex envelopes of univariate functions of a linear form.}
+  For any lower semicontinuous $\sigma$, the convex envelope of
+  $\sigma(a^\top x+b)$ over a box is a minimum over laws below a comonotone
+  staircase law in convex order, and dually a supremum over concave
+  minorants, each of which gives cuts valid on the whole box; extensions to
+  products of simplices and sign-restricted order polytopes.
+  Builds on~\citep{mao2015aggregation}.
+  & Notes only & Possible \\
+M20 & \textbf{Contraction theory of iterated optimality-based bound
+  tightening.}
+  Near a minimizer, iterated bound tightening follows a monotone, positively
+  homogeneous map on box shapes whose Collatz--Wielandt-type constant bounds
+  the local linear rate; a certificate for when tightening stalls; the exact
+  rate $(\sqrt{2a^2+4a}-a)/2$ of simultaneous rounds for $x^2+y^2+axy$,
+  $0<a<2$, with McCormick relaxations; a condition under which tightening
+  does nothing, even for strongly convex objectives.
+  Builds on~\citep{caprara2010domain}.
+  & Notes only & Possible \\
+M21 & \textbf{Joint relaxation of several nonlinear terms in one variable.}
+  Automatic, certified treatment in a solver: certified curvature and
+  envelope cuts valid for every slope solve all 24 separable quartic test
+  programs, of which native SCIP, Gurobi, and BARON solve 2, 3, and 6;
+  a certified separator for hulls of curves $(t,f_1(t),\dots,f_k(t))$.
+  The hull theory itself is known.
+  Builds on~\citep{ballerstein2013thesis}.
+  & Notes only & Not applicable \\
+M22 & \textbf{Separable concave terms on few linear rows.}
+  A binary reformulation that allows at most $\mathrm{rank}(A)$ variables
+  strictly inside their concave pieces is solved in $2n+1$ branch-and-cut
+  nodes on a family where spatial branch-and-bound needs exponentially many
+  (M4); the joint hull of concave terms on one row, which for equal widths is
+  the Padberg--Van Roy--Wolsey flow-cover polyhedron in other variables,
+  extended to inequality rows and to indicators with concave costs.
+  Builds on~\citep{padberg1985fixedcharge}.
+  & Notes only & Possible \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Quantum interior-point methods}}\\*[2pt]
+Q1 & \textbf{Objective sublevels and central-path Hessian conditioning.}
+  For every self-concordant barrier, conditioning is
+  $\Theta((\mathrm{diam}\,L(g)/g)^2)$; LP spectra have two scales.
+  & \corpusfile{qipm-notes/conditioning-paper/main.pdf}{Full paper} & Partial \\
+Q2 & \textbf{The cost of following the central path.}
+  Sharp central-path movement tax $\Gamma_r=\Theta(\sqrt{\log r})$ for
+  objectives of rank $r$; on an explicit sparse LP, primal--dual completion
+  requires $\Theta(r^{3/2})$ bounded steps.
+  Builds on~\citep{nesterov2008centralpaths}.
+  & \corpusfile{qipm-notes/central-path-cost/main.pdf}{Full paper} & Partial \\
+Q3 & \textbf{Access models and right-hand-side mass in Newton solves.}
+  Degenerate-LP Hessians have two eigenvalue clusters that conjugate gradients
+  handles in polylogarithmic iterations, while plain block access keeps the
+  known $\tilde\Theta(\kappa)$ cost; the right-hand side's coupling to the
+  small eigenvalues decides when filtering helps.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Partial \\
+Q4 & \textbf{Winner-take-all condensation in block log-determinant SDPs.}
+  Winner mass controls conditioning; tight holonomy value queries,
+  $\Theta(N\sqrt{G})$ quantum versus $\Theta(NG)$ randomized.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Possible \\
+Q5 & \textbf{Accuracy curves for hidden-block state conversion.}
+  Tight accuracy-dependent query curves for quantum state conversion on proved
+  domains; notes extend the lower bound to any inner predicate, an open
+  problem of the summary document, and give the exact zero-query error in the
+  range it leaves open.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Not applicable \\
+Q6 & \textbf{Condition-one linear programs with hard loading and recovery.}
+  Sparse LPs with condition-one reduced Newton systems still need linearly many
+  queries to load and recover states.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Not applicable \\
+Q7 & \textbf{Limits of parity-gadget lower-bound constructions.}
+  Algebraic identities rule out natural classes of parity-gadget lower-bound
+  constructions; notes rule out bounded local full-KKT parity amplifiers, an
+  open problem of the summary document.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Partial \\
+Q8 & \textbf{Loading and recovery hardness for semidefinite programs.}
+  Trace-normalized SDPs with condition-one Newton steps still have parity-hard
+  values and solution states; notes give genuinely nonabelian $\Theta(N)$ word
+  hardness with a sparse SDP transfer, an open problem of the summary document.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Not applicable \\
+Q9 & \textbf{Trade-offs between preconditioning and state interfaces.}
+  A better preconditioned condition number is paid for in normalization,
+  recovery sensitivity, or state preparation.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Partial \\
+Q10 & \textbf{Conditional speedups for sparse quantum interior-point
+  methods.}
+  Conditional per-step gains from certified refresh, face repair, compressed
+  dual output, and block-angular borders.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Partial \\
+Q11 & \textbf{A correction to the complexity analysis of the quantum central
+  path method.}
+  Both the simulator-norm bound and the clock analysis of
+  arXiv:2311.03977v2 fail as claimed; corrected norm and speed trade-off.
+  The authors informed us that they already knew of at least one error and are
+  preparing a revision; no correction was public when the agents ran.
+  & \corpusfile{qipm-notes/paper/main.pdf}{Summary document} & Done \\
+Q12 & \textbf{Curvature, support certificates, and barrier complexity of
+  conic lifts.}
+  An exact lift by definable cones of a body with a strictly curved boundary
+  patch needs
+  $\sum_i\max(\dim K_i-2,0)\ge s-1$; the least support-certificate rank of an
+  $s$-dimensional ball is exactly $\lceil (s-1)/B\rceil$; exact barrier
+  parameters for symmetric-cone balance slices. Also: disk-product instances
+  whose central states need $O(1)$ queries but whose scalar readout needs
+  $\Theta(N)$; with matched oracles at the fiber center, PSD packing gives no
+  query advantage for reduced Newton solves; compilation of sparse second-order cone
+  constraints to barrier parameter at most $k+1$ with $\Theta(\sqrt{Nk})$
+  quantum versus $\Theta(N)$ randomized queries.
+  & \corpusfile{qipm-notes/conic-lift-complexity/main.pdf}{Full paper} & Possible \\
+Q13 & \textbf{Classical and quantum query complexity of scalar Newton
+  quantities.}
+  Relative estimation of $b^*H^{-1}b$ with
+  $\kappa\varepsilon^{-2}(d+1)^{O(\sqrt\kappa\log(2/\varepsilon))}$ classical
+  queries and a lower bound matching the known $\tilde
+  O(\alpha\kappa/\varepsilon)$ block-access algorithm up to logarithmic
+  factors on $3\times3$ matrices; statistical-query
+  sampling of Newton steps; one-cone sparse SOCP: $O(1)$ quantum queries
+  versus $\tilde\Omega(N^{1-1/k})$ classical statistical queries.
+  & \corpusfile{qipm-notes/scalar-newton-paper/main.pdf}{Full paper} & Not applicable \\
+Q14 & \textbf{The quantum cost of unit-normalized spectral shifting.}
+  Answers an open problem of the summary document: a sharp query staircase
+  $\Theta(\delta^{-1+1/(2\ell)})$ for block encodings of $I-H$ with
+  normalization one, and $\Theta(\delta^{-1}\log(1/K))$ at high accuracy;
+  a sparse LP separates normal-matrix from factor access.
+  & \corpusfile{qipm-notes/spectral-shift-paper/main.pdf}{Full paper} & Not applicable \\
+Q15 & \textbf{Exponential-cone scenario compression for entropic risk.}
+  Compresses $N$ scenarios into $O(1+K+\log)$ exponential cones, independent
+  of $N$, with certified value bounds; matched $\Theta(e^K/\varepsilon)$
+  quantum versus $\Theta(e^{2K}/\varepsilon^2)$ classical source queries under
+  the stated access model.
+  & Notes only & Not applicable \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Molecular thermodynamics}}\\*[2pt]
+TD1 & \textbf{Finite reservoirs at phase coexistence: full-state accuracy and
+  phase correlations.}
+  When finite baths reproduce canonical laws; an $N^{3/2}$ threshold for the
+  two-phase systems studied under stated phase-tail conditions; a shared bath
+  of intermediate size drives two copies into opposite phases while each copy
+  alone stays canonical.
+  Builds on~\citep{riera2012thermalization}.
+  & \corpusfile{thermo-notes/paper-finite-reservoirs/main.pdf}{Full paper} & Not applicable \\
+TD2 & \textbf{Survival-conditioned thermodynamic integration.}
+  Endpoint-survivor force integration is path-dependent, with error of second
+  order in weak killing; interior survivors admit an exact potential.
+  & Notes only & Possible \\
+TD3 & \textbf{Interfacial tension from bulk response in nonlocal
+  double-parabola models.}
+  Exact tension certificates from bulk response; fourth-order moment matching
+  leaves the tension undetermined.
+  & Notes only & Not applicable \\
+TD4 & \textbf{Capacity certificates for reversible nucleation kinetics.}
+  Capacity lower bounds from conditional transport; paired finite-field
+  bounds on nucleation-rate response.
+  & Notes only & Not applicable \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Transport theory}}\\*[2pt]
+TP1 & \textbf{Designing surface transport under uncertain kinetics: moment
+  thresholds and measurement precision.}
+  For a small surface-mobility budget $M$, the best fixed placement raises the
+  disorder-moment order at which rare merging defects dominate from $4/3$ to
+  $8/5$; observing the defects improves the mean from $M^{-1/4}$ to
+  $M^{-1/5}$, and resolution of order $M^{1/5}$ suffices.
+  Builds on~\citep{buttazzo2011randomshape}.
+  & \corpusfile{transport-notes/paper-uncertain-mobility/main.pdf}{Full paper} & Not applicable \\
+TP2 & \textbf{Kinetic defects in adsorbing channels.}
+  Weak surface diffusion $D_s$ at a quadratic kinetic minimum gives a
+  $D_s^{-1/4}$ dispersion divergence with an explicit crossover to a rate
+  floor; when the minimum's location is known, optimal placement of a
+  mobility budget $M$ improves the divergence from $M^{-1/4}$ to $M^{-1/5}$,
+  the known-defect case behind TP1; an exactly solvable placement transition.
+  & Notes only & Not applicable \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Aggregation kinetics}}\\*[2pt]
+AK1 & \textbf{Sampling-law separation and finite nonlinear corrections in
+  additive coagulation--fragmentation.}
+  Sharp number--mass separation bounds, a finite log-size correction,
+  finite-population breakdown, Fourier identification.
+  Builds on~\citep{escobedo2002gelation}.
+  & \corpusfile{aggregation-kinetics-notes/paper-additive-coagulation/main.pdf}{Full paper} & Not applicable \\
+AK2 & \textbf{Survival under unobserved sister-type dependence in multitype
+  branching.}
+  Uniform near-critical error bounds for extinction over unobserved daughter
+  couplings, with an exact optimal coupling and a rule for tied reproductive
+  values; the basic sharp envelopes follow from known branching and
+  rearrangement results.
+  & Notes only & Possible \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Heterogeneous catalysis: proposed experimental
+  programs}}\\*[2pt]
+CA1 & \textbf{Physical water management in Fischer--Tropsch synthesis.}
+  Tests whether late hydrophobic-polymer addition protects conditioned cobalt;
+  re-analysis of published data finds a product output about 1.9 times that of
+  the reference with the polymer.
+  & \corpusfile{catalysis-notes/manuscript/main.pdf}{Program document} & Not applicable \\
+CA2 & \textbf{Steam compatibility of cyclic oxides in chemical looping.}
+  Tests whether steam purges, assumed by a published process model but not
+  tested, change ethylene output from coated LSF; compares CO$_2$ supplied
+  with the steam (protection) and afterwards (recovery).
+  & \corpusfile{catalysis-notes/manuscript/main.pdf}{Program document} & Not applicable \\
+CA3 & \textbf{Catalyst demand in polymer ethenolysis.}
+  Tests whether lower ethylene pressure can replace part of the fresh
+  Na/alumina catalyst when reused catalyst converts polyethylene to propylene.
+  & \corpusfile{catalysis-notes/manuscript/main.pdf}{Program document} & Not applicable \\
+CA4 & \textbf{Nickel and the useful life of promoted silver epoxidation
+  catalysts.}
+  Tests whether nickel adds ethylene oxide output beyond chloride policies; a
+  1995 patent already reports a retention benefit.
+  & \corpusfile{catalysis-notes/manuscript/main.pdf}{Program document} & Not applicable \\
+CA5 & \textbf{Tungsten coordination and retention in sugar conversion.}
+  Tests whether a controllable anchoring or feed variable links productive
+  sugar coordination, tungsten loss, and glycol output.
+  & Notes only & Not applicable \\
+CA6 & \textbf{Product-rich liquid Ti-zeolite epoxidation.}
+  Tests whether a reaction network calibrated on dilute kinetics predicts
+  epoxide output and peroxide loss once products accumulate.
+  & Notes only & Not applicable \\
+CA7 & \textbf{Oxygen fate and self-cleaning in zirconia-catalyzed styrene
+  production.}
+  Tests whether an oxygen-removal pathway predicts sustained styrene output and
+  a feed policy.
+  & Notes only & Not applicable \\
+CA8 & \textbf{Acid-site assays and zeolite aging.}
+  Tests whether repeated NH$_3$ and water assays change the hydrothermal aging of
+  H-CHA.
+  & Notes only & Not applicable \\
+\end{longtable}
+\end{small}
+
+\noindent Status values:
+\begin{itemize}[leftmargin=1.2em]
+  \item \textbf{Write-up.}
+  \emph{Full paper}: a complete, compiled manuscript.
+  \emph{Summary document}: part of the long document that collects the quantum interior-point results, which we asked for instead of separate papers.
+  \emph{Program document}: a chapter of the document that ranks the proposed catalysis programs.
+  \emph{Notes only}: the results exist only as the agents' notes and checks.
+  \item \textbf{Lean.}
+  \emph{Done}: the main mathematical results are proved in Lean, with no unproved steps; software and experiments are not covered.
+  \emph{Partial}: some of the results are proved in Lean, but not all.
+  \emph{Possible}: not done, but the main claims are mathematical statements that could be formalized with current libraries; this is a judgement, not a check.
+  \emph{Not applicable}: the main claims rest on numerical evidence, experiments, or modelling assumptions, or require a framework that current formal libraries do not provide, such as complexity classes, quantum query models, or limit theorems for stochastic processes.
+\end{itemize}

@@ -1,0 +1,138 @@
+---
+---
+
+.research-setup {
+  margin: 2.5rem 0;
+
+  .research-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding: 1.4rem;
+    border: 1px solid rgba(155, 241, 255, 0.4);
+    border-top: 3px solid #9bf1ff;
+    border-radius: 0.35rem;
+    background: rgba(155, 241, 255, 0.04);
+  }
+
+  li + li::before {
+    content: "+";
+    position: absolute;
+    top: 45%;
+    left: -1.35rem;
+    color: #9bf1ff;
+    font-size: 1.4rem;
+  }
+
+  .step-number {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #9bf1ff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+.research-inventory {
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(212, 212, 255, 0.2);
+  border-radius: 0.25rem;
+
+  &:focus-visible {
+    outline: 2px solid #9bf1ff;
+    outline-offset: 3px;
+  }
+
+  table {
+    min-width: 52rem;
+    table-layout: fixed;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  caption {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  th, td {
+    vertical-align: top;
+    overflow-wrap: break-word;
+  }
+
+  th:nth-child(1) { width: 6%; }
+  th:nth-child(2) { width: 64%; }
+  th:nth-child(3) { width: 16%; }
+  th:nth-child(4) { width: 14%; }
+
+  td > strong:first-child {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .math {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    vertical-align: middle;
+  }
+}
+
+#refs.csl-bib-body {
+  overflow-wrap: anywhere;
+
+  .csl-entry {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .csl-left-margin {
+    flex: 0 0 2rem;
+    color: #9bf1ff;
+  }
+
+  .csl-right-inline {
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .research-setup {
+    .research-steps {
+      grid-template-columns: 1fr;
+    }
+
+    li + li::before {
+      top: -1.65rem;
+      left: calc(50% - 0.4rem);
+    }
+  }
+}

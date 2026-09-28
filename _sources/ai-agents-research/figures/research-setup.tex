@@ -1,0 +1,27 @@
+% Editable vector figure. Width and typography follow the surrounding paper.
+\begingroup
+\definecolor{researchaccent}{HTML}{547D80}
+\newlength{\stepw}\setlength{\stepw}{.30\linewidth}
+\begin{tikzpicture}[
+  x=\linewidth, y=1pt,
+  stepbox/.style={draw=researchaccent, line width=0.6pt, rounded corners=2pt,
+    inner sep=0pt, minimum width=\stepw, minimum height=92pt, anchor=north},
+  body/.style={anchor=north west, align=left, inner sep=0pt,
+    text width=\dimexpr\stepw-14pt\relax, font=\normalfont\footnotesize},
+  flow/.style={-{Latex[length=2mm]}, line width=0.7pt, draw=researchaccent}]
+  \node[stepbox] (s1) at (.16,0) {};
+  \node[stepbox] (s2) at (.50,0) {};
+  \node[stepbox] (s3) at (.84,0) {};
+  \node[body] at ([xshift=7pt,yshift=-7pt]s1.north west)
+    {\textbf{1. Describe the problem or field.}\\[2pt] Enough context to work from; freedom to explore any idea.};
+  \node[body] at ([xshift=7pt,yshift=-7pt]s2.north west)
+    {\textbf{2. Provide papers and tools.}\\[2pt] And permission to get more.};
+  \node[body] at ([xshift=7pt,yshift=-7pt]s3.north west)
+    {\textbf{3. Ask a swarm of agents to make progress, and not to stop.}\\[2pt]
+     Every result reviewed by a fresh agent. Write it up. Verify by proof or by computation where possible.};
+  \node[inner sep=0pt, text=researchaccent, font=\normalfont\Large]
+    at ($(s1.east)!0.5!(s2.west)$) {$+$};
+  \node[inner sep=0pt, text=researchaccent, font=\normalfont\Large]
+    at ($(s2.east)!0.5!(s3.west)$) {$+$};
+\end{tikzpicture}
+\endgroup

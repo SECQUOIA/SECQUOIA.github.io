@@ -1,0 +1,304 @@
+% Blog version of the paper: plain language, short, and with our positions.
+\documentclass[11pt]{article}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+\newcommand{\corpusurl}{https://github.com/SECQUOIA/agent-swarm-research}
+% The commit that the paper describes (tag paper-v1).
+\newcommand{\corpusref}{84c6be7aad17d085e5343e789885c1cbcbbd4e07}
+\newcommand{\corpusfile}[2]{\href{\corpusurl/blob/\corpusref/#1}{#2}}
+\newcommand{\corpussnapshot}{\href{\corpusurl/tree/\corpusref}{commit \texttt{84c6be7}}}
+
+\setlist{itemsep=4pt, topsep=4pt}
+
+\title{AI Agents Can Already Do Research. Now What?\\[6pt]
+\large What happened when we tried it ourselves, and why our institutions are not ready}
+\author{Sergey Gusev and David E. Bernal Neira\\[2pt]
+\small Purdue University}
+\date{September 2026}
+
+\begin{document}
+\maketitle
+
+This summer brought two headline results in mathematics.
+In August, an Anthropic staff member with no mathematical training asked an unreleased Claude model to ``take a real stab'' at the Riemann hypothesis, one of the most famous unsolved problems in mathematics.
+The hypothesis says that certain zeros of a function all lie on one line.
+The model did not prove that, but it proved that more than 66\% of them do, up from the previous best of about 42\%, a share that mathematicians had raised only in small steps for decades~\citep{alpoge2026-more-than-two-thirds-of}.
+In September, OpenAI announced that about ten thousand AI agents, working for 88 hours, had produced a proof for a version of another famous open problem, about the equations of fluid flow; independent review is still under way~\citep{openai2026navierstokes}.
+By one outside estimate, that run would have cost a customer several million dollars~\citep{duraisamy2026navierstokescost}.
+OpenAI has since said that the model behind that run has resolved more than 100 further open problems; it has not yet published them~\citep{openai2026advisory}.
+
+Both came from inside AI companies, with unreleased models and budgets that no research group has.
+Can an ordinary research group, with models anyone can buy, get agents to do real research?
+
+We tried it ourselves.
+It works, on a smaller scale than the AI companies' runs and at a small fraction of their cost.
+
+Over the past few weeks, we gave groups of AI agents a research area, anywhere from a single topic to a whole field.
+We gave them papers and computing tools, and told them to make real, correct, useful progress and not to stop.
+We gave them no ideas.
+
+Within the first day of one run, the agents had written more notes than we could read in a week.
+Within a few weeks, they had produced material for 45 potential papers in the five areas we gave them: mixed-integer nonlinear programming, quantum interior-point methods, molecular thermodynamics, transport theory, and aggregation kinetics.
+In a sixth area, catalysis, we asked for experiments instead, and they designed programs of laboratory experiments; nobody has run them, so we cannot yet say how good they are.
+We have not checked all of it, and we cannot yet say how much is correct or new.
+But in everything we have checked so far, we have found no error that would invalidate a result, and some results are proved in Lean, software in which a computer checks every step of a proof.
+
+This post explains what we did, why we think it matters, and what we think should happen next.
+The full paper has the details, the evidence, and the caveats \todo{link to paper}.
+All of the agents' output is public at \url{https://github.com/SECQUOIA/agent-swarm-research}~\citep{gusev2026corpus}; this post describes it at \corpussnapshot, before any scientific input from us.
+
+\section*{What we did}
+
+The whole procedure fits in three steps (Figure~\ref{fig:research-setup}).
+
+\begin{figure}[ht]
+  \centering
+  \input{figures/research-setup}
+  \caption{The procedure we followed. The paper includes examples of the prompts we used.}
+  \label{fig:research-setup}
+\end{figure}
+
+We used off-the-shelf tools: the coding agents Claude Code and Codex, mostly running Claude Fable 5.1 and GPT-6 Astra, on two Claude and two ChatGPT subscriptions at \$200 a month each.
+At pay-per-use prices, the same usage would have cost more than \$15,000 in the first four weeks.
+We wrote no custom software beyond a few instructions for housekeeping.
+Anyone with access to these models can repeat this today.
+
+Our procedure is not the best way to do research with agents: it is brute force, and we did not tune it.
+But if something this simple already works, better methods will do more.
+
+We did not expect this to work.
+For months, we had built tools for close collaboration between people and AI, in which we directed the research and checked the work at every step.
+They never produced much.
+When we stepped aside and let the agents do everything, from choosing research directions to checking results, we had results within a day, and a lot of them.
+In hindsight, the reason is that in theoretical research, agents are getting better at every part of the work, and they are already good at most of it.
+They can direct the research and check the work themselves, and they read more, compute more, and explore several ideas at once.
+As the models improve, we can add less and less to solving a given problem, and each time we step in, we mostly slow the work down.
+
+\section*{What came back}
+
+What came back is not a set of breakthroughs.
+It is incremental work, the kind of small, sound steps that make up most scientific progress.
+You do not have to take our word for it.
+Everything the agents produced is public, and anyone can check it.
+The table at the end of this post lists every potential paper and proposed experimental program, with what the agents claim and links to their drafts.
+The results from AI companies are breakthroughs on famous problems.
+Our runs show the everyday work of research, in several unrelated fields.
+
+Some of this work did not need the newest models.
+Some of our results, in quantum interior-point methods, came from GPT-5.6 Sol, a model that had been public for almost two months before we tried it.
+Models could do this work before we noticed, and we suspect the same is true in many other areas of theoretical research.
+
+\section*{The bottleneck has moved}
+
+The agents produced results faster than we could review them.
+At a few days for each potential paper or experimental program, reviewing everything would take one of us more than seven months of full-time work.
+Producing the results took weeks.
+
+Every publication system assumes that the author has checked the work and answers for it, and that reviewers then take a second look.
+When one person can produce more than they can review, the author's own check is missing, and no amount of outside review replaces it.
+Hiring, promotion, and funding still count papers, and a paper can now be produced for almost nothing.
+
+If the output were noise, anyone could ignore it, and the review backlog would not matter.
+But the output deserves review.
+
+\section*{If you are a skeptic}
+
+These are some of the responses we often hear.
+
+\textbf{``The results are not impressive. A good researcher would have found them.''}
+Maybe.
+Then why were they not already in the literature?
+What matters more than whether agents beat the best person in a field is how much of the field's work they have to match before its institutions have to change.
+Everyone except the top one percent?
+Everyone except one person?
+We think agents already match many working researchers, including us.
+
+\textbf{``It is a statistical machine. It can only recombine what it has seen.''}
+Much of research recombines too: a known technique applied to a new problem, or ideas from two fields joined together.
+Whether a result is correct, new, and useful can be checked without knowing who or what produced it.
+
+\textbf{``It might all be wrong.''}
+Some of it may be.
+But in what we have checked so far, we have found no scientific error that would invalidate a result.
+And we released all of it, so you can check it yourself.
+
+\textbf{``I refuse to use these tools on principle.''}
+That is a legitimate choice.
+But others in your field will use them, and you will be compared with them in hiring, funding, and promotion.
+
+When a study shows something AI cannot do, check which model it tested and when.
+Such limits have repeatedly been overtaken within months, on a trend that has itself been measured~\citep{kwa2025-measuring-ai-ability-to-complete}.
+If you can do better than the models today, that tells you only about today's models, and the models keep improving.
+
+\section*{If you are an enthusiast}
+
+\textbf{``Research just got easier. With the newest models and enough computation, anyone can produce results.''}
+That may well be true, but it raises problems that we cannot answer.
+If results depend only on the model and the budget, then the researcher is not needed.
+Anyone who cares about a problem can pay for the computation directly, and the company that runs the model has the newest models first and pays the least for computation.
+And if results follow budgets, who gets to do research, what should the human contribution be, and what is it worth?
+
+\textbf{``Then I will be the reviewer.''}
+That is not a safe role either.
+We could not review fast enough.
+Every error we know of in our corpus was found and fixed by agents before any of us looked at the work; we cannot say whether we would have caught those errors ourselves.
+Agents can be run as reviewers in large numbers as easily as they are run to produce results.
+And nobody chooses a research career to sign off on a machine's output.
+A system built on human sign-off would fill with reviews that were never really done.
+
+So what, exactly, is the researcher's role?
+What would someone pay a person for that they cannot get from the model directly?
+We do not have a satisfying answer.
+
+\section*{The questions, and where we stand}
+
+We would rather take positions and be wrong than only ask questions.
+This is where we stand today.
+
+\begin{itemize}
+  \item \textbf{How should results be trusted when review, not production, is scarce?}
+  By measurement.
+  Put results in a form a machine can check wherever possible, and build machine-checked libraries of established results in every field whose reasoning is mathematical, such as physics, chemistry, and engineering, not only in mathematics itself.
+  Have experts check a sample of what agent reviewers approve, publish how often they miss errors, and accept results from a process that meets the field's standard.
+
+  \item \textbf{Which results need a person to understand them?}
+  Decide on purpose, by what is at stake and by measured error rates, and revisit the decision with each new model.
+
+  \item \textbf{What counts as new when agents cannot read much of the literature, because it is behind paywalls?}
+  Open the literature.
+  Work presented as public knowledge should be readable by every person and every agent that does research.
+
+  \item \textbf{What should publication become?}
+  Release claims with their verification status (machine-checked, reviewed by agents, audited by sampling, or reviewed by a person) and with links to the checks.
+
+  \item \textbf{What do credit and paper counts mean when the human input is a prompt?}
+  Stop counting papers.
+  Judge results by whether they are correct, new, useful, and checked, and do not punish people for saying how they were produced.
+  Rules against using AI cannot be enforced; they only push its use into hiding.
+  The current system of credit is already being broken in private, and we think it is better to break it in public, where its replacement can be discussed.
+
+  \item \textbf{Why would anyone pay a researcher?}
+  Less for producing results, and more for understanding them, checking them, and deciding where the work should go.
+  There may also be more demand for researchers, not less, through an effect known as the Jevons paradox: making a resource cheaper to use can increase how much of it is used.
+  In the 19th century, the economist William Stanley Jevons observed that when steam engines began to use coal more efficiently, total coal use rose, because cheaper power made new uses worthwhile~\citep{jevons1865coal}.
+  Cheap results could likewise make far more questions worth asking and far more directions worth exploring, and people could be needed to choose among them, steer the agents, and put the results to use.
+
+  \item \textbf{Does the best researcher become the one with the largest budget?}
+  Results will increasingly depend on how much computation a researcher can pay for, and we do not think that can be avoided.
+  Decide openly how to handle it, instead of drifting into it: whether institutions should provide computation as a shared resource, like libraries and laboratories, and whether assessment can separate what a person did from what their budget did.
+
+  \item \textbf{How should people learn a field that machines can already work in?}
+  Teach more, not less, but differently.
+  Aim training at understanding and judgment, and stop drilling students in skills that they now only need to understand.
+  Fund the training of junior researchers on purpose.
+  On a fixed budget, one senior researcher plus computation produces more than a group of students; a field that funds research on that basis will have no senior researchers in a generation.
+
+  \item \textbf{What happens when agents are run over whole fields?}
+  It will happen.
+  Model developers, funders, and governments can afford it, and nobody can stop everyone else from doing it.
+  We think it should happen in the open, with checking funded alongside production.
+  Running agents over a whole field also gives that field a baseline: what agents can do on their own.
+  What people add on top of that baseline is the human contribution.
+
+  \item \textbf{How do people stay in control of research they cannot keep up with?}
+  We expect agents to move far ahead of people in some fields, probably in mathematics first.
+  Keeping up is not a realistic goal; staying in control is.
+  That means people set the goals and can stop the runs, enough people understand each field well enough to audit it, and there are guardrails where a correct result can do harm.
+\end{itemize}
+
+\section*{What we do not know}
+
+Two of these answers are weaker than we would like.
+
+We argue for more people, not fewer.
+We can say why a field needs them.
+We cannot yet say what they will do.
+Auditing, steering, and keeping up with results are the roles we can name today, and agents may take over each of them as the models improve.
+
+And the baseline idea assumes that people can follow the baseline.
+If agents produce more in a month than a field can read in a year, people may not even be able to tell what is already known, let alone add to it.
+We do not know what the human contribution is then, or how anyone would measure it.
+We think it is one of the most important questions, and we raise it without an answer.
+
+\section*{Our institutions are not ready}
+
+Peer review, paper counts, hiring, promotion, funding, and graduate training were all built for a world in which producing a result is slow and its author has read it.
+That is no longer the world we are in.
+We believe our research institutions, and the incentives they create, are not ready for what these systems can already do, let alone for what comes next.
+The time to start changing them was yesterday.
+
+Institutions change over years, and models improve over months.
+A curriculum or a review policy designed for today's models will take effect after those models have been replaced, and their replacements will be replaced in turn.
+Such policies should be designed for capabilities that keep increasing, not for any one generation of models.
+Institutions should also plan ahead and decide now how they will respond when agent review is shown to be as reliable as expert review, when agents overtake people in their field, or when automated laboratories make experiments cheap to run.
+Some AI developers already make commitments of this kind for their own models, tying required safeguards to measured capabilities~\citep{anthropic2026rsp}.
+Research institutions should do the same.
+
+Some responses have begun.
+More than two dozen Fields medalists, winners of the top prize in mathematics, signed a declaration warning that the push by AI companies to solve mathematical problems as benchmarks harms mathematics, and calling for the problem to be addressed urgently~\citep{fields2026declaration}.
+OpenAI has formed an independent advisory group of mathematicians to advise it on how to assess and communicate new results~\citep{openai2026advisory}.
+We welcome both as first steps, and we share the concern that results announced in a rush can get ahead of understanding.
+We do not think that aiming AI at famous problems is itself the harm.
+Anyone can now aim AI at famous problems, so such attempts will happen whether or not anyone approves; what matters is how we prepare for them.
+And both responses concern mathematics and the AI companies.
+Our runs were in optimization, thermodynamics, transport, and catalysis, with models anyone can buy.
+The same questions arise wherever agents can produce results faster than people can review them, and that is already true well beyond mathematics.
+
+\section*{What to do now}
+
+\textbf{Run the experiment in your own field.}
+The paper includes examples of our prompts.
+Use the best models available when you read this.
+If you want to compare with us, supply no ideas of your own.
+
+\textbf{Report what you find:} what you asked, what came back, what you checked, and what you did not.
+
+\textbf{Judge the results against the trend, not only against today's models.}
+If the agents fail, report that too, with the model and the date, and repeat the experiment as new models arrive.
+Capability is uneven, so the same agents may fail on one problem and do remarkable work on the next.
+The telling comparison is with what agents could do six months or a year ago.
+Then extend that trend a few years, and ask what your field should be doing now.
+
+\textbf{Start preparing now.}
+Do not wait until AI clears some higher bar, such as producing results better than anyone else can.
+Discuss with your colleagues, students, institution, and funders what your field should change: how results are reviewed and credited, how students are trained, and what researchers are for.
+Prepare for capabilities that keep increasing, not only for today's models.
+
+The sooner many people report, the sooner this conversation rests on evidence instead of opinion.
+But preparation should not wait for that evidence: it should have started yesterday, and it should start now.
+
+\section*{All results}
+
+This table is the same as the research inventory in the paper.
+Each row is a group of related results that could stand as one paper, whether or not the paper has been written.
+The contributions are the agents' claims, as stated in their own write-ups and notes; we have not checked all of them.
+We left out results that the agents themselves marked as superseded, refuted, or withdrawn, results too small to stand as a paper, and clusters whose main result the agents' own literature checks found to be already known.
+In catalysis, the agents proposed experimental programs, and none of the experiments have been run.
+
+The links in the Write-up column go to the drafts at \corpussnapshot\ (tag \texttt{paper-v1}), which holds the agents' output as of 25 September 2026, before any scientific input from us; the Lean column gives the status on that date.
+Later versions of the repository may add results and our own scientific input.
+Rows marked ``Notes only'' have no draft; their results are in the agents' notes in the same repository.
+
+\input{inventory}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}
