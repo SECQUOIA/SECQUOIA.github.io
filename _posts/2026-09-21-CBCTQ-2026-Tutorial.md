@@ -10,6 +10,6 @@ David Bernal Neira presented the tutorial "Quantum computing for operations rese
 
 The tutorial covers the state of quantum computing for operations research, including QUBO formulations, quantum annealing, the quantum approximate optimization algorithm (QAOA), and variational quantum eigensolvers (VQE), with hands-on examples run on quantum simulators, annealers, and gate-based hardware.
 
-The abstract and the slides are available on the [tutorial page](/cbctq2026-tutorial/).
+The abstract, the slides, and the hands-on Jupyter notebooks (runnable in Google Colab in Julia or Python) are available on the [tutorial page](/cbctq2026-tutorial/). The slides were revised on 27 September 2026 with layout fixes.
 
 [Back to News](/3-news.html){: .button .icon .fa-arrow-left }

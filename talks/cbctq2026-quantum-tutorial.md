@@ -2,6 +2,8 @@
 layout: page
 title: 'Quantum Computing for Operations Research'
 permalink: /cbctq2026-tutorial/
+redirect_from:
+- /ifors2026-tutorial/
 image: assets/images/conference.webp
 description: 'Tutorial by David Bernal Neira at CBCTQ 2026: current state and perspectives on quantum computing for operations research'
 nav-menu: false

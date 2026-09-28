@@ -34,6 +34,10 @@ socials:
 # build settings
 markdown: kramdown
 
+plugins:
+- jekyll-timeago
+- jekyll-redirect-from
+
 sass:
   style: compressed
 
@@ -42,3 +46,19 @@ exclude:
 - LICENSE.md
 - CONTRIBUTING.md
 - README.md
+- Dockerfile
+- validate.sh
+- resize_images.sh
+- scripts/
+- test/
+# Slide sources and other working files must never be copied into the
+# published site. Jekyll exclude globs also match nested paths, so keep this
+# list to file types that never belong anywhere in the site; drafts are kept
+# out through .gitignore (root-anchored) and scripts/check_repo_hygiene.sh
+# instead, because "*-draft.md" here would also drop a post whose slug ends
+# in -draft. PDFs belong in assets/pdf/.
+- "*.pptx"
+- "*.ppt"
+- "*.docx"
+- "*.key"
+- "*.zip"
