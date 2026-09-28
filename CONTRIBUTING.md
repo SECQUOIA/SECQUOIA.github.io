@@ -29,21 +29,23 @@ print a `secquoia.github.io/...` URL that keeps working if the target moves.
 
 ### Blog posts from LaTeX
 
-1. Keep the article, bibliography, and included LaTeX files together under
-   `_sources/<post-slug>/`. This directory is excluded from the published site.
+1. Keep local copies of the article, bibliography, and included LaTeX files under
+   `_sources/<post-slug>/`. This directory is ignored by Git and excluded from
+   the published site. Commit the converted post and its website assets.
 2. Create `_posts/YYYY-MM-DD-short-title.md` with `layout: post`, a title,
    description, date, and an existing or new WebP image. Posts appear
    automatically in the News archive. A `permalink` gives the article a stable URL.
 3. Convert the prose to Markdown and resolve the BibTeX citations into linked
    references before committing. The deployed site does not run LaTeX,
-   BibTeX, or Pandoc. Retain the source files for future corrections.
+   BibTeX, or Pandoc. Retain local source copies for future corrections.
 4. Render equations with MathJax when needed. Check custom macros, cross-references,
    and every table row after conversion; complex LaTeX tables need manual
    adaptation. Give wide tables a scrollable wrapper and figures useful text
    alternatives. Reference raster figures in WebP format.
 5. Check the page at desktop and phone widths, verify citations and asset links,
    and run `./validate.sh` before opening a draft PR. Resolve source TODOs before
-   publishing.
+   publishing. Use the PR's `preview-site` workflow artifact for review;
+   screenshots can stay local under `_sources/`.
 
 ### Files and sizes
 
