@@ -6,7 +6,7 @@ author: "Sergey Gusev and David E. Bernal Neira"
 image: assets/images/ai-agents-research/cover-en.webp
 social_image: /assets/images/ai-agents-research/cover-en.png
 social_image_alt: "SECQUOIA cover for “AI agents can already do research. Now what?”: a team of AI-agent figures works with research notes and a computer."
-methodology_image_alt: "Three steps: describe the problem or field; provide papers and tools; ask a swarm of agents to make progress without stopping, with fresh-agent review, write-ups, and verification."
+methodology_image_alt: "Describe the problem. Equip and start the swarm. Review, write, and verify."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400

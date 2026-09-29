@@ -6,7 +6,7 @@ author: "Sergey Gusev y David E. Bernal Neira"
 image: assets/images/ai-agents-research/cover-es.webp
 social_image: /assets/images/ai-agents-research/cover-es.png
 social_image_alt: "Portada de SECQUOIA para «Los agentes de IA ya pueden investigar. ¿Y ahora qué?»: figuras de agentes de IA trabajan con notas de investigación y una computadora."
-methodology_image_alt: "Tres pasos: describir el problema o el campo; proporcionar artículos y herramientas; pedir a un enjambre de agentes que avance sin detenerse, con revisión por un agente nuevo, redacción y verificación."
+methodology_image_alt: "Describir el problema. Equipar y poner en marcha el enjambre. Revisar, redactar y verificar."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400

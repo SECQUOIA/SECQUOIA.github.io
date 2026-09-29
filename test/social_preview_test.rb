@@ -72,6 +72,10 @@ end
   steps = figure.css(".research-steps > li")
   exported_steps = svg.css("g.step")
   abort "#{language}: expected three article and methodology steps" unless steps.length == 3 && exported_steps.length == 3
+  expected_alt = steps.map { |step| step.at_css("h3").text.split.join(" ") }.join(" ")
+  unless inline["alt"] == expected_alt
+    abort "#{language}: methodology alt text differs from the current step headings"
+  end
   steps.zip(exported_steps).each_with_index do |(original, exported), index|
     expected = original.text.split.join(" ")
     actual = exported.css("text").map(&:text).join(" ").split.join(" ")

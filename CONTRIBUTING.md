@@ -66,14 +66,19 @@ The AI agents article uses two distinct visuals in each language, stored in
   complete three-step wording. Its PNG/WebP exports contain every heading and
   sentence from the article's `research-steps` list, word for word. Keep the SVG
   and article text synchronized; do not abbreviate captions to make them fit.
+  Keep each page's `methodology_image_alt` equal to its three step headings,
+  in order, separated by spaces.
 
 Both visuals use the site's charcoal, ivory and gold palette and export at
 1200 × 630. The methodology image appears on desktop; phones and print use the
 same complete wording as readable native cards. The ordered list also remains
 available to screen readers on desktop.
 
-The covers were generated with the built-in imagegen tool and localized while
-preserving the artwork. Edit them using the existing cover as the reference.
+The covers are one-off, AI-generated raster artwork. Treat the committed
+`cover-<lang>.png` files as the editable originals: start from the matching PNG
+in an image editor when changing the title, artwork, or language, preserve the
+1200 × 630 canvas, and export its WebP counterpart after saving the PNG.
+There is no reproducible source or generator for these covers.
 The methodology SVG is editable; its text uses DejaVu Sans Condensed. Regenerate
 its exports with ImageMagick, and check every translated line for clipping:
 
