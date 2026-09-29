@@ -844,8 +844,8 @@ Status values:
 
 - **Lean.** *Done*: the main mathematical results are proved in Lean, with no unproved steps; software and experiments are not covered.
   *Partial*: some of the results are proved in Lean, but not all.
-  *Possible*: not done, but the main claims are mathematical statements that could be formalized with current libraries; this is a judgement, not a check.
-  *Not applicable*: the main claims rest on numerical evidence, experiments, or modelling assumptions, or require a framework that current formal libraries do not provide, such as complexity classes, quantum query models, or limit theorems for stochastic processes.
+  *Possible*: not done, but the main claims are mathematical statements that could be formalized with current libraries; this is a judgment, not a check.
+  *Not applicable*: the main claims rest on numerical evidence, experiments, or modeling assumptions, or require a framework that current formal libraries do not provide, such as complexity classes, quantum query models, or limit theorems for stochastic processes.
 
 <h2 class="unnumbered" id="references">References</h2>
 

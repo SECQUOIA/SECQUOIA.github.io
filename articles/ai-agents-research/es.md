@@ -386,7 +386,7 @@ También reformula los resultados sobre brechas multilineales positivas y cúbic
 <tr id="result-m5">
 <th scope="row" style="text-align: left;">M5</th>
 <td style="text-align: left;"><strong>Dimensión entera en la aproximación convexa entera mixta de gráficas no lineales.</strong>
-Para un sistema cuadrático fijo sobre una caja, el número mínimo de variables enteras o binarias de una representación convexa extendida con precisión <span class="math inline">\(\varepsilon\)</span> es <span class="math inline">\(\frac{1}{2}\,\mathrm{ncrank}\cdot\log_2(1/\varepsilon)+O(1)\)</span>, donde ncrank es el rango no conmutativo del espacio de Hessianas; construcciones racionales en tiempo polinómico.
+Para un sistema cuadrático fijo sobre una caja, el número mínimo de variables enteras o binarias de una representación convexa extendida con precisión <span class="math inline">\(\varepsilon\)</span> es <span class="math inline">\(\frac{1}{2}\,\mathrm{ncrank}\cdot\log_2(1/\varepsilon)+O(1)\)</span>, donde ncrank es el rango no conmutativo del espacio de hessianas; construcciones racionales en tiempo polinómico.
 Se basa en <span class="citation" data-cites="lubin2022representability beach2022compact"><a href="#ref-lubin2022representability" role="doc-biblioref">[12]</a>, <a href="#ref-beach2022compact" role="doc-biblioref">[13]</a></span>.</td>
 <td style="text-align: left;"><a href="https://github.com/SECQUOIA/agent-swarm-research/blob/84c6be7aad17d085e5343e789885c1cbcbbd4e07/minlp-notes/paper-integer-dimension/build/main.pdf">Artículo completo</a></td>
 <td style="text-align: left;">Parcial</td>
@@ -431,7 +431,7 @@ Trabajos relacionados: <span class="citation" data-cites="bienstock2019acpf lehm
 <tr id="result-m11">
 <th scope="row" style="text-align: left;">M11</th>
 <td style="text-align: left;"><strong>Optimización binivel estructurada con muchas variables del seguidor: respuestas globales, precisión y fronteras estructurales.</strong>
-Una descripción de dimensión fija de todas las respuestas globales del seguidor proporciona algoritmos polinómicos exactos; líderes racionales con error <span class="math inline">\(2^{-B}\)</span> para costos estrictamente convexos; dificultad con Hessianas densas cercanas a la identidad.</td>
+Una descripción de dimensión fija de todas las respuestas globales del seguidor proporciona algoritmos polinómicos exactos; líderes racionales con error <span class="math inline">\(2^{-B}\)</span> para costos estrictamente convexos; dificultad con hessianas densas cercanas a la identidad.</td>
 <td style="text-align: left;"><a href="https://github.com/SECQUOIA/agent-swarm-research/blob/84c6be7aad17d085e5343e789885c1cbcbbd4e07/minlp-notes/paper-structured-bilevel/paper.pdf">Artículo completo</a></td>
 <td style="text-align: left;">Posible</td>
 </tr>
@@ -482,7 +482,7 @@ Se basa en <span class="citation" data-cites="belotti2025monomials"><a href="#re
 <tr id="result-m18">
 <th scope="row" style="text-align: left;">M18</th>
 <td style="text-align: left;"><strong>Optimización cuadrática exacta con indicadores y ancho de árbol bajo.</strong>
-NP-difícil con ancho de banda dos y Hessianas arbitrariamente cercanas a la identidad; con penalizaciones de indicadores perturbadas aleatoriamente, algoritmos exactos con tiempo esperado polinómico en operaciones de bits para ancho de árbol fijo.</td>
+NP-difícil con ancho de banda dos y hessianas arbitrariamente cercanas a la identidad; con penalizaciones de indicadores perturbadas aleatoriamente, algoritmos exactos con tiempo esperado polinómico en operaciones de bits para ancho de árbol fijo.</td>
 <td style="text-align: left;"><a href="https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07/minlp-notes" title="Ver las notas de esta área en el commit citado">Solo notas</a></td>
 <td style="text-align: left;">No aplica</td>
 </tr>
@@ -539,7 +539,7 @@ Se basa en <span class="citation" data-cites="padberg1985fixedcharge"><a href="#
 <tbody>
 <tr id="result-q1">
 <th scope="row" style="text-align: left;">Q1</th>
-<td style="text-align: left;"><strong>Subniveles del objetivo y condicionamiento de la Hessiana de la trayectoria central.</strong>
+<td style="text-align: left;"><strong>Subniveles del objetivo y condicionamiento de la hessiana de la trayectoria central.</strong>
 Para toda barrera autoconcordante, el condicionamiento es <span class="math inline">\(\Theta((\mathrm{diam}\,L(g)/g)^2)\)</span>; los espectros de los programas lineales tienen dos escalas.</td>
 <td style="text-align: left;"><a href="https://github.com/SECQUOIA/agent-swarm-research/blob/84c6be7aad17d085e5343e789885c1cbcbbd4e07/qipm-notes/conditioning-paper/main.pdf">Artículo completo</a></td>
 <td style="text-align: left;">Parcial</td>
@@ -555,7 +555,7 @@ Se basa en <span class="citation" data-cites="nesterov2008centralpaths"><a href=
 <tr id="result-q3">
 <th scope="row" style="text-align: left;">Q3</th>
 <td style="text-align: left;"><strong>Modelos de acceso y masa del lado derecho en la resolución de sistemas de Newton.</strong>
-Las Hessianas de programas lineales degenerados tienen dos grupos de valores propios que el método de gradientes conjugados maneja en un número polilogarítmico de iteraciones, mientras que el acceso simple por bloques conserva el costo conocido <span class="math inline">\(\tilde\Theta(\kappa)\)</span>; el acoplamiento del lado derecho con los valores propios pequeños determina cuándo ayuda el filtrado.</td>
+Las hessianas de programas lineales degenerados tienen dos grupos de valores propios que el método de gradientes conjugados maneja en un número polilogarítmico de iteraciones, mientras que el acceso simple por bloques conserva el costo conocido <span class="math inline">\(\tilde\Theta(\kappa)\)</span>; el acoplamiento del lado derecho con los valores propios pequeños determina cuándo ayuda el filtrado.</td>
 <td style="text-align: left;"><a href="https://github.com/SECQUOIA/agent-swarm-research/blob/84c6be7aad17d085e5343e789885c1cbcbbd4e07/qipm-notes/paper/main.pdf">Documento de resumen</a></td>
 <td style="text-align: left;">Parcial</td>
 </tr>
@@ -780,7 +780,7 @@ Cotas uniformes del error cerca de la criticidad para la extinción bajo acoplam
 <tr id="result-ca1">
 <th scope="row" style="text-align: left;">CA1</th>
 <td style="text-align: left;"><strong>Gestión física del agua en la síntesis de Fischer–Tropsch.</strong>
-Prueba si añadir un polímero hidrófobo en una etapa tardía protege el cobalto acondicionado; un nuevo análisis de datos publicados encuentra, con el polímero, una producción de aproximadamente 1.9 veces la de referencia.</td>
+Prueba si añadir un polímero hidrófobo en una etapa tardía protege el cobalto acondicionado; un nuevo análisis de datos publicados encuentra, con el polímero, una producción de aproximadamente 1,9 veces la de referencia.</td>
 <td style="text-align: left;"><a href="https://github.com/SECQUOIA/agent-swarm-research/blob/84c6be7aad17d085e5343e789885c1cbcbbd4e07/catalysis-notes/manuscript/main.pdf">Documento del programa</a></td>
 <td style="text-align: left;">No aplica</td>
 </tr>
