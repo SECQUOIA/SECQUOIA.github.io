@@ -1,7 +1,8 @@
 ---
 ---
 
-// Accent colours from the site theme palette (_sass/libs/_vars.scss: fg and fg-bold).
+// Consume the shared light/dark palette when present. Fallbacks preserve the
+// existing gold-on-charcoal theme until the shared theme change lands.
 $gold: #ceb888;
 $gold-bold: #d4c294;
 
@@ -36,9 +37,9 @@ $gold-bold: #d4c294;
   li {
     position: relative;
     padding: 1.4em 1.5em 1.5em;
-    border: 1px solid rgba($gold, 0.25);
+    border: 1px solid var(--accent-border, rgba($gold, 0.25));
     border-radius: 0.5em;
-    background: rgba($gold, 0.05);
+    background: var(--accent-bg, rgba($gold, 0.05));
   }
 
   // Arrow centered in the gap before each step after the first.
@@ -49,14 +50,14 @@ $gold-bold: #d4c294;
     left: -2.5em;
     width: 2.5em;
     transform: translateY(-50%);
-    color: $gold-bold;
+    color: var(--accent, #{$gold-bold});
     text-align: center;
   }
 
   .step-number {
     display: block;
     margin-bottom: 0.5em;
-    color: $gold-bold;
+    color: var(--accent, #{$gold-bold});
     font-size: 1.6em;
     font-weight: 700;
     line-height: 1;
@@ -84,9 +85,9 @@ $gold-bold: #d4c294;
 .objection {
   margin: 0 0 1.75em;
   padding: 1.1em 1.4em 1.2em;
-  border-left: 3px solid $gold-bold;
+  border-left: 3px solid var(--accent-border, #{$gold-bold});
   border-radius: 0 0.5em 0.5em 0;
-  background: rgba($gold, 0.05);
+  background: var(--accent-bg, rgba($gold, 0.05));
 
   p {
     margin: 0;
@@ -95,7 +96,7 @@ $gold-bold: #d4c294;
   p > strong:first-child {
     display: block;
     margin-bottom: 0.5em;
-    color: $gold-bold;
+    color: var(--accent, #{$gold-bold});
     font-size: 1.1em;
     line-height: 1.45;
   }
@@ -113,10 +114,10 @@ $gold-bold: #d4c294;
 
   li {
     padding: 1.2em 0;
-    border-top: 1px solid rgba($gold, 0.2);
+    border-top: 1px solid var(--accent-border, rgba($gold, 0.2));
 
     &:last-child {
-      border-bottom: 1px solid rgba($gold, 0.2);
+      border-bottom: 1px solid var(--accent-border, rgba($gold, 0.2));
     }
   }
 
@@ -129,12 +130,12 @@ $gold-bold: #d4c294;
     margin-bottom: 0.4em;
   }
 
-  // Highlighter mark in the theme's gold (fg-bold text on a border-bg tint).
+  // Highlighter mark using the active accent palette.
   .position {
     padding: 0.05em 0.25em;
     border-radius: 0.2em;
-    background: rgba($gold, 0.16);
-    color: $gold-bold;
+    background: var(--accent-mark, rgba($gold, 0.16));
+    color: var(--accent, #{$gold-bold});
     font-weight: 600;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -158,14 +159,14 @@ $gold-bold: #d4c294;
     gap: 0 1em;
     margin: 0 0 1em;
     padding: 1.2em 1.4em;
-    border: 1px solid rgba($gold, 0.25);
+    border: 1px solid var(--accent-border, rgba($gold, 0.25));
     border-radius: 0.5em;
-    background: rgba($gold, 0.05);
+    background: var(--accent-bg, rgba($gold, 0.05));
     counter-increment: action;
 
     &::before {
       content: counter(action, decimal-leading-zero);
-      color: $gold-bold;
+      color: var(--accent, #{$gold-bold});
       font-size: 1.6em;
       font-weight: 700;
       line-height: 1;
@@ -179,11 +180,11 @@ $gold-bold: #d4c294;
 
 .research-inventory {
   margin-bottom: 2.5rem;
-  border: 1px solid rgba($gold, 0.2);
+  border: 1px solid var(--accent-border, rgba($gold, 0.2));
   border-radius: 0.25rem;
 
   &:focus-visible {
-    outline: 2px solid $gold-bold;
+    outline: 2px solid var(--highlight, #{$gold-bold});
     outline-offset: 3px;
   }
 
@@ -226,9 +227,10 @@ $gold-bold: #d4c294;
   width: max-content;
   max-width: min(30em, calc(100vw - 16px));
   padding: 0.75em 1em;
-  border: 1px solid rgba($gold, 0.35);
+  border: 1px solid var(--accent-border, rgba($gold, 0.35));
   border-radius: 0.4em;
-  background: #242424;
+  background: var(--surface, #242424);
+  color: var(--fg, #{$gold});
   box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.45);
   font-size: 0.85em;
   line-height: 1.55;
@@ -251,7 +253,7 @@ $gold-bold: #d4c294;
   .csl-left-margin {
     flex: 0 0 2em;
     white-space: nowrap;
-    color: $gold-bold;
+    color: var(--accent, #{$gold-bold});
   }
 
   .csl-right-inline {
