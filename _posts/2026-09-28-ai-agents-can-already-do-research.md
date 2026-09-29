@@ -10,18 +10,19 @@ permalink: /ai-agents-can-already-do-research/
 
 <link rel="stylesheet" href="{{ '/assets/css/ai-agents-research.css' | relative_url }}">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script defer src="{{ '/assets/js/reference-previews.js' | relative_url }}"></script>
 
 *What happened when we tried it ourselves, and why our institutions are not ready*
 
 **Sergey Gusev and David E. Bernal Neira** · Purdue University · September 2026
 
-[Research inventory](#all-results) · [References](#references)
+[What the agents produced (as of 25 September 2026)](#all-results) · [References](#references)
 
 This summer brought two headline results in mathematics.
 In August, an Anthropic staff member with no mathematical training asked an unreleased Claude model to “take a real stab” at the Riemann hypothesis, one of the most famous unsolved problems in mathematics.
 The hypothesis says that certain zeros of a function all lie on one line.
 The model did not prove that, but it proved that more than 66% of them do, up from the previous best of about 42%, a share that mathematicians had raised only in small steps for decades [\[1\]](#ref-alpoge2026-more-than-two-thirds-of).
-In September, OpenAI announced that about ten thousand AI agents, working for 88 hours, had produced a proof for a version of another famous open problem, about the equations of fluid flow; independent review is still under way [\[2\]](#ref-openai2026navierstokes).
+In September, OpenAI announced that about ten thousand AI agents, working for 88 hours, had produced a proof for a version of another famous open problem, about the Navier–Stokes equations of fluid flow; independent review is still under way [\[2\]](#ref-openai2026navierstokes).
 By one outside estimate, that run would have cost a customer several million dollars [\[3\]](#ref-duraisamy2026navierstokescost).
 OpenAI has since said that the model behind that run has resolved more than 100 further open problems; it has not yet published them [\[4\]](#ref-openai2026advisory).
 
@@ -120,6 +121,7 @@ But the output deserves review.
 
 These are some of the responses we often hear.
 
+<div class="objection" markdown="1">
 **“The results are not impressive.
 A good researcher would have found them.”**
 Maybe.
@@ -128,20 +130,27 @@ What matters more than whether agents beat the best person in a field is how muc
 Everyone except the top one percent?
 Everyone except one person?
 We think agents already match many working researchers, including us.
+</div>
 
+<div class="objection" markdown="1">
 **“It is a statistical machine.
 It can only recombine what it has seen.”**
 Much of research recombines too: a known technique applied to a new problem, or ideas from two fields joined together.
 Whether a result is correct, new, and useful can be checked without knowing who or what produced it.
+</div>
 
+<div class="objection" markdown="1">
 **“It might all be wrong.”**
 Some of it may be.
 But in what we have checked so far, we have found no scientific error that would invalidate a result.
 And we released all of it, so you can check it yourself.
+</div>
 
+<div class="objection" markdown="1">
 **“I refuse to use these tools on principle.”**
 That is a legitimate choice.
 But others in your field will use them, and you will be compared with them in hiring, funding, and promotion.
+</div>
 
 When a study shows something AI cannot do, check which model it tested and when.
 Such limits have repeatedly been overtaken within months, on a trend that has itself been measured [\[6\]](#ref-kwa2025-measuring-ai-ability-to-complete).
@@ -149,13 +158,16 @@ If you can do better than the models today, that tells you only about today’s 
 
 <h2 class="unnumbered" id="if-you-are-an-enthusiast">If you are an enthusiast</h2>
 
+<div class="objection" markdown="1">
 **“Research just got easier.
 With the newest models and enough computation, anyone can produce results.”**
 That may well be true, but it raises problems that we cannot answer.
 If results depend only on the model and the budget, then the researcher is not needed.
 Anyone who cares about a problem can pay for the computation directly, and the company that runs the model has the newest models first and pays the least for computation.
 And if results follow budgets, who gets to do research, what should the human contribution be, and what is it worth?
+</div>
 
+<div class="objection" markdown="1">
 **“Then I will be the reviewer.”**
 That is not a safe role either.
 We could not review fast enough.
@@ -163,6 +175,7 @@ Every error we know of in our corpus was found and fixed by agents before any of
 Agents can be run as reviewers in large numbers as easily as they are run to produce results.
 And nobody chooses a research career to sign off on a machine’s output.
 A system built on human sign-off would fill with reviews that were never really done.
+</div>
 
 So what, exactly, is the researcher’s role?
 What would someone pay a person for that they cannot get from the model directly?
@@ -173,39 +186,41 @@ We do not have a satisfying answer.
 We would rather take positions and be wrong than only ask questions.
 This is where we stand today.
 
+<div class="positions" markdown="1">
+
 - **How should results be trusted when review, not production, is scarce?**
-  By measurement.
+  <span class="position">By measurement.</span>
   Put results in a form a machine can check wherever possible, and build machine-checked libraries of established results in every field whose reasoning is mathematical, such as physics, chemistry, and engineering, not only in mathematics itself.
   Have experts check a sample of what agent reviewers approve, publish how often they miss errors, and accept results from a process that meets the field’s standard.
 
 - **Which results need a person to understand them?**
-  Decide on purpose, by what is at stake and by measured error rates, and revisit the decision with each new model.
+  <span class="position">Decide on purpose</span>, by what is at stake and by measured error rates, and revisit the decision with each new model.
 
 - **What counts as new when agents cannot read much of the literature, because it is behind paywalls?**
-  Open the literature.
+  <span class="position">Open the literature.</span>
   Work presented as public knowledge should be readable by every person and every agent that does research.
 
 - **What should publication become?**
-  Release claims with their verification status (machine-checked, reviewed by agents, audited by sampling, or reviewed by a person) and with links to the checks.
+  <span class="position">Release claims with their verification status</span> (machine-checked, reviewed by agents, audited by sampling, or reviewed by a person) and with links to the checks.
 
 - **What do credit and paper counts mean when the human input is a prompt?**
-  Stop counting papers.
+  <span class="position">Stop counting papers.</span>
   Judge results by whether they are correct, new, useful, and checked, and do not punish people for saying how they were produced.
   Rules against using AI cannot be enforced; they only push its use into hiding.
   The current system of credit is already being broken in private, and we think it is better to break it in public, where its replacement can be discussed.
 
 - **Why would anyone pay a researcher?**
-  Less for producing results, and more for understanding them, checking them, and deciding where the work should go.
+  <span class="position">Less for producing results, and more for understanding them, checking them, and deciding where the work should go.</span>
   There may also be more demand for researchers, not less, through an effect known as the Jevons paradox: making a resource cheaper to use can increase how much of it is used.
   In the 19th century, the economist William Stanley Jevons observed that when steam engines began to use coal more efficiently, total coal use rose, because cheaper power made new uses worthwhile [\[7\]](#ref-jevons1865coal).
   Cheap results could likewise make far more questions worth asking and far more directions worth exploring, and people could be needed to choose among them, steer the agents, and put the results to use.
 
 - **Does the best researcher become the one with the largest budget?**
   Results will increasingly depend on how much computation a researcher can pay for, and we do not think that can be avoided.
-  Decide openly how to handle it, instead of drifting into it: whether institutions should provide computation as a shared resource, like libraries and laboratories, and whether assessment can separate what a person did from what their budget did.
+  <span class="position">Decide openly how to handle it</span>, instead of drifting into it: whether institutions should provide computation as a shared resource, like libraries and laboratories, and whether assessment can separate what a person did from what their budget did.
 
 - **How should people learn a field that machines can already work in?**
-  Teach more, not less, but differently.
+  <span class="position">Teach more, not less, but differently.</span>
   Aim training at understanding and judgment, and stop drilling students in skills that they now only need to understand.
   Fund the training of junior researchers on purpose.
   On a fixed budget, one senior researcher plus computation produces more than a group of students; a field that funds research on that basis will have no senior researchers in a generation.
@@ -213,14 +228,16 @@ This is where we stand today.
 - **What happens when agents are run over whole fields?**
   It will happen.
   Model developers, funders, and governments can afford it, and nobody can stop everyone else from doing it.
-  We think it should happen in the open, with checking funded alongside production.
+  We think <span class="position">it should happen in the open, with checking funded alongside production</span>.
   Running agents over a whole field also gives that field a baseline: what agents can do on their own.
   What people add on top of that baseline is the human contribution.
 
 - **How do people stay in control of research they cannot keep up with?**
   We expect agents to move far ahead of people in some fields, probably in mathematics first.
-  Keeping up is not a realistic goal; staying in control is.
+  <span class="position">Keeping up is not a realistic goal; staying in control is.</span>
   That means people set the goals and can stop the runs, enough people understand each field well enough to audit it, and there are guardrails where a correct result can do harm.
+
+</div>
 
 <h2 class="unnumbered" id="what-we-do-not-know">What we do not know</h2>
 
@@ -262,28 +279,32 @@ The same questions arise wherever agents can produce results faster than people 
 
 <h2 class="unnumbered" id="what-to-do-now">What to do now</h2>
 
-**Run the experiment in your own field.**
-The paper includes examples of our prompts.
-Use the best models available when you read this.
-If you want to compare with us, supply no ideas of your own.
+<div class="action-steps" markdown="1">
 
-**Report what you find:** what you asked, what came back, what you checked, and what you did not.
+1. **Run the experiment in your own field.**
+   The paper includes examples of our prompts.
+   Use the best models available when you read this.
+   If you want to compare with us, supply no ideas of your own.
 
-**Judge the results against the trend, not only against today’s models.**
-If the agents fail, report that too, with the model and the date, and repeat the experiment as new models arrive.
-Capability is uneven, so the same agents may fail on one problem and do remarkable work on the next.
-The telling comparison is with what agents could do six months or a year ago.
-Then extend that trend a few years, and ask what your field should be doing now.
+1. **Report what you find:** what you asked, what came back, what you checked, and what you did not.
 
-**Start preparing now.**
-Do not wait until AI clears some higher bar, such as producing results better than anyone else can.
-Discuss with your colleagues, students, institution, and funders what your field should change: how results are reviewed and credited, how students are trained, and what researchers are for.
-Prepare for capabilities that keep increasing, not only for today’s models.
+1. **Judge the results against the trend, not only against today’s models.**
+   If the agents fail, report that too, with the model and the date, and repeat the experiment as new models arrive.
+   Capability is uneven, so the same agents may fail on one problem and do remarkable work on the next.
+   The telling comparison is with what agents could do six months or a year ago.
+   Then extend that trend a few years, and ask what your field should be doing now.
+
+1. **Start preparing now.**
+   Do not wait until AI clears some higher bar, such as producing results better than anyone else can.
+   Discuss with your colleagues, students, institution, and funders what your field should change: how results are reviewed and credited, how students are trained, and what researchers are for.
+   Prepare for capabilities that keep increasing, not only for today’s models.
+
+</div>
 
 The sooner many people report, the sooner this conversation rests on evidence instead of opinion.
 But preparation should not wait for that evidence: it should have started yesterday, and it should start now.
 
-<h2 class="unnumbered" id="all-results">All results</h2>
+<h2 class="unnumbered" id="all-results">What the agents produced</h2>
 
 These tables contain the same research inventory as the paper, grouped by area.
 Each row is a group of related results that could stand as one paper, whether or not the paper has been written.
