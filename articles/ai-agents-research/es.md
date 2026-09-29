@@ -18,37 +18,37 @@ show_tile: false
 
 *Qué pasó cuando lo intentamos nosotros mismos y por qué nuestras instituciones no están preparadas*
 
-**Sergey Gusev y David E. Bernal Neira** · Universidad Purdue · Septiembre de 2026
+**Sergey Gusev y David E. Bernal Neira** · Universidad Purdue · septiembre de 2026
 
 [Lo que produjeron los agentes (hasta el 25 de septiembre de 2026)](#all-results) · [Referencias](#references)
 
-Este verano hubo dos resultados matemáticos que acapararon los titulares.
+Este verano hubo dos resultados matemáticos que acapararon titulares.
 En agosto, una persona de Anthropic sin formación matemática le pidió a un modelo de Claude aún no publicado que «intentara en serio» resolver la hipótesis de Riemann, uno de los problemas abiertos más famosos de las matemáticas.
 La hipótesis afirma que ciertos ceros de una función están todos sobre una misma recta.
-El modelo no demostró eso, pero sí demostró que más del 66 % de ellos lo están, frente al mejor resultado anterior, de alrededor del 42 %: una proporción que los matemáticos llevaban décadas aumentando solo a pequeños pasos [\[1\]](#ref-alpoge2026-more-than-two-thirds-of).
-En septiembre, OpenAI anunció que unos diez mil agentes de IA, trabajando durante 88 horas, habían producido una demostración de una versión de otro famoso problema abierto, relacionado con las ecuaciones de Navier–Stokes del movimiento de fluidos; la revisión independiente sigue en curso [\[2\]](#ref-openai2026navierstokes).
-Según una estimación externa, esa ejecución le habría costado a un cliente varios millones de dólares [\[3\]](#ref-duraisamy2026navierstokescost).
-OpenAI ha afirmado desde entonces que el modelo utilizado en esa ejecución ha resuelto más de 100 problemas abiertos adicionales; todavía no los ha publicado [\[4\]](#ref-openai2026advisory).
+El modelo no demostró eso, pero sí demostró que más del 66 % de ellos lo están, frente al mejor resultado anterior, de alrededor del 42 %: una proporción que los matemáticos llevaban décadas aumentando solo en pequeños pasos [\[1\]](#ref-alpoge2026-more-than-two-thirds-of).
+En septiembre, OpenAI anunció que unos diez mil agentes de inteligencia artificial (IA), trabajando durante 88 horas, habían producido una demostración de una versión de otro famoso problema abierto, relacionado con las ecuaciones de Navier–Stokes del movimiento de fluidos; la revisión independiente sigue en curso [\[2\]](#ref-openai2026navierstokes).
+Según una estimación externa, esa ejecución le habría costado a un cliente externo varios millones de dólares [\[3\]](#ref-duraisamy2026navierstokescost).
+OpenAI ha afirmado desde entonces que el modelo utilizado en esa ejecución ha resuelto más de 100 problemas abiertos adicionales, aunque todavía no los ha publicado [\[4\]](#ref-openai2026advisory).
 
 Ambos resultados surgieron dentro de empresas de IA, con modelos aún no publicados y presupuestos que ningún grupo de investigación tiene.
-¿Puede un grupo de investigación corriente, con modelos que cualquiera puede contratar, conseguir que los agentes hagan investigación de verdad?
+¿Puede un grupo de investigación ajeno a esas empresas, con modelos que cualquiera puede adquirir, conseguir que los agentes hagan investigación de verdad?
 
 Lo intentamos nosotros mismos.
 Funciona, a una escala menor que las ejecuciones de las empresas de IA y por una pequeña fracción de su costo.
 
 Durante las últimas semanas, les dimos a grupos de agentes de IA un área de investigación, desde un tema específico hasta un campo completo.
 Les proporcionamos artículos y herramientas de cómputo, y les dijimos que lograran avances reales, correctos y útiles, y que no se detuvieran.
-No les dimos ninguna idea.
+No les dimos ninguna idea extra.
 
 Durante el primer día de una de las ejecuciones, los agentes habían escrito más notas de las que podíamos leer en una semana.
-En pocas semanas, habían producido material para 45 posibles artículos en las cinco áreas que les asignamos: programación no lineal entera mixta, métodos cuánticos de punto interior, termodinámica molecular, teoría del transporte y cinética de agregación.
-En una sexta área, la catálisis, les pedimos experimentos, y diseñaron programas de experimentos de laboratorio; nadie los ha realizado, así que todavía no podemos decir qué tan buenos son.
+En pocas semanas, habían producido material para 45 posibles artículos científicos en las cinco áreas que les asignamos: programación no lineal entera mixta, métodos cuánticos de punto interior, termodinámica molecular, teoría del transporte y cinética de agregación.
+En una sexta área, la catálisis heterogénea, les pedimos experimentos, y diseñaron experimentos de laboratorio; nadie los ha realizado aún, así que todavía no podemos decir qué tan buenos son.
 No lo hemos revisado todo y aún no podemos decir cuánto es correcto o novedoso.
-Pero en todo lo que hemos revisado hasta ahora no hemos encontrado ningún error que invalide un resultado, y algunos resultados están demostrados en Lean, un software con el que una computadora verifica cada paso de una demostración.
+Pero en todo lo que hemos revisado hasta ahora no hemos encontrado ningún error que invalide un resultado, y algunos resultados están demostrados en [Lean](https://lean-lang.org/), un software con el que una computadora verifica cada paso de una demostración.
 
 Esta entrada explica qué hicimos, por qué creemos que importa y qué pensamos que debería pasar ahora.
 El artículo completo contiene los detalles, las pruebas y las salvedades **[PENDIENTE: enlace al artículo]**.
-Todo lo que produjeron los agentes es público en <https://github.com/SECQUOIA/agent-swarm-research> [\[5\]](#ref-gusev2026corpus); esta entrada lo describe en el [commit 84c6be7](https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07), antes de cualquier aportación científica de nuestra parte.
+Todo lo que produjeron los agentes es público en <https://github.com/SECQUOIA/agent-swarm-research> [\[5\]](#ref-gusev2026corpus); esta entrada lo describe en el [commit 84c6be7](https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07), antes de cualquier aporte científico de nuestra parte.
 
 <h2 class="unnumbered" id="what-we-did">Qué hicimos</h2>
 
@@ -83,16 +83,16 @@ Con tarifas de pago por uso, el mismo consumo habría costado más de 15.000 dó
 No escribimos software propio, salvo unas pocas instrucciones para tareas de organización.
 Cualquiera que tenga acceso a estos modelos puede repetirlo hoy.
 
-Nuestro procedimiento no es la mejor manera de investigar con agentes: usa la fuerza bruta y no lo ajustamos.
+Nuestro procedimiento no es la mejor manera de investigar con agentes: usa la fuerza bruta y decidimos no ajustarlo.
 Pero si algo tan sencillo ya funciona, mejores métodos lograrán más.
 
 No esperábamos que funcionara.
 Durante meses habíamos construido herramientas para una colaboración estrecha entre personas e IA, en la que dirigíamos la investigación y verificábamos el trabajo en cada paso.
 Nunca produjeron gran cosa.
 Cuando nos hicimos a un lado y dejamos que los agentes lo hicieran todo, desde elegir líneas de investigación hasta verificar los resultados, obtuvimos resultados en un día, y muchos.
-En retrospectiva, la razón es que, en la investigación teórica, los agentes están mejorando en cada parte del trabajo, y ya son buenos en la mayoría.
-Pueden dirigir la investigación y verificar el trabajo por sí mismos, y leen más, calculan más y exploran varias ideas a la vez.
-A medida que mejoran los modelos, podemos aportar cada vez menos a la resolución de un problema concreto y, cada vez que intervenimos, sobre todo ralentizamos el trabajo.
+En retrospectiva, la razón es que, en la investigación teórica, los agentes están mejorando en cada etapa del proceso de investigación, y ya son suficientemente buenos en la mayoría de ellas.
+Pueden dirigir la investigación y verificar el trabajo por sí mismos, y leen más que los investigadores humanos, calculan más que los investigadores humanos y exploran varias ideas a la vez.
+A medida que mejoran los modelos, podemos aportar cada vez menos a la resolución de un problema concreto y, cada vez que intervenimos, principalmente ralentizamos el trabajo.
 
 <h2 class="unnumbered" id="what-came-back">Qué obtuvimos</h2>
 
@@ -100,7 +100,7 @@ Lo que obtuvimos no es un conjunto de avances revolucionarios.
 Es trabajo incremental: esos pequeños pasos sólidos que constituyen la mayor parte del progreso científico.
 No hace falta que nos crean.
 Todo lo que produjeron los agentes es público y cualquiera puede comprobarlo.
-Las tablas al final de esta entrada enumeran cada posible artículo y cada programa experimental propuesto, con las afirmaciones de los agentes y enlaces a sus borradores.
+Las tablas al final de este blog enumeran cada posible artículo y cada programa experimental propuesto, con las afirmaciones de los agentes y enlaces a sus borradores.
 Los resultados de las empresas de IA son grandes avances en problemas famosos.
 Nuestras ejecuciones muestran el trabajo cotidiano de la investigación, en varios campos que no están relacionados entre sí.
 
@@ -115,13 +115,13 @@ A razón de unos días por cada posible artículo o programa experimental, revis
 Producir los resultados tomó semanas.
 
 Todo sistema de publicación supone que el autor ha verificado el trabajo y responde por él, y que los revisores lo examinan después.
-Cuando una persona puede producir más de lo que puede revisar, falta la verificación del propio autor, y ninguna cantidad de revisión externa la sustituye.
-La contratación, los ascensos y la financiación siguen contando artículos, y ahora un artículo puede producirse por casi nada.
+Cuando una persona puede producir más de lo que puede revisar, enviar ese trabajo directamente a publicación implicaría omitir la verificación del propio autor, y ninguna cantidad de revisión externa la sustituye.
+Las decisiones de contratación, ascenso y financiación dentro del sistema académico siguen basándose en el número de artículos, y ahora un artículo puede producirse por casi nada.
 
 Si todo ese material fuera ruido, cualquiera podría ignorarlo y la acumulación de trabajo pendiente de revisión no importaría.
 Pero los resultados merecen ser revisados.
 
-<h2 class="unnumbered" id="if-you-are-a-skeptic">Si eres escéptico</h2>
+<h2 class="unnumbered" id="if-you-are-a-skeptic">Para los escépticos</h2>
 
 Estas son algunas de las respuestas que escuchamos a menudo.
 
@@ -129,10 +129,11 @@ Estas son algunas de las respuestas que escuchamos a menudo.
 **«Los resultados no impresionan.
 Un buen investigador los habría encontrado».**
 Tal vez.
-Entonces, ¿por qué no estaban ya en la literatura?
-Más que si los agentes superan a la mejor persona de un campo, importa qué proporción del trabajo de ese campo tienen que igualar para que sus instituciones deban cambiar.
-¿El de todos salvo el uno por ciento más destacado?
-¿El de todos salvo una persona?
+Si ese es el caso, ¿por qué no estaban ya en la literatura?
+Que los agentes superen al mejor investigador de un campo es solo una parte de la cuestión.
+¿A cuántos investigadores deben poder igualar antes de que las instituciones de ese campo tengan que cambiar?
+¿A todos salvo al uno por ciento más destacado?
+¿A todos salvo a una persona?
 Creemos que los agentes ya están al nivel de muchos investigadores en activo, incluidos nosotros.
 </div>
 
@@ -147,20 +148,20 @@ Se puede verificar si un resultado es correcto, novedoso y útil sin saber quié
 **«Podría estar todo mal».**
 Parte podría estarlo.
 Pero en lo que hemos revisado hasta ahora no hemos encontrado ningún error científico que invalide un resultado.
-Y hemos publicado todo, para que puedas comprobarlo por tu cuenta.
+Y hemos publicado todo, para que cualquiera pueda comprobarlo por su cuenta.
 </div>
 
 <div class="objection" markdown="1">
 **«Me niego a usar estas herramientas por principios».**
 Es una decisión legítima.
-Pero otras personas de tu campo las usarán, y te compararán con ellas a la hora de contratar, financiar y ascender.
+Pero otras personas en su campo las usarán, y con ellas se le comparará a la hora de contratar, financiar y ascender.
 </div>
 
-Cuando un estudio muestre algo que la IA no puede hacer, comprueba qué modelo probó y cuándo.
+Cuando un estudio muestre algo que la IA no puede hacer, compruebe qué modelo probó y cuándo.
 Esos límites se han superado una y otra vez en cuestión de meses, siguiendo una tendencia que también se ha medido [\[6\]](#ref-kwa2025-measuring-ai-ability-to-complete).
-Si hoy puedes hacerlo mejor que los modelos, eso solo dice algo sobre los modelos de hoy, y los modelos siguen mejorando.
+Si hoy puede hacer algo mejor que los modelos, eso solo dice algo sobre los modelos de hoy, y los modelos siguen mejorando.
 
-<h2 class="unnumbered" id="if-you-are-an-enthusiast">Si eres entusiasta</h2>
+<h2 class="unnumbered" id="if-you-are-an-enthusiast">Para los entusiastas</h2>
 
 <div class="objection" markdown="1">
 **«Investigar acaba de volverse más fácil.
@@ -188,7 +189,7 @@ No tenemos una respuesta satisfactoria.
 <h2 class="unnumbered" id="the-questions-and-where-we-stand">Las preguntas y nuestra postura</h2>
 
 Preferimos tomar posición y equivocarnos a limitarnos a hacer preguntas.
-Esta es nuestra postura hoy.
+Esta es nuestra postura, hoy.
 
 <div class="positions" markdown="1">
 
@@ -202,7 +203,7 @@ Esta es nuestra postura hoy.
 
 - **¿Qué cuenta como novedoso cuando los agentes no pueden leer buena parte de la literatura porque está detrás de barreras de pago?**
   <span class="position">Abran la literatura.</span>
-  El trabajo presentado como conocimiento público debería poder leerlo cualquier persona y cualquier agente que investigue.
+  El trabajo presentado como conocimiento público debería poder leerlo cualquier agente, humano o artificial, que investigue.
 
 - **¿En qué debería convertirse la publicación científica?**
   <span class="position">Publiquen las afirmaciones con su estado de verificación</span> (verificadas por computadora, revisadas por agentes, auditadas mediante muestreo o revisadas por una persona) y con enlaces a las comprobaciones.
@@ -217,7 +218,7 @@ Esta es nuestra postura hoy.
   <span class="position">Menos por producir resultados y más por entenderlos, verificarlos y decidir hacia dónde debe avanzar el trabajo.</span>
   También podría haber más demanda de investigadores, no menos, por un efecto conocido como la paradoja de Jevons: abaratar el uso de un recurso puede aumentar cuánto se utiliza.
   En el siglo XIX, el economista William Stanley Jevons observó que, cuando las máquinas de vapor empezaron a usar el carbón con más eficiencia, el consumo total de carbón aumentó, porque la energía más barata hizo rentables nuevos usos [\[7\]](#ref-jevons1865coal).
-  Del mismo modo, unos resultados baratos podrían hacer que valiera la pena plantear muchas más preguntas y explorar muchas más direcciones, y podrían necesitarse personas para elegir entre ellas, orientar a los agentes y poner los resultados en práctica.
+  Del mismo modo, resultados baratos podrían hacer que valga la pena plantear muchas más preguntas y explorar muchas más direcciones, y podrían necesitarse personas para elegir entre ellas, orientar a los agentes y poner los resultados en práctica.
 
 - **¿El mejor investigador pasa a ser el que tiene el mayor presupuesto?**
   Los resultados dependerán cada vez más de cuánto cómputo pueda pagar un investigador, y no creemos que eso pueda evitarse.
@@ -254,22 +255,23 @@ Auditar, orientar y mantenerse al día con los resultados son las funciones que 
 
 Y la idea del punto de referencia supone que las personas pueden seguirlo.
 Si los agentes producen en un mes más de lo que un campo puede leer en un año, quizá las personas ni siquiera puedan saber qué se conoce ya, mucho menos aportar algo nuevo.
-No sabemos cuál sería entonces la aportación humana ni cómo podría medirse.
+No sabemos cuál sería entonces el aporte humano ni cómo podría medirse.
 Creemos que es una de las preguntas más importantes y la planteamos sin tener una respuesta.
 
 <h2 class="unnumbered" id="our-institutions-are-not-ready">Nuestras instituciones no están preparadas</h2>
 
-La revisión por pares, el recuento de artículos, la contratación, los ascensos, la financiación y la formación de posgrado se diseñaron para un mundo en el que producir un resultado es lento y su autor ha leído el trabajo.
+La revisión por pares, el conteo de artículos, la contratación, los ascensos, la financiación y la formación de posgrado se diseñaron para un mundo en el que producir un resultado es lento y su autor ha leído el trabajo.
 Ese ya no es el mundo en el que vivimos.
-Creemos que nuestras instituciones científicas y los incentivos que generan no están preparadas para lo que estos sistemas ya pueden hacer, y mucho menos para lo que viene.
+Creemos que nuestras instituciones científicas y los incentivos que generan no están preparados para lo que estos sistemas ya pueden hacer, y mucho menos para lo que viene.
 El momento de empezar a cambiarlas era ayer.
+El segundo mejor momento es ahora mismo.
 
 Las instituciones cambian a lo largo de años, y los modelos mejoran en meses.
-Un plan de estudios o una política de revisión diseñada para los modelos de hoy entrará en vigor cuando esos modelos ya hayan sido reemplazados, y sus sustitutos también serán reemplazados.
+Un plan de estudios o una política de revisión diseñados para los modelos de hoy entrará en vigor cuando esos modelos ya hayan sido reemplazados, y sus sustitutos también serán reemplazados.
 Esas políticas deberían diseñarse para capacidades que siguen aumentando, no para una generación concreta de modelos.
 Las instituciones también deberían anticiparse y decidir ahora cómo responderán cuando se demuestre que la revisión por agentes es tan fiable como la revisión por expertos, cuando los agentes superen a las personas de su campo o cuando los laboratorios automatizados abaraten los experimentos.
 Algunos desarrolladores de IA ya asumen compromisos de este tipo para sus propios modelos, vinculando las salvaguardas exigidas a capacidades medidas [\[8\]](#ref-anthropic2026rsp).
-Las instituciones científicas deberían hacer lo mismo.
+Las instituciones científicas deben hacer lo mismo.
 
 Ya ha habido algunas respuestas.
 Más de dos docenas de ganadores de la Medalla Fields, el máximo galardón de las matemáticas, firmaron una declaración que advierte que el afán de las empresas de IA por resolver problemas matemáticos como pruebas de rendimiento perjudica a las matemáticas y pide atender el problema con urgencia [\[9\]](#ref-fields2026declaration).
@@ -278,7 +280,7 @@ Recibimos ambas iniciativas como primeros pasos y compartimos la preocupación d
 No creemos que el daño esté en dirigir la IA hacia problemas famosos en sí.
 Ahora cualquiera puede hacerlo, así que habrá tales intentos, los apruebe alguien o no; lo que importa es cómo nos preparamos para ellos.
 Y ambas respuestas se centran en las matemáticas y en las empresas de IA.
-Nuestras ejecuciones abarcaron optimización, termodinámica, transporte y catálisis, con modelos que cualquiera puede contratar.
+Nuestras ejecuciones abarcaron optimización, termodinámica, transporte y catálisis, con modelos que cualquiera puede adquirir.
 Las mismas preguntas surgen dondequiera que los agentes puedan producir resultados más rápido de lo que las personas pueden revisarlos, y eso ya ocurre mucho más allá de las matemáticas.
 
 <h2 class="unnumbered" id="what-to-do-now">Qué hacer ahora</h2>
@@ -290,12 +292,12 @@ Las mismas preguntas surgen dondequiera que los agentes puedan producir resultad
    Usen los mejores modelos disponibles cuando lean esto.
    Si quieren compararse con nosotros, no aporten ideas propias.
 
-1. **Cuenten lo que encuentren:** qué pidieron, qué obtuvieron, qué verificaron y qué no.
+1. **Reporten sus resultados:** qué pidieron, qué obtuvieron, qué verificaron y qué no.
 
 1. **Juzguen los resultados teniendo en cuenta la tendencia, no solo los modelos de hoy.**
-   Si los agentes fallan, cuéntenlo también, indicando el modelo y la fecha, y repitan el experimento conforme aparezcan modelos nuevos.
+   Si los agentes fallan, repórtenlo también, indicando el modelo y la fecha, y repitan el experimento conforme aparezcan modelos nuevos.
    Sus capacidades son desiguales, así que los mismos agentes pueden fallar en un problema y hacer un trabajo extraordinario en el siguiente.
-   La comparación reveladora es con lo que podían hacer los agentes hace seis meses o un año.
+   La comparación reveladora es con respecto a lo que podían hacer los agentes hace seis meses o un año.
    Luego proyecten esa tendencia unos años hacia adelante y pregúntense qué debería estar haciendo su campo ahora.
 
 1. **Empiecen a prepararse ya.**
@@ -313,7 +315,7 @@ Pero la preparación no debería esperar a esas pruebas: debería haber empezado
 Estas tablas contienen el mismo inventario de investigación que el artículo, agrupado por áreas.
 Cada fila es un conjunto de resultados relacionados que podrían constituir un artículo, esté escrito o no.
 Las contribuciones son lo que afirman los agentes en sus propios documentos y notas; no las hemos revisado todas.
-Excluimos los resultados que los propios agentes marcaron como superados, refutados o retirados, los demasiado pequeños para constituir un artículo y los grupos cuyo resultado principal, según las propias comprobaciones bibliográficas de los agentes, ya se conocía.
+Excluimos los resultados que los propios agentes marcaron como superados, refutados o retirados, los demasiado pequeños para constituir un artículo y los grupos cuyos resultados principales, según las propias comprobaciones bibliográficas de los agentes, ya se conocían.
 En catálisis, los agentes propusieron programas experimentales y no se ha realizado ninguno de los experimentos.
 
 Los enlaces de la columna «Documento» llevan a los borradores del [commit 84c6be7](https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07) (etiqueta <code>paper-v1</code>), que contiene lo producido por los agentes hasta el 25 de septiembre de 2026, antes de cualquier aportación científica nuestra; la columna «Lean» indica el estado en esa fecha.

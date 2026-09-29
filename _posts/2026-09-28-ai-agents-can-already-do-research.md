@@ -24,25 +24,25 @@ This summer brought two headline results in mathematics.
 In August, an Anthropic staff member with no mathematical training asked an unreleased Claude model to “take a real stab” at the Riemann hypothesis, one of the most famous unsolved problems in mathematics.
 The hypothesis says that certain zeros of a function all lie on one line.
 The model did not prove that, but it proved that more than 66% of them do, up from the previous best of about 42%, a share that mathematicians had raised only in small steps for decades [\[1\]](#ref-alpoge2026-more-than-two-thirds-of).
-In September, OpenAI announced that about ten thousand AI agents, working for 88 hours, had produced a proof for a version of another famous open problem, about the Navier–Stokes equations of fluid flow; independent review is still under way [\[2\]](#ref-openai2026navierstokes).
-By one outside estimate, that run would have cost a customer several million dollars [\[3\]](#ref-duraisamy2026navierstokescost).
+In September, OpenAI announced that about ten thousand artificial intelligence (AI) agents, working for 88 hours, had produced a proof for a version of another famous open problem, about the Navier–Stokes equations of fluid flow; independent review is still under way [\[2\]](#ref-openai2026navierstokes).
+By one outside estimate, that run would have cost an external customer several million dollars [\[3\]](#ref-duraisamy2026navierstokescost).
 OpenAI has since said that the model behind that run has resolved more than 100 further open problems; it has not yet published them [\[4\]](#ref-openai2026advisory).
 
 Both came from inside AI companies, with unreleased models and budgets that no research group has.
-Can an ordinary research group, with models anyone can buy, get agents to do real research?
+Can a research group outside those companies, with models anyone can buy, get agents to do real research?
 
 We tried it ourselves.
 It works, on a smaller scale than the AI companies’ runs and at a small fraction of their cost.
 
 Over the past few weeks, we gave groups of AI agents a research area, anywhere from a single topic to a whole field.
 We gave them papers and computing tools, and told them to make real, correct, useful progress and not to stop.
-We gave them no ideas.
+We gave them no additional research ideas.
 
 Within the first day of one run, the agents had written more notes than we could read in a week.
-Within a few weeks, they had produced material for 45 potential papers in the five areas we gave them: mixed-integer nonlinear programming, quantum interior-point methods, molecular thermodynamics, transport theory, and aggregation kinetics.
-In a sixth area, catalysis, we asked for experiments instead, and they designed programs of laboratory experiments; nobody has run them, so we cannot yet say how good they are.
+Within a few weeks, they had produced material for 45 potential scientific papers in the five areas we gave them: mixed-integer nonlinear programming, quantum interior-point methods, molecular thermodynamics, transport theory, and aggregation kinetics.
+In a sixth area, heterogeneous catalysis, we asked for experiments instead, and they designed laboratory experiments; nobody has run them yet, so we cannot yet say how good they are.
 We have not checked all of it, and we cannot yet say how much is correct or new.
-But in everything we have checked so far, we have found no error that would invalidate a result, and some results are proved in Lean, software in which a computer checks every step of a proof.
+But in everything we have checked so far, we have found no error that would invalidate a result, and some results are proved in [Lean](https://lean-lang.org/), software in which a computer checks every step of a proof.
 
 This post explains what we did, why we think it matters, and what we think should happen next.
 The full paper has the details, the evidence, and the caveats **[TODO: link to paper]**.
@@ -81,15 +81,15 @@ At pay-per-use prices, the same usage would have cost more than \$15,000 in the 
 We wrote no custom software beyond a few instructions for housekeeping.
 Anyone with access to these models can repeat this today.
 
-Our procedure is not the best way to do research with agents: it is brute force, and we did not tune it.
+Our procedure is not the best way to do research with agents: it is brute force, and we deliberately left it untuned.
 But if something this simple already works, better methods will do more.
 
 We did not expect this to work.
 For months, we had built tools for close collaboration between people and AI, in which we directed the research and checked the work at every step.
 They never produced much.
 When we stepped aside and let the agents do everything, from choosing research directions to checking results, we had results within a day, and a lot of them.
-In hindsight, the reason is that in theoretical research, agents are getting better at every part of the work, and they are already good at most of it.
-They can direct the research and check the work themselves, and they read more, compute more, and explore several ideas at once.
+In hindsight, the reason is that in theoretical research, agents are getting better at every stage of the research process, and they are already good enough at most of them.
+They can direct the research and check the work themselves, and they read more than human researchers, compute more than human researchers, and explore several ideas at once.
 As the models improve, we can add less and less to solving a given problem, and each time we step in, we mostly slow the work down.
 
 <h2 class="unnumbered" id="what-came-back">What came back</h2>
@@ -113,13 +113,13 @@ At a few days for each potential paper or experimental program, reviewing everyt
 Producing the results took weeks.
 
 Every publication system assumes that the author has checked the work and answers for it, and that reviewers then take a second look.
-When one person can produce more than they can review, the author’s own check is missing, and no amount of outside review replaces it.
-Hiring, promotion, and funding still count papers, and a paper can now be produced for almost nothing.
+When one person can produce more than they can review, submitting that work directly for publication would bypass the author’s own check, and no amount of outside review replaces it.
+Academic hiring, promotion, and funding decisions still rely on paper counts, and a paper can now be produced for almost nothing.
 
 If the output were noise, anyone could ignore it, and the review backlog would not matter.
 But the output deserves review.
 
-<h2 class="unnumbered" id="if-you-are-a-skeptic">If you are a skeptic</h2>
+<h2 class="unnumbered" id="if-you-are-a-skeptic">For skeptics</h2>
 
 These are some of the responses we often hear.
 
@@ -127,8 +127,9 @@ These are some of the responses we often hear.
 **“The results are not impressive.
 A good researcher would have found them.”**
 Maybe.
-Then why were they not already in the literature?
-What matters more than whether agents beat the best person in a field is how much of the field’s work they have to match before its institutions have to change.
+If so, why were they not already in the literature?
+Whether agents outperform the best researcher in a field is only part of the question.
+How many researchers must agents be able to match before the field’s institutions need to change?
 Everyone except the top one percent?
 Everyone except one person?
 We think agents already match many working researchers, including us.
@@ -145,7 +146,7 @@ Whether a result is correct, new, and useful can be checked without knowing who 
 **“It might all be wrong.”**
 Some of it may be.
 But in what we have checked so far, we have found no scientific error that would invalidate a result.
-And we released all of it, so you can check it yourself.
+And we released all of it, so anyone can check it for themselves.
 </div>
 
 <div class="objection" markdown="1">
@@ -158,7 +159,7 @@ When a study shows something AI cannot do, check which model it tested and when.
 Such limits have repeatedly been overtaken within months, on a trend that has itself been measured [\[6\]](#ref-kwa2025-measuring-ai-ability-to-complete).
 If you can do better than the models today, that tells you only about today’s models, and the models keep improving.
 
-<h2 class="unnumbered" id="if-you-are-an-enthusiast">If you are an enthusiast</h2>
+<h2 class="unnumbered" id="if-you-are-an-enthusiast">For enthusiasts</h2>
 
 <div class="objection" markdown="1">
 **“Research just got easier.
@@ -200,7 +201,7 @@ This is where we stand today.
 
 - **What counts as new when agents cannot read much of the literature, because it is behind paywalls?**
   <span class="position">Open the literature.</span>
-  Work presented as public knowledge should be readable by every person and every agent that does research.
+  Work presented as public knowledge should be readable by every agent, human or artificial, that does research.
 
 - **What should publication become?**
   <span class="position">Release claims with their verification status</span> (machine-checked, reviewed by agents, audited by sampling, or reviewed by a person) and with links to the checks.
@@ -261,13 +262,14 @@ Peer review, paper counts, hiring, promotion, funding, and graduate training wer
 That is no longer the world we are in.
 We believe our research institutions, and the incentives they create, are not ready for what these systems can already do, let alone for what comes next.
 The time to start changing them was yesterday.
+The second-best time is right now.
 
 Institutions change over years, and models improve over months.
 A curriculum or a review policy designed for today’s models will take effect after those models have been replaced, and their replacements will be replaced in turn.
 Such policies should be designed for capabilities that keep increasing, not for any one generation of models.
 Institutions should also plan ahead and decide now how they will respond when agent review is shown to be as reliable as expert review, when agents overtake people in their field, or when automated laboratories make experiments cheap to run.
 Some AI developers already make commitments of this kind for their own models, tying required safeguards to measured capabilities [\[8\]](#ref-anthropic2026rsp).
-Research institutions should do the same.
+Research institutions must do the same.
 
 Some responses have begun.
 More than two dozen Fields medalists, winners of the top prize in mathematics, signed a declaration warning that the push by AI companies to solve mathematical problems as benchmarks harms mathematics, and calling for the problem to be addressed urgently [\[9\]](#ref-fields2026declaration).
@@ -311,7 +313,7 @@ But preparation should not wait for that evidence: it should have started yester
 These tables contain the same research inventory as the paper, grouped by area.
 Each row is a group of related results that could stand as one paper, whether or not the paper has been written.
 The contributions are the agents’ claims, as stated in their own write-ups and notes; we have not checked all of them.
-We left out results that the agents themselves marked as superseded, refuted, or withdrawn, results too small to stand as a paper, and clusters whose main result the agents’ own literature checks found to be already known.
+We left out results that the agents themselves marked as superseded, refuted, or withdrawn, results too small to stand as a paper, and clusters whose main results the agents’ own literature checks found to be already known.
 In catalysis, the agents proposed experimental programs, and none of the experiments have been run.
 
 The links in the Write-up column go to the drafts at [commit `84c6be7`](https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07) (tag `paper-v1`), which holds the agents’ output as of 25 September 2026, before any scientific input from us; the Lean column gives the status on that date.
