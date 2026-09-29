@@ -79,7 +79,7 @@
 			}
 
 			&:after {
-				background-color: transparentize(_palette(bg), 0.75);
+				background-color: rgba(15, 16, 17, 0.78);
 				content: '';
 				display: block;
 				height: 100%;
