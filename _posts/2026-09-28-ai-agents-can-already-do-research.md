@@ -191,24 +191,24 @@ This is where we stand today.
 
 <div class="positions" markdown="1">
 
-- **How should results be trusted when review, not production, is scarce?**
+- **How should we trust results when review, not production, is scarce?**
   <span class="position">By measurement.</span>
-  Put results in a form a machine can check wherever possible, and build machine-checked libraries of established results in every field whose reasoning is mathematical, such as physics, chemistry, and engineering, not only in mathematics itself.
-  Have experts check a sample of what agent reviewers approve, publish how often they miss errors, and accept results from a process that meets the field’s standard.
+  Let’s put results in a form that can be checked automatically wherever possible, and build machine-checked libraries of established results in every field whose reasoning is mathematical, such as physics, chemistry, and engineering, not only in mathematics itself.
+  Let’s have experts check a sample of what agent reviewers approve, publish how often they miss errors, and accept results from a process that meets the field’s standard.
 
 - **Which results need a person to understand them?**
-  <span class="position">Decide on purpose</span>, by what is at stake and by measured error rates, and revisit the decision with each new model.
+  <span class="position">Let’s decide on purpose</span>, by what is at stake and by measured error rates, and revisit the decision with each new model.
 
 - **What counts as new when agents cannot read much of the literature, because it is behind paywalls?**
-  <span class="position">Open the literature.</span>
+  <span class="position">Let’s open the literature.</span>
   Work presented as public knowledge should be readable by every agent, human or artificial, that does research.
 
 - **What should publication become?**
-  <span class="position">Release claims with their verification status</span> (machine-checked, reviewed by agents, audited by sampling, or reviewed by a person) and with links to the checks.
+  <span class="position">Let’s release claims with their verification status</span> (machine-checked, reviewed by agents, audited by sampling, or reviewed by a person) and with links to the checks.
 
 - **What do credit and paper counts mean when the human input is a prompt?**
-  <span class="position">Stop counting papers.</span>
-  Judge results by whether they are correct, new, useful, and checked, and do not punish people for saying how they were produced.
+  <span class="position">Let’s stop counting papers.</span>
+  Let’s judge results by whether they are correct, new, useful, and checked, and avoid punishing people for saying how they were produced.
   Rules against using AI cannot be enforced; they only push its use into hiding.
   The current system of credit is already being broken in private, and we think it is better to break it in public, where its replacement can be discussed.
 
@@ -220,25 +220,25 @@ This is where we stand today.
 
 - **Does the best researcher become the one with the largest budget?**
   Results will increasingly depend on how much computation a researcher can pay for, and we do not think that can be avoided.
-  <span class="position">Decide openly how to handle it</span>, instead of drifting into it: whether institutions should provide computation as a shared resource, like libraries and laboratories, and whether assessment can separate what a person did from what their budget did.
+  <span class="position">Let’s decide openly how to handle it</span>, instead of drifting into it: whether institutions should provide computation as a shared resource, like libraries and laboratories, and whether assessment can separate what a person did from what their budget did.
 
-- **How should people learn a field that machines can already work in?**
-  <span class="position">Teach more, not less, but differently.</span>
-  Aim training at understanding and judgment, and stop drilling students in skills that they now only need to understand.
-  Fund the training of junior researchers on purpose.
+- **How should we learn a field that machines can already work in?**
+  <span class="position">Let’s teach more, not less, but differently.</span>
+  Let’s aim training at understanding and judgment, and stop drilling students in skills that they now only need to understand.
+  Let’s fund the training of junior researchers on purpose.
   On a fixed budget, one senior researcher plus computation produces more than a group of students; a field that funds research on that basis will have no senior researchers in a generation.
 
 - **What happens when agents are run over whole fields?**
   It will happen.
   Model developers, funders, and governments can afford it, and nobody can stop everyone else from doing it.
-  We think <span class="position">it should happen in the open, with checking funded alongside production</span>.
+  We think <span class="position">we should do this in the open, funding checking alongside production</span>.
   Running agents over a whole field also gives that field a baseline: what agents can do on their own.
   What people add on top of that baseline is the human contribution.
 
-- **How do people stay in control of research they cannot keep up with?**
+- **How do we stay in control of research we cannot keep up with?**
   We expect agents to move far ahead of people in some fields, probably in mathematics first.
   <span class="position">Keeping up is not a realistic goal; staying in control is.</span>
-  That means people set the goals and can stop the runs, enough people understand each field well enough to audit it, and there are guardrails where a correct result can do harm.
+  That means we set the goals and can stop the runs, enough people understand each field well enough to audit it, and there are guardrails where a correct result can do harm.
 
 </div>
 

@@ -98,7 +98,7 @@ A medida que mejoran los modelos, podemos aportar cada vez menos a la resolució
 
 Lo que obtuvimos no es un conjunto de avances revolucionarios.
 Es trabajo incremental: esos pequeños pasos sólidos que constituyen la mayor parte del progreso científico.
-No hace falta que nos crean.
+No hace falta que nos crea.
 Todo lo que produjeron los agentes es público y cualquiera puede comprobarlo.
 Las tablas al final de este blog enumeran cada posible artículo y cada programa experimental propuesto, con las afirmaciones de los agentes y enlaces a sus borradores.
 Los resultados de las empresas de IA son grandes avances en problemas famosos.
@@ -193,24 +193,24 @@ Esta es nuestra postura, hoy.
 
 <div class="positions" markdown="1">
 
-- **¿Cómo confiar en los resultados cuando lo escaso es la revisión y no la producción?**
+- **¿Cómo podemos confiar en los resultados cuando lo escaso es la revisión y no la producción?**
   <span class="position">Mediante mediciones.</span>
-  Siempre que sea posible, presenten los resultados de forma que una máquina pueda verificarlos y construyan bibliotecas de resultados establecidos y verificados por computadora en todos los campos cuyo razonamiento sea matemático, como la física, la química y la ingeniería, no solo en las propias matemáticas.
-  Hagan que expertos revisen una muestra de lo que aprueban los agentes revisores, publiquen con qué frecuencia estos pasan por alto errores y acepten resultados de un proceso que cumpla el estándar del campo.
+  Siempre que sea posible, presentemos los resultados de forma que puedan verificarse automáticamente y construyamos bibliotecas de resultados establecidos y verificados por computadora en todos los campos cuyo razonamiento sea matemático, como la física, la química y la ingeniería, no solo en las matemáticas en sí.
+  Hagamos que expertos revisen una muestra de lo que aprueban los agentes revisores, publiquemos con qué frecuencia estos pasan por alto errores y aceptemos resultados de un proceso que cumpla el estándar del campo.
 
 - **¿Qué resultados necesitan que una persona los entienda?**
-  <span class="position">Decídanlo de forma deliberada</span>, según lo que esté en juego y las tasas de error medidas, y revisen la decisión con cada nuevo modelo.
+  <span class="position">Decidámoslo de forma deliberada</span>, según lo que esté en juego y las tasas de error medidas, y revisemos la decisión con cada nuevo modelo.
 
 - **¿Qué cuenta como novedoso cuando los agentes no pueden leer buena parte de la literatura porque está detrás de barreras de pago?**
-  <span class="position">Abran la literatura.</span>
+  <span class="position">Abramos la literatura.</span>
   El trabajo presentado como conocimiento público debería poder leerlo cualquier agente, humano o artificial, que investigue.
 
 - **¿En qué debería convertirse la publicación científica?**
-  <span class="position">Publiquen las afirmaciones con su estado de verificación</span> (verificadas por computadora, revisadas por agentes, auditadas mediante muestreo o revisadas por una persona) y con enlaces a las comprobaciones.
+  <span class="position">Publiquemos las afirmaciones con su estado de verificación</span> (verificadas por computadora, revisadas por agentes, auditadas mediante muestreo o revisadas por una persona) y con enlaces a las comprobaciones.
 
 - **¿Qué significan el reconocimiento y el número de artículos cuando la aportación humana es una instrucción?**
-  <span class="position">Dejen de contar artículos.</span>
-  Juzguen los resultados por si son correctos, novedosos, útiles y verificados, y no castiguen a quienes expliquen cómo se produjeron.
+  <span class="position">Dejemos de contar artículos.</span>
+  Juzguemos los resultados por si son correctos, novedosos, útiles y verificados, y no castiguemos a quienes expliquen cómo se produjeron.
   Las reglas contra el uso de IA no pueden hacerse cumplir; solo empujan su uso a la clandestinidad.
   El sistema actual de reconocimiento ya se está rompiendo en privado, y creemos que es mejor romperlo en público, donde se pueda discutir qué lo reemplazará.
 
@@ -222,25 +222,25 @@ Esta es nuestra postura, hoy.
 
 - **¿El mejor investigador pasa a ser el que tiene el mayor presupuesto?**
   Los resultados dependerán cada vez más de cuánto cómputo pueda pagar un investigador, y no creemos que eso pueda evitarse.
-  <span class="position">Decidan abiertamente cómo manejarlo</span>, en vez de dejarse llevar: si las instituciones deberían proporcionar cómputo como recurso compartido, igual que las bibliotecas y los laboratorios, y si la evaluación puede separar lo que hizo una persona de lo que hizo su presupuesto.
+  <span class="position">Decidamos abiertamente cómo manejarlo</span>, en vez de dejarnos llevar: si las instituciones deberían proporcionar cómputo como recurso compartido, igual que las bibliotecas y los laboratorios, y si la evaluación puede separar lo que hizo una persona de lo que hizo su presupuesto.
 
-- **¿Cómo debería aprenderse un campo en el que las máquinas ya pueden trabajar?**
-  <span class="position">Enseñen más, no menos, pero de otra manera.</span>
-  Orienten la formación hacia la comprensión y el criterio, y dejen de entrenar a los estudiantes en destrezas que ahora solo necesitan entender.
-  Financien de manera deliberada la formación de investigadores jóvenes.
+- **¿Cómo deberíamos aprender un campo en el que las máquinas ya pueden trabajar?**
+  <span class="position">Enseñemos más, no menos, pero de otra manera.</span>
+  Orientemos la formación hacia la comprensión y el criterio, y dejemos de entrenar a los estudiantes en destrezas que ahora solo necesitan entender.
+  Financiemos de manera deliberada la formación de investigadores jóvenes.
   Con un presupuesto fijo, un investigador experimentado más cómputo produce más que un grupo de estudiantes; un campo que financie la investigación con ese criterio no tendrá investigadores experimentados dentro de una generación.
 
 - **¿Qué pasa cuando se ponen agentes a trabajar en campos enteros?**
   Pasará.
   Los desarrolladores de modelos, las entidades financiadoras y los gobiernos pueden permitírselo, y nadie puede impedir que todos los demás lo hagan.
-  Creemos que <span class="position">debería hacerse de forma abierta, financiando la verificación junto con la producción</span>.
+  Creemos que <span class="position">deberíamos hacerlo de forma abierta, financiando la verificación junto con la producción</span>.
   Poner agentes a trabajar en todo un campo también le da a ese campo un punto de referencia: lo que los agentes pueden hacer por sí solos.
   Lo que las personas añadan por encima de ese punto de referencia será la aportación humana.
 
-- **¿Cómo mantener el control de una investigación cuyo ritmo no podemos seguir?**
+- **¿Cómo podemos mantener el control de una investigación cuyo ritmo no podemos seguir?**
   Esperamos que los agentes superen ampliamente a las personas en algunos campos, probablemente primero en matemáticas.
   <span class="position">Seguirles el ritmo no es un objetivo realista; mantener el control sí.</span>
-  Eso significa que las personas fijan los objetivos y pueden detener las ejecuciones, que suficientes personas entienden cada campo como para auditarlo y que hay salvaguardas cuando un resultado correcto puede causar daño.
+  Eso significa que fijamos los objetivos y podemos detener las ejecuciones, que suficientes personas entienden cada campo como para auditarlo y que hay salvaguardas cuando un resultado correcto puede causar daño.
 
 </div>
 
@@ -287,23 +287,23 @@ Las mismas preguntas surgen dondequiera que los agentes puedan producir resultad
 
 <div class="action-steps" markdown="1">
 
-1. **Hagan el experimento en su propio campo.**
+1. **Haga el experimento en su propio campo.**
    El artículo incluye ejemplos de nuestras instrucciones.
-   Usen los mejores modelos disponibles cuando lean esto.
-   Si quieren compararse con nosotros, no aporten ideas propias.
+   Use los mejores modelos disponibles cuando lea esto.
+   Si quiere compararse con nosotros, no aporte ideas propias.
 
-1. **Reporten sus resultados:** qué pidieron, qué obtuvieron, qué verificaron y qué no.
+1. **Reporte sus resultados:** qué pidió, qué obtuvo, qué verificó y qué no.
 
-1. **Juzguen los resultados teniendo en cuenta la tendencia, no solo los modelos de hoy.**
-   Si los agentes fallan, repórtenlo también, indicando el modelo y la fecha, y repitan el experimento conforme aparezcan modelos nuevos.
+1. **Juzgue los resultados teniendo en cuenta la tendencia, no solo los modelos de hoy.**
+   Si los agentes fallan, repórtelo también, indicando el modelo y la fecha, y repita el experimento conforme aparezcan modelos nuevos.
    Sus capacidades son desiguales, así que los mismos agentes pueden fallar en un problema y hacer un trabajo extraordinario en el siguiente.
    La comparación reveladora es con respecto a lo que podían hacer los agentes hace seis meses o un año.
-   Luego proyecten esa tendencia unos años hacia adelante y pregúntense qué debería estar haciendo su campo ahora.
+   Luego proyecte esa tendencia unos años hacia adelante y pregúntese qué debería estar haciendo su campo ahora.
 
-1. **Empiecen a prepararse ya.**
-   No esperen a que la IA supere una barrera más alta, como producir resultados mejores que los de cualquier persona.
-   Hablen con sus colegas, estudiantes, instituciones y financiadores sobre qué debería cambiar en su campo: cómo se revisan y reconocen los resultados, cómo se forma a los estudiantes y para qué están los investigadores.
-   Prepárense para capacidades que siguen aumentando, no solo para los modelos actuales.
+1. **Empiece a prepararse ya.**
+   No espere a que la IA supere una barrera más alta, como producir resultados mejores que los de cualquier persona.
+   Hable con sus colegas, estudiantes, instituciones y financiadores sobre qué debería cambiar en su campo: cómo se revisan y reconocen los resultados, cómo se forma a los estudiantes y para qué están los investigadores.
+   Prepárese para capacidades que siguen aumentando, no solo para los modelos actuales.
 
 </div>
 
