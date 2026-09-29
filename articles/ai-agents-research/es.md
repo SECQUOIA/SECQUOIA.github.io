@@ -5,7 +5,7 @@ description: "Qué pasó cuando lo intentamos nosotros mismos y por qué nuestra
 author: "Sergey Gusev y David E. Bernal Neira"
 image: assets/images/ideas.webp
 social_image: /assets/images/ai-agents-research/social-es.png
-social_image_alt: "Preguntas, artículos y herramientas alimentan a un enjambre de agentes de IA; los borradores se acumulan más rápido de lo que podemos revisarlos."
+social_image_alt: "Tres pasos: describir el problema o el campo; proporcionar artículos y herramientas; pedir a un enjambre de agentes que avance sin detenerse, con revisión por un agente nuevo, redacción y verificación."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
@@ -60,7 +60,7 @@ El procedimiento completo cabe en tres pasos ([Figura 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
   <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-es.svg' | relative_url }}" aria-label="Abrir el diagrama a tamaño completo" title="Abrir el diagrama a tamaño completo">
-    <img src="{{ '/assets/images/ai-agents-research/social-es.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+    <img src="{{ '/assets/images/ai-agents-research/social-es.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="500" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>

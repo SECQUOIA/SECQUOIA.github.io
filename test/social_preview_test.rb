@@ -36,6 +36,20 @@ end
   end
   twin = File.join(site_dir, suffix.delete_prefix("/").sub(/\.png$/, ".webp"))
   abort "#{language}: missing WebP equivalent" unless File.file?(twin)
+
+  # The article's original numbered steps are the source of truth. A plausible
+  # summary graphic is not an export of that diagram: every sentence must match.
+  svg_path = twin.sub(/\.webp$/, ".svg")
+  svg = Nokogiri::XML(File.read(svg_path)) { |config| config.strict.nonet }
+  svg.remove_namespaces!
+  steps = document.css("#research-setup .research-steps > li")
+  exported_steps = svg.css("g.step")
+  abort "#{language}: expected three original and exported steps" unless steps.length == 3 && exported_steps.length == 3
+  steps.zip(exported_steps).each_with_index do |(original, exported), index|
+    expected = original.text.split.join(" ")
+    actual = exported.css("text").map(&:text).join(" ").split.join(" ")
+    abort "#{language}: diagram step #{index + 1} differs from the original article text" unless actual == expected
+  end
 end
 
 home = Nokogiri::HTML(File.read(File.join(site_dir, "index.html")))

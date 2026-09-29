@@ -5,7 +5,7 @@ description: "What happened when we tried it ourselves, and why our institutions
 author: "Sergey Gusev and David E. Bernal Neira"
 image: assets/images/ideas.webp
 social_image: /assets/images/ai-agents-research/social-en.png
-social_image_alt: "Research questions, papers and tools feed a swarm of AI agents; drafts accumulate faster than people can review them."
+social_image_alt: "Three steps: describe the problem or field; provide papers and tools; ask a swarm of agents to make progress without stopping, with fresh-agent review, write-ups, and verification."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
@@ -58,7 +58,7 @@ The whole procedure fits in three steps ([Figure 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
   <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-en.svg' | relative_url }}" aria-label="Open the diagram at full size" title="Open the diagram at full size">
-    <img src="{{ '/assets/images/ai-agents-research/social-en.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+    <img src="{{ '/assets/images/ai-agents-research/social-en.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="500" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>

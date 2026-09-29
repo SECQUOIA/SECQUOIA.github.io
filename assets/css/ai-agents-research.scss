@@ -279,8 +279,28 @@ $gold-bold: #d4c294;
   }
 }
 
+// The image and the original text contain the same procedure. Show it once:
+// a scalable export on desktop, and readable, stacked text on small screens.
+// Keep the original ordered list available to assistive technology and print.
+@media screen and (min-width: 737px) {
+  .research-setup .research-steps {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+
+@media print {
+  .research-setup .research-diagram { display: none; }
+}
+
 @media screen and (max-width: 736px) {
   .research-setup {
+    .research-diagram { display: none; }
+
     .research-steps {
       grid-template-columns: 1fr;
     }

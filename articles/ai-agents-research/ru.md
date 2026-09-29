@@ -5,7 +5,7 @@ description: "Что получилось, когда мы попробовал�
 author: "Сергей Гусев и Давид Э. Бернал Нейра"
 image: assets/images/ideas.webp
 social_image: /assets/images/ai-agents-research/social-ru.png
-social_image_alt: "Вопросы, статьи и инструменты направляют работу ИИ-агентов; черновики накапливаются быстрее, чем люди успевают их проверять."
+social_image_alt: "Три шага: описать задачу или область; дать статьи и инструменты; поручить рою агентов двигаться вперёд без остановки, с проверкой новым агентом, записью результатов и проверкой доказательством или расчётом."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
@@ -60,7 +60,7 @@ show_tile: false
 
 <figure id="research-setup" class="research-setup">
   <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-ru.svg' | relative_url }}" aria-label="Открыть схему в полном размере" title="Открыть схему в полном размере">
-    <img src="{{ '/assets/images/ai-agents-research/social-ru.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+    <img src="{{ '/assets/images/ai-agents-research/social-ru.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="500" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>

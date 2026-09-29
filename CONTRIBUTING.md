@@ -56,14 +56,22 @@ add `social_image_alt` and the pixel dimensions `social_image_width` and
 Keep the matching WebP asset for website use; social metadata may point to the
 PNG export, while inline page images use WebP.
 
-The AI agents article has a translated 1200 × 630 diagram for each language in
-`assets/images/ai-agents-research/`. Edit the SVG source and regenerate its
-PNG/WebP exports with ImageMagick and the DejaVu Sans font, for example:
+The AI agents article has a translated diagram for each language in
+`assets/images/ai-agents-research/`. Each SVG preserves the original numbered
+steps in that language's article, including every heading and sentence. Update
+the article and SVG together; `test/social_preview_test.rb` checks their text
+matches. Keep the three-card layout, arrows, and original gold-on-charcoal palette.
+The inline SVG/WebP is 1200 × 500; the social PNG adds background padding to
+1200 × 630. Regenerate both exports with ImageMagick and the DejaVu Sans Condensed font:
 
 ```bash
-convert -background '#f7f5ef' assets/images/ai-agents-research/social-en.svg -strip assets/images/ai-agents-research/social-en.png
-convert assets/images/ai-agents-research/social-en.png -quality 90 assets/images/ai-agents-research/social-en.webp
+convert -background '#2e2d2b' assets/images/ai-agents-research/social-en.svg -strip -quality 95 assets/images/ai-agents-research/social-en.webp
+convert -background '#2e2d2b' assets/images/ai-agents-research/social-en.svg -gravity center -extent 1200x630 -strip assets/images/ai-agents-research/social-en.png
 ```
+
+The article shows the image on desktop and the original, selectable step text
+as stacked cards on phones. The full text also remains available to screen
+readers and in print; do not replace it with an abbreviated image description.
 
 After deployment, use [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
 to refresh cached previews for the article URL in each language being shared.
