@@ -38,9 +38,10 @@
     <text x="440" y="272" fill="#e2c68f" font-size="24" font-weight="bold">поручить работу.</text>
     <text x="440" y="332" fill="#e5e3df" font-size="26">Дать статьи и</text>
     <text x="440" y="370" fill="#e5e3df" font-size="26">инструменты, разрешив</text>
-    <text x="440" y="408" fill="#e5e3df" font-size="26">искать новые. Поручить</text>
-    <text x="440" y="446" fill="#e5e3df" font-size="26">агентам двигаться</text>
-    <text x="440" y="484" fill="#e5e3df" font-size="26">вперёд без остановки.</text>
+    <text x="440" y="408" fill="#e5e3df" font-size="26">искать новые.</text>
+    <text x="440" y="446" fill="#e5e3df" font-size="26">Попросить агентов</text>
+    <text x="440" y="484" fill="#e5e3df" font-size="26">получать результаты</text>
+    <text x="440" y="522" fill="#e5e3df" font-size="26">и не останавливаться.</text>
   </g>
   <path d="M 776 103 h 25 m -8 -7 l 8 7 -8 7" fill="none" stroke="#e2c68f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   <g class="step" font-family="DejaVu Sans Condensed, sans-serif">
