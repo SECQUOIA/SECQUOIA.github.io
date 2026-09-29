@@ -24,6 +24,7 @@
 
     var body = entry.querySelector('.csl-right-inline') || entry;
     popup.innerHTML = body.innerHTML;
+    popup.lang = body.closest('[lang]').lang;
     popup.hidden = false;
     link.setAttribute('aria-describedby', popup.id);
     current = link;
