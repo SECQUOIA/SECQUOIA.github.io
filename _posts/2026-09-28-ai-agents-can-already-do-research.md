@@ -261,8 +261,8 @@ We think it is one of the most important questions, and we raise it without an a
 Peer review, paper counts, hiring, promotion, funding, and graduate training were all built for a world in which producing a result is slow and its author has read it.
 That is no longer the world we are in.
 We believe our research institutions, and the incentives they create, are not ready for what these systems can already do, let alone for what comes next.
-The time to start changing them was yesterday.
-The second-best time is right now.
+The best time to start changing them was yesterday.
+The second-best time is now.
 
 Institutions change over years, and models improve over months.
 A curriculum or a review policy designed for today’s models will take effect after those models have been replaced, and their replacements will be replaced in turn.

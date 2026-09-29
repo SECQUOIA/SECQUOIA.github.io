@@ -263,8 +263,8 @@ Creemos que es una de las preguntas más importantes y la planteamos sin tener u
 La revisión por pares, el conteo de artículos, la contratación, los ascensos, la financiación y la formación de posgrado se diseñaron para un mundo en el que producir un resultado es lento y su autor ha leído el trabajo.
 Ese ya no es el mundo en el que vivimos.
 Creemos que nuestras instituciones científicas y los incentivos que generan no están preparados para lo que estos sistemas ya pueden hacer, y mucho menos para lo que viene.
-El momento de empezar a cambiarlas era ayer.
-El segundo mejor momento es ahora mismo.
+El mejor momento de empezar a cambiarlas era ayer.
+El segundo mejor momento es ahora.
 
 Las instituciones cambian a lo largo de años, y los modelos mejoran en meses.
 Un plan de estudios o una política de revisión diseñados para los modelos de hoy entrará en vigor cuando esos modelos ya hayan sido reemplazados, y sus sustitutos también serán reemplazados.
