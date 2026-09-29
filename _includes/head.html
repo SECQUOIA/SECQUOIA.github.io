@@ -91,6 +91,8 @@
 		<!-- Preload critical CSS -->
 		<link rel="preload" href="{{ "assets/css/main.css" | relative_url }}" as="style">
 	
+	<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+
 	<!-- Optimized Google Fonts loading -->
 	<link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap"></noscript>
@@ -103,11 +105,8 @@
 	
 	<!-- PWA Manifest -->
 	<link rel="manifest" href="/manifest.json">
-	<meta name="theme-color" content="#9bf1ff">
+	<meta name="theme-color" content="#faf9f6">
 	
-	<!-- Optimized Highlight.js loading - only load when needed -->
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"></noscript>
 	
 	<!-- WebP detection script -->
 	<script>

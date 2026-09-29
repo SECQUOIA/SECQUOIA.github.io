@@ -43,7 +43,7 @@
 
 			&:active {
 				&:before {
-					background-color: desaturate(darken(_palette(highlight), 15), 5);
+					background-color: var(--highlight-active);
 				}
 			}
 		}

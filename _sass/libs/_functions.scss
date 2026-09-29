@@ -23,7 +23,11 @@
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
 @function _palette($keys...) {
-	@return val($palette, $keys...);
+	$key: nth($keys, 1);
+	@if str-index($key, 'accent') == 1 {
+		@return val($palette, $keys...);
+	}
+	@return unquote('var(--#{$key})');
 }
 
 /// Gets a size value.

@@ -1,0 +1,97 @@
+// Semantic colors shared by the site and article-specific styles.
+@mixin light-colors {
+  color-scheme: light;
+  --bg: #faf9f6;
+  --bg-alt: #f0ede6;
+  --fg: #292824;
+  --fg-bold: #171714;
+  --fg-light: #615c52;
+  --border: #c7bfae;
+  --border-bg: #eee9dd;
+  --highlight: #765719;
+  --highlight-active: #573e0c;
+  --highlight-bg: #ede1c8;
+  --overlay: rgba(250, 249, 246, 0.98);
+  --surface: #ffffff;
+  --surface-alt: #f4f1ea;
+  --accent: #765719;
+  --accent-border: #c6b590;
+  --accent-bg: #f3eddf;
+  --accent-mark: #e9ddc3;
+}
+@mixin dark-colors {
+  color-scheme: dark;
+  --bg: #202122;
+  --bg-alt: #292a2b;
+  --fg: #e5e3df;
+  --fg-bold: #faf9f6;
+  --fg-light: #bdb8ad;
+  --border: #625e55;
+  --border-bg: #34332f;
+  --highlight: #e2c68f;
+  --highlight-active: #f6dca7;
+  --highlight-bg: #423b2d;
+  --overlay: rgba(32, 33, 34, 0.98);
+  --surface: #292a2b;
+  --surface-alt: #303132;
+  --accent: #e2c68f;
+  --accent-border: #807052;
+  --accent-bg: #302d27;
+  --accent-mark: #433b2b;
+}
+
+:root { @include light-colors; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) { @include dark-colors; }
+}
+:root[data-theme="dark"] { @include dark-colors; }
+:root[data-theme="light"] { @include light-colors; }
+
+select option { color: var(--fg); background: var(--surface); }
+:focus-visible { outline: 2px solid var(--highlight); outline-offset: 4px; }
+
+// Keep text over photographs legible in either mode, including during hover.
+#banner, .tiles article, #header.alt {
+  --fg: #f7f5ef;
+  --fg-bold: #ffffff;
+  --highlight: #ffe2a7;
+  --highlight-active: #fff0d2;
+  --bg: #202122;
+  color: var(--fg);
+}
+#banner::after { background-color: #191a1b !important; opacity: 0.8; }
+.tiles article::after { z-index: 2; }
+.tiles article::before { opacity: 0.3; }
+#header.alt .logo strong { color: #202122; }
+
+// A native button supports keyboard, touch and screen-reader interaction.
+#header nav { align-items: center; }
+#theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45em;
+  height: 2.35em;
+  min-width: 44px;
+  margin: 0 0.4em;
+  padding: 0 0.7em;
+  border: 1px solid currentColor;
+  border-radius: 0.3em;
+  box-shadow: none;
+  color: inherit;
+  font-size: 0.75em;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+#theme-toggle[hidden] { display: none; }
+#theme-toggle:hover { color: var(--highlight); }
+#theme-toggle svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-width: 1.7; }
+#theme-toggle .theme-sun { display: none; }
+#theme-toggle[aria-pressed="true"] .theme-sun { display: block; }
+#theme-toggle[aria-pressed="true"] .theme-moon { display: none; }
+
+@media print {
+  :root, :root[data-theme] { @include light-colors; }
+  #theme-toggle { display: none; }
+}

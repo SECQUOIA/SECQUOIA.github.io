@@ -28,16 +28,8 @@
 		letter-spacing-alt:	0.25em
 	);
 
-// Palette.
+// Illustration accents. Runtime reading colors are in base/_themes.scss.
 	$palette: (
-		bg:					#2d2d2d,
-		bg-alt:				#383838,
-		fg:					#CEB888,
-		fg-bold:			#D4C294,
-		fg-light:			rgba(206,184,136,0.7),
-		border:				rgba(206,184,136,0.3),
-		border-bg:			rgba(206,184,136,0.1),
-		highlight:			#CFB991,
 		accent1:			#6fc3df,
 		accent2:			#8b7ec8,
 		accent3:			#e88b80,
