@@ -25,6 +25,24 @@ $gold-bold: #d4c294;
 .research-setup {
   margin: 2.5em 0;
 
+  .research-diagram {
+    display: block;
+    margin-bottom: 1.25em;
+    border: 0;
+
+    &:focus-visible {
+      outline: 2px solid var(--highlight, #{$gold-bold});
+      outline-offset: 4px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.5em;
+    }
+  }
+
   .research-steps {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

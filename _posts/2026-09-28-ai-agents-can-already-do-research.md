@@ -57,6 +57,9 @@ All of the agents’ output is public at <https://github.com/SECQUOIA/agent-swar
 The whole procedure fits in three steps ([Figure 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
+  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-en.svg' | relative_url }}" aria-label="Open the diagram at full size" title="Open the diagram at full size">
+    <img src="{{ '/assets/images/ai-agents-research/social-en.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+  </a>
   <ol class="research-steps">
     <li>
       <span class="step-number" aria-hidden="true">01</span>
