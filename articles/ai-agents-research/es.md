@@ -47,7 +47,7 @@ No lo hemos revisado todo y aún no podemos decir cuánto es correcto o novedoso
 Pero en todo lo que hemos revisado hasta ahora no hemos encontrado ningún error que invalide un resultado, y algunos resultados están demostrados en [Lean](https://lean-lang.org/), un software con el que una computadora verifica cada paso de una demostración.
 
 Esta entrada explica qué hicimos, por qué creemos que importa y qué pensamos que debería pasar ahora.
-El artículo completo contiene los detalles, las pruebas y las salvedades **[PENDIENTE: enlace al artículo]**.
+El [artículo completo](https://arxiv.org/abs/2609.35719) contiene los detalles, las pruebas y las salvedades.
 Todo lo que produjeron los agentes es público en <https://github.com/SECQUOIA/agent-swarm-research> [\[5\]](#ref-gusev2026corpus); esta entrada lo describe en el [commit 84c6be7](https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07), antes de cualquier aporte científico de nuestra parte.
 
 <h2 class="unnumbered" id="what-we-did">Qué hicimos</h2>

@@ -45,7 +45,7 @@ We have not checked all of it, and we cannot yet say how much is correct or new.
 But in everything we have checked so far, we have found no error that would invalidate a result, and some results are proved in [Lean](https://lean-lang.org/), software in which a computer checks every step of a proof.
 
 This post explains what we did, why we think it matters, and what we think should happen next.
-The full paper has the details, the evidence, and the caveats **[TODO: link to paper]**.
+The [full paper](https://arxiv.org/abs/2609.35719) has the details, the evidence, and the caveats.
 All of the agents’ output is public at <https://github.com/SECQUOIA/agent-swarm-research> [\[5\]](#ref-gusev2026corpus); this post describes it at [commit `84c6be7`](https://github.com/SECQUOIA/agent-swarm-research/tree/84c6be7aad17d085e5343e789885c1cbcbbd4e07), before any scientific input from us.
 
 <h2 class="unnumbered" id="what-we-did">What we did</h2>
