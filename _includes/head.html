@@ -9,6 +9,15 @@
 	<meta name="author" content="{{ site.author }}">
 	<link rel="canonical" href="{{ page.url | absolute_url }}">
 	
+  {% if page.translation_key %}
+  {% for version in site.data.article_languages[page.translation_key] %}
+  <link rel="alternate" hreflang="{{ version.lang }}" href="{{ version.url | absolute_url }}">
+  {% if version.lang == 'en' %}
+  <link rel="alternate" hreflang="x-default" href="{{ version.url | absolute_url }}">
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+
 	<!-- Security Headers -->
 	<meta http-equiv="X-Content-Type-Options" content="nosniff">
 	<meta http-equiv="X-Frame-Options" content="DENY">

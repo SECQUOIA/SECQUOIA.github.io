@@ -275,3 +275,17 @@ $gold-bold: #d4c294;
     }
   }
 }
+
+// Use language names so readers can find their version without knowing English.
+.article-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em 1.25em;
+  margin: 0 0 1.5em;
+  font-size: 0.85em;
+
+  a[aria-current="page"] {
+    font-weight: 600;
+    border-bottom-style: solid;
+  }
+}

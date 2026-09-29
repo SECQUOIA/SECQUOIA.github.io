@@ -6,6 +6,8 @@ author: "Sergey Gusev and David E. Bernal Neira"
 image: assets/images/ideas.webp
 date: 2026-09-28 08:00:00 -0400
 permalink: /ai-agents-can-already-do-research/
+lang: en
+translation_key: ai-agents-research
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/ai-agents-research.css' | relative_url }}">

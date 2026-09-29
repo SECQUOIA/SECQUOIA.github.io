@@ -47,6 +47,19 @@ print a `secquoia.github.io/...` URL that keeps working if the target moves.
    publishing. Use the PR's `preview-site` workflow artifact for review;
    screenshots can stay local under `_sources/`.
 
+### Translated articles
+
+Keep one canonical English post in `_posts/`.
+Place translations under `articles/<post-slug>/<lang>.md` with `layout: post`, `lang`, the same `translation_key`, and a language-prefixed permalink.
+Register every version in `_data/article_languages.yml` to show language links and alternate-language metadata.
+Translations are pages so they do not duplicate the original item in the News archive.
+
+Translate the complete article, including figure text, table descriptions, and status labels.
+Preserve formulas, result IDs, reference IDs, citation targets, and the bibliography's original publication titles.
+Keep one sentence per source line.
+When the English text changes, update both translations in the same PR and regenerate any PDFs being shared.
+Keep PDF exports local under `_sources/`; they are snapshots of the reviewed pages.
+
 ### Files and sizes
 
 - Keep working files (`.pptx`, `.docx`, drafts, loose PDFs) out of the repository

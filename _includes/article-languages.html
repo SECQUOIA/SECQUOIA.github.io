@@ -1,0 +1,8 @@
+{% assign versions = site.data.article_languages[page.translation_key] %}
+{% if versions %}
+<nav class="article-languages" aria-label="{% case page.lang %}{% when 'es' %}Idioma del artículo{% when 'ru' %}Язык статьи{% else %}Article language{% endcase %}">
+  {% for version in versions %}
+  <a href="{{ version.url | relative_url }}" lang="{{ version.lang }}" hreflang="{{ version.lang }}"{% if page.lang == version.lang %} aria-current="page"{% endif %}>{{ version.label }}</a>
+  {% endfor %}
+</nav>
+{% endif %}
