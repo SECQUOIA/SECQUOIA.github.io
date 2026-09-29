@@ -3,9 +3,10 @@ layout: post
 title: "AI Agents Can Already Do Research. Now What?"
 description: "What happened when we tried it ourselves, and why our institutions are not ready"
 author: "Sergey Gusev and David E. Bernal Neira"
-image: assets/images/ideas.webp
-social_image: /assets/images/ai-agents-research/social-en.png
-social_image_alt: "Three steps: describe the problem or field; provide papers and tools; ask a swarm of agents to make progress without stopping, with fresh-agent review, write-ups, and verification."
+image: assets/images/ai-agents-research/cover-en.webp
+social_image: /assets/images/ai-agents-research/cover-en.png
+social_image_alt: "SECQUOIA cover for “AI agents can already do research. Now what?”: a team of AI-agent figures works with research notes and a computer."
+methodology_image_alt: "Three steps: describe the problem or field; provide papers and tools; ask a swarm of agents to make progress without stopping, with fresh-agent review, write-ups, and verification."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
@@ -21,6 +22,12 @@ translation_key: ai-agents-research
 *What happened when we tried it ourselves, and why our institutions are not ready*
 
 **Sergey Gusev and David E. Bernal Neira** · Purdue University · September 2026
+
+<p class="article-cover">
+  <a href="{{ '/assets/images/ai-agents-research/cover-en.png' | relative_url }}" aria-label="Open the cover at full size" title="Open the cover at full size">
+    <img src="{{ '/assets/images/ai-agents-research/cover-en.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" decoding="async">
+  </a>
+</p>
 
 [What the agents produced (as of 25 September 2026)](#all-results) · [References](#references)
 
@@ -57,26 +64,27 @@ All of the agents’ output is public at <https://github.com/SECQUOIA/agent-swar
 The whole procedure fits in three steps ([Figure 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
-  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-en.png' | relative_url }}" aria-label="Open the diagram at full size" title="Open the diagram at full size">
-    <img src="{{ '/assets/images/ai-agents-research/social-en.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/methodology-en.png' | relative_url }}" aria-label="Open the diagram at full size" title="Open the diagram at full size">
+    <img src="{{ '/assets/images/ai-agents-research/methodology-en.webp' | relative_url }}" alt="{{ page.methodology_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>
       <span class="step-number" aria-hidden="true">01</span>
-      <h3>Describe the problem or field.</h3>
-      <p>Enough context to work from; freedom to explore any idea.</p>
+      <h3>Describe the problem.</h3>
+      <p>Give the swarm a problem or field, enough context to start, and freedom to explore any idea.</p>
     </li>
     <li>
       <span class="step-number" aria-hidden="true">02</span>
-      <h3>Provide papers and tools.</h3>
-      <p>And permission to get more.</p>
+      <h3>Equip and start the swarm.</h3>
+      <p>Provide papers and tools, with permission to get more.
+      Ask the agents to make progress and not stop.</p>
     </li>
     <li>
       <span class="step-number" aria-hidden="true">03</span>
-      <h3>Ask a swarm of agents to make progress, and not to stop.</h3>
-      <p>Every result reviewed by a fresh agent.
+      <h3>Review, write, and verify.</h3>
+      <p>Have a fresh agent review every result.
       Write it up.
-      Verify by proof or by computation where possible.</p>
+      Verify by proof or computation wherever possible.</p>
     </li>
   </ol>
   <figcaption><strong>Figure 1.</strong> The procedure we followed.

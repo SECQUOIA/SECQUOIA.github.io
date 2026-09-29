@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title" xml:lang="es">
+  <title id="title">Describir el problema. Equipar y poner en marcha el enjambre. Revisar, redactar y verificar.</title>
+  <!-- All visible text is copied verbatim from the original research-steps list. -->
+  <rect width="1200" height="630" fill="#202122"/>
+  <g class="step" font-family="DejaVu Sans Condensed, sans-serif">
+    <text x="48" y="77" fill="#ceb888" font-size="36" font-weight="bold">01</text>
+    <g transform="translate(151 24)" fill="none" stroke="#ceb888" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M 90 16 h 72 l 20 20 v 86 H 90 Z" fill="#292a2b"/>
+      <path d="M 162 16 v 20 h 20 M 108 88 h 53 M 108 102 h 39"/>
+      <path d="M 119 52 c 0 -15 27 -16 27 -1 c 0 10 -14 10 -14 20"/>
+      <circle cx="132" cy="79" r="1.8" fill="#ceb888" stroke="none"/>
+      <rect x="13" y="50" width="47" height="36" rx="12" fill="#302d27"/>
+      <circle cx="28" cy="67" r="2" fill="#ceb888" stroke="none"/>
+      <circle cx="45" cy="67" r="2" fill="#ceb888" stroke="none"/>
+      <path d="M 36 50 V 39 M 22 86 v 17 q 0 12 14 12 h 12 V 89 M 22 95 H 10 v 24 M 48 97 l 22 -9 M 29 115 v 12 M 42 115 v 12"/>
+      <circle cx="36" cy="35" r="3" fill="#e2c68f"/></g>
+    <path d="M 48 175 h 312" stroke="#625e55"/>
+    <text x="48" y="236" fill="#e2c68f" font-size="26" font-weight="bold">Describir el problema.</text>
+    <text x="48" y="332" fill="#e5e3df" font-size="26">Dar al enjambre un</text>
+    <text x="48" y="370" fill="#e5e3df" font-size="26">problema o campo,</text>
+    <text x="48" y="408" fill="#e5e3df" font-size="26">contexto suficiente para</text>
+    <text x="48" y="446" fill="#e5e3df" font-size="26">empezar y libertad para</text>
+    <text x="48" y="484" fill="#e5e3df" font-size="26">explorar cualquier idea.</text>
+  </g>
+  <path d="M 384 103 h 25 m -8 -7 l 8 7 -8 7" fill="none" stroke="#e2c68f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="step" font-family="DejaVu Sans Condensed, sans-serif">
+    <text x="440" y="77" fill="#ceb888" font-size="36" font-weight="bold">02</text>
+    <g transform="translate(543 24)" fill="none" stroke="#ceb888" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M 18 30 H 70 V 107 H 18 Z" fill="#302d27"/>
+      <path d="M 28 21 H 83 V 97 H 28 Z" fill="#292a2b"/>
+      <path d="M 40 38 H 69 M 40 49 H 69 M 40 60 H 61"/>
+      <rect x="81" y="51" width="96" height="60" rx="5" fill="#292a2b"/>
+      <path d="M 73 111 H 185 l 6 10 H 67 Z" fill="#302d27"/>
+      <path d="M 108 70 l -9 9 l 9 9 M 149 70 l 9 9 l -9 9 M 134 66 l -10 26"/>
+      <circle cx="165" cy="28" r="17" fill="#302d27"/>
+      <path d="M 165 20 v 16 M 157 28 h 16"/></g>
+    <path d="M 440 175 h 312" stroke="#625e55"/>
+    <text x="440" y="236" fill="#e2c68f" font-size="26" font-weight="bold">Equipar y poner en</text>
+    <text x="440" y="272" fill="#e2c68f" font-size="26" font-weight="bold">marcha el enjambre.</text>
+    <text x="440" y="332" fill="#e5e3df" font-size="26">Proporcionar artículos y</text>
+    <text x="440" y="370" fill="#e5e3df" font-size="26">herramientas, con</text>
+    <text x="440" y="408" fill="#e5e3df" font-size="26">permiso para conseguir</text>
+    <text x="440" y="446" fill="#e5e3df" font-size="26">más. Pedir a los agentes</text>
+    <text x="440" y="484" fill="#e5e3df" font-size="26">que avancen y que no se</text>
+    <text x="440" y="522" fill="#e5e3df" font-size="26">detengan.</text>
+  </g>
+  <path d="M 776 103 h 25 m -8 -7 l 8 7 -8 7" fill="none" stroke="#e2c68f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="step" font-family="DejaVu Sans Condensed, sans-serif">
+    <text x="832" y="77" fill="#ceb888" font-size="36" font-weight="bold">03</text>
+    <g transform="translate(935 24)" fill="none" stroke="#ceb888" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M 46 47 Q 100 3 153 47 M 162 72 Q 144 126 91 124 M 63 118 Q 14 99 34 64" stroke="#ceb888"/>
+      <path d="M 145 42 l 8 5 l -1 -10 M 99 117 l -8 7 l 10 2 M 26 68 l 8 -4 l 4 9" stroke="#ceb888"/>
+      <g fill="#302d27">
+        <rect x="16" y="32" width="37" height="28" rx="9"/>
+        <rect x="150" y="37" width="37" height="28" rx="9"/>
+        <rect x="38" y="98" width="37" height="28" rx="9"/>
+      </g>
+      <g fill="#ceb888" stroke="none">
+        <circle cx="28" cy="46" r="2"/><circle cx="41" cy="46" r="2"/>
+        <circle cx="162" cy="51" r="2"/><circle cx="175" cy="51" r="2"/>
+        <circle cx="50" cy="112" r="2"/><circle cx="63" cy="112" r="2"/>
+      </g>
+      <path d="M 34 32 v -8 M 168 37 v -8 M 56 98 v -8"/>
+      <path d="M 82 49 h 46 v 59 H 82 Z" fill="#292a2b"/>
+      <path d="M 92 61 h 23 M 92 72 h 17 M 92 83 h 14"/>
+      <circle cx="133" cy="89" r="16" fill="#292a2b"/>
+      <path d="M 144 101 l 16 16 M 126 89 l 5 5 l 9 -10"/></g>
+    <path d="M 832 175 h 312" stroke="#625e55"/>
+    <text x="832" y="236" fill="#e2c68f" font-size="26" font-weight="bold">Revisar, redactar y</text>
+    <text x="832" y="272" fill="#e2c68f" font-size="26" font-weight="bold">verificar.</text>
+    <text x="832" y="332" fill="#e5e3df" font-size="26">Que un agente nuevo</text>
+    <text x="832" y="370" fill="#e5e3df" font-size="26">revise cada resultado.</text>
+    <text x="832" y="408" fill="#e5e3df" font-size="26">Redactarlo. Verificarlo</text>
+    <text x="832" y="446" fill="#e5e3df" font-size="26">mediante una</text>
+    <text x="832" y="484" fill="#e5e3df" font-size="26">demostración o mediante</text>
+    <text x="832" y="522" fill="#e5e3df" font-size="26">cálculos siempre que sea</text>
+    <text x="832" y="560" fill="#e5e3df" font-size="26">posible.</text>
+  </g>
+  <text x="48" y="609" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" letter-spacing="3" fill="#ceb888">SECQUOIA</text>
+</svg>

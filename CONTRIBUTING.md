@@ -56,25 +56,36 @@ add `social_image_alt` and the pixel dimensions `social_image_width` and
 Keep the matching WebP asset for website use; social metadata may point to the
 PNG export, while inline page images use WebP.
 
-The AI agents article has a translated illustrated banner for each language in
-`assets/images/ai-agents-research/`. The PNGs are 1200 × 630; the matching WebP
-exports are embedded in the article. Each banner illustrates the same procedure:
-describe the problem, provide papers and tools, and let a swarm keep making
-progress with fresh-agent review, write-ups, and verification. Keep the complete
-original step text visible below the illustration; the short image captions
-supplement that text and must not replace it.
+The AI agents article uses two distinct visuals in each language, stored in
+`assets/images/ai-agents-research/`:
 
-The artwork was generated with the built-in imagegen tool, then localized into
-Spanish and Russian while preserving the illustration. Edit the artwork using
-the existing banner as the reference, check all translated labels, and export
-the website version from the final PNG:
+- `cover-<lang>.png` is the SECQUOIA-themed blog and social cover. Its matching
+  WebP appears at the start of the article and in the website tile. The cover
+  uses the article title and 3D agent artwork; it is not the methodology diagram.
+- `methodology-<lang>.svg` is Figure 1, with simple line illustrations and the
+  complete three-step wording. Its PNG/WebP exports contain every heading and
+  sentence from the article's `research-steps` list, word for word. Keep the SVG
+  and article text synchronized; do not abbreviate captions to make them fit.
+
+Both visuals use the site's charcoal, ivory and gold palette and export at
+1200 × 630. The methodology image appears on desktop; phones and print use the
+same complete wording as readable native cards. The ordered list also remains
+available to screen readers on desktop.
+
+The covers were generated with the built-in imagegen tool and localized while
+preserving the artwork. Edit them using the existing cover as the reference.
+The methodology SVG is editable; its text uses DejaVu Sans Condensed. Regenerate
+its exports with ImageMagick, and check every translated line for clipping:
 
 ```bash
-convert assets/images/ai-agents-research/social-en.png -quality 92 assets/images/ai-agents-research/social-en.webp
+convert -background '#202122' -density 192 assets/images/ai-agents-research/methodology-en.svg -resize 1200x630 -strip assets/images/ai-agents-research/methodology-en.png
+convert assets/images/ai-agents-research/methodology-en.png -quality 95 assets/images/ai-agents-research/methodology-en.webp
+convert assets/images/ai-agents-research/cover-en.png -quality 92 assets/images/ai-agents-research/cover-en.webp
 ```
 
-`test/social_preview_test.rb` checks social metadata, asset dimensions, the
-embedded localized banner, its full-size link, and retention of the step list.
+`test/social_preview_test.rb` checks that social metadata selects the cover,
+the article embeds the separate visuals, assets and links are valid, and every
+methodology sentence matches the article exactly.
 
 After deployment, use [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
 to refresh cached previews for the article URL in each language being shared.

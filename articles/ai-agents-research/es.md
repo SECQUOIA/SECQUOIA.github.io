@@ -3,9 +3,10 @@ layout: post
 title: "Los agentes de IA ya pueden investigar. ¿Y ahora qué?"
 description: "Qué pasó cuando lo intentamos nosotros mismos y por qué nuestras instituciones no están preparadas"
 author: "Sergey Gusev y David E. Bernal Neira"
-image: assets/images/ideas.webp
-social_image: /assets/images/ai-agents-research/social-es.png
-social_image_alt: "Tres pasos: describir el problema o el campo; proporcionar artículos y herramientas; pedir a un enjambre de agentes que avance sin detenerse, con revisión por un agente nuevo, redacción y verificación."
+image: assets/images/ai-agents-research/cover-es.webp
+social_image: /assets/images/ai-agents-research/cover-es.png
+social_image_alt: "Portada de SECQUOIA para «Los agentes de IA ya pueden investigar. ¿Y ahora qué?»: figuras de agentes de IA trabajan con notas de investigación y una computadora."
+methodology_image_alt: "Tres pasos: describir el problema o el campo; proporcionar artículos y herramientas; pedir a un enjambre de agentes que avance sin detenerse, con revisión por un agente nuevo, redacción y verificación."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
@@ -23,6 +24,12 @@ show_tile: false
 *Qué pasó cuando lo intentamos nosotros mismos y por qué nuestras instituciones no están preparadas*
 
 **Sergey Gusev y David E. Bernal Neira** · Universidad Purdue · septiembre de 2026
+
+<p class="article-cover">
+  <a href="{{ '/assets/images/ai-agents-research/cover-es.png' | relative_url }}" aria-label="Abrir la portada a tamaño completo" title="Abrir la portada a tamaño completo">
+    <img src="{{ '/assets/images/ai-agents-research/cover-es.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" decoding="async">
+  </a>
+</p>
 
 [Lo que produjeron los agentes (hasta el 25 de septiembre de 2026)](#all-results) · [Referencias](#references)
 
@@ -59,23 +66,24 @@ Todo lo que produjeron los agentes es público en <https://github.com/SECQUOIA/a
 El procedimiento completo cabe en tres pasos ([Figura 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
-  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-es.png' | relative_url }}" aria-label="Abrir el diagrama a tamaño completo" title="Abrir el diagrama a tamaño completo">
-    <img src="{{ '/assets/images/ai-agents-research/social-es.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/methodology-es.png' | relative_url }}" aria-label="Abrir el diagrama a tamaño completo" title="Abrir el diagrama a tamaño completo">
+    <img src="{{ '/assets/images/ai-agents-research/methodology-es.webp' | relative_url }}" alt="{{ page.methodology_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>
       <span class="step-number" aria-hidden="true">01</span>
-      <h3>Describir el problema o el campo.</h3>
-      <p>Contexto suficiente para empezar; libertad para explorar cualquier idea.</p>
+      <h3>Describir el problema.</h3>
+      <p>Dar al enjambre un problema o campo, contexto suficiente para empezar y libertad para explorar cualquier idea.</p>
     </li>
     <li>
       <span class="step-number" aria-hidden="true">02</span>
-      <h3>Proporcionar artículos y herramientas.</h3>
-      <p>Y permiso para conseguir más.</p>
+      <h3>Equipar y poner en marcha el enjambre.</h3>
+      <p>Proporcionar artículos y herramientas, con permiso para conseguir más.
+      Pedir a los agentes que avancen y que no se detengan.</p>
     </li>
     <li>
       <span class="step-number" aria-hidden="true">03</span>
-      <h3>Pedir a un enjambre de agentes que avance y que no se detenga.</h3>
+      <h3>Revisar, redactar y verificar.</h3>
       <p>Que un agente nuevo revise cada resultado.
       Redactarlo.
       Verificarlo mediante una demostración o mediante cálculos siempre que sea posible.</p>

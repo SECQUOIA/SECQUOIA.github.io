@@ -3,9 +3,10 @@ layout: post
 title: "ИИ-агенты уже могут заниматься наукой. Что дальше?"
 description: "Что получилось, когда мы попробовали сами, и почему научная система к этому не готова"
 author: "Сергей Гусев и Давид Э. Бернал Нейра"
-image: assets/images/ideas.webp
-social_image: /assets/images/ai-agents-research/social-ru.png
-social_image_alt: "Три шага: описать задачу или область; дать статьи и инструменты; поручить рою агентов двигаться вперёд без остановки, с проверкой новым агентом, записью результатов и проверкой доказательством или расчётом."
+image: assets/images/ai-agents-research/cover-ru.webp
+social_image: /assets/images/ai-agents-research/cover-ru.png
+social_image_alt: "Обложка SECQUOIA к статье «ИИ-агенты уже могут заниматься наукой. Что дальше?»: фигурки ИИ-агентов работают с научными записями и компьютером."
+methodology_image_alt: "Три шага: описать задачу или область; дать статьи и инструменты; поручить рою агентов двигаться вперёд без остановки, с проверкой новым агентом, записью результатов и проверкой доказательством или расчётом."
 social_image_width: 1200
 social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
@@ -23,6 +24,12 @@ show_tile: false
 *Что получилось, когда мы попробовали сами, и почему научная система к этому не готова*
 
 **Сергей Гусев и Давид Э. Бернал Нейра** · Университет Пердью · сентябрь 2026 года
+
+<p class="article-cover">
+  <a href="{{ '/assets/images/ai-agents-research/cover-ru.png' | relative_url }}" aria-label="Открыть обложку в полном размере" title="Открыть обложку в полном размере">
+    <img src="{{ '/assets/images/ai-agents-research/cover-ru.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" decoding="async">
+  </a>
+</p>
 
 [Что сделали агенты (на 25 сентября 2026 года)](#all-results) · [Литература](#references)
 
@@ -59,23 +66,24 @@ show_tile: false
 Вся процедура укладывается в три шага ([рисунок 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
-  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-ru.png' | relative_url }}" aria-label="Открыть схему в полном размере" title="Открыть схему в полном размере">
-    <img src="{{ '/assets/images/ai-agents-research/social-ru.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
+  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/methodology-ru.png' | relative_url }}" aria-label="Открыть схему в полном размере" title="Открыть схему в полном размере">
+    <img src="{{ '/assets/images/ai-agents-research/methodology-ru.webp' | relative_url }}" alt="{{ page.methodology_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>
       <span class="step-number" aria-hidden="true">01</span>
-      <h3>Описать задачу или область.</h3>
-      <p>Столько контекста, сколько нужно для работы, и свобода браться за любые идеи.</p>
+      <h3>Описать задачу.</h3>
+      <p>Дать рою задачу или область, достаточно контекста для начала работы и свободу исследовать любые идеи.</p>
     </li>
     <li>
       <span class="step-number" aria-hidden="true">02</span>
-      <h3>Дать статьи и инструменты.</h3>
-      <p>И разрешить искать новые.</p>
+      <h3>Дать рою ресурсы и поручить работу.</h3>
+      <p>Дать статьи и инструменты, разрешив искать новые.
+      Поручить агентам двигаться вперёд без остановки.</p>
     </li>
     <li>
       <span class="step-number" aria-hidden="true">03</span>
-      <h3>Поручить рою агентов двигаться вперёд без остановки.</h3>
+      <h3>Рецензировать, записывать и проверять.</h3>
       <p>Каждый результат проверяет новый агент.
       Всё записывается.
       Где можно — проверка доказательством или расчётом.</p>

@@ -1,4 +1,4 @@
-# Check the generated pages: social crawlers must see the article diagram,
+# Check the generated pages: social crawlers must see the article cover,
 # while pages without an override retain the site's group photograph.
 require "nokogiri"
 require "uri"
@@ -17,9 +17,9 @@ end
   document = Nokogiri::HTML(File.read(path))
   image = meta(document, "og:image")
   uri = URI(image)
-  suffix = "/assets/images/ai-agents-research/social-#{language}.png"
+  suffix = "/assets/images/ai-agents-research/cover-#{language}.png"
   unless uri.is_a?(URI::HTTPS) && uri.host && uri.path.end_with?(suffix)
-    abort "#{language}: expected an absolute diagram URL ending in #{suffix}, got #{image}"
+    abort "#{language}: expected an absolute cover URL ending in #{suffix}, got #{image}"
   end
   abort "#{language}: Twitter image differs" unless meta(document, "twitter:image") == image
   alt = meta(document, "og:image:alt")
@@ -37,18 +37,45 @@ end
   twin = File.join(site_dir, suffix.delete_prefix("/").sub(/\.png$/, ".webp"))
   abort "#{language}: missing WebP equivalent" unless File.file?(twin)
 
-  # The illustrated overview supplements the complete, selectable instructions.
+  cover = document.at_css(".article-cover img")
+  unless cover && URI(cover["src"]).path.end_with?(suffix.sub(/\.png$/, ".webp")) && cover["alt"] == alt
+    abort "#{language}: article does not embed its own localized cover"
+  end
+  unless URI(cover.parent["href"]).path.end_with?(suffix) && cover["width"] == width.to_s && cover["height"] == height.to_s
+    abort "#{language}: full-size cover link or dimensions differ"
+  end
+
+  # Figure 1 is separate from the blog cover and contains the complete procedure.
   figure = document.at_css("#research-setup")
   inline = figure&.at_css("a.research-diagram img")
-  unless inline && URI(inline["src"]).path.end_with?(suffix.sub(/\.png$/, ".webp"))
-    abort "#{language}: article does not embed its own illustrated banner"
+  method_suffix = "/assets/images/ai-agents-research/methodology-#{language}.png"
+  unless inline && URI(inline["src"]).path.end_with?(method_suffix.sub(/\.png$/, ".webp"))
+    abort "#{language}: article does not embed its own methodology figure"
   end
-  unless URI(inline.parent["href"]).path.end_with?(suffix) && inline["width"] == width.to_s && inline["height"] == height.to_s
-    abort "#{language}: full-size banner link or inline dimensions differ"
+  unless URI(inline.parent["href"]).path.end_with?(method_suffix) && inline["width"] == "1200" && inline["height"] == "630"
+    abort "#{language}: full-size methodology link or dimensions differ"
   end
+  method_path = File.join(site_dir, method_suffix.delete_prefix("/"))
+  method_png = File.binread(method_path)
+  unless method_png.start_with?("\x89PNG\r\n\x1a\n".b) && method_png.byteslice(16, 8).unpack("NN") == [1200, 630]
+    abort "#{language}: methodology PNG must be 1200 × 630"
+  end
+  twin = method_path.sub(/\.png$/, ".webp")
+  abort "#{language}: missing methodology WebP" unless File.file?(twin)
+
+  # Every instruction must be inside the methodology image itself, not only in adjacent HTML.
+  # Compare the editable export with the article to catch omitted or invented copy.
+  svg_path = twin.sub(/\.webp$/, ".svg")
+  abort "#{language}: missing editable methodology source" unless File.file?(svg_path)
+  svg = Nokogiri::XML(File.read(svg_path)) { |config| config.strict.nonet }
+  svg.remove_namespaces!
   steps = figure.css(".research-steps > li")
-  unless steps.length == 3 && steps.all? { |step| step.at_css("h3") && !step.at_css("p")&.text.to_s.strip.empty? }
-    abort "#{language}: the complete original step list must remain beside the illustration"
+  exported_steps = svg.css("g.step")
+  abort "#{language}: expected three article and methodology steps" unless steps.length == 3 && exported_steps.length == 3
+  steps.zip(exported_steps).each_with_index do |(original, exported), index|
+    expected = original.text.split.join(" ")
+    actual = exported.css("text").map(&:text).join(" ").split.join(" ")
+    abort "#{language}: methodology step #{index + 1} differs from the article" unless actual == expected
   end
 end
 
@@ -60,4 +87,4 @@ home = Nokogiri::HTML(File.read(File.join(site_dir, "index.html")))
   end
 end
 
-puts "Social previews use localized article diagrams with valid assets; the home page keeps its group image."
+puts "Social previews use localized covers; methodology figures preserve the complete article steps; the home page keeps its group image."
