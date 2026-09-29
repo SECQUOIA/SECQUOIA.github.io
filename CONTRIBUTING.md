@@ -56,22 +56,25 @@ add `social_image_alt` and the pixel dimensions `social_image_width` and
 Keep the matching WebP asset for website use; social metadata may point to the
 PNG export, while inline page images use WebP.
 
-The AI agents article has a translated diagram for each language in
-`assets/images/ai-agents-research/`. Each SVG preserves the original numbered
-steps in that language's article, including every heading and sentence. Update
-the article and SVG together; `test/social_preview_test.rb` checks their text
-matches. Keep the three-card layout, arrows, and original gold-on-charcoal palette.
-The inline SVG/WebP is 1200 × 500; the social PNG adds background padding to
-1200 × 630. Regenerate both exports with ImageMagick and the DejaVu Sans Condensed font:
+The AI agents article has a translated illustrated banner for each language in
+`assets/images/ai-agents-research/`. The PNGs are 1200 × 630; the matching WebP
+exports are embedded in the article. Each banner illustrates the same procedure:
+describe the problem, provide papers and tools, and let a swarm keep making
+progress with fresh-agent review, write-ups, and verification. Keep the complete
+original step text visible below the illustration; the short image captions
+supplement that text and must not replace it.
+
+The artwork was generated with the built-in imagegen tool, then localized into
+Spanish and Russian while preserving the illustration. Edit the artwork using
+the existing banner as the reference, check all translated labels, and export
+the website version from the final PNG:
 
 ```bash
-convert -background '#2e2d2b' assets/images/ai-agents-research/social-en.svg -strip -quality 95 assets/images/ai-agents-research/social-en.webp
-convert -background '#2e2d2b' assets/images/ai-agents-research/social-en.svg -gravity center -extent 1200x630 -strip assets/images/ai-agents-research/social-en.png
+convert assets/images/ai-agents-research/social-en.png -quality 92 assets/images/ai-agents-research/social-en.webp
 ```
 
-The article shows the image on desktop and the original, selectable step text
-as stacked cards on phones. The full text also remains available to screen
-readers and in print; do not replace it with an abbreviated image description.
+`test/social_preview_test.rb` checks social metadata, asset dimensions, the
+embedded localized banner, its full-size link, and retention of the step list.
 
 After deployment, use [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
 to refresh cached previews for the article URL in each language being shared.

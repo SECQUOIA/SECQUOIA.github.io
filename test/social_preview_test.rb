@@ -37,18 +37,18 @@ end
   twin = File.join(site_dir, suffix.delete_prefix("/").sub(/\.png$/, ".webp"))
   abort "#{language}: missing WebP equivalent" unless File.file?(twin)
 
-  # The article's original numbered steps are the source of truth. A plausible
-  # summary graphic is not an export of that diagram: every sentence must match.
-  svg_path = twin.sub(/\.webp$/, ".svg")
-  svg = Nokogiri::XML(File.read(svg_path)) { |config| config.strict.nonet }
-  svg.remove_namespaces!
-  steps = document.css("#research-setup .research-steps > li")
-  exported_steps = svg.css("g.step")
-  abort "#{language}: expected three original and exported steps" unless steps.length == 3 && exported_steps.length == 3
-  steps.zip(exported_steps).each_with_index do |(original, exported), index|
-    expected = original.text.split.join(" ")
-    actual = exported.css("text").map(&:text).join(" ").split.join(" ")
-    abort "#{language}: diagram step #{index + 1} differs from the original article text" unless actual == expected
+  # The illustrated overview supplements the complete, selectable instructions.
+  figure = document.at_css("#research-setup")
+  inline = figure&.at_css("a.research-diagram img")
+  unless inline && URI(inline["src"]).path.end_with?(suffix.sub(/\.png$/, ".webp"))
+    abort "#{language}: article does not embed its own illustrated banner"
+  end
+  unless URI(inline.parent["href"]).path.end_with?(suffix) && inline["width"] == width.to_s && inline["height"] == height.to_s
+    abort "#{language}: full-size banner link or inline dimensions differ"
+  end
+  steps = figure.css(".research-steps > li")
+  unless steps.length == 3 && steps.all? { |step| step.at_css("h3") && !step.at_css("p")&.text.to_s.strip.empty? }
+    abort "#{language}: the complete original step list must remain beside the illustration"
   end
 end
 

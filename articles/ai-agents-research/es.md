@@ -59,8 +59,8 @@ Todo lo que produjeron los agentes es público en <https://github.com/SECQUOIA/a
 El procedimiento completo cabe en tres pasos ([Figura 1](#research-setup)).
 
 <figure id="research-setup" class="research-setup">
-  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-es.svg' | relative_url }}" aria-label="Abrir el diagrama a tamaño completo" title="Abrir el diagrama a tamaño completo">
-    <img src="{{ '/assets/images/ai-agents-research/social-es.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="500" loading="lazy" decoding="async">
+  <a class="research-diagram" href="{{ '/assets/images/ai-agents-research/social-es.png' | relative_url }}" aria-label="Abrir el diagrama a tamaño completo" title="Abrir el diagrama a tamaño completo">
+    <img src="{{ '/assets/images/ai-agents-research/social-es.webp' | relative_url }}" alt="{{ page.social_image_alt | escape }}" width="1200" height="630" loading="lazy" decoding="async">
   </a>
   <ol class="research-steps">
     <li>
