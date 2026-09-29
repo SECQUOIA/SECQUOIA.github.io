@@ -16,6 +16,9 @@ vendor/
 .rvm
 rbenv/
 
+# Local LaTeX authoring sources and review screenshots
+/_sources/
+
 # Working files that do not belong in the site. PDFs go in assets/pdf/,
 # slide sources and drafts stay out of the repository altogether.
 /*.pdf

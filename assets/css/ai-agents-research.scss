@@ -1,0 +1,338 @@
+---
+---
+
+// Consume the shared light/dark palette when present. Fallbacks preserve the
+// existing gold-on-charcoal theme until the shared theme change lands.
+$gold: #ceb888;
+$gold-bold: #d4c294;
+
+// Reading layout. The theme's centred column is 65em wide and puts 2em after every
+// paragraph; narrow the whole column (title, text, figure, and tables alike) to
+// about 100 characters per line and tighten the gaps.
+#one > .inner {
+  max-width: 48em;
+
+  > p {
+    margin-bottom: 1.25em;
+  }
+
+  > h2 {
+    margin-top: 1.5em;
+  }
+}
+
+.article-cover {
+  margin: 1.5em 0;
+
+  a { display: block; border: 0; }
+  img { display: block; width: 100%; height: auto; border-radius: 0.5em; }
+}
+
+// Sizes use em so the figure scales with the theme's body font, which grows on wide screens.
+.research-setup {
+  margin: 2.5em 0;
+
+  .research-diagram {
+    display: block;
+    margin-bottom: 1.25em;
+    border: 0;
+
+    &:focus-visible {
+      outline: 2px solid var(--highlight, #{$gold-bold});
+      outline-offset: 4px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.5em;
+    }
+  }
+
+  .research-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5em;
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    padding: 1.4em 1.5em 1.5em;
+    border: 1px solid var(--accent-border, rgba($gold, 0.25));
+    border-radius: 0.5em;
+    background: var(--accent-bg, rgba($gold, 0.05));
+  }
+
+  // Arrow centered in the gap before each step after the first.
+  li + li::before {
+    content: "\2192";
+    position: absolute;
+    top: 50%;
+    left: -2.5em;
+    width: 2.5em;
+    transform: translateY(-50%);
+    color: var(--accent, #{$gold-bold});
+    text-align: center;
+  }
+
+  .step-number {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--accent, #{$gold-bold});
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  h3 {
+    margin: 0 0 0.6em;
+    font-size: 1.05em;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+
+  figcaption {
+    font-size: 0.85em;
+    line-height: 1.6;
+  }
+}
+
+// An objection, set as a pull quote, followed by our response.
+.objection {
+  margin: 0 0 1.75em;
+  padding: 1.1em 1.4em 1.2em;
+  border-left: 3px solid var(--accent-border, #{$gold-bold});
+  border-radius: 0 0.5em 0.5em 0;
+  background: var(--accent-bg, rgba($gold, 0.05));
+
+  p {
+    margin: 0;
+  }
+
+  p > strong:first-child {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--accent, #{$gold-bold});
+    font-size: 1.1em;
+    line-height: 1.45;
+  }
+}
+
+// Question-and-position list; each position is highlighted in its own words.
+.positions {
+  margin: 0 0 2em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 1.2em 0;
+    border-top: 1px solid var(--accent-border, rgba($gold, 0.2));
+
+    &:last-child {
+      border-bottom: 1px solid var(--accent-border, rgba($gold, 0.2));
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p > strong:first-child {
+    display: block;
+    margin-bottom: 0.4em;
+  }
+
+  // Highlighter mark using the active accent palette.
+  .position {
+    padding: 0.05em 0.25em;
+    border-radius: 0.2em;
+    background: var(--accent-mark, rgba($gold, 0.16));
+    color: var(--accent, #{$gold-bold});
+    font-weight: 600;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}
+
+// Numbered action cards, echoing the step numbers in Figure 1.
+.action-steps {
+  margin: 0 0 2em;
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: action;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 2.2em minmax(0, 1fr);
+    gap: 0 1em;
+    margin: 0 0 1em;
+    padding: 1.2em 1.4em;
+    border: 1px solid var(--accent-border, rgba($gold, 0.25));
+    border-radius: 0.5em;
+    background: var(--accent-bg, rgba($gold, 0.05));
+    counter-increment: action;
+
+    &::before {
+      content: counter(action, decimal-leading-zero);
+      color: var(--accent, #{$gold-bold});
+      font-size: 1.6em;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.research-inventory {
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--accent-border, rgba($gold, 0.2));
+  border-radius: 0.25rem;
+
+  &:focus-visible {
+    outline: 2px solid var(--highlight, #{$gold-bold});
+    outline-offset: 3px;
+  }
+
+  // Sized in em so the table fits the 48em reading column and scales with the body
+  // font; narrower screens scroll the table sideways instead of squeezing it.
+  table {
+    min-width: 36em;
+    table-layout: fixed;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    line-height: 1.7;
+  }
+
+  caption {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  th, td {
+    vertical-align: top;
+    overflow-wrap: break-word;
+  }
+
+  th:nth-child(1) { width: 6%; }
+  th:nth-child(2) { width: 64%; }
+  th:nth-child(3) { width: 16%; }
+  th:nth-child(4) { width: 14%; }
+
+  td > strong:first-child {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Popup created by assets/js/reference-previews.js.
+.reference-preview {
+  position: absolute;
+  z-index: 10001;
+  width: max-content;
+  max-width: min(30em, calc(100vw - 16px));
+  padding: 0.75em 1em;
+  border: 1px solid var(--accent-border, rgba($gold, 0.35));
+  border-radius: 0.4em;
+  background: var(--surface, #242424);
+  color: var(--fg, #{$gold});
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.45);
+  font-size: 0.85em;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+#refs.csl-bib-body {
+  overflow-wrap: anywhere;
+
+  .csl-entry {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .csl-left-margin {
+    flex: 0 0 2em;
+    white-space: nowrap;
+    color: var(--accent, #{$gold-bold});
+  }
+
+  .csl-right-inline {
+    min-width: 0;
+  }
+}
+
+// The diagram contains the same complete wording as the ordered list.
+// Show it once on desktop; retain selectable, stacked text on phones and in print.
+// Clipping keeps the list available to assistive technology on desktop.
+@media screen and (min-width: 737px) {
+  .research-setup .research-steps {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+
+@media print {
+  .research-setup .research-diagram { display: none; }
+}
+
+@media screen and (max-width: 736px) {
+  .research-setup {
+    .research-diagram { display: none; }
+
+    .research-steps {
+      grid-template-columns: 1fr;
+    }
+
+    li + li::before {
+      content: "\2193";
+      top: -2.5em;
+      left: 0;
+      width: 100%;
+      line-height: 2.5em;
+      transform: none;
+    }
+  }
+}
+
+// Use language names so readers can find their version without knowing English.
+.article-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em 1.25em;
+  margin: 0 0 1.5em;
+  font-size: 0.85em;
+
+  a[aria-current="page"] {
+    font-weight: 600;
+    border-bottom-style: solid;
+  }
+}
