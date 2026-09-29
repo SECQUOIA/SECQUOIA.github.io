@@ -47,7 +47,6 @@
 :root[data-theme="dark"] { @include dark-colors; }
 :root[data-theme="light"] { @include light-colors; }
 
-body, input, select, textarea { font-weight: 400; }
 select option { color: var(--fg); background: var(--surface); }
 :focus-visible { outline: 2px solid var(--highlight); outline-offset: 4px; }
 
@@ -61,7 +60,7 @@ select option { color: var(--fg); background: var(--surface); }
   color: var(--fg);
 }
 #banner::after { background-color: #191a1b !important; opacity: 0.8; }
-.tiles article::after { background-color: rgba(15, 16, 17, 0.78); z-index: 2; }
+.tiles article::after { z-index: 2; }
 .tiles article::before { opacity: 0.3; }
 #header.alt .logo strong { color: #202122; }
 
@@ -92,30 +91,7 @@ select option { color: var(--fg); background: var(--surface); }
 #theme-toggle[aria-pressed="true"] .theme-sun { display: block; }
 #theme-toggle[aria-pressed="true"] .theme-moon { display: none; }
 
-// Syntax highlighting uses its own dark surface even in light mode.
-pre code.hljs { color: #adbac7; background: #22272e; }
 @media print {
   :root, :root[data-theme] { @include light-colors; }
   #theme-toggle { display: none; }
 }
-
-// Article components can be loaded after the shared theme stylesheet.
-body .research-setup li,
-body .objection,
-body .action-steps li {
-  border-color: var(--accent-border);
-  background: var(--accent-bg);
-}
-body .research-setup li + li::before,
-body .research-setup .step-number,
-body .objection p > strong:first-child,
-body .action-steps li::before,
-body #refs.csl-bib-body .csl-left-margin {
-  color: var(--accent);
-}
-body .positions li,
-body .positions li:last-child,
-body .research-inventory { border-color: var(--accent-border); }
-body .positions .position { color: var(--accent); background: var(--accent-mark); }
-body .research-inventory:focus-visible { outline-color: var(--highlight); }
-body .reference-preview { background: var(--surface); color: var(--fg); border-color: var(--accent-border); }
