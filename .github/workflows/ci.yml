@@ -70,9 +70,6 @@ jobs:
         env:
           JEKYLL_ENV: test
 
-      - name: Test article social previews
-        run: bundle exec ruby test/social_preview_test.rb
-
       # Validate site can be packaged for GitHub Pages (dry-run deployment test)
       - name: Validate Pages artifact structure
         run: |
@@ -89,6 +86,9 @@ jobs:
           echo "✅ Site structure validated for GitHub Pages deployment"
           echo "## ✅ Deployment Dry-Run Passed" >> $GITHUB_STEP_SUMMARY
           echo "Site structure is valid for GitHub Pages." >> $GITHUB_STEP_SUMMARY
+
+      - name: Test article social previews
+        run: bundle exec ruby test/social_preview_test.rb
 
       # Check for broken internal links using html-proofer
       - name: Test internal links
