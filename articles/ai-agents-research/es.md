@@ -4,6 +4,10 @@ title: "Los agentes de IA ya pueden investigar. ¿Y ahora qué?"
 description: "Qué pasó cuando lo intentamos nosotros mismos y por qué nuestras instituciones no están preparadas"
 author: "Sergey Gusev y David E. Bernal Neira"
 image: assets/images/ideas.webp
+social_image: /assets/images/ai-agents-research/social-es.png
+social_image_alt: "Preguntas, artículos y herramientas alimentan a un enjambre de agentes de IA; los borradores se acumulan más rápido de lo que podemos revisarlos."
+social_image_width: 1200
+social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
 permalink: /es/ai-agents-can-already-do-research/
 lang: es

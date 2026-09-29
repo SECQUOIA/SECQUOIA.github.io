@@ -4,6 +4,10 @@ title: "ИИ-агенты уже могут заниматься наукой. �
 description: "Что получилось, когда мы попробовали сами, и почему научная система к этому не готова"
 author: "Сергей Гусев и Давид Э. Бернал Нейра"
 image: assets/images/ideas.webp
+social_image: /assets/images/ai-agents-research/social-ru.png
+social_image_alt: "Вопросы, статьи и инструменты направляют работу ИИ-агентов; черновики накапливаются быстрее, чем люди успевают их проверять."
+social_image_width: 1200
+social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
 permalink: /ru/ai-agents-can-already-do-research/
 lang: ru

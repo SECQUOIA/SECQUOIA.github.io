@@ -47,6 +47,27 @@ print a `secquoia.github.io/...` URL that keeps working if the target moves.
    publishing. Use the PR's `preview-site` workflow artifact for review;
    screenshots can stay local under `_sources/`.
 
+### Link preview images
+
+Set `social_image` in a page's front matter to override the default group photo
+in LinkedIn/Open Graph and Twitter previews. Use a public PNG or JPEG path;
+add `social_image_alt` and the pixel dimensions `social_image_width` and
+`social_image_height`. This is separate from the `image` used for website tiles.
+Keep the matching WebP asset for website use; social metadata may point to the
+PNG export, while inline page images use WebP.
+
+The AI agents article has a translated 1200 × 630 diagram for each language in
+`assets/images/ai-agents-research/`. Edit the SVG source and regenerate its
+PNG/WebP exports with ImageMagick and the DejaVu Sans font, for example:
+
+```bash
+convert -background '#f7f5ef' assets/images/ai-agents-research/social-en.svg -strip assets/images/ai-agents-research/social-en.png
+convert assets/images/ai-agents-research/social-en.png -quality 90 assets/images/ai-agents-research/social-en.webp
+```
+
+After deployment, use [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+to refresh cached previews for the article URL in each language being shared.
+
 ### Translated articles
 
 Keep one canonical English post in `_posts/`.

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description" xml:lang="en">
+  <title id="title">AI agents can already do research. Now what?</title>
+  <desc id="description">Research questions, papers and tools feed a swarm of AI agents; drafts accumulate faster than people can review them.</desc>
+  <rect width="1200" height="630" fill="#f7f5ef"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="56" y="38" font-size="19" font-weight="700" text-anchor="start" fill="#806322">SECQUOIA</text>
+    <text x="56" y="109" font-size="48" font-weight="700" text-anchor="start" fill="#242a2a">AI agents can already</text>
+    <text x="56" y="169" font-size="48" font-weight="700" text-anchor="start" fill="#242a2a">do research. Now what?</text>
+    <path d="M56 195H1144" stroke="#d8d0bc" stroke-width="2"/>
+    <g fill="#ffffff" stroke="#ded8c9" stroke-width="2">
+      <rect x="56" y="220" width="318" height="228" rx="18"/>
+      <rect x="442" y="220" width="318" height="228" rx="18"/>
+      <rect x="828" y="220" width="318" height="228" rx="18"/>
+    </g>
+    <g fill="#9a7838">
+      <path d="M390 324H411V315L430 330L411 345V336H390Z"/>
+      <path d="M776 324H797V315L816 330L797 345V336H776Z"/>
+    </g>
+    <!-- A question and source material. -->
+    <g fill="none" stroke="#8c7039" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="167" y="262" width="66" height="80" rx="6" fill="#f4eedf"/>
+      <path d="M179 282H214M179 295H214M179 308H205"/>
+      <circle cx="241" cy="302" r="29" fill="#fff"/>
+    </g>
+    <text x="241" y="313" font-size="34" font-weight="700" text-anchor="middle" fill="#806322">?</text>
+    <!-- Parallel agents exchange and review work. -->
+    <g stroke="#ac935e" stroke-width="3" fill="none">
+      <path d="M548 270L601 302L654 270M548 334L601 302L654 334M548 270V334M654 270V334"/>
+      <path d="M563 252Q601 233 639 252M639 352Q601 371 563 352"/>
+    </g>
+    <g stroke="#8c7039" stroke-width="3" fill="#f4eedf">
+      <circle cx="548" cy="270" r="17"/><circle cx="654" cy="270" r="17"/>
+      <circle cx="548" cy="334" r="17"/><circle cx="654" cy="334" r="17"/>
+      <circle cx="601" cy="302" r="25" fill="#ceb888"/>
+    </g>
+    <!-- Drafts awaiting inspection. -->
+    <g stroke="#8c7039" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="946" y="251" width="67" height="80" rx="5" fill="#ede3cd"/>
+      <rect x="935" y="262" width="67" height="80" rx="5" fill="#f4eedf"/>
+      <rect x="924" y="273" width="67" height="80" rx="5" fill="#fff"/>
+      <path d="M936 290H978M936 304H969M936 318H958" fill="none"/>
+      <circle cx="1012" cy="325" r="22" fill="#f7f5ef"/>
+      <path d="M1028 341L1045 358" stroke-width="7"/>
+    </g>
+    <text x="215" y="393" font-size="24" font-weight="700" text-anchor="middle" fill="#242a2a">Set the direction</text>
+    <text x="215" y="426" font-size="16" font-weight="400" text-anchor="middle" fill="#555a56">Questions · papers · tools</text>
+    <text x="601" y="393" font-size="24" font-weight="700" text-anchor="middle" fill="#242a2a">Agents explore</text>
+    <text x="601" y="426" font-size="16" font-weight="400" text-anchor="middle" fill="#555a56">Generate · check · revise</text>
+    <text x="987" y="393" font-size="24" font-weight="700" text-anchor="middle" fill="#242a2a">Drafts accumulate</text>
+    <text x="987" y="426" font-size="16" font-weight="400" text-anchor="middle" fill="#555a56">Human review takes time</text>
+    <rect x="56" y="476" width="1088" height="116" rx="16" fill="#e9e1d0"/>
+    <text x="600" y="523" font-size="30" font-weight="700" text-anchor="middle" fill="#242a2a">Results in weeks. Review takes months.</text>
+    <text x="600" y="563" font-size="20" font-weight="400" text-anchor="middle" fill="#555a56">Our experiments: correctness and novelty remain partially checked.</text>
+  </g>
+</svg>

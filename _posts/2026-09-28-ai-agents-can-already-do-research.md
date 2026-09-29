@@ -4,6 +4,10 @@ title: "AI Agents Can Already Do Research. Now What?"
 description: "What happened when we tried it ourselves, and why our institutions are not ready"
 author: "Sergey Gusev and David E. Bernal Neira"
 image: assets/images/ideas.webp
+social_image: /assets/images/ai-agents-research/social-en.png
+social_image_alt: "Research questions, papers and tools feed a swarm of AI agents; drafts accumulate faster than people can review them."
+social_image_width: 1200
+social_image_height: 630
 date: 2026-09-28 08:00:00 -0400
 permalink: /ai-agents-can-already-do-research/
 lang: en
