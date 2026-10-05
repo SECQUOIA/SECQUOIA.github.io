@@ -40,7 +40,8 @@ jobs:
           BILLING_READ_TOKEN: ${{ secrets.BILLING_READ_TOKEN }}
         run: |
           if [ -z "${BILLING_READ_TOKEN}" ]; then
-            echo "::notice::BILLING_READ_TOKEN is not set - skipping billing check."
+            echo "::notice::BILLING_READ_TOKEN is not set -" \
+              "skipping billing check."
             echo "available=false" >> "$GITHUB_OUTPUT"
           else
             echo "available=true" >> "$GITHUB_OUTPUT"
@@ -56,20 +57,24 @@ jobs:
           YEAR=$(date -u +%Y)
           MONTH=$(date -u +%-m)
 
-          if ! gh api "/organizations/${ORG}/settings/billing/usage?year=${YEAR}&month=${MONTH}" \
+          ENDPOINT="/organizations/${ORG}/settings/billing/usage"
+          if ! gh api "${ENDPOINT}?year=${YEAR}&month=${MONTH}" \
                  > usage.json 2> usage.err; then
-            echo "::warning::Could not read billing usage for ${ORG}. $(cat usage.err)"
+            echo "::warning::Could not read billing usage for ${ORG}." \
+              "$(cat usage.err)"
             echo "status=unavailable" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          TOTAL=$(jq '[.usageItems[].netAmount] | add // 0 | .*100 | round / 100' usage.json)
+          TOTAL=$(jq '[.usageItems[].netAmount]
+            | add // 0 | .*100 | round / 100' usage.json)
           echo "Net billable total for ${YEAR}-${MONTH}: \$${TOTAL}"
 
           jq -r '
             [.usageItems[] | select(.netAmount > 0)]
             | group_by(.product + "|" + .sku)[]
-            | "| \(.[0].product) | \(.[0].sku) | $\((map(.netAmount) | add) * 100 | round / 100) |"
+            | ((map(.netAmount) | add) * 100 | round / 100) as $net
+            | "| \(.[0].product) | \(.[0].sku) | $\($net) |"
           ' usage.json > breakdown.md || true
 
           {
@@ -98,29 +103,37 @@ jobs:
           {
             echo "$MARKER"
             echo
-            echo "**\$${TOTAL}** of net billable usage has accrued on \`${ORG}\` in ${YEAR}-${MONTH}."
+            echo "**\$${TOTAL}** of net billable usage has accrued" \
+              "on \`${ORG}\` in ${YEAR}-${MONTH}."
             echo
-            echo "This org runs on the **free** plan and public repositories get free Actions"
-            echo "minutes, so the expected net total is **\$0.00**. Anything above that is a paid"
+            echo "This org runs on the **free** plan" \
+              "and public repositories get free Actions"
+            echo "minutes, so the expected net total is **\$0.00**." \
+              "Anything above that is a paid"
             echo "product someone enabled."
             echo
             echo "| Product | SKU | Net |"
             echo "|---|---|---|"
             cat breakdown.md
             echo
-            echo "**If this is unintended**, disable the product and set the spending limit to \$0:"
-            echo "- Security products: https://github.com/organizations/${ORG}/settings/security_products"
-            echo "- Billing: https://github.com/organizations/${ORG}/settings/billing"
+            echo "**If this is unintended**, disable the product" \
+              "and set the spending limit to \$0:"
+            SETTINGS="https://github.com/organizations/${ORG}/settings"
+            echo "- Security products: ${SETTINGS}/security_products"
+            echo "- Billing: ${SETTINGS}/billing"
             echo
-            echo "Left unpaid, this locks the org and every Actions job fails with"
+            echo "Left unpaid, this locks the org" \
+              "and every Actions job fails with"
             echo "\"your account is locked due to a billing issue\"."
             echo
-            echo "_Updated $(date -u '+%Y-%m-%d %H:%M UTC') by the Billing Guard workflow._"
+            echo "_Updated $(date -u '+%Y-%m-%d %H:%M UTC')" \
+              "by the Billing Guard workflow._"
           } > body.md
 
           EXISTING=$(gh issue list --state open --search "$TITLE in:title" \
                        --json number,body \
-                       --jq "[.[] | select(.body | contains(\"$MARKER\"))][0].number // empty")
+                       --jq "[.[] | select(.body | contains(\"$MARKER\"))]
+                         | .[0].number // empty")
 
           if [ -n "$EXISTING" ]; then
             gh issue edit "$EXISTING" --body-file body.md
@@ -131,4 +144,6 @@ jobs:
 
       - name: Report clean
         if: steps.usage.outputs.status == 'clean'
-        run: echo "::notice::No billable usage on ${ORG} (net \$${{ steps.usage.outputs.total }})."
+        run: |
+          echo "::notice::No billable usage on ${ORG}" \
+            "(net \$${{ steps.usage.outputs.total }})."

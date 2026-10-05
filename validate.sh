@@ -145,14 +145,6 @@ else
     echo "   ✅ No trailing whitespace found"
 fi
 
-# Hostname capitalization is a style warning, not a broken-link check.
-echo "   Checking for potential link issues..."
-if grep -r "secquoia\.github\.io" . --include="*.md" 2>/dev/null | grep -v "SECQUOIA\.github\.io" | head -1 | grep -q .; then
-    echo "   ⚠️  Found lowercase secquoia links (style warning only)"
-else
-    echo "   ✅ No lowercase secquoia links found"
-fi
-
 # Check file encoding
 echo "   Checking file encoding..."
 if find . -name "*.md" -not -path "./vendor/*" -exec file {} \; 2>/dev/null | grep -v "UTF-8" | grep -v "ASCII" | grep -v "empty" | head -1 | grep -q .; then

@@ -101,6 +101,10 @@ cases.each do |name, mode, settings, expected_success|
       errors << "lost the build failure log" unless output.include?("Fixture Jekyll failure")
       errors << "ran link checks after a failed build" if output.include?("🔗 Checking internal links")
     end
+    if settings["STYLE_WARNINGS"]
+      errors << "lost the whitespace warning" unless output.include?("Found trailing whitespace")
+      errors << "warned about a valid lowercase hostname" if output.include?("⚠️  Found lowercase")
+    end
     failures << "#{name}: #{errors.join('; ')}\n#{output}" unless errors.empty?
   end
 end

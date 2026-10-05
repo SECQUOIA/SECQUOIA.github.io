@@ -159,7 +159,7 @@ banner_color: style2
    <h2>Postdoctoral associates</h2>
   </header>
  </div>
-</section> 
+</section>
 
 <section id="hanjing-xu" class="spotlights">
  <section>
@@ -414,7 +414,7 @@ banner_color: style2
    <h2>Master's students</h2>
   </header>
  </div>
-</section> 
+</section>
 
 <!-- Da-Yuan Lin -->
 
