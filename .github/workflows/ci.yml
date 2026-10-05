@@ -40,6 +40,9 @@ jobs:
       - name: Test link checker configuration
         run: ruby test/link_checker_preconnect_test.rb
 
+      - name: Test local validation failure reporting
+        run: ruby test/validate_test.rb
+
       - name: Test WebP equivalents guard
         run: ruby test/webp_equivalents_test.rb
 

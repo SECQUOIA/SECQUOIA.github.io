@@ -3,6 +3,9 @@
 echo "🔍 Running local validation checks..."
 echo "=================================="
 
+# Keep running independent checks, but fail overall if a required check fails.
+VALIDATION_FAILED=0
+
 # Detect if we should use Docker and if sudo is needed
 USE_DOCKER=false
 DOCKER_CMD="docker"
@@ -11,10 +14,11 @@ if ! command -v bundle >/dev/null 2>&1; then
     if command -v docker >/dev/null 2>&1; then
         # Check if Docker needs sudo
         if ! docker info >/dev/null 2>&1; then
-            if sudo docker info >/dev/null 2>&1; then
+            if sudo -n docker info >/dev/null 2>&1; then
                 DOCKER_CMD="sudo docker"
             else
-                echo "⚠️  Docker permission denied. Run: sudo usermod -aG docker $USER"
+                echo "❌ Docker is unavailable or permission was denied."
+                exit 1
             fi
         fi
         
@@ -24,7 +28,10 @@ if ! command -v bundle >/dev/null 2>&1; then
         # Build Docker image if needed
         if ! $DOCKER_CMD image inspect secquoia-website >/dev/null 2>&1; then
             echo "🐳 Building Docker image (first time only)..."
-            $DOCKER_CMD build -t secquoia-website . > /dev/null 2>&1
+            if ! $DOCKER_CMD build -t secquoia-website .; then
+                echo "❌ Could not build the validation image."
+                exit 1
+            fi
         fi
     fi
 fi
@@ -48,16 +55,32 @@ run_docker_shell() {
 # Check 1: YAML syntax
 echo "📋 Checking YAML files..."
 if command -v yamllint >/dev/null 2>&1; then
-    find . -name "*.yml" -o -name "*.yaml" | grep -v vendor | grep -v node_modules | while read file; do
-        yamllint -d relaxed "$file" && echo "✅ $file is valid" || echo "❌ $file has issues"
-    done
+    # Process substitution keeps the failure flag in this shell. Null-separated
+    # paths also let filenames with spaces reach yamllint intact.
+    while IFS= read -r -d '' file; do
+        if yamllint -d relaxed "$file"; then
+            echo "✅ $file is valid"
+        else
+            echo "❌ $file has issues"
+            VALIDATION_FAILED=1
+        fi
+    done < <(find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site \) -prune -o -type f \( -name '*.yml' -o -name '*.yaml' \) -print0)
 elif [ "$USE_DOCKER" = true ]; then
     # yamllint is installed in our Docker image
-    run_docker_shell '
-        find . -name "*.yml" -o -name "*.yaml" | grep -v vendor | grep -v node_modules | while read file; do
-            yamllint -d relaxed "$file" && echo "✅ $file is valid" || echo "❌ $file has issues"
-        done
-    '
+    if ! run_docker_shell '
+        yaml_status=0
+        while IFS= read -r -d "" file; do
+            if yamllint -d relaxed "$file"; then
+                echo "✅ $file is valid"
+            else
+                echo "❌ $file has issues"
+                yaml_status=1
+            fi
+        done < <(find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site \) -prune -o -type f \( -name "*.yml" -o -name "*.yaml" \) -print0)
+        exit "$yaml_status"
+    '; then
+        VALIDATION_FAILED=1
+    fi
 else
     echo "⚠️  yamllint not installed. Install with: sudo apt install yamllint"
 fi
@@ -80,28 +103,34 @@ if command -v bundle >/dev/null 2>&1 || [ "$USE_DOCKER" = true ]; then
             echo "✅ Site structure valid for deployment"
         else
             echo "❌ Site structure invalid - _site/index.html missing"
+            VALIDATION_FAILED=1
         fi
         
-        # Check 4: HTMLProofer internal links (if available)
+        # Check 4: HTMLProofer internal links
         echo ""
         echo "🔗 Checking internal links..."
         if run_bundle bundle exec htmlproofer --version >/dev/null 2>&1; then
-            if run_bundle bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts 2>&1 | tee /tmp/linkcheck.log; then
+            # Scope pipefail to this pipeline: tee must not hide a failed check.
+            if (set -o pipefail; run_bundle bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts 2>&1 | tee /tmp/linkcheck.log); then
                 echo "✅ Internal links valid"
             else
                 echo "❌ Broken internal links found (see above)"
+                VALIDATION_FAILED=1
             fi
         else
-            echo "⚠️  html-proofer not installed. Add to Gemfile: gem 'html-proofer'"
+            echo "❌ HTMLProofer unavailable. Install the Gemfile's test dependencies."
+            VALIDATION_FAILED=1
         fi
     else
         echo "❌ Jekyll build failed (exit code: $BUILD_EXIT)"
         cat /tmp/jekyll-build.log
+        VALIDATION_FAILED=1
     fi
 else
-    echo "⚠️  Bundler not installed and Docker not available."
+    echo "❌ Bundler not installed and Docker not available."
     echo "   Install Ruby and run: gem install bundler"
     echo "   Or install Docker: sudo apt install docker.io"
+    VALIDATION_FAILED=1
 fi
 
 # Check 5: Common issues
@@ -116,10 +145,10 @@ else
     echo "   ✅ No trailing whitespace found"
 fi
 
-# Check for broken internal links
+# Hostname capitalization is a style warning, not a broken-link check.
 echo "   Checking for potential link issues..."
 if grep -r "secquoia\.github\.io" . --include="*.md" 2>/dev/null | grep -v "SECQUOIA\.github\.io" | head -1 | grep -q .; then
-    echo "   ❌ Found lowercase secquoia links (should be SECQUOIA)"
+    echo "   ⚠️  Found lowercase secquoia links (style warning only)"
 else
     echo "   ✅ No lowercase secquoia links found"
 fi
@@ -128,6 +157,7 @@ fi
 echo "   Checking file encoding..."
 if find . -name "*.md" -not -path "./vendor/*" -exec file {} \; 2>/dev/null | grep -v "UTF-8" | grep -v "ASCII" | grep -v "empty" | head -1 | grep -q .; then
     echo "   ❌ Found non-UTF8 files"
+    VALIDATION_FAILED=1
 else
     echo "   ✅ All files are UTF-8 compatible"
 fi
@@ -148,6 +178,10 @@ done
 
 echo ""
 echo "=================================="
+if [ "$VALIDATION_FAILED" -ne 0 ]; then
+    echo "❌ Validation failed. Fix the errors above before opening a PR."
+    exit 1
+fi
 echo "🎉 Validation complete!"
 echo ""
 echo "💡 Tip: Run 'bundle exec htmlproofer ./_site --checks Links' for full link check"
