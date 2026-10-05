@@ -14,13 +14,13 @@ jobs:
     steps:
       # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # Set up Ruby for Jekyll
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.3'
           bundler-cache: true  # Enable caching to speed up builds
 
       # Clear any existing bundle config
@@ -39,6 +39,9 @@ jobs:
 
       - name: Test link checker configuration
         run: ruby test/link_checker_preconnect_test.rb
+
+      - name: Test local validation failure reporting
+        run: ruby test/validate_test.rb
 
       - name: Test WebP equivalents guard
         run: ruby test/webp_equivalents_test.rb
@@ -73,6 +76,9 @@ jobs:
       - name: Test theme assets
         run: bundle exec ruby test/theme_assets_test.rb
 
+      - name: Test publication links
+        run: bundle exec ruby test/publication_links_test.rb
+
       # Validate site can be packaged for GitHub Pages (dry-run deployment test)
       - name: Validate Pages artifact structure
         run: |
@@ -88,7 +94,8 @@ jobs:
           fi
           echo "✅ Site structure validated for GitHub Pages deployment"
           echo "## ✅ Deployment Dry-Run Passed" >> $GITHUB_STEP_SUMMARY
-          echo "Site structure is valid for GitHub Pages." >> $GITHUB_STEP_SUMMARY
+          echo "Site structure is valid for GitHub Pages." \
+            >> $GITHUB_STEP_SUMMARY
 
       - name: Test article social previews
         run: bundle exec ruby test/social_preview_test.rb
@@ -97,9 +104,10 @@ jobs:
       - name: Test internal links
         id: linkcheck
         run: |
-          # Site was already built in previous step, use html-proofer to check links
+          # Check links in the site built above.
           set +e
-          bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts > linkcheck.log 2>&1
+          bundle exec htmlproofer ./_site --disable-external \
+            --checks Links,Images,Scripts > linkcheck.log 2>&1
           EXITCODE=$?
           cat linkcheck.log
           exit $EXITCODE
@@ -108,9 +116,12 @@ jobs:
       - name: Report link check failures as warning
         if: steps.linkcheck.outcome == 'failure'
         run: |
-          echo "::warning file=linkcheck.log::Broken internal links detected. See the 'Test internal links' step for details."
+          echo "::warning file=linkcheck.log::Broken internal links detected." \
+            "See the 'Test internal links' step for details."
           echo "## ⚠️ Internal Link Check Failed" >> $GITHUB_STEP_SUMMARY
-          echo "Some internal links are broken. Check the logs or download the artifact for details." >> $GITHUB_STEP_SUMMARY
+          echo "Some internal links are broken." \
+            "Check the logs or download the artifact for details." \
+            >> $GITHUB_STEP_SUMMARY
 
       # Check external links (social media profiles, emails, etc.)
       - name: Test external links
@@ -121,11 +132,11 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
             --hydra "{\"max_concurrency\": 10}" \
             --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,429,999" \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             > external_linkcheck.log 2>&1
           EXITCODE=$?
           cat external_linkcheck.log
@@ -135,14 +146,18 @@ jobs:
       - name: Report external link check failures as warning
         if: steps.external_linkcheck.outputs.exitcode != '0'
         run: |
-          echo "::warning::Some external links may be broken or unreachable. See the 'Test external links' step for details. This may be due to rate limiting or temporary outages."
+          echo "::warning::Some external links may be broken or unreachable." \
+            "See the 'Test external links' step for details." \
+            "This may be due to rate limiting or temporary outages."
           echo "## ⚠️ External Link Check Failed" >> $GITHUB_STEP_SUMMARY
-          echo "Some external links may be broken or unreachable. This may be due to rate limiting or temporary outages." >> $GITHUB_STEP_SUMMARY
+          echo "Some external links may be broken or unreachable." \
+            "This may be due to rate limiting or temporary outages." \
+            >> $GITHUB_STEP_SUMMARY
 
       # Upload link check logs as artifacts for later review
       - name: Upload link check logs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: link-check-logs
           path: |
@@ -172,7 +187,8 @@ jobs:
         if: failure()
         run: |
           echo "## ❌ Image Usage Audit Failed" >> $GITHUB_STEP_SUMMARY
-          echo "One or more referenced images are not WebP. Convert and update references." >> $GITHUB_STEP_SUMMARY
+          echo "One or more referenced images are not WebP." \
+            "Convert and update references." >> $GITHUB_STEP_SUMMARY
 
   lint:
     runs-on: ubuntu-latest
@@ -181,17 +197,21 @@ jobs:
     steps:
       # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # Check for common file issues
       - name: Check file encoding and line endings
         run: |
           # Check for non-UTF8 files
-          find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" | grep -v vendor | xargs file | grep -v "UTF-8" || echo "All text files are UTF-8"
+          find . -name "*.md" -o -name "*.yml" -o -name "*.yaml" \
+            | grep -v vendor | xargs file | grep -v "UTF-8" \
+            || echo "All text files are UTF-8"
 
           # Check for trailing whitespace (warning only, doesn't fail)
-          if grep -r --include="*.md" --include="*.yml" --include="*.yaml" --exclude-dir=vendor '[[:space:]]$' .; then
-            echo "⚠️ Warning: Found trailing whitespace in files above (not blocking merge)"
+          if grep -r --include="*.md" --include="*.yml" --include="*.yaml" \
+              --exclude-dir=vendor '[[:space:]]$' .; then
+            echo "⚠️ Warning: Found trailing whitespace in files above" \
+              "(not blocking merge)"
           else
             echo "✅ No trailing whitespace found"
           fi
@@ -201,12 +221,14 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y yamllint
-          find . -name "*.yml" -o -name "*.yaml" | grep -v vendor | xargs yamllint -d relaxed
+          find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site -o -name _sources \) -prune -o \
+            -type f \( -name '*.yml' -o -name '*.yaml' -o -name .yamllint \) -print0 \
+            | xargs -0 yamllint --strict
 
       # Check Markdown files
       - name: Lint Markdown files
         uses: articulate/actions-markdownlint@v1
         with:
-          # The action auto-discovers .markdownlint.{yaml,yml,json} in repo root.
+          # Auto-discover the repository's Markdown lint configuration.
           files: '**/*.md'
           ignore: 'node_modules,vendor'

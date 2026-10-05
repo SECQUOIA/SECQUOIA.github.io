@@ -33,6 +33,8 @@
 				}
 
 				&:before {
+					// Let native image copy/save and drag actions reach the portrait.
+					pointer-events: none;
 					background: var(--overlay);
 					content: '';
 					display: block;

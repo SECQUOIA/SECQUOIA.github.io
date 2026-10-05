@@ -3,7 +3,8 @@
 # kind and location are optional and are omitted from the listing when absent.
 # page:   internal landing page (abstract, slides, related material)
 # slides: PDF under assets/pdf/ (compress with scripts/compress_pdf.sh first)
-- title: 'Quantum computing for operations research: current state and perspectives'
+- title: >-
+    Quantum computing for operations research: current state and perspectives
   kind: Tutorial
   event: Congresso Brasileiro de Ciências e Tecnologias Quânticas (CBCTQ 2026)
   event_url: https://www.even3.com.br/cbctq2026-689055?lang=en
@@ -11,9 +12,12 @@
   date: 2026-09-21
   page: /cbctq2026-tutorial/
   slides: /assets/pdf/Tutorial-Quantum-CBCTQ-Bernal-Neira.pdf
-- title: 'Quantum computing for operations research: current state and perspectives'
+- title: >-
+    Quantum computing for operations research: current state and perspectives
   kind: Tutorial
-  event: 24th Conference of the International Federation of Operational Research Societies (IFORS 2026)
+  event: >-
+    24th Conference of the International Federation of Operational Research
+    Societies (IFORS 2026)
   event_url: https://ifors2026.at/
   location: Vienna, Austria
   date: 2026-07-14

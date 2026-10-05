@@ -23,8 +23,9 @@
   color-scheme: dark;
   --bg: #202122;
   --bg-alt: #292a2b;
-  --fg: #e5e3df;
-  --fg-bold: #faf9f6;
+  // Preserve the original gold lettering with AA contrast on dark surfaces.
+  --fg: #ceb888;
+  --fg-bold: #d4c294;
   --fg-light: #bdb8ad;
   --border: #625e55;
   --border-bg: #34332f;
@@ -50,10 +51,11 @@
 select option { color: var(--fg); background: var(--surface); }
 :focus-visible { outline: 2px solid var(--highlight); outline-offset: 4px; }
 
-// Keep text over photographs legible in either mode, including during hover.
+// Gold lettering stays legible over the dark photo overlays in either mode,
+// including during hover.
 #banner, .tiles article, #header.alt {
-  --fg: #f7f5ef;
-  --fg-bold: #ffffff;
+  --fg: #ceb888;
+  --fg-bold: #d4c294;
   --highlight: #ffe2a7;
   --highlight-active: #fff0d2;
   --bg: #202122;

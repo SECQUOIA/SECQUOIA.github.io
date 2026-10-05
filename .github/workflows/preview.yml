@@ -10,21 +10,22 @@ permissions:
 
 jobs:
   preview:
-    # Environment provides a deploy-style status GitHub can require in branch protection.
+    # Provide a deploy-style status for branch protection.
     environment:
       name: preview
-      url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      url: ${{ format('https://github.com/{0}/actions/runs/{1}',
+        github.repository, github.run_id) }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Clear bundle config
@@ -45,7 +46,8 @@ jobs:
         id: internal_links
         run: |
           set +e
-          bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts > linkcheck_preview.log 2>&1
+          bundle exec htmlproofer ./_site --disable-external \
+            --checks Links,Images,Scripts > linkcheck_preview.log 2>&1
           EXITCODE=$?
           echo "exitcode=$EXITCODE" >> $GITHUB_OUTPUT
           cat linkcheck_preview.log
@@ -58,11 +60,11 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
             --hydra "{\"max_concurrency\": 10}" \
             --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,429,999" \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             > external_linkcheck_preview.log 2>&1
           EXITCODE=$?
           echo "exitcode=$EXITCODE" >> $GITHUB_OUTPUT
@@ -71,7 +73,7 @@ jobs:
 
       - name: Upload link check logs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: preview-link-check-logs
           path: |
@@ -81,7 +83,7 @@ jobs:
           if-no-files-found: ignore
 
       - name: Upload built site as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: preview-site
           path: _site
@@ -90,17 +92,23 @@ jobs:
       - name: Summarize preview
         run: |
           echo "## 🔍 Preview Build Artifact" >> $GITHUB_STEP_SUMMARY
-          echo "Download the 'preview-site' artifact from this workflow run to inspect the generated site." >> $GITHUB_STEP_SUMMARY
-          echo "This is a non-production build; it does not publish to GitHub Pages." >> $GITHUB_STEP_SUMMARY
+          echo "Download the 'preview-site' artifact from this workflow run" \
+            "to inspect the generated site." >> $GITHUB_STEP_SUMMARY
+          echo "This is a non-production build;" \
+            "it does not publish to GitHub Pages." >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.internal_links.outputs.exitcode }}" != "0" ]; then
             echo "\n### ⚠️ Internal Link Check Issues" >> $GITHUB_STEP_SUMMARY
-            echo "Some internal links or assets may be broken. See artifact 'preview-link-check-logs'." >> $GITHUB_STEP_SUMMARY
+            echo "Some internal links or assets may be broken." \
+              "See artifact 'preview-link-check-logs'." >> $GITHUB_STEP_SUMMARY
           else
-            echo "\n✅ Internal link & asset check passed." >> $GITHUB_STEP_SUMMARY
+            echo "\n✅ Internal link & asset check passed." \
+              >> $GITHUB_STEP_SUMMARY
           fi
           if [ "${{ steps.external_links.outputs.exitcode }}" != "0" ]; then
             echo "\n### ⚠️ External Link Check Issues" >> $GITHUB_STEP_SUMMARY
-            echo "Some external links may be unreachable (could be transient). See logs artifact." >> $GITHUB_STEP_SUMMARY
+            echo "Some external links may be unreachable" \
+              "(could be transient)." \
+              "See logs artifact." >> $GITHUB_STEP_SUMMARY
           else
             echo "\n✅ External link check passed." >> $GITHUB_STEP_SUMMARY
           fi

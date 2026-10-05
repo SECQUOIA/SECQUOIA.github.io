@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.3'
           bundler-cache: false
 
       - name: Clear bundle config
@@ -40,11 +40,11 @@ jobs:
           set +e
           bundle exec htmlproofer ./_site \
             --checks Links \
-            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
             --hydra "{\"max_concurrency\": 10}" \
             --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,403,429,503,999" \
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
             > linkcheck-full.log 2>&1
           EXITCODE=$?
           cat linkcheck-full.log
@@ -56,28 +56,36 @@ jobs:
           if [ $EXITCODE -eq 0 ]; then
             echo "✅ All links are working!" >> $GITHUB_STEP_SUMMARY
           else
-            echo "⚠️ Some links may be broken or unreachable." >> $GITHUB_STEP_SUMMARY
+            echo "⚠️ Some links may be broken or unreachable." \
+              >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "Please review the full log for details." >> $GITHUB_STEP_SUMMARY
+            echo "Please review the full log for details." \
+              >> $GITHUB_STEP_SUMMARY
           fi
 
           exit $EXITCODE
         continue-on-error: true
 
       - name: Create issue if links are broken
-        if: steps.all_links.outcome == 'failure' && github.event_name == 'schedule'
-        uses: actions/github-script@v7
+        if: >-
+          steps.all_links.outcome == 'failure' &&
+          github.event_name == 'schedule'
+        uses: actions/github-script@v9
         with:
           script: |
             const issueTitle = '🔗 Broken Links Detected';
+            const runUrl = '${{ github.server_url }}/${{ github.repository }}'
+              + '/actions/runs/${{ github.run_id }}';
             const issueBody = `
             ## Automated Link Check Report
 
-            The weekly automated link checker has detected some broken or unreachable links.
+            The weekly automated link checker has detected
+            some broken or unreachable links.
 
-            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            **Run:** [View workflow run](${runUrl})
 
-            Please review the workflow logs to identify which links need to be updated or removed.
+            Please review the workflow logs to identify
+            which links need to be updated or removed.
 
             Common causes:
             - External websites changed URLs
@@ -109,7 +117,7 @@ jobs:
 
       - name: Upload link check report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: link-check-report
           path: linkcheck-full.log
