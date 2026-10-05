@@ -148,10 +148,10 @@
     {% if include_link==true %}
       {% assign url = citation.Title | cgi_escape | prepend: "https://scholar.google.com/scholar?q=" %}
       {% if citation.Publication contains "arXiv:" %}
-        {% assign arxiv_id = citation.Publication | split: "arXiv:" | last | strip %}
+        {% assign arxiv_id = citation.Publication | split: "arXiv:" | last | strip | split: " " | first %}
         {% assign url = arxiv_id | prepend: "https://arxiv.org/abs/" %}
-      {% elsif citation.Publication == "arXiv e-prints" and citation.Pages contains "arXiv:" %}
-        {% assign arxiv_id = citation.Pages | split: "arXiv:" | last | strip %}
+      {% elsif citation.Pages contains "arXiv:" %}
+        {% assign arxiv_id = citation.Pages | split: "arXiv:" | last | strip | split: " " | first %}
         {% assign url = arxiv_id | prepend: "https://arxiv.org/abs/" %}
       {% endif %}
       {% capture title_link %}<a href="{{ url }}" target="_blank">{{citation.Title}}</a>{% endcapture %}

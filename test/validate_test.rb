@@ -14,14 +14,17 @@ cases = [
   ["missing generated index", "native", {"MISSING_INDEX" => "1"}, false],
   ["missing HTMLProofer", "native", {"MISSING_PROOFER" => "1"}, false],
   ["invalid YAML", "native", {"YAML_EXIT" => "1"}, false],
+  ["missing yamllint", "native", {"MISSING_YAMLLINT" => "1"}, false],
   ["non-UTF8 Markdown", "native", {"NON_UTF8" => "1"}, false],
+  ["ignored native files", "native", {"IGNORED_FILES" => "1"}, true],
   ["style warnings only", "native", {"STYLE_WARNINGS" => "1"}, true],
   ["missing build tools", "none", {}, false],
   ["Docker unavailable", "docker", {"DOCKER_UNAVAILABLE" => "1"}, false],
   ["Docker image build fails", "docker", {"DOCKER_BUILD_FAIL" => "1"}, false],
   ["healthy Docker checks", "docker", {}, true],
   ["Docker link failure", "docker", {"PROOF_EXIT" => "17"}, false],
-  ["Docker YAML failure", "docker", {"YAML_EXIT" => "1"}, false]
+  ["Docker YAML failure", "docker", {"YAML_EXIT" => "1"}, false],
+  ["ignored Docker files", "docker", {"IGNORED_FILES" => "1"}, true]
 ]
 
 cases.each do |name, mode, settings, expected_success|
@@ -57,11 +60,16 @@ cases.each do |name, mode, settings, expected_success|
       echo "Unexpected bundle call: $*" >&2
       exit 99
     BASH
-    yaml = "#!/bin/bash\nexit \"${YAML_EXIT:-0}\"\n"
+    yaml = <<~'BASH'
+      #!/bin/bash
+      [[ "$*" == *ignored.yml* ]] && exit 99
+      exit "${YAML_EXIT:-0}"
+    BASH
     tool_bin = mode == "native" ? bin : container_bin
     File.write(File.join(tool_bin, "bundle"), bundle)
     File.write(File.join(tool_bin, "yamllint"), yaml)
     FileUtils.chmod("+x", [File.join(tool_bin, "bundle"), File.join(tool_bin, "yamllint")])
+    FileUtils.rm(File.join(tool_bin, "yamllint")) if settings["MISSING_YAMLLINT"]
     if mode == "docker"
       File.write(File.join(bin, "docker"), <<~'BASH')
         #!/bin/bash
@@ -86,6 +94,13 @@ cases.each do |name, mode, settings, expected_success|
       File.write(File.join(dir, "README.md"), "https://secquoia.github.io/  \n")
     end
     File.binwrite(File.join(dir, "README.md"), "\xE9" * 1000) if settings["NON_UTF8"]
+    if settings["IGNORED_FILES"]
+      %w[vendor node_modules .git _site _sources].each do |ignored|
+        FileUtils.mkdir_p(File.join(dir, ignored))
+        File.binwrite(File.join(dir, ignored, "ignored.md"), "\xE9" * 1000 + "  \n")
+        File.write(File.join(dir, ignored, "ignored.yml"), "invalid: [\n")
+      end
+    end
     env = {"PATH" => bin, "CONTAINER_BIN" => container_bin}.merge(settings)
     output, status = Open3.capture2e(env, "bash", script, chdir: dir)
     errors = []
@@ -103,7 +118,14 @@ cases.each do |name, mode, settings, expected_success|
     end
     if settings["STYLE_WARNINGS"]
       errors << "lost the whitespace warning" unless output.include?("Found trailing whitespace")
-      errors << "warned about a valid lowercase hostname" if output.include?("⚠️  Found lowercase")
+      errors << "warned about a valid lowercase hostname" if output.include?("Found lowercase")
+    end
+    if settings["IGNORED_FILES"]
+      errors << "checked ignored YAML" if output.include?("ignored.yml")
+      errors << "checked ignored whitespace" if output.include?("Found trailing whitespace")
+    end
+    if settings["DOCKER_UNAVAILABLE"]
+      errors << "missing Docker recovery guidance" unless output.include?("daemon") && output.include?("docker group")
     end
     failures << "#{name}: #{errors.join('; ')}\n#{output}" unless errors.empty?
   end

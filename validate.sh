@@ -18,6 +18,8 @@ if ! command -v bundle >/dev/null 2>&1; then
                 DOCKER_CMD="sudo docker"
             else
                 echo "❌ Docker is unavailable or permission was denied."
+                echo "   Check that the Docker daemon is running and your user belongs to the docker group."
+                echo '   For group access: sudo usermod -aG docker "$USER" (then log out and back in).'
                 exit 1
             fi
         fi
@@ -52,37 +54,39 @@ run_docker_shell() {
     fi
 }
 
-# Check 1: YAML syntax
-echo "📋 Checking YAML files..."
-if command -v yamllint >/dev/null 2>&1; then
+# Keep generated content and dependencies out of all source-file checks.
+find_sources() {
+    find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site -o -name _sources \) -prune -o -type f "$@" -print0
+}
+
+check_yaml_files() {
+    local yaml_status=0
     # Process substitution keeps the failure flag in this shell. Null-separated
     # paths also let filenames with spaces reach yamllint intact.
     while IFS= read -r -d '' file; do
-        if yamllint -d relaxed "$file"; then
+        if yamllint --strict "$file"; then
             echo "✅ $file is valid"
         else
             echo "❌ $file has issues"
-            VALIDATION_FAILED=1
+            yaml_status=1
         fi
-    done < <(find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site \) -prune -o -type f \( -name '*.yml' -o -name '*.yaml' \) -print0)
+    done < <(find_sources \( -name '*.yml' -o -name '*.yaml' -o -name .yamllint \))
+    return "$yaml_status"
+}
+
+# Check 1: YAML syntax
+echo "📋 Checking YAML files..."
+if command -v yamllint >/dev/null 2>&1; then
+    check_yaml_files || VALIDATION_FAILED=1
 elif [ "$USE_DOCKER" = true ]; then
-    # yamllint is installed in our Docker image
-    if ! run_docker_shell '
-        yaml_status=0
-        while IFS= read -r -d "" file; do
-            if yamllint -d relaxed "$file"; then
-                echo "✅ $file is valid"
-            else
-                echo "❌ $file has issues"
-                yaml_status=1
-            fi
-        done < <(find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site \) -prune -o -type f \( -name "*.yml" -o -name "*.yaml" \) -print0)
-        exit "$yaml_status"
-    '; then
+    # Pass the same functions to the container so both paths check the same files.
+    if ! run_docker_shell "$(declare -f find_sources check_yaml_files)
+        check_yaml_files"; then
         VALIDATION_FAILED=1
     fi
 else
-    echo "⚠️  yamllint not installed. Install with: sudo apt install yamllint"
+    echo "❌ yamllint not installed. Install with: sudo apt install yamllint"
+    VALIDATION_FAILED=1
 fi
 
 # Check 2: Jekyll build
@@ -139,7 +143,14 @@ echo "🔎 Checking for common issues..."
 
 # Trailing whitespace
 echo "   Checking for trailing whitespace..."
-if find . -name "*.md" -not -path "./vendor/*" -exec grep -l '[[:space:]]$' {} \; 2>/dev/null | head -1 | grep -q .; then
+WHITESPACE_FOUND=0
+while IFS= read -r -d '' file; do
+    if grep -q '[[:space:]]$' "$file"; then
+        WHITESPACE_FOUND=1
+        break
+    fi
+done < <(find_sources -name '*.md')
+if [ "$WHITESPACE_FOUND" -ne 0 ]; then
     echo "   ⚠️  Found trailing whitespace in markdown files (warning only)"
 else
     echo "   ✅ No trailing whitespace found"
@@ -147,7 +158,14 @@ fi
 
 # Check file encoding
 echo "   Checking file encoding..."
-if find . -name "*.md" -not -path "./vendor/*" -exec file {} \; 2>/dev/null | grep -v "UTF-8" | grep -v "ASCII" | grep -v "empty" | head -1 | grep -q .; then
+ENCODING_FAILED=0
+while IFS= read -r -d '' file; do
+    if ! file --brief "$file" | grep -Eq 'UTF-8|ASCII|empty'; then
+        echo "   ❌ $file is not UTF-8 compatible"
+        ENCODING_FAILED=1
+    fi
+done < <(find_sources -name '*.md')
+if [ "$ENCODING_FAILED" -ne 0 ]; then
     echo "   ❌ Found non-UTF8 files"
     VALIDATION_FAILED=1
 else

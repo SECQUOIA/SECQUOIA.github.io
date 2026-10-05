@@ -59,14 +59,13 @@ jobs:
         run: |
           set +e
           bundle exec htmlproofer ./_site \
-            > external_linkcheck_preview.log 2>&1 \
             --checks Links \
             --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
             --hydra "{\"max_concurrency\": 10}" \
             --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,429,999" \
-            --ignore-urls \
-              "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/"
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
+            > external_linkcheck_preview.log 2>&1
           EXITCODE=$?
           echo "exitcode=$EXITCODE" >> $GITHUB_OUTPUT
           cat external_linkcheck_preview.log

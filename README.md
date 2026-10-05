@@ -78,6 +78,10 @@ Run the repository validation script before opening a PR:
 ./validate.sh
 ```
 
+Native validation requires `yamllint` as well as the bundle's test dependencies;
+the Docker image includes these tools. YAML checks use `.yamllint` in strict
+mode. Missing tools and failed checks produce a nonzero exit status.
+
 ### Troubleshooting
 
 - If you encounter permission issues with Docker, ensure your user is added to the Docker group:

@@ -9,7 +9,7 @@ asset_url = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.
 
 workflow_paths.each do |workflow_path|
   workflow = File.read(File.join(repo_root, workflow_path))
-  ignore_urls = workflow.gsub(/\\\n\s*/, " ")[/--ignore-urls\s+"([^"]+)"/, 1]
+  ignore_urls = workflow[/--ignore-urls\s+"([^"]+)"/, 1]
   abort "#{workflow_path} has no --ignore-urls configuration" unless ignore_urls
 
   patterns = ignore_urls.split(",").map do |entry|

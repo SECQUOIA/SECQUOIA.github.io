@@ -130,14 +130,14 @@ jobs:
           # Check external links with rate limiting to avoid being blocked
           # Allow some failures as external sites may be temporarily down
           set +e
-          bundle exec htmlproofer ./_site > external_linkcheck.log 2>&1 \
+          bundle exec htmlproofer ./_site \
             --checks Links \
             --typhoeus "{\"timeout\": 30, \"connecttimeout\": 10}" \
             --hydra "{\"max_concurrency\": 10}" \
             --cache "{\"timeframe\": {\"external\": \"1d\"}}" \
             --ignore-status-codes "0,429,999" \
-            --ignore-urls \
-              "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/"
+            --ignore-urls "/localhost/,/127.0.0.1/,/fonts.googleapis.com/,/fonts.gstatic.com/,/^https:\/\/cdnjs\.cloudflare\.com\/?$/" \
+            > external_linkcheck.log 2>&1
           EXITCODE=$?
           cat external_linkcheck.log
           echo "exitcode=$EXITCODE" >> $GITHUB_OUTPUT
@@ -221,8 +221,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y yamllint
-          find . -name "*.yml" -o -name "*.yaml" \
-            | grep -v vendor | xargs yamllint -d relaxed
+          find . -type d \( -name vendor -o -name node_modules -o -name .git -o -name _site -o -name _sources \) -prune -o \
+            -type f \( -name '*.yml' -o -name '*.yaml' -o -name .yamllint \) -print0 \
+            | xargs -0 yamllint --strict
 
       # Check Markdown files
       - name: Lint Markdown files

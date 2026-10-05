@@ -6,7 +6,7 @@ This is a Jekyll-based GitHub Pages site for the SECQUOIA research group.
 
 ### Prerequisites
 - Docker (recommended) or Ruby 3.3 with Bundler
-- yamllint (for YAML validation)
+- yamllint (required for native YAML validation; included in the Docker image)
 
 ### Quick Local Verification
 
@@ -19,6 +19,11 @@ Before pushing changes, **always run local validation**:
 # Or with Docker (builds and serves site)
 docker build -t secquoia-website . && docker run -p 4000:4000 secquoia-website
 ```
+
+YAML checks use the repository's `.yamllint` configuration in strict mode.
+Validation fails when a required tool or check fails. Generated content and
+dependencies (`_site`, `_sources`, `vendor`, `node_modules`, and `.git`) are
+excluded from source-file checks; trailing whitespace remains a warning.
 
 ### HTMLProofer Link Checking (requires Ruby/Bundler)
 
