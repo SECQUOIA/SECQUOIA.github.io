@@ -5,7 +5,7 @@ This is a Jekyll-based GitHub Pages site for the SECQUOIA research group.
 ## Local Development & Testing
 
 ### Prerequisites
-- Docker (recommended) or Ruby 3.2 with Bundler
+- Docker (recommended) or Ruby 3.3 with Bundler
 - yamllint (for YAML validation)
 
 ### Quick Local Verification
