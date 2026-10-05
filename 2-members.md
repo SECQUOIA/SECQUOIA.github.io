@@ -492,7 +492,7 @@ banner_color: style2
     </ul>
     <p><b>Research topics</b>: Scientific Machine Learning, Operator Learning.</p>
     <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/rohan-patel-eng/" class="fab fa-linkedin" aria-label="Rohan Patel Ramesh LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://www.linkedin.com/in/rohan-patel-eng/" class="fab fa-linkedin" aria-label="Rohan Patel LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
       <li><a href="https://github.com/RohanBPatel" class="fab fa-github" aria-label="Rohan Patel GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
     </ul>
    </div>
