@@ -42,7 +42,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: false
+          bundler-cache: true
 
       # Setup Pages
       - name: Setup Pages
@@ -72,6 +72,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./_site
+          retention-days: 1
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
