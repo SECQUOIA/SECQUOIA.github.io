@@ -530,7 +530,7 @@ banner_color: style2
 <section id="luana-garcia" class="spotlights">
   <section>
     <a href="#luana-garcia" class="image" aria-label="Luana Vieira de Alcantara Garcia's section">
-      <img src="/assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="728" height="1280" loading="lazy" decoding="async" data-position="center center" />
+      <img src="/assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="1214" height="1280" loading="lazy" decoding="async" data-position="center center" />
     </a>
     <div class="content">
       <div class="inner">
