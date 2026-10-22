@@ -21,7 +21,9 @@ jobs:
   build-and-deploy:
     if: |
       github.event_name == 'workflow_run' &&
+      github.event.workflow_run.event == 'push' &&
       github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
       (github.event.workflow_run.head_branch == 'main' ||
        github.event.workflow_run.head_branch == 'master')
     runs-on: ubuntu-latest
@@ -42,7 +44,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: false
+          bundler-cache: true
 
       # Setup Pages
       - name: Setup Pages
@@ -72,6 +74,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./_site
+          retention-days: 1
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages

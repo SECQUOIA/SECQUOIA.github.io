@@ -19,7 +19,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: false
+          bundler-cache: true
 
       - name: Clear bundle config
         run: |
@@ -121,4 +121,4 @@ jobs:
         with:
           name: link-check-report
           path: linkcheck-full.log
-          retention-days: 30
+          retention-days: 7

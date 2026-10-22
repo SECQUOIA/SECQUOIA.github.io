@@ -32,6 +32,10 @@ jobs:
       ORG: SECQUOIA
       # Alert when the month's net billable total exceeds this many USD.
       THRESHOLD_USD: '0'
+      # Alert when private-repo equivalent Actions minutes reach 75% of the
+      # 2,000-minute Free plan monthly inclusion.
+      THRESHOLD_ACTIONS_MINUTES: '1500'
+      QUOTA_ACTIONS_MINUTES: '2000'
 
     steps:
       - name: Check for a billing-read token
@@ -77,11 +81,61 @@ jobs:
             | "| \(.[0].product) | \(.[0].sku) | $\($net) |"
           ' usage.json > breakdown.md || true
 
+          EQUIV_MINUTES=$(jq '
+            [
+              .usageItems[]
+              | select(
+                  ((.product // "") | ascii_downcase) == "actions" and
+                  ((.unitType // "") | ascii_downcase) == "minutes" and
+                  .grossAmount > 0
+                )
+              | .quantity * (
+                  if (.sku | test("MacOS"; "i")) then 10
+                  elif (.sku | test("Windows"; "i")) then 2
+                  else 1
+                  end
+                )
+            ] | add // 0 | .*10 | round / 10
+          ' usage.json)
+          echo "Private equivalent Actions minutes: ${EQUIV_MINUTES}"
+
+          jq -r '
+            [
+              .usageItems[]
+              | select(
+                  ((.product // "") | ascii_downcase) == "actions" and
+                  ((.unitType // "") | ascii_downcase) == "minutes" and
+                  .grossAmount > 0
+                )
+              | {
+                  repositoryName,
+                  raw: .quantity,
+                  equiv: (
+                    .quantity * (
+                      if (.sku | test("MacOS"; "i")) then 10
+                      elif (.sku | test("Windows"; "i")) then 2
+                      else 1
+                      end
+                    )
+                  )
+                }
+            ]
+            | group_by(.repositoryName)
+            | map({
+                repo: .[0].repositoryName,
+                raw: ((map(.raw) | add) * 10 | round / 10),
+                equiv: ((map(.equiv) | add) * 10 | round / 10)
+              })
+            | sort_by(-.equiv)[]
+            | "| \(.repo) | \(.raw) | \(.equiv) |"
+          ' usage.json > actions_breakdown.md || true
+
           {
             echo "total=${TOTAL}"
+            echo "equiv_minutes=${EQUIV_MINUTES}"
             echo "year=${YEAR}"
             echo "month=${MONTH}"
-            if awk "BEGIN{exit !(${TOTAL} > ${THRESHOLD_USD})}"; then
+            if awk "BEGIN{exit !(${TOTAL} > ${THRESHOLD_USD} || ${EQUIV_MINUTES} >= ${THRESHOLD_ACTIONS_MINUTES})}"; then
               echo "status=billable"
             else
               echo "status=clean"
@@ -93,38 +147,50 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           TOTAL: ${{ steps.usage.outputs.total }}
+          EQUIV_MINUTES: ${{ steps.usage.outputs.equiv_minutes }}
           YEAR: ${{ steps.usage.outputs.year }}
           MONTH: ${{ steps.usage.outputs.month }}
         run: |
           set -euo pipefail
           MARKER="<!-- billing-guard -->"
-          TITLE="Billable GitHub usage detected on ${ORG}"
+          TITLE="Billable GitHub usage or Actions quota warning on ${ORG}"
 
           {
             echo "$MARKER"
             echo
-            echo "**\$${TOTAL}** of net billable usage has accrued" \
+            echo "**\$${TOTAL}** net billable usage and" \
+              "**${EQUIV_MINUTES} / ${QUOTA_ACTIONS_MINUTES}**" \
+              "private-repo equivalent Actions minutes have accrued" \
               "on \`${ORG}\` in ${YEAR}-${MONTH}."
             echo
             echo "This org runs on the **free** plan" \
-              "and public repositories get free Actions"
-            echo "minutes, so the expected net total is **\$0.00**." \
-              "Anything above that is a paid"
-            echo "product someone enabled."
+              "(2,000 private equivalent Actions minutes/month," \
+              "\$0 expected net billable total)."
             echo
-            echo "| Product | SKU | Net |"
-            echo "|---|---|---|"
-            cat breakdown.md
-            echo
-            echo "**If this is unintended**, disable the product" \
-              "and set the spending limit to \$0:"
+            if [ -s breakdown.md ]; then
+              echo "### Net Billable Usage"
+              echo
+              echo "| Product | SKU | Net |"
+              echo "|---|---|---|"
+              cat breakdown.md
+              echo
+            fi
+            if [ -s actions_breakdown.md ]; then
+              echo "### Private-Repo Actions Quota Usage"
+              echo
+              echo "| Repository | Raw Minutes | Equivalent Minutes |"
+              echo "|---|---|---|"
+              cat actions_breakdown.md
+              echo
+            fi
+            echo "**If this is unintended**, review active workflows" \
+              "or disable paid products:"
             SETTINGS="https://github.com/organizations/${ORG}/settings"
             echo "- Security products: ${SETTINGS}/security_products"
             echo "- Billing: ${SETTINGS}/billing"
             echo
-            echo "Left unpaid, this locks the org" \
-              "and every Actions job fails with"
-            echo "\"your account is locked due to a billing issue\"."
+            echo "Exceeding the 2,000-minute quota blocks all private-repo" \
+              "Actions jobs until the next billing cycle."
             echo
             echo "_Updated $(date -u '+%Y-%m-%d %H:%M UTC')" \
               "by the Billing Guard workflow._"

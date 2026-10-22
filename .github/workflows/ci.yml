@@ -6,6 +6,10 @@ on:
   push:
     branches: [ main, master ]
 
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -39,6 +43,9 @@ jobs:
 
       - name: Test link checker configuration
         run: ruby test/link_checker_preconnect_test.rb
+
+      - name: Test billing guard and pages trust boundary
+        run: ruby test/billing_guard_test.rb
 
       - name: Test local validation failure reporting
         run: ruby test/validate_test.rb
@@ -163,7 +170,7 @@ jobs:
           path: |
             linkcheck.log
             external_linkcheck.log
-          retention-days: 30
+          retention-days: 7
           if-no-files-found: ignore
 
       # Enforce usage-based WebP policy after build

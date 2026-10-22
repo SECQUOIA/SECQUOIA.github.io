@@ -8,6 +8,10 @@ permissions:
   contents: read
   actions: read
 
+concurrency:
+  group: preview-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   preview:
     # Provide a deploy-style status for branch protection.
@@ -79,7 +83,7 @@ jobs:
           path: |
             linkcheck_preview.log
             external_linkcheck_preview.log
-          retention-days: 7
+          retention-days: 3
           if-no-files-found: ignore
 
       - name: Upload built site as artifact
@@ -87,7 +91,7 @@ jobs:
         with:
           name: preview-site
           path: _site
-          retention-days: 7
+          retention-days: 3
 
       - name: Summarize preview
         run: |
