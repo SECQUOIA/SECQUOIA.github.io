@@ -526,6 +526,32 @@ banner_color: style2
   </section>
 </section>
 
+<!-- Luana Vieira de Alcantara Garcia -->
+<section id="luana-garcia" class="spotlights">
+  <section>
+    <a href="#luana-garcia" class="image" aria-label="Luana Vieira de Alcantara Garcia's section">
+      <img src="/assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="1214" height="1280" loading="lazy" decoding="async" data-position="center center" />
+    </a>
+    <div class="content">
+      <div class="inner">
+        <header class="major">
+          <h3>Luana Vieira de Alcantara Garcia</h3>
+        </header>
+        <ul>
+          <li>Joined in Fall 2026.</li>
+          <li>Visiting undergraduate researcher, Fall 2026.</li>
+          <li>B.S. Computer Engineering, Instituto Militar de Engenharia (IME), Expected 2027.</li>
+        </ul>
+        <p><b>Research topics</b>: Large Language Models, AI for Education, Quantum Computing.</p>
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/luana-garcia-526473228/" class="fab fa-linkedin" aria-label="Luana Vieira de Alcantara Garcia LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+          <li><a href="https://github.com/luhggie" class="fab fa-github" aria-label="Luana Vieira de Alcantara Garcia GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
 <!-- Principal Investigator -->
 <section id="pi">
  <div class="inner">
