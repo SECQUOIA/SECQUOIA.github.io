@@ -85,8 +85,8 @@ jobs:
             [
               .usageItems[]
               | select(
-                  .product == "actions" and
-                  .unitType == "Minutes" and
+                  ((.product // "") | ascii_downcase) == "actions" and
+                  ((.unitType // "") | ascii_downcase) == "minutes" and
                   .grossAmount > 0
                 )
               | .quantity * (
@@ -103,8 +103,8 @@ jobs:
             [
               .usageItems[]
               | select(
-                  .product == "actions" and
-                  .unitType == "Minutes" and
+                  ((.product // "") | ascii_downcase) == "actions" and
+                  ((.unitType // "") | ascii_downcase) == "minutes" and
                   .grossAmount > 0
                 )
               | {

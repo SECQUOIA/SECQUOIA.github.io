@@ -44,6 +44,9 @@ jobs:
       - name: Test link checker configuration
         run: ruby test/link_checker_preconnect_test.rb
 
+      - name: Test billing guard and pages trust boundary
+        run: ruby test/billing_guard_test.rb
+
       - name: Test local validation failure reporting
         run: ruby test/validate_test.rb
 
