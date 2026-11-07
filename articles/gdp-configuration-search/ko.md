@@ -5,7 +5,7 @@ description: "미분 정보가 필요 없는 최적화로 공정 모델과 시�
 author: "Albert Joon Lee, Woosik Kim, and David E. Bernal Neira"
 image: assets/images/gdp-configuration-search/cover-ko.webp
 social_image: /assets/images/gdp-configuration-search/cover-ko.png
-social_image_alt: "SECQUOIA 표지: 후보 공정 구성도들이 금색 탐색 경로로 연결되어 있으며, 그중 하나의 설계가 평가 대상으로 선택되어 있다."
+social_image_alt: "SECQUOIA 표지: 세 가지 후보 공정 흐름도 가운데 평가할 중앙 설계가 금색으로 강조되어 있다."
 methodology_image_alt: "구성을 제안한다. 선택한 설계를 평가한다. 다음 구성을 선택한다."
 social_image_width: 1200
 social_image_height: 630

@@ -5,7 +5,7 @@ description: "How derivative-free optimization connects process models, simulato
 author: "Albert Joon Lee, Woosik Kim, and David E. Bernal Neira"
 image: assets/images/gdp-configuration-search/cover-en.webp
 social_image: /assets/images/gdp-configuration-search/cover-en.png
-social_image_alt: "SECQUOIA cover: candidate process flowsheets connect to a gold search path, with one design selected for evaluation."
+social_image_alt: "SECQUOIA cover: three candidate process flowsheets, with the middle design highlighted in gold for evaluation."
 methodology_image_alt: "Propose a configuration. Evaluate the selected design. Choose the next configuration."
 social_image_width: 1200
 social_image_height: 630

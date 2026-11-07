@@ -5,7 +5,7 @@ description: "Cómo la optimización sin derivadas conecta modelos de procesos, 
 author: "Albert Joon Lee, Woosik Kim y David E. Bernal Neira"
 image: assets/images/gdp-configuration-search/cover-es.webp
 social_image: /assets/images/gdp-configuration-search/cover-es.png
-social_image_alt: "Portada de SECQUOIA: diagramas de flujo de posibles procesos se conectan con una trayectoria de búsqueda dorada, con un diseño seleccionado para evaluar."
+social_image_alt: "Portada de SECQUOIA: tres diagramas de flujo de procesos candidatos, con el diseño central resaltado en dorado para su evaluación."
 methodology_image_alt: "Proponer una configuración. Evaluar el diseño seleccionado. Elegir la siguiente configuración."
 social_image_width: 1200
 social_image_height: 630
