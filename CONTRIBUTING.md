@@ -92,6 +92,22 @@ convert assets/images/ai-agents-research/cover-en.png -quality 92 assets/images/
 the article embeds the separate visuals, assets and links are valid, and every
 methodology sentence matches the article exactly.
 
+The GDP configuration-search article follows the same cover, diagram, and native
+card pattern in English, Korean, and Spanish.
+Its editable SVGs and PNG/WebP exports live in
+`assets/images/gdp-configuration-search/`.
+Regenerate them from the current article titles and complete step wording with:
+
+```bash
+python scripts/render_gdp_blog_assets.py --korean-font /path/to/NotoSansCJKkr-Regular.otf
+```
+
+The generator needs Pillow, PyYAML, ImageMagick, fontconfig, DejaVu Sans Condensed,
+and the open-source Noto Sans CJK KR regular font.
+It uses a temporary fontconfig configuration and verifies that Korean measurement
+and rendering resolve the same font; no system font installation is needed.
+Inspect all three localized covers and diagrams after regeneration.
+
 After deployment, use [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
 to refresh cached previews for the article URL in each language being shared.
 

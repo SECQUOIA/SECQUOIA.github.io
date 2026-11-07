@@ -8,3 +8,13 @@ ai-agents-research:
   - lang: ru
     label: Русский
     url: /ru/ai-agents-can-already-do-research/
+gdp-configuration-search:
+  - lang: en
+    label: English
+    url: /gdp-configuration-search/
+  - lang: ko
+    label: 한국어
+    url: /ko/gdp-configuration-search/
+  - lang: es
+    label: Español
+    url: /es/gdp-configuration-search/
