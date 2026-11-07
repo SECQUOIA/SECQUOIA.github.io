@@ -28,6 +28,34 @@ $gold-bold: #d4c294;
   img { display: block; width: 100%; height: auto; border-radius: 0.5em; }
 }
 
+.paper-results {
+  margin: 2em 0;
+
+  > a {
+    display: block;
+    border: 0;
+
+    &:focus-visible {
+      outline: 2px solid var(--highlight, #{$gold-bold});
+      outline-offset: 4px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    background: #fff;
+  }
+
+  figcaption {
+    margin-top: 1em;
+    font-size: 0.9em;
+    line-height: 1.65;
+  }
+}
+
 // Sizes use em so the figure scales with the theme's body font, which grows on wide screens.
 .research-setup {
   margin: 2.5em 0;

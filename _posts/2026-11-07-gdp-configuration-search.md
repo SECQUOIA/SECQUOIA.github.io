@@ -121,6 +121,19 @@ Giving a descent more evaluation budget did little once it had stopped there.
 RBFOpt and MISO could propose configurations far from their current best design.
 They could therefore test designs that local descent would not reach through a sequence of improving moves.
 
+<figure id="reactor-results" class="paper-results">
+  <a href="{{ '/assets/images/gdp-configuration-search/cstr30-results-en.png' | relative_url }}" aria-label="Open the reactor-network results at full size" title="Open the reactor-network results at full size">
+    <img src="{{ '/assets/images/gdp-configuration-search/cstr30-results-en.webp' | relative_url }}" alt="Log-scale comparison of total NLP solves for CSTR30. RBFOpt reaches the reference in 9 of 10 runs and MISO in all 10, with median workloads near 30 solves, compared with 465 for enumeration." width="1600" height="1216" loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>Figure 2.</strong> Largest reactor network (CSTR30), adapted from the paper.
+  Each marker shows the total NLP subproblems solved in a completed run.
+  RBFOpt and MISO reach the reference in nine and ten of ten runs, with median workloads of 31.5 and 29.5 solves; evaluating every admissible configuration requires 465.
+  The upper seven rows have ten runs each; the bottom three GDPopt rows have one run each.
+  Gray bars show the middle 50%, with a black median tick.
+  The candidate budget is 43; rejected configurations need no NLP solve.
+  <a href="{{ '/assets/images/gdp-configuration-search/cstr30-results-en.png' | relative_url }}">Full-size chart</a> · <a href="{{ '/assets/pdf/gdp-configuration-search/process-nlp-solves.pdf' | relative_url }}">Full original figure (PDF)</a>.</figcaption>
+</figure>
+
 <h2 class="unnumbered" id="process-simulator">Working with a process simulator</h2>
 
 The second example is a manufacturing process for the anticancer drug lomustine.

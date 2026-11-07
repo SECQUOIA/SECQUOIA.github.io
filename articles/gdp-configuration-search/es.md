@@ -123,6 +123,19 @@ Dar a un método de descenso un mayor presupuesto de evaluaciones tuvo poco efec
 RBFOpt y MISO podían proponer configuraciones alejadas de su mejor diseño hasta ese momento.
 Así podían probar diseños a los que el descenso local no llegaría mediante una secuencia de cambios que mejoraran el resultado.
 
+<figure id="reactor-results" class="paper-results">
+  <a href="{{ '/assets/images/gdp-configuration-search/cstr30-results-es.png' | relative_url }}" aria-label="Abrir los resultados de la red de reactores a tamaño completo" title="Abrir los resultados de la red de reactores a tamaño completo">
+    <img src="{{ '/assets/images/gdp-configuration-search/cstr30-results-es.webp' | relative_url }}" alt="Comparación en escala logarítmica del número total de subproblemas NLP resueltos para CSTR30. RBFOpt alcanza el valor de referencia en 9 de 10 ejecuciones y MISO en las 10, con medianas cercanas a 30 subproblemas resueltos, frente a los 465 necesarios para la enumeración." width="1600" height="1216" loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>Figura 2.</strong> Red de reactores más grande (CSTR30), adaptada del artículo.
+  Cada marcador muestra el número total de subproblemas NLP resueltos en una ejecución completada.
+  RBFOpt y MISO alcanzan el valor de referencia en nueve y diez de diez ejecuciones, respectivamente, con medianas de 31.5 y 29.5 subproblemas resueltos; evaluar todas las configuraciones admisibles requiere resolver 465.
+  Las siete filas superiores tienen diez ejecuciones cada una; las tres filas inferiores de GDPopt tienen una ejecución cada una.
+  Las barras grises muestran el 50% central, con una marca negra para la mediana.
+  El presupuesto es de 43 configuraciones candidatas; las configuraciones rechazadas no requieren resolver ningún subproblema NLP.
+  <a href="{{ '/assets/images/gdp-configuration-search/cstr30-results-es.png' | relative_url }}">Gráfica a tamaño completo</a> · <a href="{{ '/assets/pdf/gdp-configuration-search/process-nlp-solves.pdf' | relative_url }}">Figura original completa (PDF)</a>.</figcaption>
+</figure>
+
 <h2 class="unnumbered" id="process-simulator">Trabajar con un simulador de procesos</h2>
 
 El segundo ejemplo es un proceso de fabricación del fármaco anticancerígeno lomustina.

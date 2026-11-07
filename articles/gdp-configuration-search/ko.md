@@ -123,6 +123,19 @@ GDP 모델은 계속해서 대안과 대안 사이의 논리적 관계, 각 설�
 RBFOpt와 MISO는 현재까지 찾은 최선의 설계에서 멀리 떨어진 구성을 제안할 수 있었다.
 따라서 국소 하강법이 개선되는 방향으로만 연속해서 이동할 때는 도달할 수 없는 설계도 시험할 수 있었다.
 
+<figure id="reactor-results" class="paper-results">
+  <a href="{{ '/assets/images/gdp-configuration-search/cstr30-results-ko.png' | relative_url }}" aria-label="반응기 네트워크 결과를 원본 크기로 보기" title="반응기 네트워크 결과를 원본 크기로 보기">
+    <img src="{{ '/assets/images/gdp-configuration-search/cstr30-results-ko.webp' | relative_url }}" alt="CSTR30의 총 NLP 풀이 횟수를 로그 척도로 비교한 그림. RBFOpt는 10회 실행 중 9회, MISO는 10회 모두에서 기준값에 도달했으며, 풀이 횟수의 중앙값은 약 30회로 전수 열거에 필요한 465회보다 적다." width="1600" height="1216" loading="lazy" decoding="async">
+  </a>
+  <figcaption><strong>그림 2.</strong> 가장 큰 반응기 네트워크(CSTR30)의 결과로, 논문의 그림을 수정한 것이다.
+  각 표식은 완료된 한 번의 실행에서 푼 NLP 하위 문제의 총개수를 나타낸다.
+  RBFOpt와 MISO는 각각 10회 실행 중 9회와 10회에서 기준값에 도달했고 풀이 횟수의 중앙값은 각각 31.5회와 29.5회였으며, 허용되는 모든 구성을 평가하려면 NLP 하위 문제 풀이가 465회 필요하다.
+  위쪽 7개 행은 각각 10회 실행한 결과이고, 아래쪽 GDPopt 3개 행은 각각 1회 실행한 결과다.
+  회색 막대는 중앙 50% 구간을 나타내고, 검은 눈금은 중앙값을 나타낸다.
+  검토할 후보 수의 한도는 43개이며, 기각된 구성은 NLP 문제를 풀 필요가 없다.
+  <a href="{{ '/assets/images/gdp-configuration-search/cstr30-results-ko.png' | relative_url }}">원본 크기 그래프</a> · <a href="{{ '/assets/pdf/gdp-configuration-search/process-nlp-solves.pdf' | relative_url }}">원본 그림 전체(PDF)</a>.</figcaption>
+</figure>
+
 <h2 class="unnumbered" id="process-simulator">공정 시뮬레이터 활용하기</h2>
 
 두 번째 사례는 항암제 로무스틴의 제조 공정이다.
