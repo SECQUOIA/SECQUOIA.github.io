@@ -210,6 +210,14 @@ Un simulador puede proporcionar las evaluaciones sin exponer todas sus ecuacione
 Si una formulación combinada es difícil de resolver, evaluar las configuraciones seleccionadas por separado puede producir diseños útiles.
 En ambos casos, se debe comparar la calidad de los diseños encontrados y el tiempo total empleado en encontrarlos.
 
+<h2 class="unnumbered" id="aiche-presentations">Presentaciones relacionadas en AIChE</h2>
+
+Los programas de las reuniones anuales de AIChE incluyen la presentación anterior sobre GDP y optimización sin derivadas, junto con otras dos charlas relacionadas de Albert Lee:
+
+- [Integration of Derivative Free Optimization with Logic-Based Solutions of Generalized Disjunctive Programming](https://proceedings.aiche.org/conferences/aiche-annual-meeting/2025/proceeding/paper/integration-derivative-free) — Reunión Anual de 2025, presentación 531b.
+- [Discrete Nonlinear Algorithms for Process Design and Operations](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738217) — Reunión Anual de 2026, presentación 484a.
+- [Generalized Disjunctive Programming Via Factorization Machines and Quantum Annealers](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738252) — Reunión Anual de 2026, presentación 608g.
+
 <h2 class="unnumbered" id="references">Artículo</h2>
 
 1. <span id="ref-lee2026gdp"></span> Albert Joon Lee, Woosik Kim y David E. Bernal Neira.

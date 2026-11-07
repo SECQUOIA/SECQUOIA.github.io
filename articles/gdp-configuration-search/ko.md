@@ -210,6 +210,14 @@ D-SDA, NOMAD, MISO의 결과 중앙값은 탐색 영역의 약 0.2%를 평가한
 통합된 정식화를 풀기 어렵더라도 선택한 구성들을 별도로 평가하면 유용한 설계를 얻을 수 있다.
 어느 경우든 찾아낸 설계의 품질과 그 설계를 찾는 데 든 총시간을 비교한다.
 
+<h2 class="unnumbered" id="aiche-presentations">관련 AIChE 발표</h2>
+
+AIChE 연례 학술대회 프로그램에는 Albert Lee의 이전 GDP·미분 정보가 필요 없는 최적화 발표와 관련 발표 두 건이 수록되어 있다:
+
+- [Integration of Derivative Free Optimization with Logic-Based Solutions of Generalized Disjunctive Programming](https://proceedings.aiche.org/conferences/aiche-annual-meeting/2025/proceeding/paper/integration-derivative-free) — 2025년 연례 학술대회, 발표 531b.
+- [Discrete Nonlinear Algorithms for Process Design and Operations](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738217) — 2026년 연례 학술대회, 발표 484a.
+- [Generalized Disjunctive Programming Via Factorization Machines and Quantum Annealers](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738252) — 2026년 연례 학술대회, 발표 608g.
+
 <h2 class="unnumbered" id="references">논문</h2>
 
 1. <span id="ref-lee2026gdp"></span> Albert Joon Lee, Woosik Kim, and David E. Bernal Neira.

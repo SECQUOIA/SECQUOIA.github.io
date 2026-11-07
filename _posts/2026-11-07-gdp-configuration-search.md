@@ -208,6 +208,14 @@ A simulator can supply the evaluations without exposing all its equations.
 If a combined formulation is difficult to solve, evaluating selected configurations separately may still produce useful designs.
 In either case, compare the quality of the designs found and the total time spent finding them.
 
+<h2 class="unnumbered" id="aiche-presentations">Related AIChE presentations</h2>
+
+AIChE lists the earlier GDP/DFO presentation and two related talks by Albert Lee in its annual meeting programs:
+
+- [Integration of Derivative Free Optimization with Logic-Based Solutions of Generalized Disjunctive Programming](https://proceedings.aiche.org/conferences/aiche-annual-meeting/2025/proceeding/paper/integration-derivative-free) — 2025 Annual Meeting, presentation 531b.
+- [Discrete Nonlinear Algorithms for Process Design and Operations](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738217) — 2026 Annual Meeting, presentation 484a.
+- [Generalized Disjunctive Programming Via Factorization Machines and Quantum Annealers](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738252) — 2026 Annual Meeting, presentation 608g.
+
 <h2 class="unnumbered" id="references">Paper</h2>
 
 1. <span id="ref-lee2026gdp"></span> Albert Joon Lee, Woosik Kim, and David E. Bernal Neira.
