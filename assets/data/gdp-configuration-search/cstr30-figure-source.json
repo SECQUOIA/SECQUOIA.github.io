@@ -1,0 +1,17 @@
+{
+  "paper": "https://arxiv.org/abs/2611.05508",
+  "source_figure": "manuscript/figures/process_nlp_solves.pdf",
+  "source_figure_sha256": "c6ee8f03ec51a746215ce39e6f4c478a0a6532949ef0137d95a1328d848c3351",
+  "source_data": "results/seven_method_comparison_20261031/process_nlp/selected_runs.csv",
+  "source_data_sha256": "aa81d0cd4aaea25cb8288f4ff9d6c10061754afb0173c4445ff65995046a8db0",
+  "selection": {
+    "case": "cstr_30",
+    "panel_budget": 43
+  },
+  "rows": 73,
+  "enumeration_nlp_solves": 465,
+  "target_criterion": "|f_best - f_ref| <= 1e-5 * max(1, |f_ref|)",
+  "measure": "Total NLP solves over the completed run, not first-hit work or runtime.",
+  "rejected_configurations": "Logical/FBBT rejections count toward the candidate budget but do not require an NLP solve.",
+  "adaptation": "One panel enlarged, with localized labels and legend. Same methods, individual run counts, target outcomes, median and quartiles as the paper."
+}

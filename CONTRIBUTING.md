@@ -92,6 +92,39 @@ convert assets/images/ai-agents-research/cover-en.png -quality 92 assets/images/
 the article embeds the separate visuals, assets and links are valid, and every
 methodology sentence matches the article exactly.
 
+The GDP configuration-search article follows the same cover, diagram, and native
+card pattern in English, Korean, and Spanish.
+Its editable SVGs and PNG/WebP exports live in
+`assets/images/gdp-configuration-search/`.
+Regenerate them from the current article titles and complete step wording with:
+
+```bash
+python scripts/render_gdp_blog_assets.py --korean-font /path/to/NotoSansCJKkr-Regular.otf
+```
+
+The generator needs Pillow, PyYAML, ImageMagick, fontconfig, DejaVu Sans Condensed,
+and the open-source Noto Sans CJK KR regular font.
+It uses a temporary fontconfig configuration and verifies that Korean measurement
+and rendering resolve the same font; no system font installation is needed.
+Inspect all three localized covers and diagrams after regeneration.
+
+The GDP article also includes a readable version of the paper's CSTR30 results
+panel, with complete translated labels and captions.
+Its 73 retained run records and source hashes are under
+`assets/data/gdp-configuration-search/`; the unchanged full original figure is
+`assets/pdf/gdp-configuration-search/process-nlp-solves.pdf`.
+Regenerate the panel's SVG/PNG/WebP files without running any optimizer:
+
+```bash
+python scripts/render_gdp_results.py --korean-font /path/to/NotoSansCJKkr-Regular.otf
+```
+
+This generator additionally requires Matplotlib and NumPy.
+The horizontal axis is total NLP solves over a completed run, not runtime or
+the solve count when the reference was first reached.
+Preserve every method and run, the 465-solve enumeration line, the 43-candidate
+budget, and the distinction between ten DFO/sampling runs and one GDPopt run.
+
 After deployment, use [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
 to refresh cached previews for the article URL in each language being shared.
 
