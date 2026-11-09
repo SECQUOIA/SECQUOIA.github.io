@@ -108,7 +108,7 @@ Los tres casos siguientes muestran cómo se comparan los métodos cuando las eva
 
 El primero es una superestructura de reactores de tanque agitado continuo (CSTR, por sus siglas en inglés) en serie que habíamos estudiado en trabajos anteriores [[2]](#ref-linan2020optimal), [[3]](#ref-ovalle2025logic).
 Sus decisiones de diseño incluyen cuántos reactores usar y dónde entran o se recirculan las corrientes.
-Este sistema sirve como un buen ejemplo porque la teoría de reactores nos dice de antemano cuál debe ser la solución: para minimizar el volumen total, la cascada debe aproximarse a un reactor de flujo pistón (PFR, por sus siglas en inglés), utilizando todos los reactores disponibles en serie y sin recirculación.
+Este sistema sirve como un buen ejemplo porque la teoría de reactores nos dice de antemano cuál debe ser la solución: para minimizar el volumen total, la cascada debe aproximarse a un reactor de flujo pistón (PFR, por sus siglas en inglés), utilizando todos los reactores disponibles en serie y devolviendo la recirculación al primer reactor en la dirección del flujo.
 La red más grande de nuestro estudio tiene 465 configuraciones admisibles.
 Evaluarlas todas requiere resolver 465 subproblemas de optimización continua.
 
