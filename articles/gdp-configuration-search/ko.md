@@ -30,22 +30,22 @@ show_tile: false
   </a>
 </p>
 
-[접근 방법](#model-and-search) · [실험](#what-we-tested) · [실무적 시사점](#choosing-a-method) · [논문](#references)
+[접근 방법](#model-and-search) · [실험](#what-we-tested) · [실무적 시사점](#choosing-a-method) · [참고문헌](#references)
 
-엔지니어는 화학 공정을 최적화하기 전에 어떤 공정을 구축할지부터 결정해야 한다.
+엔지니어는 공정을 최적화하기 전에 어떤 공정을 구축할지부터 결정해야 한다.
 어떤 반응기를 포함할 것인가?
 분리 단수는 몇 단으로 할 것인가?
 원료는 어디로 투입할 것인가?
 이러한 선택에 따라 공정을 설명하는 방정식, 가능한 운전 조건, 달성할 수 있는 공정 성능이 달라진다.
 
-설계를 평가하는 데에도 별도의 최적화 문제를 풀어야 할 수 있다.
-두 반응기 배치를 비교하려면 각 배치의 온도, 유량, 장치 크기를 최적화해야 할 수 있다.
-공정 시뮬레이터를 사용하는 경우에는 하나의 설계를 평가하는 데에도 시뮬레이션을 여러 차례 실행해야 할 수 있다.
-수백 또는 수천 개의 구성을 이런 방식으로 평가하면 비용이 지나치게 커질 수 있다.
+단 하나의 설계를 평가하는 데에도 별도의 최적화 문제를 풀어야 할 수 있다.
+예를 들어 두 반응기 배치를 비교하려면 각 배치의 온도, 유량, 장치 크기를 최적화해야 할 수 있다.
+공정을 시뮬레이터로 모델링하는 경우에는 설계 하나의 최적 운전 조건을 찾는 데에만 시뮬레이션을 여러 차례 실행해야 한다.
+여기에 장치 종류와 수, 단수, 원료 투입이나 재순환 위치 같은 이산적 선택지가 조합되면 가능한 구성이 순식간에 수백, 수천 개로 불어나 이를 모두 평가하기에는 비용이 지나치게 커진다.
 
-새 논문 [*Generalized Disjunctive Programming with Derivative-Free Configuration Search*](https://arxiv.org/abs/2611.05508)에서는 더 적은 평가로 좋은 설계를 찾는 방법을 연구했다.
-여러 시험 문제에서 기존 탐색 방법들은 전체 구성 중 일부만 평가하고도 지금까지 확인된 최선의 설계를 찾았다.
-같은 접근법을 의약품 공정 시뮬레이터와 기존 최적화 정식화로는 풀기 어려웠던 촉매 증류 모델에도 적용할 수 있었다.
+새 프리프린트(사전공개 논문) [*Generalized Disjunctive Programming with Derivative-Free Configuration Search*](https://arxiv.org/abs/2611.05508) [[1]](#ref-lee2026gdp)에서는 더 적은 평가로 좋은 설계를 찾는 방법을 연구했다.
+여러 시험 문제에서 평가한 탐색 방법들은 전체 구성 중 일부만 탐색하고도 지금까지 확인된 최선의 설계를 찾았다.
+같은 접근법을 의약품 공정 시뮬레이터와 기존 최적화 정식화가 제대로 풀지 못한 촉매 증류 모델에도 적용할 수 있었다.
 
 <h2 class="unnumbered" id="model-and-search">모델과 탐색</h2>
 
@@ -54,11 +54,11 @@ GDP는 대안과 대안 사이의 논리적 관계를 기술하며, 장치를 �
 규칙을 통해 어떤 선택에 다른 선택이 함께 필요한지, 어떤 조합이 허용되지 않는지를 표현할 수 있다.
 엔지니어는 이 규칙을 사용하여 허용되는 장치 배치를 지정할 수 있다.
 
-기존 방법들은 대안들을 혼합정수 비선형 최적화 문제로 결합하거나 모델을 더 작은 문제들로 분해하여 이러한 모델을 푼다.
+기존 방법들은 대안들을 혼합정수 비선형 계획법(MINLP) 문제로 결합하거나 모델을 더 작은 문제들로 분해하여 이러한 모델을 푼다.
 다만 모든 대안을 설명하는 방정식을 직접 사용할 수 있어야 하는데, 시뮬레이터에서는 이러한 방정식에 접근할 수 없는 경우가 있다.
 모든 방정식을 사용할 수 있더라도 통합된 정식화는 수치적으로 풀기 어려울 수 있다.
 
-정수 변수로 설계 선택을 나타내는 기존 표현 방식을 사용한다.
+선행 연구 [[2]](#ref-linan2020optimal), [[3]](#ref-ovalle2025logic)에서 개발한 외부 정수 변수 표현 방식을 사용하여 설계 선택을 나타낸다.
 하나의 구성은 정수 좌표계의 한 점에 해당한다.
 그 점을 선택하면 장치 선택을 고정하고 나머지 운전 변수를 최적화한다.
 
@@ -89,38 +89,39 @@ GDP는 대안과 대안 사이의 논리적 관계를 기술하며, 장치를 �
   탐색은 평가 결과를 활용하여 다음에 시도할 설계를 선택한다.</figcaption>
 </figure>
 
-GDP 모델은 대안과 대안 사이의 논리적 관계, 각 설계를 평가하는 방법을 기술하는 역할을 그대로 맡는다.
-바깥쪽 탐색에는 평가 결과만 필요하다.
+외부 정수 변수를 통해 논리 모델과 탐색 전략을 분리하여 GDP를 미분 정보가 필요 없는 최적화(DFO) 방법들과 결합한 것이 이번 연구 [[1]](#ref-lee2026gdp)의 핵심 기여다.
+GDP 모델은 대안과 논리적 관계 및 각 설계를 평가하는 방법을 기술하는 역할을 그대로 맡고, 바깥쪽 탐색에는 평가 결과만 필요하다.
 따라서 정수 변수를 다룰 수 있고 미분 정보가 필요 없는 적절한 방법이라면 이러한 구성들을 탐색하는 데 사용할 수 있다.
 
 일부 방법은 인접한 설계들을 살펴보며 성능이 개선되는 방향으로 탐색한다.
-다른 방법들은 설계 선택과 성능 사이의 관계를 적은 비용으로 근사하는 대리 모델을 구축한다.
+다른 방법들은 설계 선택과 성능 사이의 관계를 적은 계산 비용으로 근사하는 대리 모델을 구축한다.
 알고리즘은 이 근사 모델을 사용하여 좋은 결과를 낸 설계 주변의 설계를 시험할지, 다른 영역의 설계를 시도할지 선택한다.
 여기서 “미분 정보가 필요 없다”는 것은 바깥쪽의 구성 탐색을 가리키며, 각 구성의 운전 조건을 최적화할 때는 미분 정보를 사용할 수 있다.
 
 <h2 class="unnumbered" id="what-we-tested">실험 대상</h2>
 
-국소 하강법, 직접 탐색법, 여러 대리 모델 기반 방법, 균등 추출을 기존 GDP 방법 및 전수 열거와 함께 비교했다.
+선행 연구 [[2]](#ref-linan2020optimal), [[3]](#ref-ovalle2025logic)에서 개발한 이산 국소 하강 알고리즘([D-SDA](https://github.com/SECQUOIA/dsda-gdp)), 직접 탐색법([NOMAD](https://github.com/bbopt/nomad)), 여러 대리 모델 기반 방법([RBFOpt](https://github.com/coin-or/rbfopt), [MISO](https://pypi.org/project/soogo/), [BAM](https://pypi.org/project/bam-solver/), [FMQA-SA](https://github.com/SECQUOIA/bbo_via_fmqa)), 균등 추출을 기존 GDP 방법([GDPopt](https://pyomo.readthedocs.io/en/6.10.0/explanation/solvers/gdpopt.html) 및 MINLP 재정식화) 및 전수 열거와 함께 비교했다.
 실험에는 공정 모델 9개, 수학적 시험 함수 21개, 의약품 제조 시뮬레이션, 촉매 증류탑이 포함되었다.
 아래 세 사례에서는 평가 비용이 높은 경우, 시뮬레이터가 모델을 제공하는 경우, 기존 해법으로 풀기 어려운 경우에 각 방법이 어떤 성능을 보이는지 비교한다.
 
 <h2 class="unnumbered" id="reactor-network">반응기 네트워크에서 필요한 문제 풀이 횟수 줄이기</h2>
 
-첫 번째 사례는 반응기 네트워크이다.
+첫 번째 사례는 선행 연구 [[2]](#ref-linan2020optimal), [[3]](#ref-ovalle2025logic)에서도 다뤘던 연속교반탱크반응기(CSTR) 직렬 네트워크다.
 설계할 때는 사용할 반응기 수와 유체의 유입 또는 재순환 위치 등을 결정한다.
+이 시스템은 전체 반응기 부피를 최소화하려면 사용 가능한 모든 반응기를 재순환 없이 직렬로 연결해 플러그 흐름 반응기(PFR)에 가깝게 운전해야 한다는 정답을 반응공학 이론으로부터 미리 알고 있어 좋은 시험 문제가 된다.
 연구에서 가장 큰 네트워크에는 허용되는 구성이 465개 있다.
 이를 모두 평가하려면 연속 최적화 하위 문제를 465번 풀어야 한다.
 
-대리 모델 기반 방법인 MISO와 RBFOpt는 각각 10회 실행 중 10회와 9회에서 기준 목적함수 값에 도달했으며, 하위 문제 풀이 횟수의 중앙값은 약 30회였다.
+대리 모델 기반 방법인 [MISO](https://pypi.org/project/soogo/)와 [RBFOpt](https://github.com/coin-or/rbfopt)는 각각 10회 실행 중 10회와 9회에서 기준 목적함수 값에 도달했으며, 하위 문제 풀이 횟수의 중앙값은 약 30회였다.
 이는 전수 열거에 필요한 작업량의 약 6–7%에 해당한다.
 
 각 방법이 어떤 설계를 평가했는지 살펴보면 이러한 차이가 나타난 이유를 알 수 있다.
-규모가 큰 네트워크에서 국소 하강법은 성능이 떨어지는 동일한 구성에서 반복적으로 탐색을 멈췄다.
+규모가 큰 네트워크에서 국소 하강법([D-SDA](https://github.com/SECQUOIA/dsda-gdp))은 성능이 떨어지는 동일한 구성에서 반복적으로 탐색을 멈췄다.
 인접한 구성으로 바꿔서는 성능이 개선되지 않았지만, 다른 영역에는 더 나은 설계가 존재했다.
 가장 큰 네트워크에서 이 국소해의 성능은 기준 설계보다 약 13% 떨어졌다.
 이 구성에서 탐색이 멈춘 뒤에는 허용된 평가 횟수를 늘려도 별다른 효과가 없었다.
 
-RBFOpt와 MISO는 현재까지 찾은 최선의 설계에서 멀리 떨어진 구성을 제안할 수 있었다.
+[RBFOpt](https://github.com/coin-or/rbfopt)와 [MISO](https://pypi.org/project/soogo/)는 현재까지 찾은 최선의 설계에서 멀리 떨어진 구성을 제안할 수 있었다.
 따라서 국소 하강법이 개선되는 방향으로만 연속해서 이동할 때는 도달할 수 없는 설계도 시험할 수 있었다.
 
 <figure id="reactor-results" class="paper-results">
@@ -139,31 +140,32 @@ RBFOpt와 MISO는 현재까지 찾은 최선의 설계에서 멀리 떨어진 �
 <h2 class="unnumbered" id="process-simulator">공정 시뮬레이터 활용하기</h2>
 
 두 번째 사례는 항암제 로무스틴의 제조 공정이다.
+이 공정을 다룬 선행 연구 [[4]](#ref-park2026ising)에서는 이산 설계 문제를 풀기 위해 이징(Ising) 기반 해법과 양자 어닐링(quantum annealing)까지 적용한 바 있다.
 반응기와 결정화기를 조합하면 총 36가지 공정 구성을 만들 수 있다.
-각 구성의 거동은 PharmaPy 공정 시뮬레이터로 평가한다.
+각 구성의 거동은 [PharmaPy](https://pharmapy.readthedocs.io/en/latest/) 공정 시뮬레이터로 평가한다.
 
 이 문제에서는 시뮬레이터가 설계의 운전 결과를 제공하지만, 기존의 대수적 GDP 해법에 필요한 명시적 방정식은 사용할 수 없다.
 장치를 선택하고 시뮬레이션으로 운전 조건을 최적화한 뒤 성능 평가 결과를 얻으면 되므로, 구성 탐색은 여전히 가능하다.
 
-구성 평가 횟수를 최대 20회로 제한했을 때, RBFOpt와 MISO는 각각 10회 실행 모두에서 지금까지 확인된 최선의 구성을 찾아냈다.
+구성 평가 횟수를 최대 20회로 제한했을 때, [RBFOpt](https://github.com/coin-or/rbfopt)와 [MISO](https://pypi.org/project/soogo/)는 각각 10회 실행 모두에서 지금까지 확인된 최선의 구성을 찾아냈다.
 각 구성의 운전 최적화에는 수 분이 걸렸으므로, 다음 설계를 선택하는 비용은 그 설계를 평가하는 비용에 비해 작았다.
 
 엔지니어는 시뮬레이터의 방정식을 대수적 GDP 정식화로 옮기지 않고도 기존 공정 시뮬레이터를 사용하여 장치 대안을 비교할 수 있다.
 
 <h2 class="unnumbered" id="catalytic-column">구성이 100,000개가 넘는 증류탑</h2>
 
-세 번째 사례는 화학 반응과 분리를 결합한 촉매 증류탑이다.
+세 번째 사례는 에틸 *tert*-부틸 에테르(ETBE)를 생산하기 위해 화학 반응과 분리를 결합한 촉매 증류탑이다.
+이 시스템은 다비드 베르날 네이라(David E. Bernal Neira)의 안데스대학교(Universidad de los Andes) 석사 학위논문 [[5]](#ref-bernal2016etbe)과 당시 지도교수였던 호르헤 마리오 고메스(Jorge Mario Gómez)의 박사 학위논문에서 출발해, 이후 설계·제어 및 초구조 최적화 연구 [[6]](#ref-bernal2018simultaneous), [[7]](#ref-linan2020optimalII)에 이르기까지 꾸준히 다뤄 온 대상이다.
 설계할 때는 원료 투입 위치, 촉매를 배치할 단, 증류탑 구조 등을 결정한다.
 전체 GDP 모델에는 구성이 100,947개 있다.
 이 중 허용되는 구성 54,159개로 탐색 영역을 제한했지만, 이 역시 모든 설계를 평가하기에는 부담스러운 규모였다.
 
-평가 횟수를 최대 100회로 제한했을 때, D-SDA와 MISO는 각각 10회 실행 중 3회에서 알려진 최선의 설계에 도달했다.
+평가 횟수를 최대 100회로 제한했을 때, [D-SDA](https://github.com/SECQUOIA/dsda-gdp)와 [MISO](https://pypi.org/project/soogo/)는 각각 10회 실행 중 3회에서 알려진 최선의 설계에 도달했다.
 기준 설계에 도달한 경우는 드물었지만, 그에 근접한 결과를 얻은 실행은 많았다.
-D-SDA, NOMAD, MISO의 결과 중앙값은 탐색 영역의 약 0.2%를 평가한 후 알려진 최선의 목적함수 값과 0.14% 이내의 차이를 보였다.
+[D-SDA](https://github.com/SECQUOIA/dsda-gdp), [NOMAD](https://github.com/bbopt/nomad), [MISO](https://pypi.org/project/soogo/)의 결과 중앙값은 탐색 영역의 약 0.2%를 평가한 후 알려진 최선의 목적함수 값과 0.14% 이내의 차이를 보였다.
 
-이 사례에서는 국소 하강법도 경쟁력 있는 성능을 보였다.
-인접한 구성으로 바꾸면서 좋은 설계에 도달하는 경우가 많았기 때문이다.
-반응기 네트워크에서는 성능이 떨어지는 설계에 도달한 뒤 인접한 구성에서도 개선책을 찾지 못해 탐색이 반복적으로 멈췄다.
+이 사례에서는 인접한 구성으로 바꾸면서 좋은 설계에 도달하는 경우가 많았기 때문에 국소 하강법도 경쟁력 있는 성능을 보였다.
+반면 반응기 네트워크에서는 성능이 떨어지는 설계에 도달한 뒤 인접한 구성에서도 개선책을 찾지 못해 탐색이 반복적으로 멈췄다.
 
 기존 혼합정수 비선형 정식화는 더 심각한 어려움을 겪었다.
 공개된 초기점에서 출발했을 때, 논문에 보고된 실험 조건에서는 시험한 해법 중 어느 것도 기준값과의 차이가 15% 이내인 설계를 찾지 못했다.
@@ -184,7 +186,7 @@ D-SDA, NOMAD, MISO의 결과 중앙값은 탐색 영역의 약 0.2%를 평가한
 
 장치 선택에 번호를 부여하는 방식도 탐색에 영향을 준다.
 정수 좌표를 어떻게 부여하느냐에 따라 어떤 구성들이 서로 가까운 것으로 취급되는지가 달라진다.
-단수처럼 자연스러운 순서가 있는 의사결정에서는 이 관계가 직관적이다.
+단수처럼 자연스러운 순서가 있는 의사결정에서는 인접한 좌표가 물리적으로 유사한 설계에 대응하며, 이러한 순서 구조를 활용하는 것이 Ovalle 외 [[3]](#ref-ovalle2025logic)가 제안한 외부 변수 재정식화의 핵심 아이디어였다.
 반응기 종류와 같은 범주에서는 부여한 순서가 임의적일 수 있다.
 로무스틴 실험에서는 이러한 대안의 순서를 바꾸자 여러 방법의 탐색 양상이 달라졌다.
 따라서 탐색 방법을 비교할 때는 범주형 선택의 순서도 확인해야 한다.
@@ -218,9 +220,28 @@ AIChE 연례 학술대회 프로그램에는 Albert Lee의 GDP와 미분 정보�
 - [Discrete Nonlinear Algorithms for Process Design and Operations](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738217) — 2026년 연례 학술대회, 발표 484a.
 - [Generalized Disjunctive Programming Via Factorization Machines and Quantum Annealers](https://studio.m-anage.com/aiche/2026/meetingapp.cgi/Paper/738252) — 2026년 연례 학술대회, 발표 608g.
 
-<h2 class="unnumbered" id="references">논문</h2>
+<h2 class="unnumbered" id="references">참고문헌</h2>
 
-1. <span id="ref-lee2026gdp"></span> Albert Joon Lee, Woosik Kim, and David E. Bernal Neira.
-   *Generalized Disjunctive Programming with Derivative-Free Configuration Search*.
-   arXiv:2611.05508, 2026.
-   [논문 및 보충 자료 읽기](https://arxiv.org/abs/2611.05508).
+<div id="refs" lang="en" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-lee2026gdp" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">A. J. Lee, W. Kim, and D. E. Bernal Neira, <span>“Generalized Disjunctive Programming with Derivative-Free Configuration Search,”</span> arXiv preprint <a href="https://arxiv.org/abs/2611.05508">arXiv:2611.05508</a>, 2026.</div>
+</div>
+<div id="ref-linan2020optimal" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">D. A. Liñán, D. E. Bernal, L. A. Ricardez-Sandoval, and J. M. Gómez, <span>“Optimal design of superstructures for placing units and streams with multiple and ordered available locations. Part I: A new mathematical framework,”</span> <em>Computers &amp; Chemical Engineering</em>, vol. 137, p. 106794, 2020, doi: <a href="https://doi.org/10.1016/j.compchemeng.2020.106794">10.1016/j.compchemeng.2020.106794</a>.</div>
+</div>
+<div id="ref-ovalle2025logic" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">D. Ovalle, D. A. Liñán, A. Lee, J. M. Gómez, L. Ricardez-Sandoval, I. E. Grossmann, and D. E. Bernal Neira, <span>“Logic-Based Discrete-Steepest Descent: A solution method for process synthesis Generalized Disjunctive Programs,”</span> <em>Computers &amp; Chemical Engineering</em>, vol. 195, p. 108993, 2025, doi: <a href="https://doi.org/10.1016/j.compchemeng.2024.108993">10.1016/j.compchemeng.2024.108993</a>.</div>
+</div>
+<div id="ref-park2026ising" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Y. Park and D. E. Bernal Neira, <span>“A computational study of Ising-based solvers for discrete landscape exploration in process optimization,”</span> <em>AIChE Journal</em>, p. e70656, 2026, doi: <a href="https://doi.org/10.1002/aic.70656">10.1002/aic.70656</a>.</div>
+</div>
+<div id="ref-bernal2016etbe" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">D. E. Bernal Neira, <em>Optimal design and control of a catalytic distillation column—case study: Ethyl tert-butyl ether (ETBE) synthesis column</em>, MSc thesis, Universidad de los Andes, 2016.</div>
+</div>
+<div id="ref-bernal2018simultaneous" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">D. E. Bernal, C. Carrillo-Diaz, J. M. Gómez, and L. A. Ricardez-Sandoval, <span>“Simultaneous design and control of catalytic distillation columns using comprehensive rigorous dynamic models,”</span> <em>Industrial &amp; Engineering Chemistry Research</em>, vol. 57, no. 7, pp. 2587–2608, 2018, doi: <a href="https://doi.org/10.1021/acs.iecr.7b04205">10.1021/acs.iecr.7b04205</a>.</div>
+</div>
+<div id="ref-linan2020optimalII" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">D. A. Liñán, D. E. Bernal, L. A. Ricardez-Sandoval, and J. M. Gómez, <span>“Optimal design of superstructures for placing units and streams with multiple and ordered available locations. Part II: Rigorous design of catalytic distillation columns,”</span> <em>Computers &amp; Chemical Engineering</em>, vol. 139, p. 106845, 2020, doi: <a href="https://doi.org/10.1016/j.compchemeng.2020.106845">10.1016/j.compchemeng.2020.106845</a>.</div>
+</div>
+</div>
