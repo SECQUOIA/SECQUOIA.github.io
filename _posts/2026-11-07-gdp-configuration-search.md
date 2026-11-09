@@ -106,7 +106,7 @@ The three cases below show how the methods compare when evaluations are expensiv
 
 The first is a series of continuous stirred-tank reactors (CSTRs) that we had studied in earlier work [[2]](#ref-linan2020optimal), [[3]](#ref-ovalle2025logic).
 Its design decisions include how many reactors to use and where streams enter or recycle.
-This superstructure serves as a useful test problem because reactor design theory tells us beforehand what the solution should be: to minimize total volume, the cascade should approximate a plug-flow reactor (PFR) by using all available reactors in series without recycle.
+This superstructure serves as a useful test problem because reactor design theory tells us beforehand what the solution should be: to minimize total volume, the cascade should approximate a plug-flow reactor (PFR) by using all available reactors in series with recycle returned to the first reactor in the flow direction.
 The largest network in our study has 465 admissible configurations.
 Evaluating them all requires solving 465 continuous optimization subproblems.
 
