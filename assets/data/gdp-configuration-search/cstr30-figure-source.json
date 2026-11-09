@@ -10,6 +10,7 @@
   },
   "rows": 73,
   "enumeration_nlp_solves": 465,
+  "target_criterion": "|f_best - f_ref| <= 1e-5 * max(1, |f_ref|)",
   "measure": "Total NLP solves over the completed run, not first-hit work or runtime.",
   "rejected_configurations": "Logical/FBBT rejections count toward the candidate budget but do not require an NLP solve.",
   "adaptation": "One panel enlarged, with localized labels and legend. Same methods, individual run counts, target outcomes, median and quartiles as the paper."

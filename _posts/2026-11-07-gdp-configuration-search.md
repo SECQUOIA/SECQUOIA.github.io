@@ -126,7 +126,7 @@ They could therefore test designs that local descent would not reach through a s
     <img src="{{ '/assets/images/gdp-configuration-search/cstr30-results-en.webp' | relative_url }}" alt="Log-scale comparison of total NLP solves for CSTR30. RBFOpt reaches the reference in 9 of 10 runs and MISO in all 10, with median workloads near 30 solves, compared with 465 for enumeration." width="1600" height="1216" loading="lazy" decoding="async">
   </a>
   <figcaption><strong>Figure 2.</strong> Largest reactor network (CSTR30), adapted from the paper.
-  Each marker shows the total NLP subproblems solved in a completed run.
+  Each marker shows the total nonlinear programming (NLP) subproblems solved in a completed run.
   RBFOpt and MISO reach the reference in nine and ten of ten runs, with median workloads of 31.5 and 29.5 solves; evaluating every admissible configuration requires 465.
   The upper seven rows have ten runs each; the bottom three GDPopt rows have one run each.
   Gray bars show the middle 50%, with a black median tick.
@@ -156,7 +156,7 @@ The full GDP model contains 100,947 configurations.
 We searched a restricted domain containing 54,159 admissible configurations, large enough that evaluating every design would remain expensive.
 
 With a budget of 100 evaluations, D-SDA and MISO each reached the best known design in three of ten runs.
-Exact matches were uncommon, but many runs finished close.
+Reaching that reference was uncommon, but many runs finished close.
 The median results of D-SDA, NOMAD, and MISO were within 0.14% of the best known objective after evaluating about 0.2% of the search domain.
 
 Local descent was competitive here.
@@ -187,7 +187,7 @@ For categories such as reactor types, the assigned order can be arbitrary.
 Reordering those alternatives changed the behavior of several methods in the lomustine experiments.
 The ordering of categorical choices should therefore be checked when comparing search methods.
 
-The number of runs that match a reference objective exactly is only one measure of performance.
+The number of runs that reach a reference objective is only one measure of performance.
 A method can miss a strict target while consistently producing designs close enough for an engineering study.
 Comparing methods should include the quality and variability of their final designs, their evaluation counts, and their total computational cost.
 

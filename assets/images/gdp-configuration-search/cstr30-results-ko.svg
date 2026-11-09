@@ -908,11 +908,11 @@ z
 " style="stroke: #0072b2"/>
     </defs>
     <g>
-     <use xlink:href="#mf5035f3b6e" x="242.601797" y="489.172312" style="fill: #0072b2; stroke: #0072b2"/>
+     <use xlink:href="#mf5035f3b6e" x="244.421953" y="489.172312" style="fill: #0072b2; stroke: #0072b2"/>
     </g>
    </g>
    <g id="text_28">
-    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="262.401797" y="493.022312" transform="rotate(-0 262.401797 493.022312)">기준값 도달</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="264.221953" y="493.022312" transform="rotate(-0 264.221953 493.022312)">기준값 도달</text>
    </g>
    <g id="line2d_63">
     <defs>
@@ -923,16 +923,16 @@ L 3 3
 " style="stroke: #d55e00"/>
     </defs>
     <g>
-     <use xlink:href="#m540b644a82" x="242.601797" y="505.947312" style="fill: #d55e00; stroke: #d55e00"/>
+     <use xlink:href="#m540b644a82" x="244.421953" y="505.947312" style="fill: #d55e00; stroke: #d55e00"/>
     </g>
    </g>
    <g id="text_29">
-    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="262.401797" y="509.797312" transform="rotate(-0 262.401797 509.797312)">기준값 미도달</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="264.221953" y="509.797312" transform="rotate(-0 264.221953 509.797312)">기준값 미도달</text>
    </g>
    <g id="line2d_64">
-    <path d="M 231.601797 522.722312
-L 242.601797 522.722312
-L 253.601797 522.722312
+    <path d="M 233.421953 522.722312
+L 244.421953 522.722312
+L 255.421953 522.722312
 " style="fill: none; stroke: #b0b0b0; stroke-width: 5; stroke-linecap: square"/>
     <defs>
      <path id="m20ee20e079" d="M 0 6
@@ -940,29 +940,29 @@ L 0 -6
 " style="stroke: #222222"/>
     </defs>
     <g>
-     <use xlink:href="#m20ee20e079" x="242.601797" y="522.722312" style="fill: #b0b0b0; stroke: #222222"/>
+     <use xlink:href="#m20ee20e079" x="244.421953" y="522.722312" style="fill: #b0b0b0; stroke: #222222"/>
     </g>
    </g>
    <g id="text_30">
-    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="262.401797" y="526.572312" transform="rotate(-0 262.401797 526.572312)">중앙값과 가운데 50%</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="264.221953" y="526.572312" transform="rotate(-0 264.221953 526.572312)">중앙값과 중앙 50%</text>
    </g>
    <g id="line2d_65">
-    <path d="M 382.511484 489.172312
-L 393.511484 489.172312
-L 404.511484 489.172312
+    <path d="M 374.211641 489.172312
+L 385.211641 489.172312
+L 396.211641 489.172312
 " style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #555555; stroke-width: 1.5"/>
    </g>
    <g id="text_31">
-    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="413.311484" y="493.022312" transform="rotate(-0 413.311484 493.022312)">전체 구성 평가: 465</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="405.011641" y="493.022312" transform="rotate(-0 405.011641 493.022312)">전체 구성 평가: 465</text>
    </g>
    <g id="line2d_66">
-    <path d="M 382.511484 505.947312
-L 393.511484 505.947312
-L 404.511484 505.947312
+    <path d="M 374.211641 505.947312
+L 385.211641 505.947312
+L 396.211641 505.947312
 " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #999999; stroke-width: 1.5"/>
    </g>
    <g id="text_32">
-    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="413.311484" y="509.797312" transform="rotate(-0 413.311484 509.797312)">구성 평가 예산: 43</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans CJK KR'; text-anchor: start" x="405.011641" y="509.797312" transform="rotate(-0 405.011641 509.797312)">후보 구성 수 한도: 43</text>
    </g>
   </g>
  </g>

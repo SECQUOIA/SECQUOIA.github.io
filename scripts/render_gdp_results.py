@@ -40,15 +40,15 @@ TEXT = {
         "outcomes": "Referencia\nalcanzada",
         "hit": "Referencia alcanzada", "miss": "Referencia no alcanzada",
         "spread": "Mediana y 50 % central", "all": "Todas las configuraciones: 465",
-        "budget": "Límite de evaluaciones: 43", "no": "No", "uniform": "Uniforme",
+        "budget": "Límite de configuraciones candidatas: 43", "no": "No", "uniform": "Uniforme",
     },
     "ko": {
         "title": "가장 큰 반응기 네트워크 (CSTR30)",
         "axis": "완료된 실행별 NLP 하위 문제 풀이 횟수 (로그 척도)",
         "outcomes": "기준값\n도달",
         "hit": "기준값 도달", "miss": "기준값 미도달",
-        "spread": "중앙값과 가운데 50%", "all": "전체 구성 평가: 465",
-        "budget": "구성 평가 예산: 43", "no": "미도달", "uniform": "균등 추출",
+        "spread": "중앙값과 중앙 50%", "all": "전체 구성 평가: 465",
+        "budget": "후보 구성 수 한도: 43", "no": "미도달", "uniform": "균등 추출",
     },
 }
 

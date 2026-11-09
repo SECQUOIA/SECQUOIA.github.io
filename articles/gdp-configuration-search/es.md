@@ -128,7 +128,7 @@ Así podían probar diseños a los que el descenso local no llegaría mediante u
     <img src="{{ '/assets/images/gdp-configuration-search/cstr30-results-es.webp' | relative_url }}" alt="Comparación en escala logarítmica del número total de subproblemas NLP resueltos para CSTR30. RBFOpt alcanza el valor de referencia en 9 de 10 ejecuciones y MISO en las 10, con medianas cercanas a 30 subproblemas resueltos, frente a los 465 necesarios para la enumeración." width="1600" height="1216" loading="lazy" decoding="async">
   </a>
   <figcaption><strong>Figura 2.</strong> Red de reactores más grande (CSTR30), adaptada del artículo.
-  Cada marcador muestra el número total de subproblemas NLP resueltos en una ejecución completada.
+  Cada marcador muestra el número total de subproblemas de programación no lineal (NLP) resueltos en una ejecución completada.
   RBFOpt y MISO alcanzan el valor de referencia en nueve y diez de diez ejecuciones, respectivamente, con medianas de 31.5 y 29.5 subproblemas resueltos; evaluar todas las configuraciones admisibles requiere resolver 465.
   Las siete filas superiores tienen diez ejecuciones cada una; las tres filas inferiores de GDPopt tienen una ejecución cada una.
   Las barras grises muestran el 50% central, con una marca negra para la mediana.
@@ -158,7 +158,7 @@ El modelo GDP completo contiene 100,947 configuraciones.
 Realizamos la búsqueda en un dominio restringido con 54,159 configuraciones admisibles, lo suficientemente grande como para que evaluar cada diseño siguiera siendo costoso.
 
 Con un presupuesto de 100 evaluaciones, D-SDA y MISO alcanzaron cada uno el mejor diseño conocido en tres de las diez ejecuciones.
-Las coincidencias exactas fueron poco frecuentes, pero muchas ejecuciones terminaron cerca.
+Alcanzar esa referencia fue poco frecuente, pero muchas ejecuciones terminaron cerca.
 Las medianas de los resultados de D-SDA, NOMAD y MISO quedaron dentro de un margen del 0.14% respecto del mejor valor conocido de la función objetivo tras evaluar aproximadamente el 0.2% del dominio de búsqueda.
 
 El descenso local fue competitivo en este caso.
@@ -189,7 +189,7 @@ Para categorías como los tipos de reactores, el orden asignado puede ser arbitr
 Reordenar esas alternativas cambió el comportamiento de varios métodos en los experimentos de lomustina.
 Por lo tanto, al comparar métodos de búsqueda se debe revisar el orden de las alternativas categóricas.
 
-El número de ejecuciones que alcanzan exactamente un valor de referencia de la función objetivo es solo una medida del desempeño.
+El número de ejecuciones que alcanzan un valor de referencia de la función objetivo es solo una medida del desempeño.
 Un método puede no alcanzar un objetivo estricto y, aun así, producir de manera consistente diseños lo suficientemente cercanos para un estudio de ingeniería.
 La comparación de métodos debe incluir la calidad y la variabilidad de sus diseños finales, el número de evaluaciones y el costo computacional total.
 

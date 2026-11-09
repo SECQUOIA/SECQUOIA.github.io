@@ -85,7 +85,7 @@ def main():
         family = "Noto Sans CJK KR" if language == "ko" else "DejaVu Sans Condensed"
         font_file = args.korean_font if language == "ko" else Path("/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf")
         font = lambda size: ImageFont.truetype(str(font_file), size)
-        title = wrap(meta["title"], font(52), 600 if language == "ko" else 670)
+        title = wrap(meta["title"], font(52), 550 if language == "ko" else 670)
         if len(title) > 5:
             raise ValueError(f"{language}: cover title needs more than five lines")
         content = text_lines(["SECQUOIA  /  PURDUE"], 55, 70, 23, family, GOLD)
