@@ -184,7 +184,7 @@ If each evaluation takes minutes, the extra time spent choosing the next design 
 
 The way equipment choices are numbered also affects the search.
 Integer coordinates define which configurations appear close to one another.
-For naturally ordered decisions, such as the number of stages, neighboring coordinates represent physically similar designs; exploiting that ordered structure was the central idea of the external-variable reformulation introduced by Ovalle et al. [[3]](#ref-ovalle2025logic).
+For naturally ordered decisions, such as the number of stages, neighboring coordinates represent physically similar designs; exploiting that ordered structure was the central idea of the external-variable reformulation introduced in our earlier work [[3]](#ref-ovalle2025logic).
 For categories such as reactor types, the assigned order can be arbitrary.
 Reordering those alternatives changed the behavior of several methods in the lomustine experiments.
 The ordering of categorical choices should therefore be checked when comparing search methods.

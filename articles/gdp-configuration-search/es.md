@@ -186,7 +186,7 @@ Si cada evaluación toma minutos, el tiempo adicional dedicado a elegir el sigui
 
 La forma de numerar las alternativas de equipos también afecta la búsqueda.
 Las coordenadas enteras definen qué configuraciones parecen cercanas entre sí.
-Para decisiones con un orden natural, como el número de etapas, las coordenadas vecinas corresponden a diseños físicamente similares; aprovechar esa estructura ordenada fue precisamente la idea central de la reformulación con variables externas propuesta por Ovalle et al. [[3]](#ref-ovalle2025logic).
+Para decisiones con un orden natural, como el número de etapas, las coordenadas vecinas corresponden a diseños físicamente similares; aprovechar esa estructura ordenada fue precisamente la idea central de la reformulación con variables externas propuesta en nuestro anterior trabajo [[3]](#ref-ovalle2025logic).
 Para categorías como los tipos de reactores, el orden asignado puede ser arbitrario.
 Reordenar esas alternativas cambió el comportamiento de varios métodos en los experimentos de lomustina.
 Por lo tanto, al comparar métodos de búsqueda se debe revisar el orden de las alternativas categóricas.
