@@ -92,13 +92,45 @@ bibtex_blocks.each_with_index do |bib, idx|
   abort "Duplicate BibTeX key #{cite_key.inspect}" if seen_keys.key?(cite_key)
   seen_keys[cite_key] = true
 
-  # Ensure no unescaped TeX alignment/comment/parameter characters appear in non-URL lines
+  # Ensure no unescaped TeX alignment/comment/parameter/subscript characters or non-NFC marks appear in non-URL lines
+  abort "Non-NFC characters in BibTeX (#{cite_key})" unless bib == bib.unicode_normalize(:nfc)
   bib.each_line do |line|
     next if line.lstrip.start_with?("url =", "doi =")
     abort "Unescaped & in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)&/)
     abort "Unescaped % in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)%/)
     abort "Unescaped # in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)#/)
+    abort "Unescaped _ in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)_/)
   end
+end
+
+# Verify trailing TeX special characters (& % # _) are preserved and escaped rather than trimmed
+trailing_fixture = [
+  {
+    "Authors" => "Bernal Neira, David E_;",
+    "Title" => "Yield 50%",
+    "Publication" => "R&D &",
+    "Pages" => "1–10#",
+    "Year" => "2026",
+    "Publisher" => "Press_1_",
+    "Type" => "Book / Chapter",
+    "DOI" => "10.1000/test_1"
+  }
+]
+grouped_template = jekyll_site.liquid_renderer.file("publication-bibtex-fixture").parse('{% include publications style="apa" link=true group_by_year=true %}')
+grouped_rendered = grouped_template.render!(
+  {"site" => {"data" => {"citations" => trailing_fixture}}},
+  registers: {site: jekyll_site}
+)
+fixture_bib = Nokogiri::HTML.fragment(grouped_rendered).at_css("details.pub-bibtex pre code")&.text.to_s
+[
+  'author = {Bernal Neira, David E\_}',
+  'title = {Yield 50\%}',
+  'booktitle = {R\&D \&}',
+  'publisher = {Press\_1\_}',
+  'pages = {1--10\#}',
+  'doi = {10.1000/test_1}'
+].each do |expected_field|
+  abort "Expected #{expected_field.inspect} in trailing-character BibTeX fixture, got:\n#{fixture_bib}" unless fixture_bib.include?(expected_field)
 end
 
 %w[article inproceedings incollection proceedings phdthesis mastersthesis misc].each do |req_type|

@@ -288,11 +288,11 @@
       {% endif %}
     {% endif %}
 
-    {% assign bib_authors_tex = bib_authors_tokens | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
-    {% assign bib_title_tex = citation.Title | to_s | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
-    {% assign bib_venue_tex = bib_venue_val | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
-    {% assign bib_publisher_tex = publisher_clean | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
-    {% assign bib_pages_tex = pages_clean | replace: "–", "--" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
+    {% assign bib_authors_tex = bib_authors_tokens | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_title_tex = citation.Title | to_s | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_venue_tex = bib_venue_val | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_publisher_tex = publisher_clean | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_pages_tex = pages_clean | replace: "–", "--" | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
 
     {% assign lb = "{" %}
     {% assign rb = "}" %}
