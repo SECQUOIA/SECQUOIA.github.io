@@ -104,6 +104,7 @@ else
   echo "Warning: cwebp not found. Falling back to ImageMagick for WebP conversion." >&2
 fi
 
+rm -rf "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR"
 
 to_lower() {
@@ -119,7 +120,7 @@ is_supported_source_ext() {
 is_banner_like() {
   local name_lc
   name_lc="$(to_lower "$1")"
-  [[ "$name_lc" == *"banner"* || "$name_lc" == *"hero"* || "$name_lc" == *"header"* ]]
+  [[ "$name_lc" != *"-mobile"* ]] && [[ "$name_lc" == *"banner"* || "$name_lc" == *"hero"* || "$name_lc" == *"header"* ]]
 }
 
 detect_resize_width() {
@@ -187,6 +188,11 @@ process_image() {
   extension="${filename##*.}"
   ext_lc="$(to_lower "$extension")"
   basename="${filename%.*}"
+
+  if [[ "$basename" == *-mobile || "$basename" == *-mobile-* ]]; then
+    echo "Skipping generated mobile derivative: $rel_path"
+    return 0
+  fi
 
   if ! is_supported_source_ext "$ext_lc"; then
     echo "Skipping unsupported format: $rel_path"
@@ -292,7 +298,7 @@ collect_files() {
   if [[ ${#FILES[@]} -gt 0 ]]; then
     printf '%s\n' "${FILES[@]}"
   else
-    find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) -not -path "$OUTPUT_DIR/*"
+    find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) -not -iname '*-mobile.*' -not -iname '*-mobile-*' -not -path "$OUTPUT_DIR/*"
   fi
 }
 

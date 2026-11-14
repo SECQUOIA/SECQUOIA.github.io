@@ -391,7 +391,7 @@ banner_color: style2
 <section id="anja-hribljan" class="spotlights">
  <section>
   <span class="image">
-   <img src="assets/images/members/AnjaHribljan.webp" alt="Anja Hribljan" width="1814" height="2593" loading="lazy" decoding="async" data-position="center center" />
+   <img src="assets/images/members/AnjaHribljan.webp" alt="Anja Hribljan" width="600" height="858" loading="lazy" decoding="async" data-position="center center" />
   </span>
   <div class="content">
    <div class="inner">
@@ -565,7 +565,7 @@ banner_color: style2
 <section id="luana-garcia" class="spotlights">
   <section>
     <span class="image">
-      <img src="assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="1214" height="1280" loading="lazy" decoding="async" data-position="center center" />
+      <img src="assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="600" height="633" loading="lazy" decoding="async" data-position="center center" />
     </span>
     <div class="content">
       <div class="inner">

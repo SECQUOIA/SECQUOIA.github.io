@@ -1,6 +1,6 @@
 ---
 ---
-const CACHE_NAME = 'secquoia-v2';
+const CACHE_NAME = 'secquoia-v3';
 const CACHEABLE_DESTINATIONS = new Set(['style', 'script', 'image', 'font', 'document']);
 const urlsToCache = [
   '/',
@@ -12,7 +12,7 @@ const urlsToCache = [
   '/assets/js/jquery.scrolly.min.js',
   '/assets/js/jquery.scrollex.min.js',
   '/assets/images/banner.webp',
-  '/assets/images/group2024.webp'
+  '/assets/images/group2025.webp'
 ];
 
 // Install event - cache resources
