@@ -25,7 +25,7 @@ banner_color: style6
 <section id="topics" class="spotlights">
  <section id="philosophy">
   <a href="teaching/philosophy.html" class="image" aria-label="Read Teaching Philosophy">
-   <img src="{% link assets/images/notebook.webp %}" alt="" data-position="bottom center" />
+   <img src="{% link assets/images/notebook.webp %}" alt="" width="1920" height="1442" loading="lazy" decoding="async" data-position="bottom center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -44,7 +44,7 @@ banner_color: style6
 
  <section id="courses">
   <a href="teaching/courses.html" class="image" aria-label="Explore Courses">
-   <img src="{% link assets/images/books2.webp %}" alt="" data-position="center center" />
+   <img src="{% link assets/images/books2.webp %}" alt="" width="1920" height="1272" loading="lazy" decoding="async" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">

@@ -6,25 +6,36 @@
 
 /* Type */
 
-	body, input, select, textarea {
-		color: _palette(fg);
-		font-family: _font(family);
-		font-size: 17pt;
-		font-weight: _font(weight);
-		letter-spacing: _font(letter-spacing);
-		line-height: 1.65;
+	html {
+		font-size: 112.5%;
 
 		@include breakpoint(xlarge) {
-			font-size: 14pt;
+			font-size: 106.25%;
 		}
 
 		@include breakpoint(large) {
-			font-size: 12pt;
+			font-size: 100%;
 		}
 
 		@include breakpoint(xxsmall) {
-			font-size: 11pt;
+			font-size: 93.75%;
 		}
+	}
+
+	body, input, select, textarea {
+		color: _palette(fg);
+		font-family: _font(family);
+		font-size: 1rem;
+		font-weight: _font(weight);
+		letter-spacing: _font(letter-spacing);
+		line-height: 1.65;
+	}
+
+	.prose-section > .inner > p,
+	.prose-section > .inner > ul,
+	.prose-section > .inner > ol,
+	.prose-section > .inner > blockquote {
+		max-width: 72ch;
 	}
 
 	a {

@@ -94,46 +94,19 @@
 	<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
 
 	<!-- Optimized Google Fonts loading -->
-	<link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap"></noscript>
-	
-		<!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
-		<link rel="stylesheet" href="{{ "assets/css/font-awesome.min.css" | relative_url }}" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-		<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
-		<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
-	
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic&display=swap"></noscript>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+
 	<!-- PWA Manifest -->
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
 	<meta name="theme-color" content="#faf9f6">
-	
-	
-	<!-- WebP detection script -->
-	<script>
-	  // Check if the browser supports WebP
-	  function checkWebpSupport() {
-	    var img = new Image();
-	    img.onload = function() {
-	      var result = (img.width > 0) && (img.height > 0);
-	      if(result) {
-	        document.documentElement.classList.add('webp');
-	      }
-	    };
-	    img.onerror = function() {
-	      // WebP not supported
-	    };
-	    img.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
-	  }
-	  
-	  // Run the detection
-	  checkWebpSupport();
-	</script>
-	
-	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
-	
-  	{% if jekyll.environment == 'production' and site.google_analytics %}
-  	{% include analytics.html %}
-  	{% endif %}
-	
-	</head>
+
+	{% if jekyll.environment == 'production' and site.google_analytics %}
+	{% include analytics.html %}
+	{% endif %}
+
+</head>

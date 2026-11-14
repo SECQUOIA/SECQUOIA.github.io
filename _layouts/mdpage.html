@@ -12,12 +12,12 @@
 	{% include header.html %}
 
 	<section id="banner" class="{{ page.banner_color }}">
+		{% if page.image %}
+		<span class="image">
+			<img src="{{ page.image | relative_url }}" alt="" loading="eager" fetchpriority="high" decoding="async">
+		</span>
+		{% endif %}
 		<div class="inner">
-			{% if page.image %}
-			<span class="image">
-				<img src="{{ page.image | relative_url }}" alt="" loading="eager" fetchpriority="high" decoding="async">
-			</span>
-			{% endif %}
 			<header class="major">
 				<h1>{{ page.title }}</h1>
 			</header>
@@ -29,7 +29,7 @@
 
 	<main id="main" class="alt" tabindex="-1">
 
-		<section id="one">
+		<section id="one" class="prose-section">
 			<div class="inner">
 				{{ content }}
 			</div>

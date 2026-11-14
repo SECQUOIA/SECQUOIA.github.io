@@ -98,20 +98,6 @@
 			$header = $('#header'),
 			$banner = $('#banner');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			window.setTimeout(function() {
-				$body.removeClass('is-loading');
-			}, 200);
-
-		// Clear transitioning state on unload/hide.
-			$window.on('unload pagehide', function() {
-				window.setTimeout(function() {
-					$('.is-transitioning').removeClass('is-transitioning');
-				}, 250);
-			});
-
 		// Fix: Enable IE-only tweaks.
 			if (skel.vars.browser == 'ie' || skel.vars.browser == 'edge')
 				$body.addClass('is-ie');
@@ -134,57 +120,10 @@
 				}
 			});
 
-		// Tiles.
-			var $tiles = $('.tiles > article');
-
-			$tiles.each(function() {
-
-				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img'),
-					$link = $this.find('.link'),
-					x;
-
-				// Image.
-
-					// Set image.
-						$this.css('background-image', 'url(' + $img.attr('src') + ')');
-
-					// Set position.
-						if (x = $img.data('position'))
-							$image.css('background-position', x);
-
-					// Hide original.
-						$image.hide();
-
-				// Link (stretched via CSS ::after; single tab stop).
-					if ($link.length > 0) {
-
-						$link.on('click', function(event) {
-
-							var href = $link.attr('href');
-
-							// Prevent default.
-								event.stopPropagation();
-								event.preventDefault();
-
-							// Start transitioning.
-								$this.addClass('is-transitioning');
-								$wrapper.addClass('is-transitioning');
-
-							// Redirect.
-								window.setTimeout(function() {
-
-									if ($link.attr('target') == '_blank')
-										window.open(href);
-									else
-										location.href = href;
-
-								}, 500);
-
-						});
-
-					}
-
+		// Apply data-position alignment to native lazy-loaded tile images without intercepting clicks.
+			$('.tiles > article > .image > img[data-position]').each(function() {
+				var $img = $(this);
+				$img.css('object-position', $img.data('position'));
 			});
 
 		// Remove redundant tab stops on any remaining self-referential spotlight image anchors.
@@ -224,26 +163,11 @@
 
 			}
 
-		// Banner.
+		// Banner parallax on background-image banners only (Home).
 			$banner.each(function() {
-
-				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img');
-
-				// Parallax.
+				var $this = $(this);
+				if ($this.children('.image').length === 0)
 					$this._parallax(0.275);
-
-				// Image.
-					if ($image.length > 0) {
-
-						// Set image.
-							$this.css('background-image', 'url(' + $img.attr('src') + ')');
-
-						// Hide original.
-							$image.hide();
-
-					}
-
 			});
 
 		// Menu.
@@ -326,20 +250,10 @@
 					event.stopPropagation();
 				})
 				.on('click', 'a', function(event) {
-
-					var href = $(this).attr('href');
-
-					event.preventDefault();
+					if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.which > 1)
+						return;
 					event.stopPropagation();
-
-					// Hide.
-						$menu._hide(false);
-
-					// Redirect.
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 250);
-
+					$menu._hide(false);
 				});
 
 			$closeBtn = $('<button type="button" class="close" aria-label="Close menu">Close</button>');

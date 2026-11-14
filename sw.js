@@ -5,7 +5,6 @@ const CACHEABLE_DESTINATIONS = new Set(['style', 'script', 'image', 'font', 'doc
 const urlsToCache = [
   '/',
   '/assets/css/main.css',
-  '/assets/css/font-awesome.min.css',
   '/assets/js/main.js',
   '/assets/js/jquery.min.js',
   '/assets/js/util.js',
@@ -13,8 +12,7 @@ const urlsToCache = [
   '/assets/js/jquery.scrolly.min.js',
   '/assets/js/jquery.scrollex.min.js',
   '/assets/images/banner.webp',
-  '/assets/images/group2024.webp',
-  '/assets/fonts/fontawesome-webfont.woff2'
+  '/assets/images/group2024.webp'
 ];
 
 // Install event - cache resources

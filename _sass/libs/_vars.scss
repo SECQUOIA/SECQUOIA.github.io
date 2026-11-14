@@ -22,18 +22,20 @@
 	$font: (
 		family:				('Source Sans Pro', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
-		weight:				300,
+		weight:				400,
 		weight-bold:		600,
-		letter-spacing:		0.025em,
+		letter-spacing:		0.02em,
 		letter-spacing-alt:	0.25em
 	);
 
-// Illustration accents. Runtime reading colors are in base/_themes.scss.
+// Cohesive academic slate/bronze/gold banner & tile accents. Runtime reading colors are in base/_themes.scss.
 	$palette: (
-		accent1:			#6fc3df,
-		accent2:			#8b7ec8,
-		accent3:			#e88b80,
-		accent4:			#999999,
-		accent5:			#a8c0ff,
-		accent6:			#3cb371
+		accent1:			#3b4d5e,
+		accent2:			#5c4a28,
+		accent3:			#2f4842,
+		accent4:			#46433d,
+		accent5:			#364156,
+		accent6:			#6b5322,
+		accent7:			#4a3b38,
+		accent8:			#2d434e
 	);

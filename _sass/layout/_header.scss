@@ -195,12 +195,8 @@
 			&.style4 { .logo { strong { color: _palette(accent4); } } }
 			&.style5 { .logo { strong { color: _palette(accent5); } } }
 			&.style6 { .logo { strong { color: _palette(accent6); } } }
-		}
-
-		body.is-loading & {
-			&.alt {
-				opacity: 0;
-			}
+			&.style7 { .logo { strong { color: _palette(accent7); } } }
+			&.style8 { .logo { strong { color: _palette(accent8); } } }
 		}
 
 		@include breakpoint(xlarge) {

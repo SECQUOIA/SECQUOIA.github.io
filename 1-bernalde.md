@@ -19,6 +19,7 @@ banner_color: style1
 .profile-image {
   float: left;
   width: 25%;
+  height: auto;
   margin: 0 20px 10px 0;
   border-radius: 5px;
 }
@@ -40,7 +41,7 @@ banner_color: style1
 
 <div class="main-content">
   <div class="profile-intro">
-    <img src="{% link assets/images/profile.webp %}" alt="David E. Bernal Neira" class="profile-image">
+    <img src="{% link assets/images/profile.webp %}" alt="David E. Bernal Neira" width="1920" height="1283" decoding="async" class="profile-image">
 
     <h2>Long Biography</h2>
 

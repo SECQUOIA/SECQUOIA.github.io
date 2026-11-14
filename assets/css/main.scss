@@ -78,35 +78,20 @@
 	@import 'layout/wrapper';
 	@import 'layout/menu';
 
-/* Banner WebP support - since you confirmed these images exist */
-#banner {
-  /* Fallback for browsers that don't support WebP */
-  background-image: url('../images/banner-resized.jpg');
-}
-
-/* For browsers that support WebP */
-.webp #banner {
-  background-image: url('../images/banner.webp');
-}
-
-/* Load smaller images on mobile */
+/* Smaller hero banner on mobile viewports */
 @media only screen and (max-width: 768px) {
-  #banner {
-    background-image: url('../images/banner-mobile.jpg');
-  }
-  .webp #banner {
+  #banner.major {
     background-image: url('../images/banner-mobile.webp');
   }
 }
 
-/* General image placeholder color */
+/* Theme-aware image and tile placeholders */
 .image {
-  background-color: #f6f6f6;
+  background-color: var(--bg-alt);
 }
 
-/* General background placeholder color for articles */
 .tiles article {
-  background-color: #f6f6f6;
+  background-color: #191a1b;
 }
 
 // Runtime light/dark palettes and shared controls.
