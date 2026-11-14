@@ -64,10 +64,42 @@
 
 		nav {
 			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
 			@include vendor('justify-content', 'flex-end');
 			@include vendor('flex-grow', '1');
 			height: inherit;
 			line-height: inherit;
+
+			.desktop-nav {
+				display: flex;
+				align-items: center;
+				list-style: none;
+				margin: 0 0.25em 0 0;
+				padding: 0;
+				height: inherit;
+
+				li {
+					margin: 0;
+					padding: 0;
+					height: inherit;
+				}
+
+				a {
+					font-size: 0.72em;
+					padding: 0 0.6em;
+					white-space: nowrap;
+
+					&[aria-current="page"] {
+						color: _palette(highlight);
+					}
+				}
+			}
+
+			@media screen and (max-width: 1180px) {
+				.desktop-nav {
+					display: none;
+				}
+			}
 
 			a {
 				border: 0;

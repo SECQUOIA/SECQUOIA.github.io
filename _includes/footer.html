@@ -1,7 +1,13 @@
 <!-- Contact -->
-<section id="contact">
+<section id="contact" aria-labelledby="contact-heading">
 	<div class="inner">
 		<section>
+			<header class="major">
+				<h2 id="contact-heading">Contact &amp; Inquiries</h2>
+			</header>
+			<p class="contact-intro">
+				Prospective Ph.D. students, postdoctoral associates, visiting scholars, and collaborators are invited to contact Prof. David E. Bernal Neira directly using this form. See <a href="{{ '/join/' | relative_url }}">Join Us</a> for details on what to include.
+			</p>
 			<form action="{{ site.formspreeEndpoint }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
@@ -24,26 +30,19 @@
 		<section class="split">
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
+					<span class="icon alt fa-envelope" aria-hidden="true"></span>
+					<h3>Direct Inquiries</h3>
 					{% assign contact_email = site.email | to_s | strip %}
 					{% if contact_email != "" and contact_email contains "@" %}
 						<a href="mailto:{{ contact_email }}" target="_blank" rel="noopener noreferrer">{{ contact_email }}</a>
 					{% else %}
-						<span>Use the contact form above.</span>
+						<span>Messages submitted via this form go directly to Prof. David E. Bernal Neira. For prospective student, postdoctoral, and collaboration guidance, visit <a href="{{ '/join/' | relative_url }}">Join Us</a>.</span>
 					{% endif %}
 				</div>
 			</section>
-			<!-- <section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
-				</div>
-			</section> -->
 			<section>
 				<div class="contact-method">
-					<span class="icon alt fa-map-marker"></span>
+					<span class="icon alt fa-map-marker" aria-hidden="true"></span>
 					<h3>Location</h3>
 					<span>
 					{% if site.university %}
@@ -59,7 +58,7 @@
 					    {{ site.city }},
 					{% endif %}
 					{% if site.state %}
-					    {{ site.state }} 
+					    {{ site.state }}
 					{% endif %}
 					{% if site.zip_code %}
 					    {{ site.zip_code }}<br />
@@ -77,6 +76,15 @@
 <!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
+			{% if site.data.navigation.footer_links %}
+			<nav class="footer-nav" aria-label="Footer quick links">
+				<ul class="footer-links">
+					{% for item in site.data.navigation.footer_links %}
+					<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+			{% endif %}
 			<ul class="icons">
 				{% for key_value in site.socials %}
 					{% if key_value[1] %}
@@ -89,7 +97,7 @@
 				{% endfor %}
 			</ul>
 			<ul class="copyright">
-				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
+				<li>&copy; {{ site.title }} &middot; {{ site.subtitle }}</li>
 				<li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
 				<li>Jekyll integration by <a href="https://github.com/andrewbanchich" target="_blank" rel="noopener noreferrer">Andrew Banchich</a> | Template adapted from <a href="https://pulsipher.info/" target="_blank" rel="noopener noreferrer">Joshua Pulsipher</a></li>
 			</ul>
@@ -99,13 +107,13 @@
 </div>
 
 <!-- Scripts -->
-	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}" defer></script>
-	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}" defer></script>
-	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}" defer></script>
-	<script src="{{ "assets/js/skel.min.js" | absolute_url }}" defer></script>
-	<script src="{{ "assets/js/util.js" | absolute_url }}" defer></script>
-	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-	<script src="{{ "assets/js/main.js" | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/jquery.min.js' | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/jquery.scrolly.min.js' | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/jquery.scrollex.min.js' | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/skel.min.js' | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/util.js' | absolute_url }}" defer></script>
+	<!--[if lte IE 8]><script src="{{ 'assets/js/ie/respond.min.js' | absolute_url }}"></script><![endif]-->
+	<script src="{{ 'assets/js/main.js' | absolute_url }}" defer></script>
 
 	<!-- Optimized deferred scripts -->
 	{% include scripts.html %}

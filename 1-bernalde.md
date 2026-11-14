@@ -62,7 +62,15 @@ banner_color: style1
 
   <p>David E. Bernal Neira is Purdue's Mitchel Papanicolas Family/Del Ray Glass Company Assistant Professor of Chemical Engineering and leads the <a href="index.html">SECQUOIA</a> research group in optimization and quantum computing.</p>
 
-  <p><a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478" target="_blank" rel="noopener noreferrer">Purdue University profile</a> · <a href="files/cv.html">Full curriculum vitae</a></p>
+  <p>
+    <a href="files/cv.html">Full curriculum vitae</a> ·
+    <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
+    <a href="https://orcid.org/0000-0002-8308-5016" target="_blank" rel="noopener noreferrer">ORCID</a> ·
+    <a href="https://github.com/bernalde" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/bernalde/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+    <a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478" target="_blank" rel="noopener noreferrer">Purdue University profile</a> ·
+    <a href="/join/">Prospective inquiries</a>
+  </p>
 
   <h2>Current Roles and Affiliations</h2>
 
