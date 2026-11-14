@@ -27,6 +27,18 @@
 				width: 2em;
 			}
 		}
+
+		&.fa-github:before,
+		&.fa-linkedin:before,
+		&.fa-orcid:before,
+		&.fa-twitter:before,
+		&.fa-facebook:before,
+		&.fa-instagram:before,
+		&.fa-youtube:before,
+		&.fa-gitlab:before {
+			font-family: 'Font Awesome 5 Brands';
+			font-weight: 400;
+		}
 	}
 
 	a.icon {

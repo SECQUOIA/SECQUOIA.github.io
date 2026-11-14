@@ -74,11 +74,13 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
 		background: _palette(border-bg);
-		border: none;
+		border: solid 1px var(--input-border);
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -154,6 +156,7 @@
 
 			&:before {
 				background: _palette(border-bg);
+				border: solid 1px var(--input-border);
 				content: '';
 				display: inline-block;
 				height: (_size(element-height) * 0.6);

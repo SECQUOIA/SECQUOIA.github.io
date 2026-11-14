@@ -1,6 +1,6 @@
-{% assign pub_list = site.data.citations | sort: "Year" | reverse %}
 {% assign style = include.style | downcase | default: "apa" %}
 {% assign include_link = include.link %}
+{% assign group_by_year = include.group_by_year | default: false %}
 
 {% if include.venue %}
   {% assign venues = include.venue | downcase | split: ";" %}
@@ -23,13 +23,29 @@
 {% endif %}
 
 {% assign counter = 0 %}
+{% assign current_year_heading = "__UNSET__" %}
+{% assign seen_bib_keys = "|" %}
+{% assign bib_stopwords = "|a|an|the|on|in|of|for|to|and|with|" %}
+{% assign bib_suffixes = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" | split: "," %}
 
+{% unless group_by_year %}
+<ol class="publications-list">
+{% endunless %}
+{% for citation in site.data.citations %}
+  {% assign pub_clean = citation.Publication | to_s | strip %}
+  {% assign year_clean = citation.Year | to_s | strip %}
+  {% assign vol_clean = citation.Volume | to_s | strip %}
+  {% assign num_clean = citation.Number | to_s | strip %}
+  {% assign pages_clean = citation.Pages | to_s | strip %}
+  {% assign publisher_clean = citation.Publisher | to_s | strip %}
+  {% assign type_clean = citation.Type | to_s | strip | default: "Publication" %}
+  {% assign doi_clean = citation.DOI | to_s | strip %}
+  {% assign direct_url = citation.URL | to_s | strip %}
+  {% assign code_url = citation.Code | to_s | strip %}
 
-<ol>
-{% for citation in pub_list %}
   {% if include.venue %}
-    {% assign publication = citation.Publication | downcase %}
-    {% if venues contains publication %}
+    {% assign publication_lc = pub_clean | downcase %}
+    {% if venues contains publication_lc %}
       {% assign is_venue = true %}
     {% else %}
       {% assign is_venue = false %}
@@ -37,9 +53,9 @@
   {% else %}
     {% assign is_venue = true %}
   {% endif %}
-  
+
   {% if include.year %}
-    {% if years contains citation.Year %}
+    {% if years contains year_clean %}
       {% assign is_year = true %}
     {% else %}
       {% assign is_year = false %}
@@ -47,43 +63,36 @@
   {% else %}
     {% assign is_year = true %}
   {% endif %}
-  
+
   {% if include.title_search %}
-    {% assign title = citation.Title | downcase %}
+    {% assign title_lc = citation.Title | to_s | downcase %}
     {% assign is_search = false %}
     {% for term in searchterms %}
-      {% if title contains term %}
+      {% if title_lc contains term %}
         {% assign is_search = true %}
       {% endif %}
     {% endfor %}
   {% else %}
     {% assign is_search = true %}
   {% endif %}
-  
+
   {% if include.venue_search %}
-    {% assign venue = citation.Publication | downcase %}
+    {% assign venue_lc = pub_clean | downcase %}
     {% assign is_venue_search = false %}
     {% for term in venue_searchterms %}
-      {% if venue contains term %}
+      {% if venue_lc contains term %}
         {% assign is_venue_search = true %}
       {% endif %}
     {% endfor %}
   {% else %}
     {% assign is_venue_search = true %}
   {% endif %}
-  
+
   {% if include.author %}
-    {% capture citation_Authors %}
-      {% for element in citation %}
-        {% if forloop.first %}
-          {{ element[1] }}
-        {% endif %}
-      {% endfor %}
-    {% endcapture %}
-    {% assign author_list = citation_Authors | downcase %}
+    {% assign author_lc = citation.Authors | to_s | downcase %}
     {% assign is_author = false %}
     {% for author in authors %}
-      {% if author_list contains author %}
+      {% if author_lc contains author %}
         {% assign is_author = true %}
       {% endif %}
     {% endfor %}
@@ -92,102 +101,254 @@
   {% endif %}
 
   {% if is_venue and is_year and is_search and is_author and is_venue_search %}
-    {% capture citation_Authors %}
-      {% for element in citation %}
-        {% if forloop.first %}
-          {{ element[1] }}
+    {% if group_by_year %}
+      {% assign year_label = year_clean %}
+      {% if year_label == "" %}
+        {% assign year_label = "Other" %}
+      {% endif %}
+      {% if year_label != current_year_heading %}
+        {% if current_year_heading != "__UNSET__" %}
+        </ol>
+      </section>
         {% endif %}
-      {% endfor %}
-    {% endcapture %}
-  
-    {% assign size = citation_Authors | size | minus: 2 %}
-    {% assign pub_authors = citation_Authors | slice: 0, size | split: ";" %}
+        {% assign current_year_heading = year_label %}
+      <section class="pub-year-group" data-year-group="{{ year_label | escape }}">
+        <h3 class="pub-year-heading" id="year-{{ year_label | slugify }}">{{ year_label }}</h3>
+        <ol class="publications-list">
+      {% endif %}
+    {% endif %}
 
+    {% assign raw_authors = citation.Authors | to_s | strip | split: ";" %}
+    {% assign formatted_tokens = "" %}
+    {% assign has_etal = false %}
+    {% assign bib_authors_tokens = "" %}
 
-    {% assign last_names = "" %}
-    {% assign first_names = "" %}
-    {% for name in pub_authors %}
-      {% assign first_last = name | split: "," %}
-      {% assign first_names = first_names | append: first_last[1] %}
-      {% assign last_names = last_names | append: first_last[0] %}
-      {% if forloop.last == false %}
-        {% assign last_names = last_names | append: ";" %}
-        {% assign first_names = first_names | append: ";" %}
+    {% for raw_name in raw_authors %}
+      {% assign clean_name = raw_name | strip %}
+      {% if clean_name != "" %}
+        {% if clean_name == "et al." or clean_name == "others" %}
+          {% assign has_etal = true %}
+          {% if bib_authors_tokens != "" %}
+            {% assign bib_authors_tokens = bib_authors_tokens | append: " and others" %}
+          {% else %}
+            {% assign bib_authors_tokens = "others" %}
+          {% endif %}
+        {% else %}
+          {% if bib_authors_tokens != "" %}
+            {% assign bib_authors_tokens = bib_authors_tokens | append: " and " | append: clean_name %}
+          {% else %}
+            {% assign bib_authors_tokens = clean_name %}
+          {% endif %}
+          {% assign name_parts = clean_name | split: "," %}
+          {% assign last_part = name_parts[0] | strip %}
+          {% assign first_part = name_parts[1] | to_s | strip %}
+          {% if style == "mla" or style == "chicago" %}
+            {% if formatted_tokens == "" %}
+              {% if first_part != "" %}
+                {% assign token = last_part | append: ", " | append: first_part %}
+              {% else %}
+                {% assign token = last_part %}
+              {% endif %}
+            {% else %}
+              {% if first_part != "" %}
+                {% assign token = first_part | append: " " | append: last_part %}
+              {% else %}
+                {% assign token = last_part %}
+              {% endif %}
+            {% endif %}
+          {% else %}
+            {% if first_part != "" %}
+              {% assign first_initial = first_part | slice: 0, 1 %}
+              {% assign token = last_part | append: ", " | append: first_initial %}
+              {% if style == "apa" or style == "harvard" %}
+                {% assign token = token | append: "." %}
+              {% endif %}
+            {% else %}
+              {% assign token = last_part %}
+            {% endif %}
+          {% endif %}
+          {% if formatted_tokens != "" %}
+            {% assign formatted_tokens = formatted_tokens | append: "|" | append: token %}
+          {% else %}
+            {% assign formatted_tokens = token %}
+          {% endif %}
+        {% endif %}
       {% endif %}
     {% endfor %}
-    {% assign first_names = first_names | split: ";" %}
-    {% assign last_names = last_names | split: ";" %}
 
-    {% assign formatted_author_list = "" %}
-
-    {% if style == "mla" or style == "chicago" %}
-      {% for first_name in first_names %}
-        {% if forloop.first == true %} 
-          {% assign formatted_author_list = formatted_author_list | append: last_names[forloop.index0] | append: ", " | append: first_name | append: ";" %}
-        {% elsif forloop.first == true and forloop.last == true %}
-          {% assign formatted_author_list = formatted_author_list | append: last_names[forloop.index0] | append: ", " | append: first_name %}
-        {% elsif forloop.last == true %}
-          {% assign formatted_author_list = formatted_author_list | append: first_name | append: " " | append: last_names[forloop.index0] %}
-        {% else %}
-          {% assign formatted_author_list = formatted_author_list | append: first_name | append: " " | append: last_names[forloop.index0] | append: ";" %}
-        {% endif %}
-      {% endfor %}
-    {% elsif style == "apa" or style == "harvard" or style == "vancouver"%}
-      {% for first_name in first_names %}
-        {% assign first_initial = first_name | slice: 1 %}
-        {% assign formatted_author_list = formatted_author_list | append: last_names[forloop.index0] | append: ", " | append: first_initial %}
-        {% if style == "apa" or style == "harvard" %}
-          {% assign formatted_author_list = formatted_author_list | append: "." %}
-        {% endif %}
-        {% if forloop.last == false %}
-          {% assign formatted_author_list = formatted_author_list | append: ";" %}
-        {% endif %}
-      {% endfor %}
+    {% assign author_array = formatted_tokens | split: "|" %}
+    {% if has_etal %}
+      {% assign author_display = author_array | join: ", " | append: ", et al." %}
+    {% elsif style == "apa" %}
+      {% assign author_display = author_array | array_to_sentence_string: "&" %}
+    {% elsif style == "vancouver" %}
+      {% assign author_display = author_array | join: ", " %}
+    {% else %}
+      {% assign author_display = author_array | array_to_sentence_string %}
     {% endif %}
-    
-    {% if include_link==true %}
-      {% assign url = citation.Title | cgi_escape | prepend: "https://scholar.google.com/scholar?q=" %}
-      {% if citation.Publication contains "arXiv:" %}
-        {% assign arxiv_id = citation.Publication | split: "arXiv:" | last | strip | split: " " | first %}
-        {% assign url = arxiv_id | prepend: "https://arxiv.org/abs/" %}
-      {% elsif citation.Pages contains "arXiv:" %}
-        {% assign arxiv_id = citation.Pages | split: "arXiv:" | last | strip | split: " " | first %}
-        {% assign url = arxiv_id | prepend: "https://arxiv.org/abs/" %}
+
+    {% assign arxiv_id = "" %}
+    {% if pub_clean contains "arXiv:" %}
+      {% assign arxiv_id = pub_clean | split: "arXiv:" | last | strip | split: " " | first %}
+    {% elsif pages_clean contains "arXiv:" %}
+      {% assign arxiv_id = pages_clean | split: "arXiv:" | last | strip | split: " " | first %}
+    {% elsif direct_url contains "arxiv.org/abs/" %}
+      {% assign arxiv_id = direct_url | split: "arxiv.org/abs/" | last | strip | split: " " | first %}
+    {% endif %}
+    {% assign arxiv_url = "" %}
+    {% if arxiv_id != "" %}
+      {% assign arxiv_url = arxiv_id | prepend: "https://arxiv.org/abs/" %}
+    {% endif %}
+
+    {% if include_link == true %}
+      {% if doi_clean != "" %}
+        {% assign primary_url = doi_clean | prepend: "https://doi.org/" %}
+      {% elsif direct_url != "" %}
+        {% assign primary_url = direct_url %}
+      {% elsif arxiv_url != "" %}
+        {% assign primary_url = arxiv_url %}
+      {% else %}
+        {% assign primary_url = citation.Title | cgi_escape | prepend: "https://scholar.google.com/scholar?q=" %}
       {% endif %}
-      {% capture title_link %}<a href="{{ url }}" target="_blank">{{citation.Title}}</a>{% endcapture %}
+      {% capture title_link %}<a href="{{ primary_url }}" target="_blank" rel="noopener noreferrer">{{ citation.Title }}</a>{% endcapture %}
     {% else %}
       {% assign title_link = citation.Title %}
     {% endif %}
-    
-    {% if style == "mla" %}
-      <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string }}. "{{ title_link }}." <em>{{citation.Publication}}</em> ({{citation.Year}}).
-      </li>
-    {% elsif style == "apa" %}  
-      <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string: "&"}} ({{citation.Year}}). {{ title_link }}. <em>{{citation.Publication}}</em>.
-      </li>
-    {% elsif style == "chicago" %}
-      <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string }}. "{{ title_link }}." <em>{{citation.Publication}}</em> ({{citation.Year}}).
-      </li>
-    {% elsif style == "harvard" %}
-      <li>
-        {{ formatted_author_list | split: ";" | array_to_sentence_string }}, {{citation.Year}}. {{ title_link }}. <em>{{citation.Publication}}</em>.
-      </li>
-    {% elsif style == "vancouver" %}
-      <li>
-        {{ formatted_author_list | split: ";" | join: ", " }}. {{ title_link }}. {{citation.Publication}}. {{citation.Year}}.
-      </li>
+
+    {% capture venue_segment %}{% if pub_clean != "" %} <em>{{ pub_clean }}</em>{% if vol_clean != "" %}, {{ vol_clean }}{% if num_clean != "" %}({{ num_clean }}){% endif %}{% endif %}{% if pages_clean != "" %}, {{ pages_clean }}{% endif %}.{% elsif publisher_clean != "" %} {{ publisher_clean }}.{% endif %}{% endcapture %}
+
+    {% assign first_author_slug = author_array[0] | to_s | split: "," | first | slugify: "latin" | replace: "-", "" %}
+    {% assign title_words = citation.Title | to_s | slugify: "latin" | split: "-" %}
+    {% assign first_title_word = "" %}
+    {% for tw in title_words %}
+      {% assign tw_probe = "|" | append: tw | append: "|" %}
+      {% if tw != "" and first_title_word == "" %}
+        {% unless bib_stopwords contains tw_probe %}
+          {% assign first_title_word = tw %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if first_title_word == "" %}
+      {% assign first_title_word = title_words[0] | default: "pub" %}
     {% endif %}
-    
+    {% assign base_bib_key = first_author_slug | append: year_clean | append: first_title_word %}
+    {% assign bib_key = base_bib_key %}
+    {% assign key_probe = "|" | append: bib_key | append: "|" %}
+    {% if seen_bib_keys contains key_probe %}
+      {% for sfx in bib_suffixes %}
+        {% assign candidate_key = base_bib_key | append: sfx %}
+        {% assign cand_probe = "|" | append: candidate_key | append: "|" %}
+        {% unless seen_bib_keys contains cand_probe %}
+          {% assign bib_key = candidate_key %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+    {% assign seen_bib_keys = seen_bib_keys | append: bib_key | append: "|" %}
+
+    {% assign bib_role_field = "author" %}
+    {% assign bib_venue_val = pub_clean %}
+    {% assign bib_extra_type = "" %}
+    {% assign bib_emit_publisher = true %}
+    {% if type_clean == "Journal Article" %}
+      {% assign bib_entry_type = "article" %}
+      {% assign bib_venue_field = "journal" %}
+      {% assign bib_emit_publisher = false %}
+    {% elsif type_clean == "Conference Proceedings" %}
+      {% assign bib_entry_type = "inproceedings" %}
+      {% assign bib_venue_field = "booktitle" %}
+    {% elsif type_clean == "Book / Chapter" %}
+      {% if citation.Title contains "Proceedings" %}
+        {% assign bib_entry_type = "proceedings" %}
+        {% assign bib_role_field = "editor" %}
+        {% assign bib_venue_field = "series" %}
+      {% else %}
+        {% assign bib_entry_type = "incollection" %}
+        {% assign bib_venue_field = "booktitle" %}
+      {% endif %}
+    {% elsif type_clean == "Thesis" %}
+      {% assign bib_venue_field = "school" %}
+      {% if publisher_clean != "" %}
+        {% assign bib_venue_val = publisher_clean %}
+      {% endif %}
+      {% assign bib_emit_publisher = false %}
+      {% if pub_clean contains "M.Sc." or pub_clean contains "M.S." or pub_clean contains "Master" %}
+        {% assign bib_entry_type = "mastersthesis" %}
+      {% elsif pub_clean contains "B.Sc." or pub_clean contains "B.S." or pub_clean contains "Bachelor" %}
+        {% assign bib_entry_type = "mastersthesis" %}
+        {% assign bib_extra_type = "B.Sc. Thesis" %}
+      {% else %}
+        {% assign bib_entry_type = "phdthesis" %}
+      {% endif %}
+    {% else %}
+      {% assign bib_entry_type = "misc" %}
+      {% assign bib_venue_field = "howpublished" %}
+      {% if publisher_clean == pub_clean %}
+        {% assign bib_emit_publisher = false %}
+      {% endif %}
+    {% endif %}
+
+    {% assign bib_authors_tex = bib_authors_tokens | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_title_tex = citation.Title | to_s | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_venue_tex = bib_venue_val | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_publisher_tex = publisher_clean | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+    {% assign bib_pages_tex = pages_clean | replace: "–", "--" | append: "@@BIBEND@@" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" | remove: "@@BIBEND@@" %}
+
+    {% assign lb = "{" %}
+    {% assign rb = "}" %}
+    {% capture bibtex_block %}@{{ bib_entry_type }}{{ lb }}{{ bib_key }},
+  {{ bib_role_field }} = {{ lb }}{{ bib_authors_tex }}{{ rb }},
+  title = {{ lb }}{{ bib_title_tex }}{{ rb }}{% if bib_venue_tex != "" %},
+  {{ bib_venue_field }} = {{ lb }}{{ bib_venue_tex }}{{ rb }}{% endif %}{% if bib_extra_type != "" %},
+  type = {{ lb }}{{ bib_extra_type }}{{ rb }}{% endif %}{% if bib_emit_publisher and bib_publisher_tex != "" %},
+  publisher = {{ lb }}{{ bib_publisher_tex }}{{ rb }}{% endif %}{% if vol_clean != "" %},
+  volume = {{ lb }}{{ vol_clean }}{{ rb }}{% endif %}{% if num_clean != "" %},
+  number = {{ lb }}{{ num_clean }}{{ rb }}{% endif %}{% if bib_pages_tex != "" %},
+  pages = {{ lb }}{{ bib_pages_tex }}{{ rb }}{% endif %}{% if year_clean != "" %},
+  year = {{ lb }}{{ year_clean }}{{ rb }}{% endif %}{% if doi_clean != "" %},
+  doi = {{ lb }}{{ doi_clean }}{{ rb }}{% elsif direct_url != "" %},
+  url = {{ lb }}{{ direct_url }}{{ rb }}{% endif %}
+{{ rb }}{% endcapture %}
+
+    <li class="pub-item" data-type="{{ type_clean | escape }}" data-year="{{ year_clean | escape }}">
+      {% if style == "mla" or style == "chicago" %}
+        {{ author_display }}. "{{ title_link }}."{{ venue_segment }}{% if year_clean != "" %} ({{ year_clean }}).{% endif %}
+      {% elsif style == "harvard" %}
+        {{ author_display }}{% if year_clean != "" %}, {{ year_clean }}{% endif %}. {{ title_link }}.{{ venue_segment }}
+      {% elsif style == "vancouver" %}
+        {{ author_display }}. {{ title_link }}.{{ venue_segment }}{% if year_clean != "" %} {{ year_clean }}.{% endif %}
+      {% else %}
+        {{ author_display }}{% if year_clean != "" %} ({{ year_clean }}){% endif %}. {{ title_link }}.{{ venue_segment }}
+      {% endif %}
+      {% if group_by_year %}
+      <span class="pub-meta-actions">
+        <span class="pub-type-badge">{{ type_clean }}</span>
+        {% if doi_clean != "" %}<a href="https://doi.org/{{ doi_clean }}" class="pub-badge" target="_blank" rel="noopener noreferrer">DOI</a>{% endif %}
+        {% if arxiv_url != "" %}<a href="{{ arxiv_url }}" class="pub-badge" target="_blank" rel="noopener noreferrer">arXiv</a>{% endif %}
+        {% if code_url != "" %}<a href="{{ code_url }}" class="pub-badge" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
+        {% if type_clean != "Presentation" %}
+        <details class="pub-bibtex">
+          <summary class="pub-badge">BibTeX</summary>
+          <pre><code>{{ bibtex_block | escape }}</code></pre>
+        </details>
+        {% endif %}
+      </span>
+      {% endif %}
+    </li>
+
     {% if include.limit %}
       {% assign counter = counter | plus: 1 %}
       {% if counter == include.limit %}
         {% break %}
       {% endif %}
-    {% endif %} 
-    
+    {% endif %}
   {% endif %}
 {% endfor %}
+{% if group_by_year %}
+  {% if current_year_heading != "__UNSET__" %}
+        </ol>
+      </section>
+  {% endif %}
+{% else %}
 </ol>
+{% endif %}

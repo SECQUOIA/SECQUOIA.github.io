@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Ensure every raster source image under assets/images has a sibling .webp file.
-# assets/js/image-loader.js swaps any referenced <img> to a <picture> whose
-# <source type="image/webp"> points at the sibling .webp; if that file is
-# missing the browser commits to the broken source and the image disappears.
+# Site layouts, markdown pages, and article figures reference .webp assets
+# directly while social-preview and full-resolution originals remain paired
+# alongside them in Git.
 # This guard fails CI when a new .png/.jpg/.jpeg/.gif is added without a .webp
 # twin, matching the non-WebP raster formats in scripts/check_referenced_images.sh.
 # Usage: scripts/check_webp_equivalents.sh [IMAGE_DIR]   (default: assets/images)

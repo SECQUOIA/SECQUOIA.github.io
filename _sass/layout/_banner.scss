@@ -8,10 +8,11 @@
 
 	#banner {
 		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
+		background-color: #191a1b;
+		background-image: none;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -21,8 +22,28 @@
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
+		overflow: hidden;
 		position: relative;
 		top: -3.25em;
+
+		> .image {
+			border: 0;
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 0;
+
+			img {
+				display: block;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				width: 100%;
+			}
+		}
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
@@ -95,12 +116,13 @@
 		}
 
 		&.major {
+			background-image: url('../images/banner.webp');
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
 
 			&.alt {
-				  opacity: 0.75;
+				opacity: 0.75;
 			}
 		}
 
@@ -110,18 +132,8 @@
 		&.style4 { &:after { background-color: _palette(accent4); } }
 		&.style5 { &:after { background-color: _palette(accent5); } }
 		&.style6 { &:after { background-color: _palette(accent6); } }
-
-		body.is-loading & {
-			&:after {
-				opacity: 1.0;
-			}
-
-			> .inner {
-				@include vendor('filter', 'blur(0.125em)');
-				@include vendor('transform', 'translateX(-0.5em)');
-				opacity: 0;
-			}
-		}
+		&.style7 { &:after { background-color: _palette(accent7); } }
+		&.style8 { &:after { background-color: _palette(accent8); } }
 
 		@include breakpoint(large) {
 			background-attachment: scroll;

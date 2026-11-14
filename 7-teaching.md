@@ -18,17 +18,14 @@ banner_color: style6
   <p>
    Teaching is one of the most effective ways research groups can shape society. It provides the foundation for training the next generation of engineers and scientists to address the pressing challenges of the 21<sup>st</sup> century, including climate change, sustainable energy, food security, and improved healthcare. Motivated by a strong commitment to mentorship and education, our group actively shares knowledge through courses, symposia, conferences, and outreach.
   </p>
-  <ul class="actions">
-   <li><a href="files/teaching.html" class="button icon fa-file">Teaching Statement</a></li>
-  </ul>
  </div>
 </section>
 
 <!-- Two -->
 <section id="topics" class="spotlights">
  <section id="philosophy">
-  <a href="teaching/philosophy.html" class="image">
-   <img src="{% link assets/images/notebook.webp %}" alt="" data-position="bottom center" />
+  <a href="teaching/philosophy.html" class="image" aria-label="Read Teaching Philosophy">
+   <img src="{% link assets/images/notebook.webp %}" alt="" width="1920" height="1442" loading="lazy" decoding="async" data-position="bottom center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -46,8 +43,8 @@ banner_color: style6
  </section>
 
  <section id="courses">
-  <a href="teaching/courses.html" class="image">
-   <img src="{% link assets/images/books2.webp %}" alt="" data-position="center center" />
+  <a href="teaching/courses.html" class="image" aria-label="Explore Courses">
+   <img src="{% link assets/images/books2.webp %}" alt="" width="1920" height="1272" loading="lazy" decoding="async" data-position="center center" />
   </a>
   <div class="content">
    <div class="inner">
@@ -83,7 +80,7 @@ banner_color: style6
     {% if talk.page %}<a href="{{ site.baseurl }}{{ talk.page }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}.
     {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %},
     {% if talk.location %}{{ talk.location }}, {% endif %}{{ talk.date | date: "%-d %B %Y" }}.
-    {% if talk.slides %}<a href="{{ site.baseurl }}{{ talk.slides }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>{% endif %}
+    {% if talk.slides %}<a href="{{ site.baseurl }}{{ talk.slides }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>{% endif %}{% if talk.note %} <em>({{ talk.note }})</em>{% endif %}
    </li>
    {% endfor %}
   </ul>

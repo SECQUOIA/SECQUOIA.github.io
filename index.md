@@ -8,35 +8,29 @@ author: null
 show_tile: false
 ---
 
-<section id="welcome" aria-labelledby="welcome-heading">
-  <h1 id="welcome-heading">Welcome to the SECQUOIA Research Group</h1>
-  <p>
-    Welcome to the <strong>SECQUOIA</strong> (<strong>S</strong>ystems <strong>E</strong>ngineering via <strong>C</strong>lassical and <strong>Qu</strong>antum <strong>O</strong>ptimization for <strong>I</strong>ndustrial <strong>A</strong>pplications) research group at Purdue University.
-  </p>
-</section>
+<!-- markdownlint-disable MD033 -->
 
-<section id="mission-teaser" aria-labelledby="mission-teaser-heading">
-  <h2 id="mission-teaser-heading">Mission &amp; Vision</h2>
+<section id="welcome" aria-labelledby="welcome-heading">
+  <h3 id="welcome-heading">Systems Engineering, Optimization, and Emerging Computing</h3>
   <p>
-    SECQUOIA builds optimization and decision-making tools—from classical to quantum and AI-driven—that turn complex engineering data into reliable, real-world impact. <a href="/mission/">Read our full mission and vision</a>.
+    <strong>SECQUOIA</strong> (<strong>S</strong>ystems <strong>E</strong>ngineering via <strong>C</strong>lassical and <strong>Qu</strong>antum <strong>O</strong>ptimization for <strong>I</strong>ndustrial <strong>A</strong>pplications), led by <a href="/1-bernalde.html">Prof. David E. Bernal Neira</a> at Purdue University, develops rigorous algorithms and open-source software for discrete-continuous optimization, process systems engineering, quantum computing, and scientific AI.
   </p>
 </section>
 
 <section id="research" aria-labelledby="research-heading">
-  <h2 id="research-heading">Our Research Focus</h2>
+  <h3 id="research-heading">Research &amp; Impact</h3>
   <p>
-    We study optimization problems arising in science and engineering, with a focus on algorithm design, analysis, and implementation. Our work spans classical, hybrid, and emerging computational paradigms, including <strong>quantum computing</strong>, <strong>artificial intelligence</strong>, <strong>GPUs</strong>, and traditional <strong>high-performance computing</strong>.
+    We unify mathematical programming theory, computational benchmarking, and software engineering across classical high-performance computing, GPUs, artificial intelligence, and quantum hardware—tackling problems in <strong>chemical process design</strong>, <strong>energy and infrastructure networks</strong>, <strong>molecular modeling</strong>, and <strong>decision-making under uncertainty</strong>. Read more in our <a href="/mission/">Mission &amp; Vision</a>.
   </p>
 </section>
 
-<section id="applications" aria-labelledby="applications-heading">
-  <h2 id="applications-heading">Applications</h2>
-  <p>
-    Our methods are applied to challenging problems in <strong>chemical</strong>, <strong>process</strong>, and <strong>energy systems engineering</strong>, with broader relevance to industrial and scientific applications.
-  </p>
-</section>
+<ul class="actions">
+  <li><a href="/5-research.html" class="button special">Explore Research</a></li>
+  <li><a href="/4-publications.html" class="button">Publications</a></li>
+  <li><a href="/join/" class="button">Join Us</a></li>
+</ul>
 
 <p>
-  This site is a mirror of our official Purdue webpage:
-  <a href="https://engineering.purdue.edu/SECQUOIA" aria-label="Visit the official Purdue SECQUOIA webpage" target="_blank" rel="noopener noreferrer">engineering.purdue.edu/SECQUOIA</a>.
+  See also our Purdue Davidson School of Chemical Engineering directory page:
+  <a href="https://engineering.purdue.edu/SECQUOIA" target="_blank" rel="noopener noreferrer">engineering.purdue.edu/SECQUOIA</a>.
 </p>

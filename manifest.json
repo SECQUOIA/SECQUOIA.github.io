@@ -4,9 +4,15 @@
   "description": "Systems Engineering via Classical and Quantum Optimization for Industrial Applications",
   "start_url": "/",
   "display": "minimal-ui",
-  "background_color": "#ffffff",
-  "theme_color": "#9bf1ff",
+  "background_color": "#faf9f6",
+  "theme_color": "#202122",
   "icons": [
+    {
+      "src": "/assets/images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
     {
       "src": "/assets/images/favicon.ico",
       "sizes": "16x16",

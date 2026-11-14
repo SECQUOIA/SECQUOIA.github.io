@@ -5,7 +5,7 @@ description: 'Spring dinner to welcome the new members of SECQUOIA!'
 image: assets/images/posts/2024_summer_group_dinner.webp
 ---
 
-The first SEQUOIA dinner of the year has taken place! The SEQUOIA members have reunited to celebrate the arrival of two new members of the group and the end of one visiting program. We were celebrating the arrival of a new Postdoc, Dr. [Carolina Tristán](https://SECQUOIA.github.io/2-members.html) and a visiting scholar, [Juan Rodríguez](https://SECQUOIA.github.io/2-members.html). They will be working in the upcoming months with our group. Furthermore, our visiting scholar Andrés Cabeza has finished his first period with us. He will be joining us again in April to continue his job.
+The first SECQUOIA dinner of the year has taken place! The SECQUOIA members have reunited to celebrate the arrival of two new members of the group and the end of one visiting program. We were celebrating the arrival of a new Postdoc, Dr. [Carolina Tristán](/2-members.html) and a visiting scholar, [Juan Rodríguez](/2-members.html). They will be working in the upcoming months with our group. Furthermore, our visiting scholar Andrés Cabeza has finished his first period with us. He will be joining us again in April to continue his job.
 
 With this meeting we start a new stage of our workgroup research labor. Best of wishes to all our members!
 
