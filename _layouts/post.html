@@ -10,26 +10,33 @@
 
 <body>
 
-    {% include header.html %} 
+	{% include header.html %}
 
-<!-- Main -->
-<div id="main" class="alt">
+	<!-- Main -->
+	<main id="main" class="alt">
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		{% include article-languages.html %}
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-		{{ content }}
-		
-	</div>
-</section>
+		<!-- One -->
+		<section id="one">
+			<div class="inner">
+				{% include article-languages.html %}
+				<header class="major">
+					<h1>{{ page.title }}</h1>
+				</header>
+				{% if page.date and page.translation_key == nil %}
+				<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+				{% endif %}
+				{{ content }}
+				{% unless content contains '/3-news.html' or page.url == '/404.html' %}
+				<ul class="actions">
+					<li><a href="{{ '/3-news.html' | relative_url }}" class="button icon fa-arrow-left">{% case page.lang %}{% when 'es' %}Volver a Noticias{% when 'ko' %}소식 목록으로{% when 'ru' %}Назад к новостям{% else %}Back to News{% endcase %}</a></li>
+				</ul>
+				{% endunless %}
+			</div>
+		</section>
 
-</div>
+	</main>
 
-    {% include footer.html %}
+	{% include footer.html %}
 
 </body>
 

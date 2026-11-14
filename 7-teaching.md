@@ -18,9 +18,6 @@ banner_color: style6
   <p>
    Teaching is one of the most effective ways research groups can shape society. It provides the foundation for training the next generation of engineers and scientists to address the pressing challenges of the 21<sup>st</sup> century, including climate change, sustainable energy, food security, and improved healthcare. Motivated by a strong commitment to mentorship and education, our group actively shares knowledge through courses, symposia, conferences, and outreach.
   </p>
-  <ul class="actions">
-   <li><a href="files/teaching.html" class="button icon fa-file">Teaching Statement</a></li>
-  </ul>
  </div>
 </section>
 
@@ -83,7 +80,7 @@ banner_color: style6
     {% if talk.page %}<a href="{{ site.baseurl }}{{ talk.page }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}.
     {% if talk.event_url %}<a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %},
     {% if talk.location %}{{ talk.location }}, {% endif %}{{ talk.date | date: "%-d %B %Y" }}.
-    {% if talk.slides %}<a href="{{ site.baseurl }}{{ talk.slides }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>{% endif %}
+    {% if talk.slides %}<a href="{{ site.baseurl }}{{ talk.slides }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>{% endif %}{% if talk.note %} <em>({{ talk.note }})</em>{% endif %}
    </li>
    {% endfor %}
   </ul>

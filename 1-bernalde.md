@@ -117,7 +117,7 @@ banner_color: style1
   <p>See the <a href="7-teaching.html">teaching page</a> for more on teaching experience and philosophy. Courses taught by Prof. Bernal include:</p>
 
   <ul>
-    <li>Process Dynamics and Control — Purdue CHE 456 (Fall 2023, Fall 2024, Fall 2025)</li>
+    <li>Process Dynamics and Control — Purdue CHE 456 (Fall 2023, Fall 2024, Fall 2025, Fall 2026)</li>
     <li>Data Science in Chemical Engineering — Purdue CHE 597 (Spring 2025, Spring 2026)</li>
     <li>Quantum Integer Programming and Quantum Machine Learning — CMU 47-779 / 47-785, 18-819F<br>
       <a href="https://bernalde.github.io/QuIPML/" target="_blank" rel="noopener noreferrer">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/" target="_blank" rel="noopener noreferrer">Fall 2022</a>, Fall 2023</li>
