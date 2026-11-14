@@ -20,15 +20,12 @@
             </header>
             <div class="content">
                 <p style="text-transform: uppercase;">{{ site.description }}</p>
-                <!-- <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
-                </ul> -->
             </div>
         </div>
     </section>
 
     <!-- Main -->
-    <div id="main">
+    <main id="main" tabindex="-1">
 
         <!-- One -->
         <section id="one">
@@ -37,16 +34,13 @@
                     <h2>Who are we?</h2>
                 </header>
                 {{ content }}
-                <!-- <ul class="actions">
-                    <li><a href="#launch" class="button next">Learn More</a></li>
-                </ul> -->
             </div>
         </section>
 
         <!-- Two -->
         {% include tiles.html %}
 
-    </div>
+    </main>
 
     {% include footer.html %}
 

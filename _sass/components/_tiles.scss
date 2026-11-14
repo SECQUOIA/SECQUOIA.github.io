@@ -41,6 +41,11 @@
 			}
 
 			header {
+				position: static;
+				z-index: 3;
+			}
+
+			h3, p {
 				position: relative;
 				z-index: 3;
 			}
@@ -49,6 +54,18 @@
 				font-size: 1.75em;
 
 				a {
+					position: static;
+
+					&:after {
+						content: '';
+						height: 100%;
+						left: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
+						z-index: 4;
+					}
+
 					&:hover {
 						color: inherit !important;
 					}

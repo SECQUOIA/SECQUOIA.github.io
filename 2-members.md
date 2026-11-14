@@ -134,18 +134,22 @@ banner_color: style2
 }
 </style>
 
-<div class="toc">
-  <h2>Jump to Section</h2>
-  <ul>
-    <li><a href="#pi">Principal Investigator</a></li>
-    <li><a href="#postdocs">Postdoctoral Associates</a></li>
-    <li><a href="#phds">Doctoral Students</a></li>
-    <li><a href="#masters">Master's Students</a></li>
-    <li><a href="#undergraduate">Undergraduates</a></li>
-    <li><a href="#alumni">Alumni</a></li>
-  </ul>
-  <p>Interested in joining or collaborating with SECQUOIA? See <a href="/join/">Join Us</a>.</p>
-</div>
+<section id="member-nav">
+ <div class="inner">
+  <nav class="toc" aria-label="Member categories">
+    <h2>Jump to Section</h2>
+    <ul>
+      <li><a href="#pi">Principal Investigator</a></li>
+      <li><a href="#postdocs">Postdoctoral Associates</a></li>
+      <li><a href="#phds">Doctoral Students</a></li>
+      <li><a href="#masters">Master's Students</a></li>
+      <li><a href="#undergraduate">Undergraduates</a></li>
+      <li><a href="#alumni">Alumni</a></li>
+    </ul>
+    <p>Interested in joining or collaborating with SECQUOIA? See <a href="/join/">Join Us</a>.</p>
+  </nav>
+ </div>
+</section>
 
 <!-- Principal Investigator -->
 <section id="pi">
@@ -253,9 +257,9 @@ banner_color: style2
 <!-- Albert Lee -->
 <section id="albert-lee" class="spotlights">
  <section>
-  <a href="#albert-lee" class="image" aria-label="Albert Lee's section">
+  <span class="image">
    <img src="assets/images/members/AlbertJoonLee.webp" alt="Albert Lee" width="600" height="600" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -279,9 +283,9 @@ banner_color: style2
 <!-- Anurag Ramesh -->
 <section id="anurag-ramesh" class="spotlights">
  <section>
-  <a href="#anurag-ramesh" class="image" aria-label="Anurag Ramesh's section">
+  <span class="image">
    <img src="assets/images/members/AnuragRamesh.webp" alt="Anurag Ramesh" width="600" height="600" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -305,9 +309,9 @@ banner_color: style2
 <!-- Yirang Park -->
 <section id="yirang-park" class="spotlights">
  <section>
-  <a href="#yirang-park" class="image" aria-label="Yirang Park's section">
+  <span class="image">
    <img src="assets/images/members/Yirang-Park.webp" alt="Yirang Park" width="600" height="600" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -332,9 +336,9 @@ banner_color: style2
 <!-- Sergey Gusev -->
 <section id="sergey-gusev" class="spotlights">
  <section>
-  <a href="#sergey-gusev" class="image" aria-label="Sergey Gusev's section">
+  <span class="image">
    <img src="assets/images/members/SergeyGusev.webp" alt="Sergey Gusev" width="600" height="900" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -359,9 +363,9 @@ banner_color: style2
 <!-- Andres F. Cabeza -->
 <section id="andres-cabeza" class="spotlights">
  <section>
-  <a href="#andres-cabeza" class="image" aria-label="Andres F. Cabeza's section">
+  <span class="image">
    <img src="assets/images/members/AndresCabeza.webp" alt="Andres F. Cabeza" width="600" height="800" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -386,9 +390,9 @@ banner_color: style2
 <!-- Anja Hribljan -->
 <section id="anja-hribljan" class="spotlights">
  <section>
-  <a href="#anja-hribljan" class="image" aria-label="Anja Hribljan's section">
+  <span class="image">
    <img src="assets/images/members/AnjaHribljan.webp" alt="Anja Hribljan" width="1814" height="2593" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -414,9 +418,9 @@ banner_color: style2
 <!-- Mohamed Mazhar Laljee -->
 <section id="mohamed-mazhar-laljee" class="spotlights">
  <section>
-  <a href="#mohamed-mazhar-laljee" class="image" aria-label="Mohamed Mazhar Laljee's section">
+  <span class="image">
    <img src="assets/images/members/MohamedMazharLaljee.webp" alt="Mohamed Mazhar Laljee" width="2952" height="3344" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -451,9 +455,9 @@ banner_color: style2
 
 <section id="da-yuan-lin" class="spotlights">
  <section>
-  <a href="#da-yuan-lin" class="image" aria-label="Da-Yuan Lin's section">
+  <span class="image">
    <img src="assets/images/members/DaYuanLin.webp" alt="Da-Yuan Lin" width="748" height="800" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -476,9 +480,9 @@ banner_color: style2
 <!-- Woosik Kim -->
 <section id="woosik-kim" class="spotlights">
  <section>
-  <a href="#woosik-kim" class="image" aria-label="Woosik Kim's section">
+  <span class="image">
    <img src="assets/images/members/WoosikKim.webp" alt="Woosik Kim" width="600" height="986" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -509,9 +513,9 @@ banner_color: style2
 
 <section id="rohan-patel" class="spotlights">
  <section>
-  <a href="#rohan-patel" class="image" aria-label="Rohan Patel's section">
+  <span class="image">
     <img src="assets/images/members/RohanPatel.webp" alt="Rohan Patel" width="1563" height="1998" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -534,9 +538,9 @@ banner_color: style2
 <!-- Rogerio Ritto Pais -->
 <section id="rogerio-ritto-pais" class="spotlights">
   <section>
-    <a href="#rogerio-ritto-pais" class="image" aria-label="Rogerio Ritto Pais's section">
+    <span class="image">
       <img src="assets/images/members/RogerioRittoPais.webp" alt="Rogerio Ritto Pais" width="800" height="800" loading="lazy" decoding="async" data-position="center center" />
-    </a>
+    </span>
     <div class="content">
       <div class="inner">
         <header class="major">
@@ -560,9 +564,9 @@ banner_color: style2
 <!-- Luana Vieira de Alcantara Garcia -->
 <section id="luana-garcia" class="spotlights">
   <section>
-    <a href="#luana-garcia" class="image" aria-label="Luana Vieira de Alcantara Garcia's section">
+    <span class="image">
       <img src="assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="1214" height="1280" loading="lazy" decoding="async" data-position="center center" />
-    </a>
+    </span>
     <div class="content">
       <div class="inner">
         <header class="major">

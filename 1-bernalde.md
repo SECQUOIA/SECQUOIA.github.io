@@ -9,11 +9,10 @@ banner_color: style1
 
 <!-- markdownlint-disable MD033 -->
 
-<div id="main" class="alt">
 <section id="one">
 <div class="inner">
   <header class="major">
-    <h1>David E. Bernal Neira</h1>
+    <h2>David E. Bernal Neira</h2>
   </header>
 
 <style>
@@ -162,4 +161,3 @@ banner_color: style1
 </div>
 </div>
 </section>
-</div>

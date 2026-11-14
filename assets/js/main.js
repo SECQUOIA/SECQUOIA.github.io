@@ -19,7 +19,7 @@
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
-	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.browser == 'edge' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
+	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.browser == 'edge' || skel.vars.mobile || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) ? function() { return $(this) } : function(intensity) {
 
 		var	$window = $(window),
 			$this = $(this);
@@ -156,17 +156,8 @@
 					// Hide original.
 						$image.hide();
 
-				// Link.
+				// Link (stretched via CSS ::after; single tab stop).
 					if ($link.length > 0) {
-
-						$x = $link.clone()
-							.text('')
-							.addClass('primary')
-							.appendTo($this);
-						
-						$x.attr('aria-label', $link.text());
-
-						$link = $link.add($x);
 
 						$link.on('click', function(event) {
 
@@ -194,6 +185,15 @@
 
 					}
 
+			});
+
+		// Remove redundant tab stops on any remaining self-referential spotlight image anchors.
+			$('.spotlights a.image[href^="#"]').each(function() {
+				var $a = $(this),
+					targetId = $a.attr('href').slice(1);
+				if (targetId && $a.closest('section#' + targetId).length > 0) {
+					$a.attr({ 'tabindex': '-1', 'aria-hidden': 'true' });
+				}
 			});
 
 		// Header.
@@ -248,7 +248,9 @@
 
 		// Menu.
 			var $menu = $('#menu'),
-				$menuInner;
+				$menuToggle = $('#header .menu-toggle, #header a[href="#menu"]'),
+				$menuInner,
+				$closeBtn;
 
 			$menu.wrapInner('<div class="inner"></div>');
 			$menuInner = $menu.children('.inner');
@@ -269,24 +271,53 @@
 
 			};
 
+			$menu._setOpenState = function(isOpen, restoreFocus) {
+				$menuToggle.attr('aria-expanded', isOpen ? 'true' : 'false');
+				if ($wrapper.length > 0) {
+					$wrapper[0].inert = !!isOpen;
+					if (isOpen)
+						$wrapper.attr('aria-hidden', 'true');
+					else
+						$wrapper.removeAttr('aria-hidden');
+				}
+				if (isOpen) {
+					window.setTimeout(function() {
+						var $firstLink = $menu.find('a, button').first();
+						if ($firstLink.length > 0)
+							$firstLink[0].focus();
+					}, 50);
+				} else if (restoreFocus && $menuToggle.length > 0) {
+					$menuToggle[0].focus();
+				}
+			};
+
 			$menu._show = function() {
 
-				if ($menu._lock())
+				if ($menu._lock()) {
 					$body.addClass('is-menu-visible');
+					$menu._setOpenState(true, false);
+				}
 
 			};
 
-			$menu._hide = function() {
+			$menu._hide = function(restoreFocus) {
 
-				if ($menu._lock())
+				if (!$body.hasClass('is-menu-visible'))
+					return;
+
+				if ($menu._lock()) {
 					$body.removeClass('is-menu-visible');
+					$menu._setOpenState(false, !!restoreFocus);
+				}
 
 			};
 
 			$menu._toggle = function() {
 
-				if ($menu._lock())
-					$body.toggleClass('is-menu-visible');
+				if ($body.hasClass('is-menu-visible'))
+					$menu._hide(true);
+				else
+					$menu._show();
 
 			};
 
@@ -302,7 +333,7 @@
 					event.stopPropagation();
 
 					// Hide.
-						$menu._hide();
+						$menu._hide(false);
 
 					// Redirect.
 						window.setTimeout(function() {
@@ -311,6 +342,13 @@
 
 				});
 
+			$closeBtn = $('<button type="button" class="close" aria-label="Close menu">Close</button>');
+			$closeBtn.on('click', function(event) {
+				event.stopPropagation();
+				event.preventDefault();
+				$menu._hide(true);
+			});
+
 			$menu
 				.appendTo($body)
 				.on('click', function(event) {
@@ -318,13 +356,13 @@
 					event.stopPropagation();
 					event.preventDefault();
 
-					$body.removeClass('is-menu-visible');
+					$menu._hide(true);
 
 				})
-				.append('<a class="close" href="#menu">Close</a>');
+				.append($closeBtn);
 
 			$body
-				.on('click', 'a[href="#menu"]', function(event) {
+				.on('click', 'a[href="#menu"], button.menu-toggle', function(event) {
 
 					event.stopPropagation();
 					event.preventDefault();
@@ -336,14 +374,14 @@
 				.on('click', function(event) {
 
 					// Hide.
-						$menu._hide();
+						$menu._hide(false);
 
 				})
 				.on('keydown', function(event) {
 
 					// Hide on escape.
-						if (event.keyCode == 27)
-							$menu._hide();
+						if (event.keyCode == 27 && $body.hasClass('is-menu-visible'))
+							$menu._hide(true);
 
 				});
 

@@ -101,21 +101,29 @@
 				}
 			}
 
-			a {
+			a, button.menu-toggle {
+				background: transparent;
 				border: 0;
+				box-shadow: none;
+				color: inherit;
+				cursor: pointer;
 				display: block;
+				font-family: inherit;
 				font-size: 0.8em;
+				font-weight: _font(weight-bold);
 				height: inherit;
+				letter-spacing: _font(letter-spacing-alt);
 				line-height: inherit;
 				padding: 0 0.75em;
 				position: relative;
+				text-transform: uppercase;
 				vertical-align: middle;
 
 				&:last-child {
 					padding-right: 1.5em;
 				}
 
-				&[href="#menu"] {
+				&[href="#menu"], &.menu-toggle {
 					padding-right: 3.325em !important;
 
 					&:before, &:after {
@@ -197,8 +205,8 @@
 
 		@include breakpoint(xlarge) {
 			nav {
-				a {
-					&[href="#menu"] {
+				a, button.menu-toggle {
+					&[href="#menu"], &.menu-toggle {
 						padding-right: 3.75em !important;
 
 						&:last-child {
@@ -211,8 +219,8 @@
 
 		@include breakpoint(large) {
 			nav {
-				a {
-					&[href="#menu"] {
+				a, button.menu-toggle {
+					&[href="#menu"], &.menu-toggle {
 						padding-right: 4em !important;
 
 						&:last-child {
@@ -232,14 +240,14 @@
 			}
 
 			nav {
-				a {
+				a, button.menu-toggle {
 					padding: 0 0.5em;
 
 					&:last-child {
 						padding-right: 1em;
 					}
 
-					&[href="#menu"] {
+					&[href="#menu"], &.menu-toggle {
 						padding-right: 3.25em !important;
 
 						&:before, &:after {
@@ -266,8 +274,8 @@
 			}
 
 			nav {
-				a {
-					&[href="#menu"] {
+				a, button.menu-toggle {
+					&[href="#menu"], &.menu-toggle {
 						overflow: hidden;
 						padding-right: 0 !important;
 						text-indent: 5em;
