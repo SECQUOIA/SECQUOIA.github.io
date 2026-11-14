@@ -1,31 +1,45 @@
+<a class="skip-link" href="#main">Skip to main content</a>
 <!-- Wrapper -->
 <div id="wrapper">
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
+	<a href="{{ '/' | relative_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<nav aria-label="Primary">
+		{% if site.data.navigation.header %}
+		<ul class="desktop-nav">
+			{% for item in site.data.navigation.header %}
+			<li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
 		<button id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden>
 			<svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/></svg>
 			<svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
 			<span>Dark mode</span>
 		</button>
-		<a href="#menu">Menu</a>
+		<button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
 	</nav>
 </header>
 
 <!-- Menu -->
-<nav id="menu">
+<nav id="menu" aria-label="Site menu">
 	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
+		{% if site.data.navigation.menu %}
+			{% for item in site.data.navigation.menu %}
+			<li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+			{% endfor %}
+		{% else %}
+			{% for page in site.pages %}
+				{% if page.layout == "home" %}
+					<li><a href="{{ '/' | relative_url }}">{{ page.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+			{% for page in site.html_pages %}
+				{% if page.layout != "home" and page.nav-menu == true %}
+					<li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
 	</ul>
 </nav>

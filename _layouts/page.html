@@ -9,34 +9,30 @@
 {% include head.html %}
 
 <body>
-    <script type="text/javascript">document.body.classList.add("is-loading");</script>
-
     {% include header.html %}
 
     <section id="banner" class="{{ page.banner_color }}">
+        {% if page.image %}
+        <span class="image">
+            <img src="{{ page.image | relative_url }}" alt="" loading="eager" fetchpriority="high" decoding="async">
+        </span>
+        {% endif %}
         <div class="inner">
-            <span class="image">
-                <img src="{{ site.baseurl }}/{{ page.image }}" alt="" loading="eager" fetchpriority="high" decoding="async">
-            </span>
             <header class="major">
-
                 <h1>{{ page.title }}</h1>
-
             </header>
             <div class="content">
-
                 {{ page.description }}
-
             </div>
         </div>
     </section>
 
-    <div id="main" class="alt">
+    <main id="main" class="alt" tabindex="-1">
 
-    {{ content }} 
+    {{ content }}
 
-    </div>
-    
+    </main>
+
     {% include footer.html %}
 
 </body>

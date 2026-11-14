@@ -85,12 +85,14 @@ mode. Missing tools and failed checks produce a nonzero exit status.
 ### Troubleshooting
 
 - If you encounter permission issues with Docker, ensure your user is added to the Docker group:
+
   ```bash
   sudo usermod -aG docker $USER
   newgrp docker
   ```
 
 - If there are bundle dependency issues, try rebuilding the Docker image:
+
   ```bash
   docker build --no-cache -t secquoia-website .
   ```

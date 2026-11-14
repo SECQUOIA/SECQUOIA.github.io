@@ -8,6 +8,9 @@
   --fg-light: #615c52;
   --border: #c7bfae;
   --border-bg: #eee9dd;
+  --input-border: #7a7365;
+  --fill: #f0ede6;
+  --link: #765719;
   --highlight: #765719;
   --highlight-active: #573e0c;
   --highlight-bg: #ede1c8;
@@ -29,6 +32,9 @@
   --fg-light: #bdb8ad;
   --border: #625e55;
   --border-bg: #34332f;
+  --input-border: #8f897d;
+  --fill: #292a2b;
+  --link: #e2c68f;
   --highlight: #e2c68f;
   --highlight-active: #f6dca7;
   --highlight-bg: #423b2d;
@@ -50,6 +56,47 @@
 
 select option { color: var(--fg); background: var(--surface); }
 :focus-visible { outline: 2px solid var(--highlight); outline-offset: 4px; }
+[id] { scroll-margin-top: 4.5em; }
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 0.75rem;
+  z-index: 10005;
+  padding: 0.65rem 1.1rem;
+  background: var(--fg-bold);
+  color: var(--bg) !important;
+  border: 2px solid var(--highlight);
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0.75rem;
+  outline: 2px solid var(--highlight);
+  outline-offset: 2px;
+}
+
+.tiles article:focus-within {
+  outline: 3px solid var(--highlight);
+  outline-offset: -4px;
+}
+.tiles article h3 a:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  #banner {
+    background-attachment: scroll !important;
+  }
+}
 
 // Gold lettering stays legible over the dark photo overlays in either mode,
 // including during hover.

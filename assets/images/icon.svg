@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SECQUOIA">
+  <rect width="512" height="512" rx="96" fill="#202122"/>
+  <rect x="28" y="28" width="456" height="456" rx="76" fill="none" stroke="#ceb888" stroke-width="16"/>
+  <text x="256" y="348" text-anchor="middle" font-family="'Source Sans Pro', Helvetica, Arial, sans-serif" font-size="290" font-weight="700" fill="#ceb888">S</text>
+</svg>

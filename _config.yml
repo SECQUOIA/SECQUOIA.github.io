@@ -1,6 +1,6 @@
 # site settings
 title: SECQUOIA
-subtitle: Info
+subtitle: Purdue University
 description: >-
   Systems Engineering via Classical and Quantum Optimization for Industrial
   Applications Research Group at Purdue University
@@ -15,7 +15,7 @@ state: IN
 zip_code: 47907-2100
 country: USA
 formspreeEndpoint: https://formspree.io/f/xdorgoyp
-branch: master
+branch: main
 repo: SECQUOIA/SECQUOIA.github.io
 google_analytics: G-7SN6EM0RMM
 
@@ -37,7 +37,6 @@ socials:
 markdown: kramdown
 
 plugins:
-- jekyll-timeago
 - jekyll-redirect-from
 
 sass:
@@ -65,3 +64,20 @@ exclude:
 - "*.docx"
 - "*.key"
 - "*.zip"
+# Unreferenced raw camera originals stay in Git alongside their WebP twins for
+# scripts/check_webp_equivalents.sh, while deployed _site/ serves WebP plus
+# referenced social-preview and full-resolution article figures.
+- assets/images/members/*.jpg
+- assets/images/members/*.jpeg
+- assets/images/members/*.png
+- assets/images/posts/*.jpg
+- assets/images/posts/*.jpeg
+- assets/images/posts/*.png
+- assets/images/*.jpeg
+- assets/images/banner*.jpg
+- assets/images/banner-resized*.webp
+- assets/images/book.png
+- assets/images/conference.jpg
+- assets/images/group2024.jpg
+- assets/images/profile.png
+- assets/images/profile_new.png

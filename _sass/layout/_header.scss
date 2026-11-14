@@ -64,26 +64,66 @@
 
 		nav {
 			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
 			@include vendor('justify-content', 'flex-end');
 			@include vendor('flex-grow', '1');
 			height: inherit;
 			line-height: inherit;
 
-			a {
-				border: 0;
-				display: block;
-				font-size: 0.8em;
+			.desktop-nav {
+				display: flex;
+				align-items: center;
+				list-style: none;
+				margin: 0 0.25em 0 0;
+				padding: 0;
 				height: inherit;
+
+				li {
+					margin: 0;
+					padding: 0;
+					height: inherit;
+				}
+
+				a {
+					font-size: 0.72em;
+					padding: 0 0.6em;
+					white-space: nowrap;
+
+					&[aria-current="page"] {
+						color: _palette(highlight);
+					}
+				}
+			}
+
+			@media screen and (max-width: 1180px) {
+				.desktop-nav {
+					display: none;
+				}
+			}
+
+			a, button.menu-toggle {
+				background: transparent;
+				border: 0;
+				box-shadow: none;
+				color: inherit;
+				cursor: pointer;
+				display: block;
+				font-family: inherit;
+				font-size: 0.8em;
+				font-weight: _font(weight-bold);
+				height: inherit;
+				letter-spacing: _font(letter-spacing-alt);
 				line-height: inherit;
 				padding: 0 0.75em;
 				position: relative;
+				text-transform: uppercase;
 				vertical-align: middle;
 
 				&:last-child {
 					padding-right: 1.5em;
 				}
 
-				&[href="#menu"] {
+				&[href="#menu"], &.menu-toggle {
 					padding-right: 3.325em !important;
 
 					&:before, &:after {
@@ -155,18 +195,14 @@
 			&.style4 { .logo { strong { color: _palette(accent4); } } }
 			&.style5 { .logo { strong { color: _palette(accent5); } } }
 			&.style6 { .logo { strong { color: _palette(accent6); } } }
-		}
-
-		body.is-loading & {
-			&.alt {
-				opacity: 0;
-			}
+			&.style7 { .logo { strong { color: _palette(accent7); } } }
+			&.style8 { .logo { strong { color: _palette(accent8); } } }
 		}
 
 		@include breakpoint(xlarge) {
 			nav {
-				a {
-					&[href="#menu"] {
+				a, button.menu-toggle {
+					&[href="#menu"], &.menu-toggle {
 						padding-right: 3.75em !important;
 
 						&:last-child {
@@ -179,8 +215,8 @@
 
 		@include breakpoint(large) {
 			nav {
-				a {
-					&[href="#menu"] {
+				a, button.menu-toggle {
+					&[href="#menu"], &.menu-toggle {
 						padding-right: 4em !important;
 
 						&:last-child {
@@ -200,14 +236,14 @@
 			}
 
 			nav {
-				a {
+				a, button.menu-toggle {
 					padding: 0 0.5em;
 
 					&:last-child {
 						padding-right: 1em;
 					}
 
-					&[href="#menu"] {
+					&[href="#menu"], &.menu-toggle {
 						padding-right: 3.25em !important;
 
 						&:before, &:after {
@@ -234,8 +270,8 @@
 			}
 
 			nav {
-				a {
-					&[href="#menu"] {
+				a, button.menu-toggle {
+					&[href="#menu"], &.menu-toggle {
 						overflow: hidden;
 						padding-right: 0 !important;
 						text-indent: 5em;

@@ -7,9 +7,9 @@ image: assets/images/posts/yirang_anurag_welcome.webp
 
 We want to welcome our new PhD students in SECQUOIA!
 
-[Yirang Park](https://SECQUOIA.github.io/2-members.html) returns to Purdue after her time in the pharmaceutical industry. She graduated from the Davidson School of Chemical Engineering Professional Master's Program and University of California, Berkeley. Yirang will work at the intersection of process systems engineering, quantum computing, and the pharmaceutical industry!
+[Yirang Park](/2-members.html) returns to Purdue after her time in the pharmaceutical industry. She graduated from the Davidson School of Chemical Engineering Professional Master's Program and University of California, Berkeley. Yirang will work at the intersection of process systems engineering, quantum computing, and the pharmaceutical industry!
 
-[Anurag Ramesh](https://SECQUOIA.github.io/2-members.html) joins us from Birla Institute of Technology and Science, Pilani. Anurag will work on understanding and benchmarking classical and quantum algorithms for optimization and computational chemistry using machine learning tools.
+[Anurag Ramesh](/2-members.html) joins us from Birla Institute of Technology and Science, Pilani. Anurag will work on understanding and benchmarking classical and quantum algorithms for optimization and computational chemistry using machine learning tools.
 
 We are excited to have them in our group!
 

@@ -10,47 +10,44 @@
 
   <body>
 
-    {% include header.html %} 
+    {% include header.html %}
 
     <section id="banner" class="{{ page.banner_color }}">
-		<div class="inner">
-			<span class="image">
-				<img src="{{ site.baseurl }}/{{ page.image }}" alt="">
-			</span>
-			<header class="major">
+      {% if page.image %}
+      <span class="image">
+        <img src="{{ page.image | relative_url }}" alt="" loading="eager" fetchpriority="high" decoding="async">
+      </span>
+      {% endif %}
+      <div class="inner">
+        <header class="major">
+          <h1>{{ page.title }}</h1>
+        </header>
+        <div class="content">
+          {{ page.description }}
+        </div>
+      </div>
+    </section>
 
-				<h1>{{ page.title }}</h1>
-
-			</header>
-			<div class="content">
-
-				{{ page.description }}
-
-			</div>
-		</div>
-	</section>
-    
-    
     <!-- Main -->
-    <div id="main" class="alt">
+    <main id="main" class="alt" tabindex="-1">
 
       <!-- One -->
       <section id="one">
-	<div class="inner">
+        <div class="inner">
           {% for post in site.posts %}
-	  {% if post.title != 404 %}
-	  <header class="major">
-	    <h1>{{ post.title }}</h1>
-	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
-	  <p>{{ post.content }}</p>
-	  {% endif %}
+          {% if post.title != 404 %}
+          <header class="major">
+            <h2>{{ post.title }}</h2>
+          </header>
+          {% if post.image %}<span class="image main"><img src="{{ post.image | relative_url }}" alt="" /></span>{% endif %}
+          {% if post.date %}<p>{{ post.date }}</p>{% endif %}
+          <p>{{ post.content }}</p>
+          {% endif %}
           {% endfor %}
-	</div>
+        </div>
       </section>
 
-    </div>
+    </main>
 
     {% include footer.html %}
 

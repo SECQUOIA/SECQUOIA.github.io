@@ -9,17 +9,17 @@ banner_color: style1
 
 <!-- markdownlint-disable MD033 -->
 
-<div id="main" class="alt">
 <section id="one">
 <div class="inner">
   <header class="major">
-    <h1>David E. Bernal Neira</h1>
+    <h2>David E. Bernal Neira</h2>
   </header>
 
 <style>
 .profile-image {
   float: left;
   width: 25%;
+  height: auto;
   margin: 0 20px 10px 0;
   border-radius: 5px;
 }
@@ -41,7 +41,7 @@ banner_color: style1
 
 <div class="main-content">
   <div class="profile-intro">
-    <img src="{% link assets/images/profile.webp %}" alt="David E. Bernal Neira" class="profile-image">
+    <img src="{% link assets/images/profile.webp %}" alt="David E. Bernal Neira" width="1920" height="1283" decoding="async" class="profile-image">
 
     <h2>Long Biography</h2>
 
@@ -62,7 +62,15 @@ banner_color: style1
 
   <p>David E. Bernal Neira is Purdue's Mitchel Papanicolas Family/Del Ray Glass Company Assistant Professor of Chemical Engineering and leads the <a href="index.html">SECQUOIA</a> research group in optimization and quantum computing.</p>
 
-  <p><a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478" target="_blank" rel="noopener noreferrer">Purdue University profile</a> · <a href="files/cv.html">Full curriculum vitae</a></p>
+  <p>
+    <a href="files/cv.html">Full curriculum vitae</a> ·
+    <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
+    <a href="https://orcid.org/0000-0002-8308-5016" target="_blank" rel="noopener noreferrer">ORCID</a> ·
+    <a href="https://github.com/bernalde" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/bernalde/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+    <a href="https://engineering.purdue.edu/ChE/people/ptProfile?resource_id=286478" target="_blank" rel="noopener noreferrer">Purdue University profile</a> ·
+    <a href="/join/">Prospective inquiries</a>
+  </p>
 
   <h2>Current Roles and Affiliations</h2>
 
@@ -117,7 +125,7 @@ banner_color: style1
   <p>See the <a href="7-teaching.html">teaching page</a> for more on teaching experience and philosophy. Courses taught by Prof. Bernal include:</p>
 
   <ul>
-    <li>Process Dynamics and Control — Purdue CHE 456 (Fall 2023, Fall 2024, Fall 2025)</li>
+    <li>Process Dynamics and Control — Purdue CHE 456 (Fall 2023, Fall 2024, Fall 2025, Fall 2026)</li>
     <li>Data Science in Chemical Engineering — Purdue CHE 597 (Spring 2025, Spring 2026)</li>
     <li>Quantum Integer Programming and Quantum Machine Learning — CMU 47-779 / 47-785, 18-819F<br>
       <a href="https://bernalde.github.io/QuIPML/" target="_blank" rel="noopener noreferrer">Fall 2021</a>, <a href="https://bernalde.github.io/QuIPML22/" target="_blank" rel="noopener noreferrer">Fall 2022</a>, Fall 2023</li>
@@ -154,4 +162,3 @@ banner_color: style1
 </div>
 </div>
 </section>
-</div>

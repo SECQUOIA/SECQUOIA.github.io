@@ -75,12 +75,6 @@ banner_color: style2
   }
 }
 
-/* Add this to your existing CSS */
-.inner ul:not(.icons) {
-  margin: 0 0 1em 0;
-  padding-left: 1.5em;
-}
-
 /* Fix spacing for research topics paragraphs */
 .inner p {
   margin: 0.5em 0 1em 0; /* Reduced top margin to bring it closer to list */
@@ -140,17 +134,58 @@ banner_color: style2
 }
 </style>
 
-<div class="toc">
-  <h4>Jump to Section</h4>
-  <ul>
-    <li><a href="#postdocs">Postdoctoral Associates</a></li>
-    <li><a href="#phds">Doctoral Students</a></li>
-    <li><a href="#masters">Externally Co-advised Master's Student</a></li>
-    <li><a href="#undergraduate">Undergraduates</a></li>
-    <li><a href="#pi">Principal Investigator</a></li>
-    <li><a href="#alumni">Alumni</a></li>
-  </ul>
-</div>
+<section id="member-nav">
+ <div class="inner">
+  <nav class="toc" aria-label="Member categories">
+    <h2>Jump to Section</h2>
+    <ul>
+      <li><a href="#pi">Principal Investigator</a></li>
+      <li><a href="#postdocs">Postdoctoral Associates</a></li>
+      <li><a href="#phds">Doctoral Students</a></li>
+      <li><a href="#masters">Master's Students</a></li>
+      <li><a href="#undergraduate">Undergraduates</a></li>
+      <li><a href="#alumni">Alumni</a></li>
+    </ul>
+    <p>Interested in joining or collaborating with SECQUOIA? See <a href="/join/">Join Us</a>.</p>
+  </nav>
+ </div>
+</section>
+
+<!-- Principal Investigator -->
+<section id="pi">
+ <div class="inner">
+  <header class="major">
+   <h2>Principal Investigator</h2>
+  </header>
+ </div>
+</section>
+
+<!-- David Bernal Neira -->
+<section id="david-bernal" class="spotlights">
+  <section>
+    <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
+      <img src="assets/images/members/DavidBernal.webp" alt="David Bernal Neira" width="600" height="397" loading="lazy" decoding="async" data-position="center center" />
+    </a>
+  <div class="content">
+   <div class="inner">
+    <header class="major">
+     <h3>David E. Bernal Neira</h3>
+    </header>
+    <ul>
+      <li>Mitchel Papanicolas Family/Del Ray Glass Company Assistant Professor of Chemical Engineering.</li>
+      <li>Principal Investigator of SECQUOIA and co-director of Purdue's Center for Operations and Optimization in Process Systems.</li>
+      <li><a href="1-bernalde.html">Profile, speaker biographies, and CV</a> · <a href="/join/">Prospective students &amp; collaborators</a>.</li>
+    </ul>
+    <ul class="icons">
+      <li><a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ" class="fas fa-graduation-cap" aria-label="David E. Bernal Neira Google Scholar Profile" target="_blank" rel="noopener noreferrer"><span class="label">Google Scholar</span></a></li>
+      <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin" aria-label="David E. Bernal Neira LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/bernalde" class="fab fa-github" aria-label="David E. Bernal Neira GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid" aria-label="David E. Bernal Neira ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+</section>
 
 <!-- Postdoctoral associates -->
 <section id="postdocs">
@@ -163,9 +198,9 @@ banner_color: style2
 
 <section id="bruna-araujo" class="spotlights">
 <section>
-<a href="#bruna-araujo" class="image" aria-label="Bruna Gabrielly de Moraes Araújo section">
+<span class="image">
 <img src="assets/images/members/bruna-gabrielly-araujo.webp" alt="Bruna Gabrielly de Moraes Araújo" width="1536" height="1024" loading="lazy" decoding="async" data-position="center center" />
-</a>
+</span>
 <div class="content">
 <div class="inner">
 <header class="major">
@@ -198,9 +233,9 @@ banner_color: style2
 <!-- Albert Lee -->
 <section id="albert-lee" class="spotlights">
  <section>
-  <a href="#albert-lee" class="image" aria-label="Albert Lee's section">
+  <span class="image">
    <img src="assets/images/members/AlbertJoonLee.webp" alt="Albert Lee" width="600" height="600" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -224,9 +259,9 @@ banner_color: style2
 <!-- Anurag Ramesh -->
 <section id="anurag-ramesh" class="spotlights">
  <section>
-  <a href="#anurag-ramesh" class="image" aria-label="Anurag Ramesh's section">
+  <span class="image">
    <img src="assets/images/members/AnuragRamesh.webp" alt="Anurag Ramesh" width="600" height="600" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -250,9 +285,9 @@ banner_color: style2
 <!-- Yirang Park -->
 <section id="yirang-park" class="spotlights">
  <section>
-  <a href="#yirang-park" class="image" aria-label="Yirang Park's section">
+  <span class="image">
    <img src="assets/images/members/Yirang-Park.webp" alt="Yirang Park" width="600" height="600" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -277,9 +312,9 @@ banner_color: style2
 <!-- Sergey Gusev -->
 <section id="sergey-gusev" class="spotlights">
  <section>
-  <a href="#sergey-gusev" class="image" aria-label="Sergey Gusev's section">
+  <span class="image">
    <img src="assets/images/members/SergeyGusev.webp" alt="Sergey Gusev" width="600" height="900" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -304,9 +339,9 @@ banner_color: style2
 <!-- Andres F. Cabeza -->
 <section id="andres-cabeza" class="spotlights">
  <section>
-  <a href="#andres-cabeza" class="image" aria-label="Andres F. Cabeza's section">
+  <span class="image">
    <img src="assets/images/members/AndresCabeza.webp" alt="Andres F. Cabeza" width="600" height="800" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -331,9 +366,9 @@ banner_color: style2
 <!-- Anja Hribljan -->
 <section id="anja-hribljan" class="spotlights">
  <section>
-  <a href="#anja-hribljan" class="image" aria-label="Anja Hribljan's section">
-   <img src="assets/images/members/AnjaHribljan.webp" alt="Anja Hribljan" width="1814" height="2593" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  <span class="image">
+   <img src="assets/images/members/AnjaHribljan.webp" alt="Anja Hribljan" width="600" height="858" loading="lazy" decoding="async" data-position="center center" />
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -359,9 +394,9 @@ banner_color: style2
 <!-- Mohamed Mazhar Laljee -->
 <section id="mohamed-mazhar-laljee" class="spotlights">
  <section>
-  <a href="#mohamed-mazhar-laljee" class="image" aria-label="Mohamed Mazhar Laljee's section">
+  <span class="image">
    <img src="assets/images/members/MohamedMazharLaljee.webp" alt="Mohamed Mazhar Laljee" width="2952" height="3344" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -396,9 +431,9 @@ banner_color: style2
 
 <section id="da-yuan-lin" class="spotlights">
  <section>
-  <a href="#da-yuan-lin" class="image" aria-label="Da-Yuan Lin's section">
+  <span class="image">
    <img src="assets/images/members/DaYuanLin.webp" alt="Da-Yuan Lin" width="748" height="800" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -421,9 +456,9 @@ banner_color: style2
 <!-- Woosik Kim -->
 <section id="woosik-kim" class="spotlights">
  <section>
-  <a href="#woosik-kim" class="image" aria-label="Woosik Kim's section">
+  <span class="image">
    <img src="assets/images/members/WoosikKim.webp" alt="Woosik Kim" width="600" height="986" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -454,9 +489,9 @@ banner_color: style2
 
 <section id="rohan-patel" class="spotlights">
  <section>
-  <a href="#rohan-patel" class="image" aria-label="Rohan Patel's section">
-    <img src="/assets/images/members/RohanPatel.webp" alt="Rohan Patel" width="1563" height="1998" loading="lazy" decoding="async" data-position="center center" />
-  </a>
+  <span class="image">
+    <img src="assets/images/members/RohanPatel.webp" alt="Rohan Patel" width="1563" height="1998" loading="lazy" decoding="async" data-position="center center" />
+  </span>
   <div class="content">
    <div class="inner">
     <header class="major">
@@ -479,9 +514,9 @@ banner_color: style2
 <!-- Rogerio Ritto Pais -->
 <section id="rogerio-ritto-pais" class="spotlights">
   <section>
-    <a href="#rogerio-ritto-pais" class="image" aria-label="Rogerio Ritto Pais's section">
-      <img src="/assets/images/members/RogerioRittoPais.webp" alt="Rogerio Ritto Pais" width="800" height="800" loading="lazy" decoding="async" data-position="center center" />
-    </a>
+    <span class="image">
+      <img src="assets/images/members/RogerioRittoPais.webp" alt="Rogerio Ritto Pais" width="800" height="800" loading="lazy" decoding="async" data-position="center center" />
+    </span>
     <div class="content">
       <div class="inner">
         <header class="major">
@@ -505,9 +540,9 @@ banner_color: style2
 <!-- Luana Vieira de Alcantara Garcia -->
 <section id="luana-garcia" class="spotlights">
   <section>
-    <a href="#luana-garcia" class="image" aria-label="Luana Vieira de Alcantara Garcia's section">
-      <img src="/assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="1214" height="1280" loading="lazy" decoding="async" data-position="center center" />
-    </a>
+    <span class="image">
+      <img src="assets/images/members/luana-garcia.webp" alt="Luana Vieira de Alcantara Garcia" width="600" height="633" loading="lazy" decoding="async" data-position="center center" />
+    </span>
     <div class="content">
       <div class="inner">
         <header class="major">
@@ -526,41 +561,6 @@ banner_color: style2
       </div>
     </div>
   </section>
-</section>
-
-<!-- Principal Investigator -->
-<section id="pi">
- <div class="inner">
-  <header class="major">
-   <h2>Principal Investigator</h2>
-  </header>
- </div>
-</section>
-
-<!-- David Bernal Neira -->
-<section id="david-bernal" class="spotlights">
-  <section>
-    <a href="1-bernalde.html" class="image" aria-label="View David Bernal Neira's profile">
-      <img src="assets/images/members/DavidBernal.webp" alt="David Bernal Neira" width="600" height="397" loading="lazy" decoding="async" data-position="center center" />
-    </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>David E. Bernal Neira</h3>
-    </header>
-    <ul>
-      <li>Mitchel Papanicolas Family/Del Ray Glass Company Assistant Professor of Chemical Engineering.</li>
-      <li>Principal Investigator of SECQUOIA and co-director of Purdue's Center for Operations and Optimization in Process Systems.</li>
-      <li><a href="1-bernalde.html">Profile, speaker biographies, and CV</a>.</li>
-    </ul>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/bernalde/" class="fab fa-linkedin" aria-label="David E. Bernal Neira LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/bernalde" class="fab fa-github" aria-label="David E. Bernal Neira GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-8308-5016" class="fab fa-orcid" aria-label="David E. Bernal Neira ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
 </section>
 
 <!-- Alumni -->

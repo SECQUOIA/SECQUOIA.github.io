@@ -86,7 +86,7 @@ end
 home = Nokogiri::HTML(File.read(File.join(site_dir, "index.html")))
 %w[og:image twitter:image].each do |property|
   image = URI(meta(home, property))
-  unless image.is_a?(URI::HTTPS) && image.host && image.path.end_with?("/assets/images/group2024.jpg")
+  unless image.is_a?(URI::HTTPS) && image.host && image.path.end_with?("/assets/images/group2025.jpg")
     abort "Home page lost its default group image: #{property}"
   end
 end

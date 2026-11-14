@@ -28,7 +28,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			cursor: default;
+			cursor: pointer;
 			height: 40vh;
 			max-height: 40em;
 			min-height: 23em;
@@ -37,18 +37,52 @@
 			width: 40%;
 
 			.image {
-				display: none;
+				border: 0;
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 0;
+
+				img {
+					display: block;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					width: 100%;
+				}
 			}
 
 			header {
+				position: static;
+				z-index: 3;
+			}
+
+			p {
+				pointer-events: none;
 				position: relative;
 				z-index: 3;
 			}
 
 			h3 {
 				font-size: 1.75em;
+				position: static;
 
 				a {
+					position: static;
+
+					&:after {
+						content: '';
+						height: 100%;
+						left: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
+						z-index: 4;
+					}
+
 					&:hover {
 						color: inherit !important;
 					}

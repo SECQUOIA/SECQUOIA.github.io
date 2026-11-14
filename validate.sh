@@ -6,34 +6,46 @@ echo "=================================="
 # Keep running independent checks, but fail overall if a required check fails.
 VALIDATION_FAILED=0
 
-# Detect if we should use Docker and if sudo is needed
+# Detect whether native Bundler gems are installed or whether to fall back to Docker.
+USE_NATIVE_BUNDLE=false
 USE_DOCKER=false
 DOCKER_CMD="docker"
+DOCKER_IMAGE="secquoia-website"
+DOCKER_USER_ARGS=()
 
-if ! command -v bundle >/dev/null 2>&1; then
-    if command -v docker >/dev/null 2>&1; then
-        # Check if Docker needs sudo
-        if ! docker info >/dev/null 2>&1; then
-            if sudo -n docker info >/dev/null 2>&1; then
-                DOCKER_CMD="sudo docker"
-            else
-                echo "❌ Docker is unavailable or permission was denied."
-                echo "   Check that the Docker daemon is running and your user belongs to the docker group."
-                echo '   For group access: sudo usermod -aG docker "$USER" (then log out and back in).'
-                exit 1
-            fi
+if command -v bundle >/dev/null 2>&1 && bundle check >/dev/null 2>&1; then
+    USE_NATIVE_BUNDLE=true
+elif command -v docker >/dev/null 2>&1; then
+    # Check if Docker needs sudo
+    if ! docker info >/dev/null 2>&1; then
+        if sudo -n docker info >/dev/null 2>&1; then
+            DOCKER_CMD="sudo docker"
+        else
+            echo "❌ Docker is unavailable or permission was denied."
+            echo "   Check that the Docker daemon is running and your user belongs to the docker group."
+            echo '   For group access: sudo usermod -aG docker "$USER" (then log out and back in).'
+            exit 1
         fi
-        
-        echo "ℹ️  Bundler not found, using Docker for Jekyll/HTMLProofer checks"
-        USE_DOCKER=true
-        
-        # Build Docker image if needed
-        if ! $DOCKER_CMD image inspect secquoia-website >/dev/null 2>&1; then
-            echo "🐳 Building Docker image (first time only)..."
-            if ! $DOCKER_CMD build -t secquoia-website .; then
-                echo "❌ Could not build the validation image."
-                exit 1
-            fi
+    fi
+
+    echo "ℹ️  Local Bundler environment unavailable, using Docker for Jekyll/HTMLProofer checks"
+    USE_DOCKER=true
+
+    if command -v id >/dev/null 2>&1; then
+        DOCKER_USER_ARGS=(--user "$(id -u):$(id -g)" -e HOME=/tmp)
+    fi
+
+    if command -v sha256sum >/dev/null 2>&1 && [ -f Dockerfile ] && [ -f Gemfile ] && [ -f Gemfile.lock ]; then
+        HASH_RAW=$(sha256sum Dockerfile Gemfile Gemfile.lock | sha256sum)
+        DOCKER_IMAGE="secquoia-website:${HASH_RAW:0:12}"
+    fi
+
+    # Build Docker image if missing or when dependency/container definitions changed
+    if ! $DOCKER_CMD image inspect "$DOCKER_IMAGE" >/dev/null 2>&1; then
+        echo "🐳 Building Docker image ($DOCKER_IMAGE)..."
+        if ! $DOCKER_CMD build -t "$DOCKER_IMAGE" .; then
+            echo "❌ Could not build the validation image."
+            exit 1
         fi
     fi
 fi
@@ -41,7 +53,7 @@ fi
 # Helper function to run commands (locally or via Docker)
 run_bundle() {
     if [ "$USE_DOCKER" = true ]; then
-        $DOCKER_CMD run --rm -v "$(pwd)":/app -w /app secquoia-website "$@"
+        $DOCKER_CMD run --rm "${DOCKER_USER_ARGS[@]}" -v "$(pwd)":/app -w /app "$DOCKER_IMAGE" "$@"
     else
         "$@"
     fi
@@ -50,7 +62,7 @@ run_bundle() {
 # Helper function to run shell commands in Docker
 run_docker_shell() {
     if [ "$USE_DOCKER" = true ]; then
-        $DOCKER_CMD run --rm -v "$(pwd)":/app -w /app secquoia-website bash -c "$1"
+        $DOCKER_CMD run --rm "${DOCKER_USER_ARGS[@]}" -v "$(pwd)":/app -w /app "$DOCKER_IMAGE" bash -c "$1"
     fi
 }
 
@@ -92,14 +104,14 @@ fi
 # Check 2: Jekyll build
 echo ""
 echo "🏗️  Testing Jekyll build..."
-if command -v bundle >/dev/null 2>&1 || [ "$USE_DOCKER" = true ]; then
+if [ "$USE_NATIVE_BUNDLE" = true ] || [ "$USE_DOCKER" = true ]; then
     # Run Jekyll build and capture exit code
     run_bundle bundle exec jekyll build > /tmp/jekyll-build.log 2>&1
     BUILD_EXIT=$?
-    
+
     if [ $BUILD_EXIT -eq 0 ]; then
         echo "✅ Jekyll build successful"
-        
+
         # Check 3: Validate _site structure (deployment dry-run)
         echo ""
         echo "📦 Validating site structure for GitHub Pages..."
@@ -109,7 +121,7 @@ if command -v bundle >/dev/null 2>&1 || [ "$USE_DOCKER" = true ]; then
             echo "❌ Site structure invalid - _site/index.html missing"
             VALIDATION_FAILED=1
         fi
-        
+
         # Check 4: HTMLProofer internal links
         echo ""
         echo "🔗 Checking internal links..."
@@ -131,8 +143,8 @@ if command -v bundle >/dev/null 2>&1 || [ "$USE_DOCKER" = true ]; then
         VALIDATION_FAILED=1
     fi
 else
-    echo "❌ Bundler not installed and Docker not available."
-    echo "   Install Ruby and run: gem install bundler"
+    echo "❌ Bundler gems not installed (bundle check failed) and Docker not available."
+    echo "   Install Ruby dependencies with: bundle install"
     echo "   Or install Docker: sudo apt install docker.io"
     VALIDATION_FAILED=1
 fi
@@ -168,7 +180,8 @@ done < <(find_sources -name '*.md')
 if [ "$ENCODING_FAILED" -ne 0 ]; then
     echo "   ❌ Found non-UTF8 files"
     VALIDATION_FAILED=1
-else
+fi
+if [ "$ENCODING_FAILED" -eq 0 ]; then
     echo "   ✅ All files are UTF-8 compatible"
 fi
 

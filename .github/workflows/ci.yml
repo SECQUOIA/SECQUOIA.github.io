@@ -107,7 +107,10 @@ jobs:
       - name: Test article social previews
         run: bundle exec ruby test/social_preview_test.rb
 
-      # Check for broken internal links using html-proofer
+      - name: Test WCAG 2.2 AA accessibility invariants
+        run: bundle exec ruby test/accessibility_test.rb
+
+      # Check for broken internal links, images, and scripts using html-proofer
       - name: Test internal links
         id: linkcheck
         run: |
@@ -118,17 +121,6 @@ jobs:
           EXITCODE=$?
           cat linkcheck.log
           exit $EXITCODE
-        continue-on-error: true
-
-      - name: Report link check failures as warning
-        if: steps.linkcheck.outcome == 'failure'
-        run: |
-          echo "::warning file=linkcheck.log::Broken internal links detected." \
-            "See the 'Test internal links' step for details."
-          echo "## ⚠️ Internal Link Check Failed" >> $GITHUB_STEP_SUMMARY
-          echo "Some internal links are broken." \
-            "Check the logs or download the artifact for details." \
-            >> $GITHUB_STEP_SUMMARY
 
       # Check external links (social media profiles, emails, etc.)
       - name: Test external links

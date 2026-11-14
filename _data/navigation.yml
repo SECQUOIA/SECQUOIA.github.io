@@ -1,0 +1,69 @@
+# Site navigation, homepage tiles, and footer quick links.
+# Order here is authoritative; filename prefixes do not determine order.
+header:
+  - title: Research
+    url: /5-research.html
+  - title: Publications
+    url: /4-publications.html
+  - title: Software
+    url: /6-software.html
+  - title: Members
+    url: /2-members.html
+  - title: Teaching
+    url: /7-teaching.html
+  - title: News
+    url: /3-news.html
+  - title: Join Us
+    url: /join/
+
+menu:
+  - title: Home
+    url: /
+  - title: Research
+    url: /5-research.html
+  - title: Publications
+    url: /4-publications.html
+  - title: Software
+    url: /6-software.html
+  - title: Members
+    url: /2-members.html
+  - title: Principal Investigator
+    url: /1-bernalde.html
+  - title: Teaching
+    url: /7-teaching.html
+  - title: News
+    url: /3-news.html
+  - title: DEI and Outreach
+    url: /8-diversity.html
+  - title: Mission & Vision
+    url: /mission/
+  - title: Join Us
+    url: /join/
+
+tiles:
+  - /5-research.html
+  - /4-publications.html
+  - /6-software.html
+  - /2-members.html
+  - /1-bernalde.html
+  - /7-teaching.html
+  - /3-news.html
+  - /8-diversity.html
+
+footer_links:
+  - title: Home
+    url: /
+  - title: Research
+    url: /5-research.html
+  - title: Publications
+    url: /4-publications.html
+  - title: Software
+    url: /6-software.html
+  - title: Members
+    url: /2-members.html
+  - title: Teaching
+    url: /7-teaching.html
+  - title: News
+    url: /3-news.html
+  - title: Join Us
+    url: /join/

@@ -19,7 +19,7 @@
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
-	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.browser == 'edge' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
+	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.browser == 'edge' || skel.vars.mobile || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) ? function() { return $(this) } : function(intensity) {
 
 		var	$window = $(window),
 			$this = $(this);
@@ -98,20 +98,6 @@
 			$header = $('#header'),
 			$banner = $('#banner');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			window.setTimeout(function() {
-				$body.removeClass('is-loading');
-			}, 200);
-
-		// Clear transitioning state on unload/hide.
-			$window.on('unload pagehide', function() {
-				window.setTimeout(function() {
-					$('.is-transitioning').removeClass('is-transitioning');
-				}, 250);
-			});
-
 		// Fix: Enable IE-only tweaks.
 			if (skel.vars.browser == 'ie' || skel.vars.browser == 'edge')
 				$body.addClass('is-ie');
@@ -134,66 +120,19 @@
 				}
 			});
 
-		// Tiles.
-			var $tiles = $('.tiles > article');
+		// Apply data-position alignment to native lazy-loaded tile images without intercepting clicks.
+			$('.tiles > article > .image > img[data-position]').each(function() {
+				var $img = $(this);
+				$img.css('object-position', $img.data('position'));
+			});
 
-			$tiles.each(function() {
-
-				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img'),
-					$link = $this.find('.link'),
-					x;
-
-				// Image.
-
-					// Set image.
-						$this.css('background-image', 'url(' + $img.attr('src') + ')');
-
-					// Set position.
-						if (x = $img.data('position'))
-							$image.css('background-position', x);
-
-					// Hide original.
-						$image.hide();
-
-				// Link.
-					if ($link.length > 0) {
-
-						$x = $link.clone()
-							.text('')
-							.addClass('primary')
-							.appendTo($this);
-						
-						$x.attr('aria-label', $link.text());
-
-						$link = $link.add($x);
-
-						$link.on('click', function(event) {
-
-							var href = $link.attr('href');
-
-							// Prevent default.
-								event.stopPropagation();
-								event.preventDefault();
-
-							// Start transitioning.
-								$this.addClass('is-transitioning');
-								$wrapper.addClass('is-transitioning');
-
-							// Redirect.
-								window.setTimeout(function() {
-
-									if ($link.attr('target') == '_blank')
-										window.open(href);
-									else
-										location.href = href;
-
-								}, 500);
-
-						});
-
-					}
-
+		// Remove redundant tab stops on any remaining self-referential spotlight image anchors.
+			$('.spotlights a.image[href^="#"]').each(function() {
+				var $a = $(this),
+					targetId = $a.attr('href').slice(1);
+				if (targetId && $a.closest('section#' + targetId).length > 0) {
+					$a.attr({ 'tabindex': '-1', 'aria-hidden': 'true' });
+				}
 			});
 
 		// Header.
@@ -224,31 +163,18 @@
 
 			}
 
-		// Banner.
+		// Banner parallax on background-image banners only (Home).
 			$banner.each(function() {
-
-				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img');
-
-				// Parallax.
+				var $this = $(this);
+				if ($this.children('.image').length === 0)
 					$this._parallax(0.275);
-
-				// Image.
-					if ($image.length > 0) {
-
-						// Set image.
-							$this.css('background-image', 'url(' + $img.attr('src') + ')');
-
-						// Hide original.
-							$image.hide();
-
-					}
-
 			});
 
 		// Menu.
 			var $menu = $('#menu'),
-				$menuInner;
+				$menuToggle = $('#header .menu-toggle, #header a[href="#menu"]'),
+				$menuInner,
+				$closeBtn;
 
 			$menu.wrapInner('<div class="inner"></div>');
 			$menuInner = $menu.children('.inner');
@@ -269,24 +195,54 @@
 
 			};
 
+			$menu._setOpenState = function(isOpen, restoreFocus) {
+				var $bgRegions = $wrapper.add('.skip-link');
+				$menuToggle.attr('aria-expanded', isOpen ? 'true' : 'false');
+				$bgRegions.each(function() {
+					this.inert = !!isOpen;
+					if (isOpen)
+						$(this).attr('aria-hidden', 'true');
+					else
+						$(this).removeAttr('aria-hidden');
+				});
+				if (isOpen) {
+					window.setTimeout(function() {
+						var $firstLink = $menu.find('a, button').first();
+						if ($firstLink.length > 0)
+							$firstLink[0].focus();
+					}, 50);
+				} else if (restoreFocus && $menuToggle.length > 0) {
+					$menuToggle[0].focus();
+				}
+			};
+
 			$menu._show = function() {
 
-				if ($menu._lock())
+				if ($menu._lock()) {
 					$body.addClass('is-menu-visible');
+					$menu._setOpenState(true, false);
+				}
 
 			};
 
-			$menu._hide = function() {
+			$menu._hide = function(restoreFocus) {
 
-				if ($menu._lock())
+				if (!$body.hasClass('is-menu-visible'))
+					return;
+
+				if ($menu._lock()) {
 					$body.removeClass('is-menu-visible');
+					$menu._setOpenState(false, !!restoreFocus);
+				}
 
 			};
 
 			$menu._toggle = function() {
 
-				if ($menu._lock())
-					$body.toggleClass('is-menu-visible');
+				if ($body.hasClass('is-menu-visible'))
+					$menu._hide(true);
+				else
+					$menu._show();
 
 			};
 
@@ -295,21 +251,18 @@
 					event.stopPropagation();
 				})
 				.on('click', 'a', function(event) {
-
-					var href = $(this).attr('href');
-
-					event.preventDefault();
+					if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.which > 1)
+						return;
 					event.stopPropagation();
-
-					// Hide.
-						$menu._hide();
-
-					// Redirect.
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 250);
-
+					$menu._hide(false);
 				});
+
+			$closeBtn = $('<button type="button" class="close" aria-label="Close menu">Close</button>');
+			$closeBtn.on('click', function(event) {
+				event.stopPropagation();
+				event.preventDefault();
+				$menu._hide(true);
+			});
 
 			$menu
 				.appendTo($body)
@@ -318,13 +271,13 @@
 					event.stopPropagation();
 					event.preventDefault();
 
-					$body.removeClass('is-menu-visible');
+					$menu._hide(true);
 
 				})
-				.append('<a class="close" href="#menu">Close</a>');
+				.append($closeBtn);
 
 			$body
-				.on('click', 'a[href="#menu"]', function(event) {
+				.on('click', 'a[href="#menu"], button.menu-toggle', function(event) {
 
 					event.stopPropagation();
 					event.preventDefault();
@@ -336,14 +289,36 @@
 				.on('click', function(event) {
 
 					// Hide.
-						$menu._hide();
+						$menu._hide(false);
 
 				})
 				.on('keydown', function(event) {
 
+					if (!$body.hasClass('is-menu-visible'))
+						return;
+
 					// Hide on escape.
-						if (event.keyCode == 27)
-							$menu._hide();
+						if (event.key === 'Escape' || event.keyCode == 27) {
+							event.preventDefault();
+							$menu._hide(true);
+							return;
+						}
+
+					// Keep Tab / Shift+Tab focus within the open modal menu.
+						if (event.key === 'Tab' || event.keyCode == 9) {
+							var $focusable = $menu.find('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])').filter(':visible');
+							if ($focusable.length === 0)
+								return;
+							var firstEl = $focusable[0],
+								lastEl = $focusable[$focusable.length - 1];
+							if (event.shiftKey && (document.activeElement === firstEl || !$menu[0].contains(document.activeElement))) {
+								event.preventDefault();
+								lastEl.focus();
+							} else if (!event.shiftKey && (document.activeElement === lastEl || !$menu[0].contains(document.activeElement))) {
+								event.preventDefault();
+								firstEl.focus();
+							}
+						}
 
 				});
 
