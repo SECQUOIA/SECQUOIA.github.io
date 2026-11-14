@@ -9,7 +9,7 @@ show_tile: false
 banner_color: style2
 ---
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD051 -->
 
 ## Opportunities to Join or Collaborate with SECQUOIA
 

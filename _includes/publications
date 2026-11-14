@@ -233,17 +233,19 @@
       {% assign bib_entry_type = "misc" %}
       {% assign bib_venue_field = "howpublished" %}
     {% endif %}
-    {% capture bibtex_block %}@{{ bib_entry_type }}{{ "{" }}{{ bib_key }},
-  author = {{ "{" }}{{ bib_authors_tokens }}{{ "}" }},
-  title = {{ "{" }}{{ citation.Title }}{{ "}" }}{% if pub_clean != "" %},
-  {{ bib_venue_field }} = {{ "{" }}{{ pub_clean }}{{ "}" }}{% endif %}{% if vol_clean != "" %},
-  volume = {{ "{" }}{{ vol_clean }}{{ "}" }}{% endif %}{% if num_clean != "" %},
-  number = {{ "{" }}{{ num_clean }}{{ "}" }}{% endif %}{% if pages_clean != "" %},
-  pages = {{ "{" }}{{ pages_clean }}{{ "}" }}{% endif %}{% if year_clean != "" %},
-  year = {{ "{" }}{{ year_clean }}{{ "}" }}{% endif %}{% if doi_clean != "" %},
-  doi = {{ "{" }}{{ doi_clean }}{{ "}" }}{% elsif direct_url != "" %},
-  url = {{ "{" }}{{ direct_url }}{{ "}" }}{% endif %}
-}{{ "" }}{% endcapture %}
+    {% assign lb = "{" %}
+    {% assign rb = "}" %}
+    {% capture bibtex_block %}@{{ bib_entry_type }}{{ lb }}{{ bib_key }},
+  author = {{ lb }}{{ bib_authors_tokens }}{{ rb }},
+  title = {{ lb }}{{ citation.Title }}{{ rb }}{% if pub_clean != "" %},
+  {{ bib_venue_field }} = {{ lb }}{{ pub_clean }}{{ rb }}{% endif %}{% if vol_clean != "" %},
+  volume = {{ lb }}{{ vol_clean }}{{ rb }}{% endif %}{% if num_clean != "" %},
+  number = {{ lb }}{{ num_clean }}{{ rb }}{% endif %}{% if pages_clean != "" %},
+  pages = {{ lb }}{{ pages_clean }}{{ rb }}{% endif %}{% if year_clean != "" %},
+  year = {{ lb }}{{ year_clean }}{{ rb }}{% endif %}{% if doi_clean != "" %},
+  doi = {{ lb }}{{ doi_clean }}{{ rb }}{% elsif direct_url != "" %},
+  url = {{ lb }}{{ direct_url }}{{ rb }}{% endif %}
+{{ rb }}{% endcapture %}
 
     <li class="pub-item" data-type="{{ type_clean | escape }}" data-year="{{ year_clean | escape }}">
       {% if style == "mla" or style == "chicago" %}

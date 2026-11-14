@@ -9,7 +9,7 @@ redirect_from:
   - /files/diversity.html
 ---
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD051 -->
 
 ## Inclusive Excellence and Broadening Participation
 

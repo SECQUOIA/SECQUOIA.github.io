@@ -10,6 +10,8 @@ redirect_from:
   - /files/teaching.html
 ---
 
+<!-- markdownlint-disable MD051 -->
+
 SECQUOIA's teaching goal is to prepare students to become critical thinkers, independent learners, and effective collaborators who can model, analyze, and improve complex process systems. In an era of abundant data and rapid technological change, the ability to evaluate and apply mathematical and computational methods is crucial for sound engineering decisions in industry and society. We design structured, engaging courses that emphasize active learning, real-world process applications, and team-based problem solving, treating teaching and mentoring as opportunities to connect theory with practice.
 
 ## Teaching Philosophy and Guiding Principles
