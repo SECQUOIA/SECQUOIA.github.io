@@ -24,6 +24,9 @@
 
 {% assign counter = 0 %}
 {% assign current_year_heading = "__UNSET__" %}
+{% assign seen_bib_keys = "|" %}
+{% assign bib_stopwords = "|a|an|the|on|in|of|for|to|and|with|" %}
+{% assign bib_suffixes = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" | split: "," %}
 
 {% unless group_by_year %}
 <ol class="publications-list">
@@ -214,34 +217,94 @@
 
     {% capture venue_segment %}{% if pub_clean != "" %} <em>{{ pub_clean }}</em>{% if vol_clean != "" %}, {{ vol_clean }}{% if num_clean != "" %}({{ num_clean }}){% endif %}{% endif %}{% if pages_clean != "" %}, {{ pages_clean }}{% endif %}.{% elsif publisher_clean != "" %} {{ publisher_clean }}.{% endif %}{% endcapture %}
 
-    {% assign first_author_slug = author_array[0] | to_s | split: "," | first | slugify | replace: "-", "" %}
-    {% assign first_title_word = citation.Title | to_s | slugify | split: "-" | first %}
-    {% assign bib_key = first_author_slug | append: year_clean | append: first_title_word %}
+    {% assign first_author_slug = author_array[0] | to_s | split: "," | first | slugify: "latin" | replace: "-", "" %}
+    {% assign title_words = citation.Title | to_s | slugify: "latin" | split: "-" %}
+    {% assign first_title_word = "" %}
+    {% for tw in title_words %}
+      {% assign tw_probe = "|" | append: tw | append: "|" %}
+      {% if tw != "" and first_title_word == "" %}
+        {% unless bib_stopwords contains tw_probe %}
+          {% assign first_title_word = tw %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    {% if first_title_word == "" %}
+      {% assign first_title_word = title_words[0] | default: "pub" %}
+    {% endif %}
+    {% assign base_bib_key = first_author_slug | append: year_clean | append: first_title_word %}
+    {% assign bib_key = base_bib_key %}
+    {% assign key_probe = "|" | append: bib_key | append: "|" %}
+    {% if seen_bib_keys contains key_probe %}
+      {% for sfx in bib_suffixes %}
+        {% assign candidate_key = base_bib_key | append: sfx %}
+        {% assign cand_probe = "|" | append: candidate_key | append: "|" %}
+        {% unless seen_bib_keys contains cand_probe %}
+          {% assign bib_key = candidate_key %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+    {% assign seen_bib_keys = seen_bib_keys | append: bib_key | append: "|" %}
+
+    {% assign bib_role_field = "author" %}
+    {% assign bib_venue_val = pub_clean %}
+    {% assign bib_extra_type = "" %}
+    {% assign bib_emit_publisher = true %}
     {% if type_clean == "Journal Article" %}
       {% assign bib_entry_type = "article" %}
       {% assign bib_venue_field = "journal" %}
+      {% assign bib_emit_publisher = false %}
     {% elsif type_clean == "Conference Proceedings" %}
       {% assign bib_entry_type = "inproceedings" %}
       {% assign bib_venue_field = "booktitle" %}
     {% elsif type_clean == "Book / Chapter" %}
-      {% assign bib_entry_type = "incollection" %}
-      {% assign bib_venue_field = "booktitle" %}
+      {% if citation.Title contains "Proceedings" %}
+        {% assign bib_entry_type = "proceedings" %}
+        {% assign bib_role_field = "editor" %}
+        {% assign bib_venue_field = "series" %}
+      {% else %}
+        {% assign bib_entry_type = "incollection" %}
+        {% assign bib_venue_field = "booktitle" %}
+      {% endif %}
     {% elsif type_clean == "Thesis" %}
-      {% assign bib_entry_type = "phdthesis" %}
       {% assign bib_venue_field = "school" %}
+      {% if publisher_clean != "" %}
+        {% assign bib_venue_val = publisher_clean %}
+      {% endif %}
+      {% assign bib_emit_publisher = false %}
+      {% if pub_clean contains "M.Sc." or pub_clean contains "M.S." or pub_clean contains "Master" %}
+        {% assign bib_entry_type = "mastersthesis" %}
+      {% elsif pub_clean contains "B.Sc." or pub_clean contains "B.S." or pub_clean contains "Bachelor" %}
+        {% assign bib_entry_type = "mastersthesis" %}
+        {% assign bib_extra_type = "B.Sc. Thesis" %}
+      {% else %}
+        {% assign bib_entry_type = "phdthesis" %}
+      {% endif %}
     {% else %}
       {% assign bib_entry_type = "misc" %}
       {% assign bib_venue_field = "howpublished" %}
+      {% if publisher_clean == pub_clean %}
+        {% assign bib_emit_publisher = false %}
+      {% endif %}
     {% endif %}
+
+    {% assign bib_authors_tex = bib_authors_tokens | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
+    {% assign bib_title_tex = citation.Title | to_s | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
+    {% assign bib_venue_tex = bib_venue_val | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
+    {% assign bib_publisher_tex = publisher_clean | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
+    {% assign bib_pages_tex = pages_clean | replace: "–", "--" | split: "&" | join: "\&" | split: "%" | join: "\%" | split: "#" | join: "\#" | split: "_" | join: "\_" %}
+
     {% assign lb = "{" %}
     {% assign rb = "}" %}
     {% capture bibtex_block %}@{{ bib_entry_type }}{{ lb }}{{ bib_key }},
-  author = {{ lb }}{{ bib_authors_tokens }}{{ rb }},
-  title = {{ lb }}{{ citation.Title }}{{ rb }}{% if pub_clean != "" %},
-  {{ bib_venue_field }} = {{ lb }}{{ pub_clean }}{{ rb }}{% endif %}{% if vol_clean != "" %},
+  {{ bib_role_field }} = {{ lb }}{{ bib_authors_tex }}{{ rb }},
+  title = {{ lb }}{{ bib_title_tex }}{{ rb }}{% if bib_venue_tex != "" %},
+  {{ bib_venue_field }} = {{ lb }}{{ bib_venue_tex }}{{ rb }}{% endif %}{% if bib_extra_type != "" %},
+  type = {{ lb }}{{ bib_extra_type }}{{ rb }}{% endif %}{% if bib_emit_publisher and bib_publisher_tex != "" %},
+  publisher = {{ lb }}{{ bib_publisher_tex }}{{ rb }}{% endif %}{% if vol_clean != "" %},
   volume = {{ lb }}{{ vol_clean }}{{ rb }}{% endif %}{% if num_clean != "" %},
-  number = {{ lb }}{{ num_clean }}{{ rb }}{% endif %}{% if pages_clean != "" %},
-  pages = {{ lb }}{{ pages_clean }}{{ rb }}{% endif %}{% if year_clean != "" %},
+  number = {{ lb }}{{ num_clean }}{{ rb }}{% endif %}{% if bib_pages_tex != "" %},
+  pages = {{ lb }}{{ bib_pages_tex }}{{ rb }}{% endif %}{% if year_clean != "" %},
   year = {{ lb }}{{ year_clean }}{{ rb }}{% endif %}{% if doi_clean != "" %},
   doi = {{ lb }}{{ doi_clean }}{{ rb }}{% elsif direct_url != "" %},
   url = {{ lb }}{{ direct_url }}{{ rb }}{% endif %}

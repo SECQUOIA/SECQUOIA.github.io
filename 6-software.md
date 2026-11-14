@@ -76,7 +76,7 @@ banner_color: style4
       <strong>QUBO.jl</strong> and <strong>ToQUBO.jl</strong> provide a unified Julia ecosystem for automatically reformulating, analyzing, benchmarking, and solving mathematical optimization models as Quadratic Unconstrained Binary Optimization (QUBO) and Ising instances via <code>MathOptInterface.jl</code> and <code>JuMP.jl</code>:
     </p>
     <ul>
-      <li>Automatic compiler from constrained integer, continuous, and disjunctive JuMP models to QUBO (<code>ToQUBO.jl</code>) with tunable variable encodings and penalty Tightening</li>
+      <li>Automatic compiler from constrained integer, continuous, and disjunctive JuMP models to QUBO (<code>ToQUBO.jl</code>) with tunable variable encodings and penalty tightening</li>
       <li>Standardized file I/O, instance analysis, and visualization tools (<code>QUBOTools.jl</code>)</li>
       <li>Unified solver wrappers for quantum annealers (D-Wave), coherent/classical heuristics, Simulated Bifurcation, and exact baselines (<code>QUBODrivers.jl</code>)</li>
     </ul>
@@ -85,7 +85,9 @@ banner_color: style4
     </p>
     <ul class="actions">
       <li><a href="https://github.com/JuliaQUBO/QUBO.jl" class="button special" target="_blank" rel="noopener noreferrer">QUBO.jl Repository</a></li>
+      <li><a href="https://juliaqubo.github.io/QUBO.jl/" class="button" target="_blank" rel="noopener noreferrer">QUBO.jl Docs</a></li>
       <li><a href="https://github.com/JuliaQUBO/ToQUBO.jl" class="button" target="_blank" rel="noopener noreferrer">ToQUBO.jl Repository</a></li>
+      <li><a href="https://juliaqubo.github.io/ToQUBO.jl/stable/" class="button" target="_blank" rel="noopener noreferrer">ToQUBO.jl Docs</a></li>
     </ul>
   </div>
 </section>

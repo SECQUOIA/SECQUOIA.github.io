@@ -112,15 +112,38 @@ css = File.read(File.join(site, "assets/css/main.css"))
 errors << "main.css: missing prefers-reduced-motion support" unless css.include?("prefers-reduced-motion:reduce") || css.include?("prefers-reduced-motion: reduce")
 errors << "main.css: missing --input-border token" unless css.include?("--input-border:")
 
-# Verify WCAG 1.4.11 >= 3:1 non-text contrast for light (#7a7365 vs #faf9f6 / #eee9dd) and dark (#8f897d vs #202122 / #34332f)
+def extract_theme_tokens(css_text, selector_regex)
+  tokens = {}
+  css_text.scan(/([^{}]+)\{([^{}]*)\}/) do |sel, body|
+    next unless sel.strip.match?(selector_regex)
+    body.scan(/(--[a-z0-9-]+)\s*:\s*(#[0-9a-fA-F]{3,8})\b/) do |name, hex|
+      tokens[name] = hex
+    end
+  end
+  tokens
+end
+
+light_tokens = extract_theme_tokens(css, /\A:root\z/)
+dark_tokens = extract_theme_tokens(css, /\A(?::root)?\[data-theme=["']?dark["']?\]\z/)
+
 [
-  ["light input border vs bg", "#7a7365", "#faf9f6"],
-  ["light input border vs fill", "#7a7365", "#eee9dd"],
-  ["dark input border vs bg", "#8f897d", "#202122"],
-  ["dark input border vs fill", "#8f897d", "#34332f"]
-].each do |desc, fg_hex, bg_hex|
-  ratio = contrast_ratio(fg_hex, bg_hex)
-  errors << "WCAG 1.4.11 contrast < 3:1 for #{desc} (#{format('%.2f', ratio)}:1)" if ratio < 3.0
+  ["light", light_tokens],
+  ["dark", dark_tokens]
+].each do |theme_name, tokens|
+  border_hex = tokens["--input-border"]
+  if border_hex.nil?
+    errors << "main.css: missing --input-border in #{theme_name} theme"
+    next
+  end
+  %w[--bg --fill --border-bg].each do |surface_var|
+    surface_hex = tokens[surface_var]
+    if surface_hex.nil?
+      errors << "main.css: missing #{surface_var} in #{theme_name} theme"
+      next
+    end
+    ratio = contrast_ratio(border_hex, surface_hex)
+    errors << "WCAG 1.4.11 contrast < 3:1 for #{theme_name} --input-border (#{border_hex}) vs #{surface_var} (#{surface_hex}): #{format('%.2f', ratio)}:1" if ratio < 3.0
+  end
 end
 
 abort errors.join("\n") unless errors.empty?

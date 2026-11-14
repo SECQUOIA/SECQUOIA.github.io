@@ -77,3 +77,33 @@ CSV.foreach(File.join(root, "_data/citations.csv"), headers: true) do |citation|
 end
 abort "Both direct links and fallbacks must be exercised" unless direct_count.positive? && scholar_count.positive?
 puts "Verified #{direct_count} direct DOI/URL/arXiv links and #{scholar_count} Scholar fallbacks"
+
+bibtex_blocks = page.css("details.pub-bibtex pre code").map(&:text)
+abort "Expected BibTeX blocks on 4-publications.html" if bibtex_blocks.empty?
+seen_keys = {}
+bibtex_types = Hash.new(0)
+bibtex_blocks.each_with_index do |bib, idx|
+  header = bib[/\A@([a-z]+)\{([^,\s]+),/, 0]
+  abort "Malformed BibTeX header at index #{idx}: #{bib.lines.first.inspect}" unless header
+  entry_type = Regexp.last_match(1)
+  cite_key = Regexp.last_match(2)
+  bibtex_types[entry_type] += 1
+  abort "Non-ASCII or invalid BibTeX key #{cite_key.inspect}" unless cite_key.match?(/\A[a-z0-9]+\z/)
+  abort "Duplicate BibTeX key #{cite_key.inspect}" if seen_keys.key?(cite_key)
+  seen_keys[cite_key] = true
+
+  # Ensure no unescaped TeX alignment/comment/parameter characters appear in non-URL lines
+  bib.each_line do |line|
+    next if line.lstrip.start_with?("url =", "doi =")
+    abort "Unescaped & in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)&/)
+    abort "Unescaped % in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)%/)
+    abort "Unescaped # in BibTeX (#{cite_key}): #{line.strip}" if line.match?(/(?<!\\)#/)
+  end
+end
+
+%w[article inproceedings incollection proceedings phdthesis mastersthesis misc].each do |req_type|
+  abort "Expected at least one @#{req_type} in BibTeX exports, got #{bibtex_types.inspect}" unless bibtex_types[req_type].positive?
+end
+abort "Expected B.Sc. Thesis type annotation in @mastersthesis export" unless bibtex_blocks.any? { |b| b.include?("@mastersthesis{") && b.include?("type = {B.Sc. Thesis}") && b.include?("school = {Universidad de los Andes}") }
+abort "Expected @proceedings with editor field for edited proceedings" unless bibtex_blocks.any? { |b| b.start_with?("@proceedings{") && b.include?("editor = {") }
+puts "Verified #{bibtex_blocks.length} unique, ASCII-keyed, TeX-escaped BibTeX blocks (#{bibtex_types.inspect})"

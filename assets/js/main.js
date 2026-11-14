@@ -196,14 +196,15 @@
 			};
 
 			$menu._setOpenState = function(isOpen, restoreFocus) {
+				var $bgRegions = $wrapper.add('.skip-link');
 				$menuToggle.attr('aria-expanded', isOpen ? 'true' : 'false');
-				if ($wrapper.length > 0) {
-					$wrapper[0].inert = !!isOpen;
+				$bgRegions.each(function() {
+					this.inert = !!isOpen;
 					if (isOpen)
-						$wrapper.attr('aria-hidden', 'true');
+						$(this).attr('aria-hidden', 'true');
 					else
-						$wrapper.removeAttr('aria-hidden');
-				}
+						$(this).removeAttr('aria-hidden');
+				});
 				if (isOpen) {
 					window.setTimeout(function() {
 						var $firstLink = $menu.find('a, button').first();
@@ -293,9 +294,31 @@
 				})
 				.on('keydown', function(event) {
 
+					if (!$body.hasClass('is-menu-visible'))
+						return;
+
 					// Hide on escape.
-						if (event.keyCode == 27 && $body.hasClass('is-menu-visible'))
+						if (event.key === 'Escape' || event.keyCode == 27) {
+							event.preventDefault();
 							$menu._hide(true);
+							return;
+						}
+
+					// Keep Tab / Shift+Tab focus within the open modal menu.
+						if (event.key === 'Tab' || event.keyCode == 9) {
+							var $focusable = $menu.find('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])').filter(':visible');
+							if ($focusable.length === 0)
+								return;
+							var firstEl = $focusable[0],
+								lastEl = $focusable[$focusable.length - 1];
+							if (event.shiftKey && (document.activeElement === firstEl || !$menu[0].contains(document.activeElement))) {
+								event.preventDefault();
+								lastEl.focus();
+							} else if (!event.shiftKey && (document.activeElement === lastEl || !$menu[0].contains(document.activeElement))) {
+								event.preventDefault();
+								firstEl.focus();
+							}
+						}
 
 				});
 

@@ -146,6 +146,12 @@ details.pub-bibtex pre {
   padding: 0 0.85em;
   margin-left: 0.5rem;
 }
+
+.pub-year-group[hidden],
+.pub-item[hidden],
+.pub-controls[hidden] {
+  display: none !important;
+}
 </style>
 
 <section id="overview">
@@ -154,7 +160,7 @@ details.pub-bibtex pre {
    <h2>Scholarly Output</h2>
   </header>
   <p>
-   Peer-reviewed journal articles, conference proceedings, books and chapters, preprints, theses, and conference presentations from SECQUOIA and Prof. David E. Bernal Neira. For live citation metrics, see <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> and <a href="https://orcid.org/0000-0002-8308-5016" target="_blank" rel="noopener noreferrer">ORCID</a>.
+   Peer-reviewed journal articles, conference proceedings, books and chapters, preprints, software releases, theses, and conference presentations from SECQUOIA and Prof. David E. Bernal Neira. For live citation metrics, see <a href="https://scholar.google.com/citations?user=8s6SR7YAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> and <a href="https://orcid.org/0000-0002-8308-5016" target="_blank" rel="noopener noreferrer">ORCID</a>.
   </p>
 
   <div class="pub-controls" id="pub-controls" hidden>
@@ -164,6 +170,7 @@ details.pub-bibtex pre {
     <button type="button" class="button small pub-filter-btn" data-filter="Conference Proceedings" aria-pressed="false">Conference Proceedings</button>
     <button type="button" class="button small pub-filter-btn" data-filter="Preprint" aria-pressed="false">Preprints</button>
     <button type="button" class="button small pub-filter-btn" data-filter="Book / Chapter" aria-pressed="false">Books &amp; Chapters</button>
+    <button type="button" class="button small pub-filter-btn" data-filter="Software" aria-pressed="false">Software</button>
     <button type="button" class="button small pub-filter-btn" data-filter="Thesis" aria-pressed="false">Theses</button>
     <button type="button" class="button small pub-filter-btn" data-filter="Presentation" aria-pressed="false">Presentations</button>
    </div>
@@ -207,7 +214,7 @@ details.pub-bibtex pre {
 
     items.forEach(function (item) {
       var itemType = item.getAttribute('data-type') || '';
-      var matchesType = (activeType === 'all') || (itemType === activeType) || (activeType === 'Conference Proceedings' && itemType === 'Software');
+      var matchesType = (activeType === 'all') || (itemType === activeType);
       var matchesQuery = !query || (item.textContent || '').toLowerCase().indexOf(query) !== -1;
       var visible = matchesType && matchesQuery;
       item.hidden = !visible;

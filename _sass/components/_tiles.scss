@@ -28,7 +28,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			cursor: default;
+			cursor: pointer;
 			height: 40vh;
 			max-height: 40em;
 			min-height: 23em;
@@ -60,13 +60,15 @@
 				z-index: 3;
 			}
 
-			h3, p {
+			p {
+				pointer-events: none;
 				position: relative;
 				z-index: 3;
 			}
 
 			h3 {
 				font-size: 1.75em;
+				position: static;
 
 				a {
 					position: static;

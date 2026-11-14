@@ -222,9 +222,9 @@ banner_color: style2
 </section>
 <section id="bruna-araujo" class="spotlights">
 <section>
-<a href="#bruna-araujo" class="image" aria-label="Bruna Gabrielly de Moraes Araújo section">
+<span class="image">
 <img src="assets/images/members/bruna-gabrielly-araujo.webp" alt="Bruna Gabrielly de Moraes Araújo" width="1536" height="1024" loading="lazy" decoding="async" data-position="center center" />
-</a>
+</span>
 <div class="content">
 <div class="inner">
 <header class="major">

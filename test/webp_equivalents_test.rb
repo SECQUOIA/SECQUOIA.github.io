@@ -1,7 +1,7 @@
 # Regression test for scripts/check_webp_equivalents.sh.
 # Proves the guard fails when a raster image has no .webp equivalent and
-# passes once the .webp twin is added, so CI blocks new images that would
-# break the client-side WebP swap in assets/js/image-loader.js.
+# passes once the .webp twin is added, so CI blocks new raster originals added
+# without the .webp derivative served by site templates and markdown pages.
 require "tmpdir"
 require "fileutils"
 
