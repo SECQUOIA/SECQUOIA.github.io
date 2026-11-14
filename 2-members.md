@@ -196,30 +196,6 @@ banner_color: style2
  </div>
 </section>
 
-<section id="hanjing-xu" class="spotlights">
- <section>
-  <a href="#hanjing-xu" class="image" aria-label="Hanjing Xu's section">
-   <img src="assets/images/members/HanjingXu.webp" alt="Hanjing Xu" width="375" height="500" loading="lazy" decoding="async" data-position="center center" />
-  </a>
-  <div class="content">
-   <div class="inner">
-    <header class="major">
-     <h3>Hanjing Xu</h3>
-    </header>
-    <ul>
-      <li>Joined in Fall 2025.</li>
-      <li>Ph.D. Computer Science, Purdue University, 2025.</li>
-    </ul>
-    <p><b>Research topics</b>: Combinatorial Optimization, Graph Theory and Quantum Machine Learning.</p>
-    <ul class="icons">
-      <li><a href="https://linkedin.com/in/hanjing-xu-097615b6/" class="fab fa-linkedin" aria-label="Hanjing Xu LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/jxsoortha" class="fab fa-github" aria-label="Hanjing Xu GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
-      <li><a href="https://orcid.org/0000-0002-8118-0570" class="fab fa-orcid" aria-label="Hanjing Xu ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
-    </ul>
-   </div>
-  </div>
- </section>
-</section>
 <section id="bruna-araujo" class="spotlights">
 <section>
 <span class="image">
@@ -595,6 +571,13 @@ banner_color: style2
   </header>
        <h3 class="alumni-subheading">Postdoctoral associates</h3>
        <ul class="alumni-list">
+      <li class="alumni-item">2026. Hanjing Xu. <a href="https://zqwl-quantum.com/" target="_blank" rel="noopener noreferrer">Zhongqi Wuliang Quantum Technology</a>.
+      <ul class="icons alumni-icons">
+      <li><a href="https://www.linkedin.com/in/hanjing-xu-097615b6/" class="fab fa-linkedin" aria-label="Hanjing Xu LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/jxsoortha" class="fab fa-github" aria-label="Hanjing Xu GitHub Profile" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+      <li><a href="https://orcid.org/0000-0002-8118-0570" class="fab fa-orcid" aria-label="Hanjing Xu ORCID Profile" target="_blank" rel="noopener noreferrer"><span class="label">ORCID</span></a></li>
+      </ul>
+      </li>
       <li class="alumni-item">2025. Carolina Tristán. KeyLogic at the National Energy Technology Laboratory (NETL).
       <ul class="icons alumni-icons">
       <li><a href="https://www.linkedin.com/in/carolina-trist%C3%A1n-teja-3533582b4/" class="fab fa-linkedin" aria-label="Carolina Tristán LinkedIn Profile" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
