@@ -33,9 +33,9 @@ jobs:
       # Alert when the month's net billable total exceeds this many USD.
       THRESHOLD_USD: '0'
       # Alert when private-repo equivalent Actions minutes reach 75% of the
-      # 2,000-minute Free plan monthly inclusion.
-      THRESHOLD_ACTIONS_MINUTES: '1500'
-      QUOTA_ACTIONS_MINUTES: '2000'
+      # 3,000-minute GitHub Team monthly inclusion.
+      THRESHOLD_ACTIONS_MINUTES: '2250'
+      QUOTA_ACTIONS_MINUTES: '3000'
 
     steps:
       - name: Check for a billing-read token
@@ -70,6 +70,17 @@ jobs:
             exit 0
           fi
 
+          PUBLIC_REPOS_ENDPOINT="/orgs/${ORG}/repos?type=public&per_page=100"
+          if ! gh api --paginate "${PUBLIC_REPOS_ENDPOINT}" --jq '.[].name' \
+                 > public_repos.txt 2> public_repos.err; then
+            echo "::warning::Could not list public repositories for ${ORG}." \
+              "$(cat public_repos.err)"
+            echo "status=unavailable" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          jq -R -s 'split("\n") | map(select(length > 0))' \
+            public_repos.txt > public_repos.json
+
           TOTAL=$(jq '[.usageItems[].netAmount]
             | add // 0 | .*100 | round / 100' usage.json)
           echo "Net billable total for ${YEAR}-${MONTH}: \$${TOTAL}"
@@ -81,13 +92,16 @@ jobs:
             | "| \(.[0].product) | \(.[0].sku) | $\($net) |"
           ' usage.json > breakdown.md || true
 
-          EQUIV_MINUTES=$(jq '
+          EQUIV_MINUTES=$(jq --slurpfile pub public_repos.json '
+            ($pub[0] // [] | map(ascii_downcase)) as $public |
             [
               .usageItems[]
               | select(
                   ((.product // "") | ascii_downcase) == "actions" and
                   ((.unitType // "") | ascii_downcase) == "minutes" and
-                  .grossAmount > 0
+                  .grossAmount > 0 and
+                  ((.repositoryName // "" | ascii_downcase) as $r
+                    | ($public | index($r)) == null)
                 )
               | .quantity * (
                   if (.sku | test("MacOS"; "i")) then 10
@@ -99,13 +113,16 @@ jobs:
           ' usage.json)
           echo "Private equivalent Actions minutes: ${EQUIV_MINUTES}"
 
-          jq -r '
+          jq -r --slurpfile pub public_repos.json '
+            ($pub[0] // [] | map(ascii_downcase)) as $public |
             [
               .usageItems[]
               | select(
                   ((.product // "") | ascii_downcase) == "actions" and
                   ((.unitType // "") | ascii_downcase) == "minutes" and
-                  .grossAmount > 0
+                  .grossAmount > 0 and
+                  ((.repositoryName // "" | ascii_downcase) as $r
+                    | ($public | index($r)) == null)
                 )
               | {
                   repositoryName,
@@ -146,6 +163,7 @@ jobs:
         if: steps.usage.outputs.status == 'billable'
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
           TOTAL: ${{ steps.usage.outputs.total }}
           EQUIV_MINUTES: ${{ steps.usage.outputs.equiv_minutes }}
           YEAR: ${{ steps.usage.outputs.year }}
@@ -163,8 +181,8 @@ jobs:
               "private-repo equivalent Actions minutes have accrued" \
               "on \`${ORG}\` in ${YEAR}-${MONTH}."
             echo
-            echo "This org runs on the **free** plan" \
-              "(2,000 private equivalent Actions minutes/month," \
+            echo "This org runs on the academic-discounted **GitHub Team** plan" \
+              "(${QUOTA_ACTIONS_MINUTES} private equivalent Actions minutes/month," \
               "\$0 expected net billable total)."
             echo
             if [ -s breakdown.md ]; then
@@ -189,23 +207,25 @@ jobs:
             echo "- Security products: ${SETTINGS}/security_products"
             echo "- Billing: ${SETTINGS}/billing"
             echo
-            echo "Exceeding the 2,000-minute quota blocks all private-repo" \
-              "Actions jobs until the next billing cycle."
+            echo "Exceeding the ${QUOTA_ACTIONS_MINUTES}-minute quota blocks all" \
+              "private-repo Actions jobs until the next billing cycle."
             echo
             echo "_Updated $(date -u '+%Y-%m-%d %H:%M UTC')" \
               "by the Billing Guard workflow._"
           } > body.md
 
-          EXISTING=$(gh issue list --state open --search "$TITLE in:title" \
+          EXISTING=$(gh issue list --repo "${GH_REPO}" --state open \
+                       --search "$TITLE in:title" \
                        --json number,body \
                        --jq "[.[] | select(.body | contains(\"$MARKER\"))]
                          | .[0].number // empty")
 
           if [ -n "$EXISTING" ]; then
-            gh issue edit "$EXISTING" --body-file body.md
+            gh issue edit --repo "${GH_REPO}" "$EXISTING" --body-file body.md
             echo "Updated existing issue #${EXISTING}"
           else
-            gh issue create --title "$TITLE" --body-file body.md
+            gh issue create --repo "${GH_REPO}" --title "$TITLE" \
+              --body-file body.md
           fi
 
       - name: Report clean

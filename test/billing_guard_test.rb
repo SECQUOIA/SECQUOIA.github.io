@@ -16,42 +16,56 @@ end
 
 query_step = billing_workflow.dig("jobs", "check-billing", "steps").find { |s| s["id"] == "usage" }
 abort "billing-guard.yml is missing the usage step" unless query_step
+alert_step = billing_workflow.dig("jobs", "check-billing", "steps").find { |s| s["name"] == "Open or update alert issue" }
+abort "billing-guard.yml is missing the alert issue step" unless alert_step
+unless alert_step.dig("env", "GH_REPO") == "${{ github.repository }}"
+  abort "billing-guard.yml alert step must set GH_REPO to ${{ github.repository }} so gh works without checkout"
+end
 env_defaults = billing_workflow.dig("jobs", "check-billing", "env")
 
 scenarios = [
   [
-    "zero-net-charge threshold with documented Actions/minutes casing",
+    "private-repo threshold with public repos reporting grossAmount > 0 excluded",
     {
       usageItems: [
-        {product: "Actions", sku: "Actions Linux", unitType: "minutes", quantity: 1300, grossAmount: 10.4, netAmount: 0.0, repositoryName: "Black-Box-for-GDP"},
+        {product: "Actions", sku: "Actions Linux", unitType: "minutes", quantity: 2050, grossAmount: 16.4, netAmount: 0.0, repositoryName: "Reproducible_state_task_network_problem"},
         {product: "Actions", sku: "Actions MacOS", unitType: "minutes", quantity: 20, grossAmount: 1.6, netAmount: 0.0, repositoryName: "QuantumChemistryViaIsing"},
-        {product: "Actions", sku: "Actions Linux", unitType: "minutes", quantity: 5000, grossAmount: 0.0, netAmount: 0.0, repositoryName: "SECQUOIA.github.io"}
+        {product: "Actions", sku: "Actions Linux", unitType: "minutes", quantity: 5000, grossAmount: 30.0, netAmount: 0.0, repositoryName: "pyomo"},
+        {product: "Actions", sku: "Actions Linux", unitType: "minutes", quantity: 500, grossAmount: 3.0, netAmount: 0.0, repositoryName: "SECQUOIA.github.io"}
       ]
     },
+    %w[pyomo SECQUOIA.github.io],
     "billable",
-    "1500"
+    "2250"
   ],
   [
-    "lowercase actions/Minutes below threshold with zero net charge",
+    "lowercase actions/Minutes below threshold with high public usage excluded",
     {
       usageItems: [
         {product: "actions", sku: "Actions Linux", unitType: "Minutes", quantity: 400, grossAmount: 3.2, netAmount: 0.0, repositoryName: "Reproducible_state_task_network_problem"},
-        {product: "actions", sku: "Actions Windows", unitType: "Minutes", quantity: 50, grossAmount: 0.8, netAmount: 0.0, repositoryName: "QuantumChemistryViaIsing"}
+        {product: "actions", sku: "Actions Windows", unitType: "Minutes", quantity: 50, grossAmount: 0.8, netAmount: 0.0, repositoryName: "QuantumChemistryViaIsing"},
+        {product: "actions", sku: "Actions Linux", unitType: "Minutes", quantity: 9000, grossAmount: 54.0, netAmount: 0.0, repositoryName: "TenSolver.jl"}
       ]
     },
+    %w[TenSolver.jl],
     "clean",
     "500"
   ]
 ]
 
-scenarios.each do |name, payload, expected_status, expected_equiv|
+scenarios.each do |name, payload, public_repos, expected_status, expected_equiv|
   Dir.mktmpdir("billing-guard-test-") do |dir|
     bin = File.join(dir, "bin")
     FileUtils.mkdir_p(bin)
     File.write(File.join(dir, "payload.json"), JSON.generate(payload))
+    File.write(File.join(dir, "fixture_public_repos.txt"), public_repos.join("\n") + "\n")
     File.write(File.join(bin, "gh"), <<~'BASH')
       #!/bin/bash
-      cat payload.json
+      if [[ "$*" == *"repos?type=public"* ]]; then
+        cat fixture_public_repos.txt
+      else
+        cat payload.json
+      fi
     BASH
     FileUtils.chmod("+x", File.join(bin, "gh"))
     output_file = File.join(dir, "github_output.txt")
@@ -69,4 +83,35 @@ scenarios.each do |name, payload, expected_status, expected_equiv|
   end
 end
 
-puts "billing guard handles documented and lowercase Actions usage fixtures and pages.yml enforces push trust guards"
+# Verify the alert step passes --repo explicitly and succeeds outside a git repo.
+Dir.mktmpdir("billing-guard-alert-test-") do |dir|
+  bin = File.join(dir, "bin")
+  FileUtils.mkdir_p(bin)
+  calls_log = File.join(dir, "gh_calls.log")
+  File.write(File.join(bin, "gh"), <<~'BASH')
+    #!/bin/bash
+    ruby -rjson -e 'puts JSON.generate(ARGV)' -- "$@" >> "$CALLS_LOG"
+    if [[ "$1 $2" == "issue list" ]]; then
+      echo ""
+    fi
+  BASH
+  FileUtils.chmod("+x", File.join(bin, "gh"))
+  env = env_defaults.merge(
+    "PATH" => "#{bin}:#{ENV.fetch("PATH")}",
+    "CALLS_LOG" => calls_log,
+    "GH_REPO" => "SECQUOIA/SECQUOIA.github.io",
+    "GH_TOKEN" => "dummy",
+    "TOTAL" => "69.33",
+    "EQUIV_MINUTES" => "500",
+    "YEAR" => "2026",
+    "MONTH" => "11"
+  )
+  out, status = Open3.capture2e(env, "bash", "-c", alert_step["run"], chdir: dir)
+  abort "alert step failed (#{status.exitstatus}):\n#{out}" unless status.success?
+  calls = File.read(calls_log).lines.map { |line| JSON.parse(line) }
+  unless calls.length == 2 && calls.all? { |argv| argv.each_cons(2).include?(["--repo", "SECQUOIA/SECQUOIA.github.io"]) }
+    abort "alert step did not pass --repo to gh issue calls: #{calls.inspect}"
+  end
+end
+
+puts "billing guard handles public/private Actions filtering, explicit --repo alerts, and pages.yml push trust guards"
